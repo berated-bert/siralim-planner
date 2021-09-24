@@ -48,6 +48,7 @@ the name of its trait changes at some point.
 
 - Tidy up the source code (it is a bit messy - it needs refactoring/commenting/documenting etc).
 - Make the design responsive, i.e. work nicely on mobile.
+- Potentially add artifact stats
 - Find a way to add the monster sprites to the planner. If anybody knows a database that maps monster names to their respective sprites, please let me know!
 
 ## License and contact
