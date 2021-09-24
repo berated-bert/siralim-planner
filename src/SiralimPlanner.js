@@ -930,7 +930,7 @@ class SiralimPlanner extends Component {
         		<p>If you encounter any problems or have any feedback please feel free to message me on Discord - <b>BeratedBert#6292</b>, or submit an issue on the GitHub repo.</p>
 
         	</div>
-        </Modal>
+        </Modal> 
 
         <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>
         <MonsterSelectionModal 
