@@ -1,7 +1,7 @@
 # Siralim Planner
 
 This is a fan-made tool designed to simplify the process of planning builds for Siralim Ultimate. Further details on the tool are available
-on the Info page of the tool: [https://siralim-planner.github.io](https://berated-bert.github.io/siralim-planner/).
+on the Info page of the tool: [https://berated-bert.github.io/siralim-planner/](https://berated-bert.github.io/siralim-planner/).
 
 ## About the source code
 
