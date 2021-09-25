@@ -277,7 +277,7 @@ class MonsterPlannerRow extends Component {
       }
       </div>
       <div className="monster-row-controls">
-        { !emptyRow && <button id={"remove-trait-" + (this.props.creatureSlot + 1)} className="delete-button" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
+        { !emptyRow && <button id={"remove-trait-" + (this.props.creatureSlot + 1)} className="delete-button" aria-label="Delete trait" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
       </div>
     </div>
     )
@@ -598,7 +598,7 @@ class MonsterSelectionModal extends Component {
         <div className="modal-content">
           <div className="modal-header">
             <h3>Select a{slot_n} <b>{slot}</b> trait for party member <b>{creature_number}</b>. <span style={{'marginLeft': '20px'}}>{currentMonster && ("Current: " + currentMonster)}</span></h3>
-            <button id="close-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
+            <button id="close-modal" className="modal-close" aria-label="Close trait selection" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
           
           </div>
           <div className="monster-selection-modal">
