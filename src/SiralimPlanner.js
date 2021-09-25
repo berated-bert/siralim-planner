@@ -31,19 +31,10 @@ const MONSTERS_PER_PAGE = 120;
 let monsterData = require('./data/data');
 let compendium_version = require('./data/compendium_version');
 
-class TraitsTable extends Component {
-
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (<div>Traits table</div>)
-  }
-}
 
 
-class MonsterRowHeader extends Component {
+// The header of the monster table (on the monster selection window).
+class MonsterRowHeader extends PureComponent {
   render() {
     return (
       <div className={"monster-row monster-row-header" + (this.props.renderFullRow ? " detailed" : "")}>
@@ -69,54 +60,9 @@ class MonsterRowHeader extends Component {
   }
 }
 
-// // https://stackoverflow.com/questions/51022834/react-jsx-make-substring-in-bold
-// function BoldedText(text, shouldBeBold) {
 
-//   var text_ = text.toLowerCase();
-//   const shouldBeBold_ = shouldBeBold.toLowerCase();
-  
-//   var casedTextArray = [];
-//   const textArray = text_.split(shouldBeBold_);
-
-
-//   var a = [];
-  
-//   // Produces the indices in reverse order; throw on a .reverse() if you want
-//   for (var a=[],i=text_.length;i--;) if (text_[i]==shouldBeBold_) a.push(i);  
-//   a.reverse();
-//   var mentions = [];
-//   for(var i of a) {
-
-//     mentions.push(text.slice(i, i + shouldBeBold.length));
-//   }
-//   console.log(shouldBeBold, a, mentions);
-
-//   var totalChars = 0;
-//   for(var i of textArray) {
-//     console.log(i)
-//     var substr = text.slice(totalChars, totalChars + i.length);
-//     casedTextArray.push(substr);
-//     totalChars += substr.length + shouldBeBold.length;
-//   }
-
-
-
- 
-//   return (
-//     <span>
-//       {casedTextArray.map((item, index) => (
-//         <>
-//           {item}
-//           {index !== textArray.length - 1 && (
-//             <b>{mentions.pop()}</b>
-//           )}
-//         </>
-//       ))}
-//     </span>
-// );
-// }
-
-
+// A simple function to render a monster class icon.
+// It knows which icon to render via props.icon.
 function MonsterClassIcon(props) {
   var pi = props.icon.toLowerCase();
   var icon;
@@ -131,14 +77,20 @@ function MonsterClassIcon(props) {
   )
 }
 
-// <div className={"cls cls-" + cls.toLowerCase()}></div>
-
+// A class that corresponds to a single MonsterRow from within the Monster Planning window
+// (i.e. the list of 18 traits) or the Monster Selection page (i.e. the big table of all monsters).
+//
+// If props.renderFullRow is true, it will render a full row (as per the Monster Selection page),
+// otherwise it renders a short row (as per the Monster Planner window).
 class MonsterRow extends Component {
 
   constructor(props) {
     super(props);
   }
 
+  // A function for rendering a particular class (cls). 
+  // It will render an icon if the class is one of the 5 classes in the game,
+  // otherwise it will render the full name of the class (e.g. "Rodian Master").
   renderClass(cls, fullName) {
     var c = this.props.class.toLowerCase();
     var iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
@@ -151,20 +103,11 @@ class MonsterRow extends Component {
     )
   }
 
-  renderText(text) {
-    //if(!this.props.searchTerm) return text;
-    //return BoldedText(text, this.props.searchTerm);
-    return text;
-  }
 
   render() {
-
-
-
     return (
-      <div className={"monster-row" + (this.props.inTraitSlot ? " is-trait" : "") + (this.props.renderFullRow ? " detailed" : "")}>
-
-      	
+      <div className={"monster-row" + (this.props.inTraitSlot ? " is-trait" : "") +
+                                      (this.props.renderFullRow ? " detailed" : "")}>
 
         { this.props.renderFullRow && 
 
@@ -173,21 +116,11 @@ class MonsterRow extends Component {
           </div>
         }
 
-        <div className="monster-row-class">
-          {this.renderClass(this.props.class, this.props.renderFullRow)}
-        </div>
-        <div className="monster-row-family">
-          {this.props.family}
-        </div>
-        <div className="monster-row-creature">
-          {this.props.creature}
-        </div>
-        <div className="monster-row-trait_name">
-          {this.props.trait_name}
-        </div>
-        <div className={"monster-row-trait_description"}>
-          {this.props.trait_description}
-        </div>
+        <div className="monster-row-class">{this.renderClass(this.props.class, this.props.renderFullRow)}</div>
+        <div className="monster-row-family">{this.props.family}</div>
+        <div className="monster-row-creature">{this.props.creature}</div>
+        <div className="monster-row-trait_name">{this.props.trait_name}        </div>
+        <div className={"monster-row-trait_description"}>{this.props.trait_description}        </div>
         { this.props.renderFullRow && 
           <div className="monster-row-material_name">
             {this.props.material_name}
@@ -198,22 +131,27 @@ class MonsterRow extends Component {
   }
 }
 
+// A row from the Monster Planner interface.
+// This wraps around MonsterRow, above, providing the functionality for dragging and
+// dropping and row validation.
 class MonsterPlannerRow extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      hoveredOver: false,
-      justUpdated: false,
+      justUpdated: false, // set to true when the component has just been updated
+                          // (so that the row flashes, providing some nice visual feedback)
     }
 
     this.justUpdatedTimeout = null;
   }
 
+  // If this component updated, set 'justUpdated' to true so that the row flashes for a second.
   componentDidUpdate(prevProps, prevState) {
     if(!this.state.justUpdated && !_.isEqual(prevProps.monster, this.props.monster)) this.setJustUpdated();
   }
 
+  // set justUpdated to true. Once done, create a timeout to set justUpdated to false again after 1s.
   setJustUpdated() {
     this.setState({
       justUpdated: true
@@ -223,16 +161,19 @@ class MonsterPlannerRow extends Component {
     })
   }
 
+  // Set justUpdated to false.
   clearJustUpdated() {
     this.setState({
       justUpdated: false,
     })
   }
 
+  // Return true if this row is empty (i.e. it corresponds to a monster), else false.
   isEmptyRow() {
     return _.isEmpty(this.props.monster);
   }
 
+  // Check this row for errors. Return the error in the form of a string if present, else return null.
   getRowErrors() {
     if(!this.props.needsValidation) return null;
     if(this.isEmptyRow()) return null;
@@ -242,6 +183,10 @@ class MonsterPlannerRow extends Component {
     return null;
   }
 
+  // A special function for rendering an empty row.
+  // If there was an error (such as the monster no longer existing after uploading), print that error to the row.
+  // Note that this error is different from the output of getRowErrors above - it is a parsing-related error such
+  // as the buildString containing a creature that no longer exists or has changed.
   renderEmptyRow() {
     return (
       <div className="monster-row empty-row">
@@ -256,6 +201,8 @@ class MonsterPlannerRow extends Component {
     const rowErrors = this.getRowErrors();
     const emptyRow = this.isEmptyRow();
 
+    // If this monster has a class, set rowClass accordingly.
+    // This allows the row to be coloured according to the creature's class.
     if(this.props.monster.class) {
       var rowClass = " cls-" + this.props.monster.class.toLowerCase();
       if(this.props.inTraitSlot) rowClass = " cls-trait";
@@ -265,18 +212,12 @@ class MonsterPlannerRow extends Component {
 
     return (
     <div className="monster-row-wrapper">
-
       {this.props.inPrimarySlot && 
-      <div className={"creature-sprite-container" + (this.props.monster.sprite_filename ? "" : " empty")}>
-        { this.props.monster.sprite_filename &&
-
-          <div className="creature-sprite" style={{"background-image": "url(/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
-
-         }
-
-
-      </div>
-
+        <div className={"creature-sprite-container" + (this.props.monster.sprite_filename ? "" : " empty")}>
+          { this.props.monster.sprite_filename &&
+            <div className="creature-sprite" style={{"background-image": "url(/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
+          }
+        </div>
       }
       <div
         className={"monster-row-container monster-row-container-planner" + 
@@ -308,13 +249,13 @@ class MonsterPlannerRow extends Component {
     </div>
     )
   }
-
-
 }
 
 
 
-// DND Code found here: https://codepen.io/frcodecamp/pen/OEovqx
+// The MonsterPlanner interface (i.e. the main page with the 18 rows).
+//
+// Drag and drop Code found here: https://codepen.io/frcodecamp/pen/OEovqx
 class MonsterPlanner extends Component {
 
   constructor(props) {
@@ -329,6 +270,8 @@ class MonsterPlanner extends Component {
     this.myRef = React.createRef();
   }
 
+  // If this component updates and the prev props are different to the current props,
+  // Update the monsterRows.
   componentDidUpdate(prevProps, prevState) {
     if(!_.isEqual(prevProps, this.props)) {
       this.setState({
@@ -337,9 +280,8 @@ class MonsterPlanner extends Component {
     }
   }
 
-
+  // A function to handle the drag start (i.e. when a row is dragged).
   handleDragStart = data => event => {
-    console.log('start')
     let fromItem = JSON.stringify({ row_id: data.row_id });
     console.log(fromItem)
     event.dataTransfer.setData("dragContent", fromItem);
@@ -348,6 +290,7 @@ class MonsterPlanner extends Component {
     })
   };
 
+  // A function to handle the drag over event.
   handleDragOver = data => event => {
     event.preventDefault(); // Necessary. Allows us to drop.
     this.setState({
@@ -356,6 +299,8 @@ class MonsterPlanner extends Component {
     return false;
   };
 
+  // A function to handle the event when dragging something and the mouse button is released.
+  // When this happens, the rows are swapped.
   handleDrop = data => event => {
     event.preventDefault();
 
@@ -366,6 +311,10 @@ class MonsterPlanner extends Component {
     return false;
   };
 
+  // A function to swap two items.
+  // Once this swap is complete, pass this update to the parent component
+  // so that the monsterPlannerRows are updated.
+  // These changes will get propagated back to this component.
   swapItems = (fromItem, toItem) => {
     let items = this.state.items.slice();
     let fromIndex = -1;
@@ -387,10 +336,12 @@ class MonsterPlanner extends Component {
       items[toIndex] = { id: toItem.id, ...fromRest };
 
       this.setState({ items: items, dragging: false }, () => this.props.updateMonsterPlannerRows(this.state.items));
-    }
-    
+    }    
   };
 
+  // When the mouse button is released while hovering over a row,
+  // call the openModal function on the parent of this component.
+  // i.e. Open the MonsterSelection modal when a row is clicked.
   handleMouseUp(row_id, slot_id, monster) {
     this.props.openModal(row_id, slot_id, monster);
   }
@@ -412,8 +363,7 @@ class MonsterPlanner extends Component {
           inTraitSlot={(i + 1) % 3 === 0 && i <= 18}
           needsValidation={i <= 18}
           creatureSlot={i <= 18 ? Math.floor((i + 1) / 3) : null}
-          clearMonsterPlannerRow={this.props.clearMonsterPlannerRow}          
-
+          clearMonsterPlannerRow={this.props.clearMonsterPlannerRow}
           { ...this.props.openModal }
           />             
         )}
@@ -422,62 +372,50 @@ class MonsterPlanner extends Component {
   }
 }
 
-// class MonsterSelectionRow extends Component {
-//   constructor(props) {
-//     super(props);
-//   }
-
-//   render() {
 
 
-
-
-
-//   }
-// }
-
-// _.isEqual() doesn't seem to work for sets
-// yoinked this from here: https://stackoverflow.com/questions/31128855/comparing-ecma6-sets-for-equality
-function eqSet(as, bs) {
-    if (as.size !== bs.size) return false;
-    for (var a of as) if (!bs.has(a)) return false;
-    return true;
-}
-
-
+// A simple function that returns the family of a creature, or the class + ' traits' in the case that
+// the family is not present (as is the case for backer traits).
+// This is used for the page names on the Monster Selection window.
 function getPageFamily(m) {
   return m.family ? m.family : m.class + " traits"; // Exception for Backer traits
 }
 
+// Get the 'semantic name' of a monster, for the top of the Monster Selection window.
+// i.e. "Abomination / Brute".
 function getMonsterSemanticName(m) {
   console.log(m)
   return m.family ? (m.family + " / " + m.creature) : (m.class + " (" + m.trait_name + ")");
 }
 
+// The Monster Selection modal, i.e. the window that contains a list of all monsters/traits in
+// Siralim Ultimate.
 class MonsterSelectionModal extends Component {
 
   constructor(props) {
     super(props);
 
     this.state = {
-      items: [],
-      filteredItems: [],
+      items: [],  // A list of all rows from the dataset.
+      filteredItems: [], // A list of filtered rows from the dataset, i.e. after the search term has been applied.
 
-      filteredItemGroups: [{"start": 0, "end": 0}], // [{ "start": 0, "end": 93, "familyStart": "Abomination", "familyEnd": "Aspect"}]
-      currentPage: 0,
+      filteredItemGroups: [{"start": 0, "end": 0}], // A list of the item groups (or pages). Looks as follows:
+      // [{ "start": 0, "end": 93, "familyStart": "Abomination", "familyEnd": "Aspect"}]
+      currentPage: 0, // The index of the current page that the user is on.
 
-      currentSearchTerm: "",
-      appliedSearchTerm: "",
+      currentSearchTerm: "", // The current search term, i.e. what is in the search box.
+      appliedSearchTerm: "", // The *applied* search term, which is applied 0.5s after the user finishes
+                             // typing something into the search box.
     }
-    this.searchTimeout = null;
-    this.tableRef = React.createRef();
+    this.searchTimeout = null; // A timeout that takes place after the user stops typing in the search box.
+    this.tableRef = React.createRef(); // A reference of the monster table, so that it can be used to scroll back
+                                       // to the top when switching between pages.
   }
 
+  // When this component updates, and the monsterRows have changed
+  // (which should only happen on first load), set state.items accordingly
+  // and set filteredItems to be the same list of rows.
   componentDidUpdate(prevProps, prevState) {
-
-    //console.log(prevProps, this.props, prevState, this.state, _.isEqual(prevProps, this.props), _.isEqual(prevState, this.state))
-
-
     if(!_.isEqual(prevProps.monsterRows, this.props.monsterRows)) {
 
       var filteredItemGroups = this.getItemGroups(this.props.monsterRows);
@@ -525,7 +463,7 @@ class MonsterSelectionModal extends Component {
       }
     }
 
-
+    // Catch the last group as well.
     if(monstersInCurrentGroup.length > 0) {
       currentGroup.end = i;
       currentGroup.familyEnd = getPageFamily(monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]);
@@ -537,7 +475,8 @@ class MonsterSelectionModal extends Component {
     return itemGroups;
   }
 
-
+  // A function that sets the currentSearchTerm to the value the user has typed in the search box.
+  // 0.5s after the user has stopped typing, apply the search term.
   handleSearchChange(e) {
     window.clearTimeout(this.searchTimeout);
     this.setState({
@@ -547,6 +486,8 @@ class MonsterSelectionModal extends Component {
     });
   }
 
+  // A function to filter the results (this.state.items) to only results that include
+  // the applied search term.
   filterResults() {
     var searchTerm = this.state.currentSearchTerm.toLowerCase();
     var filteredItems = [];
@@ -561,15 +502,17 @@ class MonsterSelectionModal extends Component {
       currentPage: 0,
       filteredItems: filteredItems,
       filteredItemGroups: filteredItemGroups
-    }, () => { this.tableRef.current.scrollTo(0, 0) })
+    }, () => { this.tableRef.current.scrollTo(0, 0) }) // Scroll to top of table once complete.
   }
 
+  // Apply the search term and filter the results accordingly.
   applySearchTerm() {
     this.setState({
       appliedSearchTerm: this.state.currentSearchTerm
     }, () => this.filterResults())
   }
 
+  // Clear the search term. Currently unused.
   resetSearchTerm() {
     if(this.state.currentSearchTerm === "") return;
     this.setState({
@@ -577,6 +520,9 @@ class MonsterSelectionModal extends Component {
     })
   }
 
+  // A function to render the results count.
+  // The output depends on whether *all* results are being shown,
+  // or a filtered list.
   renderResultsCount() {   
 
     var r =  <span><b>{this.state.filteredItems.length}</b> of <b>{this.state.items.length}</b> results</span>;
@@ -593,31 +539,26 @@ class MonsterSelectionModal extends Component {
     )
   }
 
-    goToPage(pageNum) {
-      this.setState({
-        currentPage: pageNum,
-      }, () => { this.tableRef.current.scrollTo(0, 0) })
-    }
-/*      <Modal
-        isOpen={this.props.isOpen}
-        //onAfterClose={() => this.resetSearchTerm()}
-        onRequestClose={this.props.closeModal}
-        contentLabel="Example Modal"
-      >*/
+  // Go to a particular page, i.e. set currentPage = pageNum.
+  // Scroll to top of table once complete.
+  goToPage(pageNum) {
+    this.setState({
+      currentPage: pageNum,
+    }, () => { this.tableRef.current.scrollTo(0, 0) })
+  }
+
+  // This render function needs tidying up, it's a bit long.
   render() {
 
+    // Get the start and end index via this.state.filteredItemGroups.
     var startIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].start : 0;
     var endIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].end : 0;
-
-    console.log(startIndex, endIndex, "<X")
 
 
     var creature_number = Math.floor(this.props.currentSelectedIndex / 3) + 1;
     var slot = (this.props.currentSelectedIndex + 1) % 3 === 1 ? "primary" : ((this.props.currentSelectedIndex + 1)  % 3 === 2) ? "secondary" : "artifact";
     var slot_n = slot === "artifact" ? "n" : "";
     var currentMonster = !_.isEmpty(this.props.currentSelectedMonster) ? getMonsterSemanticName(this.props.currentSelectedMonster) : null;
-
-
 
     return (
         <div className="modal-content">
@@ -627,26 +568,18 @@ class MonsterSelectionModal extends Component {
           
           </div>
           <div className="monster-selection-modal">
-
               <div className="monster-selection-controls">
-
-
                 <div className="monster-selection-search-tools">
                   <input id="monster-search" className="monster-search" autoFocus type="text" placeholder="Search monsters/traits..." onChange={(e) => this.handleSearchChange(e)} value={this.state.currentSearchTerm} />
-                </div>
-                
+                </div>                
                <div className="monster-selection-pagination">
-
                   {this.state.filteredItemGroups.map((itemGroup, i) =>
                       <div role="button" onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
                   )}
                 </div>
-
                 <div className="monster-row-container monster-row-container-selection monster-row-container-header">
                   <MonsterRowHeader renderFullRow={true} /> 
                 </div> 
-
-
               </div>
 
               <div className="monster-selection-list monster-list" ref={this.tableRef}>
@@ -662,24 +595,18 @@ class MonsterSelectionModal extends Component {
                     </div>
                   )}              
               </div>
-
               <div className="monster-selection-results-count">
                  { this.renderResultsCount() }
               </div>
-
-        
-
           </div>
         </div>
     )
-
-
   }
 }
 
 
 
-
+// The main class.
 class SiralimPlanner extends Component {
 
   constructor(props) {
