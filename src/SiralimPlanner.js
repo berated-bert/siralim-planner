@@ -34,8 +34,8 @@ const monsterData = require('./data/data');
 // Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
 // of that UID in monsterSelectionRows.
 function buildUIDMap() {
-  var monsterMap = {}
-  for(var i in monsterData) {
+  let monsterMap = {}
+  for(let i in monsterData) {
     monsterMap[monsterData[i].uid] = parseInt(i);
   }
   return monsterMap;
@@ -44,8 +44,8 @@ function buildUIDMap() {
 // Construct a map (i.e. a JSON dictionary) that maps lowercased trait_names to
 // the UIDs in the database. This is necessary to import party strings.
 function buildTraitMap() {
-  var traitMap = {}
-  for(var i in monsterData) {
+  let traitMap = {}
+  for(let i in monsterData) {
     traitMap[monsterData[i].trait_name.toLowerCase()] = monsterData[i].uid;
   }
   return traitMap;
@@ -93,8 +93,8 @@ class MonsterRowHeader extends PureComponent {
 // A simple function to render a monster class icon.
 // It knows which icon to render via props.icon.
 function MonsterClassIcon(props) {
-  var pi = props.icon.toLowerCase();
-  var icon;
+  let pi = props.icon.toLowerCase();
+  let icon;
   if(pi === "nature") icon = icon_nature;
   if(pi === "chaos")  icon = icon_chaos;
   if(pi === "sorcery") icon = icon_sorcery;
@@ -121,8 +121,8 @@ class MonsterRow extends Component {
   // It will render an icon if the class is one of the 5 classes in the game,
   // otherwise it will render the full name of the class (e.g. "Rodian Master").
   renderClass(cls, fullName) {
-    var c = this.props.class.toLowerCase();
-    var iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
+    let c = this.props.class.toLowerCase();
+    let iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
 
     return (
       <div className={"cls-container" + (!fullName ? " center" : "")}>
@@ -230,10 +230,11 @@ class MonsterPlannerRow extends Component {
     const rowErrors = this.getRowErrors();
     const emptyRow = this.isEmptyRow();
 
+    let rowClass = "";
     // If this monster has a class, set rowClass accordingly.
     // This allows the row to be coloured according to the creature's class.
     if(this.props.monster.class) {
-      var rowClass = " cls-" + this.props.monster.class.toLowerCase();
+      rowClass = " cls-" + this.props.monster.class.toLowerCase();
       if(this.props.inTraitSlot) rowClass = " cls-trait";
     } else {
       rowClass = " cls-empty";
@@ -447,7 +448,7 @@ class MonsterSelectionModal extends Component {
   componentDidUpdate(prevProps, prevState) {
     if(!_.isEqual(prevProps.monsterRows, this.props.monsterRows)) {
 
-      var filteredItemGroups = this.getItemGroups(this.props.monsterRows);
+      let filteredItemGroups = this.getItemGroups(this.props.monsterRows);
 
       this.setState({
         items: this.props.monsterRows,
@@ -472,13 +473,13 @@ class MonsterSelectionModal extends Component {
   //
   // This function is super awkward and needs rewriting, but it works for now.
   getItemGroups(items) {  
-    var itemGroups = [];
-    var currentGroup = {"start": 0, "end": null, "familyStart": null, "familyEnd": null}
-    var monstersInCurrentGroup = [];
-    for(var i = 0; i < items.length; i++) {
-      var item = items[i];
-      var m = item.monster;
-      var f = getPageFamily(m)
+    let itemGroups = [];
+    let currentGroup = {"start": 0, "end": null, "familyStart": null, "familyEnd": null}
+    let monstersInCurrentGroup = [];
+    for(let i = 0; i < items.length; i++) {
+      let item = items[i];
+      let m = item.monster;
+      let f = getPageFamily(m)
 
       if(!currentGroup.familyStart) currentGroup.familyStart = f;
       monstersInCurrentGroup.push(m);
@@ -494,10 +495,15 @@ class MonsterSelectionModal extends Component {
 
     // Catch the last group as well.
     if(monstersInCurrentGroup.length > 0) {
+      let i = items.length - 1;
+      let item = items[i];
+      let m = item.monster;
+      let f = getPageFamily(m)
+
       currentGroup.end = i;
       currentGroup.familyEnd = getPageFamily(monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]);
       itemGroups.push(currentGroup);
-      currentGroup = {"start": i, "end": null, "familyStart": f, "familyEnd": null}
+      currentGroup = {"start": items.length - 1, "end": null, "familyStart": f, "familyEnd": null}
       monstersInCurrentGroup = [];
     }
 
@@ -518,15 +524,15 @@ class MonsterSelectionModal extends Component {
   // A function to filter the results (this.state.items) to only results that include
   // the applied search term.
   filterResults() {
-    var searchTerm = this.state.currentSearchTerm.toLowerCase();
-    var filteredItems = [];
-    for(var item of this.state.items) {
-      var searchText = item.monster.search_text;
+    let searchTerm = this.state.currentSearchTerm.toLowerCase();
+    let filteredItems = [];
+    for(let item of this.state.items) {
+      let searchText = item.monster.search_text;
       if(searchText.toLowerCase().indexOf(searchTerm) !== -1) {
         filteredItems.push({monster: item.monster});
       }      
     }
-    var filteredItemGroups = this.getItemGroups(filteredItems);
+    let filteredItemGroups = this.getItemGroups(filteredItems);
     this.setState({
       currentPage: 0,
       filteredItems: filteredItems,
@@ -554,11 +560,11 @@ class MonsterSelectionModal extends Component {
   // or a filtered list.
   renderResultsCount() {   
 
-    var r =  <span><b>{this.state.filteredItems.length}</b> of <b>{this.state.items.length}</b> results</span>;
+    let r =  <span><b>{this.state.filteredItems.length}</b> of <b>{this.state.items.length}</b> results</span>;
     if(this.state.filteredItems.length === this.state.items.length) {
       r = <span>all <b>{this.state.items.length}</b> results</span>
     }
-    var f = "";
+    let f = "";
     if(this.state.appliedSearchTerm) {
       f = " matching the current search term";
     }
@@ -580,14 +586,14 @@ class MonsterSelectionModal extends Component {
   render() {
 
     // Get the start and end index via this.state.filteredItemGroups.
-    var startIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].start : 0;
-    var endIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].end : 0;
+    let startIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].start : 0;
+    let endIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].end : 0;
 
 
-    var creature_number = Math.floor(this.props.currentSelectedIndex / 3) + 1;
-    var slot = (this.props.currentSelectedIndex + 1) % 3 === 1 ? "primary" : ((this.props.currentSelectedIndex + 1)  % 3 === 2) ? "secondary" : "artifact";
-    var slot_n = slot === "artifact" ? "n" : "";
-    var currentMonster = !_.isEmpty(this.props.currentSelectedMonster) ? getMonsterSemanticName(this.props.currentSelectedMonster) : null;
+    let creature_number = Math.floor(this.props.currentSelectedIndex / 3) + 1;
+    let slot = (this.props.currentSelectedIndex + 1) % 3 === 1 ? "primary" : ((this.props.currentSelectedIndex + 1)  % 3 === 2) ? "secondary" : "artifact";
+    let slot_n = slot === "artifact" ? "n" : "";
+    let currentMonster = !_.isEmpty(this.props.currentSelectedMonster) ? getMonsterSemanticName(this.props.currentSelectedMonster) : null;
 
     return (
         <div className="modal-content">
@@ -668,7 +674,7 @@ class NotificationBanner extends Component {
   }
 
   render() {
-    var icon = faExclamationTriangle
+    let icon = faExclamationTriangle
     if(this.props.status === "success") icon = faCheck;
 
     return (
@@ -718,10 +724,10 @@ class SiralimPlanner extends Component {
   // in other things like traits, perks etc... so we might need to develop a 
   // back-end application like Flask to be able to generate a short URL.
   generateSaveString() {
-    var monsterPlannerRows = this.state.monsterPlannerRows;
-    var saveString = "";
-    for(var i = 0; i < 18; i++) {
-      var m = monsterPlannerRows[i];
+    let monsterPlannerRows = this.state.monsterPlannerRows;
+    let saveString = "";
+    for(let i = 0; i < 18; i++) {
+      let m = monsterPlannerRows[i];
       if(!_.isEmpty(m.monster)) saveString += m.monster.uid;
       else saveString += "_";
     }
@@ -730,9 +736,9 @@ class SiralimPlanner extends Component {
 
   // Retrieve a set of the uids of every monster in the current party.
   getMonstersInParty(monsterPlannerRows) {
-    var monstersInParty = new Set();
+    let monstersInParty = new Set();
     // Update monsters in party
-    for(var m of monsterPlannerRows) {
+    for(let m of monsterPlannerRows) {
       if(m.monster.uid) monstersInParty.add(m.monster.uid);
     }
     return monstersInParty;
@@ -741,16 +747,16 @@ class SiralimPlanner extends Component {
   // Given a particular monster, update the monster at the currentRowId
   // to be set to that monster.
   updateMonsterPlannerRow(monster) {
-    var monsterPlannerRows = [...this.state.monsterPlannerRows];
-    var monstersInParty = this.state.monstersInParty;
-    for(var i in monsterPlannerRows) {
-      var m = monsterPlannerRows[i];
+    let monsterPlannerRows = [...this.state.monsterPlannerRows];
+    let monstersInParty = this.state.monstersInParty;
+    for(let i in monsterPlannerRows) {
+      let m = monsterPlannerRows[i];
       if(m.row_id === this.state.currentRowId) {
         monsterPlannerRows[i].monster = monster;        
         break;
       } 
     }
-    var monstersInParty = this.getMonstersInParty(monsterPlannerRows);
+    monstersInParty = this.getMonstersInParty(monsterPlannerRows);
     this.setState({
       monsterPlannerRows: [...monsterPlannerRows],
       monstersInParty: monstersInParty
@@ -763,15 +769,15 @@ class SiralimPlanner extends Component {
   // Given a particular row_id (a unique identifier for each row on the Planner table),
   // remove the monster/trait corresponding to that row_id from the party.
   clearMonsterPlannerRow(row_id) {
-    var monsterPlannerRows = [...this.state.monsterPlannerRows];
-    for(var i in monsterPlannerRows) {
-      var m = monsterPlannerRows[i];
+    let monsterPlannerRows = [...this.state.monsterPlannerRows];
+    for(let i in monsterPlannerRows) {
+      let m = monsterPlannerRows[i];
       if(m.row_id === row_id) {
         monsterPlannerRows[i].monster = {};
         break;
       } 
     }
-    var monstersInParty = this.getMonstersInParty(monsterPlannerRows);
+    let monstersInParty = this.getMonstersInParty(monsterPlannerRows);
     this.setState({
       monsterPlannerRows: monsterPlannerRows,
       monstersInParty: monstersInParty,
@@ -789,10 +795,10 @@ class SiralimPlanner extends Component {
 
   // Parse the loadString into a list of UIDs (or null for underscores).
   parseLoadString(str) {
-  	var uids = [];
-  	var currentUid = '';
-  	for(var i = 0; i < str.length; i++) {
-  		var c = str[i];
+  	let uids = [];
+  	let currentUid = '';
+  	for(let i = 0; i < str.length; i++) {
+  		let c = str[i];
   		if(c === "_") {
   			if(currentUid.length > 0 && currentUid.length < UID_HASH_LENGTH) throw new Error("Malformed uid");
   			uids.push(null);
@@ -822,16 +828,16 @@ class SiralimPlanner extends Component {
   // (warning, success, error, null).
   populateFromUids(uids) {
 
-    var noti, status;
-    var monsterPlannerRows = [];
+    let noti, status;
+    let monsterPlannerRows = [];
     // Start by generating an empty list of 18 rows, corresponding to each
     // trait slot.
-    for(var i = 0; i < 18; i++) {
+    for(let i = 0; i < 18; i++) {
       monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
     }
 
-    for(var i = 0; i < Math.min(18, uids.length); i++) {
-      var uid = uids[i];
+    for(let i = 0; i < Math.min(18, uids.length); i++) {
+      let uid = uids[i];
       if(uid !== null) {
         if(monsterUIDMap.hasOwnProperty(uid)) {
           monsterPlannerRows[i].monster = monsterData[monsterUIDMap[uid]];
@@ -855,17 +861,17 @@ class SiralimPlanner extends Component {
   // Every row needs a fixed id to function properly.
   componentDidMount() {
 
-    var notificationText = null;
-    var notificationStatus = null;
+    let notificationText = null;
+    let notificationStatus = null;
 
-    var monsterPlannerRows = [];
+    let monsterPlannerRows = [];
 
-    for(var i = 0; i < 18; i++) {
+    for(let i = 0; i < 18; i++) {
       monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
     }
 
-    var monsterSelectionRows = [];
-    for(var i in monsterData.slice(0, 10000)) { // Set to 10,000 (I like to change to 100 for debug) but this slice can be removed.
+    let monsterSelectionRows = [];
+    for(let i in monsterData.slice(0, 10000)) { // Set to 10,000 (I like to change to 100 for debug) but this slice can be removed.
       monsterSelectionRows.push({monster: monsterData[i]});
     }
 
@@ -873,7 +879,7 @@ class SiralimPlanner extends Component {
     const windowUrl = window.location.search;
     const params = new URLSearchParams(windowUrl);
 
-    var loadString = params.get('b');
+    let loadString = params.get('b');
     console.log(loadString);
 
     // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
@@ -881,7 +887,7 @@ class SiralimPlanner extends Component {
     if(loadString) {
       try {
      		const uids = this.parseLoadString(loadString);
-        var mpr = this.populateFromUids(uids);
+        let mpr = this.populateFromUids(uids);
         if(mpr.status !== 'success') {
           notificationText = mpr.noti;
           notificationStatus = mpr.status;
@@ -970,14 +976,14 @@ class SiralimPlanner extends Component {
   // or <not found> if that trait name is not present in the 
   // trait map.
   traitsToUids(traitsArray) {
-    var uids = [];
-    for(var t of traitsArray) {
+    let uids = [];
+    for(let t of traitsArray) {
       console.log(t);
       if(t === null) {
         uids.push(null);
         continue;
       }
-      var t_ = t.toLowerCase();
+      let t_ = t.toLowerCase();
       if(monsterTraitMap.hasOwnProperty(t_)) {
         uids.push(monsterTraitMap[t_]);
       } else {
@@ -991,16 +997,16 @@ class SiralimPlanner extends Component {
   // Call the callback function when finished - this will present an error
   // in the upload party window if necessary.
   uploadPartyFromString(str, callback) {
-    var notificationText = null;
-    var notificationStatus = null;
+    let notificationText = null;
+    let notificationStatus = null;
 
     try {
-      var traits = parsePartyString(str);
-      var uids = this.traitsToUids(traits);
-      var mpr = this.populateFromUids(uids);
+      let traits = parsePartyString(str);
+      let uids = this.traitsToUids(traits);
+      let mpr = this.populateFromUids(uids);
       if(mpr.noti) notificationText = mpr.noti;
       if(mpr.status) notificationStatus = mpr.status;
-      var monsterPlannerRows = mpr.rows;
+      let monsterPlannerRows = mpr.rows;
       this.setState({
         monsterPlannerRows: monsterPlannerRows,
         uploadBuildModalIsOpen: false,

@@ -18,7 +18,6 @@ class UploadPartyModal extends Component {
 
   async handleUploadPartyString() {
     this.props.uploadPartyFromString(this.state.partyString, function(err) {
-      console.log(err);
 
       if(err) {
         this.setState({
