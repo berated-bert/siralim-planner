@@ -936,7 +936,7 @@ class SiralimPlanner extends Component {
         		<h3>Acknowledgements and Source Code</h3>
         		<p>The data was sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>, a fantastic
         		resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool.</p>
-        		<p>The <b>source code</b> of this tool is available on <a href="https://github.com/siralim-planner/siralim-planner" target="_blank">GitHub</a>. If you would like to work on it 
+        		<p>The <b>source code</b> of this tool is available on <a href="https://github.com/berated-bert/siralim-planner" target="_blank">GitHub</a>. If you would like to work on it 
         		you are more than welcome to submit a pull request or fork the repository.</p>
         		<p>Depending on usage I may or may not keep the tool up-to-date with the latest version of the Siralim Ultimate Compendium. If it is not up-to-date at some point feel free to 
         		download the code yourself and run it locally. Better yet, feel free to update the GitHub repository with the latest spreadsheet and submit a pull request.</p>
