@@ -859,6 +859,11 @@ class SiralimPlanner extends Component {
     var notificationStatus = null;
 
     var monsterPlannerRows = [];
+
+    for(var i = 0; i < 18; i++) {
+      monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
+    }
+
     var monsterSelectionRows = [];
     for(var i in monsterData.slice(0, 10000)) { // Set to 10,000 (I like to change to 100 for debug) but this slice can be removed.
       monsterSelectionRows.push({monster: monsterData[i]});
@@ -869,22 +874,25 @@ class SiralimPlanner extends Component {
     const params = new URLSearchParams(windowUrl);
 
     var loadString = params.get('b');
+    console.log(loadString);
 
     // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
     // build string.
-    try {
-   		const uids = this.parseLoadString(loadString);
-      var mpr = this.populateFromUids(uids);
-      if(mpr.status !== 'success') {
-        notificationText = mpr.noti;
-        notificationStatus = mpr.status;
-      }
-      monsterPlannerRows = mpr.rows;
+    if(loadString) {
+      try {
+     		const uids = this.parseLoadString(loadString);
+        var mpr = this.populateFromUids(uids);
+        if(mpr.status !== 'success') {
+          notificationText = mpr.noti;
+          notificationStatus = mpr.status;
+        }
+        monsterPlannerRows = mpr.rows;
 
-   	} catch(err) {
-      // TODO: Do something else with this, maybe.
-   		console.log("Error:", err);
-   	}
+     	} catch(err) {
+        // TODO: Do something else with this, maybe.
+     		console.log("Error:", err);
+     	}
+    }
 
     this.setState({
       monsterPlannerRows: monsterPlannerRows,
