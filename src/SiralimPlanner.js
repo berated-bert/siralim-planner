@@ -1006,7 +1006,7 @@ class SiralimPlanner extends Component {
         uploadBuildModalIsOpen: false,
         notificationText: notificationText,
         notificationStatus: notificationStatus,
-      }, callback);
+      }, () => { this.generateSaveString(); callback() });
     } catch(err) {
       return callback(err);
     }
