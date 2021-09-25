@@ -1,5 +1,5 @@
-import React, {Component, PureComponent} from 'react';
-import { withRouter, BrowserRouter } from "react-router-dom";
+import React, {Component} from 'react';
+import {  BrowserRouter } from "react-router-dom";
 
 import SiralimPlanner from './SiralimPlanner';
 

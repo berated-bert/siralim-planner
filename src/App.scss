@@ -115,6 +115,10 @@ a {
 .container {
   width: 1600px;
   margin: 0 auto;
+  max-width: 100%;
+  @media(max-width: 1280px) {
+    padding: 0 20px;
+  }
 }
 
 .monster-list {
@@ -218,6 +222,14 @@ a {
       background: rgba($primary-color, 0.1) !important;
       border: 2px solid lighten($primary-color, 20);
     }
+
+    @media(max-width: 1280px) {
+      padding: 0;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      //border-bottom: 2px solid #aaa;
+      border: 2px solid #aaa;
+    }
   }
 
   &.monster-row-container-planner {
@@ -228,7 +240,7 @@ a {
       border: 2px solid rgba(0, 0, 0, 0.1);
     }
     &.cls-nature:hover:before {
-      border: 2px solid rgba($color-nature, 0.15);
+      border: 2px solid darken(rgba($color-nature, 0.15), 15);
     }
     &.cls-chaos:hover:before {
       border: 2px solid rgba($color-chaos, 0.15);
@@ -240,7 +252,7 @@ a {
       border: 2px solid rgba($color-death, 0.12);
     }
     &.cls-life:hover:before {
-      border: 2px solid rgba($color-life, 0.15);
+      border: 2px solid darken(rgba($color-life, 0.15), 35);
     }
 
     &:active:before {
@@ -292,6 +304,11 @@ a {
   padding-left: 160px; // To account for the creature number
   margin: 3px 0;
 
+  @media(max-width: 1280px) {
+    padding-left: 72px;
+  }
+
+
   .creature-sprite-container {
     width: 64px;
     height: 64px;
@@ -322,7 +339,13 @@ a {
       font-weight: bold;
 
     }
+    @media(max-width: 1280px) {
+      left: -4px;
+    }
   }
+
+
+
 
   button {
     display: block;
@@ -365,6 +388,12 @@ a {
         color: #444;
         line-height: 24px;
         pointer-events: none;
+      }
+      @media(max-width: 1280px) {
+        .monster-row-container:after {
+          left: -60px;
+          top: -60%;
+        }
       }
     
 
@@ -461,6 +490,34 @@ a {
   }
   &.detailed .monster-row-in-party {
     width: 1.5%;
+  }
+
+  @media(max-width: 1280px) {
+    flex-direction: column;
+    text-align: center;
+    //flex-wrap: wrap;
+    .cls-container {
+      display: inline-flex;
+
+    }
+
+    > * {
+      box-sizing: border-box;
+      width: 100% !important;
+      &:not(.monster-row-in-party) {
+        padding: 5px 20px;
+      }
+
+      // &.monster-row-family, &.monster-row-creature {
+      //   width: 50% !important;
+      // }
+
+
+
+      &:nth-child(even) {
+        background: rgba(0, 0, 0, 0.05);
+      }
+    }
   }
 
   .green-tick {
@@ -688,6 +745,8 @@ textarea {
   .monster-selection-pagination {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     .tab {
       background: rgba($primary-color, 0.1);
       display: flex;
@@ -841,3 +900,23 @@ button {
   }
 
 }
+
+
+
+.ib {
+  display: inline-block;
+}
+
+.mobile-only {
+  display: none;
+  @media(max-width: 1280px) {
+    display: block;
+  }
+}
+.mobile-hidden {
+  display: block;
+  @media(max-width: 1280px) {
+    display: none;
+  }
+}
+

@@ -72,7 +72,7 @@ function parsePartyString(text) {
   }
 
   var atLeastOne;
-  for(var i = 0; i < traitsArray.length; i++) {
+  for(let i = 0; i < traitsArray.length; i++) {
     if(traitsArray[i]) atLeastOne = true;
   }
   if(!atLeastOne) throw new Error("The party string does not appear to contain any traits.")

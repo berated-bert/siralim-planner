@@ -1,13 +1,11 @@
 import React, {Component, PureComponent} from 'react';
 import Modal from 'react-modal';
-import { withRouter, BrowserRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import _ from 'underscore';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { faSave } from '@fortawesome/free-solid-svg-icons'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
 import icon_nature  from './icons/nature.png'
@@ -66,7 +64,7 @@ Modal.setAppElement("#root");
 class MonsterRowHeader extends PureComponent {
   render() {
     return (
-      <div className={"monster-row monster-row-header" + (this.props.renderFullRow ? " detailed" : "")}>
+      <div className={"monster-row monster-row-header " + (this.props.renderFullRow ? " detailed" : "")}>
         { this.props.renderFullRow && 
           <div className="monster-row-in-party">
             
@@ -102,7 +100,7 @@ function MonsterClassIcon(props) {
   if(pi === "life") icon = icon_life;
 
   return (
-    <span className="cls-icon">{icon && <img src={icon} className="class-icon"/>}</span>
+    <span className="cls-icon">{icon && <img src={icon} className="class-icon" alt={"class-" + pi}/>}</span>
   )
 }
 
@@ -112,10 +110,6 @@ function MonsterClassIcon(props) {
 // If props.renderFullRow is true, it will render a full row (as per the Monster Selection page),
 // otherwise it renders a short row (as per the Monster Planner window).
 class MonsterRow extends Component {
-
-  constructor(props) {
-    super(props);
-  }
 
   // A function for rendering a particular class (cls). 
   // It will render an icon if the class is one of the 5 classes in the game,
@@ -145,11 +139,20 @@ class MonsterRow extends Component {
           </div>
         }
 
-        <div className="monster-row-class">{this.renderClass(this.props.class, this.props.renderFullRow)}</div>
-        <div className="monster-row-family">{this.props.family}</div>
-        <div className="monster-row-creature">{this.props.creature}</div>
-        <div className="monster-row-trait_name">{this.props.trait_name}        </div>
-        <div className={"monster-row-trait_description"}>{this.props.trait_description}        </div>
+        <div className="monster-row-class">
+          <span className="mobile-only ib"><b>Class:&nbsp;&nbsp;</b></span>{this.renderClass(this.props.class, this.props.renderFullRow)}
+        </div>
+        <div className="monster-row-family">
+          <span className="mobile-only ib"><b>Family:&nbsp;</b></span>{this.props.family}
+        </div>
+        <div className="monster-row-creature">
+          <span className="mobile-only ib"><b>Creature:&nbsp;</b></span>{this.props.creature}
+        </div>
+        <div className="monster-row-trait_name">
+          <span className="mobile-only ib"><b>Trait name:&nbsp;</b></span>{this.props.trait_name}
+        </div>
+        <div className={"monster-row-trait_description"}>
+          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{this.props.trait_description}        </div>
         { this.props.renderFullRow && 
           <div className="monster-row-material_name">
             {this.props.material_name}
@@ -359,7 +362,7 @@ class MonsterPlanner extends Component {
       }
     }
 
-    if (fromIndex != -1 && toIndex != -1) {
+    if (fromIndex !== -1 && toIndex !== -1) {
       let { fromId, ...fromRest } = items[fromIndex];
       let { toId, ...toRest } = items[toIndex];
       items[fromIndex] = { id: fromItem.id, ...toRest };
@@ -497,13 +500,10 @@ class MonsterSelectionModal extends Component {
     if(monstersInCurrentGroup.length > 0) {
       let i = items.length - 1;
       let item = items[i];
-      let m = item.monster;
-      let f = getPageFamily(m)
 
       currentGroup.end = i + 1;
       currentGroup.familyEnd = getPageFamily(monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]);
 
-      console.log(currentGroup);
       itemGroups.push(currentGroup);
     }
 
@@ -612,7 +612,7 @@ class MonsterSelectionModal extends Component {
                       <div role="button" onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
                   )}
                 </div>
-                <div className="monster-row-container monster-row-container-selection monster-row-container-header">
+                <div className="mobile-hidden monster-row-container monster-row-container-selection monster-row-container-header">
                   <MonsterRowHeader renderFullRow={true} /> 
                 </div> 
               </div>
@@ -656,6 +656,8 @@ class NotificationBanner extends Component {
   componentDidUpdate(prevProps, prevState) {
     if(_.isEqual(prevProps, this.props) && prevState.hidden === false) return;
     if(this.props.status === null) return; // Ignore first successful load, which is null.
+    if(prevProps.notificationIndex === this.props.notificationIndex) return;
+
     this.setState({
       hidden: false,
     }, () => {
@@ -674,7 +676,7 @@ class NotificationBanner extends Component {
   }
 
   render() {
-    let icon = faExclamationTriangle
+    let icon = faExclamationTriangle;
     if(this.props.status === "success") icon = faCheck;
 
     return (
@@ -713,6 +715,8 @@ class SiralimPlanner extends Component {
 
       notificationText: null, // Text to display in the notification banner at the top.
       notificationStatus: null,       // The status of the notification, e.g. 'success', 'warning', 'error'.
+      notificationIndex: 0, // Keep track of the index of each notification, to avoid weird bugs with the
+                            // banner refreshing for no reason when this component updates.
     }    
   }
 
@@ -880,7 +884,6 @@ class SiralimPlanner extends Component {
     const params = new URLSearchParams(windowUrl);
 
     let loadString = params.get('b');
-    console.log(loadString);
 
     // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
     // build string.
@@ -905,6 +908,7 @@ class SiralimPlanner extends Component {
       monsterSelectionRows: monsterSelectionRows,
       notificationText: notificationText,
       notificationStatus: notificationStatus,
+      notificationIndex: this.state.notificationIndex + 1,
     });
   }
 
@@ -1012,6 +1016,7 @@ class SiralimPlanner extends Component {
         uploadBuildModalIsOpen: false,
         notificationText: notificationText,
         notificationStatus: notificationStatus,
+        notificationIndex: this.state.notificationIndex + 1,
       }, () => { this.generateSaveString(); callback() });
     } catch(err) {
       return callback(err);
@@ -1024,7 +1029,7 @@ class SiralimPlanner extends Component {
     return (
       <div className="App" id="app">
         <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
-        <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus}/>
+        <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
 
         <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
         <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
