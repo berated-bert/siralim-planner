@@ -18,7 +18,6 @@ class UploadPartyModal extends Component {
 
   async handleUploadPartyString() {
     this.props.uploadPartyFromString(this.state.partyString, function(err) {
-
       if(err) {
         this.setState({
           error: err.message,
@@ -34,6 +33,7 @@ class UploadPartyModal extends Component {
 
   handleInputChange(e) {
     this.setState({
+      error: null,
       partyString: e.target.value,
     });
   }
