@@ -18,8 +18,14 @@ html, body {
 * {
   box-sizing: border-box;
 }
-input, button {
+input, button, textarea {
   font-family: 'Roboto', sans-serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 30px 0;
 }
 
 header {
@@ -62,9 +68,9 @@ header {
       flex-direction: row;
       p {
         font-size: 14px;
+        margin-right: 20px;
       }
       button {
-        margin-left: 20px;
         background: none;
         &:hover {
           background: rgba(255, 255, 255, 0.15);
@@ -102,7 +108,7 @@ a {
 }
 
 .container {
-  width: 1440px;
+  width: 1600px;
   margin: 0 auto;
 }
 
@@ -306,6 +312,9 @@ a {
     }
     &.empty:before {
       content: "?";
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: bold;
 
     }
   }
@@ -587,8 +596,18 @@ a {
   padding-bottom: 20px;
 
   flex-direction: column;
-
 }
+
+
+.modal-sm {
+  height: auto;
+  padding-bottom: 15px;
+}
+
+textarea {
+  width: 100%;
+}
+
 
 .info-modal {
   line-height: 140%;
@@ -730,8 +749,14 @@ a {
 }
 
 
+#upload-build-textarea {
+  height: 300px;
+}
+#upload-build-button {
+  margin-top: 15px;
+}
 
-input, button {
+input, button, textarea {
 
   border: 2px solid #ddd;
   border-radius: 4px;
@@ -767,6 +792,10 @@ button {
     &:hover {
       background: lighten($primary-color, 16);
     }
+  }
+
+  &.button-lg {
+    padding: 16px 32px;
   }
 
 }

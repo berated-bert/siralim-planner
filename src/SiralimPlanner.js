@@ -8,14 +8,20 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faSave } from '@fortawesome/free-solid-svg-icons'
-import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 
-import icon_nature  from './icons/nature.png';
-import icon_chaos   from './icons/chaos.png';
-import icon_sorcery from './icons/sorcery.png';
-import icon_death   from './icons/death.png';
-import icon_life    from './icons/life.png';
+import icon_nature  from './icons/nature.png'
+import icon_chaos   from './icons/chaos.png'
+import icon_sorcery from './icons/sorcery.png'
+import icon_death   from './icons/death.png'
+import icon_life    from './icons/life.png'
+
+
+import InfoModal from './components/InfoModal'
+import UploadBuildModal from './components/UploadBuildModal'
+
+import AppHeader from './components/AppHeader'
+import AppFooter from './components/AppFooter'
 
 import './App.scss';
 
@@ -671,37 +677,44 @@ class MonsterSelectionModal extends Component {
   }
 }
 
+
+
+
 class SiralimPlanner extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
-      monsterPlannerRows: [],
-      monsterSelectionRows: [],
-      currentRowId: null,
-      currentSlotId: null,
-      currentSelectedMonster: null,      
+      monsterPlannerRows: [],        // A list of the 18 monsters in the party planner interface.
+      monsterSelectionRows: [],      // A list of 'monster selection rows', i.e. the dataset of all
+                                     // monsters from data.json.
+      currentRowId: null,            // The current row id, i.e. the row_id of the slot the user
+                                     // user most recently clicked on in the party planning interface.
+                                     // row_ids are unique (so if you move row_id=0 to slot 3, it will)
+                                     // still be row_id=0 even though it is in slot 3 - this is necessary
+                                     // to get the drag and drop functionality to work.
+      currentSlotId: null,           // The current slot id, i.e. the slot the user most recently
+                                     // clicked on in the party planning interface.
+                                     // slot id = 0 means the first row in the table.
+      currentSelectedMonster: null,  // A JSON obj corresponding to the monster that is currently
+                                     // selected, i.e. the one the user most recently clicked in
+                                     // the party planning interface.
       monstersInParty: new Set(), // An set of uids of the monsters/trait in the user's party
-      messageText: null,
-      //saveString: null,
       monsterMap: {}, // A map of uid: row_index
-      modelIsOpen: false,
-      infoModalIsOpen: false,
+      modalIsOpen: false,             // Whether the monster selection modal is open.
+      infoModalIsOpen: false,         // Whether the information modal is open.
+      uploadBuildModalIsOpen: false,  // Whether the upload build modal is open.
     }    
   }
 
-  // componentDidUpdate(prevProps, prevState) {
 
-  // 	console.log(prevState.monsterPlannerRows[0] ? prevState.monsterPlannerRows[0].monster : "undef", this.state.monsterPlannerRows[0] ? this.state.monsterPlannerRows[0].monster : "undef")
-
-  // 	if(!_.isEqual(prevState.monsterPlannerRows, this.state.monsterPlannerRows)) {
-  // 		var saveString = this.generateSaveString();
-  // 		this.props.history.push(saveString)
-  // 	}
-  // }
-
+  // Generate a 'save string', which is a unique identifier of the entire party.
+  // This is done by taking the uid of each monster (underscore if no monster)
+  // across each of the 18 slots.
+  // Note that the string is quite long, and will be even longer if we later add
+  // in other things like traits, perks etc... so we might need to develop a 
+  // back-end application like Flask to be able to generate a short URL.
   generateSaveString() {
-  	console.log("Hi")
     var monsterPlannerRows = this.state.monsterPlannerRows;
     var saveString = "";
     for(var i = 0; i < 18; i++) {
@@ -709,17 +722,10 @@ class SiralimPlanner extends Component {
       if(!_.isEmpty(m.monster)) saveString += m.monster.uid;
       else saveString += "_";
     }
-    //prompt("Link to this build: ", "siralim-planner.github.io?build=" + saveString)
-
-
     this.props.history.push('?b=' + saveString);
-    
-
-    // this.setState({
-    //   saveString: saveString
-    // })
   }
 
+  // Retrieve a set of the uids of every monster in the current party.
   getMonstersInParty(monsterPlannerRows) {
     var monstersInParty = new Set();
     // Update monsters in party
@@ -729,6 +735,8 @@ class SiralimPlanner extends Component {
     return monstersInParty;
   }
 
+  // Given a particular monster, update the monster at the currentRowId
+  // to be set to that monster.
   updateMonsterPlannerRow(monster) {
     var monsterPlannerRows = [...this.state.monsterPlannerRows];
     var monstersInParty = this.state.monstersInParty;
@@ -740,9 +748,6 @@ class SiralimPlanner extends Component {
       } 
     }
     var monstersInParty = this.getMonstersInParty(monsterPlannerRows);
-
-     console.log([...monsterPlannerRows][0], "< 1")
-
     this.setState({
       monsterPlannerRows: [...monsterPlannerRows],
       monstersInParty: monstersInParty
@@ -753,8 +758,9 @@ class SiralimPlanner extends Component {
 	})
   }
 
+  // Given a particular row_id (a unique identifier for each row on the Planner table),
+  // remove the monster/trait corresponding to that row_id from the party.
   clearMonsterPlannerRow(row_id) {
-
     var monsterPlannerRows = [...this.state.monsterPlannerRows];
     for(var i in monsterPlannerRows) {
       var m = monsterPlannerRows[i];
@@ -764,20 +770,22 @@ class SiralimPlanner extends Component {
       } 
     }
     var monstersInParty = this.getMonstersInParty(monsterPlannerRows);
-
     this.setState({
       monsterPlannerRows: monsterPlannerRows,
       monstersInParty: monstersInParty,
     }, this.generateSaveString)
   }
 
+  // Update the 18 monster planner rows to newRows and generate an updated
+  // saveString.
   updateMonsterPlannerRows(newRows) {
     this.setState({
       monsterPlannerRows: newRows,
     }, this.generateSaveString);
   }
 
-
+  // Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
+  // of that UID in monsterSelectionRows.
   buildMonsterMap(monsterSelectionRows) {
     var monsterMap = {}
     for(var i in monsterSelectionRows) {
@@ -804,6 +812,7 @@ class SiralimPlanner extends Component {
   		}
   	}
 
+    // Throw errors if the string is not valid (i.e. too short or too long).
   	if(uids.length > 18) throw new Error("Too many uids");
   	if(uids.length < 18) throw new Error("Not enough uids");
 
@@ -834,8 +843,9 @@ class SiralimPlanner extends Component {
     const params = new URLSearchParams(windowUrl);
 
     var loadString = params.get('b');
-    console.log(loadString)
 
+    // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
+    // build string.
     try {
    		var uids = this.parseLoadString(loadString);
    		console.log(uids)
@@ -846,12 +856,10 @@ class SiralimPlanner extends Component {
    				else monsterPlannerRows[i].error = "Monster/trait does not exist or has changed"
    			}
    		}
-
-
    	} catch(err) {
-   		console.log(err);
+      // TODO: Do something else with this, maybe.
+   		console.log("Error:", err);
    	}
-
 
     this.setState({
       monsterPlannerRows: monsterPlannerRows,
@@ -860,20 +868,41 @@ class SiralimPlanner extends Component {
     });
   }
 
+  // Open the build modal by setting the state accordingly.
+  openUploadBuildModal() {
+    this.setState({
+      uploadBuildModalIsOpen: true,
+    })
+  }
+
+  // Close the build modal by setting the state accordingly.
+  closeUploadBuildModal() {
+    this.setState({
+      uploadBuildModalIsOpen: false,
+    })
+  }
+
+  // Open the info modal by setting the state accordingly.
   openInfoModal() {
   	this.setState({
   		infoModalIsOpen: true,
   	})
   }
 
+  // Close the info modal by setting the state accordingly.
   closeInfoModal() {
   	this.setState({
   		infoModalIsOpen: false,
   	})
   }
 
-  openModal(row_id, slot_id, monster) {
-
+  // Open the monster selection modal.
+  // Set row_id and slot_id to the row_id and slot_id of the trait slot
+  // that the user clicked on, respectively.
+  // Set monster to equal the monster the user just clicked on
+  // (this is necessary to highlight the currently selected monster
+  // in the monster selection screen).
+   openModal(row_id, slot_id, monster) {
     console.log(row_id)
     this.setState({
       modalIsOpen: true,
@@ -881,11 +910,14 @@ class SiralimPlanner extends Component {
       currentSlotId: slot_id,
       currentSelectedMonster: monster || null,
     }, () => {
+      // Once open, prevent scrolling of the main page while the modal is open.
       document.body.style['overflow-y'] = "hidden";
       document.getElementById('monster-search').focus();
     })
   }
 
+  // Close the monster selection modal.
+  // Enable scrolling of the main page again after it closes.
   closeModal() {
     this.setState({
       modalIsOpen: false,
@@ -897,65 +929,23 @@ class SiralimPlanner extends Component {
     })
   }
 
-
   render() {
     return (
       <div className="App" id="app">
-        <header className="app-header">
-          <div className="container">
-          <div className="app-header-left">
-            <h3>Siralim Planner</h3>
-          </div>
-          <div className="app-header-right">
-          	<p><a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Compendium</a> {compendium_version}</p>
-            <button id="close-info-modal" role="button" className="lighter" onClick={() => this.openInfoModal()}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
-          </div>
-          </div>
-        </header>
+        <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
 
-        <Modal className="modal-content modal-content-info" overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.state.infoModalIsOpen}>
-        	<div className="modal-header">
-          	<button id="close-monster-selection-modal" role="button" className="modal-close" onClick={() => this.closeInfoModal()}><FontAwesomeIcon icon={faTimes} /></button>
-          </div>
-        	<div className="info-modal">
-        		<h2>Siralim Planner by Berated Bert</h2>
-        		<p>This is a fan-made tool designed to simplify the process of planning builds for <a href="https://store.steampowered.com/app/1289810/Siralim_Ultimate/" target="_blank">Siralim Ultimate</a>. As a longtime fan of the series I always wished there was an easy way to theorycraft Siralim builds - so I came up with 
-        		this tool. The three main features of this tool are outlined below.</p>
-        		<h3>Party Planner</h3>
-        		<p>The Party Planner allows you to put together a list of 18 traits for your Siralim Ultimate party. It is comprised of 18 rows, which
-        		are separated into 6 groups of 3 - these correspond to your party members, and their 3 traits (2 creature traits, and 1 artifact slot).</p>
-        		<p>To start planning your party, click on one of the 18 rows. This brings up the Trait Selection Window, described below.</p>
-        		<p>You can <b>drag and drop</b> traits between rows to swap them - this enables you to easily swap traits between creatures/slots.</p>
-        		<p>The tool also supports some basic <b>validation</b>: if you put a trait from a monster that cannot be obtained (i.e. a Nether Boss) into
-        		a creature slot, the row will be highlighted with red stripes to let you know that such an assignment is not possible.</p>
-        		<h3>Trait Selection Window</h3>
-        		<p>In the trait selection window, you can <b>search</b> for a particular keyword, e.g. if you want to find all creatures 
-        		that interact with buffs in some way you can type "buff" and the results will be filtered accordingly.</p>
-        		<h3>Sharing builds</h3>
-        		<p>Builds can be easily shared - simply copy the URL and send it to someone and they will be able to load your build.</p>
-        		<h3>Acknowledgements and Source Code</h3>
-        		<p>The data was sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>, a fantastic
-        		resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool. I would also like to thank rogermicroger for their excellent <a href="https://github.com/rovermicrover/siralim-ultimate-api" target="_blank">Siralim Ultimate API</a>, from which the creature sprites are obtained.</p>
-        		<p>The <b>source code</b> of this tool is available on <a href="https://github.com/berated-bert/siralim-planner" target="_blank">GitHub</a>. If you would like to work on it 
-        		you are more than welcome to submit a pull request or fork the repository.</p>
-        		<p>Depending on usage I may or may not keep the tool up-to-date with the latest version of the Siralim Ultimate Compendium. If it is not up-to-date at some point feel free to 
-        		download the code yourself and run it locally. Better yet, feel free to update the GitHub repository with the latest spreadsheet and submit a pull request.</p>
-        		<p>If you encounter any problems or have any feedback please feel free to message me on Discord - <b>BeratedBert#6292</b>, or submit an issue on the GitHub repo.</p>
-
-        	</div>
-        </Modal> 
+        <UploadBuildModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)}/>
+        <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
 
         <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>
-        <MonsterSelectionModal 
-          monsterRows={this.state.monsterSelectionRows}
-          monstersInParty={this.state.monstersInParty}
-          closeModal={this.closeModal.bind(this)}
-          updateMonsterPlannerRow={this.updateMonsterPlannerRow.bind(this)} 
-          currentSelectedMonster={this.state.currentSelectedMonster} 
-          currentSelectedIndex = {this.state.currentSlotId} />
+          <MonsterSelectionModal 
+            monsterRows={this.state.monsterSelectionRows}
+            monstersInParty={this.state.monstersInParty}
+            closeModal={this.closeModal.bind(this)}
+            updateMonsterPlannerRow={this.updateMonsterPlannerRow.bind(this)} 
+            currentSelectedMonster={this.state.currentSelectedMonster} 
+            currentSelectedIndex = {this.state.currentSlotId} />
         </div>
-
-
 
         <main>
           <div className="container">
@@ -966,12 +956,7 @@ class SiralimPlanner extends Component {
               clearMonsterPlannerRow={this.clearMonsterPlannerRow.bind(this)} />
           </div>
         </main>
-        <footer>
-          <div className="container">
-            <p>2021 Created by BeratedBert. This site is not affiliated with Thylacine Studios.</p>
-            <p>Data sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>. Creature sprites sourced from the <a href="https://github.com/rovermicrover/siralim-ultimate-api" target="_blank">Siralim Ultimate API</a>.</p>
-          </div>
-        </footer>
+        <AppFooter/>
       </div>
     );
   }
