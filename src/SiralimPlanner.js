@@ -632,7 +632,7 @@ class MonsterSelectionModal extends Component {
                <div className="monster-selection-pagination">
 
                   {this.state.filteredItemGroups.map((itemGroup, i) =>
-                      <div onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
+                      <div role="button" onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
                   )}
                 </div>
 
@@ -935,7 +935,7 @@ class SiralimPlanner extends Component {
         		<p>Builds can be easily shared - simply copy the URL and send it to someone and they will be able to load your build.</p>
         		<h3>Acknowledgements and Source Code</h3>
         		<p>The data was sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>, a fantastic
-        		resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool.</p>
+        		resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool. I would also like to thank rogermicroger for their excellent <a href="https://github.com/rovermicrover/siralim-ultimate-api" target="_blank">Siralim Ultimate API</a>, from which the creature sprites are obtained.</p>
         		<p>The <b>source code</b> of this tool is available on <a href="https://github.com/berated-bert/siralim-planner" target="_blank">GitHub</a>. If you would like to work on it 
         		you are more than welcome to submit a pull request or fork the repository.</p>
         		<p>Depending on usage I may or may not keep the tool up-to-date with the latest version of the Siralim Ultimate Compendium. If it is not up-to-date at some point feel free to 
@@ -969,7 +969,7 @@ class SiralimPlanner extends Component {
         <footer>
           <div className="container">
             <p>2021 Created by BeratedBert. This site is not affiliated with Thylacine Studios.</p>
-            <p>Data sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>.</p>
+            <p>Data sourced from the <a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Siralim Ultimate Compendium</a>. Creature sprites sourced from the <a href="https://github.com/rovermicrover/siralim-ultimate-api" target="_blank">Siralim Ultimate API</a>.</p>
           </div>
         </footer>
       </div>
