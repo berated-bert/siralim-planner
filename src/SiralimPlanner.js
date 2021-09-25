@@ -500,11 +500,11 @@ class MonsterSelectionModal extends Component {
       let m = item.monster;
       let f = getPageFamily(m)
 
-      currentGroup.end = i;
+      currentGroup.end = i + 1;
       currentGroup.familyEnd = getPageFamily(monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]);
+
+      console.log(currentGroup);
       itemGroups.push(currentGroup);
-      currentGroup = {"start": items.length - 1, "end": null, "familyStart": f, "familyEnd": null}
-      monstersInCurrentGroup = [];
     }
 
     return itemGroups;
