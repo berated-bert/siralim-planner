@@ -1,17 +1,24 @@
 import React, {PureComponent} from 'react';
 
+import ReactMarkdown from 'react-markdown';
+
+import md from './markdown/ChangeLog.md';
+
 class ChangeLog extends PureComponent {
+
+  constructor() {
+    super();
+    this.state = { markdown: '' };
+  }
+
+  componentWillMount() {
+    fetch(md).then(res => res.text()).then(text => this.setState({ markdown: text }));
+  }
+
   render() {
     return (
       <section>
-        <h2>Changelog</h2>
-        <h3>25 September 2021</h3>
-        <ul>
-          <li>Added creature sprites, sourced from the Siralim Ultimate API.</li>
-        </ul>
-
-        <h3>24 September 2021</h3>
-        <p>Released.</p>
+        <ReactMarkdown>{this.state.markdown}</ReactMarkdown>
       </section>
     )
   }

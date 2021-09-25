@@ -16,22 +16,51 @@ import icon_sorcery from './icons/sorcery.png'
 import icon_death   from './icons/death.png'
 import icon_life    from './icons/life.png'
 
-
 import InfoModal from './components/InfoModal'
-import UploadBuildModal from './components/UploadBuildModal'
+import UploadPartyModal from './components/UploadPartyModal'
 
 import AppHeader from './components/AppHeader'
 import AppFooter from './components/AppFooter'
+
+import parsePartyString from './functions/parsePartyString';
 
 import './App.scss';
 
 const UID_HASH_LENGTH = 6;
 const MONSTERS_PER_PAGE = 120;
 
-let monsterData = require('./data/data');
+const monsterData = require('./data/data');
+
+// Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
+// of that UID in monsterSelectionRows.
+function buildUIDMap() {
+  var monsterMap = {}
+  for(var i in monsterData) {
+    monsterMap[monsterData[i].uid] = parseInt(i);
+  }
+  return monsterMap;
+}
+
+// Construct a map (i.e. a JSON dictionary) that maps lowercased trait_names to
+// the UIDs in the database. This is necessary to import party strings.
+function buildTraitMap() {
+  var traitMap = {}
+  for(var i in monsterData) {
+    traitMap[monsterData[i].trait_name.toLowerCase()] = monsterData[i].uid;
+  }
+  return traitMap;
+}
+
+const monsterUIDMap = buildUIDMap();
+const monsterTraitMap = buildTraitMap();
+
+
+
+
+
 let compendium_version = require('./data/compendium_version');
 
-
+Modal.setAppElement("#root");
 
 // The header of the monster table (on the monster selection window).
 class MonsterRowHeader extends PureComponent {
@@ -156,7 +185,7 @@ class MonsterPlannerRow extends Component {
     this.setState({
       justUpdated: true
     }, () => {
-      window.clearTimeout(this.justUpdatedTimeout)
+      window.clearTimeout(this.justUpdatedTimeout);
       this.justUpdatedTimeout = window.setTimeout( () => this.clearJustUpdated(), 1000);
     })
   }
@@ -215,7 +244,7 @@ class MonsterPlannerRow extends Component {
       {this.props.inPrimarySlot && 
         <div className={"creature-sprite-container" + (this.props.monster.sprite_filename ? "" : " empty")}>
           { this.props.monster.sprite_filename &&
-            <div className="creature-sprite" style={{"background-image": "url(/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
+            <div className="creature-sprite" style={{"backgroundImage": "url(/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
           }
         </div>
       }
@@ -535,7 +564,7 @@ class MonsterSelectionModal extends Component {
     }
                 
     return (
-    <span>Displaying {r}{f}.</span>
+      <span>Displaying {r}{f}.</span>
     )
   }
 
@@ -604,7 +633,52 @@ class MonsterSelectionModal extends Component {
   }
 }
 
+// A notification banner that displays information at the top.
+class NotificationBanner extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      hidden: true,
+    };
+    this.fadeOutTimeout = null;
+  }
+
+  // When this component updates such that the prevProps are different
+  // and this notification banner was not already showing, set hidden=false
+  // (so the banner appears) and set a timeout for 6s for it to hide again.
+  componentDidUpdate(prevProps, prevState) {
+    if(_.isEqual(prevProps, this.props) && prevState.hidden === false) return;
+    if(this.props.status === null) return; // Ignore first successful load, which is null.
+    this.setState({
+      hidden: false,
+    }, () => {
+      window.clearTimeout(this.fadeOutTimeout);
+      this.fadeOutTimeout = window.setTimeout( () => this.setHidden(), 6000);
+    });    
+  }
+
+  // Hide the notification banner (this sets the opacity to 0 via CSS so 
+  // that way nothing gets moved around awkwardly)
+  setHidden() {
+    console.log("hidden")
+    this.setState({
+      hidden: true,
+    })
+  }
+
+  render() {
+    var icon = faExclamationTriangle
+    if(this.props.status === "success") icon = faCheck;
+
+    return (
+    <div className={"notification-banner notification-" + this.props.status + (this.state.hidden ? " hidden" : "")}>
+        <FontAwesomeIcon icon={icon}/>&nbsp;&nbsp;{this.props.text}
+    </div>
+    )
+
+  }
+}
 
 // The main class.
 class SiralimPlanner extends Component {
@@ -627,10 +701,12 @@ class SiralimPlanner extends Component {
                                      // selected, i.e. the one the user most recently clicked in
                                      // the party planning interface.
       monstersInParty: new Set(), // An set of uids of the monsters/trait in the user's party
-      monsterMap: {}, // A map of uid: row_index
       modalIsOpen: false,             // Whether the monster selection modal is open.
       infoModalIsOpen: false,         // Whether the information modal is open.
       uploadBuildModalIsOpen: false,  // Whether the upload build modal is open.
+
+      notificationText: null, // Text to display in the notification banner at the top.
+      notificationStatus: null,       // The status of the notification, e.g. 'success', 'warning', 'error'.
     }    
   }
 
@@ -679,7 +755,6 @@ class SiralimPlanner extends Component {
       monsterPlannerRows: [...monsterPlannerRows],
       monstersInParty: monstersInParty
     }, () => { 
-    	console.log("done")
     	this.closeModal(); 
   		this.generateSaveString();
 	})
@@ -711,15 +786,6 @@ class SiralimPlanner extends Component {
     }, this.generateSaveString);
   }
 
-  // Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
-  // of that UID in monsterSelectionRows.
-  buildMonsterMap(monsterSelectionRows) {
-    var monsterMap = {}
-    for(var i in monsterSelectionRows) {
-      monsterMap[monsterSelectionRows[i].monster.uid] = parseInt(i);
-    }
-    return monsterMap;
-  }
 
   // Parse the loadString into a list of UIDs (or null for underscores).
   parseLoadString(str) {
@@ -738,7 +804,6 @@ class SiralimPlanner extends Component {
   			}
   		}
   	}
-
     // Throw errors if the string is not valid (i.e. too short or too long).
   	if(uids.length > 18) throw new Error("Too many uids");
   	if(uids.length < 18) throw new Error("Not enough uids");
@@ -746,24 +811,58 @@ class SiralimPlanner extends Component {
   	return uids;
   }
 
+  // Given a list of uids, construct a new array of monsterPlannerRows
+  // where each item is the monster that corresponds to that particular
+  // uid. This is used to read in the buildString (from the URL) and
+  // from the in-game export of data to the clipboard.
+  //
+  // Returns a json object with the 18 rows, any notification message that pops up
+  // (right now just that the build could not be parsed or that it was parsed
+  // successfully), and a status code
+  // (warning, success, error, null).
+  populateFromUids(uids) {
+
+    var noti, status;
+    var monsterPlannerRows = [];
+    // Start by generating an empty list of 18 rows, corresponding to each
+    // trait slot.
+    for(var i = 0; i < 18; i++) {
+      monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
+    }
+
+    for(var i = 0; i < Math.min(17, uids.length); i++) {
+      var uid = uids[i];
+      if(uid !== null) {
+        if(monsterUIDMap.hasOwnProperty(uid)) {
+          monsterPlannerRows[i].monster = monsterData[monsterUIDMap[uid]];
+        } else {
+          monsterPlannerRows[i].error = "Monster/trait does not exist or has changed";
+          noti = "Your build could not be fully parsed as at least one monster trait was not found in the database.";
+          status = "warning";
+        }
+      }
+    }
+    if(!noti) {
+      noti = "Your build was parsed successfully.";
+      status = "success";
+    }
+    return {rows: monsterPlannerRows, noti: noti, status: status};
+  }
+
   // On component mount, transform monsterData into a new array, i.e.
   // { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
   // This is necessary to get the drag and drop functionality to work.
   // Every row needs a fixed id to function properly.
   componentDidMount() {
-    var monsterPlannerRows = [];
-    for(var i = 0; i < 18; i++) {
-      monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
-    }
 
+    var notificationText = null;
+    var notificationStatus = null;
+
+    var monsterPlannerRows = [];
     var monsterSelectionRows = [];
-    for(var i in monsterData.slice(0, 10330)) {
+    for(var i in monsterData.slice(0, 10000)) { // Set to 10,000 (I like to change to 100 for debug) but this slice can be removed.
       monsterSelectionRows.push({monster: monsterData[i]});
     }
-
-    var monsterMap = this.buildMonsterMap(monsterSelectionRows);
-    console.log(monsterMap, "< monster map")
-
 
     // Get string from param if there is any
     const windowUrl = window.location.search;
@@ -774,15 +873,14 @@ class SiralimPlanner extends Component {
     // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
     // build string.
     try {
-   		var uids = this.parseLoadString(loadString);
-   		console.log(uids)
-   		for(var i = 0; i < uids.length; i++) {
-   			var uid = uids[i];
-   			if(uid !== null) {
-   				if(monsterMap.hasOwnProperty(uid)) monsterPlannerRows[i].monster = monsterData[monsterMap[uid]];
-   				else monsterPlannerRows[i].error = "Monster/trait does not exist or has changed"
-   			}
-   		}
+   		const uids = this.parseLoadString(loadString);
+      var mpr = this.populateFromUids(uids);
+      if(mpr.status !== 'success') {
+        notificationText = mpr.noti;
+        notificationStatus = mpr.status;
+      }
+      monsterPlannerRows = mpr.rows;
+
    	} catch(err) {
       // TODO: Do something else with this, maybe.
    		console.log("Error:", err);
@@ -791,7 +889,8 @@ class SiralimPlanner extends Component {
     this.setState({
       monsterPlannerRows: monsterPlannerRows,
       monsterSelectionRows: monsterSelectionRows,
-      monsterMap: monsterMap,
+      notificationText: notificationText,
+      notificationStatus: notificationStatus,
     });
   }
 
@@ -829,7 +928,7 @@ class SiralimPlanner extends Component {
   // Set monster to equal the monster the user just clicked on
   // (this is necessary to highlight the currently selected monster
   // in the monster selection screen).
-   openModal(row_id, slot_id, monster) {
+  openModal(row_id, slot_id, monster) {
     console.log(row_id)
     this.setState({
       modalIsOpen: true,
@@ -856,12 +955,64 @@ class SiralimPlanner extends Component {
     })
   }
 
+
+  // Given an array of trait names, return an array
+  // consisting of the uids of those particular trait names,
+  // null if there was no trait in that slot, 
+  // or <not found> if that trait name is not present in the 
+  // trait map.
+  traitsToUids(traitsArray) {
+    var uids = [];
+    for(var t of traitsArray) {
+      console.log(t);
+      if(t === null) {
+        uids.push(null);
+        continue;
+      }
+      var t_ = t.toLowerCase();
+      if(monsterTraitMap.hasOwnProperty(t_)) {
+        uids.push(monsterTraitMap[t_]);
+      } else {
+        uids.push("<not found>");
+      }
+    }
+    return uids;
+  }
+
+  // Given a party string (from SU), build a party from that string.
+  // Call the callback function when finished - this will present an error
+  // in the upload party window if necessary.
+  uploadPartyFromString(str, callback) {
+    var notificationText = null;
+    var notificationStatus = null;
+
+    try {
+      var traits = parsePartyString(str);
+      var uids = this.traitsToUids(traits);
+      var mpr = this.populateFromUids(uids);
+      if(mpr.noti) notificationText = mpr.noti;
+      if(mpr.status) notificationStatus = mpr.status;
+      var monsterPlannerRows = mpr.rows;
+      this.setState({
+        monsterPlannerRows: monsterPlannerRows,
+        uploadBuildModalIsOpen: false,
+        notificationText: notificationText,
+        notificationStatus: notificationStatus,
+      }, callback);
+    } catch(err) {
+      return callback(err);
+    }
+
+    // TODO: Take the traits and put them into the table etc.
+  }
+
   render() {
     return (
       <div className="App" id="app">
         <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
+        <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus}/>
 
-        <UploadBuildModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)}/>
+        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
         <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
 
         <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>

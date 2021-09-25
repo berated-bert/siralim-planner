@@ -336,7 +336,7 @@ a {
   .monster-row-container {
     flex: 1;
     position: relative;
-    padding: 6px 0;
+    padding: 5px 0;
   }
   .monster-row-controls {
     min-width: 40px;
@@ -433,7 +433,7 @@ a {
 
   }
   .monster-row-family {
-    width: 6%;
+    width: 7%;
   }
   .monster-row-creature {
     width: 9%;
@@ -442,7 +442,7 @@ a {
     width: 12%;
   }
   .monster-row-trait_description {
-    width: 70.5%;
+    width: 69.5%;
   }
   .monster-row-material_name {
     width: 12%;
@@ -749,10 +749,47 @@ textarea {
 }
 
 
-#upload-build-textarea {
-  height: 300px;
+.notification {
+  padding: 10px;
+  border: 2px solid #ccc;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
-#upload-build-button {
+.notification-banner {
+  width: 100%;
+  padding: 7px 0;
+  margin-bottom: -15px;
+  background: #eee;
+  font-size: 15px;
+  pointer-events: none;
+  user-select: none;
+  transition: opacity 0.5s ease;
+  text-align: center;
+  &.hidden {
+    opacity: 0;
+  }
+}
+.notification-error {
+  background-color: rgba($color-chaos, 0.15);
+  border-color: rgba($color-chaos, 0.25);
+  color: darken($color-chaos, 20);
+}
+.notification-success {
+  background-color: rgba($color-nature, 0.15);
+  border-color: rgba($color-nature, 0.25);
+  color: darken($color-nature, 10);
+}
+.notification-warning {
+  background-color: darken(rgba($color-life, 0.15), 5);
+  border-color: rgba($color-life, 0.25);
+  color: darken($color-life, 15);
+}
+
+#upload-party-textarea {
+  height: 500px;
+}
+#upload-party-button {
   margin-top: 15px;
 }
 
