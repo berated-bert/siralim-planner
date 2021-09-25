@@ -264,7 +264,7 @@ class MonsterPlannerRow extends Component {
       <div className={"creature-sprite-container" + (this.props.monster.sprite_filename ? "" : " empty")}>
         { this.props.monster.sprite_filename &&
 
-          <div className="creature-sprite" style={{"background-image": "url(http://localhost:3000/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
+          <div className="creature-sprite" style={{"background-image": "url(/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
 
          }
 
