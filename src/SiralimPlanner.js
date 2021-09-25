@@ -277,7 +277,7 @@ class MonsterPlannerRow extends Component {
       }
       </div>
       <div className="monster-row-controls">
-        { !emptyRow && <button id={"remove-trait-" + (this.props.creatureSlot + 1)} role="button" className="delete-button" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
+        { !emptyRow && <button id={"remove-trait-" + (this.props.creatureSlot + 1)} className="delete-button" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
       </div>
     </div>
     )
@@ -499,7 +499,6 @@ class MonsterSelectionModal extends Component {
     // Catch the last group as well.
     if(monstersInCurrentGroup.length > 0) {
       let i = items.length - 1;
-      let item = items[i];
 
       currentGroup.end = i + 1;
       currentGroup.familyEnd = getPageFamily(monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]);
@@ -598,8 +597,8 @@ class MonsterSelectionModal extends Component {
     return (
         <div className="modal-content">
           <div className="modal-header">
-            <h3>Select a{slot_n} <b>{slot}</b> trait for party member <b>{creature_number}</b>. <span style={{'margin-left': '20px'}}>{currentMonster && ("Current: " + currentMonster)}</span></h3>
-            <button id="close-modal" role="button" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
+            <h3>Select a{slot_n} <b>{slot}</b> trait for party member <b>{creature_number}</b>. <span style={{'marginLeft': '20px'}}>{currentMonster && ("Current: " + currentMonster)}</span></h3>
+            <button id="close-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
           
           </div>
           <div className="monster-selection-modal">
@@ -609,7 +608,7 @@ class MonsterSelectionModal extends Component {
                 </div>                
                <div className="monster-selection-pagination">
                   {this.state.filteredItemGroups.map((itemGroup, i) =>
-                      <div role="button" onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
+                      <div role="button" key={i} onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
                   )}
                 </div>
                 <div className="mobile-hidden monster-row-container monster-row-container-selection monster-row-container-header">
@@ -621,6 +620,7 @@ class MonsterSelectionModal extends Component {
                   {this.state.filteredItems.slice(startIndex, endIndex).map((monsterRow, i) =>                 
                     <div className={"monster-row-container monster-row-container-selection selectable" + 
                       ((monsterRow.monster && this.props.currentSelectedMonster && (monsterRow.monster.uid === this.props.currentSelectedMonster.uid)) ? " currently-selected-monster" : "")}
+                      key={i}
                       onMouseUp={() => this.props.updateMonsterPlannerRow(monsterRow.monster)}>
                       <MonsterRow {...monsterRow.monster} 
                       renderFullRow={true}

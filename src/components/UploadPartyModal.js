@@ -43,7 +43,7 @@ class UploadPartyModal extends Component {
 
       <Modal className="modal-content modal-content-info modal-sm" overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
         <div className="modal-header">
-          <button id="close-upload-party-modal" role="button" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
+          <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
         <div className="info-modal">
           <h2>Upload party</h2>
