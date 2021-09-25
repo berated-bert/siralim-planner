@@ -259,6 +259,19 @@ class MonsterPlannerRow extends Component {
 
     return (
     <div className="monster-row-wrapper">
+
+      {this.props.inPrimarySlot && 
+      <div className={"creature-sprite-container" + (this.props.monster.sprite_filename ? "" : " empty")}>
+        { this.props.monster.sprite_filename &&
+
+          <div className="creature-sprite" style={{"background-image": "url(http://localhost:3000/siralim-planner/suapi-battle-sprites/" + this.props.monster.sprite_filename + ")"}}></div>
+
+         }
+
+
+      </div>
+
+      }
       <div
         className={"monster-row-container monster-row-container-planner" + 
           (this.props.draggable ? " draggable": "") + 
@@ -284,7 +297,7 @@ class MonsterPlannerRow extends Component {
       }
       </div>
       <div className="monster-row-controls">
-        { !emptyRow && <button className="delete-button" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
+        { !emptyRow && <button id={"remove-trait-" + (this.props.creatureSlot + 1)} role="button" className="delete-button" onClick={() => this.props.clearMonsterPlannerRow(this.props.row_id)}><FontAwesomeIcon icon={faTimes} /></button>}
       </div>
     </div>
     )
@@ -389,6 +402,7 @@ class MonsterPlanner extends Component {
           onDragOver={this.handleDragOver}
           onDrop={this.handleDrop}
           onMouseUp={() => this.handleMouseUp(monsterRow.row_id, i, monsterRow.monster ? monsterRow.monster : null)}
+          inPrimarySlot={(i + 1) % 3 === 1 && i <= 18}
           inTraitSlot={(i + 1) % 3 === 0 && i <= 18}
           needsValidation={i <= 18}
           creatureSlot={i <= 18 ? Math.floor((i + 1) / 3) : null}
@@ -603,7 +617,7 @@ class MonsterSelectionModal extends Component {
         <div className="modal-content">
           <div className="modal-header">
             <h3>Select a{slot_n} <b>{slot}</b> trait for party member <b>{creature_number}</b>. <span style={{'margin-left': '20px'}}>{currentMonster && ("Current: " + currentMonster)}</span></h3>
-            <button className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
+            <button id="close-modal" role="button" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
           
           </div>
           <div className="monster-selection-modal">
@@ -883,7 +897,6 @@ class SiralimPlanner extends Component {
     })
   }
 
-  // <button className="lighter" onClick={() => this.generateSaveString()}><FontAwesomeIcon icon={faSave}/><span>Save</span></button>
 
   render() {
     return (
@@ -895,14 +908,14 @@ class SiralimPlanner extends Component {
           </div>
           <div className="app-header-right">
           	<p><a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank">Compendium</a> {compendium_version}</p>
-            <button className="lighter" onClick={() => this.openInfoModal()}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
+            <button id="close-info-modal" role="button" className="lighter" onClick={() => this.openInfoModal()}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
           </div>
           </div>
         </header>
 
         <Modal className="modal-content modal-content-info" overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.state.infoModalIsOpen}>
         	<div className="modal-header">
-          	<button className="modal-close" onClick={() => this.closeInfoModal()}><FontAwesomeIcon icon={faTimes} /></button>
+          	<button id="close-monster-selection-modal" role="button" className="modal-close" onClick={() => this.closeInfoModal()}><FontAwesomeIcon icon={faTimes} /></button>
           </div>
         	<div className="info-modal">
         		<h2>Siralim Planner by Berated Bert</h2>

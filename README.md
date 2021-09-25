@@ -50,12 +50,15 @@ the name of its trait changes at some point.
 - Make the design responsive, i.e. work nicely on mobile.
 - Potentially add artifact stats 
 - Allow import of builds from the game (this may be tricky)
-- Find a way to add the monster sprites to the planner. If anybody knows a database that maps monster names to their respective sprites, please let me know!
+- Improve accessibility of the site
+- ~~Find a way to add the monster sprites to the planner. If anybody knows a database that maps monster names to their respective sprites, please let me know!~~
 
 ## License and contact
 
-The software is licensed under the open source MIT License.
+The software is licensed under the open source GNU GPL 3.0 License.
 
 Please feel free to fork the repository and/or submit pull requests/issues etc. If you have any other comments/feedback feel free to message me on Discord - BeratedBert#6292.
 
 This tool is not affiliated with Thylacine Studios.
+
+Creature sprites and the mapping between trait -> creature sprite are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api).
