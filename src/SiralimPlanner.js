@@ -830,7 +830,7 @@ class SiralimPlanner extends Component {
       monsterPlannerRows.push({row_id: parseInt(i), monster: {}})
     }
 
-    for(var i = 0; i < Math.min(17, uids.length); i++) {
+    for(var i = 0; i < Math.min(18, uids.length); i++) {
       var uid = uids[i];
       if(uid !== null) {
         if(monsterUIDMap.hasOwnProperty(uid)) {
