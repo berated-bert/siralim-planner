@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import ReactMarkdown from 'react-markdown';
 
-import md from './markdown/InfoSection.md';
+import md from '../markdown/InfoSection.md';
 
 class InfoSection extends PureComponent {
 

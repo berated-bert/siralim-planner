@@ -7,12 +7,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
+import { faCaretUp } from '@fortawesome/free-solid-svg-icons'
+import { faSortAlphaUp } from '@fortawesome/free-solid-svg-icons'
+import { faSortAlphaDown } from '@fortawesome/free-solid-svg-icons'
+import { faSortAlphaUpAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSortAlphaDownAlt } from '@fortawesome/free-solid-svg-icons'
+import { faSortNumericUp } from '@fortawesome/free-solid-svg-icons'
+import { faSortNumericDown } from '@fortawesome/free-solid-svg-icons'
+import { faSortNumericDownAlt } from '@fortawesome/free-solid-svg-icons'
 
 import icon_nature  from './icons/nature.png'
 import icon_chaos   from './icons/chaos.png'
 import icon_sorcery from './icons/sorcery.png'
 import icon_death   from './icons/death.png'
 import icon_life    from './icons/life.png'
+
+import icon_attack  from './icons/attack.png'
+import icon_health  from './icons/health.png'
+import icon_intelligence from './icons/intelligence.png'
+import icon_defense   from './icons/defense.png'
+import icon_speed    from './icons/speed.png'
 
 import InfoModal from './components/InfoModal'
 import UploadPartyModal from './components/UploadPartyModal'
@@ -24,10 +39,17 @@ import parsePartyString from './functions/parsePartyString';
 
 import './App.scss';
 
+Modal.setAppElement("#root");
+
 const UID_HASH_LENGTH = 6;
 const MONSTERS_PER_PAGE = 120;
 
 const monsterData = require('./data/data');
+
+const metadata = require('./data/metadata');
+
+const compendium_version = metadata.compendium_version;
+
 
 // Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
 // of that UID in monsterSelectionRows.
@@ -56,32 +78,94 @@ const monsterTraitMap = buildTraitMap();
 
 
 
-let compendium_version = require('./data/compendium_version');
 
-Modal.setAppElement("#root");
 
-// The header of the monster table (on the monster selection window).
-class MonsterRowHeader extends PureComponent {
+
+
+
+
+// A single field in the header of the Monster Selection table.
+class HeaderField extends PureComponent {
+
+  // For stats, render a stat icon according to their value.
+  renderStatIcon(stat) {
+    let icon = "";
+
+    if(stat === "stats.health") icon = icon_health;
+    if(stat === "stats.attack")  icon = icon_attack;
+    if(stat === "stats.intelligence") icon = icon_intelligence;
+    if(stat === "stats.defense") icon = icon_defense;
+    if(stat === "stats.speed") icon = icon_speed;
+    
+    return (<img src={icon} className="class-icon" alt={"stat-" + stat}/>);
+  }
+
+  // Render a sort button when sortOrder is not null.
+  renderSortButton() {
+    let icon = faCaretUp;
+    switch(this.props.sortOrder) {
+      case 'asc':
+        icon = this.props.type === "numeric" ? faSortNumericDownAlt : faSortAlphaDownAlt;
+        break;        
+      case 'desc':
+        icon = this.props.type === "numeric" ? faSortNumericDown : faSortAlphaDown;
+        break;
+      default:
+        return "";
+    }
+    return <FontAwesomeIcon icon={icon}/>;
+  }
+
   render() {
     return (
-      <div className={"monster-row monster-row-header " + (this.props.renderFullRow ? " detailed" : "")}>
-        { this.props.renderFullRow && 
-          <div className="monster-row-in-party">
+      <div className={("monster-row-" + this.props.class_name) + (this.props.sortable ? " sortable" : "")}
+       onClick={() => { if(this.props.sortable) this.props.updateSortField(this.props.sort_name)} }
+      >
+        {this.props.sort_name.startsWith('stats') ? this.renderStatIcon(this.props.sort_name) : this.props.field_name}
+        {
+          this.props.sortable &&
+          <span className="sort-button">
+            { this.renderSortButton() }
+          </span>
+        }
+      </div>
+    )
+  }
+}
+
+// The header of the monster table (on the monster selection window).
+class MonsterSelectionRowHeader extends PureComponent {
+
+  render() {
+
+    const fields = [
+      {sort_name: "", class_name: "in-party", field_name: "", not_sortable: true},
+      {sort_name: "class", type: "alpha", class_name: "class", field_name: "Class"},
+      {sort_name: "family", type: "alpha",class_name: "family", field_name: "Family"},
+      {sort_name: "creature", type: "alpha", class_name: "creature", field_name: "Creature"},
+      {sort_name: "trait_name", type: "alpha", class_name: "trait_name", field_name: "Trait"},
+      {sort_name: "trait_description", type: "alpha", class_name: "trait_description", field_name: "Trait Description"},
+      {sort_name: "stats.health", type: "numeric", class_name: "stat", field_name: "H"},
+      {sort_name: "stats.attack", type: "numeric", class_name: "stat", field_name: "A"},
+      {sort_name: "stats.intelligence", type: "numeric", class_name: "stat", field_name: "I"},
+      {sort_name: "stats.defense", type: "numeric", class_name: "stat", field_name: "D"},
+      {sort_name: "stats.speed", type: "numeric", class_name: "stat", field_name: "S"},
+      {sort_name: "material_name", type: "alpha", class_name: "material_name", field_name: "Material Name"}
+    ]
+
+    return (
+      <div className={"monster-row monster-row-header detailed" + (this.props.sortField ? " sorted" : "")}>
+        { fields.map((field, i) => 
+          <HeaderField sort_name={field.sort_name}
+                       class_name={field.class_name}
+                       field_name={field.field_name}
+                       sortable={!field.not_sortable}
+                       type={field.type}
+                       sortOrder={field.sort_name === this.props.sortField ? this.props.sortOrder : null}
+                       updateSortField={this.props.updateSortField}
+                       />
+        )}      
             
-          </div>
-        }     
-        <div className="monster-row-class">Class</div>
-        <div className="monster-row-family">Family</div>
-        <div className="monster-row-creature">Creature</div>
-        <div className="monster-row-trait_name">Trait Name</div>
-        <div className={"monster-row-trait_description"}>
-          Trait Description
-        </div>
-        { this.props.renderFullRow && 
-          <div className="monster-row-material_name">
-            Material Name
-          </div>
-        }        
       </div>
     )
   }
@@ -109,7 +193,7 @@ function MonsterClassIcon(props) {
 //
 // If props.renderFullRow is true, it will render a full row (as per the Monster Selection page),
 // otherwise it renders a short row (as per the Monster Planner window).
-class MonsterRow extends Component {
+class MonsterPlannerRow extends Component {
 
   // A function for rendering a particular class (cls). 
   // It will render an icon if the class is one of the 5 classes in the game,
@@ -121,23 +205,119 @@ class MonsterRow extends Component {
     return (
       <div className={"cls-container" + (!fullName ? " center" : "")}>
         { iconedClass && <MonsterClassIcon icon={this.props.class} /> }
-        {fullName && <span className={"cls-full-name col-cls-" + cls.toLowerCase()}>{this.props.class}</span>}
       </div>
     )
   }
 
+  render() {
+    return (
+      <div className={"monster-row" + (this.props.inTraitSlot ? " is-trait" : "")}>
+        <div className="monster-row-class">
+          <span className="mobile-only ib"><b>Class:&nbsp;&nbsp;</b></span>{this.renderClass(this.props.class, this.props.renderFullRow)}
+        </div>
+        <div className="monster-row-family">
+          <span className="mobile-only ib"><b>Family:&nbsp;</b></span>{this.props.family}
+        </div>
+        <div className="monster-row-creature">
+          <span className="mobile-only ib"><b>Creature:&nbsp;</b></span>{this.props.creature}
+        </div>
+        <div className="monster-row-trait_name">
+          <span className="mobile-only ib"><b>Trait name:&nbsp;</b></span>{this.props.trait_name}
+        </div>
+        <div className={"monster-row-trait_description"}>
+          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{this.props.trait_description}
+        </div>
+      </div>
+    );
+  }
+}
+
+
+// A single stat in the MonsterSelection table, colourised based on how high it is with
+// respect to the stats of other monsters.
+class MonsterStat extends PureComponent {
+
+
+
+
+  // Colour the background according to the stat's value with respect to the stats of
+  // the other monsters.
+  // This is determined via the metadata.
+  getStatBackground() {
+    const stat = this.props.stat;
+    const value = this.props.value;
+
+    const avgStat = metadata.average_stats[stat.toLowerCase()];
+    const minStat = metadata.min_stats[stat.toLowerCase()];
+    const maxStat = metadata.max_stats[stat.toLowerCase()];
+
+    let colour = 'rgba(0, 0, 0, ';
+    let positive = 0;
+    if(value > avgStat) positive = 1;
+    else if (value < avgStat) positive = -1;
+
+    let opacity = 0;
+    if(positive > 0) opacity = (value - avgStat) / (maxStat - avgStat);
+    else if(positive < 0) opacity = (avgStat - value) / (avgStat - minStat);
+
+    if(positive > 0) colour = 'rgba(0, 235, 16, ';
+    else if(positive < 0) colour = 'rgba(252, 19, 3, ';
+
+    return {'background': colour + (opacity * 0.75) + ')'}
+
+  }
+
+  render() {
+
+    return (
+      <div className={"monster-row-stat "}>
+        <span className="mobile-only ib"><b>{this.props.stat}:&nbsp;</b></span>
+        <span className="stat-value" style={this.getStatBackground()}>{this.props.value || "-"}</span>        
+      </div>
+    )
+  }
+}
+
+
+// A fragment of all stats of a particular monster in the MonsterSelection table.
+class MonsterStats extends PureComponent {
+
+  render() {
+    const stats = ['Health', 'Attack', 'Intelligence', 'Defense', 'Speed'];
+    return (
+      <React.Fragment>
+        {stats.map((stat, i) => 
+          <MonsterStat stat={stat} value={this.props[stat.toLowerCase()]} />
+        )}
+      </React.Fragment>
+    )
+  }
+}
+
+class MonsterSelectionRow extends Component {
+
+  // A function for rendering a particular class (cls). 
+  // It will render an icon if the class is one of the 5 classes in the game,
+  // otherwise it will render the full name of the class (e.g. "Rodian Master").
+  renderClass(cls, fullName) {
+    let c = this.props.class.toLowerCase();
+    let iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
+
+    return (
+      <div className={"cls-container" + (!fullName ? " center" : "")}>
+        { iconedClass && <MonsterClassIcon icon={this.props.class} /> }
+        <span className={"cls-full-name col-cls-" + cls.toLowerCase()}>{this.props.class}</span>
+      </div>
+    )
+  }
 
   render() {
     return (
-      <div className={"monster-row" + (this.props.inTraitSlot ? " is-trait" : "") +
-                                      (this.props.renderFullRow ? " detailed" : "")}>
+      <div className="monster-row detailed">
 
-        { this.props.renderFullRow && 
-
-          <div className="monster-row-in-party">
-            { this.props.inParty && <span className="green-tick"><FontAwesomeIcon icon={faCheck}/></span>}
-          </div>
-        }
+        <div className="monster-row-in-party">
+          { this.props.inParty && <span className="green-tick"><FontAwesomeIcon icon={faCheck}/></span>}
+        </div>
 
         <div className="monster-row-class">
           <span className="mobile-only ib"><b>Class:&nbsp;&nbsp;</b></span>{this.renderClass(this.props.class, this.props.renderFullRow)}
@@ -152,21 +332,28 @@ class MonsterRow extends Component {
           <span className="mobile-only ib"><b>Trait name:&nbsp;</b></span>{this.props.trait_name}
         </div>
         <div className={"monster-row-trait_description"}>
-          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{this.props.trait_description}        </div>
-        { this.props.renderFullRow && 
-          <div className="monster-row-material_name">
-            {this.props.material_name}
-          </div>
-        }
+          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{this.props.trait_description}        
+        </div>
+
+        <MonsterStats {...this.props.stats}/>
+
+        <div className="monster-row-material_name">
+          {this.props.material_name}
+        </div>
       </div>
     );
   }
 }
 
+
+
+
+
+
 // A row from the Monster Planner interface.
 // This wraps around MonsterRow, above, providing the functionality for dragging and
 // dropping and row validation.
-class MonsterPlannerRow extends Component {
+class MonsterPlannerRowContainer extends Component {
 
   constructor(props) {
     super(props);
@@ -273,7 +460,7 @@ class MonsterPlannerRow extends Component {
       
       { emptyRow ?
         this.renderEmptyRow() : 
-        <MonsterRow {...this.props.monster} inTraitSlot={this.props.inTraitSlot} error={this.props.error} />   
+        <MonsterPlannerRow {...this.props.monster} inTraitSlot={this.props.inTraitSlot} error={this.props.error} />   
       }
       </div>
       <div className="monster-row-controls">
@@ -316,7 +503,6 @@ class MonsterPlanner extends Component {
   // A function to handle the drag start (i.e. when a row is dragged).
   handleDragStart = data => event => {
     let fromItem = JSON.stringify({ row_id: data.row_id });
-    console.log(fromItem)
     event.dataTransfer.setData("dragContent", fromItem);
     this.setState({
       dragging: true,
@@ -383,7 +569,7 @@ class MonsterPlanner extends Component {
     return (
       <div id="monster-planner" className="monster-planner monster-list" ref={this.myRef}>
         {this.state.items.map((monsterRow, i) => 
-          <MonsterPlannerRow monster={monsterRow.monster}
+          <MonsterPlannerRowContainer monster={monsterRow.monster}
           error={monsterRow.error}
           key={i}
           row_id={ monsterRow.row_id }
@@ -417,7 +603,6 @@ function getPageFamily(m) {
 // Get the 'semantic name' of a monster, for the top of the Monster Selection window.
 // i.e. "Abomination / Brute".
 function getMonsterSemanticName(m) {
-  console.log(m)
   return m.family ? (m.family + " / " + m.creature) : (m.class + " (" + m.trait_name + ")");
 }
 
@@ -439,6 +624,9 @@ class MonsterSelectionModal extends Component {
       currentSearchTerm: "", // The current search term, i.e. what is in the search box.
       appliedSearchTerm: "", // The *applied* search term, which is applied 0.5s after the user finishes
                              // typing something into the search box.
+
+      sortField: null, // The current field to sort by, e.g. "Class".
+      sortOrder: null, // The current sort order, i.e. null, 'asc', 'desc'.
     }
     this.searchTimeout = null; // A timeout that takes place after the user stops typing in the search box.
     this.tableRef = React.createRef(); // A reference of the monster table, so that it can be used to scroll back
@@ -520,24 +708,52 @@ class MonsterSelectionModal extends Component {
     });
   }
 
+
+  sortResults(filteredItems) {
+    const field = this.state.sortField;
+    const order = this.state.sortOrder;
+
+    function compare(a, b) {
+      const sf = field.split('.')
+      let af = _.get(a.monster, sf, -1);
+      let bf = _.get(b.monster, sf, -1);
+      if(af === '') af = "zzzzzzz"; // For empty strings (backer traits etc), treat them as if they were zzzz, e.g. last
+      if(bf === '') bf = "zzzzzzz";
+
+      if( af < bf ) return order === "asc" ? 1 : -1;
+      if( af > bf ) return order === "asc" ? -1 : 1;
+      return 0;
+    }
+
+
+    // Sort the filteredItems if sortField is not null
+    if(this.state.sortField) return filteredItems.sort((a, b) => compare(a, b));
+    return filteredItems;
+  }
+
   // A function to filter the results (this.state.items) to only results that include
   // the applied search term.
   filterResults() {
     let searchTerm = this.state.currentSearchTerm.toLowerCase();
     let filteredItems = [];
-    for(let item of this.state.items) {
+    const items = this.state.items;
+    for(let item of items) {
       let searchText = item.monster.search_text;
       if(searchText.toLowerCase().indexOf(searchTerm) !== -1) {
         filteredItems.push({monster: item.monster});
       }      
     }
-    let filteredItemGroups = this.getItemGroups(filteredItems);
+    const sortedFilteredItems = this.sortResults(filteredItems);
+    const filteredItemGroups = this.getItemGroups(sortedFilteredItems);
+
     this.setState({
       currentPage: 0,
-      filteredItems: filteredItems,
+      filteredItems: sortedFilteredItems,
       filteredItemGroups: filteredItemGroups
     }, () => { this.tableRef.current.scrollTo(0, 0) }) // Scroll to top of table once complete.
   }
+
+
 
   // Apply the search term and filter the results accordingly.
   applySearchTerm() {
@@ -581,13 +797,58 @@ class MonsterSelectionModal extends Component {
     }, () => { this.tableRef.current.scrollTo(0, 0) })
   }
 
+
+  updateSortField(sortField) {
+    this.setState({
+      sortField: (sortField === this.state.sortField && this.state.sortOrder === "asc") ? null : sortField,
+      sortOrder: 
+        this.state.sortField === sortField ? (
+          this.state.sortOrder === "desc" ? "asc" :
+          (
+            this.state.sortOrder === "asc" ? null : "desc"
+          )
+        ) : "desc"      
+    }, () => this.filterResults())
+  }
+
+
+
+  renderPageName(i, itemGroup) {
+
+    let pageStart = "";
+    let pageEnd = "";
+
+    // if(!this.state.sortField) {
+    //   pageStart = itemGroup.familyStart;
+    //   pageEnd = itemGroup.familyEnd;
+    //   return  pageStart + " - " + pageEnd;
+    // }
+
+    var sf = this.state.sortField ? this.state.sortField.split('.') : "family";
+    if(!this.state.filteredItems[this.state.filteredItemGroups[i].start]) pageStart = "(unknown)";
+    else {
+      pageStart = String(_.get(this.state.filteredItems[this.state.filteredItemGroups[i].start].monster, sf, "(empty)"));
+      if(pageStart.length > 8) pageStart = pageStart.slice(0, 7) + "..."
+
+    }
+
+
+    if(!this.state.filteredItems[this.state.filteredItemGroups[i].end - 1]) pageEnd = "(unknown)";
+    else {
+      pageEnd = String(_.get(this.state.filteredItems[this.state.filteredItemGroups[i].end - 1].monster, sf, "(empty)"));
+      if(pageEnd.length > 8) pageEnd = pageEnd.slice(0, 7) + "..."
+    }
+
+    return pageStart + " - " + pageEnd;
+                        
+  }
+
   // This render function needs tidying up, it's a bit long.
   render() {
 
     // Get the start and end index via this.state.filteredItemGroups.
     let startIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].start : 0;
     let endIndex = this.state.filteredItemGroups[this.state.currentPage] ? this.state.filteredItemGroups[this.state.currentPage].end : 0;
-
 
     let creature_number = Math.floor(this.props.currentSelectedIndex / 3) + 1;
     let slot = (this.props.currentSelectedIndex + 1) % 3 === 1 ? "primary" : ((this.props.currentSelectedIndex + 1)  % 3 === 2) ? "secondary" : "artifact";
@@ -608,11 +869,14 @@ class MonsterSelectionModal extends Component {
                 </div>                
                <div className="monster-selection-pagination">
                   {this.state.filteredItemGroups.map((itemGroup, i) =>
-                      <div role="button" key={i} onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>{itemGroup.familyStart} - {itemGroup.familyEnd}</div>
+                      <div role="button" key={i} onClick={() => this.goToPage(i)} className={"tab" + (this.state.currentPage === i ? " active" : "")}>
+                        {this.renderPageName(i, itemGroup)}
+
+                      </div>
                   )}
                 </div>
                 <div className="mobile-hidden monster-row-container monster-row-container-selection monster-row-container-header">
-                  <MonsterRowHeader renderFullRow={true} /> 
+                  <MonsterSelectionRowHeader sortField={this.state.sortField} sortOrder={this.state.sortOrder} updateSortField={this.updateSortField.bind(this)} /> 
                 </div> 
               </div>
 
@@ -622,7 +886,7 @@ class MonsterSelectionModal extends Component {
                       ((monsterRow.monster && this.props.currentSelectedMonster && (monsterRow.monster.uid === this.props.currentSelectedMonster.uid)) ? " currently-selected-monster" : "")}
                       key={i}
                       onMouseUp={() => this.props.updateMonsterPlannerRow(monsterRow.monster)}>
-                      <MonsterRow {...monsterRow.monster} 
+                      <MonsterSelectionRow {...monsterRow.monster} 
                       renderFullRow={true}
                       searchTerm={this.state.currentSearchTerm}
                       inParty={this.props.monstersInParty.has(monsterRow.monster.uid)}
@@ -669,7 +933,6 @@ class NotificationBanner extends Component {
   // Hide the notification banner (this sets the opacity to 0 via CSS so 
   // that way nothing gets moved around awkwardly)
   setHidden() {
-    console.log("hidden")
     this.setState({
       hidden: true,
     })
@@ -947,7 +1210,6 @@ class SiralimPlanner extends Component {
   // (this is necessary to highlight the currently selected monster
   // in the monster selection screen).
   openModal(row_id, slot_id, monster) {
-    console.log(row_id)
     this.setState({
       modalIsOpen: true,
       currentRowId: row_id,
@@ -982,7 +1244,6 @@ class SiralimPlanner extends Component {
   traitsToUids(traitsArray) {
     let uids = [];
     for(let t of traitsArray) {
-      console.log(t);
       if(t === null) {
         uids.push(null);
         continue;
