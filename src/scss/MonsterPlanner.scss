@@ -1,11 +1,18 @@
 @import 'mixins.scss';
 
 
+#monster-planner {
+  padding: 30px 0;
+  font-size: 13px;
+}
+
+
 /*
   .monster-planner-party-member
-    .party-member-profile
-      .party-member-name
+    .party-member-profile      
       .creature-sprite-container
+      .party-member-stats
+      .party-member-class (underneath)
     .party-member-traits
       .trait-slot
         .trait-slot-clickable
@@ -13,54 +20,62 @@
 */
 
 .monster-planner-party-member {
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 5px;    
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+  z-index: 50;
+  position: relative;
+  //border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;    
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #ccc;
+  box-shadow: 2px 2px 6px -4px rgba(0, 0, 0, 0.9);
+  padding: 1px;
+
+
+  transition: background 0.2s ease;
+
+
+  &.cls-chaos {
+    background: rgba($color-chaos, 0.5);
+  }
+  &.cls-death {
+    background: rgba(lighten($color-death, 30), 0.4);
+  }
+  &.cls-sorcery {
+    background: rgba($color-sorcery, 0.4);
+  }
+  &.cls-life {
+    background: rgba(darken($color-life, 5), 0.5);
+  }
+  &.cls-nature {
+    background: rgba($color-nature, 0.5);
+  }
+
 }
 
 .party-member-profile {
     width: 12%;
     height: 100%;
-    padding: 10px 15px;
+    padding: 4px 8px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    //color: white;
+   
 }
 
 .party-member-traits {
     width: 88%;
-}
-
-.party-member-stats {
-
-  padding-left: 15px;
-  width: 100%;
-  flex: 1;
-  &.empty {
-    color: #999;
-  }
-  > span {
-    padding: 1px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    &:nth-child(even) {
-      background: rgba(0, 0, 0, 0.05);
-    }
-    span {
-      min-width: 24px;
-    }
-
-    img {
-      margin-right: 10px;
-    }
-  }
+    padding: 0 8px;
 }
 
 .creature-sprite-container {
+    margin-right: 8px;
     width: 64px;
     height: 64px;
     display: flex;
@@ -76,7 +91,7 @@
       background-position: center;
     }
     &.empty {
-      background: #eee;
+      background: rgba(255, 255, 255, 0.7);
       border-radius: 10px;
     }
     &.empty:before {
@@ -89,6 +104,48 @@
     @media(max-width: 1280px) {
       left: -4px;
     }
+}
+
+.party-member-stats {
+  margin-left: 8px;
+  &.empty {
+    color: #999;
+  }
+  > span {
+    padding: 0px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // &:nth-child(even) {
+    //   background: rgba(0, 0, 0, 0.05);
+    // }
+    span {
+      min-width: 24px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.party-member-class {
+  width: 100%;
+  min-height: 22px;
+
+  flex-basis: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4px;
+  padding: 4px 0;
+  padding-bottom: 0;
+  //border-top: 2px solid rgba(0, 0, 0, 0.05);
+  .cls-icon {
+    margin-right: 5px;
+  }  
+  
 }
 
 
@@ -117,7 +174,7 @@
     justify-content: center;
     padding: 0 8px;
     text-align: center;
-    color: #777;
+    color: rgba(0, 0, 0, 0.3);
     line-height: 18px;
     &:hover {
       color: white;
@@ -131,10 +188,11 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.35);
   padding: 10px 2px;
   transition: background 0.2s ease;
   border-radius: 3px;
+  color: #111;
 
   .empty-row {
     text-align: center;
@@ -149,7 +207,7 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    border: 2px solid rgba($primary-color, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.45);
     content: " ";
   }
 
@@ -176,7 +234,7 @@
 
 
   &.just-updated {
-    background: rgba(0, 0, 0, 0.08);
+    background: rgba(255, 255, 255, 0.6);
   }
 
 

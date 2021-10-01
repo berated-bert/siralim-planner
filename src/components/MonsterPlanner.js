@@ -185,6 +185,23 @@ class MonsterPlannerTraitSlot extends PureComponent {
   }
 }
 
+class MonsterPlannerCreatureClass extends PureComponent {
+
+  render() {
+    const monsterClass = this.props.monsterClass;
+    return (
+      <div className="party-member-class">
+        { monsterClass !== "empty" && <React.Fragment>
+            <MonsterClassIcon icon={monsterClass}/>
+            {monsterClass}
+          </React.Fragment>
+           }
+        { monsterClass === "empty" && "" }
+      </div>
+    )
+  }
+}
+
 //         <div className="party-member-name">Creature #{this.props.partyMemberId + 1}</div>
 
 
@@ -229,15 +246,46 @@ class MonsterPlannerCreatureStats extends PureComponent {
 }
 
 class MonsterPlannerPartyMember extends PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      monsterClass: "empty"
+    }
+  }
+
+  componentDidMount() {
+    this.setState({
+      monsterClass: this.getMonsterClass()
+    });
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if(!_.isEqual(prevProps, this.props)) {
+      this.setState({
+        monsterClass: this.getMonsterClass()
+      });
+    }
+  }
+
+  getMonsterClass() {
+    const pm1 = this.props.partyMember[0].monster;
+    const pm2 = this.props.partyMember[1].monster;
+    if(pm2 && pm2.class) {
+      return pm2.class;
+    } else if (pm1 && pm1.class) {
+      return pm1.class;
+    }
+    return "empty";
+  }
+
   render() {
     return (
-      <div className="monster-planner-party-member">
-
-
-
+      <div className={"monster-planner-party-member cls-" + this.state.monsterClass.toLowerCase()}>
         <div className="party-member-profile">
           <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
           <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
+          <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
 
         </div>
         <div className="party-member-traits">

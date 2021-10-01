@@ -9,8 +9,8 @@ html, body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   color: #222;
-  background: #fcfcfc;
-
+  //background: darken($primary-color, 40);
+  background: #eee;
 }
 * {
   box-sizing: border-box;
@@ -90,13 +90,19 @@ header {
 }
 
 footer {
-  background: #ddd;
+  background: darken($primary-color, 20);
   padding: 15px 0px 10px 0;
   margin-top: -5px;
   font-size: 12px;
   box-shadow: 0 200px 0px 200px #ddd;
+  color: white;
+  line-height: 150%;
   p {
     margin: 0;
+    font-size: 12px;
+  }
+  a {
+    color: lighten($primary-color, 40);
   }
 }
 a {
@@ -112,10 +118,6 @@ a {
   }
 }
 
-#monster-planner {
-  padding: 30px 0;
-  font-size: 13px;
-}
 
 
 
