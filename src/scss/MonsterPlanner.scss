@@ -1,0 +1,184 @@
+@import 'mixins.scss';
+
+
+/*
+  .monster-planner-party-member
+    .party-member-profile
+      .party-member-name
+      .creature-sprite-container
+    .party-member-traits
+      .trait-slot
+        .trait-slot-clickable
+        .trait-slot-controls
+*/
+
+.monster-planner-party-member {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.party-member-profile {
+    width: 12%;
+    height: 100%;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+}
+
+.party-member-traits {
+    width: 88%;
+}
+
+.party-member-stats {
+
+  padding-left: 15px;
+  width: 100%;
+  flex: 1;
+  &.empty {
+    color: #999;
+  }
+  > span {
+    padding: 1px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:nth-child(even) {
+      background: rgba(0, 0, 0, 0.05);
+    }
+    span {
+      min-width: 24px;
+    }
+
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.creature-sprite-container {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    .creature-sprite {
+      width: 100%;
+      height: 100%;
+      background-size: 100%;
+      image-rendering: pixelated;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &.empty {
+      background: #eee;
+      border-radius: 10px;
+    }
+    &.empty:before {
+      content: "?";
+      font-size: 32px;
+      color: rgba(0, 0, 0, 0.4);
+      font-weight: bold;
+
+    }
+    @media(max-width: 1280px) {
+      left: -4px;
+    }
+}
+
+
+.trait-slot {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 4px 0;
+
+}
+
+
+.trait-slot-controls {
+  width: 48px;
+  padding: 0 5px;
+  button {
+    background: none;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8px;
+    text-align: center;
+    color: #777;
+    line-height: 18px;
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.trait-slot-clickable {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.04);
+  padding: 10px 2px;
+  transition: background 0.2s ease;
+  border-radius: 3px;
+
+  .empty-row {
+    text-align: center;
+    opacity: 0.6;
+    width: 100%; 
+  }
+
+  &:hover:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    border: 2px solid rgba($primary-color, 0.15);
+    content: " ";
+  }
+
+  .trait-slot-class {
+    width: 3%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trait-slot-family {
+    width: 8%;
+  }
+  .trait-slot-creature {
+    width: 8%;
+  }
+  .trait-slot-trait_name {
+    width: 11%;
+  }
+  .trait-slot-trait_description {
+    width: 70%;
+  }
+
+
+
+  &.just-updated {
+    background: rgba(0, 0, 0, 0.08);
+  }
+
+
+
+}
