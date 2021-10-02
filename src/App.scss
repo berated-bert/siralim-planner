@@ -99,7 +99,7 @@ footer {
   background: darken($primary-color, 20);
   padding: 15px 0px 10px 0;
   font-size: 12px;
-  box-shadow: 0 200px 0px 200px #ddd;
+  box-shadow: 0 200px 0px 200px darken($primary-color, 20);
   color: white;
   line-height: 150%;
   p {
@@ -331,9 +331,11 @@ h3.section-title {
 }
 .notification-banner {
   position: absolute;
-  top: 45px;
-  width: 100%;
-  padding: 7px 0;
+  right: 60px;
+  top: 54px;
+  width: auto;
+  max-width: 100%;
+  padding: 7px 20px;
   //margin-bottom: -15px;
   background: #eee;
   font-size: 15px;
@@ -341,24 +343,26 @@ h3.section-title {
   user-select: none;
   transition: opacity 0.5s ease;
   text-align: center;
+  z-index: 1000;
+  border-radius: 5px;
   &.hidden {
     opacity: 0;
   }
 }
 .notification-error {
-  background-color: rgba($color-chaos, 0.15);
+  background-color: lighten($color-chaos, 45);
   border-color: rgba($color-chaos, 0.25);
   color: darken($color-chaos, 20);
 }
 .notification-success {
-  background-color: rgba($color-nature, 0.15);
+  background-color: lighten($color-nature, 35);
   border-color: rgba($color-nature, 0.25);
   color: darken($color-nature, 10);
 }
 .notification-warning {
-  background-color: darken(rgba($color-life, 0.15), 5);
+  background-color: lighten($color-life, 15);
   border-color: rgba($color-life, 0.25);
-  color: darken($color-life, 15);
+  color: darken($color-life, 45);
 }
 
 #upload-party-textarea {
@@ -457,7 +461,7 @@ table {
     padding: 2px 5px;
   }
   tr:nth-child(even) td {
-    background: rgba(0, 0, 0, 0.03);
+    background: #f1f1f1;
 
   }
 }

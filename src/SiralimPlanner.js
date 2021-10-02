@@ -125,6 +125,9 @@ class SiralimPlanner extends Component {
 
       partyMembers: [],              // A list of 6 items, each of which corresponds to a party member.
       anointments:  [],              // A list of the 5 anointments the user has selected.
+      currentSpecialization: null,   // The currently selected specialization.
+      maxAnointments: 5,             // Max number of anointments, should be changed to 15 when Royal selected.
+
 
       //monsterPlannerRows: [],        // A list of the 18 monsters in the party planner interface.
                                      // monsters from data.json.
@@ -311,9 +314,9 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     let partyMembers = [];
-    let anointments = new Array(5).fill(null);
+    let anointments = [];
 
-    
+
 
     let c = 0;
     for(let i = 0; i < 6; i++) {
@@ -468,6 +471,50 @@ class SiralimPlanner extends Component {
     // TODO: Take the traits and put them into the table etc.
   }
 
+  toggleAnointment(anointment) {
+    if(anointment.anointment !== "Yes") return;
+    
+    let anointments = this.state.anointments;
+    let deleted = false;
+    for(let i = 0; i < anointments.length; i++) {
+      const a = anointments[i];
+      // If this anointment in list, remove it and add a null at the end.
+      if(anointment.name === a.name) {
+        anointments.splice(i, 1);
+        deleted = true;
+        break;
+      }
+    }
+    if(!deleted) {      
+      console.log(this.state.currentSpecialization)
+      let limit = 5;
+      if(this.state.currentSpecialization.name === "Royal") {
+        limit = 15;
+      }
+      if(anointments.length < limit) {
+        anointments.push(anointment);
+      }
+    }
+    this.setState({
+      anointments: anointments,
+    })
+  }
+
+  // Update the Specialization based on the selected option from the react select
+  // component.
+  updateSpecialization(s) {
+    const maxAnointments = s.name === "Royal" ? 15 : 5;
+    let anointments = this.state.anointments;
+    if(anointments.length > maxAnointments) {
+      anointments = anointments.slice(0, maxAnointments);
+    }
+    this.setState({
+      anointments: anointments,
+      currentSpecialization: s,
+      maxAnointments: maxAnointments,
+    })
+  }
+
   render() {
     return (
       <div className="App" id="app">
@@ -490,8 +537,12 @@ class SiralimPlanner extends Component {
 
         <main>
           <SpecializationPlanner
+            currentSpecialization={this.state.currentSpecialization}
             anointments={this.state.anointments}
+            maxAnointments={this.state.maxAnointments}
+            updateSpecialization={this.updateSpecialization.bind(this)}
             updateAnointments={this.updateAnointments.bind(this)}
+            toggleAnointment={this.toggleAnointment.bind(this)}
 
 
           />

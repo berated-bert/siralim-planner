@@ -132,7 +132,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
   renderEmptyRow() {
     return (
       <div className="empty-row">
-        { this.props.error && <span className="monster-row-error"><FontAwesomeIcon icon={faExclamationTriangle} />Error: {this.props.error}. </span>}
+        { this.props.error && <span className="trait-slot-error"><FontAwesomeIcon icon={faExclamationTriangle} />Error: {this.props.error}. </span>}
         {"Click to add a" + (this.props.traitSlotIndex === 0 ? " primary trait" : (this.props.traitSlotIndex === 1 ? " fused trait" : "n artifact trait"))}
       </div>
     )
