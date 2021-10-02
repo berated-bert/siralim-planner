@@ -1,0 +1,19 @@
+#specialization-planner {
+  position: relative;
+  color: #222;
+  background: #ddd;
+  width: 25%;
+  padding: 20px 20px;
+  transition: margin 0.2s ease;
+  box-shadow: 1px 1px 4px -3px rgba(0, 0, 0, 0.9);
+
+  select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+
+  }
+}

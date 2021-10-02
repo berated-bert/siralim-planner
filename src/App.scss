@@ -1,5 +1,6 @@
 @import 'scss/mixins.scss';
 @import 'scss/MonsterPlanner.scss';
+@import 'scss/SpecializationPlanner.scss';
 @import 'scss/MonsterSelectionModal.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
@@ -15,7 +16,7 @@ html, body {
 * {
   box-sizing: border-box;
 }
-input, button, textarea {
+input, button, textarea, select {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -23,6 +24,11 @@ hr {
   border: none;
   border-top: 1px solid #ddd;
   margin: 30px 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
 }
 
 header {
@@ -92,7 +98,6 @@ header {
 footer {
   background: darken($primary-color, 20);
   padding: 15px 0px 10px 0;
-  margin-top: -5px;
   font-size: 12px;
   box-shadow: 0 200px 0px 200px #ddd;
   color: white;
@@ -118,9 +123,19 @@ a {
   }
 }
 
+h3.section-title {
+  margin-top: 0;
+  width: 100%;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  font-size: 13px;
+}
 
 
-
+// #monster-planner h3.section-title {
+//   color: rgba(255, 255, 255, 0.7);
+// }
 
 
 
@@ -181,6 +196,7 @@ a {
   height: 16px;
   margin: 0;
   padding: 0;
+  margin-top: -1px;
   image-rendering: crisp-edges;
   display: block;
 }
@@ -311,9 +327,11 @@ a {
   border-radius: 4px;
 }
 .notification-banner {
+  position: absolute;
+  top: 45px;
   width: 100%;
   padding: 7px 0;
-  margin-bottom: -15px;
+  //margin-bottom: -15px;
   background: #eee;
   font-size: 15px;
   pointer-events: none;

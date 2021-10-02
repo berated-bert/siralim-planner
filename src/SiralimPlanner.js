@@ -23,6 +23,7 @@ import AppFooter from './components/AppFooter'
 
 import MonsterSelectionModal from './components/MonsterSelectionModal'
 import MonsterPlanner from './components/MonsterPlanner'
+import SpecializationPlanner from './components/SpecializationPlanner'
 
 import parsePartyString from './functions/parsePartyString';
 
@@ -482,11 +483,15 @@ class SiralimPlanner extends Component {
             currentSelectedIndex = {this.state.currentSlotId} />
         </div>
 
-        <MonsterPlanner 
-          partyMembers={this.state.partyMembers}
-          updatePartyMembers={this.updatePartyMembers.bind(this)}
-          openModal={this.openModal.bind(this)}
-          clearPartyMember={this.clearPartyMember.bind(this)} />          
+
+        <main>
+          <SpecializationPlanner/>
+          <MonsterPlanner 
+            partyMembers={this.state.partyMembers}
+            updatePartyMembers={this.updatePartyMembers.bind(this)}
+            openModal={this.openModal.bind(this)}
+            clearPartyMember={this.clearPartyMember.bind(this)} />  
+        </main>        
         <AppFooter/>
       </div>
     );

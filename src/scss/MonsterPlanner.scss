@@ -2,8 +2,10 @@
 
 
 #monster-planner {
-  padding: 30px 0;
   font-size: 13px;
+  width: 100%;
+  padding: 20px 60px;
+  position: relative;
 }
 
 
@@ -24,54 +26,85 @@
   z-index: 50;
   position: relative;
   //border: 2px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;    
+  //border-radius: 5px;
+  margin-bottom: 7px;    
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  //border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background: #ccc;
-  box-shadow: 2px 2px 6px -4px rgba(0, 0, 0, 0.9);
-  padding: 1px;
+  //background: #444;
+  //box-shadow: 1px 1px 4px -3px rgba(0, 0, 0, 0.9);
+  padding: 0px;
 
 
   transition: background 0.2s ease;
-
-
   &.cls-chaos {
-    background: rgba($color-chaos, 0.5);
+    background: saturate(rgba($color-chaos, 0.15), 20);
+    border-color: saturate(rgba(darken($color-chaos, 30), 0.3), 10);
   }
   &.cls-death {
-    background: rgba(lighten($color-death, 30), 0.4);
+    background: saturate(rgba(lighten($color-death, 30), 0.15), 10);
+    border-color: saturate(rgba(darken($color-death, 20), 0.3), 10);
   }
   &.cls-sorcery {
-    background: rgba($color-sorcery, 0.4);
+    background: saturate(rgba($color-sorcery, 0.15), 20);
+    border-color: rgba(darken($color-sorcery, 30), 0.3);
   }
   &.cls-life {
-    background: rgba(darken($color-life, 5), 0.5);
+    background: saturate(rgba(darken($color-life, 15), 0.22), 20);
+    border-color: saturate(rgba(darken($color-life, 54), 0.3), 30);
   }
   &.cls-nature {
-    background: rgba($color-nature, 0.5);
+    background: saturate(rgba($color-nature, 0.15), 27);
+    border-color: saturate(rgba(darken($color-nature, 25), 0.3), 20);
   }
 
 }
 
 .party-member-profile {
     width: 12%;
-    height: 100%;
     padding: 4px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    border-radius: 5px;
+    align-self: stretch;
+    //border-top-left-radius: 5px;
+    //dborder-bottom-left-radius: 5px;
+    //border-radius: 5px;
     //color: white;
-   
+    transition: background 0.2s ease;
+    background: rgba(0, 0, 0, 0.15);
+    &.cls-chaos {
+      background: rgba($color-chaos, 0.3);
+    }
+    &.cls-death {
+      background: rgba(lighten($color-death, 30), 0.3);
+    }
+    &.cls-sorcery {
+      background: rgba($color-sorcery, 0.4);
+    }
+    &.cls-life {
+      background: rgba(darken($color-life, 5), 0.5);
+    }
+    &.cls-nature {
+      background: rgba($color-nature, 0.5);
+    }
 }
 
 .party-member-traits {
+    align-self: stretch;
     width: 88%;
-    padding: 0 8px;
+    //padding: 4px 8px;
+    //background: rgba(0, 0, 0, 0.2);
+    //border-top-right-radius: 5px;
+    //border-bottom-right-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .creature-sprite-container {
@@ -109,7 +142,7 @@
 .party-member-stats {
   margin-left: 8px;
   &.empty {
-    color: #999;
+    color: rgba(0, 0, 0, 0.3);
   }
   > span {
     padding: 0px 5px;
@@ -156,14 +189,15 @@
   width: 100%;
   justify-content: stretch;
   align-items: stretch;
-  margin: 4px 0;
+  //margin: 4px 0;
 
 }
 
 
 .trait-slot-controls {
   width: 48px;
-  padding: 0 5px;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  //padding: 0 5px;
   button {
     background: none;
     font-size: 18px;
@@ -176,10 +210,18 @@
     text-align: center;
     color: rgba(0, 0, 0, 0.3);
     line-height: 18px;
+    border-radius: 0;
     &:hover {
       color: white;
     }
   }
+}
+
+.trait-slot:not(:last-child) {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
+}
+.trait-slot:nth-child(even) {
+  //background: rgba(255, 255, 255, 0.1);
 }
 
 .trait-slot-clickable {
@@ -188,27 +230,37 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
-  background: rgba(255, 255, 255, 0.35);
-  padding: 10px 2px;
+  //background: rgba(255, 255, 255, 0.4);
+
+  padding: 12px 2px;
   transition: background 0.2s ease;
-  border-radius: 3px;
+  //border-radius: 3px;
   color: #111;
 
   .empty-row {
     text-align: center;
-    opacity: 0.6;
+    opacity: 0.7;
     width: 100%; 
   }
 
-  &:hover:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    border: 2px solid rgba(255, 255, 255, 0.45);
-    content: " ";
+  > * {
+    padding: 0 4px;
+  }
+
+  // &:hover:before {
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   top: 0;
+  //   left: 0;
+  //   box-sizing: border-box;
+  //   background: rgba(255, 255, 255, 0.2);
+  //   content: " ";
+  //   border-radius: 3px;
+  // }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.4);
   }
 
   .trait-slot-class {
@@ -217,6 +269,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
   }
   .trait-slot-family {
     width: 8%;
@@ -234,7 +287,13 @@
 
 
   &.just-updated {
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.4);
+  }
+
+  &.invalid-row {
+    background-image: url('../images/error-stripes-2.png');
+    color: darken($color-chaos, 5);
+
   }
 
 

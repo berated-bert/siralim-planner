@@ -282,13 +282,13 @@ class MonsterPlannerPartyMember extends PureComponent {
   render() {
     return (
       <div className={"monster-planner-party-member cls-" + this.state.monsterClass.toLowerCase()}>
-        <div className="party-member-profile">
+        <div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
           <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
           <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
           <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
 
         </div>
-        <div className="party-member-traits">
+        <div className={"party-member-traits cls-" + this.state.monsterClass.toLowerCase()}>
 
           {this.props.partyMember.map((traitSlot, i) => 
             <MonsterPlannerTraitSlot
@@ -426,7 +426,8 @@ class MonsterPlanner extends Component {
 
   render() {
     return (
-      <div id="monster-planner" className="container" ref={this.myRef}>
+      <div id="monster-planner" ref={this.myRef}>
+        <h3 className="section-title">Party</h3>
         {this.props.partyMembers.map((partyMember, i) => 
           <MonsterPlannerPartyMember
             key={i}
