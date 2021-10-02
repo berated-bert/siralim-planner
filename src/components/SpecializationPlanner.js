@@ -95,6 +95,7 @@ class SpecializationsModal extends PureComponent {
 
   render() {
 
+    console.log(this.props.anointments, 'x');
     let anointmentNames = new Set();
     let anointmentsInSpecialization = {};
     for(let a of this.props.anointments) {
@@ -312,7 +313,7 @@ class SpecializationPlanner extends PureComponent {
       isOpen: true,
       specializations: [],
 
-      specializationsModalIsOpen: true,
+      specializationsModalIsOpen: false,
     }
   }
 
@@ -331,10 +332,6 @@ class SpecializationPlanner extends PureComponent {
 
     this.setState({
       specializations: specializations,
-    }, () => {
-      console.log(specializations[0])
-      this.props.updateSpecialization(specializations[0]);
-
     })
   }
 

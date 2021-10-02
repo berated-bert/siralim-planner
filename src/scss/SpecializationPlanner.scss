@@ -261,6 +261,7 @@ span.option-icon {
 }
 .anointment {
   width: 100%;
+  line-height: 140%;
   .anointment-name-and-source {
     margin-bottom: 3px;
     padding-right: 15px;
@@ -282,7 +283,7 @@ span.option-icon {
     }
   }
   .anointment-desc {
-
+    font-size: 0.95em;
   }
 }
 

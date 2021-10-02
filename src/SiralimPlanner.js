@@ -36,6 +36,8 @@ const UID_HASH_LENGTH = 6;
 
 const monsterData = require('./data/data');
 
+const specializationsList = require('./data/specializations');
+
 const metadata = require('./data/metadata');
 
 const compendium_version = metadata.compendium_version;
@@ -61,9 +63,20 @@ function buildTraitMap() {
   return traitMap;
 }
 
+function buildAnointmentUIDMap() {
+  let anointmentUIDMap = {}
+  for(let s of specializationsList) {
+    for(let p of s.perks) {
+      if(p.anointment === "No") continue;
+      anointmentUIDMap[p.uid] = p;
+    }
+  }
+  return anointmentUIDMap;
+}
+
 const monsterUIDMap = buildUIDMap();
 const monsterTraitMap = buildTraitMap();
-
+const anointmentUIDMap = buildAnointmentUIDMap();
 
 
 
@@ -163,7 +176,6 @@ class SiralimPlanner extends Component {
     let partyMembers = this.state.partyMembers;
     let saveString = "";
 
-    // TODO: Fix
     var c = 0;
     for(let pm of partyMembers) {
       for(let m of pm) {
@@ -173,6 +185,18 @@ class SiralimPlanner extends Component {
         if(c > 18) break;
       }
     }
+
+    // Generate specialization string
+    if(this.state.currentSpecialization) {
+      saveString += "&s=" + this.state.currentSpecialization.abbreviation;
+    }
+
+    if(this.state.anointments.length > 0) saveString += "&a="
+    // Generate anointments string
+    for(let a of this.state.anointments) {
+      saveString += a.uid;
+    }
+
     this.props.history.push('?b=' + saveString);
   }
 
@@ -259,6 +283,34 @@ class SiralimPlanner extends Component {
   	return uids;
   }
 
+  // Parse the spec string (should contain two letters corresponding to
+  // a specialization) and return the specialization in the string.
+  parseSpecString(str) {
+
+    for(let s of specializationsList) {
+      if(s.abbreviation === str) {
+        return s;
+      }
+    }
+    throw new Error("Specialization not found");
+  }
+
+  parseAnointmentsString(str) {
+    let anointments = [];
+    let a_uids = str.match(/.{1,3}/g);
+    let seen_uids = new Set();
+    for(let a of a_uids) {
+      if(a.length !== 3) throw new Error("Anointment string contains invalid anointment id.");
+      if(!anointmentUIDMap.hasOwnProperty(a)) throw new Error("Anointment id not found.");
+      if(seen_uids.has(a)) throw new Error("Anointment appears twice.");
+      seen_uids.add(a);
+
+      anointments.push(anointmentUIDMap[a]);
+    }
+    console.log(anointments, 'xxxx');
+    return anointments;
+  }
+
   // Given a list of uids, construct a new array of monsterPlannerRows
   // where each item is the monster that corresponds to that particular
   // uid. This is used to read in the buildString (from the URL) and
@@ -314,7 +366,6 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     let partyMembers = [];
-    let anointments = [];
 
 
 
@@ -351,7 +402,37 @@ class SiralimPlanner extends Component {
      	}
     }
 
+    // Parse specialization string (s)
+    let specialization = this.state.specialization;
+    let specString = params.get('s');
+    if(specString) {
+      try {
+        specialization = this.parseSpecString(specString);
+        console.log('hi', specialization)
+
+
+      } catch(err) {
+        notificationText = "Error parsing specialization in URL: " + err.message;
+        notificationStatus = "error";
+      }
+    }
+
+    // Parse anointment string (a)
+    let anointments = this.state.anointments;
+    let anointmentString = params.get('a');
+    if(anointmentString) {
+      try {
+        anointments = this.parseAnointmentsString(anointmentString);
+      } catch(err) {
+        notificationText = "Error parsing anointments in URL: " + err.message;
+        notificationStatus = "error";
+      }
+    }
+
+
     this.setState({
+      anointments: anointments,
+      currentSpecialization: specialization,
       partyMembers: partyMembers,
       anointments: anointments,
       notificationText: notificationText,
@@ -486,7 +567,7 @@ class SiralimPlanner extends Component {
       }
     }
     if(!deleted) {      
-      console.log(this.state.currentSpecialization)
+      //console.log(this.state.currentSpecialization)
       let limit = 5;
       if(this.state.currentSpecialization.name === "Royal") {
         limit = 15;
@@ -497,7 +578,7 @@ class SiralimPlanner extends Component {
     }
     this.setState({
       anointments: anointments,
-    })
+    }, this.generateSaveString);
   }
 
   // Update the Specialization based on the selected option from the react select
@@ -512,7 +593,7 @@ class SiralimPlanner extends Component {
       anointments: anointments,
       currentSpecialization: s,
       maxAnointments: maxAnointments,
-    })
+    }, this.generateSaveString)
   }
 
   render() {

@@ -111,7 +111,9 @@ def load_specializations_data(specs_filename, perks_filename):
 			json_obj = { k: v.strip() for k, v in row.items() }
 			spec = json_obj['specialization']
 			json_obj['spec'] = spec
-			json_obj['spec_abbrev'] = specialization_abbrevs[spec]
+			abbrev = specialization_abbrevs[spec]
+			json_obj['spec_abbrev'] = abbrev
+			json_obj['uid'] = abbrev + 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'[len(specializations[specialization_ids[spec]]['perks'])]
 			del json_obj['specialization']
 
 			specializations[specialization_ids[spec]]['perks'].append(json_obj)
