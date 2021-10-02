@@ -42,11 +42,11 @@
   transition: background 0.2s ease;
   &.cls-chaos {
     background: saturate(rgba($color-chaos, 0.15), 20);
-    border-color: saturate(rgba(darken($color-chaos, 30), 0.3), 10);
+    border-color: saturate(rgba(darken($color-chaos, 15), 0.3), 10);
   }
   &.cls-death {
     background: saturate(rgba(lighten($color-death, 30), 0.15), 10);
-    border-color: saturate(rgba(darken($color-death, 20), 0.3), 10);
+    border-color: saturate(rgba(darken($color-death, 10), 0.3), 10);
   }
   &.cls-sorcery {
     background: saturate(rgba($color-sorcery, 0.15), 20);
@@ -71,6 +71,7 @@
     justify-content: center;
     flex-wrap: wrap;
     align-self: stretch;
+    //border-right: 2px solid rgba(0, 0, 0, 0.08);
     //border-top-left-radius: 5px;
     //dborder-bottom-left-radius: 5px;
     //border-radius: 5px;
@@ -157,7 +158,8 @@
     }
 
     img {
-      margin-right: 10px;
+      margin-right: 7px;
+      margin-top: 1px;
     }
   }
 }
@@ -171,8 +173,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 4px;
-  padding: 4px 0;
+  margin-top: 0px;
+  padding: 1px 0;
   padding-bottom: 0;
   //border-top: 2px solid rgba(0, 0, 0, 0.05);
   .cls-icon {
@@ -232,7 +234,7 @@
   width: 100%;
   //background: rgba(255, 255, 255, 0.4);
 
-  padding: 12px 2px;
+  padding: 11px 2px;
   transition: background 0.2s ease;
   //border-radius: 3px;
   color: #111;
@@ -291,8 +293,10 @@
   }
 
   &.invalid-row {
-    background-image: url('../images/error-stripes-2.png');
+    
     color: darken($color-chaos, 5);
+    //background: rgba($color-chaos, 0.1);
+    background-image: url('../images/error-stripes-2.png');
 
   }
 

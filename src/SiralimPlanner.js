@@ -124,13 +124,10 @@ class SiralimPlanner extends Component {
     this.state = {
 
       partyMembers: [],              // A list of 6 items, each of which corresponds to a party member.
+      anointments:  [],              // A list of the 5 anointments the user has selected.
+
       //monsterPlannerRows: [],        // A list of the 18 monsters in the party planner interface.
                                      // monsters from data.json.
-      currentRowId: null,            // The current row id, i.e. the row_id of the slot the user
-                                     // user most recently clicked on in the party planning interface.
-                                     // row_ids are unique (so if you move row_id=0 to slot 3, it will)
-                                     // still be row_id=0 even though it is in slot 3 - this is necessary
-                                     // to get the drag and drop functionality to work.
 
       currentPartyMemberId: null,    // The current party member id, i.e. 0, 1, 2, 3, 4 or 5.
       currentTraitSlotId:   null,    // The current party trait slot id, i.e. 0, 1 or 2.
@@ -163,7 +160,6 @@ class SiralimPlanner extends Component {
     let partyMembers = this.state.partyMembers;
     let saveString = "";
 
-    console.log(partyMembers);
     // TODO: Fix
     var c = 0;
     for(let pm of partyMembers) {
@@ -222,9 +218,14 @@ class SiralimPlanner extends Component {
   // Update the 18 monster planner rows to newRows and generate an updated
   // saveString.
   updatePartyMembers(newMembers) {
-    console.log("NEW MEMBERS:", newMembers)
     this.setState({
       partyMembers: newMembers,
+    }, this.generateSaveString);
+  }
+
+  updateAnointments(newAnointments) {
+    this.setState({
+      anointments: newAnointments
     }, this.generateSaveString);
   }
 
@@ -281,7 +282,6 @@ class SiralimPlanner extends Component {
       }
     }
 
-
     for(let i = 0; i < Math.min(18, uids.length); i++) {
       let uid = uids[i];
       if(uid !== null) {
@@ -311,6 +311,9 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     let partyMembers = [];
+    let anointments = new Array(5).fill(null);
+
+    
 
     let c = 0;
     for(let i = 0; i < 6; i++) {
@@ -347,6 +350,7 @@ class SiralimPlanner extends Component {
 
     this.setState({
       partyMembers: partyMembers,
+      anointments: anointments,
       notificationText: notificationText,
       notificationStatus: notificationStatus,
       notificationIndex: this.state.notificationIndex + 1,
@@ -485,7 +489,12 @@ class SiralimPlanner extends Component {
 
 
         <main>
-          <SpecializationPlanner/>
+          <SpecializationPlanner
+            anointments={this.state.anointments}
+            updateAnointments={this.updateAnointments.bind(this)}
+
+
+          />
           <MonsterPlanner 
             partyMembers={this.state.partyMembers}
             updatePartyMembers={this.updatePartyMembers.bind(this)}

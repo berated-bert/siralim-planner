@@ -3,7 +3,10 @@ import hashlib
 
 HASH_LENGTH = 6
 SUAPI_DATA_FILENAME = 'data/siralim-ultimate-api/creatures.csv'
-SUC_DATA_FILENAME = 'data/Siralim Ultimate Compendium - Traits.csv'
+SUC_DATA_FILENAME = 'data/siralim-ultimate-compendium/Siralim Ultimate Compendium - Traits.csv'
+SPECIALIZATIONS_FILENAME = 'data/berated-bert/specializations.csv'
+PERKS_FILENAME = 'data/berated-bert/perks.csv'
+
 
 # Generate the unique name of a monster/trait.
 # At the moment it is a combination of the family, creature and trait_name,
@@ -88,6 +91,34 @@ def add_sprites(json_data):
 				obj[k] = v
 	return json_data
 
+def load_specializations_data(specs_filename, perks_filename):
+	specializations = []
+	specialization_ids = {}
+	specialization_abbrevs = {}
+	with open(specs_filename, 'r') as f:
+		csv_reader = csv.DictReader(f)
+		for row in csv_reader:
+			json_obj = { k: v.strip() for k, v in row.items() }
+			json_obj['perks'] = []
+			specializations.append(json_obj)
+			specialization_ids[json_obj['name']] = len(specializations) - 1
+			specialization_abbrevs[json_obj['name']] = json_obj['abbreviation']
+
+
+	with open(perks_filename, 'r') as f:
+		csv_reader = csv.DictReader(f)
+		for row in csv_reader:
+			json_obj = { k: v.strip() for k, v in row.items() }
+			spec = json_obj['specialization']
+			json_obj['spec'] = spec
+			json_obj['spec_abbrev'] = specialization_abbrevs[spec]
+			del json_obj['specialization']
+
+			specializations[specialization_ids[spec]]['perks'].append(json_obj)
+
+
+	return specializations
+
 
 # Simple function to generate some 'metadata' (compendium version, highest/lowest
 # stats etc) and save it as a dictionary.
@@ -123,6 +154,9 @@ def generate_metadata(compendium_version, json_data):
 
 	return metadata
 
+
+
+
 def main():
 
 	json_data, version = load_csv_file(SUC_DATA_FILENAME)
@@ -132,6 +166,15 @@ def main():
 	save_json_data(json_data, 'src/data/data.json')
 	with open('src/data/metadata.json', 'w') as f:
 		json.dump(generate_metadata(version, json_data), f)
+
+	specializations_data = load_specializations_data(SPECIALIZATIONS_FILENAME, PERKS_FILENAME)
+
+	with open('src/data/specializations.json', 'w') as f:
+		json.dump(specializations_data, f)
+
+	# Print a pretty version of it for manual inspection etc
+	with open('src/data/specializations_pretty.json', 'w') as f:
+		json.dump(specializations_data, f, indent = 1)
 
 if __name__=="__main__":
 	main()

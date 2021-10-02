@@ -290,6 +290,9 @@ h3.section-title {
   padding-bottom: 20px;
 
   flex-direction: column;
+  &.modal-wide {
+    width: 1600px;
+  }
 }
 
 
@@ -415,7 +418,16 @@ button {
   &.button-lg {
     padding: 16px 32px;
   }
+
 }
+
+.green-tick {
+  color: $color-nature;
+}
+.red-tick {
+  color: $color-chaos;
+}
+
 
 .ib {
   display: inline-block;
@@ -434,3 +446,18 @@ button {
   }
 }
 
+table {
+  border-collapse: collapse;
+  font-size: 13px;
+  th {
+    text-align: left;
+    padding: 2px 5px;
+  }
+  td {
+    padding: 2px 5px;
+  }
+  tr:nth-child(even) td {
+    background: rgba(0, 0, 0, 0.03);
+
+  }
+}

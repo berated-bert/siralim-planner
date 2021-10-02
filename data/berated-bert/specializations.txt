@@ -1,0 +1,30 @@
+Hell Knight
+Reaver 
+Pyromancer 
+Necromancer 
+Defiler 
+Animator 
+Bloodmage 
+Cleric 
+Inquisitor 
+Monk 
+Warden 
+Witch Doctor 
+Evoker 
+Cabalist 
+Sorcerer 
+Paladin 
+Druid 
+Tribalist 
+Trickster 
+Astrologer 
+Doombringer 
+Grovetender 
+Purgatorian 
+Rune Knight 
+Spellweaver 
+Dreamshade 
+Siegemaster 
+Windrunner 
+Fanatic 
+Royal
