@@ -219,6 +219,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
         className={"trait-slot-clickable" + 
           (this.props.draggable ? " draggable": "") + 
           (rowErrors ? " invalid-row" : "") + 
+          (this.props.traitSlotIndex === 2 ? " artifact-slot" : "") +
           (this.state.justUpdated ? " just-updated": "") + 
           rowClass
         }

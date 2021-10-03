@@ -191,7 +191,7 @@
 
 .party-member-stats {
   margin-left: 8px;
-  padding: 6px 0;
+  padding: 3px 0;
   &.empty {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -319,6 +319,11 @@
   // }
 
 
+  &.artifact-slot {
+    .trait-slot-class, .trait-slot-family, .trait-slot-creature {
+      opacity: 0.2;
+    }
+  }
 
   .trait-slot-class {
     width: 3%;
