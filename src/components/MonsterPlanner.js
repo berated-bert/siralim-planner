@@ -307,11 +307,11 @@ class MonsterPlannerCreatureStats extends PureComponent {
 
     return (
       <div className={"party-member-stats" + (stats.health === "--" ? " empty" : "")}>
-        <span><img src={icon_health} className="class-icon" alt={"stat-health"}/><span>{stats.health}</span></span>
-        <span><img src={icon_attack} className="class-icon" alt={"stat-attack"}/><span>{stats.attack}</span></span>
-        <span><img src={icon_intelligence} className="class-icon" alt={"stat-health"}/><span>{stats.intelligence}</span></span>
-        <span><img src={icon_defense} className="class-icon" alt={"stat-health"}/><span>{stats.defense}</span></span>
-        <span><img src={icon_speed} className="class-icon" alt={"stat-health"}/><span>{stats.speed}</span></span>
+        <span><img src={icon_health} className="class-icon" alt={"stat-health"} title="Health"/><span>{stats.health}</span></span>
+        <span><img src={icon_attack} className="class-icon" alt={"stat-attack"} title="Attack"/><span>{stats.attack}</span></span>
+        <span><img src={icon_intelligence} className="class-icon" alt={"stat-health"} title="Intelligence"/><span>{stats.intelligence}</span></span>
+        <span><img src={icon_defense} className="class-icon" alt={"stat-health"} title="Defense"/><span>{stats.defense}</span></span>
+        <span><img src={icon_speed} className="class-icon" alt={"stat-health"} title="Speed"/><span>{stats.speed}</span></span>
       </div>
     )
   }
