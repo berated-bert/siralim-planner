@@ -172,6 +172,10 @@ span.option-icon {
 #perks-table {
   width: 100%;
   th:nth-child(1), td:nth-child(1) {
+    width: 30px;
+    text-align: center;
+  }
+  th:nth-child(2), td:nth-child(2) {
     width: 12%;
   }
 
@@ -183,7 +187,7 @@ span.option-icon {
     
   }
   tr.active td {
-    background: rgba($primary-color, 0.15);
+    background: lighten(rgba($primary-color, 0.15), 25);
     font-weight: bold;
 
   }
@@ -198,7 +202,7 @@ span.option-icon {
     background: rgba($primary-color, 0.1);
   }
   tr:not(.no-anoint):active td {
-    background: rgba($primary-color, 0.15);
+    background: lighten(rgba($primary-color, 0.15), 25);
   }
   &.max-anoints tr:not(.no-anoint):not(.active):active td {
     background: rgba($color-chaos, 0.15);

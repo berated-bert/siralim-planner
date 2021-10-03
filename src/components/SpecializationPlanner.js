@@ -9,6 +9,7 @@ import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faBolt } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
 
 const specializationsList = require('../data/specializations');
 
@@ -159,6 +160,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
               <table id="perks-table" className={this.props.atMaxAnointments ? "max-anoints" : ""}>
                 <thead>
                   <tr>
+                    <th></th>
                     <th>Perk Name</th>
                     <th>Description</th>
                   </tr>
@@ -171,6 +173,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
                           title={perk.anointment === "No" ? "This perk cannot be selected as an anointment." : undefined}
 
                           >
+                        <td>{ anointmentNames.has(perk.name) && <span className="green-tick"><FontAwesomeIcon icon={faCheck}/></span>}</td>
                         <td>{perk.name}</td>
                         <td>{perk.description}</td>
                       </tr>

@@ -188,7 +188,7 @@ class MonsterSelectionRow extends Component {
 
   render() {
     return (
-      <div className="monster-selection-row">
+      <div className={"monster-selection-row" + (this.props.inParty ? " in-party" : "")}>
         <div className="monster-row-in-party">
           { this.props.inParty && <span className="green-tick"><FontAwesomeIcon icon={faCheck}/></span>}
         </div>

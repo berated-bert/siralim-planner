@@ -81,6 +81,7 @@ The list of features to do/completed are as follows:
 
 - Build a back-end app to allow for more features such as artifact stats and nether stone traits
 - Improve accessibility of the site (ongoing)
+- ~~Make the creature selection table sortable~~
 - ~~Allow users to select anointments~~
 - ~~Allow users to select a specialization~~
 - ~~Incorporate creature stats into the app~~

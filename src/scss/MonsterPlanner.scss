@@ -110,7 +110,6 @@
 .party-member-profile {
     width: 12%;
     padding: 0;
-    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,6 +156,7 @@
 }
 
 .creature-sprite-container {
+
     margin-right: 8px;
     margin-left: 8px;
     width: 64px;
@@ -191,6 +191,7 @@
 
 .party-member-stats {
   margin-left: 8px;
+  padding: 6px 0;
   &.empty {
     color: rgba(0, 0, 0, 0.3);
   }
@@ -317,9 +318,7 @@
   //   border-radius: 3px;
   // }
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.6);
-  }
+
 
   .trait-slot-class {
     width: 3%;
@@ -343,7 +342,11 @@
   }
 
   &.just-updated {
-    background: rgba(255, 255, 255, 0.4);
+    background: lighten(rgba($primary-color, 0.2), 25);
+  }
+
+  &:hover {
+    background: lighten(rgba($primary-color, 0.15), 25); //rgba(255, 255, 255, 0.6);
   }
 
   &.invalid-row {
