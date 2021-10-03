@@ -262,7 +262,6 @@ class SiralimPlanner extends Component {
    * @return {Array}              An array of the uid of each monster/trait in the party.
    */
   getMonstersInParty(partyMembers) {
-    console.log(partyMembers);
     let monstersInParty = new Set();
     for(let p of partyMembers) {
       for(let m of p) {
@@ -725,7 +724,6 @@ class SiralimPlanner extends Component {
       }
     }
     if(!deleted) {      
-      //console.log(this.state.currentSpecialization)
       let limit = 5;
       if(this.state.currentSpecialization.name === "Royal") {
         limit = 15;
