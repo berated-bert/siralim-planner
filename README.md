@@ -26,6 +26,10 @@ download a copy of the Traits sheet of the Compendium, save it to `data/Siralim 
 
 This will convert the `.csv` file into a `.json` file, which is stored under `src/data/data.json` and read in by the React app.
 
+## Code documentation
+
+Code documentation (produced by jsdocs) is available under [docs][(docs)].
+
 ## Other notes
 
 ### How the URL sharing works
@@ -54,13 +58,16 @@ the name of its trait changes at some point.
 #### Specialization code
 
 The specialization code string is much simpler - it is a two-character identifier for a specialization. I came up with these 
-identifiers myself. For a list of them, see [data/specializations.csv](data/specializations.csv).
+identifiers myself. For a list of them, see [data/steam-guide/specializations.csv](data/steam-guide/specializations.csv).
 
 #### Anointment codes
 
 The anointment codes are three-character representation of a particular perk. The first two characters is the specialization code
 that the perk belongs to, and the third letter is a letter representing the index of the perk within the list of that specialization's
 perks, i.e. the first perk in Bloodmage, "Bleed Out", has the anointment code `BMA`, the second perk "Blood Clot" has `BMB`, and so on.
+
+I don't think the order of the perks within a specialization will ever change but if they do, it will only be a minor
+inconvenience when loading old builds.
 
 ## TODO
 
