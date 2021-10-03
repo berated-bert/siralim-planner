@@ -99,3 +99,5 @@ Please feel free to fork the repository and/or submit pull requests/issues etc. 
 This tool is not affiliated with Thylacine Studios.
 
 Creature sprites, creature stats and the mapping between trait -> creature sprite are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api).
+
+The list of specializations and perks is from the [guide on Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).
