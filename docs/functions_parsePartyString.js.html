@@ -1,4 +1,32 @@
-/**
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: functions/parsePartyString.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: functions/parsePartyString.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
  * A function to parse the character section of a build string from Siralim Ultimate.
  * @param  {String} text The character section of the build string.
  * @return {{String, Array}}      The specialization and list of the names of the anointments
@@ -10,7 +38,7 @@ function parseCharacterSection(text) {
   let anointment_names = [];
 
   for(const line of text.split('\n')) {
-    if(line.indexOf("the ") !== -1 && !spec) {
+    if(line.indexOf("the ") !== -1 &amp;&amp; !spec) {
       spec = line.split("the ")[1];
     } else if (line.indexOf('Anointments: ') !== -1) {
       anointment_names = line.split('Anointments: ')[1].split(', ');
@@ -20,7 +48,7 @@ function parseCharacterSection(text) {
   if(an_set.size !== anointment_names.length) throw new Error("Duplicate anointment.")
 
   if(anointment_names.length > 15) throw new Error("Too many anointments.");
-  if(spec !== "Royal" && anointment_names.length > 5) throw new Error("Too many anointments.");
+  if(spec !== "Royal" &amp;&amp; anointment_names.length > 5) throw new Error("Too many anointments.");
 
 
   return { spec: spec, anointment_names: anointment_names};
@@ -59,7 +87,7 @@ function parseCreatureSection(text) {
   // For each creature, get the innate, secondary and artifact trait.
   // Throw an error if a creature has more than one of each trait type.
   // If the creature does not have a trait in that slot, it will be null.
-  for(let i = 0; i < 6; i++) {
+  for(let i = 0; i &lt; 6; i++) {
 
     if(!creatures[i]) continue;
 
@@ -90,7 +118,7 @@ function parseCreatureSection(text) {
 
   let traitsArray = [];
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i &lt; 6; i++) {
     const innate = innates[i];
     const fusion = secondaries[i];
     const artifact = artifacts[i];
@@ -101,7 +129,7 @@ function parseCreatureSection(text) {
   }
 
   let atLeastOne;
-  for(let i = 0; i < traitsArray.length; i++) {
+  for(let i = 0; i &lt; traitsArray.length; i++) {
     if(traitsArray[i]) atLeastOne = true;
   }
   if(!atLeastOne) throw new Error("The party string does not appear to contain any traits.")
@@ -129,4 +157,26 @@ function parsePartyString(text) {
   return {traits: traitsArray, spec: spec, anointment_names: anointment_names};
 }
 
-export default parsePartyString;
+export default parsePartyString;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="InfoSection.html">InfoSection</a></li><li><a href="MonsterPlanner.html">MonsterPlanner</a></li><li><a href="MonsterPlannerCreatureClass.html">MonsterPlannerCreatureClass</a></li><li><a href="MonsterPlannerCreatureSprite.html">MonsterPlannerCreatureSprite</a></li><li><a href="MonsterPlannerCreatureStats.html">MonsterPlannerCreatureStats</a></li><li><a href="MonsterPlannerPartyMember.html">MonsterPlannerPartyMember</a></li><li><a href="MonsterPlannerRow.html">MonsterPlannerRow</a></li><li><a href="MonsterPlannerTraitSlot.html">MonsterPlannerTraitSlot</a></li><li><a href="MonsterSelectionModal.html">MonsterSelectionModal</a></li><li><a href="NotificationBanner.html">NotificationBanner</a></li><li><a href="SiralimPlanner.html">SiralimPlanner</a></li><li><a href="SpecializationPlanner.html">SpecializationPlanner</a></li><li><a href="SpecializationPlannerAnointment.html">SpecializationPlannerAnointment</a></li><li><a href="SpecializationPlannerAnointmentsModal.html">SpecializationPlannerAnointmentsModal</a></li><li><a href="UploadPartyModal.html">UploadPartyModal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#buildAnointmentMaps">buildAnointmentMaps</a></li><li><a href="global.html#buildSpecializationNameMap">buildSpecializationNameMap</a></li><li><a href="global.html#buildTraitMap">buildTraitMap</a></li><li><a href="global.html#buildUIDMap">buildUIDMap</a></li><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#getMonsterSemanticName">getMonsterSemanticName</a></li><li><a href="global.html#getPageFamily">getPageFamily</a></li><li><a href="global.html#IconOption">IconOption</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li><li><a href="global.html#parseCharacterSection">parseCharacterSection</a></li><li><a href="global.html#parseCreatureSection">parseCreatureSection</a></li><li><a href="global.html#parsePartyString">parsePartyString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 16:41:19 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

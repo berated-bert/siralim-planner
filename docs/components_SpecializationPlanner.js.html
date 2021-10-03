@@ -1,4 +1,32 @@
-import React, {PureComponent} from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/SpecializationPlanner.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/SpecializationPlanner.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, {PureComponent} from 'react';
 import Modal from 'react-modal';
 import _ from 'underscore';
 import Select, { components } from 'react-select';
@@ -19,10 +47,10 @@ const { Option, ValueContainer } = components;
  * @return {ReactComponent}       The option.
  */
 const IconOption = props => (
-  <Option {...props}>
-    <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + props.value + ".png)"}}></span>
+  &lt;Option {...props}>
+    &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + props.value + ".png)"}}>&lt;/span>
     {props.data.label}
-  </Option>
+  &lt;/Option>
 );
 
 /**
@@ -36,17 +64,17 @@ const MyValueContainer = ({children, ...props}) => {
   const value = props.getValue()[0];
   if (!hasValue) {
     return (
-      <components.ValueContainer {...props}>
+      &lt;components.ValueContainer {...props}>
         {children}
-      </components.ValueContainer>
+      &lt;/components.ValueContainer>
     );
   }
 
   return (
-    <ValueContainer {...props} className="value-container">
-      <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + value.value + ".png)"}}></span>
+    &lt;ValueContainer {...props} className="value-container">
+      &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + value.value + ".png)"}}>&lt;/span>
       {children}
-    </ValueContainer>
+    &lt;/ValueContainer>
   )
 };
 
@@ -88,7 +116,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
    * @param  {Object} prevState The previous state.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!_.isEqual(prevProps.currentSpecialization, this.props.currentSpecialization) && !this.state.currentSpecialization)
+    if(!_.isEqual(prevProps.currentSpecialization, this.props.currentSpecialization) &amp;&amp; !this.state.currentSpecialization)
     { 
       this.setState({
         currentSpecialization: this.props.specializations[0]
@@ -132,59 +160,59 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
     }
 
     return ( 
-      <Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide " overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
-        <div className="modal-header">
-          <h3>Anointments <span style={{'marginLeft': '20px'}}> {this.props.anointments.length} of {this.props.maxAnointments} anointments selected</span></h3>
-          <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
-        </div>
+      &lt;Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide " overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
+        &lt;div className="modal-header">
+          &lt;h3>Anointments &lt;span style={{'marginLeft': '20px'}}> {this.props.anointments.length} of {this.props.maxAnointments} anointments selected&lt;/span>&lt;/h3>
+          &lt;button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}>&lt;FontAwesomeIcon icon={faTimes} />&lt;/button>
+        &lt;/div>
 
-        <div className="info-modal specialization-selection">         
-          <nav className="specialization-selection-nav">
+        &lt;div className="info-modal specialization-selection">         
+          &lt;nav className="specialization-selection-nav">
             {
               this.props.specializations.map((s, i) => 
-                <div className={"specialization-option " + (_.isEqual(this.state.currentSpecialization, s) ? "current" : "") +
+                &lt;div className={"specialization-option " + (_.isEqual(this.state.currentSpecialization, s) ? "current" : "") +
                   ((anointmentsInSpecialization[s.abbreviation] > 0) ? " has-anointment" : "")
 
                   }
                   onClick={() => this.handleSpecializationChange(s)}>
-                  <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + s.abbreviation + ".png)"}}></span>
-                  { s.name }{ (anointmentsInSpecialization[s.abbreviation] > 0) && (" (" + anointmentsInSpecialization[s.abbreviation] + ")") }
-                </div>
+                  &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + s.abbreviation + ".png)"}}>&lt;/span>
+                  { s.name }{ (anointmentsInSpecialization[s.abbreviation] > 0) &amp;&amp; (" (" + anointmentsInSpecialization[s.abbreviation] + ")") }
+                &lt;/div>
 
               )
             }
-          </nav>
-          <div className="specialization-selection-list">   
-             <h2>{this.state.currentSpecialization && this.state.currentSpecialization.name} Perks</h2> 
-              <table id="perks-table" className={this.props.atMaxAnointments ? "max-anoints" : ""}>
-                <thead>
-                    <th>Perk Name</th>
-                    <th>Description</th>
-                </thead>
-                <tbody>
+          &lt;/nav>
+          &lt;div className="specialization-selection-list">   
+             &lt;h2>{this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.name} Perks&lt;/h2> 
+              &lt;table id="perks-table" className={this.props.atMaxAnointments ? "max-anoints" : ""}>
+                &lt;thead>
+                    &lt;th>Perk Name&lt;/th>
+                    &lt;th>Description&lt;/th>
+                &lt;/thead>
+                &lt;tbody>
                   {
-                    this.state.currentSpecialization && this.state.currentSpecialization.perks.map ((perk, i) =>
-                      <tr onClick={() => this.props.toggleAnointment(perk)}
+                    this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.perks.map ((perk, i) =>
+                      &lt;tr onClick={() => this.props.toggleAnointment(perk)}
                           className={(anointmentNames.has(perk.name) ? "active" : "") + (perk.anointment === "Yes" ? "" : "no-anoint")}
-                          title={perk.anointment === "No" && "This perk cannot be selected as an anointment."}
+                          title={perk.anointment === "No" &amp;&amp; "This perk cannot be selected as an anointment."}
 
                           >
-                        <td>{perk.name}</td>
-                        <td>{perk.description}</td>
-                      </tr>
+                        &lt;td>{perk.name}&lt;/td>
+                        &lt;td>{perk.description}&lt;/td>
+                      &lt;/tr>
                   )}
 
-                </tbody>
-              </table>
-              <section className="flavour-text">
-                <h4>About the {this.state.currentSpecialization && this.state.currentSpecialization.name}</h4>
-                {this.state.currentSpecialization && this.state.currentSpecialization.description.split('\\n').map((par, i) => 
-                  (<p>{par}</p>)
+                &lt;/tbody>
+              &lt;/table>
+              &lt;section className="flavour-text">
+                &lt;h4>About the {this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.name}&lt;/h4>
+                {this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.description.split('\\n').map((par, i) => 
+                  (&lt;p>{par}&lt;/p>)
                 )}
-              </section>
-          </div>
-        </div>  
-      </Modal>
+              &lt;/section>
+          &lt;/div>
+        &lt;/div>  
+      &lt;/Modal>
 
     )
   }
@@ -211,7 +239,7 @@ class SpecializationPlannerAnointment extends PureComponent {
    * @return {ReactElement} An empty row.
    */
   renderEmptyRow() {
-    return (<div className="empty-row">No anointment selected</div>)
+    return (&lt;div className="empty-row">No anointment selected&lt;/div>)
   }
 
   /**
@@ -222,8 +250,8 @@ class SpecializationPlannerAnointment extends PureComponent {
     const rowErrors = null;
 
     return (
-    <div className="trait-slot anointment-slot">
-      <div
+    &lt;div className="trait-slot anointment-slot">
+      &lt;div
         className={"anointment-slot-non-clickable" + 
           (rowErrors ? " invalid-row" : "") + 
           (this.state.justUpdated ? " just-updated": "")
@@ -231,21 +259,21 @@ class SpecializationPlannerAnointment extends PureComponent {
         title={rowErrors }
       >
       { !this.props.perk ? this.renderEmptyRow() :
-        <div className="anointment">
-          <div className="anointment-name-and-source">
-            <div className="anointment-name">            
+        &lt;div className="anointment">
+          &lt;div className="anointment-name-and-source">
+            &lt;div className="anointment-name">            
             {this.props.perk.name}
-            </div>
-            <div className="anointment-source">
-              (<span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + this.props.perk.spec_abbrev + ".png)"}}>
-                </span> {this.props.perk.spec})
-            </div>
-          </div>
-          <div className="anointment-desc">{this.props.perk.description}</div>
-        </div>
+            &lt;/div>
+            &lt;div className="anointment-source">
+              (&lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + this.props.perk.spec_abbrev + ".png)"}}>
+                &lt;/span> {this.props.perk.spec})
+            &lt;/div>
+          &lt;/div>
+          &lt;div className="anointment-desc">{this.props.perk.description}&lt;/div>
+        &lt;/div>
       }
-      </div>
-    </div>
+      &lt;/div>
+    &lt;/div>
     )
   }
 }
@@ -353,14 +381,14 @@ class SpecializationPlanner extends PureComponent {
     }
 
     return (
-      <div id="specialization-planner" className={(!this.state.isOpen ? "hide " : "") +
-        "spe-" + (this.props.currentSpecialization && this.props.currentSpecialization.abbreviation)}>
+      &lt;div id="specialization-planner" className={(!this.state.isOpen ? "hide " : "") +
+        "spe-" + (this.props.currentSpecialization &amp;&amp; this.props.currentSpecialization.abbreviation)}>
 
-        <div className="toggle-bar" onClick={this.toggleOpen.bind(this)}>
-          <FontAwesomeIcon icon={(this.state.isOpen ? faChevronLeft : faChevronRight)}/>
-        </div>
+        &lt;div className="toggle-bar" onClick={this.toggleOpen.bind(this)}>
+          &lt;FontAwesomeIcon icon={(this.state.isOpen ? faChevronLeft : faChevronRight)}/>
+        &lt;/div>
 
-        <SpecializationPlannerAnointmentsModal 
+        &lt;SpecializationPlannerAnointmentsModal 
           modalIsOpen={this.state.anointmentsModalIsOpen}
           closeModal={this.closeAnointmentsModal.bind(this)}
 
@@ -375,9 +403,9 @@ class SpecializationPlanner extends PureComponent {
           toggleAnointment={this.props.toggleAnointment}
         />
 
-        <h3 className="section-title">Specialization</h3>
+        &lt;h3 className="section-title">Specialization&lt;/h3>
 
-        <Select 
+        &lt;Select 
             styles={customStyles}
             value={this.props.currentSpecialization}
             onChange={this.handleSpecializationChange.bind(this)}
@@ -387,21 +415,43 @@ class SpecializationPlanner extends PureComponent {
           />
 
 
-        <button aria-label="View specializations" className="perks-and-anointments-button" onClick={() => this.openAnointmentsModal()}>
-          <FontAwesomeIcon icon={faBolt}/>Anointments
-        </button>
+        &lt;button aria-label="View specializations" className="perks-and-anointments-button" onClick={() => this.openAnointmentsModal()}>
+          &lt;FontAwesomeIcon icon={faBolt}/>Anointments
+        &lt;/button>
 
-        <div className="anointments-list">
+        &lt;div className="anointments-list">
         { this.props.anointments.map((anointment, i) =>
-          <SpecializationPlannerAnointment perk={anointment}/>
+          &lt;SpecializationPlannerAnointment perk={anointment}/>
         )}
         { freeAnointmentSlots.map((anointment, i) =>
-          <SpecializationPlannerAnointment perk={anointment}/>
+          &lt;SpecializationPlannerAnointment perk={anointment}/>
         )}
-        </div>
-      </div>
+        &lt;/div>
+      &lt;/div>
     )
   }
 }
 
-export default SpecializationPlanner;
+export default SpecializationPlanner;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="InfoSection.html">InfoSection</a></li><li><a href="MonsterPlanner.html">MonsterPlanner</a></li><li><a href="MonsterPlannerCreatureClass.html">MonsterPlannerCreatureClass</a></li><li><a href="MonsterPlannerCreatureSprite.html">MonsterPlannerCreatureSprite</a></li><li><a href="MonsterPlannerCreatureStats.html">MonsterPlannerCreatureStats</a></li><li><a href="MonsterPlannerPartyMember.html">MonsterPlannerPartyMember</a></li><li><a href="MonsterPlannerRow.html">MonsterPlannerRow</a></li><li><a href="MonsterPlannerTraitSlot.html">MonsterPlannerTraitSlot</a></li><li><a href="MonsterSelectionModal.html">MonsterSelectionModal</a></li><li><a href="NotificationBanner.html">NotificationBanner</a></li><li><a href="SiralimPlanner.html">SiralimPlanner</a></li><li><a href="SpecializationPlanner.html">SpecializationPlanner</a></li><li><a href="SpecializationPlannerAnointment.html">SpecializationPlannerAnointment</a></li><li><a href="SpecializationPlannerAnointmentsModal.html">SpecializationPlannerAnointmentsModal</a></li><li><a href="UploadPartyModal.html">UploadPartyModal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#buildAnointmentMaps">buildAnointmentMaps</a></li><li><a href="global.html#buildSpecializationNameMap">buildSpecializationNameMap</a></li><li><a href="global.html#buildTraitMap">buildTraitMap</a></li><li><a href="global.html#buildUIDMap">buildUIDMap</a></li><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#getMonsterSemanticName">getMonsterSemanticName</a></li><li><a href="global.html#getPageFamily">getPageFamily</a></li><li><a href="global.html#IconOption">IconOption</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li><li><a href="global.html#parseCharacterSection">parseCharacterSection</a></li><li><a href="global.html#parseCreatureSection">parseCreatureSection</a></li><li><a href="global.html#parsePartyString">parsePartyString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 16:41:19 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,4 +1,32 @@
-import React, {Component} from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: SiralimPlanner.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: SiralimPlanner.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, {Component} from 'react';
 import Modal from 'react-modal';
 import { withRouter } from "react-router-dom";
 import _ from 'underscore';
@@ -122,7 +150,7 @@ class NotificationBanner extends Component {
    * @return {void}
    */
   componentDidUpdate(prevProps, prevState) {
-    if(_.isEqual(prevProps, this.props) && prevState.hidden === false) return;
+    if(_.isEqual(prevProps, this.props) &amp;&amp; prevState.hidden === false) return;
     if(this.props.status === null) return; // Ignore first successful load, which is null.
     if(prevProps.notificationIndex === this.props.notificationIndex) return;
 
@@ -153,9 +181,9 @@ class NotificationBanner extends Component {
     if(this.props.status === "success") icon = faCheck;
 
     return (
-    <div className={"notification-banner notification-" + this.props.status + (this.state.hidden ? " hidden" : "")}>
-        <FontAwesomeIcon icon={icon}/>&nbsp;&nbsp;{this.props.text}
-    </div>
+    &lt;div className={"notification-banner notification-" + this.props.status + (this.state.hidden ? " hidden" : "")}>
+        &lt;FontAwesomeIcon icon={icon}/>&amp;nbsp;&amp;nbsp;{this.props.text}
+    &lt;/div>
     )
 
   }
@@ -243,10 +271,10 @@ class SiralimPlanner extends Component {
 
     // Generate specialization string
     if(this.state.currentSpecialization) {
-      saveString += "&s=" + this.state.currentSpecialization.abbreviation;
+      saveString += "&amp;s=" + this.state.currentSpecialization.abbreviation;
     }
 
-    if(this.state.anointments.length > 0) saveString += "&a="
+    if(this.state.anointments.length > 0) saveString += "&amp;a="
     // Generate anointments string
     for(let a of this.state.anointments) {
       saveString += a.uid;
@@ -342,10 +370,10 @@ class SiralimPlanner extends Component {
   parseLoadString(str) {
   	let uids = [];
   	let currentUid = '';
-  	for(let i = 0; i < str.length; i++) {
+  	for(let i = 0; i &lt; str.length; i++) {
   		let c = str[i];
   		if(c === "_") {
-  			if(currentUid.length > 0 && currentUid.length < UID_HASH_LENGTH) throw new Error("Malformed uid");
+  			if(currentUid.length > 0 &amp;&amp; currentUid.length &lt; UID_HASH_LENGTH) throw new Error("Malformed uid");
   			uids.push(null);
   		} else {
   			currentUid += c;
@@ -357,7 +385,7 @@ class SiralimPlanner extends Component {
   	}
     // Throw errors if the string is not valid (i.e. too short or too long).
   	if(uids.length > 18) throw new Error("Too many uids");
-  	if(uids.length < 18) throw new Error("Not enough uids");
+  	if(uids.length &lt; 18) throw new Error("Not enough uids");
 
   	return uids;
   }
@@ -424,14 +452,14 @@ class SiralimPlanner extends Component {
     // Start by generating an empty list of 18 rows, corresponding to each
     // trait slot.
 
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i &lt; 6; i++) {
       partyMembers.push([]);
-      for(let j = 0; j < 3; j++) {
+      for(let j = 0; j &lt; 3; j++) {
         partyMembers[i].push({ monster: {} })
       }
     }
 
-    for(let i = 0; i < Math.min(18, uids.length); i++) {
+    for(let i = 0; i &lt; Math.min(18, uids.length); i++) {
       let uid = uids[i];
       if(uid !== null) {
         if(monsterUIDMap.hasOwnProperty(uid)) {
@@ -452,7 +480,7 @@ class SiralimPlanner extends Component {
 
   /**
    * On component mount, transform monsterData into a new array, i.e.
-   * { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
+   * { row_id: &lt;the index of the monster>, monster: &lt;the JSON object of the monster> }
    * This is necessary to get the drag and drop functionality to work.
    * Every row needs a fixed id to function properly.
    */
@@ -463,9 +491,9 @@ class SiralimPlanner extends Component {
 
     let partyMembers = [];
 
-    for(let i = 0; i < 6; i++) {
+    for(let i = 0; i &lt; 6; i++) {
       partyMembers.push([]);
-      for(let j = 0; j < 3; j++) {
+      for(let j = 0; j &lt; 3; j++) {
         partyMembers[i].push({ monster: {} })
       }
     }
@@ -476,7 +504,7 @@ class SiralimPlanner extends Component {
 
     let loadString = params.get('b');
 
-    // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
+    // If a load string was provided (i.e. the ?b=&lt;etc>), then attempt to create a party from that
     // build string.
     if(loadString) {
       try {
@@ -520,7 +548,7 @@ class SiralimPlanner extends Component {
         notificationStatus = "error";
       }
     }
-    if(specialization && specialization.name !== "Royal" && anointments.length > 5) {
+    if(specialization &amp;&amp; specialization.name !== "Royal" &amp;&amp; anointments.length > 5) {
       anointments = anointments.slice(0, 5);
     }
 
@@ -625,14 +653,14 @@ class SiralimPlanner extends Component {
   // Given an array of trait names, return an array
   // consisting of the uids of those particular trait names,
   // null if there was no trait in that slot, 
-  // or <not found> if that trait name is not present in the 
+  // or &lt;not found> if that trait name is not present in the 
   // trait map.
   
   /**
    * Given an array of trait names, return an array
    * consisting of the uids of those particular trait names,
    * null if there was no trait in that slot, 
-   * or <not found> if that trait name is not present in the 
+   * or &lt;not found> if that trait name is not present in the 
    * trait map.
    * @param  {Array} traitsArray An array of trait names.
    * @return {Array}             An array of the uids of those trait names.
@@ -648,7 +676,7 @@ class SiralimPlanner extends Component {
       if(monsterTraitMap.hasOwnProperty(t_)) {
         uids.push(monsterTraitMap[t_]);
       } else {
-        uids.push("<not found>");
+        uids.push("&lt;not found>");
       }
     }
     return uids;
@@ -718,7 +746,7 @@ class SiralimPlanner extends Component {
     
     let anointments = this.state.anointments;
     let deleted = false;
-    for(let i = 0; i < anointments.length; i++) {
+    for(let i = 0; i &lt; anointments.length; i++) {
       const a = anointments[i];
       // If this anointment in list, remove it and add a null at the end.
       if(anointment.name === a.name) {
@@ -733,7 +761,7 @@ class SiralimPlanner extends Component {
       if(this.state.currentSpecialization.name === "Royal") {
         limit = 15;
       }
-      if(anointments.length < limit) {
+      if(anointments.length &lt; limit) {
         anointments.push(anointment);
       }
     }
@@ -767,15 +795,15 @@ class SiralimPlanner extends Component {
    */
   render() {
     return (
-      <div className="App" id="app">
-        <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
-        <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
+      &lt;div className="App" id="app">
+        &lt;AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
+        &lt;NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
 
-        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
-        <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
+        &lt;UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
+        &lt;InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
 
-        <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>
-          <MonsterSelectionModal 
+        &lt;div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>
+          &lt;MonsterSelectionModal 
             items={monsterData}
             monstersInParty={this.state.monstersInParty}
             closeModal={this.closeModal.bind(this)}
@@ -784,10 +812,10 @@ class SiralimPlanner extends Component {
 
             currentPartyMemberId = {this.state.currentPartyMemberId}
             currentTraitSlotId = {this.state.currentTraitSlotId} />
-        </div>
+        &lt;/div>
 
-        <main>
-          <SpecializationPlanner
+        &lt;main>
+          &lt;SpecializationPlanner
             currentSpecialization={this.state.currentSpecialization}
             anointments={this.state.anointments}
             maxAnointments={this.state.maxAnointments}
@@ -795,19 +823,41 @@ class SiralimPlanner extends Component {
             updateAnointments={this.updateAnointments.bind(this)}
             toggleAnointment={this.toggleAnointment.bind(this)}
           />
-          <MonsterPlanner 
+          &lt;MonsterPlanner 
             partyMembers={this.state.partyMembers}
             updatePartyMembers={this.updatePartyMembers.bind(this)}
             openModal={this.openModal.bind(this)}
             clearPartyMember={this.clearPartyMember.bind(this)}
           />  
-        </main>        
-        <AppFooter/>
-      </div>
+        &lt;/main>        
+        &lt;AppFooter/>
+      &lt;/div>
     );
   }
 }
 
 
 
-export default withRouter(SiralimPlanner);
+export default withRouter(SiralimPlanner);</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="InfoSection.html">InfoSection</a></li><li><a href="MonsterPlanner.html">MonsterPlanner</a></li><li><a href="MonsterPlannerCreatureClass.html">MonsterPlannerCreatureClass</a></li><li><a href="MonsterPlannerCreatureSprite.html">MonsterPlannerCreatureSprite</a></li><li><a href="MonsterPlannerCreatureStats.html">MonsterPlannerCreatureStats</a></li><li><a href="MonsterPlannerPartyMember.html">MonsterPlannerPartyMember</a></li><li><a href="MonsterPlannerRow.html">MonsterPlannerRow</a></li><li><a href="MonsterPlannerTraitSlot.html">MonsterPlannerTraitSlot</a></li><li><a href="MonsterSelectionModal.html">MonsterSelectionModal</a></li><li><a href="NotificationBanner.html">NotificationBanner</a></li><li><a href="SiralimPlanner.html">SiralimPlanner</a></li><li><a href="SpecializationPlanner.html">SpecializationPlanner</a></li><li><a href="SpecializationPlannerAnointment.html">SpecializationPlannerAnointment</a></li><li><a href="SpecializationPlannerAnointmentsModal.html">SpecializationPlannerAnointmentsModal</a></li><li><a href="UploadPartyModal.html">UploadPartyModal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#buildAnointmentMaps">buildAnointmentMaps</a></li><li><a href="global.html#buildSpecializationNameMap">buildSpecializationNameMap</a></li><li><a href="global.html#buildTraitMap">buildTraitMap</a></li><li><a href="global.html#buildUIDMap">buildUIDMap</a></li><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#getMonsterSemanticName">getMonsterSemanticName</a></li><li><a href="global.html#getPageFamily">getPageFamily</a></li><li><a href="global.html#IconOption">IconOption</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li><li><a href="global.html#parseCharacterSection">parseCharacterSection</a></li><li><a href="global.html#parseCreatureSection">parseCreatureSection</a></li><li><a href="global.html#parsePartyString">parsePartyString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 16:41:19 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

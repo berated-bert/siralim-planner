@@ -1,5 +1,3 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import icon_nature  from '../icons/nature.png'
 import icon_chaos   from '../icons/chaos.png'
 import icon_sorcery from '../icons/sorcery.png'

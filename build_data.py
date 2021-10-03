@@ -4,8 +4,8 @@ import hashlib
 HASH_LENGTH = 6
 SUAPI_DATA_FILENAME = 'data/siralim-ultimate-api/creatures.csv'
 SUC_DATA_FILENAME = 'data/siralim-ultimate-compendium/Siralim Ultimate Compendium - Traits.csv'
-SPECIALIZATIONS_FILENAME = 'data/berated-bert/specializations.csv'
-PERKS_FILENAME = 'data/berated-bert/perks.csv'
+SPECIALIZATIONS_FILENAME = 'data/steam-guide/specializations.csv'
+PERKS_FILENAME = 'data/steam-guide/perks.csv'
 
 
 # Generate the unique name of a monster/trait.
@@ -41,7 +41,7 @@ def load_csv_file(filename):
 	with open(filename, 'r') as f:
 		line = f.readline()
 		version = line.split("Version ")[1].split(",")[0]
-		print(version)
+		print("Using compendium version %s." % version)
 		f.readline()
 		csv_reader = csv.DictReader(f)
 		for row in csv_reader:
@@ -177,6 +177,8 @@ def main():
 	# Print a pretty version of it for manual inspection etc
 	with open('src/data/specializations_pretty.json', 'w') as f:
 		json.dump(specializations_data, f, indent = 1)
+
+	print("Data building complete.")
 
 if __name__=="__main__":
 	main()

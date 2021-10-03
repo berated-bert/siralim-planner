@@ -11,6 +11,8 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "gh-pages": "^3.2.3",
+    "jsdoc": "^3.6.7",
+    "npm-watch": "^0.11.0",
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^17.0.2",
@@ -29,13 +31,18 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "create-docs": "jsdoc src -r -d docs",
+    "dev": "concurrently --kill-others \"npm start\" \"npm-watch create-docs\""
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "watch": {
+    "create-docs": "src/**/*.js"
   },
   "browserslist": {
     "production": [

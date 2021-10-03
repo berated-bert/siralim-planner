@@ -11,7 +11,7 @@ html, body {
   font-family: 'Roboto', sans-serif;
   color: #222;
   //background: darken($primary-color, 40);
-  background: #eee;
+  background: #dedede;
 }
 * {
   box-sizing: border-box;
@@ -32,7 +32,8 @@ main {
 }
 
 header {
-  background: $primary-color;
+  z-index: 100;
+  background: #222;
   color: white;
   margin: 0;
   padding: 5px 25px;
@@ -96,7 +97,7 @@ header {
 }
 
 footer {
-  background: darken($primary-color, 20);
+  background: #333;//darken($primary-color, 20);
   padding: 15px 0px 10px 0;
   font-size: 12px;
   box-shadow: 0 200px 0px 200px darken($primary-color, 20);
@@ -125,9 +126,10 @@ a {
 
 h3.section-title {
   margin-top: 0;
+  //margin-bottom: 0;
   width: 100%;
   text-align: center;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   font-size: 13px;
 }
@@ -332,7 +334,7 @@ h3.section-title {
 .notification-banner {
   position: absolute;
   right: 60px;
-  top: 54px;
+  top: 50px;
   width: auto;
   max-width: 100%;
   padding: 7px 20px;
@@ -345,6 +347,7 @@ h3.section-title {
   text-align: center;
   z-index: 1000;
   border-radius: 5px;
+  border: 2px solid #ccc;
   &.hidden {
     opacity: 0;
   }
@@ -355,13 +358,13 @@ h3.section-title {
   color: darken($color-chaos, 20);
 }
 .notification-success {
-  background-color: lighten($color-nature, 35);
+  background-color: rgba(lighten($color-nature, 25), 0.7);
   border-color: rgba($color-nature, 0.25);
   color: darken($color-nature, 10);
 }
 .notification-warning {
   background-color: lighten($color-life, 15);
-  border-color: rgba($color-life, 0.25);
+  border-color: darken(rgba($color-life, 0.45), 20);
   color: darken($color-life, 45);
 }
 
@@ -458,7 +461,7 @@ table {
     padding: 2px 5px;
   }
   td {
-    padding: 2px 5px;
+    padding: 4px 5px;
   }
   tr:nth-child(even) td {
     background: #f1f1f1;

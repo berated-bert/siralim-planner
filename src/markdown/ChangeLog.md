@@ -2,7 +2,8 @@
 
 ### v1.02 (1 October 2021)
 
-* Added the ability to select a specialization.
+* Major design overhaul.
+* Added the ability to select a specialization and anointments.
 * Added monster stats to the monster selection table.
 * The monster selection table can now be sorted by clicking on the headings.
 

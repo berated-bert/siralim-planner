@@ -1,4 +1,32 @@
-import React, {Component, PureComponent} from 'react';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/MonsterPlanner.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/MonsterPlanner.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, {Component, PureComponent} from 'react';
 import _ from 'underscore';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -36,9 +64,9 @@ class MonsterPlannerRow extends Component {
     let iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
 
     return (
-      <React.Fragment> 
-        { iconedClass && <MonsterClassIcon icon={this.props.monster.class} /> }
-      </React.Fragment>
+      &lt;React.Fragment> 
+        { iconedClass &amp;&amp; &lt;MonsterClassIcon icon={this.props.monster.class} /> }
+      &lt;/React.Fragment>
     )
   }
 
@@ -51,23 +79,23 @@ class MonsterPlannerRow extends Component {
     var m = this.props.monster;
 
     return (
-      <React.Fragment>
-        <div className="trait-slot-class">
-          <span className="mobile-only ib"><b>Class:&nbsp;&nbsp;</b></span>{this.renderClass(m.class)}
-        </div>
-        <div className="trait-slot-family">
-          <span className="mobile-only ib"><b>Family:&nbsp;</b></span>{m.family}
-        </div>
-        <div className="trait-slot-creature">
-          <span className="mobile-only ib"><b>Creature:&nbsp;</b></span>{m.creature}
-        </div>
-        <div className="trait-slot-trait_name">
-          <span className="mobile-only ib"><b>Trait name:&nbsp;</b></span>{m.trait_name}
-        </div>
-        <div className={"trait-slot-trait_description"}>
-          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{m.trait_description}
-        </div>
-      </React.Fragment>
+      &lt;React.Fragment>
+        &lt;div className="trait-slot-class">
+          &lt;span className="mobile-only ib">&lt;b>Class:&amp;nbsp;&amp;nbsp;&lt;/b>&lt;/span>{this.renderClass(m.class)}
+        &lt;/div>
+        &lt;div className="trait-slot-family">
+          &lt;span className="mobile-only ib">&lt;b>Family:&amp;nbsp;&lt;/b>&lt;/span>{m.family}
+        &lt;/div>
+        &lt;div className="trait-slot-creature">
+          &lt;span className="mobile-only ib">&lt;b>Creature:&amp;nbsp;&lt;/b>&lt;/span>{m.creature}
+        &lt;/div>
+        &lt;div className="trait-slot-trait_name">
+          &lt;span className="mobile-only ib">&lt;b>Trait name:&amp;nbsp;&lt;/b>&lt;/span>{m.trait_name}
+        &lt;/div>
+        &lt;div className={"trait-slot-trait_description"}>
+          &lt;span className="mobile-only ib">&lt;b>Trait description:&amp;nbsp;&lt;/b>&lt;/span>{m.trait_description}
+        &lt;/div>
+      &lt;/React.Fragment>
     );
   }
 }
@@ -83,11 +111,11 @@ class MonsterPlannerCreatureSprite extends PureComponent {
    */
   render() {
     return (
-      <div className={"creature-sprite-container" + (this.props.sprite_filename ? "" : " empty")}>
-        { this.props.sprite_filename &&
-          <div className="creature-sprite" style={{"backgroundImage": "url(/siralim-planner/suapi-battle-sprites/" + this.props.sprite_filename + ")"}}></div>
+      &lt;div className={"creature-sprite-container" + (this.props.sprite_filename ? "" : " empty")}>
+        { this.props.sprite_filename &amp;&amp;
+          &lt;div className="creature-sprite" style={{"backgroundImage": "url(/siralim-planner/suapi-battle-sprites/" + this.props.sprite_filename + ")"}}>&lt;/div>
         }
-      </div>
+      &lt;/div>
     );
   }
 }
@@ -123,7 +151,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
    * @param  {Object} prevState The previous state.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!this.state.justUpdated && !_.isEqual(prevProps.monster, this.props.monster)) this.setJustUpdated();
+    if(!this.state.justUpdated &amp;&amp; !_.isEqual(prevProps.monster, this.props.monster)) this.setJustUpdated();
   }
 
   /**
@@ -162,10 +190,10 @@ class MonsterPlannerTraitSlot extends PureComponent {
    */
   getRowErrors() {
     if(_.isEmpty(this.props.monster)) return null;
-    if(!(this.props.traitSlotIndex === 2) && 
+    if(!(this.props.traitSlotIndex === 2) &amp;&amp; 
       (this.props.monster.class === "Rodian Master" || this.props.monster.class === "Nether Boss" || this.props.monster.class === "Backer")) 
         return "This trait cannot be found on a playable creature and cannot be placed in a creature slot.";
-    if(this.props.traitSlotIndex === 2 && 
+    if(this.props.traitSlotIndex === 2 &amp;&amp; 
       (this.props.monster.material_name === "N/A" || this.props.monster.material_name === "No Material Exists")) 
         return "This trait has no material and cannot be placed in the trait slot.";
     return null;
@@ -186,10 +214,10 @@ class MonsterPlannerTraitSlot extends PureComponent {
    */
   renderEmptyRow() {
     return (
-      <div className="empty-row">
-        { this.props.error && <span className="trait-slot-error"><FontAwesomeIcon icon={faExclamationTriangle} />Error: {this.props.error}. </span>}
+      &lt;div className="empty-row">
+        { this.props.error &amp;&amp; &lt;span className="trait-slot-error">&lt;FontAwesomeIcon icon={faExclamationTriangle} />Error: {this.props.error}. &lt;/span>}
         {"Click to add a" + (this.props.traitSlotIndex === 0 ? " primary trait" : (this.props.traitSlotIndex === 1 ? " fused trait" : "n artifact trait"))}
-      </div>
+      &lt;/div>
     )
   }
 
@@ -213,9 +241,9 @@ class MonsterPlannerTraitSlot extends PureComponent {
     }
 
     return (
-    <div className="trait-slot">
+    &lt;div className="trait-slot">
 
-      <div
+      &lt;div
         className={"trait-slot-clickable" + 
           (this.props.draggable ? " draggable": "") + 
           (rowErrors ? " invalid-row" : "") + 
@@ -232,14 +260,14 @@ class MonsterPlannerTraitSlot extends PureComponent {
         title={rowErrors }
       >
       { emptyRow ? this.renderEmptyRow() :
-        <MonsterPlannerRow monster={this.props.monster} error={this.props.error} />   
+        &lt;MonsterPlannerRow monster={this.props.monster} error={this.props.error} />   
       }
 
-      </div>
-      <div className="trait-slot-controls">
-        { !emptyRow && <button id={"remove-trait-" + (this.props.traitSlotIndex + 1)} className="delete-button" aria-label="Delete trait" onClick={this.props.clearPartyMember}><FontAwesomeIcon icon={faTimes} /></button>}
-      </div>
-    </div>
+      &lt;/div>
+      &lt;div className="trait-slot-controls">
+        { !emptyRow &amp;&amp; &lt;button id={"remove-trait-" + (this.props.traitSlotIndex + 1)} className="delete-button" aria-label="Delete trait" onClick={this.props.clearPartyMember}>&lt;FontAwesomeIcon icon={faTimes} />&lt;/button>}
+      &lt;/div>
+    &lt;/div>
     )
   }
 }
@@ -257,14 +285,14 @@ class MonsterPlannerCreatureClass extends PureComponent {
   render() {
     const monsterClass = this.props.monsterClass;
     return (
-      <div className="party-member-class">
-        { monsterClass !== "empty" && <React.Fragment>
-            <MonsterClassIcon icon={monsterClass}/>
+      &lt;div className="party-member-class">
+        { monsterClass !== "empty" &amp;&amp; &lt;React.Fragment>
+            &lt;MonsterClassIcon icon={monsterClass}/>
             {monsterClass}
-          </React.Fragment>
+          &lt;/React.Fragment>
            }
-        { monsterClass === "empty" && "" }
-      </div>
+        { monsterClass === "empty" &amp;&amp; "" }
+      &lt;/div>
     )
   }
 }
@@ -290,14 +318,14 @@ class MonsterPlannerCreatureStats extends PureComponent {
     const m1 = this.props.monster_1.stats;
     const m2 = this.props.monster_2.stats;
 
-    if(m1 && !m2) {
+    if(m1 &amp;&amp; !m2) {
       stats.health = m1.health;
       stats.attack = m1.attack;
       stats.intelligence = m1.intelligence;
       stats.defense = m1.defense;
       stats.speed = m1.speed;
     }
-    else if(m1 && m2) {
+    else if(m1 &amp;&amp; m2) {
       stats.health = Math.floor((m1.health + m2.health) / 2);
       stats.attack = Math.floor((m1.attack + m2.attack) / 2);
       stats.intelligence = Math.floor((m1.intelligence + m2.intelligence) / 2);
@@ -306,13 +334,13 @@ class MonsterPlannerCreatureStats extends PureComponent {
     }
 
     return (
-      <div className={"party-member-stats" + (stats.health === "--" ? " empty" : "")}>
-        <span><img src={icon_health} className="class-icon" alt={"stat-health"}/><span>{stats.health}</span></span>
-        <span><img src={icon_attack} className="class-icon" alt={"stat-attack"}/><span>{stats.attack}</span></span>
-        <span><img src={icon_intelligence} className="class-icon" alt={"stat-health"}/><span>{stats.intelligence}</span></span>
-        <span><img src={icon_defense} className="class-icon" alt={"stat-health"}/><span>{stats.defense}</span></span>
-        <span><img src={icon_speed} className="class-icon" alt={"stat-health"}/><span>{stats.speed}</span></span>
-      </div>
+      &lt;div className={"party-member-stats" + (stats.health === "--" ? " empty" : "")}>
+        &lt;span>&lt;img src={icon_health} className="class-icon" alt={"stat-health"}/>&lt;span>{stats.health}&lt;/span>&lt;/span>
+        &lt;span>&lt;img src={icon_attack} className="class-icon" alt={"stat-attack"}/>&lt;span>{stats.attack}&lt;/span>&lt;/span>
+        &lt;span>&lt;img src={icon_intelligence} className="class-icon" alt={"stat-health"}/>&lt;span>{stats.intelligence}&lt;/span>&lt;/span>
+        &lt;span>&lt;img src={icon_defense} className="class-icon" alt={"stat-health"}/>&lt;span>{stats.defense}&lt;/span>&lt;/span>
+        &lt;span>&lt;img src={icon_speed} className="class-icon" alt={"stat-health"}/>&lt;span>{stats.speed}&lt;/span>&lt;/span>
+      &lt;/div>
     )
   }
 }
@@ -362,9 +390,9 @@ class MonsterPlannerPartyMember extends PureComponent {
   getMonsterClass() {
     const pm1 = this.props.partyMember[0].monster;
     const pm2 = this.props.partyMember[1].monster;
-    if(pm2 && pm2.class) {
+    if(pm2 &amp;&amp; pm2.class) {
       return pm2.class;
-    } else if (pm1 && pm1.class) {
+    } else if (pm1 &amp;&amp; pm1.class) {
       return pm1.class;
     }
     return "empty";
@@ -376,17 +404,17 @@ class MonsterPlannerPartyMember extends PureComponent {
    */
   render() {
     return (
-      <div className={"monster-planner-party-member cls-" + this.state.monsterClass.toLowerCase()}>
-        <div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
-          <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
-          <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
-          <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
+      &lt;div className={"monster-planner-party-member cls-" + this.state.monsterClass.toLowerCase()}>
+        &lt;div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
+          &lt;MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
+          &lt;MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
+          &lt;MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
 
-        </div>
-        <div className={"party-member-traits cls-" + this.state.monsterClass.toLowerCase()}>
+        &lt;/div>
+        &lt;div className={"party-member-traits cls-" + this.state.monsterClass.toLowerCase()}>
 
           {this.props.partyMember.map((traitSlot, i) => 
-            <MonsterPlannerTraitSlot
+            &lt;MonsterPlannerTraitSlot
               monster={traitSlot.monster}
               error={traitSlot.error}
               key={i}
@@ -401,8 +429,8 @@ class MonsterPlannerPartyMember extends PureComponent {
               clearPartyMember={() => this.props.clearPartyMember(this.props.partyMemberId, i)}
             />             
           )}
-        </div>
-      </div>
+        &lt;/div>
+      &lt;/div>
     )
   }
 }
@@ -532,10 +560,10 @@ class MonsterPlanner extends Component {
    */
   render() {
     return (
-      <div id="monster-planner" ref={this.myRef}>
-        <h3 className="section-title">Party</h3>
+      &lt;div id="monster-planner" ref={this.myRef}>
+        &lt;h3 className="section-title">Party&lt;/h3>
         {this.props.partyMembers.map((partyMember, i) => 
-          <MonsterPlannerPartyMember
+          &lt;MonsterPlannerPartyMember
             key={i}
             partyMember={partyMember}
             clearPartyMember={this.props.clearPartyMember}
@@ -547,9 +575,31 @@ class MonsterPlanner extends Component {
             onMouseUp={this.handleMouseUp.bind(this)}
           />
         )}
-      </div>
+      &lt;/div>
     )
   }
 }
 
-export default MonsterPlanner;
+export default MonsterPlanner;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="InfoSection.html">InfoSection</a></li><li><a href="MonsterPlanner.html">MonsterPlanner</a></li><li><a href="MonsterPlannerCreatureClass.html">MonsterPlannerCreatureClass</a></li><li><a href="MonsterPlannerCreatureSprite.html">MonsterPlannerCreatureSprite</a></li><li><a href="MonsterPlannerCreatureStats.html">MonsterPlannerCreatureStats</a></li><li><a href="MonsterPlannerPartyMember.html">MonsterPlannerPartyMember</a></li><li><a href="MonsterPlannerRow.html">MonsterPlannerRow</a></li><li><a href="MonsterPlannerTraitSlot.html">MonsterPlannerTraitSlot</a></li><li><a href="MonsterSelectionModal.html">MonsterSelectionModal</a></li><li><a href="NotificationBanner.html">NotificationBanner</a></li><li><a href="SiralimPlanner.html">SiralimPlanner</a></li><li><a href="SpecializationPlanner.html">SpecializationPlanner</a></li><li><a href="SpecializationPlannerAnointment.html">SpecializationPlannerAnointment</a></li><li><a href="SpecializationPlannerAnointmentsModal.html">SpecializationPlannerAnointmentsModal</a></li><li><a href="UploadPartyModal.html">UploadPartyModal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#buildAnointmentMaps">buildAnointmentMaps</a></li><li><a href="global.html#buildSpecializationNameMap">buildSpecializationNameMap</a></li><li><a href="global.html#buildTraitMap">buildTraitMap</a></li><li><a href="global.html#buildUIDMap">buildUIDMap</a></li><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#getMonsterSemanticName">getMonsterSemanticName</a></li><li><a href="global.html#getPageFamily">getPageFamily</a></li><li><a href="global.html#IconOption">IconOption</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li><li><a href="global.html#parseCharacterSection">parseCharacterSection</a></li><li><a href="global.html#parseCreatureSection">parseCreatureSection</a></li><li><a href="global.html#parsePartyString">parsePartyString</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 16:41:19 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

@@ -1,11 +1,11 @@
 @import './mixins.scss';
 
 $cols: (
-  "AN": #222,
+  "AN": #777,
   "AS": rgba(15, 15, 211),
   "BM": #ed1a0c,
   "CA": #8362bd,
-  "CL": #ffe481,
+  "CL": darken(saturate(#ffe481, 20), 10),
   "DE": #add349,
   "DO": #502274,
   "DR": #6c6875,
@@ -13,12 +13,12 @@ $cols: (
   "EV": #c66cf4,
   "FA": #ffe265,
   "GR": #831c7b,
-  "HK": #9e0404,
+  "HK": lighten(#9e0404, 15),
   "IN": #924b2c,
   "MO": #74af3e,
   "NM": #665e4a,
   "PA": #a6a9d3,
-  "PM": #db6500,
+  "PM": lighten(saturate(#db6500, 10), 10),
   "PU": #59595f,
   "RE": #c8c9de,
   "RK": #4e4e9d,
@@ -38,12 +38,13 @@ $cols: (
     
   }
   #specialization-planner.spe-#{$abrv} {
-    background: rgba($col, 0.16);
-    border-right: 4px solid rgba(darken($col, 10), 0.3);
+    //background: desaturate(lighten($col, 25), 10); //rgba($col, 0.16);
+    background: lighten(rgba($col, 0.3), 5);
+    //border-right: 4px solid rgba(darken($col, 2), 0.7);
     // border-right: 4px solid rgba(darken($col, 10), 0.7);
     // border-bottom: 4px solid rgba(darken($col, 10), 0.7);
     .toggle-bar {
-      &:hover { background: rgba(darken($col, 10), 0.3); }
+      &:hover { background: rgba(darken($col, 10), 0.5); }
     }
     .perks-and-anointments-button {
 
@@ -58,22 +59,31 @@ $cols: (
   }
 }
 
+// #specialization-planner.spe-AN {
+//   background: desaturate(lighten(map-get($cols, 'AN'), 65), 10);
+// }
+// #specialization-planner.spe-NM {
+//   background: desaturate(lighten(map-get($cols, 'NM'), 35), 10);
+// }
+
 #specialization-planner {
 
+  
   position: relative;
-  color: #222;
+  color: rgba(0, 0, 0, 0.95);
   background: #ddd;
   width: 25%;
-  padding: 20px 36px;
+  padding: 15px 36px;
   padding-left: 20px;
-  transition: margin 0.2s ease;
-  //box-shadow: 1px 1px 4px -3px rgba(0, 0, 0, 0.9);
+  transition: margin 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  box-shadow: 1px 1px 5px -4px rgba(0, 0, 0, 0.95);
   z-index: 1;
   box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
-  border-right: 4px solid rgba(0, 0, 0, 0);
+  //border-right: 4px solid rgba(0, 0, 0, 0);
+
 
 
 
@@ -109,7 +119,7 @@ $cols: (
     width: 20px;
     height: 100%;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.04);
+    background: rgba(0, 0, 0, 0.07);
     display: flex;
     align-items: center;
     font-size: 13px;
@@ -167,7 +177,7 @@ span.option-icon {
 
   tr {
     border: 2px solid rgba(0, 0, 0, 0);
-    user-select: none;
+    //user-select: none;
   }
   tr.active {
     
@@ -175,6 +185,7 @@ span.option-icon {
   tr.active td {
     background: rgba($primary-color, 0.15);
     font-weight: bold;
+
   }
 
   tr:not(.no-anoint) {
@@ -191,23 +202,6 @@ span.option-icon {
   }
   &.max-anoints tr:not(.no-anoint):not(.active):active td {
     background: rgba($color-chaos, 0.15);
-  }
-
-  .add-anointment-button {
-    background: #ddd;
-    padding: 5px 5px;
-    color: #222;
-    font-size: 12px;
-    width: 48px;
-    float: right;
-    margin-right: 10px;
-    svg {
-      margin-right: 6px;
-    }
-    &.added {
-      background: $color-nature;
-    }
-
   }
 }
 
@@ -293,6 +287,7 @@ span.option-icon {
   flex-direction: row;
   margin-bottom: 0;
 
+
   > div {
     flex: 1;
 
@@ -310,13 +305,13 @@ span.option-icon {
 
 
   .specialization-selection-nav {
-
+    align-self: stretch;
     background: #eee;
     width: 17%;
     padding: 5px 0;
     font-size: 14px;
     line-height: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
     color: rgba(0, 0, 0, 0.75);
     .specialization-option {
       padding: 4px 20px;
@@ -341,8 +336,10 @@ span.option-icon {
   }
   .specialization-selection-list {
     padding: 10px 20px;
+    overflow-y: auto;
     h2 {
-      padding-bottom: 10px;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
       border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
     }
   }
@@ -350,11 +347,13 @@ span.option-icon {
 
 .specialization-selection-modal {
   padding-bottom: 0 !important;
+  //overflow-y: auto;
 }
 
 .info-modal.specialization-selection {
   padding: 0;
   flex: 1;
+  overflow-y: auto !important;
 }
 
 button.perks-and-anointments-button {
