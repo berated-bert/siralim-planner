@@ -28,7 +28,7 @@ This will convert the `.csv` file into a `.json` file, which is stored under `sr
 
 ## Code documentation
 
-Code documentation (produced by jsdocs) is available under [docs][(docs)].
+Code documentation (produced by jsdocs) is available under [docs](docs).
 
 ## Other notes
 
