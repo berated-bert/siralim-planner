@@ -158,15 +158,17 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
              <h2>{this.state.currentSpecialization && this.state.currentSpecialization.name} Perks</h2> 
               <table id="perks-table" className={this.props.atMaxAnointments ? "max-anoints" : ""}>
                 <thead>
+                  <tr>
                     <th>Perk Name</th>
                     <th>Description</th>
+                  </tr>
                 </thead>
                 <tbody>
                   {
                     this.state.currentSpecialization && this.state.currentSpecialization.perks.map ((perk, i) =>
                       <tr key={i} onClick={() => this.props.toggleAnointment(perk)}
                           className={(anointmentNames.has(perk.name) ? "active" : "") + (perk.anointment === "Yes" ? "" : "no-anoint")}
-                          title={perk.anointment === "No" && "This perk cannot be selected as an anointment."}
+                          title={perk.anointment === "No" ? "This perk cannot be selected as an anointment." : undefined}
 
                           >
                         <td>{perk.name}</td>
