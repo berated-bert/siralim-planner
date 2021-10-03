@@ -1,0 +1,381 @@
+@import './mixins.scss';
+
+$cols: (
+  "AN": #777,
+  "AS": rgba(15, 15, 211),
+  "BM": #ed1a0c,
+  "CA": #8362bd,
+  "CL": darken(saturate(#ffe481, 20), 10),
+  "DE": #add349,
+  "DO": #502274,
+  "DR": #6c6875,
+  "DS": #c18ce1,
+  "EV": #c66cf4,
+  "FA": #ffe265,
+  "GR": #831c7b,
+  "HK": lighten(#9e0404, 15),
+  "IN": #924b2c,
+  "MO": #74af3e,
+  "NM": #665e4a,
+  "PA": #a6a9d3,
+  "PM": lighten(saturate(#db6500, 10), 10),
+  "PU": #59595f,
+  "RE": #c8c9de,
+  "RK": #4e4e9d,
+  "RO": #e5be15,
+  "SM": #8f958e,
+  "SO": #6f6fd3,
+  "SP": #848fe6,
+  "TB": #45d090,
+  "TR": #ed1a1a,
+  "WA": #77c4b5,
+  "WD": #c2b79f,
+  "WR": #4461e5,
+);
+
+@each $abrv, $col in $cols {
+  .spe-#{$abrv}:after {
+    
+  }
+  #specialization-planner.spe-#{$abrv} {
+    //background: desaturate(lighten($col, 25), 10); //rgba($col, 0.16);
+    background: lighten(rgba($col, 0.3), 5);
+    //border-right: 4px solid rgba(darken($col, 2), 0.7);
+    // border-right: 4px solid rgba(darken($col, 10), 0.7);
+    // border-bottom: 4px solid rgba(darken($col, 10), 0.7);
+    .toggle-bar {
+      &:hover { background: rgba(darken($col, 10), 0.5); }
+    }
+    .perks-and-anointments-button {
+
+      svg {
+        margin-right: 10px;
+      }
+      background: rgba(darken($col, 35), 0.7);
+      &:hover {
+        background: rgba(darken($col, 25), 0.7);
+      }
+    }
+  }
+}
+
+// #specialization-planner.spe-AN {
+//   background: desaturate(lighten(map-get($cols, 'AN'), 65), 10);
+// }
+// #specialization-planner.spe-NM {
+//   background: desaturate(lighten(map-get($cols, 'NM'), 35), 10);
+// }
+
+#specialization-planner {
+
+  
+  position: relative;
+  color: rgba(0, 0, 0, 0.95);
+  background: #ddd;
+  width: 25%;
+  padding: 15px 36px;
+  padding-left: 20px;
+  transition: margin 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  box-shadow: 1px 1px 5px -4px rgba(0, 0, 0, 0.95);
+  z-index: 1;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  //border-right: 4px solid rgba(0, 0, 0, 0);
+
+
+
+
+
+
+
+  p {
+    line-height: 140%;
+    font-size: 14px;
+  }
+
+  &.hide {
+    margin-left: calc(-25% + 32px);
+  }
+
+  select {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
+    border: 2px solid #bbb;
+    border-radius: 3px;
+
+  }
+
+  .toggle-bar {
+    z-index: 100;
+    //border-right: 2px solid rgba(0, 0, 0, 0.15);
+    z-index: 100;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: 100%;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.07);
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    text-align: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    user-select: none;
+    &:active svg {
+      transform: translate(0px, 1px);
+    }
+    &:hover {
+      &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.3);
+        content: " ";
+      }
+      color: rgba(0, 0, 0, 0.95);
+    }
+  }
+  &.hide .toggle-bar {
+    width: 32px;
+  }
+}
+
+span.option-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background-size: 100%;
+  margin-right: 8px;
+}
+.value-container {
+  caret-color: transparent;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: no-wrap !important;
+  span.option-icon {
+    display: block;
+  }
+}
+
+
+
+#perks-table {
+  width: 100%;
+  th:nth-child(1), td:nth-child(1) {
+    width: 30px;
+    text-align: center;
+  }
+  th:nth-child(2), td:nth-child(2) {
+    width: 12%;
+  }
+
+  tr {
+    border: 2px solid rgba(0, 0, 0, 0);
+    //user-select: none;
+  }
+  tr.active {
+    
+  }
+  tr.active td {
+    background: lighten(rgba($primary-color, 0.15), 25);
+    font-weight: bold;
+
+  }
+
+  tr:not(.no-anoint) {
+    cursor: pointer;
+  }
+  tr.no-anoint {
+    color: $color-chaos;
+  }
+  tr:not(.no-anoint):hover td {
+    background: rgba($primary-color, 0.1);
+  }
+  tr:not(.no-anoint):active td {
+    background: lighten(rgba($primary-color, 0.15), 25);
+  }
+  &.max-anoints tr:not(.no-anoint):not(.active):active td {
+    background: rgba($color-chaos, 0.15);
+  }
+}
+
+#anointments-table {
+
+}
+
+.flavour-text {
+  p {
+    margin: 0;
+    font-style: italic;
+    padding: 5px 0;
+  }
+  h4 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  font-size: 14px;
+  margin-top: 20px;
+  border-top: 2px dotted rgba( 0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 15px 0px;
+}
+
+
+.anointments-list {
+  font-size: 14px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.anointment-slot {
+  min-height: 96px;
+
+  .anointment-slot-non-clickable {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    padding: 10px 0;
+  }
+  .empty-row {
+      text-align: center;
+      margin: 0 auto;
+      width: 100%;
+  }
+
+  .trait-slot-controls {
+    border-left: none;
+  }
+}
+.anointment {
+  width: 100%;
+  line-height: 140%;
+  .anointment-name-and-source {
+    margin-bottom: 3px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .anointment-name {
+      font-weight: bold;
+    }
+    
+    .anointment-source {
+      display: inline-block;
+      margin-left: 10px;
+      font-weight: normal;
+      .option-icon {
+        transform: translate(0px, 3px);
+        margin-right: 1px;
+      }
+    }
+  }
+  .anointment-desc {
+    font-size: 0.95em;
+  }
+}
+
+
+.specialization-selection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0;
+
+
+  > div {
+    flex: 1;
+
+    > div {
+      border-width: 2px;
+      //border-color: rgba(0, 0, 0, 0.4) !important;
+    }
+  }
+  button {
+    margin-left: 5px;
+  }
+
+
+
+
+
+  .specialization-selection-nav {
+    align-self: stretch;
+    background: #eee;
+    width: 17%;
+    padding: 5px 0;
+    font-size: 14px;
+    line-height: 100%;
+    overflow-y: auto;
+    color: rgba(0, 0, 0, 0.75);
+    .specialization-option {
+      padding: 4px 20px;
+      cursor: pointer;
+      &.current {
+        color: #222;
+        background: lighten($primary-color, 40);
+        &:hover {
+          background: lighten($primary-color, 45);
+        }
+      }
+      &:hover {
+        background: lighten($primary-color, 40);
+        //background: rgba(255, 255, 255, 0.8);
+      }
+      &.has-anointment {
+        color: #222;
+        font-weight: bold;
+
+      }
+    }
+  }
+  .specialization-selection-list {
+    padding: 10px 20px;
+    overflow-y: auto;
+    h2 {
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+      border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+    }
+  }
+}
+
+.specialization-selection-modal {
+  padding-bottom: 0 !important;
+  //overflow-y: auto;
+}
+
+.info-modal.specialization-selection {
+  padding: 0;
+  flex: 1;
+  overflow-y: auto !important;
+}
+
+button.perks-and-anointments-button {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+
+  mix-blend-mode: multiply;
+  &:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  text-align: center;
+  padding: 10px 10px;
+  height: auto;
+  svg {
+    margin-right: 10px;
+  }
+  
+}

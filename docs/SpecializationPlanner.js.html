@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: SpecializationPlanner.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: SpecializationPlanner.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, {Component, PureComponent} from 'react';
+import Modal from 'react-modal';
+import _ from 'underscore';
+import Select, { components } from 'react-select';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+import { faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faBolt } from '@fortawesome/free-solid-svg-icons'
+
+const specializationsList = require('../data/specializations');
+
+const { Option, ValueContainer, Input } = components;
+const IconOption = props => (
+  &lt;Option {...props}>
+    &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + props.value + ".png)"}}>&lt;/span>
+    {props.data.label}
+  &lt;/Option>
+);
+
+/**
+ * Override for the ValueContainer for react-select to display icons in the options.
+ * @param  {children}    options.children The children from react-select
+ * @param  {props} options.props    The props
+ * @return {ReactElement}                     The ValueContainer
+ */
+const MyValueContainer = ({children, ...props}) => {
+
+  const { getValue, hasValue } = props;
+  const nbValues = getValue().length;
+
+  const value = props.getValue()[0];
+
+  if (!hasValue) {
+    return (
+      &lt;components.ValueContainer {...props}>
+        {children}
+      &lt;/components.ValueContainer>
+    );
+  }
+
+  return (
+    &lt;ValueContainer {...props} className="value-container">
+      &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + value.value + ".png)"}}>&lt;/span>
+      {children}
+    &lt;/ValueContainer>
+  )
+};
+
+
+/**
+ * Override for customStyles for react-select.
+ * @type {Object}
+ */
+const customStyles = {
+  control: (provided, state) => ({
+    ...provided,
+    border: state.isSelected ? '2px solid rgba(0, 0, 0, 0.4) !important' : (state.isFocused ? '2px solid rgba(0, 0, 0, 0.3) !important' : '2px solid rgba(0, 0, 0, 0.4) !important'),
+    color: 'red',
+    boxShadow: "none",
+  })
+}
+
+
+
+/**
+ * The modal that pops up when the user clicks on the Anointments
+ * button on the specializations box on the left side.
+ */
+class AnointmentsModal extends PureComponent {
+
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentSpecialization: null,
+    }
+  }
+
+
+  componentDidUpdate(prevProps, prevState) {
+    if(!_.isEqual(prevProps.currentSpecialization, this.props.currentSpecialization) &amp;&amp; !this.state.currentSpecialization)
+    { 
+      this.setState({
+        currentSpecialization: this.props.specializations[0]
+      })
+    }
+  }
+
+
+  /**
+   * Handle the specialization change, i.e. change this.state.currentSpecialization
+   * to the provided specialization.
+   * @param  {obj} specialization The specialization to update to.
+   */
+  handleSpecializationChange(specialization) {
+    let currentSpecialization = null;
+    for(let s of this.props.specializations) {
+      if(s.abbreviation === specialization.abbreviation) {
+        currentSpecialization = s;
+        break;
+      }
+    }
+    this.setState({
+      currentSpecialization: currentSpecialization,
+    })
+  }
+
+  render() {
+    let anointmentNames = new Set();
+    let anointmentsInSpecialization = {};
+    for(let a of this.props.anointments) {
+      if(!a) continue;
+      if(!anointmentsInSpecialization.hasOwnProperty(a.spec_abbrev)) {
+        anointmentsInSpecialization[a.spec_abbrev] = 0;
+      }
+      anointmentsInSpecialization[a.spec_abbrev]++;
+      anointmentNames.add(a.name);
+    }
+
+    return ( 
+      &lt;Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide " overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
+        &lt;div className="modal-header">
+          &lt;h3>Anointments &lt;span style={{'marginLeft': '20px'}}> {this.props.anointments.length} of {this.props.maxAnointments} anointments selected&lt;/span>&lt;/h3>
+          &lt;button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}>&lt;FontAwesomeIcon icon={faTimes} />&lt;/button>
+        &lt;/div>
+
+        &lt;div className="info-modal specialization-selection">         
+          &lt;nav className="specialization-selection-nav">
+            {
+              this.props.specializations.map((s, i) => 
+                &lt;div className={"specialization-option " + (_.isEqual(this.state.currentSpecialization, s) ? "current" : "") +
+                  ((anointmentsInSpecialization[s.abbreviation] > 0) ? " has-anointment" : "")
+
+                  }
+                  onClick={() => this.handleSpecializationChange(s)}>
+                  &lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + s.abbreviation + ".png)"}}>&lt;/span>
+                  { s.name }{ (anointmentsInSpecialization[s.abbreviation] > 0) &amp;&amp; (" (" + anointmentsInSpecialization[s.abbreviation] + ")") }
+                &lt;/div>
+
+              )
+            }
+          &lt;/nav>
+          &lt;div className="specialization-selection-list">   
+             &lt;h2>{this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.name} Perks&lt;/h2> 
+              &lt;table id="perks-table" className={this.props.atMaxAnointments ? "max-anoints" : ""}>
+                &lt;thead>
+                    &lt;th>Perk Name&lt;/th>
+                    &lt;th>Description&lt;/th>
+                &lt;/thead>
+                &lt;tbody>
+                  {
+                    this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.perks.map ((perk, i) =>
+                      &lt;tr onClick={() => this.props.toggleAnointment(perk)}
+                          className={(anointmentNames.has(perk.name) ? "active" : "") + (perk.anointment === "Yes" ? "" : "no-anoint")}
+                          title={perk.anointment === "No" &amp;&amp; "This perk cannot be selected as an anointment."}
+
+                          >
+                        &lt;td>{perk.name}&lt;/td>
+                        &lt;td>{perk.description}&lt;/td>
+                      &lt;/tr>
+                  )}
+
+                &lt;/tbody>
+              &lt;/table>
+              &lt;section className="flavour-text">
+                &lt;h4>About the {this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.name}&lt;/h4>
+                {this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.description.split('\\n').map((par, i) => 
+                  (&lt;p>{par}&lt;/p>)
+                )}
+              &lt;/section>
+          &lt;/div>
+        &lt;/div>  
+      &lt;/Modal>
+
+    )
+  }
+}
+
+
+/**
+ * A single Anointment that appears in the list of anointments
+ * on the Specializations tab on the left side.
+ * Note that this has nothing to do with the Anointments modal.
+ */
+class Anointment extends PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      justUpdated: false,
+    }
+  }
+
+  /**
+   * Render an empty row that says "No anointment selected".
+   * @return {ReactElement} An empty row.
+   */
+  renderEmptyRow() {
+    return (&lt;div className="empty-row">No anointment selected&lt;/div>)
+  }
+
+  render() {
+    const rowErrors = null;
+    const emptyRow = this.props.perk ? false : true;
+
+    return (
+    &lt;div className="trait-slot anointment-slot">
+      &lt;div
+        className={"anointment-slot-non-clickable" + 
+          (rowErrors ? " invalid-row" : "") + 
+          (this.state.justUpdated ? " just-updated": "")
+        }
+        title={rowErrors }
+      >
+      { !this.props.perk ? this.renderEmptyRow() :
+        &lt;div className="anointment">
+          &lt;div className="anointment-name-and-source">
+            &lt;div className="anointment-name">            
+            {this.props.perk.name}
+            &lt;/div>
+            &lt;div className="anointment-source">
+              (&lt;span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/specialization_icons/" + this.props.perk.spec_abbrev + ".png)"}}>
+                &lt;/span> {this.props.perk.spec})
+            &lt;/div>
+          &lt;/div>
+          &lt;div className="anointment-desc">{this.props.perk.description}&lt;/div>
+        &lt;/div>
+      }
+
+      &lt;/div>
+
+    &lt;/div>
+    )
+
+  }
+}
+
+/*
+  { this.props.perk &amp;&amp; 
+  &lt;div className="trait-slot-controls">
+    { !emptyRow &amp;&amp; &lt;button id={"remove-anointment-" + (this.props.anointmentSlotIndex + 1)}
+      className="delete-button" aria-label="Delete anointment" onClick={this.props.clearAnointment}>
+      &lt;FontAwesomeIcon icon={faTimes} />
+    &lt;/button>}
+  &lt;/div>
+  }
+*/
+
+class SpecializationPlanner extends PureComponent {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: true,
+      specializations: [],
+
+      AnointmentsModalIsOpen: false,
+    }
+  }
+
+  toggleOpen() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
+
+  componentDidMount() {
+    let specializations = [...specializationsList];
+    for(let s of specializations) {
+      s['value'] = s.abbreviation;
+      s['label'] = s.name;
+    }
+
+    this.setState({
+      specializations: specializations,
+    })
+  }
+
+
+
+  closeAnointmentsModal() {
+    this.setState({
+      AnointmentsModalIsOpen: false,
+    }, () => {
+      document.body.style['overflow-y'] = "scroll";
+    })
+  }
+
+  openAnointmentsModal() {
+    this.setState({
+      AnointmentsModalIsOpen: true,
+    }, () => {
+      document.body.style['overflow-y'] = "hidden";
+    })
+  }
+
+
+  handleSpecializationChange(selectedOption) {
+    let currentSpecialization = null;
+    for(let s of this.state.specializations) {
+      if(s.abbreviation === selectedOption.value) {
+        currentSpecialization = s;
+        break;
+      }
+    }
+    this.props.updateSpecialization(currentSpecialization);
+  }
+
+  render() {
+
+    const freeAnointmentSlots = new Array(Math.max(0, this.props.maxAnointments - this.props.anointments.length)).fill(null); // TODO: Get this to work for Royal
+
+    let specOptions = [];
+    for(let s of this.state.specializations) {
+      specOptions.push({ value: s.abbreviation, label: s.name });
+    }
+
+    return (
+      &lt;div id="specialization-planner" className={(!this.state.isOpen ? "hide " : "") +
+        "spe-" + (this.props.currentSpecialization &amp;&amp; this.props.currentSpecialization.abbreviation)}>
+
+        &lt;div className="toggle-bar" onClick={this.toggleOpen.bind(this)}>
+          &lt;FontAwesomeIcon icon={(this.state.isOpen ? faChevronLeft : faChevronRight)}/>
+        &lt;/div>
+
+        &lt;AnointmentsModal 
+          modalIsOpen={this.state.AnointmentsModalIsOpen}
+          closeModal={this.closeAnointmentsModal.bind(this)}
+
+          anointments={this.props.anointments}
+          specializations={this.state.specializations}
+          specOptions={specOptions}
+          currentSpecialization={this.props.currentSpecialization}
+
+          maxAnointments={this.props.maxAnointments}
+          atMaxAnointments={this.props.maxAnointments === this.props.anointments.length}
+
+          toggleAnointment={this.props.toggleAnointment}
+        />
+
+
+ 
+
+        &lt;h3 className="section-title">Specialization&lt;/h3>
+
+        &lt;Select 
+            styles={customStyles}
+            value={this.props.currentSpecialization}
+            onChange={this.handleSpecializationChange.bind(this)}
+            options={specOptions}
+            menuPosition="fixed"
+            components={{ Option: IconOption, ValueContainer: MyValueContainer }}
+          />
+
+
+        &lt;button aria-label="View specializations" className="perks-and-anointments-button" onClick={() => this.openAnointmentsModal()}>
+          &lt;FontAwesomeIcon icon={faBolt}/>Anointments
+        &lt;/button>
+
+
+
+        &lt;div className="anointments-list">
+        { this.props.anointments.map((anointment, i) =>
+          &lt;Anointment perk={anointment}/>
+        )}
+        { freeAnointmentSlots.map((anointment, i) =>
+          &lt;Anointment perk={anointment}/>
+        )}
+        &lt;/div>
+        
+
+
+
+
+
+       
+
+      &lt;/div>
+    )
+  }
+}
+/*
+        &lt;AnointmentsModal 
+          modalIsOpen={this.state.anointmentsModalIsOpen}
+          closeModal={this.closeAnointmentsModal.bind(this)}
+          specializations={this.state.specializations}
+          currentAnointments={this.props.anointments}
+          onAnointmentsChange={this.props.updateAnointments}
+        />
+*/
+
+export default SpecializationPlanner;
+
+/*
+  &lt;div style={{'height': '100px'}}>&lt;/div>
+  &lt;div className="flavour-text">
+    &lt;h4>About the {specName}&lt;/h4>
+    {this.state.currentSpecialization &amp;&amp; this.state.currentSpecialization.description.split('\\n').map((par, i) => 
+      (&lt;p>{par}&lt;/p>)
+    )}
+  &lt;/div>
+*/</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Anointment.html">Anointment</a></li><li><a href="AnointmentsModal.html">AnointmentsModal</a></li><li><a href="InfoSection.html">InfoSection</a></li></ul><h3>Global</h3><ul><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 14:03:38 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

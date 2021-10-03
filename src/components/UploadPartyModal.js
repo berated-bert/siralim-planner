@@ -5,7 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes, faUpload } from '@fortawesome/free-solid-svg-icons'
 
 
-
+/**
+ * The upload party model, which pops up when clicking the Upload Party
+ * button at the top.
+ * @property {String} partyString The string that the user has entered into the box.
+ * @property {String} error The current error message, if any.
+ */
 class UploadPartyModal extends Component {
 
   constructor(props) {
@@ -16,7 +21,11 @@ class UploadPartyModal extends Component {
     }
   }
 
-  async handleUploadPartyString() {
+  /**
+   * Handle the "upload" of a party string.
+   * Do this by calling the function from props and checking for errors.
+   */
+  handleUploadPartyString() {
     this.props.uploadPartyFromString(this.state.partyString, function(err) {
       if(err) {
         this.setState({
@@ -31,6 +40,10 @@ class UploadPartyModal extends Component {
     }.bind(this));
   }
 
+  /**
+   * Handle the input change for the textarea.
+   * @param  {Event} e The event that sparked this function.
+   */
   handleInputChange(e) {
     this.setState({
       error: null,
@@ -38,6 +51,10 @@ class UploadPartyModal extends Component {
     });
   }
 
+  /**
+   * The render function.
+   * @return {ReactComponent} The modal.
+   */
   render() {
     return (
 

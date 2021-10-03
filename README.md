@@ -26,9 +26,20 @@ download a copy of the Traits sheet of the Compendium, save it to `data/Siralim 
 
 This will convert the `.csv` file into a `.json` file, which is stored under `src/data/data.json` and read in by the React app.
 
+## Code documentation
+
+Code documentation (produced by jsdocs) is available under [docs](docs).
+
 ## Other notes
 
 ### How the URL sharing works
+
+The build sharing URL is comprised of three components:
+* The party members (`b=`)
+* The specialization code (`s=`)
+* The anointment codes (`a=`)
+
+#### Party members
 
 In order to come up with a way of saving/loading builds without using a back-end server (like Grimtools.com), I needed some way
 to uniquely identify monsters/traits so that they could be saved in the URL parameters. I was originally going to use the indexes
@@ -44,13 +55,39 @@ tend to change between patches. I chose a hash length of 6 (in order to minimise
 string that represents each monster, e.g. Iron Golem just happens to be `ef5667` and will always be `ef5667` unless its family, creature or
 the name of its trait changes at some point. 
 
+#### Specialization code
+
+The specialization code string is much simpler - it is a two-character identifier for a specialization. I came up with these 
+identifiers myself. For a list of them, see [data/steam-guide/specializations.csv](data/steam-guide/specializations.csv).
+
+#### Anointment codes
+
+The anointment codes are three-character representation of a particular perk. The first two characters is the specialization code
+that the perk belongs to, and the third letter is a letter representing the index of the perk within the list of that specialization's
+perks, i.e. the first perk in Bloodmage, "Bleed Out", has the anointment code `BMA`, the second perk "Blood Clot" has `BMB`, and so on.
+
+I don't think the order of the perks within a specialization will ever change but if they do, it will only be a minor
+inconvenience when loading old builds.
+
 ## TODO
 
-- Tidy up the source code (it is a bit messy - it needs refactoring/commenting/documenting etc).
-- Make the design responsive, i.e. work nicely on mobile.
-- Potentially add artifact stats 
-- Allow import of builds from the game (this may be tricky)
-- Improve accessibility of the site
+At this stage I've pretty much reached the limit of what I can do with a pure front-end app. I would like to add other things to the app
+such as artifact stats, nether stone traits, etc, but this is simply not possible without causing the build string to grow to ridiculous lengths.
+The only way to achieve this would be to have a back end app, such as a Flask app, that could encode a build into a short URL (like how Grimtools does it).
+This would mean I could no longer host it for free on GitHub pages, and would need to think about security, maintenance etc... 
+so it is a somewhat long-term goal at the moment.
+
+The list of features to do/completed are as follows:
+
+- Build a back-end app to allow for more features such as artifact stats and nether stone traits
+- Improve accessibility of the site (ongoing)
+- ~~Make the creature selection table sortable~~
+- ~~Allow users to select anointments~~
+- ~~Allow users to select a specialization~~
+- ~~Incorporate creature stats into the app~~
+- ~~Tidy up the source code (it is a bit messy - it needs refactoring/commenting/documenting etc).~~ (it's as tidy as it's going to get for now)
+- ~~Make the design responsive, i.e. work nicely on mobile.~~
+- ~~Allow import of builds from the game (this may be tricky)~~
 - ~~Find a way to add the monster sprites to the planner. If anybody knows a database that maps monster names to their respective sprites, please let me know!~~
 
 ## License and contact
@@ -61,4 +98,6 @@ Please feel free to fork the repository and/or submit pull requests/issues etc. 
 
 This tool is not affiliated with Thylacine Studios.
 
-Creature sprites and the mapping between trait -> creature sprite are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api).
+Creature sprites, creature stats and the mapping between trait -> creature sprite are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api).
+
+The list of specializations and perks is from the [guide on Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).

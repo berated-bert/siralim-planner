@@ -2,7 +2,7 @@ import React, {PureComponent} from 'react';
 
 import ReactMarkdown from 'react-markdown';
 
-import md from './markdown/ChangeLog.md';
+import md from '../markdown/ChangeLog.md';
 
 class ChangeLog extends PureComponent {
 

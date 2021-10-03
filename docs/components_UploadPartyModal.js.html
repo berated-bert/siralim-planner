@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: components/UploadPartyModal.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: components/UploadPartyModal.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, {Component} from 'react';
+import Modal from 'react-modal';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes, faUpload } from '@fortawesome/free-solid-svg-icons'
+
+
+/**
+ * The upload party model, which pops up when clicking the Upload Party
+ * button at the top.
+ * @property {String} partyString The string that the user has entered into the box.
+ * @property {String} error The current error message, if any.
+ */
+class UploadPartyModal extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      partyString: "",
+      error: null,
+    }
+  }
+
+  /**
+   * Handle the "upload" of a party string.
+   * Do this by calling the function from props and checking for errors.
+   */
+  handleUploadPartyString() {
+    this.props.uploadPartyFromString(this.state.partyString, function(err) {
+      if(err) {
+        this.setState({
+          error: err.message,
+        });
+      } else {
+        this.setState( {
+          partyString: "",
+          error: null,
+        });
+      }
+    }.bind(this));
+  }
+
+  /**
+   * Handle the input change for the textarea.
+   * @param  {Event} e The event that sparked this function.
+   */
+  handleInputChange(e) {
+    this.setState({
+      error: null,
+      partyString: e.target.value,
+    });
+  }
+
+  /**
+   * The render function.
+   * @return {ReactComponent} The modal.
+   */
+  render() {
+    return (
+
+      &lt;Modal className="modal-content modal-content-info modal-sm" overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
+        &lt;div className="modal-header">
+          &lt;button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}>&lt;FontAwesomeIcon icon={faTimes} />&lt;/button>
+        &lt;/div>
+        &lt;div className="info-modal">
+          &lt;h2>Upload party&lt;/h2>
+          &lt;p>Paste your party string into the box below and click "upload" to upload your party. You can get your build string in-game by going to Options and then Export Data to Clipboard.&lt;/p>
+          { this.state.error &amp;&amp; &lt;div className="notification notification-error">&lt;b>Error: &lt;/b>{this.state.error}&lt;/div>}
+          &lt;textarea autoFocus id="upload-party-textarea" placeholder="Paste party string here" onChange={(e) => this.handleInputChange(e)} value={this.state.partyString}>&lt;/textarea>
+          &lt;button id="upload-party-button" className="button-lg" onClick={this.handleUploadPartyString.bind(this)}>&lt;FontAwesomeIcon icon={faUpload}/>&amp;nbsp;Upload&lt;/button>
+        &lt;/div>
+      &lt;/Modal>
+    )
+  }
+}
+
+export default UploadPartyModal;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="InfoSection.html">InfoSection</a></li><li><a href="MonsterPlanner.html">MonsterPlanner</a></li><li><a href="MonsterPlannerCreatureClass.html">MonsterPlannerCreatureClass</a></li><li><a href="MonsterPlannerCreatureSprite.html">MonsterPlannerCreatureSprite</a></li><li><a href="MonsterPlannerCreatureStats.html">MonsterPlannerCreatureStats</a></li><li><a href="MonsterPlannerPartyMember.html">MonsterPlannerPartyMember</a></li><li><a href="MonsterPlannerRow.html">MonsterPlannerRow</a></li><li><a href="MonsterPlannerTraitSlot.html">MonsterPlannerTraitSlot</a></li><li><a href="MonsterSelectionModal.html">MonsterSelectionModal</a></li><li><a href="NotificationBanner.html">NotificationBanner</a></li><li><a href="SiralimPlanner.html">SiralimPlanner</a></li><li><a href="SpecializationPlanner.html">SpecializationPlanner</a></li><li><a href="SpecializationPlannerAnointment.html">SpecializationPlannerAnointment</a></li><li><a href="SpecializationPlannerAnointmentsModal.html">SpecializationPlannerAnointmentsModal</a></li><li><a href="UploadPartyModal.html">UploadPartyModal</a></li></ul><h3>Global</h3><ul><li><a href="global.html#buildAnointmentMaps">buildAnointmentMaps</a></li><li><a href="global.html#buildSpecializationNameMap">buildSpecializationNameMap</a></li><li><a href="global.html#buildTraitMap">buildTraitMap</a></li><li><a href="global.html#buildUIDMap">buildUIDMap</a></li><li><a href="global.html#customStyles">customStyles</a></li><li><a href="global.html#getMonsterSemanticName">getMonsterSemanticName</a></li><li><a href="global.html#getPageFamily">getPageFamily</a></li><li><a href="global.html#IconOption">IconOption</a></li><li><a href="global.html#MyValueContainer">MyValueContainer</a></li><li><a href="global.html#parseCharacterSection">parseCharacterSection</a></li><li><a href="global.html#parseCreatureSection">parseCreatureSection</a></li><li><a href="global.html#parsePartyString">parsePartyString</a></li><li><a href="global.html#toTitleCase">toTitleCase</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.7</a> on Sun Oct 03 2021 19:53:32 GMT+0800 (Australian Western Standard Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

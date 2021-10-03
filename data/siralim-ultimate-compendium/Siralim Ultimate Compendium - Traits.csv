@@ -572,7 +572,7 @@ Rodian Master,Gorgon,Mastery Trait,Master of Gorgons,Your Gorgons deal 35% more 
 Life,Griffon,Archer,Volley,Your Griffons have an independent 20% chance to deal Critical damage with attacks for each Griffon fighting on your side. This trait does not stack.,Archer Beak
 Life,Griffon,Assault,Heavy Repercussions,"At the end of this creature's turn, it has a 7% chance to take another turn for each Griffon fighting on your side.",Assault Beak
 Life,Griffon,Divebomber,Impending Victory,"After one of your Griffons Attack, this creature Attacks a random enemy. This trait does not activate if the attacking Griffon also has this trait.",Divebomber Beak
-Life,Griffon,Dreamfinder,All As One ,"After your Griffons receive a buff, they share a copy of that buff with all the Griffons fighting on your side. This trait does not stack.",Dreamfinder Beak
+Life,Griffon,Dreamfinder,All As One,"After your Griffons receive a buff, they share a copy of that buff with all the Griffons fighting on your side. This trait does not stack.",Dreamfinder Beak
 Life,Griffon,Razorfoot,Deafening Roar,Your Griffons deal 10% more damage for each Griffon fighting on your side. This trait does not stack.,Razorfoot Beak
 Life,Griffon,Screecher,Impunity,Your Griffons take 5% less damage for each Griffon fighting on your side. This trait does not stack.,Screecher Beak
 Life,Griffon,Silverclaw,Colony,"After one of your other Griffons Defend, the rest of them Defend as well. This trait does not stack.",Silverclaw Beak
