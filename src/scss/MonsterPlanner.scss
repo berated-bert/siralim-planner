@@ -39,7 +39,50 @@
   box-shadow: 1px 1px 6px -4px rgba(0, 0, 0, 0.95);
   padding: 0px;
 
+  @media(max-width: 1720px) {
+    .party-member-profile {
+      width: 20%;
+    }
+    .party-member-traits {
+      width: 80%;
+    }
+  }
 
+  @media(max-width: 1280px) {
+    display: block;
+    .party-member-profile {
+      width: 100%;
+    }
+    .party-member-traits {
+      width: 100%;
+      .trait-slot .trait-slot-clickable {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .trait-slot .trait-slot-clickable > * {
+        width: auto;
+        padding: 0 20px;
+      }
+      .trait-slot .trait-slot-clickable .trait-slot-trait_description {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+  }
+  @media(max-width: 992px) {
+    .party-member-traits {
+      .trait-slot .trait-slot-clickable {
+        display: block;
+      }
+      .trait-slot .trait-slot-clickable .trait-slot-class {
+        text-align: left;
+        justify-content: left;
+      }
+      .trait-slot .trait-slot-clickable > *:not(:first-child) {
+        margin-top: 10px;
+      }
+    }
+  }
   
   // &.cls-chaos {
   //   //background: saturate(rgba($color-chaos, 0.15), 20);
@@ -66,8 +109,8 @@
 
 .party-member-profile {
     width: 12%;
-    padding: 4px 8px;
     padding: 0;
+    padding-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,26 +336,20 @@
     width: 8%;
   }
   .trait-slot-trait_name {
-    width: 11%;
+    width: 14%;
   }
   .trait-slot-trait_description {
     width: 70%;
   }
-
-
 
   &.just-updated {
     background: rgba(255, 255, 255, 0.4);
   }
 
   &.invalid-row {
-    
     color: darken($color-chaos, 5);
     //background: rgba($color-chaos, 0.1);
     background-image: url('../images/error-stripes-2.png');
-
   }
-
-
 
 }

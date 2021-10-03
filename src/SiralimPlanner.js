@@ -500,9 +500,6 @@ class SiralimPlanner extends Component {
     if(specString) {
       try {
         specialization = this.parseSpecString(specString);
-        console.log('hi', specialization)
-
-
       } catch(err) {
         notificationText = "Error parsing specialization in URL: " + err.message;
         notificationStatus = "error";

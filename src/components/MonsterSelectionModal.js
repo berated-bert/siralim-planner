@@ -95,7 +95,8 @@ class MonsterSelectionRowHeader extends PureComponent {
     return (
       <div className={"monster-selection-row monster-row-header detailed" + (this.props.sortField ? " sorted" : "")}>
         { fields.map((field, i) => 
-          <HeaderField sort_name={field.sort_name}
+          <HeaderField key={i}
+                       sort_name={field.sort_name}
                        class_name={field.class_name}
                        field_name={field.field_name}
                        sortable={!field.not_sortable}
@@ -161,7 +162,7 @@ class MonsterStats extends PureComponent {
     return (
       <React.Fragment>
         {stats.map((stat, i) => 
-          <MonsterStat stat={stat} value={this.props[stat.toLowerCase()]} />
+          <MonsterStat key={i} stat={stat} value={this.props[stat.toLowerCase()]} />
         )}
       </React.Fragment>
     )

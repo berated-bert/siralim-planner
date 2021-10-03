@@ -488,18 +488,12 @@ class MonsterPlanner extends Component {
    */
   swapItems = (fromItem, toItem) => {
     let partyMembers = [...this.props.partyMembers];
-    console.log(partyMembers);
 
     let fromPID = fromItem.partyMemberId;
     let fromTID = fromItem.traitSlotId;
 
     let toPID = toItem.partyMemberId;
     let toTID = toItem.traitSlotId;
-
-    console.log('----')
-    console.log(fromPID, fromTID);
-    console.log(toPID, toTID);
-    console.log()
 
     let fromObj = {...this.props.partyMembers[fromPID][fromTID]};
     let toObj   = {...this.props.partyMembers[toPID][toTID]};

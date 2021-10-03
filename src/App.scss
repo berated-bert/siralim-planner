@@ -468,3 +468,17 @@ table {
 
   }
 }
+
+
+@media(max-width: 992px) {
+  main {
+    display: block;
+  }
+  #specialization-planner {
+    width: 100%;
+    margin-left: 0 !important;
+    .toggle-bar {
+      display: none;
+    }
+  }
+}

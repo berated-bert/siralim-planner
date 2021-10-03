@@ -142,7 +142,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
           <nav className="specialization-selection-nav">
             {
               this.props.specializations.map((s, i) => 
-                <div className={"specialization-option " + (_.isEqual(this.state.currentSpecialization, s) ? "current" : "") +
+                <div key={i} className={"specialization-option " + (_.isEqual(this.state.currentSpecialization, s) ? "current" : "") +
                   ((anointmentsInSpecialization[s.abbreviation] > 0) ? " has-anointment" : "")
 
                   }
@@ -164,7 +164,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
                 <tbody>
                   {
                     this.state.currentSpecialization && this.state.currentSpecialization.perks.map ((perk, i) =>
-                      <tr onClick={() => this.props.toggleAnointment(perk)}
+                      <tr key={i} onClick={() => this.props.toggleAnointment(perk)}
                           className={(anointmentNames.has(perk.name) ? "active" : "") + (perk.anointment === "Yes" ? "" : "no-anoint")}
                           title={perk.anointment === "No" && "This perk cannot be selected as an anointment."}
 
@@ -179,7 +179,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
               <section className="flavour-text">
                 <h4>About the {this.state.currentSpecialization && this.state.currentSpecialization.name}</h4>
                 {this.state.currentSpecialization && this.state.currentSpecialization.description.split('\\n').map((par, i) => 
-                  (<p>{par}</p>)
+                  (<p key={i}>{par}</p>)
                 )}
               </section>
           </div>
@@ -393,10 +393,10 @@ class SpecializationPlanner extends PureComponent {
 
         <div className="anointments-list">
         { this.props.anointments.map((anointment, i) =>
-          <SpecializationPlannerAnointment perk={anointment}/>
+          <SpecializationPlannerAnointment key={i} perk={anointment}/>
         )}
         { freeAnointmentSlots.map((anointment, i) =>
-          <SpecializationPlannerAnointment perk={anointment}/>
+          <SpecializationPlannerAnointment key={i} perk={anointment}/>
         )}
         </div>
       </div>
