@@ -12,6 +12,9 @@ function parseCharacterSection(text) {
   for(const line of text.split('\n')) {
     if(line.indexOf("the ") !== -1 && !spec) {
       spec = line.split("the ")[1];
+      if(spec.indexOf(" (") !== -1) {
+        spec = spec.split(' (')[0]; // Remove (Ascended)
+      }
     } else if (line.indexOf('Anointments: ') !== -1) {
       anointment_names = line.split('Anointments: ')[1].split(', ');
     }
