@@ -4,6 +4,7 @@
 
 * Added data from Siralim Ultimate Compendium v0.12.12.
 * Note that monster sprites and stats for the new creatures are not currently present, and will be added once Siralim Ultimate API is updated.
+* Unfortunately builds from the previous patch are broken - sorry about that. It shouldn't happen in future though unless the trait names, creature names, or family names change again.
 
 ### v1.02 (1 October 2021)
 
