@@ -357,5 +357,5 @@ def build_data(output_folder: str):
     return json_data, specializations_data
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":  # pragma: no cover
     build_data(os.path.join("src", "data"))

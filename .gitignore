@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 docs/*
+htmlcov/*
+.coverage
+__pycache__/*
