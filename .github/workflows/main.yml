@@ -16,9 +16,9 @@ jobs:
       - run: npm install
       - run: npm run build
       - name: Deploy 🚀
-        uses: crazy-max/ghaction-github-pages@v1
+        uses: crazy-max/ghaction-github-pages@v2
         with:
           target_branch: gh-pages
           build_dir: build
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_REPO_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
