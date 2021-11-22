@@ -101,7 +101,6 @@ def load_csv_file(filename: str):
         line = f.readline()
         version = line.split("Version ")[1].split(",")[0]
         logger.info("Using compendium version %s." % version)
-        f.readline()
         csv_reader = csv.DictReader(f)
         for row in csv_reader:
             json_obj = {
@@ -328,21 +327,25 @@ def generate_metadata(compendium_version, json_data):
     return metadata
 
 
-def main():
-    """Main function."""
+def build_data(output_folder: str):
+    """Build the data to the specified output folder.
+
+    Args:
+        output_folder (str): The output folder.
+    """
     json_data, version = load_csv_file(SUC_DATA_FILENAME)
 
     json_data = add_sprites_and_stats(json_data)
 
-    save_json_data(json_data, "src/data/data.json")
-    with open("src/data/metadata.json", "w") as f:
+    save_json_data(json_data, os.path.join(output_folder, "data.json"))
+    with open(os.path.join(output_folder, "metadata.json"), "w") as f:
         json.dump(generate_metadata(version, json_data), f)
 
     specializations_data = load_specializations_data(
         SPECIALIZATIONS_FILENAME, PERKS_FILENAME
     )
 
-    with open("src/data/specializations.json", "w") as f:
+    with open(os.path.join(output_folder, "specializations.json"), "w") as f:
         json.dump(specializations_data, f)
 
     # Print a pretty version of it for manual inspection etc
@@ -351,6 +354,8 @@ def main():
 
     logger.info("Data building complete.")
 
+    return json_data, specializations_data
+
 
 if __name__ == "__main__":
-    main()
+    build_data(os.path.join("src", "data"))
