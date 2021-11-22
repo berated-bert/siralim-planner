@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.03 (22 November 2021)
+
+* Added data from Siralim Ultimate Compendium v0.12.12.
+* Note that monster sprites and stats for the new creatures are not currently present, and will be added once Siralim Ultimate API is updated.
+
 ### v1.02 (1 October 2021)
 
 * Major design overhaul.
