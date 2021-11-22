@@ -10,6 +10,8 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "immer": ">=9.0.6",
+    "nth-check": ">=2.0.1",
     "gh-pages": "^3.2.3",
     "jsdoc": "^3.6.7",
     "npm-watch": "^0.11.0",
