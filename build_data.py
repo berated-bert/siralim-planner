@@ -25,6 +25,8 @@ def generate_unique_name(row):
     but realistically the trait_name alone should suffice. But changing it
     would mean breaking all existing build strings, so I'll leave it as it is
     for now.
+    Turns out trait_names are not unique, so this seems to be the best
+    way of doing it.
 
     Args:
         row (dict): The row to generate a unique name for.
