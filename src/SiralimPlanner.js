@@ -28,7 +28,13 @@ const monsterData = require('./data/data');
 const specializationsList = require('./data/specializations');
 const metadata = require('./data/metadata');
 const compendium_version = metadata.compendium_version;
+const relicsList = [
+  {name: "Wintermaul", stat_bonus: "Health",  abbreviation: "wintermaul", perks: [{'rank': 10, 'description': 'Does a cool thing'}]},
+  {name: "Temptation", abbreviation: "temptation"},
+  {name: "Salus", abbreviation: "salus"},
 
+
+]
 
 /**
  * Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
@@ -166,6 +172,7 @@ class NotificationBanner extends Component {
  * The main component which sits within App.
  * @property state.partyMembers {Array}  A list of 6 items, each of which corresponds to a party member.
  * @property state.anointments  {Array}  A list of the 5 anointments (or 15 if Royal) the user has selected.
+ * @property state.relics  {Array}  A list of the 6 relics the user has selected (one per party member).
  * @property {Object} state.currentSpecialization    The currently selected specialization.
  * @property {Integer} state.maxAnointments The maximum number of anointments. Is changed to 15 when spec = Royal
  * @property {Integer} state.currentPartyMemberId The current party member id, i.e. 0, 1, 2, 3, 4 or 5.
@@ -198,6 +205,7 @@ class SiralimPlanner extends Component {
 
       partyMembers: [],
       anointments:  [],
+      relics: [],
       currentSpecialization: null,
       maxAnointments: 5,
 
@@ -246,10 +254,16 @@ class SiralimPlanner extends Component {
       saveString += "&s=" + this.state.currentSpecialization.abbreviation;
     }
 
-    if(this.state.anointments.length > 0) saveString += "&a="
     // Generate anointments string
+    if(this.state.anointments.length > 0) saveString += "&a="
     for(let a of this.state.anointments) {
       saveString += a.uid;
+    }
+
+    // Generate relics string
+    if(this.state.relics.length > 0) saveString += "&r="
+    for(let r of this.state.relics) {
+      saveString += r.uid;
     }
 
     this.props.history.push('?b=' + saveString);
@@ -331,6 +345,18 @@ class SiralimPlanner extends Component {
     this.setState({
       anointments: newAnointments
     }, this.generateSaveString);
+  }
+
+  /**
+   * Update the relics array to newRelics and generate an updated
+   * saveString.
+   * @param  {Array} newRelics An array of relic objects.
+   */
+  updateRelics(newRelics) {
+    console.log(newRelics)
+    this.setState({
+      relics: newRelics
+    }, this.generateSaveString)
   }
 
   /**
@@ -461,9 +487,11 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     let partyMembers = [];
+    let relics = [];
 
     for(let i = 0; i < 6; i++) {
       partyMembers.push([]);
+      relics.push([])
       for(let j = 0; j < 3; j++) {
         partyMembers[i].push({ monster: {} })
       }
@@ -520,9 +548,11 @@ class SiralimPlanner extends Component {
       anointments = anointments.slice(0, 5);
     }
 
+    // TODO: Parse relic string (r)
 
     this.setState({
       anointments: anointments,
+      relics: relics,
       currentSpecialization: specialization,
       partyMembers: partyMembers,
       notificationText: notificationText,
@@ -795,6 +825,9 @@ class SiralimPlanner extends Component {
             updatePartyMembers={this.updatePartyMembers.bind(this)}
             openModal={this.openModal.bind(this)}
             clearPartyMember={this.clearPartyMember.bind(this)}
+            relics={this.state.relics}
+            relicsList={relicsList}
+            updateRelics={this.updateRelics.bind(this)}
           />  
         </main>        
         <AppFooter/>

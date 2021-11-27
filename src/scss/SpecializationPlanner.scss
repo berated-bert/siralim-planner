@@ -344,7 +344,17 @@ span.option-icon {
     h2 {
       padding-bottom: 15px;
       margin-bottom: 15px;
+      &:not(.no-border-bottom) {
+        border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+      }
+    }
+    h4 {
+      font-size: 1.1em;
+      color: #444;
+      margin-top: -20px;
+      margin-bottom: 15px;
       border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+      padding-bottom: 15px;
     }
   }
 }
