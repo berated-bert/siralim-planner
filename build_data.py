@@ -17,6 +17,9 @@ SUC_DATA_FILENAME = (
 )
 SPECIALIZATIONS_FILENAME = "data/steam-guide/specializations.csv"
 PERKS_FILENAME = "data/steam-guide/perks.csv"
+RELICS_FILENAME = (
+    "data/siralim-ultimate-compendium/Siralim Ultimate Compendium - Relics.csv"
+)
 
 
 def generate_unique_name(row):
@@ -283,6 +286,36 @@ def load_specializations_data(specs_filename, perks_filename):
     return specializations
 
 
+def load_relics_data(relics_filename):
+    """Load the list of relics from the compendium.
+
+    Args:
+        relics_filename (str): The filename of the .csv file from
+          the compendium.
+    """
+    relics = {}
+    with open(relics_filename, "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            relic = {}
+            relic["stat_bonus"] = row["Stat Bonus"]
+            relic["name"] = row["Relic"]
+            relic["abbreviation"] = row["Relic"].split(",")[0]
+
+            if relic["name"] not in relics:
+                relics[relic["name"]] = relic
+                relics[relic["name"]]["perks"] = []
+
+            relics[relic["name"]]["perks"].append(
+                {
+                    "rank": row["Rank"],
+                    "description": row["Relic Description"],
+                }
+            )
+    sorted_relics = sorted(relics.values(), key=lambda x: x["name"])
+    return sorted_relics
+
+
 def generate_metadata(compendium_version, json_data):
     """Simple function to generate some 'metadata' (compendium version,
     highest/lowest stats etc) and save it as a dictionary.
@@ -350,13 +383,18 @@ def build_data(output_folder: str):
     with open(os.path.join(output_folder, "specializations.json"), "w") as f:
         json.dump(specializations_data, f)
 
+    relics_data = load_relics_data(RELICS_FILENAME)
+
+    with open(os.path.join(output_folder, "relics.json"), "w") as f:
+        json.dump(relics_data, f)
+
     # Print a pretty version of it for manual inspection etc
     # with open("src/data/specializations_pretty.json", "w") as f:
     #    json.dump(specializations_data, f, indent=1)
 
     logger.info("Data building complete.")
 
-    return json_data, specializations_data
+    return json_data, specializations_data, relics_data
 
 
 if __name__ == "__main__":  # pragma: no cover

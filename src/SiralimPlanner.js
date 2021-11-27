@@ -28,13 +28,14 @@ const monsterData = require('./data/data');
 const specializationsList = require('./data/specializations');
 const metadata = require('./data/metadata');
 const compendium_version = metadata.compendium_version;
-const relicsList = [
-  {name: "Wintermaul", stat_bonus: "Health",  abbreviation: "wintermaul", perks: [{'rank': 10, 'description': 'Does a cool thing'}]},
-  {name: "Temptation", abbreviation: "temptation"},
-  {name: "Salus", abbreviation: "salus"},
+const relicsList = require('./data/relics');
+// [
+//   {name: "Wintermaul", stat_bonus: "Health",  abbreviation: "wintermaul", perks: [{'rank': 10, 'description': 'Does a cool thing'}]},
+//   {name: "Temptation", abbreviation: "temptation"},
+//   {name: "Salus", abbreviation: "salus"},
 
 
-]
+// ]
 
 /**
  * Construct a map (i.e. a JSON dictionary) that maps UIDs to the index

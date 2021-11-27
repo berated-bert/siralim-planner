@@ -404,8 +404,39 @@
 
 #relic-perks-table {
   width: 100%;
-  td:first-child {
+  td:first-child, th:first-child {
     width: 6%;
+    text-align: center;
   }
+}
 
+.relic-icon {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 0;
+  margin-top: -12px;
+  vertical-align: middle;
+}
+
+.specialization-selection.relic-selection {
+  .specialization-selection-nav {
+    width: 25%;
+  }
+}
+
+.specialization-selection-list {
+  h5 {
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: -15px;
+    margin-bottom: 15px;
+    border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+    padding-bottom: 15px;
+  }
+}
+.relic-stat-icon {
+  margin-right: 4px;
+  transform: translate(0px, 1px);
 }

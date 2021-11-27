@@ -66,7 +66,7 @@ def test_build_data_ok():
     """Ensure the build_compendium function works as expected.
     Save the output data to tests/output_data.
     """
-    json_data, specializations_data = bd.build_data(
+    json_data, specializations_data, relics_data = bd.build_data(
         os.path.join("tests", "output_data")
     )
 
@@ -77,3 +77,6 @@ def test_build_data_ok():
     assert len(set([s["name"] for s in specializations_data])) == len(
         specializations_data
     )
+
+    # Ensure there are at least 20 relics
+    assert len(relics_data) >= 20

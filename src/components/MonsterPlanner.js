@@ -474,13 +474,28 @@ class RelicSelectionModal extends Component {
   }
 
   /**
+   * Get the icon corresponding to this relic's stat bonus.
+   * @param  {str} stat The stat to get the icon of.
+   * @return {React.component}      The icon.
+   */
+  getStatIcon(stat) {
+    let statIcon;
+    if(stat === "Health") statIcon = icon_health;
+    if(stat === "Attack") statIcon = icon_attack;
+    if(stat === "Intelligence") statIcon = icon_intelligence;
+    if(stat === "Defense") statIcon = icon_defense;
+    if(stat === "Speed") statIcon = icon_speed;
+    return statIcon;
+  }
+
+  /**
    * The render function. Is super long and needs breaking down into smaller components.
    * @return {ReactComponent} The anointments modal.
    */
   render() {
 
     return (
-      <Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide "
+      <Modal className="modal-content modal-content-info relic-selection-modal modal-wide "
              overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
         <div className="modal-header">
           <h3>Relics <span style={{'marginLeft': '20px'}}>
@@ -488,7 +503,7 @@ class RelicSelectionModal extends Component {
           <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
 
-        <div className="info-modal specialization-selection">
+        <div className="info-modal specialization-selection relic-selection">
           <nav className="specialization-selection-nav">
             {
               this.props.relicsList.map((s, i) =>
@@ -502,9 +517,19 @@ class RelicSelectionModal extends Component {
             }
           </nav>
           <div className="specialization-selection-list">
-             <h2 className="no-border-bottom">{this.state.currentRelic && this.state.currentRelic.name}</h2>
-             <h4>{this.state.currentRelic && "Stat bonus: " + this.state.currentRelic.stat_bonus}</h4>
-              <table id="relic-perks-table">
+             <h2 className="no-border-bottom">
+             {this.state.currentRelic &&
+               <span className="relic-icon"
+                     style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation + ".png)"}}></span>
+               }
+             {this.state.currentRelic && this.state.currentRelic.name}</h2>
+             <h5>
+              {this.state.currentRelic && "Stat bonus: "}
+              {this.state.currentRelic &&
+                <img className="relic-stat-icon" src={this.getStatIcon(this.state.currentRelic.stat_bonus)} alt="Stat bonus icon"/>}
+              {this.state.currentRelic && this.state.currentRelic.stat_bonus}
+             </h5>
+             <table id="relic-perks-table">
                 <thead>
                   <tr>
                     <th>Rank</th>
