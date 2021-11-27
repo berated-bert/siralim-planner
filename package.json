@@ -1,6 +1,6 @@
 {
   "name": "siralim-planner",
-  "version": "0.1.0",
+  "version": "1.0.4",
   "private": true,
   "homepage": "http://berated-bert.github.io/siralim-planner",
   "dependencies": {
