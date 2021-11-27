@@ -12,6 +12,9 @@ html, body {
   color: #222;
   //background: darken($primary-color, 40);
   background: #dedede;
+  &.ReactModal__Body--open {
+    overflow-y: hidden;
+  }
 }
 * {
   box-sizing: border-box;
@@ -79,10 +82,29 @@ header {
         margin-right: 20px;
       }
       button {
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
         background: none;
+        z-index: 0;
         &:hover {
-          background: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.25);
         }
+        span {
+          color: white;
+          z-index: 100;
+        }
+        // &:after {
+        //   width: 100%;
+        //   height: 50%;
+        //   top: 50%;
+        //   left: 0;
+        //   position: absolute;
+        //   content: " ";
+        //   background: rgba(0, 0, 0, 0.25);
+        //   z-index: -1;
+
+        // }
       }
     }    
   }
@@ -240,7 +262,7 @@ h3.section-title {
   color: $color-nature;
 }
 .col-cls-life {
-  color: $color-life;
+  color: darken($color-life, 30);
 }
 .col-cls-sorcery {
   color: $color-sorcery;

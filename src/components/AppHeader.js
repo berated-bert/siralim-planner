@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faUpload, faInfoCircle } from '@fortawesome/free-solid-svg-icons'
+import { faUpload, faInfoCircle, faTrash } from '@fortawesome/free-solid-svg-icons'
 
 class AppHeader extends PureComponent {
   render() {
@@ -14,6 +14,7 @@ class AppHeader extends PureComponent {
         <div className="app-header-right">
           <p><a href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0" target="_blank" rel="noreferrer">Compendium</a> {this.props.compendiumVersion}</p>
           <button id="upload-build" className="lighter" onClick={this.props.openUploadBuildModal}><FontAwesomeIcon icon={faUpload}/><span>Upload party</span></button>
+          <button id="reset-build" className="lighter" onClick={this.props.resetBuild}><FontAwesomeIcon icon={faTrash}/><span>Reset</span></button>
           <button id="close-info-modal" className="lighter" onClick={this.props.openInfoModal}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
         </div>
         </div>

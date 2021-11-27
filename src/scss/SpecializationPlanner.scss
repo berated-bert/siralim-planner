@@ -367,6 +367,7 @@ button.perks-and-anointments-button {
   margin-bottom: 10px;
   background: rgba(0, 0, 0, 0.3);
   width: 100%;
+  position: relative;
 
   mix-blend-mode: multiply;
   &:hover {
@@ -379,5 +380,5 @@ button.perks-and-anointments-button {
   svg {
     margin-right: 10px;
   }
-  
+
 }

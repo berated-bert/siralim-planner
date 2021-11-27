@@ -128,18 +128,33 @@
     mix-blend-mode: multiply;
     &.cls-chaos {
       background: rgba($color-chaos, 0.3);
+      .party-member-relic-slot {
+        border-color: rgba($color-chaos, 0.3);
+      }
     }
     &.cls-death {
       background: rgba(lighten($color-death, 30), 0.3);
+      .party-member-relic-slot {
+        border-color: rgba($color-death, 0.4);
+      }
     }
     &.cls-sorcery {
       background: rgba($color-sorcery, 0.4);
+      .party-member-relic-slot {
+        border-color: rgba($color-sorcery, 0.5);
+      }
     }
     &.cls-life {
       background: rgba(darken($color-life, 5), 0.5);
+      .party-member-relic-slot {
+        border-color: rgba(darken($color-life, 25), 0.5);
+      }
     }
     &.cls-nature {
       background: rgba($color-nature, 0.5);
+      .party-member-relic-slot {
+        border-color: rgba(darken($color-nature, 15), 0.5);
+      }
     }
 }
 
@@ -156,23 +171,28 @@
     flex-direction: column;
 }
 
+
+
 .party-member-relic-slot {
   position: absolute;
   bottom: 8px;
   left: 8px;
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   background: rgba(255, 255, 255, 0.6);
-  border-radius: 3px;
+  border-radius: 6px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  &:active {
+    transform: translate(1px, 1px);
+  }
 
   &:hover {
     background: rgba(255, 255, 255, 0.7);
-    border: 2px solid rgba($primary-color, 0.7);
+    border: 2px solid rgba($primary-color, 0.7) !important;
   }
 
   .relic-sprite {
@@ -200,7 +220,7 @@
 .creature-sprite-container {
 
     margin-right: 8px;
-    margin-left: 44px; // Extra for the relic
+    margin-left: 64px; // Extra for the relic
     width: 64px;
     height: 64px;
     display: flex;
@@ -440,10 +460,6 @@
   border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
   margin-bottom: 10px;
   .relic-name-header-name {
-
-
-
-
     h5 {
       font-size: 1.1em;
       color: rgba(0, 0, 0, 0.7);
@@ -451,7 +467,6 @@
       margin-bottom: 10px;
       padding-bottom: 0;
     }
-
   }
   .relic-name-header-button button {
 

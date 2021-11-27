@@ -322,7 +322,7 @@ class MonsterPlannerRelicSlot extends PureComponent {
 
   render() {
     return (
-      <div className="party-member-relic-slot" onClick={this.props.onClick}>
+      <div className="party-member-relic-slot" onClick={this.props.onClick} title={this.props.relicName}>
 
         <div className="relic-sprite"
              style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.props.sprite_filename + ")"}}></div>
@@ -397,7 +397,8 @@ class MonsterPlannerPartyMember extends PureComponent {
         <div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
           <MonsterPlannerRelicSlot
             onClick={this.props.onRelicClick}
-            sprite_filename={this.props.relic ? this.props.relic.abbreviation + "_sm.png" : null}/>
+            relicName={this.props.relic ? this.props.relic.name : "No relic selected"}
+            sprite_filename={this.props.relic ? this.props.relic.abbreviation + ".png" : null}/>
           <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
           <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
           <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
@@ -448,11 +449,12 @@ class RelicSelectionModal extends Component {
    * @param  {Object} prevState The previous state.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!_.isEqual(prevProps.currentRelic, this.props.currentRelic) && !this.state.currentRelic)
+    if(!_.isEqual(prevProps.currentRelic, this.props.currentRelic))
     {
       this.setState({
-        currentRelic: this.props.relicsList[0]
+        currentRelic: this.props.currentRelic ? this.props.currentRelic : this.props.relicsList[0]
       })
+
     }
   }
 
@@ -537,7 +539,7 @@ class RelicSelectionModal extends Component {
               <div className="relic-name-header-button">
                 {_.isEqual(this.state.currentRelic, this.props.currentRelic) ?
 
-                  <button className="selected" onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faCheck}/>Saved</button> :
+                  <button className="selected" onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faCheck}/>Selected</button> :
                   <button onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faSave}/>Save</button>
                 }
               </div>

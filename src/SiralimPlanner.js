@@ -215,7 +215,7 @@ class SiralimPlanner extends Component {
    */
   constructor(props) {
     super(props);
-    this.state = {
+    this.originalState = {
 
       partyMembers: [],
       anointments:  [],
@@ -236,7 +236,9 @@ class SiralimPlanner extends Component {
       notificationText: null,
       notificationStatus: null,
       notificationIndex: 0,
-    }    
+    }
+
+    this.state = this.originalState;
   }
 
 
@@ -448,6 +450,7 @@ class SiralimPlanner extends Component {
   /**
    * Parse the relics string and return a list of relics
    * whose uids are in the string.
+   * TODO: Refactor this as it is using a lot of repeated code from parseLoadString.
    * @param  {String} str The string to parse.
    * @return {Array} The array of relic objects.
    * @throws {Error} If the string is not valid.
@@ -470,9 +473,7 @@ class SiralimPlanner extends Component {
         }
       }
     }
-    console.log('uids:', uids);
     for(let uid of uids) {
-      console.log(uid);
       if(!uid) {
         relics.push(null);
         continue;
@@ -532,14 +533,13 @@ class SiralimPlanner extends Component {
     return {partyMembers: partyMembers, noti: noti, status: status};
   }
 
-  /**
-   * On component mount, transform monsterData into a new array, i.e.
-   * { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
-   * This is necessary to get the drag and drop functionality to work.
-   * Every row needs a fixed id to function properly.
-   */
-  componentDidMount() {
 
+  /** On component mount and on reset, transform monsterData into a new array, i.e.
+  * { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
+  * This is necessary to get the drag and drop functionality to work.
+  * Every row needs a fixed id to function properly.
+  */
+  initialLoad() {
     let notificationText = null;
     let notificationStatus = null;
 
@@ -564,7 +564,7 @@ class SiralimPlanner extends Component {
     // build string.
     if(loadString) {
       try {
-     		const uids = this.parseLoadString(loadString);
+        const uids = this.parseLoadString(loadString);
         let pm = this.populateFromUids(uids);
         if(pm.status !== 'success') {
           notificationText = pm.noti;
@@ -572,14 +572,14 @@ class SiralimPlanner extends Component {
         }
         partyMembers = pm.partyMembers;
 
-     	} catch(err) {
+      } catch(err) {
         // TODO: Do something else with this, maybe.
-     		console.log("Error:", err);
-     	}
+        console.log("Error:", err);
+      }
     }
 
     // Parse specialization string (s)
-    let specialization = this.state.specialization;
+    let specialization = null;
     let specString = params.get('s');
     if(specString) {
       try {
@@ -591,7 +591,7 @@ class SiralimPlanner extends Component {
     }
 
     // Parse anointment string (a)
-    let anointments = this.state.anointments;
+    let anointments = [];
     const anointmentString = params.get('a');
     if(anointmentString) {
       try {
@@ -626,6 +626,14 @@ class SiralimPlanner extends Component {
       notificationStatus: notificationStatus,
       notificationIndex: this.state.notificationIndex + 1,
     });
+  }
+
+  /**
+  * On component mount, call the initial load function.
+  **/
+  componentDidMount() {
+
+    this.initialLoad()
   }
 
 
@@ -822,7 +830,7 @@ class SiralimPlanner extends Component {
     }
     if(!deleted) {      
       let limit = 5;
-      if(this.state.currentSpecialization.name === "Royal") {
+      if(this.state.currentSpecialization && this.state.currentSpecialization.name === "Royal") {
         limit = 15;
       }
       if(anointments.length < limit) {
@@ -852,6 +860,23 @@ class SiralimPlanner extends Component {
     }, this.generateSaveString)
   }
 
+  /**
+   * Reset the entire build back (clear everything).
+   */
+  resetBuild() {
+    if(window.confirm("Are you sure you want to completely reset your build?")) {
+      this.props.history.push('');
+      this.setState({...this.originalState}, () => {
+        this.initialLoad();
+        this.setState({
+          notificationText: "Your build has been reset.",
+          notificationStatus: "success",
+          notificationIndex: this.state.notificationIndex + 1,
+        });
+      });
+
+    }
+  }
 
   /**
    * The render function.
@@ -860,7 +885,10 @@ class SiralimPlanner extends Component {
   render() {
     return (
       <div className="App" id="app">
-        <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
+        <AppHeader resetBuild={this.resetBuild.bind(this)}
+         openUploadBuildModal={this.openUploadBuildModal.bind(this)}
+         openInfoModal={this.openInfoModal.bind(this)}
+         compendiumVersion={compendium_version}/>
         <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
 
         <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>

@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.04 (28 November 2021)
+
+* Added Relics into the tool, based on data sourced from the Siralim Ultimate Compendium.
+* Added a reset button.
+
 ### v1.03 (22 November 2021)
 
 * Added data from Siralim Ultimate Compendium v0.12.12.
