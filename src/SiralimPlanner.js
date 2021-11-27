@@ -83,6 +83,18 @@ function buildAnointmentMaps() {
 }
 
 /**
+ * Construct a map that maps each relic UID to the relic objects.
+ * @return {Object} An object containing the relic UID map.
+ */
+function buildRelicUIDMap() {
+  let relicUIDMap = {}
+  for(let r of relicsList) {
+    relicUIDMap[r.uid] = r;
+  }
+  return relicUIDMap;
+}
+
+/**
  * Construct a map that maps specialization names to the specialization objects.
  * @return {Object} A map of {specialization name: specialization object}
  */
@@ -98,6 +110,7 @@ const monsterUIDMap = buildUIDMap();
 const monsterTraitMap = buildTraitMap();
 const {anointmentUIDMap, anointmentNameMap} = buildAnointmentMaps();
 const specializationNameMap = buildSpecializationNameMap();
+const relicUIDMap = buildRelicUIDMap();
 
 
 /**
@@ -264,6 +277,10 @@ class SiralimPlanner extends Component {
     // Generate relics string
     if(this.state.relics.length > 0) saveString += "&r="
     for(let r of this.state.relics) {
+      if(!r) {
+        saveString += "_";
+        continue;
+      }
       saveString += r.uid;
     }
 
@@ -429,6 +446,45 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Parse the relics string and return a list of relics
+   * whose uids are in the string.
+   * @param  {String} str The string to parse.
+   * @return {Array} The array of relic objects.
+   * @throws {Error} If the string is not valid.
+   */
+  parseRelicsString(str) {
+    let relics = [];
+
+    let uids = [];
+    let currentUid = '';
+    for(let i = 0; i < str.length; i++) {
+      let c = str[i];
+      if(c === "_") {
+        if(currentUid.length > 0 && currentUid.length < 2) throw new Error("Malformed uid");
+        uids.push(null);
+      } else {
+        currentUid += c;
+        if(currentUid.length === 2) {
+          uids.push(currentUid);
+          currentUid = '';
+        }
+      }
+    }
+    console.log('uids:', uids);
+    for(let uid of uids) {
+      console.log(uid);
+      if(!uid) {
+        relics.push(null);
+        continue;
+      }
+      if(!relicUIDMap.hasOwnProperty(uid)) throw new Error("Relic id not found.");
+      relics.push(relicUIDMap[uid]);
+    }
+
+    return relics;
+  }
+
+  /**
    * Given a list of uids, construct a new array of monsterPlannerRows
    * where each item is the monster that corresponds to that particular
    * uid. This is used to read in the buildString (from the URL) and
@@ -536,7 +592,7 @@ class SiralimPlanner extends Component {
 
     // Parse anointment string (a)
     let anointments = this.state.anointments;
-    let anointmentString = params.get('a');
+    const anointmentString = params.get('a');
     if(anointmentString) {
       try {
         anointments = this.parseAnointmentsString(anointmentString);
@@ -550,6 +606,16 @@ class SiralimPlanner extends Component {
     }
 
     // TODO: Parse relic string (r)
+    const relicsString = params.get('r');
+    if(relicsString) {
+      try {
+        relics = this.parseRelicsString(relicsString);
+      } catch(err) {
+        notificationText = "Error parsing relics in URL: " + err.message;
+        notificationStatus = "error";
+      }
+    }
+
 
     this.setState({
       anointments: anointments,

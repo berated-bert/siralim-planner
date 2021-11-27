@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes } from '@fortawesome/free-solid-svg-icons'
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faSave } from '@fortawesome/free-solid-svg-icons'
 
 import icon_attack  from '../icons/attack.png'
 import icon_health  from '../icons/health.png'
@@ -396,7 +397,7 @@ class MonsterPlannerPartyMember extends PureComponent {
         <div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
           <MonsterPlannerRelicSlot
             onClick={this.props.onRelicClick}
-            sprite_filename={this.props.relic ? this.props.relic.sprite_filename : null}/>
+            sprite_filename={this.props.relic ? this.props.relic.abbreviation + "_sm.png" : null}/>
           <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
           <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
           <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
@@ -498,7 +499,7 @@ class RelicSelectionModal extends Component {
              overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
         <div className="modal-header">
           <h3>Relics <span style={{'marginLeft': '20px'}}>
-            (currently selected: {this.props.currentRelic ? this.props.currentRelic : "None"})</span></h3>
+            (currently selected: {this.props.currentRelic ? this.props.currentRelic.name : "None"})</span></h3>
           <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
 
@@ -506,7 +507,9 @@ class RelicSelectionModal extends Component {
           <nav className="specialization-selection-nav">
             {
               this.props.relicsList.map((s, i) =>
-                <div key={i} className={"specialization-option " + (_.isEqual(this.state.currentRelic, s) ? "current" : "")}
+                <div key={i} className={"specialization-option " + (_.isEqual(this.state.currentRelic, s) ? "current" : "")
+                  + (_.isEqual(s, this.props.currentRelic) ? " has-anointment" : "")
+                  }
                   onClick={() => this.handleRelicChange(s)}>
                   <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + s.abbreviation + "_sm.png)"}}></span>
                   { s.name }
@@ -516,36 +519,47 @@ class RelicSelectionModal extends Component {
             }
           </nav>
           <div className="specialization-selection-list">
-             <h2 className="no-border-bottom">
-             {this.state.currentRelic &&
-               <span className="relic-icon"
-                     style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation + ".png)"}}></span>
-               }
-             {this.state.currentRelic && this.state.currentRelic.name}</h2>
-             <h5>
-              {this.state.currentRelic && "Stat bonus: "}
-              {this.state.currentRelic &&
-                <img className="relic-stat-icon" src={this.getStatIcon(this.state.currentRelic.stat_bonus)} alt="Stat bonus icon"/>}
-              {this.state.currentRelic && this.state.currentRelic.stat_bonus}
-             </h5>
-             <table id="relic-perks-table">
-                <thead>
-                  <tr>
-                    <th>Rank</th>
-                    <th>Bonus</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {
-                    this.state.currentRelic && this.state.currentRelic.perks && this.state.currentRelic.perks.map ((perk, i) =>
-                      <tr key={i}>
-                        <td>{perk.rank}</td>
-                        <td>{perk.description}</td>
-                      </tr>
-                  )}
+            <div className="relic-name-header">
+              <div className="relic-name-header-name">
+                <h2 className="no-border-bottom">
+                {this.state.currentRelic &&
+                 <span className="relic-icon"
+                       style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation + ".png)"}}></span>
+                 }
+                {this.state.currentRelic && this.state.currentRelic.name}</h2>
+                <h5>
+                {this.state.currentRelic && "Stat bonus: "}
+                {this.state.currentRelic &&
+                  <img className="relic-stat-icon" src={this.getStatIcon(this.state.currentRelic.stat_bonus)} alt="Stat bonus icon"/>}
+                {this.state.currentRelic && this.state.currentRelic.stat_bonus}
+                </h5>
+              </div>
+              <div className="relic-name-header-button">
+                {_.isEqual(this.state.currentRelic, this.props.currentRelic) ?
 
-                </tbody>
-              </table>
+                  <button className="selected" onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faCheck}/>Saved</button> :
+                  <button onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faSave}/>Save</button>
+                }
+              </div>
+            </div>
+            <table id="relic-perks-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Bonus</th>
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  this.state.currentRelic && this.state.currentRelic.perks && this.state.currentRelic.perks.map ((perk, i) =>
+                    <tr key={i}>
+                      <td>{perk.rank}</td>
+                      <td>{perk.description}</td>
+                    </tr>
+                )}
+
+              </tbody>
+            </table>
           </div>
         </div>
       </Modal>
@@ -666,7 +680,7 @@ class MonsterPlanner extends Component {
   }
 
   /**
-   * Update the relic at the given index to a new relic.
+   * Update the relic at the current index to a new relic.
    * @param  {Object} newRelic The relic to update the relic at state.relicIndex to.
    */
   updateRelic(newRelic) {
@@ -690,7 +704,6 @@ class MonsterPlanner extends Component {
       relicModalIsOpen: true,
       relicIndex: relicIndex
     })
-    //this.updateRelic(relicIndex, {'sprite_filename': 'wintermaul.png'});
   }
 
   /**
@@ -718,7 +731,8 @@ class MonsterPlanner extends Component {
           relicsList={this.props.relicsList}
           currentRelic={this.props.relics[this.state.relicIndex]}
           relicIndex={this.state.relicIndex}
-          selectRelic={this.updateRelic.bind(this)}
+          updateRelic={this.updateRelic.bind(this)}
+
         />
 
 

@@ -116,6 +116,7 @@
     flex-wrap: wrap;
     align-self: stretch;
     transition: background 0.2s ease;
+    position: relative;
     
     //border-right: 2px solid rgba(0, 0, 0, 0.15);
     //border-top-left-radius: 5px;
@@ -426,17 +427,46 @@
   }
 }
 
-.specialization-selection-list {
-  h5 {
-    font-size: 1.1em;
-    color: rgba(0, 0, 0, 0.7);
-    margin-top: -15px;
-    margin-bottom: 15px;
-    border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
-    padding-bottom: 15px;
-  }
-}
+
 .relic-stat-icon {
   margin-right: 4px;
   transform: translate(0px, 1px);
+}
+.relic-name-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  .relic-name-header-name {
+
+
+
+
+    h5 {
+      font-size: 1.1em;
+      color: rgba(0, 0, 0, 0.7);
+      margin-top: -15px;
+      margin-bottom: 10px;
+      padding-bottom: 0;
+    }
+
+  }
+  .relic-name-header-button button {
+
+    margin-right: 20px;
+    padding: 15px 30px;
+    margin-top: -5px;
+    svg {
+      margin-right: 10px;
+    }
+
+    &.selected {
+      background: $color-nature;
+      &:hover {
+        background: lighten($color_nature, 5);
+      }
+    }
+  }
 }

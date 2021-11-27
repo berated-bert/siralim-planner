@@ -2,6 +2,7 @@
 Loads data from the Siralim Ultimate Compendium and Siralim Ultimate API.
 """
 
+import sys
 import csv
 import os
 import json
@@ -294,15 +295,37 @@ def load_relics_data(relics_filename):
           the compendium.
     """
     relics = {}
+    uids = {}
     with open(relics_filename, "r") as f:
         reader = csv.DictReader(f)
         for row in reader:
             relic = {}
             relic["stat_bonus"] = row["Stat Bonus"]
             relic["name"] = row["Relic"]
-            relic["abbreviation"] = (
+            abbrev = (
                 row["Relic"].split(",")[0].replace(" & ", "").replace(" ", "")
             )
+            relic["abbreviation"] = abbrev
+
+            # Get uid and ensure it is unique.
+            # A bit messy but gets the job done.
+            raw_name = "".join(
+                [
+                    c
+                    for c in relic["name"].lower()
+                    if c in "ABCDEFGHIJKLMNOPQRSTUVWXYZ".lower()
+                ]
+            )
+            uid = raw_name[5] + raw_name[12]
+            uid = uid.lower()
+            if uid in uids and uids[uid] != raw_name:
+                logger.error(
+                    f"uid '{uid}' already exists. "
+                    f"({raw_name}, {uids[uid]})"
+                )
+                sys.exit(0)
+            uids[uid] = raw_name
+            relic["uid"] = uid
 
             if relic["name"] not in relics:
                 relics[relic["name"]] = relic
