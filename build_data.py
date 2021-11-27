@@ -300,7 +300,9 @@ def load_relics_data(relics_filename):
             relic = {}
             relic["stat_bonus"] = row["Stat Bonus"]
             relic["name"] = row["Relic"]
-            relic["abbreviation"] = row["Relic"].split(",")[0]
+            relic["abbreviation"] = (
+                row["Relic"].split(",")[0].replace(" & ", "").replace(" ", "")
+            )
 
             if relic["name"] not in relics:
                 relics[relic["name"]] = relic

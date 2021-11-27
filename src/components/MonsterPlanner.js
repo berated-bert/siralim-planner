@@ -493,13 +493,12 @@ class RelicSelectionModal extends Component {
    * @return {ReactComponent} The anointments modal.
    */
   render() {
-
     return (
       <Modal className="modal-content modal-content-info relic-selection-modal modal-wide "
              overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
         <div className="modal-header">
           <h3>Relics <span style={{'marginLeft': '20px'}}>
-            (currently selected: {this.props.currentRelic})</span></h3>
+            (currently selected: {this.props.currentRelic ? this.props.currentRelic : "None"})</span></h3>
           <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
 

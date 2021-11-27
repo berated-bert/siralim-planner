@@ -492,7 +492,7 @@ class SiralimPlanner extends Component {
 
     for(let i = 0; i < 6; i++) {
       partyMembers.push([]);
-      relics.push([])
+      relics.push(null)
       for(let j = 0; j < 3; j++) {
         partyMembers[i].push({ monster: {} })
       }

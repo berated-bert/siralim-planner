@@ -249,17 +249,10 @@ h3.section-title {
   margin-left: 6px;
 }
 
-// .ReactModal__Overlay {
-//   background-color: rgba(0, 0, 0, 0.25) !important;
 
-// }
-// .ReactModal__Content {
-//   inset: 30px !important;
-//   border-radius: 0 !important;
-//   border-color: none !important;
-//   padding: 0 !important;
-//   border: 0 !important;
-// }
+.ReactModal__Content {
+  outline: none !important;
+}
 
 
 .modal-overlay {
