@@ -73,6 +73,10 @@ header {
       width: auto;
       align-items: center;
       display: flex;
+      margin-left: -25px;
+      @media(max-width: 1720px) {
+        margin-left: 0;
+      }
     }
     .app-header-right {
       display: flex;
