@@ -18,6 +18,8 @@ import MonsterPlanner from './components/MonsterPlanner'
 import SpecializationPlanner from './components/SpecializationPlanner'
 
 import parsePartyString from './functions/parsePartyString';
+import randomSample from './functions/randomSample';
+import getTraitErrors from './functions/getTraitErrors';
 
 import './App.scss';
 
@@ -28,7 +30,14 @@ const monsterData = require('./data/data');
 const specializationsList = require('./data/specializations');
 const metadata = require('./data/metadata');
 const compendium_version = metadata.compendium_version;
+const relicsList = require('./data/relics');
+// [
+//   {name: "Wintermaul", stat_bonus: "Health",  abbreviation: "wintermaul", perks: [{'rank': 10, 'description': 'Does a cool thing'}]},
+//   {name: "Temptation", abbreviation: "temptation"},
+//   {name: "Salus", abbreviation: "salus"},
 
+
+// ]
 
 /**
  * Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
@@ -76,6 +85,18 @@ function buildAnointmentMaps() {
 }
 
 /**
+ * Construct a map that maps each relic UID to the relic objects.
+ * @return {Object} An object containing the relic UID map.
+ */
+function buildRelicUIDMap() {
+  let relicUIDMap = {}
+  for(let r of relicsList) {
+    relicUIDMap[r.uid] = r;
+  }
+  return relicUIDMap;
+}
+
+/**
  * Construct a map that maps specialization names to the specialization objects.
  * @return {Object} A map of {specialization name: specialization object}
  */
@@ -91,6 +112,7 @@ const monsterUIDMap = buildUIDMap();
 const monsterTraitMap = buildTraitMap();
 const {anointmentUIDMap, anointmentNameMap} = buildAnointmentMaps();
 const specializationNameMap = buildSpecializationNameMap();
+const relicUIDMap = buildRelicUIDMap();
 
 
 /**
@@ -166,6 +188,7 @@ class NotificationBanner extends Component {
  * The main component which sits within App.
  * @property state.partyMembers {Array}  A list of 6 items, each of which corresponds to a party member.
  * @property state.anointments  {Array}  A list of the 5 anointments (or 15 if Royal) the user has selected.
+ * @property state.relics  {Array}  A list of the 6 relics the user has selected (one per party member).
  * @property {Object} state.currentSpecialization    The currently selected specialization.
  * @property {Integer} state.maxAnointments The maximum number of anointments. Is changed to 15 when spec = Royal
  * @property {Integer} state.currentPartyMemberId The current party member id, i.e. 0, 1, 2, 3, 4 or 5.
@@ -194,10 +217,11 @@ class SiralimPlanner extends Component {
    */
   constructor(props) {
     super(props);
-    this.state = {
+    this.originalState = {
 
       partyMembers: [],
       anointments:  [],
+      relics: [],
       currentSpecialization: null,
       maxAnointments: 5,
 
@@ -214,7 +238,9 @@ class SiralimPlanner extends Component {
       notificationText: null,
       notificationStatus: null,
       notificationIndex: 0,
-    }    
+    }
+
+    this.state = this.originalState;
   }
 
 
@@ -246,10 +272,20 @@ class SiralimPlanner extends Component {
       saveString += "&s=" + this.state.currentSpecialization.abbreviation;
     }
 
-    if(this.state.anointments.length > 0) saveString += "&a="
     // Generate anointments string
+    if(this.state.anointments.length > 0) saveString += "&a="
     for(let a of this.state.anointments) {
       saveString += a.uid;
+    }
+
+    // Generate relics string
+    if(this.state.relics.length > 0) saveString += "&r="
+    for(let r of this.state.relics) {
+      if(!r) {
+        saveString += "_";
+        continue;
+      }
+      saveString += r.uid;
     }
 
     this.props.history.push('?b=' + saveString);
@@ -334,6 +370,18 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Update the relics array to newRelics and generate an updated
+   * saveString.
+   * @param  {Array} newRelics An array of relic objects.
+   */
+  updateRelics(newRelics) {
+    console.log(newRelics)
+    this.setState({
+      relics: newRelics
+    }, this.generateSaveString)
+  }
+
+  /**
    * Parse the loadString into a list of UIDs (or null for underscores).
    * @param  {String} str The string to parse.
    * @return {Array}     An array of strings, where each string is a uid.
@@ -402,6 +450,44 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Parse the relics string and return a list of relics
+   * whose uids are in the string.
+   * TODO: Refactor this as it is using a lot of repeated code from parseLoadString.
+   * @param  {String} str The string to parse.
+   * @return {Array} The array of relic objects.
+   * @throws {Error} If the string is not valid.
+   */
+  parseRelicsString(str) {
+    let relics = [];
+
+    let uids = [];
+    let currentUid = '';
+    for(let i = 0; i < str.length; i++) {
+      let c = str[i];
+      if(c === "_") {
+        if(currentUid.length > 0 && currentUid.length < 2) throw new Error("Malformed uid");
+        uids.push(null);
+      } else {
+        currentUid += c;
+        if(currentUid.length === 2) {
+          uids.push(currentUid);
+          currentUid = '';
+        }
+      }
+    }
+    for(let uid of uids) {
+      if(!uid) {
+        relics.push(null);
+        continue;
+      }
+      if(!relicUIDMap.hasOwnProperty(uid)) throw new Error("Relic id not found.");
+      relics.push(relicUIDMap[uid]);
+    }
+
+    return relics;
+  }
+
+  /**
    * Given a list of uids, construct a new array of monsterPlannerRows
    * where each item is the monster that corresponds to that particular
    * uid. This is used to read in the buildString (from the URL) and
@@ -449,21 +535,22 @@ class SiralimPlanner extends Component {
     return {partyMembers: partyMembers, noti: noti, status: status};
   }
 
-  /**
-   * On component mount, transform monsterData into a new array, i.e.
-   * { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
-   * This is necessary to get the drag and drop functionality to work.
-   * Every row needs a fixed id to function properly.
-   */
-  componentDidMount() {
 
+  /** On component mount and on reset, transform monsterData into a new array, i.e.
+  * { row_id: <the index of the monster>, monster: <the JSON object of the monster> }
+  * This is necessary to get the drag and drop functionality to work.
+  * Every row needs a fixed id to function properly.
+  */
+  initialLoad() {
     let notificationText = null;
     let notificationStatus = null;
 
     let partyMembers = [];
+    let relics = [];
 
     for(let i = 0; i < 6; i++) {
       partyMembers.push([]);
+      relics.push(null)
       for(let j = 0; j < 3; j++) {
         partyMembers[i].push({ monster: {} })
       }
@@ -479,7 +566,7 @@ class SiralimPlanner extends Component {
     // build string.
     if(loadString) {
       try {
-     		const uids = this.parseLoadString(loadString);
+        const uids = this.parseLoadString(loadString);
         let pm = this.populateFromUids(uids);
         if(pm.status !== 'success') {
           notificationText = pm.noti;
@@ -487,14 +574,14 @@ class SiralimPlanner extends Component {
         }
         partyMembers = pm.partyMembers;
 
-     	} catch(err) {
+      } catch(err) {
         // TODO: Do something else with this, maybe.
-     		console.log("Error:", err);
-     	}
+        console.log("Error:", err);
+      }
     }
 
     // Parse specialization string (s)
-    let specialization = this.state.specialization;
+    let specialization = null;
     let specString = params.get('s');
     if(specString) {
       try {
@@ -506,8 +593,8 @@ class SiralimPlanner extends Component {
     }
 
     // Parse anointment string (a)
-    let anointments = this.state.anointments;
-    let anointmentString = params.get('a');
+    let anointments = [];
+    const anointmentString = params.get('a');
     if(anointmentString) {
       try {
         anointments = this.parseAnointmentsString(anointmentString);
@@ -520,15 +607,35 @@ class SiralimPlanner extends Component {
       anointments = anointments.slice(0, 5);
     }
 
+    // TODO: Parse relic string (r)
+    const relicsString = params.get('r');
+    if(relicsString) {
+      try {
+        relics = this.parseRelicsString(relicsString);
+      } catch(err) {
+        notificationText = "Error parsing relics in URL: " + err.message;
+        notificationStatus = "error";
+      }
+    }
+
 
     this.setState({
       anointments: anointments,
+      relics: relics,
       currentSpecialization: specialization,
       partyMembers: partyMembers,
       notificationText: notificationText,
       notificationStatus: notificationStatus,
       notificationIndex: this.state.notificationIndex + 1,
     });
+  }
+
+  /**
+  * On component mount, call the initial load function.
+  **/
+  componentDidMount() {
+
+    this.initialLoad()
   }
 
 
@@ -663,7 +770,7 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     try {
-      let {traits, spec, anointment_names} = parsePartyString(str);
+      let {traits, relics, spec, anointment_names} = parsePartyString(str);
       let uids = this.traitsToUids(traits);
       let pm = this.populateFromUids(uids);
       if(pm.noti) notificationText = pm.noti;
@@ -689,8 +796,21 @@ class SiralimPlanner extends Component {
       }
       anointments.slice(0, specialization.name === "Royal" ? 15 : 5);
 
+      // Get relics
+      let partyMemberRelics = new Array(6).fill(null);
+      for(let i = 0; i < relics.length; i++) {
+        for(let j = 0; j < relicsList.length; j++) {
+          if(relicsList[j].name === relics[i]) {
+            partyMemberRelics[i] = relicsList[j];
+            break;
+          }
+        }
+      }
+
+
       this.setState({
         partyMembers: partyMembers,
+        relics: partyMemberRelics,
         uploadBuildModalIsOpen: false,
         currentSpecialization: specialization,
         anointments: anointments,
@@ -701,8 +821,6 @@ class SiralimPlanner extends Component {
     } catch(err) {
       return callback(err);
     }
-
-    // TODO: Take the traits and put them into the table etc.
   }
 
   /**
@@ -725,7 +843,7 @@ class SiralimPlanner extends Component {
     }
     if(!deleted) {      
       let limit = 5;
-      if(this.state.currentSpecialization.name === "Royal") {
+      if(this.state.currentSpecialization && this.state.currentSpecialization.name === "Royal") {
         limit = 15;
       }
       if(anointments.length < limit) {
@@ -738,12 +856,21 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Simple function to return the max number of anointments for the given spec.
+   * @param  {Object} s The specialization.
+   * @return {Integer}   The max number of anointments.
+   */
+  getMaxAnointments(s) {
+    return s.name === "Royal" ? 15 : 5;
+  }
+
+  /**
    * Update the Specialization based on the selected option from the react select component.
-   * @param  {obj} s The specialization to update to.
+   * @param  {Object} s The specialization to update to.
    * @return {void}   
    */
   updateSpecialization(s) {
-    const maxAnointments = s.name === "Royal" ? 15 : 5;
+    const maxAnointments = this.getMaxAnointments(s);
     let anointments = this.state.anointments;
     if(anointments.length > maxAnointments) {
       anointments = anointments.slice(0, maxAnointments);
@@ -755,6 +882,84 @@ class SiralimPlanner extends Component {
     }, this.generateSaveString)
   }
 
+  /**
+   * Reset the entire build back (clear everything).
+   */
+  resetBuild() {
+    if(!window.confirm("Are you sure you want to completely reset your build?")) {
+      return;
+    }
+    this.props.history.push('');
+    this.setState({...this.originalState}, () => {
+      this.initialLoad();
+      this.setState({
+        notificationText: "Your build has been reset.",
+        notificationStatus: "success",
+        notificationIndex: this.state.notificationIndex + 1,
+      });
+    });
+  }
+
+  /**
+   * Randomise the build (after prompting the user that this is really what
+   * they want to do).
+   */
+  randomiseBuild() {
+    if(!window.confirm("Are you sure you want to randomise your build?")) {
+      return;
+    }
+
+    // Randomise specialization
+    const currentSpecialization = randomSample(specializationsList);
+
+    // Randomise relics.
+    // Ensure no relic is selected twice.
+    let relics = [];
+    let seenRelics = new Set();
+    for(let i = 0; i < 6; i++) {
+      let randomRelic = randomSample(relicsList);
+      while(seenRelics.has(randomRelic)) {
+        randomRelic = randomSample(relicsList);
+      }
+      seenRelics.add(randomRelic);
+      relics.push(randomRelic);
+    }
+
+    // Randomise party members
+    let partyMembers = [];
+    for(let i = 0; i < 6; i++) {
+      partyMembers.push([]);
+      for(let j = 0; j < 3; j++) {
+        let randomMonster = randomSample(monsterData);
+        while (getTraitErrors(randomMonster, j)) {
+          randomMonster = randomSample(monsterData);
+        }
+        partyMembers[i].push({monster: randomMonster});
+      }
+    }
+
+    // Randomise anointments (don't allow duplicates).
+    let anointments = [];
+    let anointmentUIDs = [];
+    const maxAnointments = this.getMaxAnointments(currentSpecialization);
+    for(let i = 0; i < maxAnointments; i++) {
+      let randomAnointmentUID = randomSample(Object.keys(anointmentUIDMap));
+      while(anointmentUIDs.indexOf(randomAnointmentUID) >= 0) {
+        randomAnointmentUID = randomSample(Object.keys(anointmentUIDMap));
+      }
+      anointmentUIDs.push(randomAnointmentUID);
+      anointments.push(anointmentUIDMap[randomAnointmentUID]);
+    }
+
+    // Update notification text
+    const notificationText = "Your build has been randomised."
+    const notificationStatus = "success";
+    const notificationIndex = this.state.notificationIndex + 1;
+
+    this.setState({
+      currentSpecialization, relics, partyMembers, anointments, notificationText, notificationStatus, notificationIndex
+    }, this.generateSaveString);
+  }
 
   /**
    * The render function.
@@ -763,10 +968,15 @@ class SiralimPlanner extends Component {
   render() {
     return (
       <div className="App" id="app">
-        <AppHeader openUploadBuildModal={this.openUploadBuildModal.bind(this)} openInfoModal={this.openInfoModal.bind(this)} compendiumVersion={compendium_version}/>
+        <AppHeader resetBuild={this.resetBuild.bind(this)}
+         randomiseBuild={this.randomiseBuild.bind(this)}
+         openUploadBuildModal={this.openUploadBuildModal.bind(this)}
+         openInfoModal={this.openInfoModal.bind(this)}
+         compendiumVersion={compendium_version}/>
         <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
 
-        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
+        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)}
+                          uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
         <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
 
         <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>
@@ -795,6 +1005,9 @@ class SiralimPlanner extends Component {
             updatePartyMembers={this.updatePartyMembers.bind(this)}
             openModal={this.openModal.bind(this)}
             clearPartyMember={this.clearPartyMember.bind(this)}
+            relics={this.state.relics}
+            relicsList={relicsList}
+            updateRelics={this.updateRelics.bind(this)}
           />  
         </main>        
         <AppFooter/>

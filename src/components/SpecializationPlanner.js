@@ -133,9 +133,11 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
     }
 
     return ( 
-      <Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide " overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
+      <Modal className="modal-content modal-content-info  specialization-selection-modal modal-wide "
+             overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
         <div className="modal-header">
-          <h3>Anointments <span style={{'marginLeft': '20px'}}> {this.props.anointments.length} of {this.props.maxAnointments} anointments selected</span></h3>
+          <h3>Anointments <span style={{'marginLeft': '20px'}}>
+            {this.props.anointments.length} of {this.props.maxAnointments} anointments selected</span></h3>
           <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
         </div>
 

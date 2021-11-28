@@ -12,6 +12,9 @@ html, body {
   color: #222;
   //background: darken($primary-color, 40);
   background: #dedede;
+  &.ReactModal__Body--open {
+    overflow-y: hidden;
+  }
 }
 * {
   box-sizing: border-box;
@@ -49,6 +52,7 @@ header {
   a {
     color: white;
   }
+
   h3 {
 
     font-size: 16px;
@@ -63,28 +67,73 @@ header {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
+
     .app-header-left {
       flex: 1;
       width: auto;
       align-items: center;
       display: flex;
+      margin-left: -25px;
+      @media(max-width: 1720px) {
+        margin-left: 0;
+      }
     }
     .app-header-right {
       display: flex;
       align-items: center;
       justify-content: center;
       flex-direction: row;
+
+      @media(max-width: 992px) {
+        display: block;
+      }
       p {
         font-size: 14px;
         margin-right: 20px;
       }
       button {
+        margin-left: 5px;
+        margin-right: 5px;
+        position: relative;
         background: none;
+        z-index: 0;
         &:hover {
-          background: rgba(255, 255, 255, 0.15);
+          background: rgba(255, 255, 255, 0.25);
+        }
+        span {
+          color: white;
+          z-index: 100;
+        }
+        // &:after {
+        //   width: 100%;
+        //   height: 50%;
+        //   top: 50%;
+        //   left: 0;
+        //   position: absolute;
+        //   content: " ";
+        //   background: rgba(0, 0, 0, 0.25);
+        //   z-index: -1;
+
+        // }
+      }
+    }
+    @media(max-width: 600px) {
+      display: block;
+      text-align: center;
+      .app-header-left, .app-header-right {
+        width: 100%;
+        display: block;
+        h3 {
+          margin-bottom: 30px;
+        }
+        p {
+          margin: 20px auto;
+        }
+        button {
+          width: 100%;
         }
       }
-    }    
+    }
   }
 
   button {
@@ -100,7 +149,7 @@ footer {
   background: #333;//darken($primary-color, 20);
   padding: 15px 0px 10px 0;
   font-size: 12px;
-  box-shadow: 0 200px 0px 200px darken($primary-color, 20);
+  box-shadow: 0 200px 0px 200px #333;
   color: white;
   line-height: 150%;
   p {
@@ -240,7 +289,7 @@ h3.section-title {
   color: $color-nature;
 }
 .col-cls-life {
-  color: $color-life;
+  color: darken($color-life, 30);
 }
 .col-cls-sorcery {
   color: $color-sorcery;
@@ -249,17 +298,10 @@ h3.section-title {
   margin-left: 6px;
 }
 
-// .ReactModal__Overlay {
-//   background-color: rgba(0, 0, 0, 0.25) !important;
 
-// }
-// .ReactModal__Content {
-//   inset: 30px !important;
-//   border-radius: 0 !important;
-//   border-color: none !important;
-//   padding: 0 !important;
-//   border: 0 !important;
-// }
+.ReactModal__Content {
+  outline: none !important;
+}
 
 
 .modal-overlay {
@@ -289,7 +331,6 @@ h3.section-title {
   width: 1200px;
   margin: 0 auto;
   display: flex;
-  padding-bottom: 20px;
 
   flex-direction: column;
   &.modal-wide {

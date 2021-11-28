@@ -42,6 +42,7 @@ The build sharing URL is comprised of three components:
 * The party members (`b=`)
 * The specialization code (`s=`)
 * The anointment codes (`a=`)
+* The relic codes (`r=`)
 
 #### Party members
 
@@ -72,6 +73,10 @@ perks, i.e. the first perk in Bloodmage, "Bleed Out", has the anointment code `B
 
 I don't think the order of the perks within a specialization will ever change but if they do, it will only be a minor
 inconvenience when loading old builds.
+
+#### Relic codes
+
+The relic codes are two characters, corresponding to the 6th and 13th character of the relic's name, after removing any non-alphabetical characters (because those two particular characters did not have any collisions).
 
 ## TODO
 
