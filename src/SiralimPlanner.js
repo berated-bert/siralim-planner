@@ -18,6 +18,8 @@ import MonsterPlanner from './components/MonsterPlanner'
 import SpecializationPlanner from './components/SpecializationPlanner'
 
 import parsePartyString from './functions/parsePartyString';
+import randomSample from './functions/randomSample';
+import getTraitErrors from './functions/getTraitErrors';
 
 import './App.scss';
 
@@ -806,8 +808,6 @@ class SiralimPlanner extends Component {
     } catch(err) {
       return callback(err);
     }
-
-    // TODO: Take the traits and put them into the table etc.
   }
 
   /**
@@ -843,12 +843,21 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Simple function to return the max number of anointments for the given spec.
+   * @param  {Object} s The specialization.
+   * @return {Integer}   The max number of anointments.
+   */
+  getMaxAnointments(s) {
+    return s.name === "Royal" ? 15 : 5;
+  }
+
+  /**
    * Update the Specialization based on the selected option from the react select component.
-   * @param  {obj} s The specialization to update to.
+   * @param  {Object} s The specialization to update to.
    * @return {void}   
    */
   updateSpecialization(s) {
-    const maxAnointments = s.name === "Royal" ? 15 : 5;
+    const maxAnointments = this.getMaxAnointments(s);
     let anointments = this.state.anointments;
     if(anointments.length > maxAnointments) {
       anointments = anointments.slice(0, maxAnointments);
@@ -864,18 +873,79 @@ class SiralimPlanner extends Component {
    * Reset the entire build back (clear everything).
    */
   resetBuild() {
-    if(window.confirm("Are you sure you want to completely reset your build?")) {
-      this.props.history.push('');
-      this.setState({...this.originalState}, () => {
-        this.initialLoad();
-        this.setState({
-          notificationText: "Your build has been reset.",
-          notificationStatus: "success",
-          notificationIndex: this.state.notificationIndex + 1,
-        });
-      });
-
+    if(!window.confirm("Are you sure you want to completely reset your build?")) {
+      return;
     }
+    this.props.history.push('');
+    this.setState({...this.originalState}, () => {
+      this.initialLoad();
+      this.setState({
+        notificationText: "Your build has been reset.",
+        notificationStatus: "success",
+        notificationIndex: this.state.notificationIndex + 1,
+      });
+    });
+  }
+
+  /**
+   * Randomise the build (after prompting the user that this is really what
+   * they want to do).
+   */
+  randomiseBuild() {
+    if(!window.confirm("Are you sure you want to randomise your build?")) {
+      return;
+    }
+
+    // Randomise specialization
+    const currentSpecialization = randomSample(specializationsList);
+
+    // Randomise relics.
+    // Ensure no relic is selected twice.
+    let relics = [];
+    let seenRelics = new Set();
+    for(let i = 0; i < 6; i++) {
+      let randomRelic = randomSample(relicsList);
+      while(seenRelics.has(randomRelic)) {
+        randomRelic = randomSample(relicsList);
+      }
+      seenRelics.add(randomRelic);
+      relics.push(randomRelic);
+    }
+
+    // Randomise party members
+    let partyMembers = [];
+    for(let i = 0; i < 6; i++) {
+      partyMembers.push([]);
+      for(let j = 0; j < 3; j++) {
+        let randomMonster = randomSample(monsterData);
+        while (getTraitErrors(randomMonster, j)) {
+          randomMonster = randomSample(monsterData);
+        }
+        partyMembers[i].push({monster: randomMonster});
+      }
+    }
+
+    // Randomise anointments (don't allow duplicates).
+    let anointments = [];
+    let anointmentUIDs = [];
+    const maxAnointments = this.getMaxAnointments(currentSpecialization);
+    for(let i = 0; i < maxAnointments; i++) {
+      let randomAnointmentUID = randomSample(Object.keys(anointmentUIDMap));
+      while(anointmentUIDs.indexOf(randomAnointmentUID) >= 0) {
+        randomAnointmentUID = randomSample(Object.keys(anointmentUIDMap));
+      }
+      anointmentUIDs.push(randomAnointmentUID);
+      anointments.push(anointmentUIDMap[randomAnointmentUID]);
+    }
+
+    // Update notification text
+    const notificationText = "Your build has been randomised."
+    const notificationStatus = "success";
+    const notificationIndex = this.state.notificationIndex + 1;
+
+    this.setState({
+      currentSpecialization, relics, partyMembers, anointments, notificationText, notificationStatus, notificationIndex
+    }, this.generateSaveString);
   }
 
   /**
@@ -886,6 +956,7 @@ class SiralimPlanner extends Component {
     return (
       <div className="App" id="app">
         <AppHeader resetBuild={this.resetBuild.bind(this)}
+         randomiseBuild={this.randomiseBuild.bind(this)}
          openUploadBuildModal={this.openUploadBuildModal.bind(this)}
          openInfoModal={this.openInfoModal.bind(this)}
          compendiumVersion={compendium_version}/>

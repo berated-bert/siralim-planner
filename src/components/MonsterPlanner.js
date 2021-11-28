@@ -16,7 +16,7 @@ import icon_defense   from '../icons/defense.png'
 import icon_speed    from '../icons/speed.png'
 
 import MonsterClassIcon from './MonsterClassIcon'
-
+import getTraitErrors from '../functions/getTraitErrors';
 
 /**
  * A class that corresponds to a single MonsterRow from within the Monster Planning window
@@ -152,32 +152,10 @@ class MonsterPlannerTraitSlot extends PureComponent {
     return _.isEmpty(this.props.monster);
   }
 
-  
-  /**
-   * Check this row for errors. Return the error in the form of a string if present, else return null.
-   * @return {String} The error message, if any.
-   */
-  getRowErrors() {
-    if(_.isEmpty(this.props.monster)) return null;
-    if(!(this.props.traitSlotIndex === 2) && 
-      (this.props.monster.class === "Rodian Master" || this.props.monster.class === "Nether Boss" || this.props.monster.class === "Backer")) 
-        return "This trait cannot be found on a playable creature and cannot be placed in a creature slot.";
-    if(this.props.traitSlotIndex === 2 && 
-      (this.props.monster.material_name === "N/A" || this.props.monster.material_name === "No Material Exists")) 
-        return "This trait has no material and cannot be placed in the trait slot.";
-    return null;
-  }
-
-  // A special function for rendering an empty row.
-  // If there was an error (such as the monster no longer existing after uploading), print that error to the row.
-  // Note that this error is different from the output of getRowErrors above - it is a parsing-related error such
-  // as the buildString containing a creature that no longer exists or has changed.
-  
-
   /**
    * A special function for rendering an empty row.
    * If there was an error (such as the monster no longer existing after uploading), print that error to the row.
-   * Note that this error is different from the output of getRowErrors above - it is a parsing-related error such
+   * Note that this error is different from the output of getTraitErrors - it is a parsing-related error such
    * as the buildString containing a creature that no longer exists or has changed.
    * @return {ReactComponent} A div representing an empty row.
    */
@@ -196,7 +174,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
    */
   render() {
 
-    const rowErrors = this.getRowErrors();
+    const rowErrors = getTraitErrors(this.props.monster, this.props.traitSlotIndex);
     const emptyRow = this.isEmptyRow();
 
     let rowClass = "";
