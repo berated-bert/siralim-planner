@@ -376,7 +376,7 @@ class MonsterPlannerPartyMember extends PureComponent {
           <MonsterPlannerRelicSlot
             onClick={this.props.onRelicClick}
             relicName={this.props.relic ? this.props.relic.name : "No relic selected"}
-            sprite_filename={this.props.relic ? this.props.relic.abbreviation + ".png" : null}/>
+            sprite_filename={this.props.relic ? this.props.relic.abbreviation.toLowerCase() + ".png" : null}/>
           <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
           <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
           <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
@@ -491,7 +491,7 @@ class RelicSelectionModal extends Component {
                   + (_.isEqual(s, this.props.currentRelic) ? " has-anointment" : "")
                   }
                   onClick={() => this.handleRelicChange(s)}>
-                  <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + s.abbreviation + "_sm.png)"}}></span>
+                  <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + s.abbreviation.toLowerCase() + "_sm.png)"}}></span>
                   { s.name }
                 </div>
 
@@ -504,7 +504,7 @@ class RelicSelectionModal extends Component {
                 <h2 className="no-border-bottom">
                 {this.state.currentRelic &&
                  <span className="relic-icon"
-                       style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation + ".png)"}}></span>
+                       style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation.toLowerCase() + ".png)"}}></span>
                  }
                 {this.state.currentRelic && this.state.currentRelic.name}</h2>
                 <h5>
