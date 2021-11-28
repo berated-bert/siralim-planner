@@ -796,13 +796,10 @@ class SiralimPlanner extends Component {
       }
       anointments.slice(0, specialization.name === "Royal" ? 15 : 5);
 
-
-      let partyMemberRelics = new Array(6).fill(null);
       // Get relics
+      let partyMemberRelics = new Array(6).fill(null);
       for(let i = 0; i < relics.length; i++) {
-
         for(let j = 0; j < relicsList.length; j++) {
-          console.log(relics[i], relicsList[j].name, relics[i] === relicsList[j].name)
           if(relicsList[j].name === relics[i]) {
             partyMemberRelics[i] = relicsList[j];
             break;

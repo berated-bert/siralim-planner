@@ -3,8 +3,6 @@ import React, {PureComponent} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpload, faInfoCircle, faTimes, faDice } from '@fortawesome/free-solid-svg-icons'
 
-import githubIcon from '../icons/GitHub-Mark-32px.png';
-
 class AppHeader extends PureComponent {
 
   render() {
