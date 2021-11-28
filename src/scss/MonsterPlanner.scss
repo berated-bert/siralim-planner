@@ -246,6 +246,10 @@
       font-weight: bold;
 
     }
+    @media(max-width: 1720px) {
+      margin-top: 10px;
+      margin-left: 0;
+    }
     @media(max-width: 1280px) {
       left: -4px;
     }
@@ -295,6 +299,9 @@
   }  
   background: rgba(0, 0, 0, 0.1);
   
+  @media(max-width: 1720px) {
+    margin-top: 20px;
+  }
 }
 
 

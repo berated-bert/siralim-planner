@@ -4,6 +4,9 @@
 
 * Added Relics into the tool, based on data sourced from the Siralim Ultimate Compendium.
 * Added a reset button.
+* Added a randomise button.
+
+Thank you to EmptyPalms for the suggestions!
 
 ### v1.0.3 (22 November 2021)
 

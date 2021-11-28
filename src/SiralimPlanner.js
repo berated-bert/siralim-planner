@@ -770,7 +770,7 @@ class SiralimPlanner extends Component {
     let notificationStatus = null;
 
     try {
-      let {traits, spec, anointment_names} = parsePartyString(str);
+      let {traits, relics, spec, anointment_names} = parsePartyString(str);
       let uids = this.traitsToUids(traits);
       let pm = this.populateFromUids(uids);
       if(pm.noti) notificationText = pm.noti;
@@ -796,8 +796,24 @@ class SiralimPlanner extends Component {
       }
       anointments.slice(0, specialization.name === "Royal" ? 15 : 5);
 
+
+      let partyMemberRelics = new Array(6).fill(null);
+      // Get relics
+      for(let i = 0; i < relics.length; i++) {
+
+        for(let j = 0; j < relicsList.length; j++) {
+          console.log(relics[i], relicsList[j].name, relics[i] === relicsList[j].name)
+          if(relicsList[j].name === relics[i]) {
+            partyMemberRelics[i] = relicsList[j];
+            break;
+          }
+        }
+      }
+
+
       this.setState({
         partyMembers: partyMembers,
+        relics: partyMemberRelics,
         uploadBuildModalIsOpen: false,
         currentSpecialization: specialization,
         anointments: anointments,
@@ -962,7 +978,8 @@ class SiralimPlanner extends Component {
          compendiumVersion={compendium_version}/>
         <NotificationBanner text={this.state.notificationText} status={this.state.notificationStatus} notificationIndex={this.state.notificationIndex} />
 
-        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)} uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
+        <UploadPartyModal modalIsOpen={this.state.uploadBuildModalIsOpen} closeModal={this.closeUploadBuildModal.bind(this)}
+                          uploadPartyFromString={this.uploadPartyFromString.bind(this)}/>
         <InfoModal modalIsOpen={this.state.infoModalIsOpen} closeModal={this.closeInfoModal.bind(this)}/>
 
         <div className={"modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")}>

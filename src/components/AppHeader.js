@@ -3,6 +3,8 @@ import React, {PureComponent} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUpload, faInfoCircle, faTimes, faDice } from '@fortawesome/free-solid-svg-icons'
 
+import githubIcon from '../icons/GitHub-Mark-32px.png';
+
 class AppHeader extends PureComponent {
 
   render() {
@@ -17,7 +19,7 @@ class AppHeader extends PureComponent {
           <button id="upload-build" className="lighter" onClick={this.props.openUploadBuildModal}><FontAwesomeIcon icon={faUpload}/><span>Upload party</span></button>
           <button id="reset-build" className="lighter" onClick={this.props.resetBuild}><FontAwesomeIcon icon={faTimes}/><span>Reset</span></button>
           <button id="random-build" className="lighter" onClick={this.props.randomiseBuild}><FontAwesomeIcon icon={faDice}/><span>Randomise</span></button>
-          <button id="close-info-modal" className="lighter" onClick={this.props.openInfoModal}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
+          <button id="open-info-modal" className="lighter" onClick={this.props.openInfoModal}><FontAwesomeIcon icon={faInfoCircle}/><span>Info</span></button>
         </div>
         </div>
       </header>
