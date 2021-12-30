@@ -1,4 +1,4 @@
-Siralim Ultimate,,Version 0.12.11,,Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402,
+Siralim Ultimate,,Version 1.0.3,,Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402,
 Class,Family,Creature,Trait Name,Trait Description,Material Name
 Death,Abomination,Abomination Brute,Flesh Rot,"After an enemy is afflicted with either Weak or Vulnerable, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Brute Stitches
 Death,Abomination,Abomination Volatile,Quell,"When this creature Attacks an enemy with Vulnerable, it deals 100% more damage. If this damage exceeds 35% of the target's Current Health, the target dies.",Volatile Stitches
@@ -56,12 +56,12 @@ Sorcery,Animation,Eye Animation,Yellow Tether,"After this creature deals critica
 Sorcery,Animation,Feet Animation,Blue Tether,"When an adjacent creature would take damage or gain a buff or debuff, this creature becomes the new target instead.",Blue Shackle
 Sorcery,Animation,Hand Animation,Silver Tether,"After an adjacent creature is killed, this creature gains 60% of its stats (other than Health).",Silver Shackle
 Sorcery,Animation,Lip Animation,Purple Tether,"After an adjacent ally Casts a spell, this creature Casts that spell as well.",Purple Shackle
-Rodian Master,Animation,Mastery Trait,Master of Animations,"If all the creatures in your party are Animations, the first and last creatures in your party are considered to be adjacent to all their allies.",Sigil of the Animation
+Rodian Master,Animation,Mastery Trait,Master of Animations,Your Animation creatures have a 50% chance to receive all effects that require them to be adjacent to your other creatures. This trait does not stack.,Sigil of the Animation
 Death,Animatus,Animatus,Brilliant Creation,"This creature has 15% more Attack and Intelligence for each dead creature on your side, and 15% more Defense and Speed for each living creature on your side.",No Material Exists
 Life,Apis,Apis Adolescent,Primed And Ready,"After an enemy Casts a spell on all your creatures, this creature Attacks it for 300% normal damage.",Adolescent Egg
 Life,Apis,Apis Charger,Threshold,"After this creature Attacks, it afflicts the target with Scorned and Disarmed.",Charger Headdress
 Life,Apis,Apis Defender,Vigilance,This creature intercepts attacks on its allies.,Defender Headdress
-Life,Apis,Apis Endurer,Long Live,This creature takes 2% less damage from attacks for every 1% Health it is missing.,Endurer Headdress
+Life,Apis,Apis Endurer,Long Live,This creature takes 2% less damage (up to 90%) from attacks for every 1% Health it is missing.,Endurer Headdress
 Life,Apis,Apis Guardian,Grit,"At the start of battle, this creature's Attack is added to its Health and Defense, then its Attack is set to its minimum value.",Guardian Headdress
 Life,Apis,Apis Majesty,Necessitarianism,"At the start of battle, this creature gains 100% Attack, Intelligence, Defense, and Speed. This creature deals 70% less damage.",Majesty Headdress
 Life,Apis,Apis Protector,Righteous Concession,This creature and the creatures adjacent to it are resistant to debuffs.,Protector Headdress
@@ -95,7 +95,7 @@ Nature,Arbiter,Moving Arbiter,In Favor of Escape,"After start-of-battle effects 
 Nature,Arbiter,Thinking Arbiter,In Favor of Creation,"After start-of-battle effects are determined, 40% of this creature's Intelligence is added to that of your other creatures.",Brainy Scales
 Rodian Master,Arbiter,Mastery Trait,Master of Arbiters,"If all the creatures in your party are Arbiters, their innate traits are 50% more powerful. This trait does not stack.",Sigil of the Arbiter
 Nature,Aspect,Aspect of Change,Call of Evolution,"After this creature Dodges an attack, it Casts one of its spells. In addition, this creature has an independent 50% chance to Dodge attacks.",Change Figment
-Nature,Aspect,Aspect of Decay,Call of the Grave,"After this creature dodges, enemies lose 20% of their highest stat. In addition, this creature has an independent 50% chance to dodge attacks. This trait does not stack.",Decay Figment
+Death,Aspect,Aspect of Decay,Call of the Grave,"After this creature dodges, enemies lose 20% of their highest stat. In addition, this creature has an independent 50% chance to dodge attacks. This trait does not stack.",Decay Figment
 Nature,Aspect,Aspect of Seasons,Call of the Aspect,"This creature has an independent 12% chance to dodge attacks for each different type of Aspect fighting on your side.
  When it does, your Aspects gain 20% Attack, Intelligence, Defense, and Speed.",Seasons Figment
 Nature,Aspect,Aspect of Time,Call of Time,"After this creature Dodges an attack, it gains a Barrier that absorbs damage equal to 50% of its Speed.
@@ -185,11 +185,11 @@ creature that belongs to the same class fighting on your side. This trait does n
 Backer,Backer,Backer Trait,Boss Powers,"At the start of battle, your creatures gain 50% Maximum Health. Your creatures take 50% more damage. This trait does not stack.",Obvious Weak Spot
 Backer,Backer,Backer Trait,Celestial Nexus,"While this creature has Barrier, it takes damage from attacks and spells in place of your other creatures. This trait does not stack.",Celestial Map
 Backer,Backer,Backer Trait,Chaotic Disposition,"After an enemy is afflicted with a debuff, this creature has a 5% chance to Cast Debilitating Blast.",Sickly Toad's Stool
-Backer,Backer,Backer Trait,Charging Rod,"After another creature Casts a spell, this creature has a 30% chacne to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack.",Cold Iron Needle
+Backer,Backer,Backer Trait,Charging Rod,"After another creature Casts a spell, this creature has a 30% chance to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack.",Cold Iron Needle
 Backer,Backer,Backer Trait,Consecrated Ground,This creature and its adjacent allies are immune to damage from minions.,Sacred Mace
 Backer,Backer,Backer Trait,Conspiracy Theory,"After you defeat a Treasure Golem, your creatures gain several bonuses for the rest of the time you're in that Realm. This trait does not stack.",Broken Thermometer
 Backer,Backer,Backer Trait,Coward's Embrace,"Your creatures have a 40% independent chance to dodge, but they can't deal critical damage. This trait does not stack.",Crystallized Cowardice
-Backer,Backer,Backer Trait,Dead of Winter,"After ane enemy afflicts a debuff, it is afflicted with Frozen and Poisoned.",Alchemical Frost
+Backer,Backer,Backer Trait,Dead of Winter,"After an enemy afflicts a debuff, it is afflicted with Frozen and Poisoned.",Alchemical Frost
 Backer,Backer,Backer Trait,Deep Roots,"When this creature takes damage from a creature that belongs to its class, it has a 65% chance to avoid that damage.",Ancient Soulsoil
 Backer,Backer,Backer Trait,Determination,"After an ally dies, this creature gains 25% Defense.",Gold Star of Courage
 Backer,Backer,Backer Trait,Dragon's Rage,"At the start of this creature's turn, it Casts Fireball.",Draco Rubies
@@ -219,9 +219,9 @@ Backer,Backer,Backer Trait,Hoarding,This creature has 20% more Intelligence for 
 Backer,Backer,Backer Trait,Horde Limits,"After your creatures are afflicted with a debuff, they have a 20% chance to gain Immune. This trait does not stack.",Vaccine
 Backer,Backer,Backer Trait,Imposter Syndrome,"At the start of battle, this creature gains stats (other than Health) equal to 10% of your other creatures' highest stats.
 This creature starts battles at the bottom of the Timeline.",Shattered Mirror
-Backer,Backer,Backer Trait,Improbable Catapult,"At the start of battle, enemies gain a copy of this creature's innate trait.",Trait Launcher
+Backer,Backer,Backer Trait,Improbable Catapult,"At the start of this creature's turn, enemies gain a copy of its innate trait. This trait can only activate once per side.",Trait Launcher
 Backer,Backer,Backer Trait,In All Things,"At the end of this creature's turn, it gains stats equal to 20% of its highest stat.",Broken Scales
-Backer,Backer,Backer Trait,Incoming Tide,"At the start of this creature's turn, it has a 50% chacne to Cast Submerge.",Selene's Soul
+Backer,Backer,Backer Trait,Incoming Tide,"At the start of this creature's turn, it has a 50% chance to Cast Submerge.",Selene's Soul
 Backer,Backer,Backer Trait,Infestation,"At the start of your creatures' turns, they gain 1 stack of Spiderlings. This trait does not stack.",Clump of Spiderlings
 Backer,Backer,Backer Trait,Insight,Your creatures can attack Invisible enemies.,Lens of Insight
 Backer,Backer,Backer Trait,Jiggly,This creature has 50% less Defense and 100% more Speed.,Gelatin Lump
@@ -268,7 +268,6 @@ Backer,Backer,Backer Trait,Seethe,This creature deals 10% more damage for each t
 Backer,Backer,Backer Trait,Sharpnel Blast,"After an enemy takes damage at the start of its turn from Bomb, all other enemies take 30% of that damage as well. This trait does not stack.",Bomb Scraps
 Backer,Backer,Backer Trait,Shattering Tackle,"Your creatures' attacks ignore 2.5% of the enemies' Defense for each Yeti creature fighting on your side.
 This bonus is doubled if the enemy is afflicted with Frozen. This trait does not stack.",Special Snowball
-Backer,Backer,Backer Trait,Shining Armor,"While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",Crab Shield
 Backer,Backer,Backer Trait,Snack Break,"At the start of this creature's turn, it recovers 200% Health and loses 20% Speed.",Bag of Chips
 Backer,Backer,Backer Trait,Sobered Up,Your creatures can manually Cast Booze Spells.,Empty Beer Mug
 Backer,Backer,Backer Trait,Soul Steal,"After this creature Attacks, its Spell Gem with the lowest number of remaining Charges gains 1 Charge.",Bloody Soul Crystal
@@ -288,11 +287,11 @@ Backer,Backer,Backer Trait,Toxic Karma,"After this creature is Attacked, the ene
 Backer,Backer,Backer Trait,Training Matrix,"After your creatures are resurrected, they gain 20% stats. This trait does not stack.",Neural Chip
 Backer,Backer,Backer Trait,Tribe Mentality,"At the start of battle, creatures adjacent to this creature change their class to match this creature's class.",Leader's Mantle
 Backer,Backer,Backer Trait,True Strike,This creature's attacks ignore 25% of enemies' Defense and act as if this creature is strong against the enemy's class.,Vorpal Core
-Backer,Backer,Backer Trait,Undead Legion,Your creatures can have 3 additional stacks of Zombies. This trait does not stack.,Giant Pile of Corpses
+Backer,Backer,Backer Trait,Undead Legion,Your creatures can have 5 additional stacks of Zombies. This trait does not stack.,Giant Pile of Corpses
 Backer,Backer,Backer Trait,Unrelenting Fury,This creature deals 100% more damage while it is below 40% Health.,Warrior's Dying Rage
 Backer,Backer,Backer Trait,Unstable Existence,"After any creatures takes damage from a creature and their resulting Health is below 50%, they deal
 damage to their adjacent alllies equal to 100% of the damage taken. This trait does not stack.",Instability
-Backer,Backer,Backer Trait,Usery,This creature deals 125% more damage with attacks and takes 75% more damage from attacks.,Savings Bond
+Backer,Backer,Backer Trait,Usury,This creature deals 125% more damage with attacks and takes 75% more damage from attacks.,Savings Bond
 Backer,Backer,Backer Trait,Vengeful Rebound,Your creatures take 50% less damage until the start of their first turn. This trait does not stack.,Glass Eye
 Backer,Backer,Backer Trait,Vicious Retaliation,"After this creature dodges, it Attacks the enemy. This attack deals 50% more damage if this creature is Provoking.",Mysterious Scroll
 Backer,Backer,Backer Trait,Why Won't You Die?,"After this creature causes 0 damage with an attack or spell, it gains 12% Attack and Intelligence.
@@ -350,7 +349,7 @@ Life,Beacon,Luna Beacon,Forbearance Forgone,"Your Sorcery creatures and Beacon c
 After an enemy Sorcery creature Casts a spell, that Spell Gem is Sealed and this creature's Spell Gems gain 1 Charge.",Stoic's Lantern
 Life,Beacon,Pellucid Beacon,Purity and Emptiness,"Your Life creatures and Beacon creatures always have Berserk. When an enemy Life creature would heal on of its allies, it heals one of your creatures instead.",Zealot's Lantern
 Life,Beacon,Rosy Beacon,Eternal Reprieve,"At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack.",Mendicant's Lantern
-Rodian Master,Beacon,Mastery Trait,Master of Beacons,"If all the creatures in your party are Beacons, their buffs and minions applied by their innate traits affect creatures of any class. This trait does not stack.",Sigil of the Beacon
+Rodian Master,Beacon,Mastery Trait,Master of Beacons,"At the start of battle, your Beacons' stats are averaged and then increased by 25%. This trait does not stack.",Sigil of the Beacon
 Nature,Brownie,Blademaster,Overkill,"After this creature attacks, and the damage exceeds 35% of the target's Maximum Health, enemies take 70% of this damage as well.",Blademaster Maul
 Nature,Brownie,Brownie Brute,Ultimatum,"After this creature Attacks, it deals damage to the target and enemies adjacent to the target equal to 50% of this creature's Current Health.",Brute Maul
 Nature,Brownie,Brownie Captain,Wallop,"After this creature Attacks, it decreases the Defense of the target and enemies adjacent to the target by 30%.",Captain Maul
@@ -398,7 +397,7 @@ Nature,Centaur,Centaur Raider,Anticipation,"After an enemy is killed, this creat
 Nature,Centaur,Centaur Ranger,On The Rocks,"When this creature Attacks, it Attacks an additional number of times equal to the number of spells your creatures casted since it last Attacked.",Ranger Tuft
 Nature,Centaur,Centaur Runner,Infinite Struggle,"After this creature Attacks, it has a 25% chance to continue Attacking the target for each debuff it has.",Runner Tuft
 Nature,Centaur,Centaur Warrior,Paradigm,"After this creature is Attacked, it Attacks the enemy.",Warrior Tuft
-Nature,Centaur,Centaur Wrangler,Sunny Disposition,"After an enemy Casts a spell, this creature Attacks it.",Wrangler Tuft
+Nature,Centaur,Centaur Wrangler,Sunny Disposition,"After an enemy manually Casts a spell, this creature Attacks it.",Wrangler Tuft
 Rodian Master,Centaur,Mastery Trait,Master of Centaurs,"Your Centaurs' attacks deal 20% more damage and have an independent 10% chance to deal critical damage for each Centaur fighting on your side.
 This trait does not stack.",Sigil of the Centaur
 Chaos,Cerberus,Ashmouth Cerberus,Spell Tap,"This creature can't Cast spells manually, but can equip 3 extra Spell Gems.
@@ -416,14 +415,14 @@ This trait does not stack.",Radiant Energy
 Life,Cherub,Chandra Cherub,By My Hand,"When your creatures damage enemies with Shelled, all subsequent effects such as on-attack or on-cast effects are no longer prevented.",Celestine Energy
 Life,Cherub,Nisha Cherub,Or Else By None,"After this creature Provokes, its Barrier shatters, dealing damage to enemies equal to 50% of its potency and healing your creatures for the same amount.",Sinister Energy
 Life,Cherub,Preta Cherub,Sundered and Undone,"When your creatures with Barrier take damage, the Barrier shatters, dealing damage to enemies equal to 35% of its potency. This trait does not stack.",Negative Energy
-Life,Cherub,Surya Cherub,Triple Suns,"Your creatures are immune to damage from Bleeding, Poisoned, Burning, and Bomb.",Blazing Energy
+Life,Cherub,Surya Cherub,Triple Suns,"Your creatures take 90% less damage from Bleeding, Poisoned, Burning, and Bomb.",Blazing Energy
 Life,Cherub,Vipina Cherub,The Two Made One,Your creatures' Barrier buffs have 50% more maximum absorption. This trait does not stack.,Floral Energy
 Rodian Master,Cherub,Mastery Trait,Master of Cherubs,"If all the creatures in your party are Cherubs, the maximum absorption of their Barrier buffs is increased by 200%. This trait does not stack.",Sigil of the Cherub
-Sorcery,Chimera,Arcana Chimera,Eldritch Creation,"At the start of battle, your creatures gain a Spell Gem that corresponds to their Fused creature's class. This trait does not stack.",Impossible Recipe
+Sorcery,Chimera,Arcana Chimera,Eldritch Creation,"At the start of battle, your creatures gain 2 Spell Gems that correspond to their Fused creature's class. This trait does not stack.",Impossible Recipe
 Sorcery,Chimera,Blessed Chimera,Raging Spirit,"After your creatures are killed, they have a 35% chance to be resurrected with 50% Health and gain a random trait that belongs to their Fused creature's race.
 This trait does not stack.",Orthodox Recipe
 Sorcery,Chimera,Draco Chimera,Divine Form,Your creatures start battles with 50% more of whatever stat corresponds to their Fused creature's class. This trait does not stack.,Complicated Recipe
-Sorcery,Chimera,Undying Chimera,Appreciation For Ancestry,Your creatures deal 50% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.,Forbidden Recipe
+Sorcery,Chimera,Undying Chimera,Appreciation For Ancestry,Your creatures deal 75% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.,Forbidden Recipe
 Sorcery,Chimera,Valor Chimera,Valiant Heart,Your creatures Attack and Cast 1 additional time for each creature with the same secondary Fusion fighting on your side. This trait does not stack.,Hidden Recipe
 Sorcery,Chimera,Wylder Chimera,Fairy Blood,"At the start of battle, your creatures gain a random trait that belongs to their Fused creature's class. This trait does not stack.",Natural Recipe
 Rodian Master,Chimera,Mastery Trait,Master of Chimeras,"If all the creatures in your party are Chimeras, they take 75% less damage from creatures that belong to their fused creature's class. This trait does not stack.",Sigil of the Chimera
@@ -645,10 +644,10 @@ Rodian Master,Ent,Mastery Trait,Master of Ents,"The first time your Ents are kil
 Chaos,Exotic,Abacus,Numerical Nightmare,"This creature has 75% more Attack and Speed while its level is odd, and 75% more Intelligence and Defense while its level is even.",Bloody Beads
 Sorcery,Exotic,Abandoned Homunculus,Lab Assistant,Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack.,Alchemical Catalyst
 Chaos,Exotic,Acrova,Piercing Speed,This creature's attacks and spells ignore 30% of its enemies' Defense.,Sharp Shell
-Sorcery,Exotic,Ameteris Krin,Cantripology,"After this creature Attacks, it Casts its top-most Spell Gem.",Ametrine Shard
+Sorcery,Exotic,Ameteris Krin,Cantripology,"After this creature Attacks, it Casts its top-most, Unsealed Spell Gem. Then, that Spell Gem is Sealed.",Ametrine Shard
 Chaos,Exotic,Arcian Warbeast,Hungering Void,"At the start of this creature's turn, it Seals one of each creature's Spell Gems.",Voidborne Crystal Scraps
 Sorcery,Exotic,Avaricious Draco,Draconic Arrogance,This creature has additional stats (other than Health) equal to 5% of your other creatures' highest stats.,Pure Dragon Blood
-Nature,Exotic,Avion,Counter Slash,"After this creature is Attacked, it Attacks the enemy for 50% normal damage.",Avion Claw
+Nature,Exotic,Avion,Counter Slash,"After this creature is Attacked, it deals damage to the enemy equal to 50% of this creature's Attack.",Avion Claw
 Chaos,Exotic,Band Warchief,Bloodripper,"After this creature Attacks, it afflicts the target with Bleeding. If the target already has Bleeding, it deals 120% more damage.",Blood Banner
 Death,Exotic,Bashcloak,Eery Veil,"At the start of battle, this creature and creatures adjacent to it gain Invisible.",Ghostly Ear
 Sorcery,Exotic,Bejem,Natural Beauty,"At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 20% stronger. This trait does not stack.",Jewel Shell
@@ -676,20 +675,20 @@ Life,Exotic,Heartminder,Hearts and Minds,"At the start of this creature's turn, 
 Life,Exotic,Helios,Propulsion,"After this creature is forcibly moved to the top of the Timeline, it gains Splashing and 75% Attack.",Angelic Halo
 Nature,Exotic,Hermitey,Pocket Tank,"While this creature has at least 3 buffs, it intercepts enemies' attacks on its allies and takes 50% less damage. This trait does not stack.",Decorated Shell
 Sorcery,Exotic,Huanglong,Golden Aura,"After your Exotic creatures are killed, your other Exotic creatures gain a random trait. This trait does not stack.",Constellation of Huanglong
-Chaos,Exotic,Hydra,Reactive Heads,"After your creatures are damaged by an attack or spell, they have a 20% chance to be sent to the top of the Timeline.",Hydra's Scale
+Chaos,Exotic,Hydra,Reactive Heads,"After your creatures are damaged by an attack or spell, they have a 15% chance to be sent to the top of the Timeline.",Hydra's Scale
 Chaos,Exotic,Infinite Eggling,Chaotic Potential,"After this creature gains stats, it has a 5% chance to Cast a random Morph spell.",Anarchic Egg Shell
-Sorcery,Exotic,Iridris,Guardian of the Forest,"Your creatures take 120% less damage, minus 1% for each time they've Attacked or Cast a spell in the current battle.",Crimson Powder
+Sorcery,Exotic,Iridris,Red In Tooth And Claw,"After this creature is Attacked, it has a 50% chance to be sent to the top of the Timeline.",Crimson Powder
 Nature,Exotic,Jaculus,Breakneck,This creature ignores enemies' Barrier and Shelled buffs.,Piercing Legs
-Chaos,Exotic,Kavnak,Shared Consciousness,"After an ally manually Casts a spell, this creature has a 25% chance to Cast that spell as well.",Kavnak's Worm
+Chaos,Exotic,Kavnak,Shared Consciousness,"After an ally manually Casts a spell, this creature has a 35% chance to Cast that spell as well.",Kavnak's Worm
 Sorcery,Exotic,Kirin,Celestial,Your Exotic creatures always have Mending and Leeching.,Constellation of Kirin
-Nature,Exotic,Kobold,Grovel and Beg,"While this creature has less than 35% Health, it has 50% more Speed and has a 50% chacne to avoid damage.",Kobold's Guidebook
+Nature,Exotic,Kobold,Grovel and Beg,"While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage.",Kobold's Guidebook
 Chaos,Exotic,Lavalotl,Cauterize the Wound,"This creature is healed instead of damaged by Bleeding and Burning, but at 50% effectiveness.",Lava Bubble
 Death,Exotic,Legion,Assimilate,"After this creature takes damage from an attack or spell, it gains 5% stats.",Fragmented Blood
 Sorcery,Exotic,Lizard Wizard,Lizardy,Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack.,Lizard Wizard's Tome
 Chaos,Exotic,Lunatio,Twin Souls,This creature's attacks deal 75% more damage and it Attacks 1 additional time.,Lost Soul
 Sorcery,Exotic,Magicalope,Unrevealed Secret,"After this creature dodges an attack, the enemy is afflicted with a random debuff.",Cryptid Tarot
 Chaos,Exotic,Mathemagician,Chaotic Mind,"When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount.",Math Textbook
-Sorcery,Exotic,Mind Reaver,Mind Reave,"After an enemy Casts a spell, this creature Attacks it for 35% normal damage. This trait does not stack.",Reaver's Skull
+Sorcery,Exotic,Mind Reaver,Mind Reave,"After an enemy Casts a spell, this creature deals damage to it equal to 35% of this creature's Intelligence.",Reaver's Skull
 Sorcery,Exotic,Nguruvilu,Turbulent Waters,"After this creature Attacks, it has a 50% chance to Cast Maelstrom.",Still Waters
 Death,Exotic,Nine Tailed Harvester,Nine Tails' Knowledge,Your creatures' spells are 30% more potent. This trait does not stack.,Book of Nine Tails
 Sorcery,Exotic,Nox Sinon,Unleash the Horde,Your creatures can have 3 additional stacks of each minion. This trait does not affect minions that normally have a maximum of 1 stack. This trait does not stack.,Nox's Staff
@@ -698,14 +697,14 @@ Death,Exotic,Oni-Goroshi,Her Embrace,This creature's Attacks deal 100% more dama
 Sorcery,Exotic,Orphaned Minion,Last Ward,"This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from
 this damage, the enemy takes damage equal to 20% of the damage dealt. This damage counts as spell damage.",Memory of Binding
 Death,Exotic,Otherworldly Visitor,Love Thyself,"After an enemy gains Maximum Health, this creature Casts Vitality Explosion on it. This trait does not stack.",Otherworlder's Soul
-Life,Exotic,Paladin Crab,Shining Armor,"While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",Crab Shell
+Life,Exotic,Paladin Crab,Shining Armor,"While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",Crab Shield
 Chaos,Exotic,Paroxys,Confusion and Empathy,"This creature's spell potency is based on its Attack, and the damage of its attacks is based on its Intelligence.",Warped Neuron
 Chaos,Exotic,Petrafortis,Bulky Body,"This creature has 100% more stats (other than Health), but has a 50% chance to lose its turn.",Muscular Stone
 Nature,Exotic,Piscacanth,Ancient Buffoonery,This creature deals 10% more damage for each creature below it on the Timeline at the start of battle.,Electric Fossil
 Life,Exotic,Pontiff of Luck,Spin the Wheel,"Whenever it is an enemy's turn, any random effects that fail to occur are re-rolled an additional time. This trait does not stack.",Broken Roulette Wheel
 Nature,Exotic,Proto-Brachyura,Crab Trap,"After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 20%.",Buttery Bait
 Sorcery,Exotic,Proxigeist,Projection,"After an adjacent ally Attacks, Casts a spell, Defends, or Provokes, this creature has a 50% chance to perform that action as well.",Wireframe Matric
-Chaos,Exotic,Puffergryph,Puff Up,"After this creature is Attacked, it gains 25% Attack and Intelligence.",Pufferfish Spike
+Chaos,Exotic,Puffergryph,Puff Up,"After this creature is Attacked, it gains 30% Attack and Intelligence.",Pufferfish Spike
 Nature,Exotic,Rhozzgon,Wrath of Krorena,Your creatures deal 50% more damage to enemies that belong to their own class. This trait does not stack.,Nature's Fury
 Life,Exotic,Sapphire Drake,Healing Breath,"At the start of this creature's turn, it heals one of your creatures for 100% Health.",Drake Teeth
 Sorcery,Exotic,Seiryu,Scaling,Your Exotic creatures have 5% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack.,Constellation of Seiryu
@@ -715,20 +714,20 @@ Life,Exotic,Snow Lily,Loyalty's Light,"After a creature is killed, this creature
 Sorcery,Exotic,String Puller,Pull the Strings,"When this creature Attacks, one of your other creatures Attacks instead for 50% more damage. This trait does not work if any of your other creatures have it as well.",Spectral String
 Sorcery,Exotic,Suzaku,Feather Dance,"After your Exotic creatures gain a buff, they gain 20% Defense. This trait does not stack.",Constellation of Suzaku
 Chaos,Exotic,Taco Hell,Tacos Inflation,Your creatures' consecutive attacks at the same time deal 10% more damage for each additional attack. This trait does not stack.,Beef Stick
-Nature,Exotic,The Bearon,Barbearian,"After all start-of-battle effects are activated, this creature Provokes.",Honey Pot
+Nature,Exotic,The Bearon,Barbearian,"After all start-of-battle effects are activated, this creature Provokes. This creature has 35% more Defense.",Honey Pot
 Nature,Exotic,The Dervish,Ride the Whirlwind,This creature's damage dealt by attacks and spells is based on 150% of its lowest stat rather than its Attack or Intelligence.,Eye of the Storm
 Nature,Exotic,The First Spawn,Ancient DNA,This creature's race is always the same race as the creature that is at the top of the Timeline.,DNA Splicer
-Sorcery,Exotic,Toyland Amalgamation,Double Vision,"After this creature Attacks, it has a 30% chance to Cast its top-most Spell Gem.",Eye Glasses
-Chaos,Exotic,Tsuchinoko,Rollout,"At the start of this creature's turn, it Attacks a random enemy for 10% to 50% normal damage.",Nokium
+Sorcery,Exotic,Toyland Amalgamation,Double Vision,"After this creature Attacks, it has a 40% chance to Cast its top-most Spell Gem.",Eye Glasses
+Chaos,Exotic,Tsuchinoko,Rollout,"At the start of this creature's turn, it Attacks a random enemy for 50% to 100% normal damage.",Nokium
 Death,Exotic,Vannyx,Death Sentence,This creature deals 100% more damage to enemies with Feared.,Dark Cloak
 Nature,Exotic,Zombatron,Reform,"After your other Death creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack.",Solidified Slime
-Life,Fae,Asclepias Fae,Dead Butterflies,"The first 3 times this creature is killed, it is resurrected with 100% Health. This creature always skips its turn.",Blue Bottled Fairy
-Life,Fae,Helianthus Fae,Lost In Forever,"This creature's end-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells.",Green Bottle Fairy
+Life,Fae,Asclepias Fae,Dead Butterflies,"The first 3 times this creature is killed, it is resurrected with 100% Health. This creature takes 75% more damage and deals 50% less damage.",Blue Bottled Fairy
+Life,Fae,Helianthus Fae,Lost In Forever,"This creature's end-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Green Bottle Fairy
 Life,Fae,Hydrangea Fae,Crystal Lake,"This creature Attacks and Casts spells 2 additional times, but it can't gain buffs.",Pink Bottled Fairy
-Life,Fae,Polygala Fae,True North,"This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 90% lower stats (other than Health).",Purple Bottled Fairy
+Life,Fae,Polygala Fae,True North,"This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 50% lower stats (other than Health).",Purple Bottled Fairy
 Life,Fae,Rhododendron Fae,The Great Beyond,"This creature's automatically-cast spells have a 40% chance to be considered manually cast, but this creature cannot manually cast spells.",Yellow Bottled Fairy
-Life,Fae,Roseaea Fae,Outgrow,"This creature's start-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells.",Red Bottled Fairy
-Rodian Master,Fae,Mastery Trait,Master of Fae,"If all the creatures in your party are Fae, they have a 60% chacne to avoid damage from spells. This trait does not stack.",Sigil of the Fae
+Life,Fae,Roseaea Fae,Outgrow,"This creature's start-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Red Bottled Fairy
+Rodian Master,Fae,Mastery Trait,Master of Fae,"If all the creatures in your party are Fae, they have a 60% chance to avoid damage from spells. This trait does not stack.",Sigil of the Fae
 Sorcery,Familiar,Arcane Familiar,All For One,Your creatures cast spells 0.5 additional times (rounded down) for each Familiar fighting on your side. This trait does not stack.,Arcane Pinion
 Sorcery,Familiar,Elemental Familiar,Conversion,Your creatures' spells deal 15% more damage and 15% less healing for each Familiar fighting on your side. This trait does not stack.,Elemental Pinion
 Sorcery,Familiar,Flood Familiar,One For All,"After one of your Familiars Cast a spell, your other creatures gain a random Spell Gem. This trait does not stack.",Flood Pinion
@@ -757,7 +756,7 @@ Nether Boss,Forsaken,Deathwalker,Deathwalker's Hymn,Your Lepers share their inna
 Nether Boss,Forsaken,Deathwalker,Deathwalker's Strangulation,"When an enemy takes damage from Poisoned, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row.",Deathwalker's Gem
 Rodian Master,Forsaken,Mastery Trait,Master of Forsaken,"If all the creatures in your party are Forsaken, their innate traits have no downside.",Sigil of the Forsaken
 Nature,Gargantuan,Daunting Gargantuan,Furor,"At the start of this creature's turn, it Attacks a random enemy for each creature that died since its last turn. Each attack deals 200% normal damage.",Daunting Tree Trunk
-Nature,Gargantuan,Fearsome Gargantuan,Charge,"At the start of your creatures' turns, this creature has a 25% chance to attack a random enemy.",Fearsome Tree Trunk
+Nature,Gargantuan,Fearsome Gargantuan,Charge,"At the start of each creature's turn, this creature has a 25% chance to attack a random enemy.",Fearsome Tree Trunk
 Nature,Gargantuan,Forest Gargantuan,Resprout,"At the start of this creature's turn, it recovers Health equal to 100% of the damage it took since its last turn.",Forest Tree Trunk
 Nature,Gargantuan,Gruesome Gargantuan,Scrutiny,"At the start of this creature's turn, it Casts a random spell for each spell that the enemy creatures cast since its last turn.",Gruesome Tree Trunk
 Nature,Gargantuan,Monstrous Gargantuan,Bide,"When this creature Attacks, it deals additional damage equal to 100% of the damage it took since it last Attacked.",Monstrous Tree Trunk
@@ -808,11 +807,11 @@ This trait does not stack.",Particle of 8004
 Death,Godspawn,Adaxial,Tools of Creation,"At the start of battle, you gain access to 3 random perks. A description of these perks can be found in your battle history.
 This trait activates immediately before all other start-of-battle effects. This trait does not stack.",Particle of Adaxial
 Sorcery,Godspawn,Aja Birku,Dimensions,"At the start of this creature's turn, it casts 5 random spells, one from each class.",Particle of Aja Birku
-Nature,Godspawn,Akara,Darkbloom,"This creature's base stats are 1, plus 10 for each non-Ethereal Spell Gem it has equipped.
-The base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 12 Spell Gems are considered.",Particle of Akara
+Nature,Godspawn,Akara,Darkbloom,"This creature's base stats are 20, plus 5 for each non-Ethereal Spell Gem it has equipped.
+The base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 8 Spell Gems are considered.",Particle of Akara
 Nature,Godspawn,Alakadan,Hopelessly Hopeful,"After this creature manually Casts a spell, it also Casts a random Avatar spell.",Particle of Alakadan
 Chaos,Godspawn,Colg,What's Yours Is Mine,"At the start of battle, your creatures gain a random enemy trait. This trait does not stack.",Particle of Colg
-Sorcery,Godspawn,Darksulker,From Death to Destiny,This creature has additional stats equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait.,Particle of Darksulker
+Sorcery,Godspawn,Darksulker,From Death to Destiny,This creature has additional stats (other than Health) equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait.,Particle of Darksulker
 Sorcery,Godspawn,Diamant,Skyttels,"At the start of battle, this creature gains copies of your other creatures' non-Ethereal Spell Gems. This trait does not work on creatures that also have this trait.",Particle of Diamant
 Life,Godspawn,Dikya,Eve,"Your creatures' spells are 100% more potent, but only have 1 Charge. This trait does not stack.",Particle of Dikya
 Sorcery,Godspawn,Elqor,Empire,"This creature's spells are 50% less potent, but it casts them 4 additional times.",Particle of Elqor
@@ -899,7 +898,7 @@ Death,Hemomancer,Mutant Hemomancer,Depression,"After this creature Attacks, it s
 Rodian Master,Hemomancer,Mastery Trait,Master of Hemomancers,"If all the creatures in your party are Hemomancers, their on-attack and when-attacked effects activate 1 additional time. This trait does not stack.",Sigil of the Hemomancer
 Nature,Herbling,Herbling,Photomorphogenesis,"After this creature Attacks, it gains 5% Attack. After this creature Casts a spell, it gains 5% Intelligence. After this creature Defends, it gains 5% Defense.
 After this creature Provokes, it gains 5% Speed.",No Material Exists
-Death,Hound,Blood Hound,Blood Thirst,Your creatures can have 3 additional stacks of Dire Wolves. This trait does not stack.,Blood Collar
+Death,Hound,Blood Hound,Blood Thirst,Your creatures can have 5 additional stacks of Dire Wolves. This trait does not stack.,Blood Collar
 Death,Hound,Bone Hound,Uncharted,Your Hounds deal 5% more damage for each stack of Dire Wolves each of your creatures have. This trait does not stack.,Bone Collar
 Death,Hound,Dread Hound,Summon the Pack,"At the start of your creatures' turns, they gain 1 stack of Dire Wolves. This trait does not stack.",Dread Collar
 Death,Hound,Hell Hound,Hound Legion,Your creatures' Dire Wolves will never go away.,Hell Collar
@@ -1070,7 +1069,7 @@ Nature,Mite,Mite Skirmisher,Intensify,"After this creature Attacks, it increases
 Nature,Mite,Mite Webweaver,Viscous Webs,"At the start of each enemy's turn, they take damage equal to 10% of their Current Health for each Snared, Sleeping, and Feared debuff they have. This trait does not stack.",Webweaver Goo
 Rodian Master,Mite,Mastery Trait,Master of Mites,Your Mites have a 5% chance to avoid damage for each Mite fighting on your side. This trait does not stack.,Sigil of the Mite
 Sorcery,Modron,Bio Bot,Big Brained,Your creatures are immune to Confused.,Bio Scrap
-Sorcery,Modron,Brave Little Bot,Bravely Inspired,"This creature starts battles with 1 Maximum Health. After this creature is killed, it grants your other creatures 35% of its stats (other than Health).",Dull Scrap
+Sorcery,Modron,Brave Little Bot,Bravely Inspired,"After this creature is killed, it grants your other creatures 25% of its stats.",Dull Scrap
 Sorcery,Modron,Junkyard Bot,Junkyard Might,"This creature is immune to Blighted, Confused, and Poisoned.",Junkyard Scrap
 Sorcery,Modron,Sentry Bot,Shall Not Pass,"After your creatures take damage that exceeds 25% of their Maximum Health, they gain a Barrier that absorbs damage equal to 100% of the damage taken.
 This trait does not stack.",Shield Scrap
@@ -1306,6 +1305,7 @@ Rodian Master,Satyr,Mastery Trait,Master of Satyrs,"If all the creatures in your
 Death,Sea Shambler,Amorphous Shambler,The Sickness,"After an enemy is healed, it is afflicted with Blighted.",Amorphous Hook
 Death,Sea Shambler,Innocent Shambler,Appetite For Eschar,"After your creatures deal damage as a result of Blighted, they recover health equal to 100% of the damage dealt. This trait does not stack.",Innocent Hook
 Death,Sea Shambler,Lugubrious Shambler,Aggravated Illness,Enemies take 50% more damage from Blighted. This trait does not stack.,Lugubrious Hook
+Death,Sea Shambler,Shambler Benefactor,Your Monsters Are People,Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.,Benefactor Hook
 Death,Sea Shambler,Shambler Juggernaut,Perpetual Disease,Enemies' Blighted debuffs can't ever be removed.,Juggernaut Hook
 Death,Sea Shambler,Shambler Recruiter,Chronic Affliction,"After an enemy takes damage from Blighted, it has a 50% chance to take the same amount of damage again. This trait does not stack.",Recruiter Hook
 Death,Sea Shambler,Shambler Rescuer,Retrograde,Enemies with Blighted receive 50% more healing from all sources. This trait does not stack.,Benefactor Hook
@@ -1344,7 +1344,7 @@ Life,Shapeshifter,Life Shapeshifter,Life Transformation,"When your creatures hea
 Sorcery,Shapeshifter,Master Shapeshifter,Transformation Mastery,Your Shapeshifters' innate traits are 50% more powerful. This trait does not stack.,Master Plasma
 Nature,Shapeshifter,Nature Shapeshifter,Nature Transformation,"When your creatures deal damage to each other, they are instead healed for 50% of the damage they would have received.
 The amount of damage this creature would have dealt is not modified by other traits. This trait does not stack.",Nature Plasma
-Sorcery,Shapeshifter,Shapeshifter Novice,Transformation Apprenticeship,Your Shapeshifters start battles with 1 additional trait. This trait does not stack.,Apprentice Plasma
+Sorcery,Shapeshifter,Shapeshifter Novice,Rapid Learning,Your Shapeshifters start battles with 1 additional trait. This trait does not stack.,Apprentice Plasma
 Sorcery,Shapeshifter,Sorcery Shapeshifter,Sorcery Transformation,Your creatures' spells heal instead of dealing damage.,Sorcery Plasma
 Sorcery,Shapeshifter,Unstable Shapeshifter,Diamond Hands,This creature takes 4% less damage and deals 20% more damage for each trait it has gained in the current battle.,Unstable Plasma
 Rodian Master,Shapeshifter,Mastery Trait,Master of Shapeshifters,"Your Shapeshifters deal 20% more damage, take 5% less damage, and can equip 1 additional Spell Gem for each Shapeshifter fighting on your side.
@@ -1414,7 +1414,7 @@ Chaos,Smog,Smog Lord,Transfusion,"After this creature Attacks a creature with Po
 Chaos,Smog,Toxic Smog,Tainted Blood,"After an enemy takes damage from Poisoned, all other enemies take damage equal to 35% of the damage dealt. This trait does not stack.",Toxic Smoke
 Rodian Master,Smog,Mastery Trait,Master of Smogs,"When your creatures afflict enemies with Poisoned, the potency of this debuff is increased by 50% for each Smog fighting on your side. This trait does not stack.",Sigil of the Smog
 Nature,Snaptrap,Alluring Snaptrap,Atrophy,"After an enemy gains a stat, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack.",Alluring Pitcher
-Nature,Snaptrap,Battrap,Debacle,"After an enemy is healed, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack",Bat Pitcher.
+Nature,Snaptrap,Battrap,Debacle,"After an enemy is healed, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack",Bat Pitcher
 Nature,Snaptrap,Parasitic Snaptrap,Great Fall,"After an enemy Attacks, all other enemies each have a 10% chance to be sent to the bottom of the Timeline.
 This trait can only activate on the enemies' first attack per turn. This trait does not stack.",Parasitic Pitcher
 Nature,Snaptrap,Snaptrap Cultivar,Coming Down,"After an enemy gains a buff, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack.",Cultivar Pitcher
@@ -1499,16 +1499,16 @@ Nature,Storm,Storm Lord,Damage Control,"While this creature is above 90% Health,
 Nature,Storm,Thunder Storm,Eye of the Storm,"While this creature is above 90% health, your creatures' Health cannot fall below 5%.
 This effect is ignored if the incoming damage would exceed 100% of the creature's Maximum Health.",Thunder Cloud
 Rodian Master,Storm,Mastery Trait,Master of Storms,"If all the creatures in your party are Storms, their innate traits now activate while they're above 60% Health.",Sigil of the Storm
-Nature,Tanukrook,Tanukrook,Monster Crown,"At the start of this creature's turn, it kills your other creatures and gains 20% of their stats.",Tanukrook Pact
-Nether Boss,Toxdweller,Spoonor,Spoonor's Breath,"At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",Spoonor's Spoon
-Nether Boss,Toxdweller,Spoonor,Spoonor's Gift,"At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%.",Spoonor's Spork
-Nether Boss,Toxdweller,Spoonor,Spoonor's Other Breath,"At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%.",Spoonor's Fork
+Nature,Tanukrook,Tanukrook,Monster Crown,"At the start of this creature's turn, it kills your other creatures and gains 20% of their stats (other than Health).",Tanukrook Pact
 Chaos,Toxdweller,Toxdweller Bloodbather,And You Get A Bomb,"At the start of battle, this creature afflicts 3 random enemies with Bomb.",Bloodbather Poison
 Chaos,Toxdweller,Toxdweller Decoy,Not Quite A Dud,"When an enemy's Bomb detonates at the start of their turn, there is a 50% chance the Bomb debuff won't be removed from the creature. This trait does not stack.",Decoy Poison
 Chaos,Toxdweller,Toxdweller Infector,Imminent Danger,"After your creatures attack an enemy with Bomb, the potency of the Bomb increases by 20%. This trait does not stack.",Infector Poison
 Chaos,Toxdweller,Toxdweller Mutant,"Click, Click, Boom!","After this creature defends or provokes, enemies take damage from their Bomb debuffs.",Mutant Poison
 Chaos,Toxdweller,Toxdweller Parasite,Sharing Is Caring,"After an enemy's Bomb detonates, adjacent enemies take 100% of the detonation damage as well. This trait does not stack.",Parasite Poison
 Chaos,Toxdweller,Toxdweller Slasher,A Gift For You,This creature's attacks deal 75% more damage and afflict the target with Bomb.,Slasher Poison
+Nether Boss,Toxdweller,Spoonor,Spoonor's Breath,"At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",Spoonor's Spoon
+Nether Boss,Toxdweller,Spoonor,Spoonor's Gift,"At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%.",Spoonor's Spork
+Nether Boss,Toxdweller,Spoonor,Spoonor's Other Breath,"At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%.",Spoonor's Fork
 Rodian Master,Toxdweller,Mastery Trait,Master of Toxdwellers,Enemies' Bomb debuffs have an independent 50% chance to detonate 1 additional time for each Toxdweller in your party. This trait does not stack.,Sigil of the Toxdweller
 Nature,Tremor,Ahnkol Tremor,Stomp,"When an enemy Attacks, it has a 35% chance to be interrupted. This trait does not stack.",Ahnkol Soil
 Nature,Tremor,Ahnok Tremor,Constrict,"At the start of this creature's turn, it afflicts a random enemy with Snared and Feared.",Ahnok Soil
@@ -1547,11 +1547,11 @@ Nether Boss,Unicorn,Qila,Qila's Defiance,"While your creatures have Barrier, the
 Nether Boss,Unicorn,Qila,Qila's Safeguard,"While your creatures have Barrier, they take 40% less damage. This trait does not stack.",Qila's Horn
 Rodian Master,Unicorn,Mastery Trait,Master of Unicorns,Your Unicorns Attack 2 additional times. This trait does not stack.,Sigil of the Unicorns
 Nature,Uralos,Uralos Healer,Healing Aura,"At the start of your Uralos creatures' turns, they recover Health equal to 25% of their highest stat. This trait does not stack.",Unidentified Flask
-Nature,Uralos,Uralos Knight,Formation,"After your Uralos creatures take damage from an attack or spell, they gain 20% Attack and Defense. This trait does not stack.",Battered Shield
-Nature,Uralos,Uralos Savage,Hunger for Blood,"After your Uralos creatures Attack, they afflict the enemy with Bleeding. Your Uralos creatures always have Agile.",Bloodstained Claw
-Nature,Uralos,Uralos Spearmaster,War Dance,"After your creatures dodge, your Uralos creatures gain 20% Attack and Speed. This trait does not stack.",Primitive Spear
-Nature,Uralos,Uralos Spellslinger,Escalation,"After your creatures manually Cast a spell, your Uralos creatures gain 20% Attack and Intelligence. This trait does not stack.",Arcane Staff
-Nature,Uralos,Uralos Trickster,Cull the Weak,"After your Uralos creatures Attack enemies with Bleeding, they have a 15% chance to be killed. This trait does not stack.",Envenomed Dagger
+Nature,Uralos,Uralos Knight,Formation,"After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack.",Battered Shield
+Nature,Uralos,Uralos Savage,Hunger for Blood,"After your Uralos creatures Attack, your Uralos creatures gain 10% Attack. This trait does not stack.",Bloodstained Claw
+Nature,Uralos,Uralos Spearmaster,War Dance,"After your creatures Defend or Provoke, your Uralos creatures gain 20% Speed. This trait does not stack.",Primitive Spear
+Nature,Uralos,Uralos Spellslinger,Escalation,"After your Uralos creatures manually Cast a spell, your Uralos creatures gain 35%  Intelligence. This trait does not stack.",Arcane Staff
+Nature,Uralos,Uralos Trickster,Cull the Weak,"After an enemy is killed, your Uralos creatures gain 15% stats. This trait does not stack.",Envenomed Dagger
 Rodian Master,Uralos,Mastery Trait,Master of Uraloses,"If all the creatures in your party are Uraloses, they have a 50% chance to avoid indirect damage. This trait does not stack.",Sigil of the Uralos
 Life,Valkyrie,Valkyrie Champion,Refraction,"After an enemy targets one of your creatures with a single-target spell, this creature Casts the same spell on the enemy.",Champion Rapier
 Life,Valkyrie,Valkyrie Duelist,Goad,Your creatures adjacent to this creature attack 2 additional times.,Duelist Rapier
@@ -1576,7 +1576,7 @@ Sorcery,Vortex,Evil Vortex,Squall,"After an enemy is afflicted with a debuff, th
 Sorcery,Vortex,Mana Vortex,Stifle,"After an enemy Casts a spell, afflcit enemies with Silenced.",Mana Wind
 Sorcery,Vortex,Ovoid Vortex,Ovular Barrage,"After this creature is Attacked, it Casts Verdant Spheres on the enemy.",Ovoid Egg
 Sorcery,Vortex,Psychic Vortex,Mindbender,"When your creatures would take damage from spells, they have a 30% chance to ignore that damage. This trait does not stack.",Psychic Wind
-Sorcery,Vortex,Sulfuric Vortex,Spiral Ward,This creature takes 2% less damage from spells for every 1% Health it is missing.,Sulfuric Wind
+Sorcery,Vortex,Sulfuric Vortex,Spiral Ward,This creature takes 2% less damage (up to 90%) from spells for every 1% Health it is missing.,Sulfuric Wind
 Sorcery,Vortex,Untamed Vortex,Expansion,"After this creature takes damage, it gains Attack equal to 50% of the damage it took.",Untamed Wind
 Sorcery,Vortex,Vortex Observer,Disturbance,"After an enemy manually Casts a spell, your creatures gain a copy of that Spell Gem.",Observer Wind
 Rodian Master,Vortex,Mastery Trait,Master of Vortexes,"At the start of battle, your Vortexes gain the Spiral Ward trait. In addition, Spiral Ward now works with indirect damage as well.",Sigil of the Vortex
