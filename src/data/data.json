@@ -847,7 +847,16 @@
   "trait_description": "After an adjacent ally Attacks, this creature Attacks the enemy as well. This trait does not work with creatures that also have this trait.",
   "material_name": "Red Shackle",
   "search_text": "Sorcery Brain Animation Animation Red Tether After an adjacent ally Attacks, this creature Attacks the enemy as well. This trait does not work with creatures that also have this trait. Red Shackle",
-  "uid": "1a9007"
+  "uid": "1a9007",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -857,7 +866,16 @@
   "trait_description": "After an adjacent ally heals a creature, this creature is healed for the same amount and gains a Barrier that absorbs damage equal to 100% of the amount healed.\nThis trait does not work with creatures that also have this trait.",
   "material_name": "Green Shackle",
   "search_text": "Sorcery Ear Animation Animation Green Tether After an adjacent ally heals a creature, this creature is healed for the same amount and gains a Barrier that absorbs damage equal to 100% of the amount healed.\nThis trait does not work with creatures that also have this trait. Green Shackle",
-  "uid": "89f266"
+  "uid": "89f266",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -867,7 +885,16 @@
   "trait_description": "After this creature deals critical damage, its adjacent allies gain 30% Attack and Speed. This creature always has Savage.",
   "material_name": "Yellow Shackle",
   "search_text": "Sorcery Eye Animation Animation Yellow Tether After this creature deals critical damage, its adjacent allies gain 30% Attack and Speed. This creature always has Savage. Yellow Shackle",
-  "uid": "16edf0"
+  "uid": "16edf0",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -877,7 +904,16 @@
   "trait_description": "When an adjacent creature would take damage or gain a buff or debuff, this creature becomes the new target instead.",
   "material_name": "Blue Shackle",
   "search_text": "Sorcery Feet Animation Animation Blue Tether When an adjacent creature would take damage or gain a buff or debuff, this creature becomes the new target instead. Blue Shackle",
-  "uid": "47b5bc"
+  "uid": "47b5bc",
+  "stats": {
+   "health": 36,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -887,7 +923,16 @@
   "trait_description": "After an adjacent creature is killed, this creature gains 60% of its stats (other than Health).",
   "material_name": "Silver Shackle",
   "search_text": "Sorcery Hand Animation Animation Silver Tether After an adjacent creature is killed, this creature gains 60% of its stats (other than Health). Silver Shackle",
-  "uid": "76ae26"
+  "uid": "76ae26",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -897,16 +942,25 @@
   "trait_description": "After an adjacent ally Casts a spell, this creature Casts that spell as well.",
   "material_name": "Purple Shackle",
   "search_text": "Sorcery Lip Animation Animation Purple Tether After an adjacent ally Casts a spell, this creature Casts that spell as well. Purple Shackle",
-  "uid": "4b19f6"
+  "uid": "4b19f6",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
   "family": "Animation",
   "creature": "Mastery Trait",
   "trait_name": "Master of Animations",
-  "trait_description": "If all the creatures in your party are Animations, the first and last creatures in your party are considered to be adjacent to all their allies.",
+  "trait_description": "Your Animation creatures have a 50% chance to receive all effects that require them to be adjacent to your other creatures. This trait does not stack.",
   "material_name": "Sigil of the Animation",
-  "search_text": "Rodian Master Mastery Trait Animation Master of Animations If all the creatures in your party are Animations, the first and last creatures in your party are considered to be adjacent to all their allies. Sigil of the Animation",
+  "search_text": "Rodian Master Mastery Trait Animation Master of Animations Your Animation creatures have a 50% chance to receive all effects that require them to be adjacent to your other creatures. This trait does not stack. Sigil of the Animation",
   "uid": "507ac1"
  },
  {
@@ -990,9 +1044,9 @@
   "family": "Apis",
   "creature": "Apis Endurer",
   "trait_name": "Long Live",
-  "trait_description": "This creature takes 2% less damage from attacks for every 1% Health it is missing.",
+  "trait_description": "This creature takes 2% less damage (up to 90%) from attacks for every 1% Health it is missing.",
   "material_name": "Endurer Headdress",
-  "search_text": "Life Apis Endurer Apis Long Live This creature takes 2% less damage from attacks for every 1% Health it is missing. Endurer Headdress",
+  "search_text": "Life Apis Endurer Apis Long Live This creature takes 2% less damage (up to 90%) from attacks for every 1% Health it is missing. Endurer Headdress",
   "uid": "696c32",
   "stats": {
    "health": 33,
@@ -1423,7 +1477,16 @@
   "trait_description": "After start-of-battle effects are determined, 40% of this creature's Defense is added to that of your other creatures.",
   "material_name": "Durable Scales",
   "search_text": "Nature Breathing Arbiter Arbiter In Favor of Protection After start-of-battle effects are determined, 40% of this creature's Defense is added to that of your other creatures. Durable Scales",
-  "uid": "a36044"
+  "uid": "a36044",
+  "stats": {
+   "health": 30,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -1433,7 +1496,16 @@
   "trait_description": "After start-of-battle effects are determined, 40% of this creature's Attack is added to that of your other creatures.",
   "material_name": "Emoting Scales",
   "search_text": "Nature Feeling Arbiter Arbiter In Favor of Destruction After start-of-battle effects are determined, 40% of this creature's Attack is added to that of your other creatures. Emoting Scales",
-  "uid": "a78098"
+  "uid": "a78098",
+  "stats": {
+   "health": 29,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -1443,7 +1515,16 @@
   "trait_description": "After start-of-battle effects are determined, this creature's lowest stat is set equal to its highest stat.",
   "material_name": "Scaly Scales",
   "search_text": "Nature Final Arbiter Arbiter In Favor of All After start-of-battle effects are determined, this creature's lowest stat is set equal to its highest stat. Scaly Scales",
-  "uid": "226f90"
+  "uid": "226f90",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 20,
+   "defense": 19,
+   "speed": 19,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -1453,7 +1534,16 @@
   "trait_description": "After start-of-battle effects are determined, 40% of this creature's Maximum Health is added to that of your other creatures.",
   "material_name": "Vital Scales",
   "search_text": "Nature Living Arbiter Arbiter In Favor of Survival After start-of-battle effects are determined, 40% of this creature's Maximum Health is added to that of your other creatures. Vital Scales",
-  "uid": "61dd07"
+  "uid": "61dd07",
+  "stats": {
+   "health": 28,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 21,
+   "speed": 21,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -1463,7 +1553,16 @@
   "trait_description": "After start-of-battle effects are determined, 40% of this creature's Speed is added to that of your other creatures.",
   "material_name": "Swift Scales",
   "search_text": "Nature Moving Arbiter Arbiter In Favor of Escape After start-of-battle effects are determined, 40% of this creature's Speed is added to that of your other creatures. Swift Scales",
-  "uid": "26950c"
+  "uid": "26950c",
+  "stats": {
+   "health": 29,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -1473,7 +1572,16 @@
   "trait_description": "After start-of-battle effects are determined, 40% of this creature's Intelligence is added to that of your other creatures.",
   "material_name": "Brainy Scales",
   "search_text": "Nature Thinking Arbiter Arbiter In Favor of Creation After start-of-battle effects are determined, 40% of this creature's Intelligence is added to that of your other creatures. Brainy Scales",
-  "uid": "6e4950"
+  "uid": "6e4950",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 20,
+   "defense": 19,
+   "speed": 19,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -1505,13 +1613,13 @@
   "sprite_filename": "spr_crits_battle_2164.png"
  },
  {
-  "class": "Nature",
+  "class": "Death",
   "family": "Aspect",
   "creature": "Aspect of Decay",
   "trait_name": "Call of the Grave",
   "trait_description": "After this creature dodges, enemies lose 20% of their highest stat. In addition, this creature has an independent 50% chance to dodge attacks. This trait does not stack.",
   "material_name": "Decay Figment",
-  "search_text": "Nature Aspect of Decay Aspect Call of the Grave After this creature dodges, enemies lose 20% of their highest stat. In addition, this creature has an independent 50% chance to dodge attacks. This trait does not stack. Decay Figment",
+  "search_text": "Death Aspect of Decay Aspect Call of the Grave After this creature dodges, enemies lose 20% of their highest stat. In addition, this creature has an independent 50% chance to dodge attacks. This trait does not stack. Decay Figment",
   "uid": "27fc5f",
   "stats": {
    "health": 27,
@@ -1971,7 +2079,16 @@
   "trait_description": "Your creatures are resistant to debuffs. After your creatures are afflicted with a debuff, they have a 50% chance to gain Immune. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Chaos 4080 Avatar Robotic Armor Your creatures are resistant to debuffs. After your creatures are afflicted with a debuff, they have a 50% chance to gain Immune. This trait does not stack. No Material Exists",
-  "uid": "e5e0f9"
+  "uid": "e5e0f9",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -2000,7 +2117,16 @@
   "trait_description": "After a creature gains or loses stats, its allies gain or lose 15% of those stats as well. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Death Alexandria Avatar Boundless Creativity After a creature gains or loses stats, its allies gain or lose 15% of those stats as well. This trait does not stack. No Material Exists",
-  "uid": "0eb754"
+  "uid": "0eb754",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -2010,7 +2136,16 @@
   "trait_description": "At the end of your creatures' turns, their turn counter increases by 3 additional turns.\nIn addition, your creatures act as if they have 3 more buffs, debuffs, and minions than they actually have. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Nature Anneltha Avatar Grandiose At the end of your creatures' turns, their turn counter increases by 3 additional turns.\nIn addition, your creatures act as if they have 3 more buffs, debuffs, and minions than they actually have. This trait does not stack. No Material Exists",
-  "uid": "c748f8"
+  "uid": "c748f8",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -2039,7 +2174,16 @@
   "trait_description": "Enemies deal damage with attacks and spells using their lowest stat, rather than their Attack or Intelligence.\nIn addition, enemies take damage from attacks and spells based on their lowest stat, rather than Defense.",
   "material_name": "No Material Exists",
   "search_text": "Nature Ariamaki Avatar Twilight Zone Enemies deal damage with attacks and spells using their lowest stat, rather than their Attack or Intelligence.\nIn addition, enemies take damage from attacks and spells based on their lowest stat, rather than Defense. No Material Exists",
-  "uid": "2bb7b3"
+  "uid": "2bb7b3",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -2144,7 +2288,16 @@
   "trait_description": "After your creatures Attack or are Attacked, they gain 20% Maximum Health. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Chaos Genaros Avatar Surge of Vitality After your creatures Attack or are Attacked, they gain 20% Maximum Health. This trait does not stack. No Material Exists",
-  "uid": "99d936"
+  "uid": "99d936",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -2230,7 +2383,16 @@
   "trait_description": "Your creatures' minions perform their effects twice. If they don't have an effect that can be repeated, they are instead 100% more powerful.\nThis trait does not affect Illusion. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Life Muse Avatar Better, Faster, Stronger Your creatures' minions perform their effects twice. If they don't have an effect that can be repeated, they are instead 100% more powerful.\nThis trait does not affect Illusion. This trait does not stack. No Material Exists",
-  "uid": "80ca31"
+  "uid": "80ca31",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -2259,7 +2421,16 @@
   "trait_description": "When your creatures Attack or Cast a spell, they have a 100% chance to do so 1 additional time.\nThis effect can occur repeatedly, but the chance decreases by a multiplicative 25% each time. This trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Death Reclusa Avatar Speculation When your creatures Attack or Cast a spell, they have a 100% chance to do so 1 additional time.\nThis effect can occur repeatedly, but the chance decreases by a multiplicative 25% each time. This trait does not stack. No Material Exists",
-  "uid": "c2329d"
+  "uid": "c2329d",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -2288,7 +2459,16 @@
   "trait_description": "Your creatures deal 5% more damage with attacks and spells and take 5% less damage (up to 90%) for each time they've Attacked or Cast a spell in the current battle.\nThis trait does not stack.",
   "material_name": "No Material Exists",
   "search_text": "Life Shallan Avatar Fae Dust Your creatures deal 5% more damage with attacks and spells and take 5% less damage (up to 90%) for each time they've Attacked or Cast a spell in the current battle.\nThis trait does not stack. No Material Exists",
-  "uid": "828673"
+  "uid": "828673",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -2317,7 +2497,16 @@
   "trait_description": "Your creatures' Ultimate Spell Gems cannot be Sealed and do not consume Charges. Your creatures are immune to Silenced.",
   "material_name": "No Material Exists",
   "search_text": "Sorcery T'mere M'rgo Avatar Gemcutter Your creatures' Ultimate Spell Gems cannot be Sealed and do not consume Charges. Your creatures are immune to Silenced. No Material Exists",
-  "uid": "b056d6"
+  "uid": "b056d6",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -2606,9 +2795,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Charging Rod",
-  "trait_description": "After another creature Casts a spell, this creature has a 30% chacne to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack.",
+  "trait_description": "After another creature Casts a spell, this creature has a 30% chance to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack.",
   "material_name": "Cold Iron Needle",
-  "search_text": "Backer Backer Trait Backer Charging Rod After another creature Casts a spell, this creature has a 30% chacne to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack. Cold Iron Needle",
+  "search_text": "Backer Backer Trait Backer Charging Rod After another creature Casts a spell, this creature has a 30% chance to interrupt it and all its Spell Gems gain 1 Charge. This trait does not stack. Cold Iron Needle",
   "uid": "3dcaf3"
  },
  {
@@ -2646,9 +2835,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Dead of Winter",
-  "trait_description": "After ane enemy afflicts a debuff, it is afflicted with Frozen and Poisoned.",
+  "trait_description": "After an enemy afflicts a debuff, it is afflicted with Frozen and Poisoned.",
   "material_name": "Alchemical Frost",
-  "search_text": "Backer Backer Trait Backer Dead of Winter After ane enemy afflicts a debuff, it is afflicted with Frozen and Poisoned. Alchemical Frost",
+  "search_text": "Backer Backer Trait Backer Dead of Winter After an enemy afflicts a debuff, it is afflicted with Frozen and Poisoned. Alchemical Frost",
   "uid": "f0ea38"
  },
  {
@@ -2936,9 +3125,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Improbable Catapult",
-  "trait_description": "At the start of battle, enemies gain a copy of this creature's innate trait.",
+  "trait_description": "At the start of this creature's turn, enemies gain a copy of its innate trait. This trait can only activate once per side.",
   "material_name": "Trait Launcher",
-  "search_text": "Backer Backer Trait Backer Improbable Catapult At the start of battle, enemies gain a copy of this creature's innate trait. Trait Launcher",
+  "search_text": "Backer Backer Trait Backer Improbable Catapult At the start of this creature's turn, enemies gain a copy of its innate trait. This trait can only activate once per side. Trait Launcher",
   "uid": "c2e2fa"
  },
  {
@@ -2956,9 +3145,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Incoming Tide",
-  "trait_description": "At the start of this creature's turn, it has a 50% chacne to Cast Submerge.",
+  "trait_description": "At the start of this creature's turn, it has a 50% chance to Cast Submerge.",
   "material_name": "Selene's Soul",
-  "search_text": "Backer Backer Trait Backer Incoming Tide At the start of this creature's turn, it has a 50% chacne to Cast Submerge. Selene's Soul",
+  "search_text": "Backer Backer Trait Backer Incoming Tide At the start of this creature's turn, it has a 50% chance to Cast Submerge. Selene's Soul",
   "uid": "a68d52"
  },
  {
@@ -3385,16 +3574,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Shining Armor",
-  "trait_description": "While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",
-  "material_name": "Crab Shield",
-  "search_text": "Backer Backer Trait Backer Shining Armor While your creatures have Barrier, they have 40% more Defense. This trait does not stack. Crab Shield",
-  "uid": "86e993"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Snack Break",
   "trait_description": "At the start of this creature's turn, it recovers 200% Health and loses 20% Speed.",
   "material_name": "Bag of Chips",
@@ -3586,9 +3765,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Undead Legion",
-  "trait_description": "Your creatures can have 3 additional stacks of Zombies. This trait does not stack.",
+  "trait_description": "Your creatures can have 5 additional stacks of Zombies. This trait does not stack.",
   "material_name": "Giant Pile of Corpses",
-  "search_text": "Backer Backer Trait Backer Undead Legion Your creatures can have 3 additional stacks of Zombies. This trait does not stack. Giant Pile of Corpses",
+  "search_text": "Backer Backer Trait Backer Undead Legion Your creatures can have 5 additional stacks of Zombies. This trait does not stack. Giant Pile of Corpses",
   "uid": "9573f7"
  },
  {
@@ -3615,11 +3794,11 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Usery",
+  "trait_name": "Usury",
   "trait_description": "This creature deals 125% more damage with attacks and takes 75% more damage from attacks.",
   "material_name": "Savings Bond",
-  "search_text": "Backer Backer Trait Backer Usery This creature deals 125% more damage with attacks and takes 75% more damage from attacks. Savings Bond",
-  "uid": "f69c8b"
+  "search_text": "Backer Backer Trait Backer Usury This creature deals 125% more damage with attacks and takes 75% more damage from attacks. Savings Bond",
+  "uid": "fba7b3"
  },
  {
   "class": "Backer",
@@ -4051,7 +4230,7 @@
    "speed": 16,
    "total": 110
   },
-  "sprite_filename": "spr_crits_battle_1117.png"
+  "sprite_filename": "spr_crits_battle_2148.png"
  },
  {
   "class": "Chaos",
@@ -4146,7 +4325,7 @@
    "speed": 15,
    "total": 110
   },
-  "sprite_filename": "spr_crits_battle_1117.png"
+  "sprite_filename": "spr_crits_battle_2153.png"
  },
  {
   "class": "Chaos",
@@ -4366,7 +4545,16 @@
   "trait_description": "Your Chaos creatures and Beacon creatures always have Animated Gem.",
   "material_name": "Tyrant's Lantern",
   "search_text": "Life Atlas Beacon Beacon Heavy Weighs the Crown Your Chaos creatures and Beacon creatures always have Animated Gem. Tyrant's Lantern",
-  "uid": "a5a432"
+  "uid": "a5a432",
+  "stats": {
+   "health": 36,
+   "attack": 16,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -4376,7 +4564,16 @@
   "trait_description": "Your Death creatures and Beacon creatures always have Agile.\nWhen an enemy Death creature would afflict your creatures with a debuff, they afflict them with a buff instead.",
   "material_name": "Desecrator's Lantern",
   "search_text": "Life Deathshead Beacon Beacon Pendulum's Return Your Death creatures and Beacon creatures always have Agile.\nWhen an enemy Death creature would afflict your creatures with a debuff, they afflict them with a buff instead. Desecrator's Lantern",
-  "uid": "15de9d"
+  "uid": "15de9d",
+  "stats": {
+   "health": 32,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -4386,7 +4583,16 @@
   "trait_description": "Your Nature creatures and Beacon creatures always have Leeching. When an enemy Nature creature would gain a stat, it loses that stat instead.",
   "material_name": "Predator's Lantern",
   "search_text": "Life Lappet Beacon Beacon Due Recompense Your Nature creatures and Beacon creatures always have Leeching. When an enemy Nature creature would gain a stat, it loses that stat instead. Predator's Lantern",
-  "uid": "81e47b"
+  "uid": "81e47b",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -4396,7 +4602,16 @@
   "trait_description": "Your Sorcery creatures and Beacon creatures always have Protected.\nAfter an enemy Sorcery creature Casts a spell, that Spell Gem is Sealed and this creature's Spell Gems gain 1 Charge.",
   "material_name": "Stoic's Lantern",
   "search_text": "Life Luna Beacon Beacon Forbearance Forgone Your Sorcery creatures and Beacon creatures always have Protected.\nAfter an enemy Sorcery creature Casts a spell, that Spell Gem is Sealed and this creature's Spell Gems gain 1 Charge. Stoic's Lantern",
-  "uid": "1816a5"
+  "uid": "1816a5",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -4406,7 +4621,16 @@
   "trait_description": "Your Life creatures and Beacon creatures always have Berserk. When an enemy Life creature would heal on of its allies, it heals one of your creatures instead.",
   "material_name": "Zealot's Lantern",
   "search_text": "Life Pellucid Beacon Beacon Purity and Emptiness Your Life creatures and Beacon creatures always have Berserk. When an enemy Life creature would heal on of its allies, it heals one of your creatures instead. Zealot's Lantern",
-  "uid": "47f598"
+  "uid": "47f598",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -4416,16 +4640,25 @@
   "trait_description": "At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack.",
   "material_name": "Mendicant's Lantern",
   "search_text": "Life Rosy Beacon Beacon Eternal Reprieve At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack. Mendicant's Lantern",
-  "uid": "e54175"
+  "uid": "e54175",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
   "family": "Beacon",
   "creature": "Mastery Trait",
   "trait_name": "Master of Beacons",
-  "trait_description": "If all the creatures in your party are Beacons, their buffs and minions applied by their innate traits affect creatures of any class. This trait does not stack.",
+  "trait_description": "At the start of battle, your Beacons' stats are averaged and then increased by 25%. This trait does not stack.",
   "material_name": "Sigil of the Beacon",
-  "search_text": "Rodian Master Mastery Trait Beacon Master of Beacons If all the creatures in your party are Beacons, their buffs and minions applied by their innate traits affect creatures of any class. This trait does not stack. Sigil of the Beacon",
+  "search_text": "Rodian Master Mastery Trait Beacon Master of Beacons At the start of battle, your Beacons' stats are averaged and then increased by 25%. This trait does not stack. Sigil of the Beacon",
   "uid": "34b688"
  },
  {
@@ -5187,9 +5420,9 @@
   "family": "Centaur",
   "creature": "Centaur Wrangler",
   "trait_name": "Sunny Disposition",
-  "trait_description": "After an enemy Casts a spell, this creature Attacks it.",
+  "trait_description": "After an enemy manually Casts a spell, this creature Attacks it.",
   "material_name": "Wrangler Tuft",
-  "search_text": "Nature Centaur Wrangler Centaur Sunny Disposition After an enemy Casts a spell, this creature Attacks it. Wrangler Tuft",
+  "search_text": "Nature Centaur Wrangler Centaur Sunny Disposition After an enemy manually Casts a spell, this creature Attacks it. Wrangler Tuft",
   "uid": "c16ed9",
   "stats": {
    "health": 35,
@@ -5362,7 +5595,16 @@
   "trait_description": "After your creatures are killed, they have a 25% chance to be resurrected with 50% Health and a Barrier that absorbs damage equal to 50% of their Maximum Health.\nThis trait does not stack.",
   "material_name": "Radiant Energy",
   "search_text": "Life Bhasa Cherub Cherub Great Conjunction After your creatures are killed, they have a 25% chance to be resurrected with 50% Health and a Barrier that absorbs damage equal to 50% of their Maximum Health.\nThis trait does not stack. Radiant Energy",
-  "uid": "6d75a2"
+  "uid": "6d75a2",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 21,
+   "defense": 11,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -5372,7 +5614,16 @@
   "trait_description": "When your creatures damage enemies with Shelled, all subsequent effects such as on-attack or on-cast effects are no longer prevented.",
   "material_name": "Celestine Energy",
   "search_text": "Life Chandra Cherub Cherub By My Hand When your creatures damage enemies with Shelled, all subsequent effects such as on-attack or on-cast effects are no longer prevented. Celestine Energy",
-  "uid": "df7355"
+  "uid": "df7355",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 20,
+   "defense": 13,
+   "speed": 20,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -5382,7 +5633,16 @@
   "trait_description": "After this creature Provokes, its Barrier shatters, dealing damage to enemies equal to 50% of its potency and healing your creatures for the same amount.",
   "material_name": "Sinister Energy",
   "search_text": "Life Nisha Cherub Cherub Or Else By None After this creature Provokes, its Barrier shatters, dealing damage to enemies equal to 50% of its potency and healing your creatures for the same amount. Sinister Energy",
-  "uid": "50d0a2"
+  "uid": "50d0a2",
+  "stats": {
+   "health": 43,
+   "attack": 18,
+   "intelligence": 23,
+   "defense": 8,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -5392,17 +5652,35 @@
   "trait_description": "When your creatures with Barrier take damage, the Barrier shatters, dealing damage to enemies equal to 35% of its potency. This trait does not stack.",
   "material_name": "Negative Energy",
   "search_text": "Life Preta Cherub Cherub Sundered and Undone When your creatures with Barrier take damage, the Barrier shatters, dealing damage to enemies equal to 35% of its potency. This trait does not stack. Negative Energy",
-  "uid": "0951a2"
+  "uid": "0951a2",
+  "stats": {
+   "health": 38,
+   "attack": 16,
+   "intelligence": 21,
+   "defense": 11,
+   "speed": 21,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
   "family": "Cherub",
   "creature": "Surya Cherub",
   "trait_name": "Triple Suns",
-  "trait_description": "Your creatures are immune to damage from Bleeding, Poisoned, Burning, and Bomb.",
+  "trait_description": "Your creatures take 90% less damage from Bleeding, Poisoned, Burning, and Bomb.",
   "material_name": "Blazing Energy",
-  "search_text": "Life Surya Cherub Cherub Triple Suns Your creatures are immune to damage from Bleeding, Poisoned, Burning, and Bomb. Blazing Energy",
-  "uid": "1bdf93"
+  "search_text": "Life Surya Cherub Cherub Triple Suns Your creatures take 90% less damage from Bleeding, Poisoned, Burning, and Bomb. Blazing Energy",
+  "uid": "1bdf93",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 21,
+   "defense": 11,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -5412,7 +5690,16 @@
   "trait_description": "Your creatures' Barrier buffs have 50% more maximum absorption. This trait does not stack.",
   "material_name": "Floral Energy",
   "search_text": "Life Vipina Cherub Cherub The Two Made One Your creatures' Barrier buffs have 50% more maximum absorption. This trait does not stack. Floral Energy",
-  "uid": "3171b1"
+  "uid": "3171b1",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 21,
+   "defense": 11,
+   "speed": 21,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -5429,10 +5716,19 @@
   "family": "Chimera",
   "creature": "Arcana Chimera",
   "trait_name": "Eldritch Creation",
-  "trait_description": "At the start of battle, your creatures gain a Spell Gem that corresponds to their Fused creature's class. This trait does not stack.",
+  "trait_description": "At the start of battle, your creatures gain 2 Spell Gems that correspond to their Fused creature's class. This trait does not stack.",
   "material_name": "Impossible Recipe",
-  "search_text": "Sorcery Arcana Chimera Chimera Eldritch Creation At the start of battle, your creatures gain a Spell Gem that corresponds to their Fused creature's class. This trait does not stack. Impossible Recipe",
-  "uid": "eedb4d"
+  "search_text": "Sorcery Arcana Chimera Chimera Eldritch Creation At the start of battle, your creatures gain 2 Spell Gems that correspond to their Fused creature's class. This trait does not stack. Impossible Recipe",
+  "uid": "eedb4d",
+  "stats": {
+   "health": 34,
+   "attack": 14,
+   "intelligence": 14,
+   "defense": 22,
+   "speed": 22,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5442,7 +5738,16 @@
   "trait_description": "After your creatures are killed, they have a 35% chance to be resurrected with 50% Health and gain a random trait that belongs to their Fused creature's race.\nThis trait does not stack.",
   "material_name": "Orthodox Recipe",
   "search_text": "Sorcery Blessed Chimera Chimera Raging Spirit After your creatures are killed, they have a 35% chance to be resurrected with 50% Health and gain a random trait that belongs to their Fused creature's race.\nThis trait does not stack. Orthodox Recipe",
-  "uid": "31c67a"
+  "uid": "31c67a",
+  "stats": {
+   "health": 37,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 20,
+   "speed": 20,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5452,17 +5757,35 @@
   "trait_description": "Your creatures start battles with 50% more of whatever stat corresponds to their Fused creature's class. This trait does not stack.",
   "material_name": "Complicated Recipe",
   "search_text": "Sorcery Draco Chimera Chimera Divine Form Your creatures start battles with 50% more of whatever stat corresponds to their Fused creature's class. This trait does not stack. Complicated Recipe",
-  "uid": "e2dfb0"
+  "uid": "e2dfb0",
+  "stats": {
+   "health": 33,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 21,
+   "speed": 21,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Chimera",
   "creature": "Undying Chimera",
   "trait_name": "Appreciation For Ancestry",
-  "trait_description": "Your creatures deal 50% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.",
+  "trait_description": "Your creatures deal 75% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.",
   "material_name": "Forbidden Recipe",
-  "search_text": "Sorcery Undying Chimera Chimera Appreciation For Ancestry Your creatures deal 50% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack. Forbidden Recipe",
-  "uid": "7d9553"
+  "search_text": "Sorcery Undying Chimera Chimera Appreciation For Ancestry Your creatures deal 75% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack. Forbidden Recipe",
+  "uid": "7d9553",
+  "stats": {
+   "health": 33,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 21,
+   "speed": 21,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5472,7 +5795,16 @@
   "trait_description": "Your creatures Attack and Cast 1 additional time for each creature with the same secondary Fusion fighting on your side. This trait does not stack.",
   "material_name": "Hidden Recipe",
   "search_text": "Sorcery Valor Chimera Chimera Valiant Heart Your creatures Attack and Cast 1 additional time for each creature with the same secondary Fusion fighting on your side. This trait does not stack. Hidden Recipe",
-  "uid": "1e7577"
+  "uid": "1e7577",
+  "stats": {
+   "health": 36,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 21,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5482,7 +5814,16 @@
   "trait_description": "At the start of battle, your creatures gain a random trait that belongs to their Fused creature's class. This trait does not stack.",
   "material_name": "Natural Recipe",
   "search_text": "Sorcery Wylder Chimera Chimera Fairy Blood At the start of battle, your creatures gain a random trait that belongs to their Fused creature's class. This trait does not stack. Natural Recipe",
-  "uid": "6104cd"
+  "uid": "6104cd",
+  "stats": {
+   "health": 35,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 20,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -5502,7 +5843,16 @@
   "trait_description": "At the start of this creature's turn, it gains 10% Maximum Health plus 10% of the total amount of Maximum Health it has received in the current battle.",
   "material_name": "Neural Health Implant",
   "search_text": "Sorcery Battle Clockwork Clockwork Autonomous Health At the start of this creature's turn, it gains 10% Maximum Health plus 10% of the total amount of Maximum Health it has received in the current battle. Neural Health Implant",
-  "uid": "6ab138"
+  "uid": "6ab138",
+  "stats": {
+   "health": 27,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 20,
+   "speed": 20,
+   "total": 101
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5512,7 +5862,16 @@
   "trait_description": "At the start of this creature's turn, it gains 10% Attack plus 10% of the total amount of Attack it has received in the current battle.",
   "material_name": "Neural Attack Implant",
   "search_text": "Sorcery Experimental Clockwork Clockwork Autonomous Attack At the start of this creature's turn, it gains 10% Attack plus 10% of the total amount of Attack it has received in the current battle. Neural Attack Implant",
-  "uid": "5218ad"
+  "uid": "5218ad",
+  "stats": {
+   "health": 29,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5522,7 +5881,16 @@
   "trait_description": "At the start of this creature's turn, it gains 10% Intelligence plus 10% of the total amount of Intelligence it has received in the current battle.",
   "material_name": "Neural Intelligence Implant",
   "search_text": "Sorcery Foghorn Clockwork Clockwork Autonomous Intelligence At the start of this creature's turn, it gains 10% Intelligence plus 10% of the total amount of Intelligence it has received in the current battle. Neural Intelligence Implant",
-  "uid": "8e9177"
+  "uid": "8e9177",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5532,7 +5900,16 @@
   "trait_description": "At the start of this creature's turn, it gains 10% Speed plus 10% of the total amount of Speed it has received in the current battle.",
   "material_name": "Neural Speed Implant",
   "search_text": "Sorcery Industrial Clockwork Clockwork Autonomous Speed At the start of this creature's turn, it gains 10% Speed plus 10% of the total amount of Speed it has received in the current battle. Neural Speed Implant",
-  "uid": "b393d9"
+  "uid": "b393d9",
+  "stats": {
+   "health": 31,
+   "attack": 21,
+   "intelligence": 21,
+   "defense": 16,
+   "speed": 16,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5542,7 +5919,16 @@
   "trait_description": "At the start of this creature's turn, it gains 10% Defense plus 10% of the total amount of Defense it has received in the current battle.",
   "material_name": "Neural Defense Implant",
   "search_text": "Sorcery Siege Clockwork Clockwork Autonomous Defense At the start of this creature's turn, it gains 10% Defense plus 10% of the total amount of Defense it has received in the current battle. Neural Defense Implant",
-  "uid": "4e8df7"
+  "uid": "4e8df7",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -5552,7 +5938,16 @@
   "trait_description": "After your Clockwork creatures' innate traits activate, your other creatures gain 10% of these stats as well. This trait does not stack.",
   "material_name": "Neural Hive Network Implant",
   "search_text": "Sorcery War Clockwork Clockwork Autonomous Network After your Clockwork creatures' innate traits activate, your other creatures gain 10% of these stats as well. This trait does not stack. Neural Hive Network Implant",
-  "uid": "1114eb"
+  "uid": "1114eb",
+  "stats": {
+   "health": 29,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 18,
+   "speed": 18,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -8528,7 +8923,16 @@
   "trait_description": "Your Electropod creatures have 10% more Speed for each Electropod fighting on your side. This trait does not stack.",
   "material_name": "Capacitor",
   "search_text": "Nature Electropod Ant Electropod Thread Pool Your Electropod creatures have 10% more Speed for each Electropod fighting on your side. This trait does not stack. Capacitor",
-  "uid": "964658"
+  "uid": "964658",
+  "stats": {
+   "health": 28,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 21,
+   "speed": 26,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -8538,7 +8942,16 @@
   "trait_description": "Your Electropod creatures have 7% more Speed for each empty Spell Gem slot they have. Maximum of 8 Spell Gem slots per creatures. This trait does not stack.",
   "material_name": "Inductor",
   "search_text": "Nature Electropod Beetle Electropod High Performance Your Electropod creatures have 7% more Speed for each empty Spell Gem slot they have. Maximum of 8 Spell Gem slots per creatures. This trait does not stack. Inductor",
-  "uid": "751461"
+  "uid": "751461",
+  "stats": {
+   "health": 30,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 25,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -8548,7 +8961,16 @@
   "trait_description": "At the start of battle, your Electropod creatures share 15% of their Speed with each other. This trait does not stack.",
   "material_name": "Transformer",
   "search_text": "Nature Electropod Fly Electropod Infinite Scaling At the start of battle, your Electropod creatures share 15% of their Speed with each other. This trait does not stack. Transformer",
-  "uid": "d58f2d"
+  "uid": "d58f2d",
+  "stats": {
+   "health": 32,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 25,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -8558,7 +8980,16 @@
   "trait_description": "Your creatures' Electropod traits act as if your party contains 3 more Electropod creatures. This trait does not stack.",
   "material_name": "Resistor",
   "search_text": "Nature Electropod Mantis Electropod Networking Your creatures' Electropod traits act as if your party contains 3 more Electropod creatures. This trait does not stack. Resistor",
-  "uid": "18375b"
+  "uid": "18375b",
+  "stats": {
+   "health": 30,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 25,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -8568,7 +8999,16 @@
   "trait_description": "At the start of this creature's turn, it deals damage to a random enemy equal to 75% of its Speed.",
   "material_name": "Transistor",
   "search_text": "Nature Electropod Scorpion Electropod Spin Cycle At the start of this creature's turn, it deals damage to a random enemy equal to 75% of its Speed. Transistor",
-  "uid": "a868fb"
+  "uid": "a868fb",
+  "stats": {
+   "health": 33,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 17,
+   "speed": 22,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -8578,7 +9018,16 @@
   "trait_description": "At the start of each enemy's turn, this creature has a 20% chance to deal damage to them equal to 40% of its Speed. This trait does not stack.",
   "material_name": "Diode",
   "search_text": "Nature Electropod Spider Electropod Malware At the start of each enemy's turn, this creature has a 20% chance to deal damage to them equal to 40% of its Speed. This trait does not stack. Diode",
-  "uid": "2314bf"
+  "uid": "2314bf",
+  "stats": {
+   "health": 30,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 25,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -8960,7 +9409,16 @@
   "trait_description": "This creature has 75% more Attack and Speed while its level is odd, and 75% more Intelligence and Defense while its level is even.",
   "material_name": "Bloody Beads",
   "search_text": "Chaos Abacus Exotic Numerical Nightmare This creature has 75% more Attack and Speed while its level is odd, and 75% more Intelligence and Defense while its level is even. Bloody Beads",
-  "uid": "4f9196"
+  "uid": "4f9196",
+  "stats": {
+   "health": 31,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -8970,7 +9428,16 @@
   "trait_description": "Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack.",
   "material_name": "Alchemical Catalyst",
   "search_text": "Sorcery Abandoned Homunculus Exotic Lab Assistant Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack. Alchemical Catalyst",
-  "uid": "dcbd67"
+  "uid": "dcbd67",
+  "stats": {
+   "health": 38,
+   "attack": 13,
+   "intelligence": 23,
+   "defense": 16,
+   "speed": 16,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -8980,17 +9447,35 @@
   "trait_description": "This creature's attacks and spells ignore 30% of its enemies' Defense.",
   "material_name": "Sharp Shell",
   "search_text": "Chaos Acrova Exotic Piercing Speed This creature's attacks and spells ignore 30% of its enemies' Defense. Sharp Shell",
-  "uid": "14b099"
+  "uid": "14b099",
+  "stats": {
+   "health": 24,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 13,
+   "speed": 24,
+   "total": 99
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Ameteris Krin",
   "trait_name": "Cantripology",
-  "trait_description": "After this creature Attacks, it Casts its top-most Spell Gem.",
+  "trait_description": "After this creature Attacks, it Casts its top-most, Unsealed Spell Gem. Then, that Spell Gem is Sealed.",
   "material_name": "Ametrine Shard",
-  "search_text": "Sorcery Ameteris Krin Exotic Cantripology After this creature Attacks, it Casts its top-most Spell Gem. Ametrine Shard",
-  "uid": "1e24f6"
+  "search_text": "Sorcery Ameteris Krin Exotic Cantripology After this creature Attacks, it Casts its top-most, Unsealed Spell Gem. Then, that Spell Gem is Sealed. Ametrine Shard",
+  "uid": "1e24f6",
+  "stats": {
+   "health": 41,
+   "attack": 21,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 16,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9000,7 +9485,16 @@
   "trait_description": "At the start of this creature's turn, it Seals one of each creature's Spell Gems.",
   "material_name": "Voidborne Crystal Scraps",
   "search_text": "Chaos Arcian Warbeast Exotic Hungering Void At the start of this creature's turn, it Seals one of each creature's Spell Gems. Voidborne Crystal Scraps",
-  "uid": "10ac8b"
+  "uid": "10ac8b",
+  "stats": {
+   "health": 37,
+   "attack": 20,
+   "intelligence": 15,
+   "defense": 15,
+   "speed": 20,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9010,17 +9504,35 @@
   "trait_description": "This creature has additional stats (other than Health) equal to 5% of your other creatures' highest stats.",
   "material_name": "Pure Dragon Blood",
   "search_text": "Sorcery Avaricious Draco Exotic Draconic Arrogance This creature has additional stats (other than Health) equal to 5% of your other creatures' highest stats. Pure Dragon Blood",
-  "uid": "f5e3df"
+  "uid": "f5e3df",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Avion",
   "trait_name": "Counter Slash",
-  "trait_description": "After this creature is Attacked, it Attacks the enemy for 50% normal damage.",
+  "trait_description": "After this creature is Attacked, it deals damage to the enemy equal to 50% of this creature's Attack.",
   "material_name": "Avion Claw",
-  "search_text": "Nature Avion Exotic Counter Slash After this creature is Attacked, it Attacks the enemy for 50% normal damage. Avion Claw",
-  "uid": "15e45e"
+  "search_text": "Nature Avion Exotic Counter Slash After this creature is Attacked, it deals damage to the enemy equal to 50% of this creature's Attack. Avion Claw",
+  "uid": "15e45e",
+  "stats": {
+   "health": 43,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9030,7 +9542,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Bleeding. If the target already has Bleeding, it deals 120% more damage.",
   "material_name": "Blood Banner",
   "search_text": "Chaos Band Warchief Exotic Bloodripper After this creature Attacks, it afflicts the target with Bleeding. If the target already has Bleeding, it deals 120% more damage. Blood Banner",
-  "uid": "a14145"
+  "uid": "a14145",
+  "stats": {
+   "health": 38,
+   "attack": 21,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 21,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9040,7 +9561,16 @@
   "trait_description": "At the start of battle, this creature and creatures adjacent to it gain Invisible.",
   "material_name": "Ghostly Ear",
   "search_text": "Death Bashcloak Exotic Eery Veil At the start of battle, this creature and creatures adjacent to it gain Invisible. Ghostly Ear",
-  "uid": "8ebe20"
+  "uid": "8ebe20",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9050,7 +9580,16 @@
   "trait_description": "At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 20% stronger. This trait does not stack.",
   "material_name": "Jewel Shell",
   "search_text": "Sorcery Bejem Exotic Natural Beauty At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 20% stronger. This trait does not stack. Jewel Shell",
-  "uid": "a8db0b"
+  "uid": "a8db0b",
+  "stats": {
+   "health": 36,
+   "attack": 11,
+   "intelligence": 22,
+   "defense": 17,
+   "speed": 22,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9060,7 +9599,16 @@
   "trait_description": "This creature ignores 10% of enemies' Defense for each dead creature.",
   "material_name": "Massive Jawbone",
   "search_text": "Nature Bilemaw Exotic Indigestion This creature ignores 10% of enemies' Defense for each dead creature. Massive Jawbone",
-  "uid": "72311b"
+  "uid": "72311b",
+  "stats": {
+   "health": 30,
+   "attack": 25,
+   "intelligence": 15,
+   "defense": 18,
+   "speed": 20,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9070,7 +9618,16 @@
   "trait_description": "This creature's attacks deal 100% more damage. After this creature Attacks, it loses 10% Maximum Health.",
   "material_name": "Sacrificial Stinger",
   "search_text": "Nature Bumblebig Exotic Sting Martyr This creature's attacks deal 100% more damage. After this creature Attacks, it loses 10% Maximum Health. Sacrificial Stinger",
-  "uid": "7c56d8"
+  "uid": "7c56d8",
+  "stats": {
+   "health": 37,
+   "attack": 27,
+   "intelligence": 12,
+   "defense": 7,
+   "speed": 27,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9080,7 +9637,16 @@
   "trait_description": "Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 15% of their Speed. This trait does not stack.",
   "material_name": "Constellation of Byakko",
   "search_text": "Sorcery Byakko Exotic Tiger's Spirit Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 15% of their Speed. This trait does not stack. Constellation of Byakko",
-  "uid": "31e701"
+  "uid": "31e701",
+  "stats": {
+   "health": 35,
+   "attack": 20,
+   "intelligence": 15,
+   "defense": 15,
+   "speed": 25,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9090,7 +9656,16 @@
   "trait_description": "This creature has a 50% chance to gain double stats from stat-boosting effects.",
   "material_name": "Spriggan's Eye",
   "search_text": "Nature Chosen of the Fae Exotic Graced By Whimsy This creature has a 50% chance to gain double stats from stat-boosting effects. Spriggan's Eye",
-  "uid": "9a44d0"
+  "uid": "9a44d0",
+  "stats": {
+   "health": 30,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 102
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9100,7 +9675,16 @@
   "trait_description": "After this creature Attacks, it takes another turn. This trait only allows the creature to take an additional turn once at a time.",
   "material_name": "Clawtail Parasite",
   "search_text": "Chaos Clawtail Wyrm Exotic Clawtail Symbiosis After this creature Attacks, it takes another turn. This trait only allows the creature to take an additional turn once at a time. Clawtail Parasite",
-  "uid": "a99867"
+  "uid": "a99867",
+  "stats": {
+   "health": 33,
+   "attack": 28,
+   "intelligence": 18,
+   "defense": 13,
+   "speed": 13,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9110,7 +9694,16 @@
   "trait_description": "When this creature Casts a spell, the spell has 20% more potency for each buff it has. At the end of this creature's turn, its buffs are removed.",
   "material_name": "Can o' Canth",
   "search_text": "Nature Colacanth Exotic Sugar Rush When this creature Casts a spell, the spell has 20% more potency for each buff it has. At the end of this creature's turn, its buffs are removed. Can o' Canth",
-  "uid": "2e6b53"
+  "uid": "2e6b53",
+  "stats": {
+   "health": 28,
+   "attack": 16,
+   "intelligence": 21,
+   "defense": 21,
+   "speed": 21,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9120,7 +9713,16 @@
   "trait_description": "Your creatures' Splashing buffs deal 100% more damage. This trait does not stack.",
   "material_name": "Lightning Fin",
   "search_text": "Sorcery Conductive Carcharin Exotic Conductivity Your creatures' Splashing buffs deal 100% more damage. This trait does not stack. Lightning Fin",
-  "uid": "bb1596"
+  "uid": "bb1596",
+  "stats": {
+   "health": 31,
+   "attack": 11,
+   "intelligence": 26,
+   "defense": 16,
+   "speed": 21,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9130,7 +9732,16 @@
   "trait_description": "After this creature takes damage from an attack or spell, its minions gain 1 stack.",
   "material_name": "Skull Shard",
   "search_text": "Death Cranium Cluster Exotic Marrow Metabolism After this creature takes damage from an attack or spell, its minions gain 1 stack. Skull Shard",
-  "uid": "4bd43e"
+  "uid": "4bd43e",
+  "stats": {
+   "health": 43,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 27,
+   "speed": 7,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9140,7 +9751,16 @@
   "trait_description": "After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 10% of its lowest stat for each debuff the enemy has.",
   "material_name": "Black Raindrop",
   "search_text": "Death Davey Exotic Black Fog After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 10% of its lowest stat for each debuff the enemy has. Black Raindrop",
-  "uid": "7b0b26"
+  "uid": "7b0b26",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9150,7 +9770,16 @@
   "trait_description": "After this creature is killed, it heals your other creatures for an amount equal to 100% of its Maximum Health.",
   "material_name": "Certificate of Absolution",
   "search_text": "Sorcery Defiant Defiler Exotic Redemption After this creature is killed, it heals your other creatures for an amount equal to 100% of its Maximum Health. Certificate of Absolution",
-  "uid": "9a43ca"
+  "uid": "9a43ca",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9160,7 +9789,16 @@
   "trait_description": "After this creature is killed, your other creatures gain a random buff and a random minion.",
   "material_name": "Book of Infinity",
   "search_text": "Chaos Demon King Exotic Sacrificial Will After this creature is killed, your other creatures gain a random buff and a random minion. Book of Infinity",
-  "uid": "04e697"
+  "uid": "04e697",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9170,7 +9808,16 @@
   "trait_description": "After this creature Attacks, one of your creatures gains 3 stacks of Dire Wolves.",
   "material_name": "Werewolf Whistle",
   "search_text": "Death Dire Werewolf Exotic Backup Packup After this creature Attacks, one of your creatures gains 3 stacks of Dire Wolves. Werewolf Whistle",
-  "uid": "6f5af3"
+  "uid": "6f5af3",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9180,7 +9827,16 @@
   "trait_description": "This creature's buffs, debuffs, and minions persist through death.",
   "material_name": "Roll of Tape",
   "search_text": "Chaos Duckgundr Exotic Stick Soul This creature's buffs, debuffs, and minions persist through death. Roll of Tape",
-  "uid": "293ab4"
+  "uid": "293ab4",
+  "stats": {
+   "health": 35,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9190,7 +9846,16 @@
   "trait_description": "After this creature Defends, all creatures lose 1 buff and 1 debuff.",
   "material_name": "Unlit Candle",
   "search_text": "Death Forgotten Disciple Exotic Burden of Guilt After this creature Defends, all creatures lose 1 buff and 1 debuff. Unlit Candle",
-  "uid": "b468d3"
+  "uid": "b468d3",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9200,7 +9865,16 @@
   "trait_description": "Your creatures have 5% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack.",
   "material_name": "Constellation of Genbu",
   "search_text": "Sorcery Genbu Exotic Connections Your creatures have 5% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack. Constellation of Genbu",
-  "uid": "e311b7"
+  "uid": "e311b7",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9210,7 +9884,16 @@
   "trait_description": "At the start of your creatures' turns, they gain 1 stack of Zombies. This trait does not stack.",
   "material_name": "Grave Shovel",
   "search_text": "Death Gravekeeper Exotic Corpse Keeper At the start of your creatures' turns, they gain 1 stack of Zombies. This trait does not stack. Grave Shovel",
-  "uid": "f1a44c"
+  "uid": "f1a44c",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9220,7 +9903,16 @@
   "trait_description": "After this creature Casts a spell, it increases the potency of enemies' Burning, Poisoned, and Bomb debuffs by 10%.",
   "material_name": "Old World Microbe",
   "search_text": "Death Gravewood Ghost Exotic Inoculant After this creature Casts a spell, it increases the potency of enemies' Burning, Poisoned, and Bomb debuffs by 10%. Old World Microbe",
-  "uid": "3803d1"
+  "uid": "3803d1",
+  "stats": {
+   "health": 30,
+   "attack": 25,
+   "intelligence": 15,
+   "defense": 18,
+   "speed": 18,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9230,7 +9922,16 @@
   "trait_description": "Your creatures grant 100% more healing to enemies with Blighted. This trait does not stack.",
   "material_name": "Black Ear",
   "search_text": "Sorcery Greybeard Exotic Greybeard's Blessing Your creatures grant 100% more healing to enemies with Blighted. This trait does not stack. Black Ear",
-  "uid": "6c7643"
+  "uid": "6c7643",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9240,7 +9941,16 @@
   "trait_description": "After an enemy Attacks, the target afflicts the enemy with 2 random debuffs. This trait does not stack.",
   "material_name": "Rotting Antler",
   "search_text": "Death Grovewalker Exotic Forest's Curse After an enemy Attacks, the target afflicts the enemy with 2 random debuffs. This trait does not stack. Rotting Antler",
-  "uid": "d1c1bb"
+  "uid": "d1c1bb",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9250,7 +9960,16 @@
   "trait_description": "After this creature is killed, it deals damage to enemies equal to 1% of its lowest stat, multiplied by the number of times it Attacked in the current battle.",
   "material_name": "Pocket Grubs",
   "search_text": "Nature Grubette Exotic Grubby Strength After this creature is killed, it deals damage to enemies equal to 1% of its lowest stat, multiplied by the number of times it Attacked in the current battle. Pocket Grubs",
-  "uid": "ffcb49"
+  "uid": "ffcb49",
+  "stats": {
+   "health": 27,
+   "attack": 17,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 23,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9260,7 +9979,16 @@
   "trait_description": "At the start of this creature's turn, it gives away 20% of its stats (other than Health) to your other creatures.",
   "material_name": "Living Blood",
   "search_text": "Life Heartminder Exotic Hearts and Minds At the start of this creature's turn, it gives away 20% of its stats (other than Health) to your other creatures. Living Blood",
-  "uid": "790032"
+  "uid": "790032",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9270,7 +9998,16 @@
   "trait_description": "After this creature is forcibly moved to the top of the Timeline, it gains Splashing and 75% Attack.",
   "material_name": "Angelic Halo",
   "search_text": "Life Helios Exotic Propulsion After this creature is forcibly moved to the top of the Timeline, it gains Splashing and 75% Attack. Angelic Halo",
-  "uid": "788cff"
+  "uid": "788cff",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 15,
+   "defense": 18,
+   "speed": 20,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9280,7 +10017,16 @@
   "trait_description": "While this creature has at least 3 buffs, it intercepts enemies' attacks on its allies and takes 50% less damage. This trait does not stack.",
   "material_name": "Decorated Shell",
   "search_text": "Nature Hermitey Exotic Pocket Tank While this creature has at least 3 buffs, it intercepts enemies' attacks on its allies and takes 50% less damage. This trait does not stack. Decorated Shell",
-  "uid": "e8f264"
+  "uid": "e8f264",
+  "stats": {
+   "health": 39,
+   "attack": 14,
+   "intelligence": 24,
+   "defense": 14,
+   "speed": 19,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9290,17 +10036,35 @@
   "trait_description": "After your Exotic creatures are killed, your other Exotic creatures gain a random trait. This trait does not stack.",
   "material_name": "Constellation of Huanglong",
   "search_text": "Sorcery Huanglong Exotic Golden Aura After your Exotic creatures are killed, your other Exotic creatures gain a random trait. This trait does not stack. Constellation of Huanglong",
-  "uid": "85c5d4"
+  "uid": "85c5d4",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 17,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Hydra",
   "trait_name": "Reactive Heads",
-  "trait_description": "After your creatures are damaged by an attack or spell, they have a 20% chance to be sent to the top of the Timeline.",
+  "trait_description": "After your creatures are damaged by an attack or spell, they have a 15% chance to be sent to the top of the Timeline.",
   "material_name": "Hydra's Scale",
-  "search_text": "Chaos Hydra Exotic Reactive Heads After your creatures are damaged by an attack or spell, they have a 20% chance to be sent to the top of the Timeline. Hydra's Scale",
-  "uid": "c72e6c"
+  "search_text": "Chaos Hydra Exotic Reactive Heads After your creatures are damaged by an attack or spell, they have a 15% chance to be sent to the top of the Timeline. Hydra's Scale",
+  "uid": "c72e6c",
+  "stats": {
+   "health": 42,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 21,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9310,17 +10074,35 @@
   "trait_description": "After this creature gains stats, it has a 5% chance to Cast a random Morph spell.",
   "material_name": "Anarchic Egg Shell",
   "search_text": "Chaos Infinite Eggling Exotic Chaotic Potential After this creature gains stats, it has a 5% chance to Cast a random Morph spell. Anarchic Egg Shell",
-  "uid": "c160d0"
+  "uid": "c160d0",
+  "stats": {
+   "health": 30,
+   "attack": 10,
+   "intelligence": 25,
+   "defense": 18,
+   "speed": 20,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Iridris",
-  "trait_name": "Guardian of the Forest",
-  "trait_description": "Your creatures take 120% less damage, minus 1% for each time they've Attacked or Cast a spell in the current battle.",
+  "trait_name": "Red In Tooth And Claw",
+  "trait_description": "After this creature is Attacked, it has a 50% chance to be sent to the top of the Timeline.",
   "material_name": "Crimson Powder",
-  "search_text": "Sorcery Iridris Exotic Guardian of the Forest Your creatures take 120% less damage, minus 1% for each time they've Attacked or Cast a spell in the current battle. Crimson Powder",
-  "uid": "9b6abc"
+  "search_text": "Sorcery Iridris Exotic Red In Tooth And Claw After this creature is Attacked, it has a 50% chance to be sent to the top of the Timeline. Crimson Powder",
+  "uid": "af9028",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9330,17 +10112,35 @@
   "trait_description": "This creature ignores enemies' Barrier and Shelled buffs.",
   "material_name": "Piercing Legs",
   "search_text": "Nature Jaculus Exotic Breakneck This creature ignores enemies' Barrier and Shelled buffs. Piercing Legs",
-  "uid": "6530ed"
+  "uid": "6530ed",
+  "stats": {
+   "health": 32,
+   "attack": 22,
+   "intelligence": 15,
+   "defense": 15,
+   "speed": 20,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Kavnak",
   "trait_name": "Shared Consciousness",
-  "trait_description": "After an ally manually Casts a spell, this creature has a 25% chance to Cast that spell as well.",
+  "trait_description": "After an ally manually Casts a spell, this creature has a 35% chance to Cast that spell as well.",
   "material_name": "Kavnak's Worm",
-  "search_text": "Chaos Kavnak Exotic Shared Consciousness After an ally manually Casts a spell, this creature has a 25% chance to Cast that spell as well. Kavnak's Worm",
-  "uid": "85f50d"
+  "search_text": "Chaos Kavnak Exotic Shared Consciousness After an ally manually Casts a spell, this creature has a 35% chance to Cast that spell as well. Kavnak's Worm",
+  "uid": "85f50d",
+  "stats": {
+   "health": 31,
+   "attack": 11,
+   "intelligence": 26,
+   "defense": 15,
+   "speed": 20,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9350,17 +10150,35 @@
   "trait_description": "Your Exotic creatures always have Mending and Leeching.",
   "material_name": "Constellation of Kirin",
   "search_text": "Sorcery Kirin Exotic Celestial Your Exotic creatures always have Mending and Leeching. Constellation of Kirin",
-  "uid": "90f11a"
+  "uid": "90f11a",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Kobold",
   "trait_name": "Grovel and Beg",
-  "trait_description": "While this creature has less than 35% Health, it has 50% more Speed and has a 50% chacne to avoid damage.",
+  "trait_description": "While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage.",
   "material_name": "Kobold's Guidebook",
-  "search_text": "Nature Kobold Exotic Grovel and Beg While this creature has less than 35% Health, it has 50% more Speed and has a 50% chacne to avoid damage. Kobold's Guidebook",
-  "uid": "959746"
+  "search_text": "Nature Kobold Exotic Grovel and Beg While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage. Kobold's Guidebook",
+  "uid": "959746",
+  "stats": {
+   "health": 39,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 21,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9370,7 +10188,16 @@
   "trait_description": "This creature is healed instead of damaged by Bleeding and Burning, but at 50% effectiveness.",
   "material_name": "Lava Bubble",
   "search_text": "Chaos Lavalotl Exotic Cauterize the Wound This creature is healed instead of damaged by Bleeding and Burning, but at 50% effectiveness. Lava Bubble",
-  "uid": "ac3ed4"
+  "uid": "ac3ed4",
+  "stats": {
+   "health": 43,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9380,7 +10207,16 @@
   "trait_description": "After this creature takes damage from an attack or spell, it gains 5% stats.",
   "material_name": "Fragmented Blood",
   "search_text": "Death Legion Exotic Assimilate After this creature takes damage from an attack or spell, it gains 5% stats. Fragmented Blood",
-  "uid": "27a24d"
+  "uid": "27a24d",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9400,7 +10236,16 @@
   "trait_description": "This creature's attacks deal 75% more damage and it Attacks 1 additional time.",
   "material_name": "Lost Soul",
   "search_text": "Chaos Lunatio Exotic Twin Souls This creature's attacks deal 75% more damage and it Attacks 1 additional time. Lost Soul",
-  "uid": "1c11b6"
+  "uid": "1c11b6",
+  "stats": {
+   "health": 27,
+   "attack": 27,
+   "intelligence": 17,
+   "defense": 12,
+   "speed": 22,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9410,7 +10255,16 @@
   "trait_description": "After this creature dodges an attack, the enemy is afflicted with a random debuff.",
   "material_name": "Cryptid Tarot",
   "search_text": "Sorcery Magicalope Exotic Unrevealed Secret After this creature dodges an attack, the enemy is afflicted with a random debuff. Cryptid Tarot",
-  "uid": "a51683"
+  "uid": "a51683",
+  "stats": {
+   "health": 37,
+   "attack": 10,
+   "intelligence": 25,
+   "defense": 10,
+   "speed": 25,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9420,17 +10274,35 @@
   "trait_description": "When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount.",
   "material_name": "Math Textbook",
   "search_text": "Chaos Mathemagician Exotic Chaotic Mind When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount. Math Textbook",
-  "uid": "900794"
+  "uid": "900794",
+  "stats": {
+   "health": 32,
+   "attack": 12,
+   "intelligence": 27,
+   "defense": 12,
+   "speed": 22,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Mind Reaver",
   "trait_name": "Mind Reave",
-  "trait_description": "After an enemy Casts a spell, this creature Attacks it for 35% normal damage. This trait does not stack.",
+  "trait_description": "After an enemy Casts a spell, this creature deals damage to it equal to 35% of this creature's Intelligence.",
   "material_name": "Reaver's Skull",
-  "search_text": "Sorcery Mind Reaver Exotic Mind Reave After an enemy Casts a spell, this creature Attacks it for 35% normal damage. This trait does not stack. Reaver's Skull",
-  "uid": "2d644c"
+  "search_text": "Sorcery Mind Reaver Exotic Mind Reave After an enemy Casts a spell, this creature deals damage to it equal to 35% of this creature's Intelligence. Reaver's Skull",
+  "uid": "2d644c",
+  "stats": {
+   "health": 30,
+   "attack": 25,
+   "intelligence": 23,
+   "defense": 13,
+   "speed": 13,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9440,7 +10312,16 @@
   "trait_description": "After this creature Attacks, it has a 50% chance to Cast Maelstrom.",
   "material_name": "Still Waters",
   "search_text": "Sorcery Nguruvilu Exotic Turbulent Waters After this creature Attacks, it has a 50% chance to Cast Maelstrom. Still Waters",
-  "uid": "cbb8c8"
+  "uid": "cbb8c8",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9450,7 +10331,16 @@
   "trait_description": "Your creatures' spells are 30% more potent. This trait does not stack.",
   "material_name": "Book of Nine Tails",
   "search_text": "Death Nine Tailed Harvester Exotic Nine Tails' Knowledge Your creatures' spells are 30% more potent. This trait does not stack. Book of Nine Tails",
-  "uid": "9fdb84"
+  "uid": "9fdb84",
+  "stats": {
+   "health": 35,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9460,7 +10350,16 @@
   "trait_description": "Your creatures can have 3 additional stacks of each minion. This trait does not affect minions that normally have a maximum of 1 stack. This trait does not stack.",
   "material_name": "Nox's Staff",
   "search_text": "Sorcery Nox Sinon Exotic Unleash the Horde Your creatures can have 3 additional stacks of each minion. This trait does not affect minions that normally have a maximum of 1 stack. This trait does not stack. Nox's Staff",
-  "uid": "32981a"
+  "uid": "32981a",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9470,7 +10369,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Blind and Confused.",
   "material_name": "Corrupted Geode",
   "search_text": "Chaos Obscene Blight Exotic Alchemist's Fury After this creature Attacks, it afflicts the target with Blind and Confused. Corrupted Geode",
-  "uid": "557e6e"
+  "uid": "557e6e",
+  "stats": {
+   "health": 33,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 13,
+   "speed": 23,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9480,7 +10388,16 @@
   "trait_description": "This creature's Attacks deal 100% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn.",
   "material_name": "Oni Fragment",
   "search_text": "Death Oni-Goroshi Exotic Her Embrace This creature's Attacks deal 100% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn. Oni Fragment",
-  "uid": "8772ec"
+  "uid": "8772ec",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9490,7 +10407,16 @@
   "trait_description": "This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 20% of the damage dealt. This damage counts as spell damage.",
   "material_name": "Memory of Binding",
   "search_text": "Sorcery Orphaned Minion Exotic Last Ward This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 20% of the damage dealt. This damage counts as spell damage. Memory of Binding",
-  "uid": "b29584"
+  "uid": "b29584",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9500,7 +10426,16 @@
   "trait_description": "After an enemy gains Maximum Health, this creature Casts Vitality Explosion on it. This trait does not stack.",
   "material_name": "Otherworlder's Soul",
   "search_text": "Death Otherworldly Visitor Exotic Love Thyself After an enemy gains Maximum Health, this creature Casts Vitality Explosion on it. This trait does not stack. Otherworlder's Soul",
-  "uid": "268534"
+  "uid": "268534",
+  "stats": {
+   "health": 35,
+   "attack": 15,
+   "intelligence": 25,
+   "defense": 18,
+   "speed": 15,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9508,9 +10443,18 @@
   "creature": "Paladin Crab",
   "trait_name": "Shining Armor",
   "trait_description": "While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",
-  "material_name": "Crab Shell",
-  "search_text": "Life Paladin Crab Exotic Shining Armor While your creatures have Barrier, they have 40% more Defense. This trait does not stack. Crab Shell",
-  "uid": "1d766c"
+  "material_name": "Crab Shield",
+  "search_text": "Life Paladin Crab Exotic Shining Armor While your creatures have Barrier, they have 40% more Defense. This trait does not stack. Crab Shield",
+  "uid": "1d766c",
+  "stats": {
+   "health": 39,
+   "attack": 9,
+   "intelligence": 9,
+   "defense": 27,
+   "speed": 27,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9520,7 +10464,16 @@
   "trait_description": "This creature's spell potency is based on its Attack, and the damage of its attacks is based on its Intelligence.",
   "material_name": "Warped Neuron",
   "search_text": "Chaos Paroxys Exotic Confusion and Empathy This creature's spell potency is based on its Attack, and the damage of its attacks is based on its Intelligence. Warped Neuron",
-  "uid": "eded42"
+  "uid": "eded42",
+  "stats": {
+   "health": 33,
+   "attack": 23,
+   "intelligence": 23,
+   "defense": 13,
+   "speed": 13,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9530,7 +10483,16 @@
   "trait_description": "This creature has 100% more stats (other than Health), but has a 50% chance to lose its turn.",
   "material_name": "Muscular Stone",
   "search_text": "Chaos Petrafortis Exotic Bulky Body This creature has 100% more stats (other than Health), but has a 50% chance to lose its turn. Muscular Stone",
-  "uid": "1fc079"
+  "uid": "1fc079",
+  "stats": {
+   "health": 35,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9540,7 +10502,16 @@
   "trait_description": "This creature deals 10% more damage for each creature below it on the Timeline at the start of battle.",
   "material_name": "Electric Fossil",
   "search_text": "Nature Piscacanth Exotic Ancient Buffoonery This creature deals 10% more damage for each creature below it on the Timeline at the start of battle. Electric Fossil",
-  "uid": "9a8924"
+  "uid": "9a8924",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9550,7 +10521,16 @@
   "trait_description": "Whenever it is an enemy's turn, any random effects that fail to occur are re-rolled an additional time. This trait does not stack.",
   "material_name": "Broken Roulette Wheel",
   "search_text": "Life Pontiff of Luck Exotic Spin the Wheel Whenever it is an enemy's turn, any random effects that fail to occur are re-rolled an additional time. This trait does not stack. Broken Roulette Wheel",
-  "uid": "157a53"
+  "uid": "157a53",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9560,7 +10540,16 @@
   "trait_description": "After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 20%.",
   "material_name": "Buttery Bait",
   "search_text": "Nature Proto-Brachyura Exotic Crab Trap After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 20%. Buttery Bait",
-  "uid": "32eddd"
+  "uid": "32eddd",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 27,
+   "speed": 7,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9570,17 +10559,35 @@
   "trait_description": "After an adjacent ally Attacks, Casts a spell, Defends, or Provokes, this creature has a 50% chance to perform that action as well.",
   "material_name": "Wireframe Matric",
   "search_text": "Sorcery Proxigeist Exotic Projection After an adjacent ally Attacks, Casts a spell, Defends, or Provokes, this creature has a 50% chance to perform that action as well. Wireframe Matric",
-  "uid": "b9dc0f"
+  "uid": "b9dc0f",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Puffergryph",
   "trait_name": "Puff Up",
-  "trait_description": "After this creature is Attacked, it gains 25% Attack and Intelligence.",
+  "trait_description": "After this creature is Attacked, it gains 30% Attack and Intelligence.",
   "material_name": "Pufferfish Spike",
-  "search_text": "Chaos Puffergryph Exotic Puff Up After this creature is Attacked, it gains 25% Attack and Intelligence. Pufferfish Spike",
-  "uid": "22accf"
+  "search_text": "Chaos Puffergryph Exotic Puff Up After this creature is Attacked, it gains 30% Attack and Intelligence. Pufferfish Spike",
+  "uid": "22accf",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 25,
+   "speed": 15,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9590,7 +10597,16 @@
   "trait_description": "Your creatures deal 50% more damage to enemies that belong to their own class. This trait does not stack.",
   "material_name": "Nature's Fury",
   "search_text": "Nature Rhozzgon Exotic Wrath of Krorena Your creatures deal 50% more damage to enemies that belong to their own class. This trait does not stack. Nature's Fury",
-  "uid": "5a8fba"
+  "uid": "5a8fba",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9600,7 +10616,16 @@
   "trait_description": "At the start of this creature's turn, it heals one of your creatures for 100% Health.",
   "material_name": "Drake Teeth",
   "search_text": "Life Sapphire Drake Exotic Healing Breath At the start of this creature's turn, it heals one of your creatures for 100% Health. Drake Teeth",
-  "uid": "8469ce"
+  "uid": "8469ce",
+  "stats": {
+   "health": 43,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9610,7 +10635,16 @@
   "trait_description": "Your Exotic creatures have 5% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack.",
   "material_name": "Constellation of Seiryu",
   "search_text": "Sorcery Seiryu Exotic Scaling Your Exotic creatures have 5% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack. Constellation of Seiryu",
-  "uid": "419b14"
+  "uid": "419b14",
+  "stats": {
+   "health": 37,
+   "attack": 17,
+   "intelligence": 25,
+   "defense": 15,
+   "speed": 15,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9620,7 +10654,16 @@
   "trait_description": "After an enemy takes damage from Burning, this creature Attacks it for 35% normal damage. This trait does not stack.",
   "material_name": "Nasty Dough",
   "search_text": "Chaos Singerbread Man Exotic Sugar and Slice After an enemy takes damage from Burning, this creature Attacks it for 35% normal damage. This trait does not stack. Nasty Dough",
-  "uid": "052d82"
+  "uid": "052d82",
+  "stats": {
+   "health": 38,
+   "attack": 23,
+   "intelligence": 13,
+   "defense": 13,
+   "speed": 23,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9630,7 +10673,16 @@
   "trait_description": "This creature has 30% more Attack, Defense, and Speed.",
   "material_name": "Burial Gift",
   "search_text": "Death Skelegoop Exotic Drake's Favor This creature has 30% more Attack, Defense, and Speed. Burial Gift",
-  "uid": "d7785e"
+  "uid": "d7785e",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 16,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9640,7 +10692,16 @@
   "trait_description": "After a creature is killed, this creature gains Rebirth.",
   "material_name": "Pure Heart",
   "search_text": "Life Snow Lily Exotic Loyalty's Light After a creature is killed, this creature gains Rebirth. Pure Heart",
-  "uid": "569bd3"
+  "uid": "569bd3",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9650,7 +10711,16 @@
   "trait_description": "When this creature Attacks, one of your other creatures Attacks instead for 50% more damage. This trait does not work if any of your other creatures have it as well.",
   "material_name": "Spectral String",
   "search_text": "Sorcery String Puller Exotic Pull the Strings When this creature Attacks, one of your other creatures Attacks instead for 50% more damage. This trait does not work if any of your other creatures have it as well. Spectral String",
-  "uid": "941848"
+  "uid": "941848",
+  "stats": {
+   "health": 37,
+   "attack": 12,
+   "intelligence": 12,
+   "defense": 25,
+   "speed": 22,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -9660,7 +10730,16 @@
   "trait_description": "After your Exotic creatures gain a buff, they gain 20% Defense. This trait does not stack.",
   "material_name": "Constellation of Suzaku",
   "search_text": "Sorcery Suzaku Exotic Feather Dance After your Exotic creatures gain a buff, they gain 20% Defense. This trait does not stack. Constellation of Suzaku",
-  "uid": "d714ed"
+  "uid": "d714ed",
+  "stats": {
+   "health": 36,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 21,
+   "speed": 16,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -9670,17 +10749,35 @@
   "trait_description": "Your creatures' consecutive attacks at the same time deal 10% more damage for each additional attack. This trait does not stack.",
   "material_name": "Beef Stick",
   "search_text": "Chaos Taco Hell Exotic Tacos Inflation Your creatures' consecutive attacks at the same time deal 10% more damage for each additional attack. This trait does not stack. Beef Stick",
-  "uid": "fcc3e8"
+  "uid": "fcc3e8",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "The Bearon",
   "trait_name": "Barbearian",
-  "trait_description": "After all start-of-battle effects are activated, this creature Provokes.",
+  "trait_description": "After all start-of-battle effects are activated, this creature Provokes. This creature has 35% more Defense.",
   "material_name": "Honey Pot",
-  "search_text": "Nature The Bearon Exotic Barbearian After all start-of-battle effects are activated, this creature Provokes. Honey Pot",
-  "uid": "53084f"
+  "search_text": "Nature The Bearon Exotic Barbearian After all start-of-battle effects are activated, this creature Provokes. This creature has 35% more Defense. Honey Pot",
+  "uid": "53084f",
+  "stats": {
+   "health": 41,
+   "attack": 21,
+   "intelligence": 6,
+   "defense": 21,
+   "speed": 21,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9690,7 +10787,16 @@
   "trait_description": "This creature's damage dealt by attacks and spells is based on 150% of its lowest stat rather than its Attack or Intelligence.",
   "material_name": "Eye of the Storm",
   "search_text": "Nature The Dervish Exotic Ride the Whirlwind This creature's damage dealt by attacks and spells is based on 150% of its lowest stat rather than its Attack or Intelligence. Eye of the Storm",
-  "uid": "cd3c71"
+  "uid": "cd3c71",
+  "stats": {
+   "health": 43,
+   "attack": 13,
+   "intelligence": 13,
+   "defense": 13,
+   "speed": 23,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9700,27 +10806,54 @@
   "trait_description": "This creature's race is always the same race as the creature that is at the top of the Timeline.",
   "material_name": "DNA Splicer",
   "search_text": "Nature The First Spawn Exotic Ancient DNA This creature's race is always the same race as the creature that is at the top of the Timeline. DNA Splicer",
-  "uid": "2530df"
+  "uid": "2530df",
+  "stats": {
+   "health": 31,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Toyland Amalgamation",
   "trait_name": "Double Vision",
-  "trait_description": "After this creature Attacks, it has a 30% chance to Cast its top-most Spell Gem.",
+  "trait_description": "After this creature Attacks, it has a 40% chance to Cast its top-most Spell Gem.",
   "material_name": "Eye Glasses",
-  "search_text": "Sorcery Toyland Amalgamation Exotic Double Vision After this creature Attacks, it has a 30% chance to Cast its top-most Spell Gem. Eye Glasses",
-  "uid": "6eaf08"
+  "search_text": "Sorcery Toyland Amalgamation Exotic Double Vision After this creature Attacks, it has a 40% chance to Cast its top-most Spell Gem. Eye Glasses",
+  "uid": "6eaf08",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Tsuchinoko",
   "trait_name": "Rollout",
-  "trait_description": "At the start of this creature's turn, it Attacks a random enemy for 10% to 50% normal damage.",
+  "trait_description": "At the start of this creature's turn, it Attacks a random enemy for 50% to 100% normal damage.",
   "material_name": "Nokium",
-  "search_text": "Chaos Tsuchinoko Exotic Rollout At the start of this creature's turn, it Attacks a random enemy for 10% to 50% normal damage. Nokium",
-  "uid": "e95a6a"
+  "search_text": "Chaos Tsuchinoko Exotic Rollout At the start of this creature's turn, it Attacks a random enemy for 50% to 100% normal damage. Nokium",
+  "uid": "e95a6a",
+  "stats": {
+   "health": 31,
+   "attack": 23,
+   "intelligence": 13,
+   "defense": 13,
+   "speed": 23,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -9730,7 +10863,16 @@
   "trait_description": "This creature deals 100% more damage to enemies with Feared.",
   "material_name": "Dark Cloak",
   "search_text": "Death Vannyx Exotic Death Sentence This creature deals 100% more damage to enemies with Feared. Dark Cloak",
-  "uid": "5fd7e5"
+  "uid": "5fd7e5",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 20,
+   "defense": 15,
+   "speed": 20,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -9740,27 +10882,54 @@
   "trait_description": "After your other Death creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack.",
   "material_name": "Solidified Slime",
   "search_text": "Nature Zombatron Exotic Reform After your other Death creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack. Solidified Slime",
-  "uid": "d30b76"
+  "uid": "d30b76",
+  "stats": {
+   "health": 39,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
   "family": "Fae",
   "creature": "Asclepias Fae",
   "trait_name": "Dead Butterflies",
-  "trait_description": "The first 3 times this creature is killed, it is resurrected with 100% Health. This creature always skips its turn.",
+  "trait_description": "The first 3 times this creature is killed, it is resurrected with 100% Health. This creature takes 75% more damage and deals 50% less damage.",
   "material_name": "Blue Bottled Fairy",
-  "search_text": "Life Asclepias Fae Fae Dead Butterflies The first 3 times this creature is killed, it is resurrected with 100% Health. This creature always skips its turn. Blue Bottled Fairy",
-  "uid": "351203"
+  "search_text": "Life Asclepias Fae Fae Dead Butterflies The first 3 times this creature is killed, it is resurrected with 100% Health. This creature takes 75% more damage and deals 50% less damage. Blue Bottled Fairy",
+  "uid": "351203",
+  "stats": {
+   "health": 27,
+   "attack": 27,
+   "intelligence": 27,
+   "defense": 6,
+   "speed": 16,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
   "family": "Fae",
   "creature": "Helianthus Fae",
   "trait_name": "Lost In Forever",
-  "trait_description": "This creature's end-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells.",
+  "trait_description": "This creature's end-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",
   "material_name": "Green Bottle Fairy",
-  "search_text": "Life Helianthus Fae Fae Lost In Forever This creature's end-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells. Green Bottle Fairy",
-  "uid": "0085b4"
+  "search_text": "Life Helianthus Fae Fae Lost In Forever This creature's end-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health). Green Bottle Fairy",
+  "uid": "0085b4",
+  "stats": {
+   "health": 26,
+   "attack": 25,
+   "intelligence": 25,
+   "defense": 10,
+   "speed": 20,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9770,17 +10939,35 @@
   "trait_description": "This creature Attacks and Casts spells 2 additional times, but it can't gain buffs.",
   "material_name": "Pink Bottled Fairy",
   "search_text": "Life Hydrangea Fae Fae Crystal Lake This creature Attacks and Casts spells 2 additional times, but it can't gain buffs. Pink Bottled Fairy",
-  "uid": "474de9"
+  "uid": "474de9",
+  "stats": {
+   "health": 25,
+   "attack": 25,
+   "intelligence": 25,
+   "defense": 9,
+   "speed": 19,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
   "family": "Fae",
   "creature": "Polygala Fae",
   "trait_name": "True North",
-  "trait_description": "This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 90% lower stats (other than Health).",
+  "trait_description": "This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 50% lower stats (other than Health).",
   "material_name": "Purple Bottled Fairy",
-  "search_text": "Life Polygala Fae Fae True North This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 90% lower stats (other than Health). Purple Bottled Fairy",
-  "uid": "278a78"
+  "search_text": "Life Polygala Fae Fae True North This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 50% lower stats (other than Health). Purple Bottled Fairy",
+  "uid": "278a78",
+  "stats": {
+   "health": 21,
+   "attack": 21,
+   "intelligence": 21,
+   "defense": 13,
+   "speed": 23,
+   "total": 99
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -9790,26 +10977,44 @@
   "trait_description": "This creature's automatically-cast spells have a 40% chance to be considered manually cast, but this creature cannot manually cast spells.",
   "material_name": "Yellow Bottled Fairy",
   "search_text": "Life Rhododendron Fae Fae The Great Beyond This creature's automatically-cast spells have a 40% chance to be considered manually cast, but this creature cannot manually cast spells. Yellow Bottled Fairy",
-  "uid": "881272"
+  "uid": "881272",
+  "stats": {
+   "health": 24,
+   "attack": 24,
+   "intelligence": 24,
+   "defense": 9,
+   "speed": 19,
+   "total": 100
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
   "family": "Fae",
   "creature": "Roseaea Fae",
   "trait_name": "Outgrow",
-  "trait_description": "This creature's start-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells.",
+  "trait_description": "This creature's start-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",
   "material_name": "Red Bottled Fairy",
-  "search_text": "Life Roseaea Fae Fae Outgrow This creature's start-of-turn effects activate 1 additional time, but it can't manually Attack or Cast spells. Red Bottled Fairy",
-  "uid": "fc1df9"
+  "search_text": "Life Roseaea Fae Fae Outgrow This creature's start-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health). Red Bottled Fairy",
+  "uid": "fc1df9",
+  "stats": {
+   "health": 26,
+   "attack": 26,
+   "intelligence": 24,
+   "defense": 9,
+   "speed": 19,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
   "family": "Fae",
   "creature": "Mastery Trait",
   "trait_name": "Master of Fae",
-  "trait_description": "If all the creatures in your party are Fae, they have a 60% chacne to avoid damage from spells. This trait does not stack.",
+  "trait_description": "If all the creatures in your party are Fae, they have a 60% chance to avoid damage from spells. This trait does not stack.",
   "material_name": "Sigil of the Fae",
-  "search_text": "Rodian Master Mastery Trait Fae Master of Fae If all the creatures in your party are Fae, they have a 60% chacne to avoid damage from spells. This trait does not stack. Sigil of the Fae",
+  "search_text": "Rodian Master Mastery Trait Fae Master of Fae If all the creatures in your party are Fae, they have a 60% chance to avoid damage from spells. This trait does not stack. Sigil of the Fae",
   "uid": "e373d8"
  },
  {
@@ -10286,9 +11491,9 @@
   "family": "Gargantuan",
   "creature": "Fearsome Gargantuan",
   "trait_name": "Charge",
-  "trait_description": "At the start of your creatures' turns, this creature has a 25% chance to attack a random enemy.",
+  "trait_description": "At the start of each creature's turn, this creature has a 25% chance to attack a random enemy.",
   "material_name": "Fearsome Tree Trunk",
-  "search_text": "Nature Fearsome Gargantuan Gargantuan Charge At the start of your creatures' turns, this creature has a 25% chance to attack a random enemy. Fearsome Tree Trunk",
+  "search_text": "Nature Fearsome Gargantuan Gargantuan Charge At the start of each creature's turn, this creature has a 25% chance to attack a random enemy. Fearsome Tree Trunk",
   "uid": "904d87",
   "stats": {
    "health": 42,
@@ -10670,7 +11875,16 @@
   "trait_description": "Your creatures' Spell Gems with the 'Singular' property have 100% more charges if they only have one non-Ethereal Spell Gem equipped. This trait does not stack.",
   "material_name": "Stillfire Shard",
   "search_text": "Sorcery Stillfire Gemling Gemling Quality Over Quanitity Your creatures' Spell Gems with the 'Singular' property have 100% more charges if they only have one non-Ethereal Spell Gem equipped. This trait does not stack. Stillfire Shard",
-  "uid": "eea96f"
+  "uid": "eea96f",
+  "stats": {
+   "health": 31,
+   "attack": 11,
+   "intelligence": 21,
+   "defense": 21,
+   "speed": 21,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_1376.png"
  },
  {
   "class": "Sorcery",
@@ -11052,7 +12266,16 @@
   "trait_description": "Your creatures deal 5% more damage with attacks and spells, and take 1% less damage (up to 90%) for each time this creature has taken damage in the current battle.\nThis trait does not stack.",
   "material_name": "Particle of 8004",
   "search_text": "Chaos 8004 Godspawn Something From Nothing Your creatures deal 5% more damage with attacks and spells, and take 1% less damage (up to 90%) for each time this creature has taken damage in the current battle.\nThis trait does not stack. Particle of 8004",
-  "uid": "7a6cff"
+  "uid": "7a6cff",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -11062,7 +12285,16 @@
   "trait_description": "At the start of battle, you gain access to 3 random perks. A description of these perks can be found in your battle history.\nThis trait activates immediately before all other start-of-battle effects. This trait does not stack.",
   "material_name": "Particle of Adaxial",
   "search_text": "Death Adaxial Godspawn Tools of Creation At the start of battle, you gain access to 3 random perks. A description of these perks can be found in your battle history.\nThis trait activates immediately before all other start-of-battle effects. This trait does not stack. Particle of Adaxial",
-  "uid": "368780"
+  "uid": "368780",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -11088,10 +12320,19 @@
   "family": "Godspawn",
   "creature": "Akara",
   "trait_name": "Darkbloom",
-  "trait_description": "This creature's base stats are 1, plus 10 for each non-Ethereal Spell Gem it has equipped.\nThe base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 12 Spell Gems are considered.",
+  "trait_description": "This creature's base stats are 20, plus 5 for each non-Ethereal Spell Gem it has equipped.\nThe base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 8 Spell Gems are considered.",
   "material_name": "Particle of Akara",
-  "search_text": "Nature Akara Godspawn Darkbloom This creature's base stats are 1, plus 10 for each non-Ethereal Spell Gem it has equipped.\nThe base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 12 Spell Gems are considered. Particle of Akara",
-  "uid": "09aa33"
+  "search_text": "Nature Akara Godspawn Darkbloom This creature's base stats are 20, plus 5 for each non-Ethereal Spell Gem it has equipped.\nThe base stat that is increased by this trait is determined by the class of the Spell Gem. Only the first 8 Spell Gems are considered. Particle of Akara",
+  "uid": "09aa33",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 16,
+   "speed": 16,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -11136,9 +12377,9 @@
   "family": "Godspawn",
   "creature": "Darksulker",
   "trait_name": "From Death to Destiny",
-  "trait_description": "This creature has additional stats equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait.",
+  "trait_description": "This creature has additional stats (other than Health) equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait.",
   "material_name": "Particle of Darksulker",
-  "search_text": "Sorcery Darksulker Godspawn From Death to Destiny This creature has additional stats equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait. Particle of Darksulker",
+  "search_text": "Sorcery Darksulker Godspawn From Death to Destiny This creature has additional stats (other than Health) equal to 50% of the stats of your dead creatures. This trait does not work with creatures who also have this trait. Particle of Darksulker",
   "uid": "f39ebb",
   "stats": {
    "health": 33,
@@ -11234,7 +12475,16 @@
   "trait_description": "This creature's attacks deal 75% more damage and afflict the target with Inverted.",
   "material_name": "Particle of Emus",
   "search_text": "Life Emus Godspawn Fear of Success This creature's attacks deal 75% more damage and afflict the target with Inverted. Particle of Emus",
-  "uid": "9dc5ff"
+  "uid": "9dc5ff",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -11244,7 +12494,16 @@
   "trait_description": "This creature deals 20% more damage with attacks and spells, and takes 10% less damage for each different creature class fighting on your side. This trait does not stack.",
   "material_name": "Particle of Grom'Met",
   "search_text": "Sorcery Grom'Met Godspawn Echobreather This creature deals 20% more damage with attacks and spells, and takes 10% less damage for each different creature class fighting on your side. This trait does not stack. Particle of Grom'Met",
-  "uid": "dd5b05"
+  "uid": "dd5b05",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -11368,7 +12627,16 @@
   "trait_description": "Your creatures gain 100% more benefit from stat-increasing Realm Boosts. This trait does not stack.",
   "material_name": "Particle of Nalas",
   "search_text": "Life Nalas Godspawn Oathbreaker Your creatures gain 100% more benefit from stat-increasing Realm Boosts. This trait does not stack. Particle of Nalas",
-  "uid": "99f567"
+  "uid": "99f567",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -11416,7 +12684,16 @@
   "trait_description": "This creature deals 30% more damage with attacks and spells for each time each creature has died in the current battle.",
   "material_name": "Particle of Rengas",
   "search_text": "Chaos Rengas Godspawn Rodian Aftermath This creature deals 30% more damage with attacks and spells for each time each creature has died in the current battle. Particle of Rengas",
-  "uid": "cbc66a"
+  "uid": "cbc66a",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -11426,7 +12703,16 @@
   "trait_description": "At the start of your Godspawn creatures' third turns, they transform into their corresponding Avatar.",
   "material_name": "Particle of Saurel",
   "search_text": "Death Saurel Godspawn Syndicate At the start of your Godspawn creatures' third turns, they transform into their corresponding Avatar. Particle of Saurel",
-  "uid": "377827"
+  "uid": "377827",
+  "stats": {
+   "health": 40,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -11455,7 +12741,16 @@
   "trait_description": "While this creature is at 100% Health, it has a 90% chance to avoid damage.",
   "material_name": "Particle of Thana",
   "search_text": "Nature Thana Godspawn Negative Noise While this creature is at 100% Health, it has a 90% chance to avoid damage. Particle of Thana",
-  "uid": "ddbe73"
+  "uid": "ddbe73",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Death",
@@ -12607,9 +13902,9 @@
   "family": "Hound",
   "creature": "Blood Hound",
   "trait_name": "Blood Thirst",
-  "trait_description": "Your creatures can have 3 additional stacks of Dire Wolves. This trait does not stack.",
+  "trait_description": "Your creatures can have 5 additional stacks of Dire Wolves. This trait does not stack.",
   "material_name": "Blood Collar",
-  "search_text": "Death Blood Hound Hound Blood Thirst Your creatures can have 3 additional stacks of Dire Wolves. This trait does not stack. Blood Collar",
+  "search_text": "Death Blood Hound Hound Blood Thirst Your creatures can have 5 additional stacks of Dire Wolves. This trait does not stack. Blood Collar",
   "uid": "64017a",
   "stats": {
    "health": 30,
@@ -13698,7 +14993,16 @@
   "trait_description": "As long as your creatures haven't gained or lost stats, they have 50% more stats (other than Health). This trait does not stack.",
   "material_name": "Ghastly Sucker",
   "search_text": "Chaos Abyssal Kraken Kraken Abyssal Waters As long as your creatures haven't gained or lost stats, they have 50% more stats (other than Health). This trait does not stack. Ghastly Sucker",
-  "uid": "117c99"
+  "uid": "117c99",
+  "stats": {
+   "health": 32,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -13708,7 +15012,16 @@
   "trait_description": "As long as this creature hasn't gained or lost Speed, it has 200% more Speed and has Agile.",
   "material_name": "Gross Sucker",
   "search_text": "Chaos Inkjet Kraken Kraken Inky Escape As long as this creature hasn't gained or lost Speed, it has 200% more Speed and has Agile. Gross Sucker",
-  "uid": "32b748"
+  "uid": "32b748",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -13718,7 +15031,16 @@
   "trait_description": "As long as this creature hasn't gained or lost Defense, it has 200% more Defense and has Protected.",
   "material_name": "Hideous Sucker",
   "search_text": "Chaos Ironside Kraken Kraken Iron Shell As long as this creature hasn't gained or lost Defense, it has 200% more Defense and has Protected. Hideous Sucker",
-  "uid": "398d32"
+  "uid": "398d32",
+  "stats": {
+   "health": 33,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 17,
+   "speed": 18,
+   "total": 104
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -13728,7 +15050,16 @@
   "trait_description": "As long as your creatures haven't gained or lost stats, this creature has 100% more stats (other than Health).",
   "material_name": "Repulsive Sucker",
   "search_text": "Chaos Kraken Hundredhand Kraken Hundred Hands As long as your creatures haven't gained or lost stats, this creature has 100% more stats (other than Health). Repulsive Sucker",
-  "uid": "c5a99e"
+  "uid": "c5a99e",
+  "stats": {
+   "health": 33,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -13738,7 +15069,16 @@
   "trait_description": "As long as this creature hasn't gained or lost Attack, it has 200% more Attack and has Berserk.",
   "material_name": "Dreadful Sucker",
   "search_text": "Chaos Kraken Shipbreaker Kraken Shipbreaker As long as this creature hasn't gained or lost Attack, it has 200% more Attack and has Berserk. Dreadful Sucker",
-  "uid": "cec01c"
+  "uid": "cec01c",
+  "stats": {
+   "health": 31,
+   "attack": 19,
+   "intelligence": 19,
+   "defense": 19,
+   "speed": 19,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -13748,7 +15088,16 @@
   "trait_description": "As long as this creature hasn't gained or lost Intelligence, it has 200% more Intelligence and has Arcane.",
   "material_name": "Creepy Sucker",
   "search_text": "Chaos Unblinking Kraken Kraken Unblinking Eyes As long as this creature hasn't gained or lost Intelligence, it has 200% more Intelligence and has Arcane. Creepy Sucker",
-  "uid": "7243ae"
+  "uid": "7243ae",
+  "stats": {
+   "health": 32,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 20,
+   "speed": 20,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -14246,7 +15595,16 @@
   "trait_description": "Your Luckmantria creatures share their innate traits with each other.",
   "material_name": "Torn Card (Ace)",
   "search_text": "Nature Ace Luckmantria Luckmantria Royal Flush Your Luckmantria creatures share their innate traits with each other. Torn Card (Ace)",
-  "uid": "296c9a"
+  "uid": "296c9a",
+  "stats": {
+   "health": 21,
+   "attack": 7,
+   "intelligence": 27,
+   "defense": 17,
+   "speed": 27,
+   "total": 99
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -14256,7 +15614,16 @@
   "trait_description": "If this creature's Intelligence is higher than that of any enemy, it has 100% more Intelligence.",
   "material_name": "Torn Card (Club)",
   "search_text": "Nature Club Luckmantria Luckmantria Showdown If this creature's Intelligence is higher than that of any enemy, it has 100% more Intelligence. Torn Card (Club)",
-  "uid": "c56567"
+  "uid": "c56567",
+  "stats": {
+   "health": 24,
+   "attack": 4,
+   "intelligence": 27,
+   "defense": 17,
+   "speed": 27,
+   "total": 99
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -14266,7 +15633,16 @@
   "trait_description": "While this creature is Defending, its Intelligence is swapped with its Defense. This creature takes 30% less damage while it is Defending.",
   "material_name": "Torn Card (Diamond)",
   "search_text": "Nature Diamond Luckmantria Luckmantria Semi-Bluff While this creature is Defending, its Intelligence is swapped with its Defense. This creature takes 30% less damage while it is Defending. Torn Card (Diamond)",
-  "uid": "633445"
+  "uid": "633445",
+  "stats": {
+   "health": 27,
+   "attack": 7,
+   "intelligence": 27,
+   "defense": 17,
+   "speed": 27,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -14276,7 +15652,16 @@
   "trait_description": "This creature has additional Intelligence equal to 5% of your other creatures' Current Health.",
   "material_name": "Torn Card (Heart)",
   "search_text": "Nature Heart Luckmantria Luckmantria Ante This creature has additional Intelligence equal to 5% of your other creatures' Current Health. Torn Card (Heart)",
-  "uid": "3996e8"
+  "uid": "3996e8",
+  "stats": {
+   "health": 26,
+   "attack": 6,
+   "intelligence": 26,
+   "defense": 16,
+   "speed": 26,
+   "total": 100
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -14286,7 +15671,16 @@
   "trait_description": "After a creature is killed, your creatures gain a random buff. This trait does not stack.",
   "material_name": "Torn Card (Joker)",
   "search_text": "Nature Joker Luckmantria Luckmantria Implied Odds After a creature is killed, your creatures gain a random buff. This trait does not stack. Torn Card (Joker)",
-  "uid": "0dd90f"
+  "uid": "0dd90f",
+  "stats": {
+   "health": 25,
+   "attack": 5,
+   "intelligence": 28,
+   "defense": 18,
+   "speed": 18,
+   "total": 94
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -14296,7 +15690,16 @@
   "trait_description": "If this creature's Attack is lower than that of any enemy, it has 100% more Attack.",
   "material_name": "Torn Card (Spade)",
   "search_text": "Nature Spade Luckmantria Luckmantria Drawing Dead If this creature's Attack is lower than that of any enemy, it has 100% more Attack. Torn Card (Spade)",
-  "uid": "58a6ad"
+  "uid": "58a6ad",
+  "stats": {
+   "health": 26,
+   "attack": 6,
+   "intelligence": 26,
+   "defense": 16,
+   "speed": 26,
+   "total": 100
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -15226,17 +16629,35 @@
   "trait_description": "Your creatures are immune to Confused.",
   "material_name": "Bio Scrap",
   "search_text": "Sorcery Bio Bot Modron Big Brained Your creatures are immune to Confused. Bio Scrap",
-  "uid": "bffd3a"
+  "uid": "bffd3a",
+  "stats": {
+   "health": 38,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 20,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
   "family": "Modron",
   "creature": "Brave Little Bot",
   "trait_name": "Bravely Inspired",
-  "trait_description": "This creature starts battles with 1 Maximum Health. After this creature is killed, it grants your other creatures 35% of its stats (other than Health).",
+  "trait_description": "After this creature is killed, it grants your other creatures 25% of its stats.",
   "material_name": "Dull Scrap",
-  "search_text": "Sorcery Brave Little Bot Modron Bravely Inspired This creature starts battles with 1 Maximum Health. After this creature is killed, it grants your other creatures 35% of its stats (other than Health). Dull Scrap",
-  "uid": "94e319"
+  "search_text": "Sorcery Brave Little Bot Modron Bravely Inspired After this creature is killed, it grants your other creatures 25% of its stats. Dull Scrap",
+  "uid": "94e319",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 20,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15246,7 +16667,16 @@
   "trait_description": "This creature is immune to Blighted, Confused, and Poisoned.",
   "material_name": "Junkyard Scrap",
   "search_text": "Sorcery Junkyard Bot Modron Junkyard Might This creature is immune to Blighted, Confused, and Poisoned. Junkyard Scrap",
-  "uid": "d707c5"
+  "uid": "d707c5",
+  "stats": {
+   "health": 41,
+   "attack": 16,
+   "intelligence": 16,
+   "defense": 20,
+   "speed": 20,
+   "total": 113
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15256,7 +16686,16 @@
   "trait_description": "After your creatures take damage that exceeds 25% of their Maximum Health, they gain a Barrier that absorbs damage equal to 100% of the damage taken.\nThis trait does not stack.",
   "material_name": "Shield Scrap",
   "search_text": "Sorcery Sentry Bot Modron Shall Not Pass After your creatures take damage that exceeds 25% of their Maximum Health, they gain a Barrier that absorbs damage equal to 100% of the damage taken.\nThis trait does not stack. Shield Scrap",
-  "uid": "e46b9e"
+  "uid": "e46b9e",
+  "stats": {
+   "health": 39,
+   "attack": 14,
+   "intelligence": 14,
+   "defense": 22,
+   "speed": 19,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15266,7 +16705,16 @@
   "trait_description": "Your creatures have a 50% chance to avoid Silenced and Scorned. This trait does not stack.",
   "material_name": "Enchanted Scrap",
   "search_text": "Sorcery Wizard's Companion Modron Uninterrupted Your creatures have a 50% chance to avoid Silenced and Scorned. This trait does not stack. Enchanted Scrap",
-  "uid": "55717f"
+  "uid": "55717f",
+  "stats": {
+   "health": 38,
+   "attack": 15,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 20,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15276,7 +16724,16 @@
   "trait_description": "After your creatures manually Cast a spell, they Defend. This trait does not stack.",
   "material_name": "Sentry Scrap",
   "search_text": "Sorcery Wizard's Defender Modron Protect the Glass Cannon After your creatures manually Cast a spell, they Defend. This trait does not stack. Sentry Scrap",
-  "uid": "446078"
+  "uid": "446078",
+  "stats": {
+   "health": 43,
+   "attack": 18,
+   "intelligence": 13,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -15458,7 +16915,16 @@
   "trait_description": "At the start of battle, your creatures gain a Spell Gem for each Mythicant creature fighting on your side. This trait does not stack.",
   "material_name": "Magi's Tale",
   "search_text": "Sorcery Mythicant Calti Mythicant Of Rituals Unbound At the start of battle, your creatures gain a Spell Gem for each Mythicant creature fighting on your side. This trait does not stack. Magi's Tale",
-  "uid": "38faef"
+  "uid": "38faef",
+  "stats": {
+   "health": 35,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15468,7 +16934,16 @@
   "trait_description": "After your creatures take damage from a spell, they deal damage to a random enemy equal to 25% of their Intelligence. This trait does not stack.",
   "material_name": "Noble's Tale",
   "search_text": "Sorcery Mythicant Erdhe Mythicant Of Blood Untamed After your creatures take damage from a spell, they deal damage to a random enemy equal to 25% of their Intelligence. This trait does not stack. Noble's Tale",
-  "uid": "9ed6ef"
+  "uid": "9ed6ef",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15478,7 +16953,16 @@
   "trait_description": "Your creatures have 3% more stats (other than Health) for each Mythicant creature fighting on your side. This trait does not stack.",
   "material_name": "Survivor's Tale",
   "search_text": "Sorcery Mythicant Palmira Mythicant Of Grace Unending Your creatures have 3% more stats (other than Health) for each Mythicant creature fighting on your side. This trait does not stack. Survivor's Tale",
-  "uid": "9f3867"
+  "uid": "9f3867",
+  "stats": {
+   "health": 36,
+   "attack": 16,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 106
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15488,7 +16972,16 @@
   "trait_description": "At the start of battle, your creatures gain 3 random traits. This trait does not stack.",
   "material_name": "People's Tale",
   "search_text": "Sorcery Mythicant Populi Mythicant Of Creation Undivided At the start of battle, your creatures gain 3 random traits. This trait does not stack. People's Tale",
-  "uid": "cfc819"
+  "uid": "cfc819",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 16,
+   "speed": 18,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15498,7 +16991,16 @@
   "trait_description": "Your creatures have a 50% chance to resist being forcibly lowered on the Timeline. This trait does not stack.",
   "material_name": "Orphan's Tale",
   "search_text": "Sorcery Mythicant Pryderis Mythicant Of Hearts Unbowed Your creatures have a 50% chance to resist being forcibly lowered on the Timeline. This trait does not stack. Orphan's Tale",
-  "uid": "2b1b08"
+  "uid": "2b1b08",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -15508,7 +17010,16 @@
   "trait_description": "At the start of your creatures' turns, they recover 15% Health for each Mythicant creature fighting on your side. This trait does not stack.",
   "material_name": "Minstrel's Tale",
   "search_text": "Sorcery Mythicant Solis Mythicant Of Determination Unyielding At the start of your creatures' turns, they recover 15% Health for each Mythicant creature fighting on your side. This trait does not stack. Minstrel's Tale",
-  "uid": "25513c"
+  "uid": "25513c",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -15528,7 +17039,16 @@
   "trait_description": "After your creatures are healed, they heal your other creatures for 25% of this amount. Your creatures receive 50% less healing. This trait does not stack.",
   "material_name": "Devoted Thread of Fate",
   "search_text": "Life Nephilim Cleric Nephilim Mender's Oath After your creatures are healed, they heal your other creatures for 25% of this amount. Your creatures receive 50% less healing. This trait does not stack. Devoted Thread of Fate",
-  "uid": "255cb1"
+  "uid": "255cb1",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -15538,7 +17058,16 @@
   "trait_description": "After your creatures gain a stat (other than Health), they grant 25% of this stat to your other creatures as well. Your creatures gain 50% less stats. This trait does not stack.",
   "material_name": "Noble Thread of Fate",
   "search_text": "Life Nephilim Lord Nephilim Heightened Learning After your creatures gain a stat (other than Health), they grant 25% of this stat to your other creatures as well. Your creatures gain 50% less stats. This trait does not stack. Noble Thread of Fate",
-  "uid": "55fd62"
+  "uid": "55fd62",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -15548,7 +17077,16 @@
   "trait_description": "At the start of this creature's turn, it deals damage to enemies equal to 20% of its lowest stat.",
   "material_name": "Volatile Thread of Fate",
   "search_text": "Life Nephilim Scion Nephilim Unbound Corruption At the start of this creature's turn, it deals damage to enemies equal to 20% of its lowest stat. Volatile Thread of Fate",
-  "uid": "5ff05b"
+  "uid": "5ff05b",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -15558,7 +17096,16 @@
   "trait_description": "After your creatures take damage, your other creatures take 25% of this damage as well. Your creatures take 50% less damage. This trait does not stack.",
   "material_name": "Stoic Thread of Fate",
   "search_text": "Life Nephilim Shieldbearer Nephilim Stand As One After your creatures take damage, your other creatures take 25% of this damage as well. Your creatures take 50% less damage. This trait does not stack. Stoic Thread of Fate",
-  "uid": "6cbb4c"
+  "uid": "6cbb4c",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -15568,7 +17115,16 @@
   "trait_description": "Your creatures deal damage with attacks based on 25% of all their stats (other than Health).",
   "material_name": "Violent Thread of Fate",
   "search_text": "Life Nephilim Skirmisher Nephilim Balanced Swordplay Your creatures deal damage with attacks based on 25% of all their stats (other than Health). Violent Thread of Fate",
-  "uid": "8d6d2e"
+  "uid": "8d6d2e",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Life",
@@ -15578,7 +17134,16 @@
   "trait_description": "Your creatures deal damage with spells based on 25% of all their stats (other than Health).",
   "material_name": "Arcane Thread of Fate",
   "search_text": "Life Nephilim Sorcerer Nephilim Balanced Spellcasting Your creatures deal damage with spells based on 25% of all their stats (other than Health). Arcane Thread of Fate",
-  "uid": "b11c66"
+  "uid": "b11c66",
+  "stats": {
+   "health": 38,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -15598,7 +17163,16 @@
   "trait_description": "After this creature Attacks, it deals 50% of this damage to all other enemies. This creature deals 12% less damage with attacks for each living enemy.",
   "material_name": "Sketch Paper",
   "search_text": "Chaos Nihilist Ender Nihilist Nihilism After this creature Attacks, it deals 50% of this damage to all other enemies. This creature deals 12% less damage with attacks for each living enemy. Sketch Paper",
-  "uid": "f1a0fd"
+  "uid": "f1a0fd",
+  "stats": {
+   "health": 35,
+   "attack": 25,
+   "intelligence": 5,
+   "defense": 15,
+   "speed": 25,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -15608,7 +17182,16 @@
   "trait_description": "After a creature is killed, your creatures gain 50% of its Attack. This trait does not stack.",
   "material_name": "Hourglass Sand",
   "search_text": "Chaos Nihilist Paralyzer Nihilist Careful Planning After a creature is killed, your creatures gain 50% of its Attack. This trait does not stack. Hourglass Sand",
-  "uid": "912d68"
+  "uid": "912d68",
+  "stats": {
+   "health": 35,
+   "attack": 25,
+   "intelligence": 5,
+   "defense": 15,
+   "speed": 25,
+   "total": 105
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -15618,7 +17201,16 @@
   "trait_description": "After your creatures Attack, the target's Speed is decreased by 20%. This trait does not stack.",
   "material_name": "Scepter Prism",
   "search_text": "Chaos Nihilist Protector Nihilist Riverside After your creatures Attack, the target's Speed is decreased by 20%. This trait does not stack. Scepter Prism",
-  "uid": "9e743f"
+  "uid": "9e743f",
+  "stats": {
+   "health": 33,
+   "attack": 26,
+   "intelligence": 6,
+   "defense": 16,
+   "speed": 26,
+   "total": 107
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -15628,7 +17220,16 @@
   "trait_description": "After your creatures Attack, they have a 20% chance to afflict the target with a random debuff. This trait does not stack.",
   "material_name": "Ink of Eternity",
   "search_text": "Chaos Nihilist Sealer Nihilist Accelerated Harvest After your creatures Attack, they have a 20% chance to afflict the target with a random debuff. This trait does not stack. Ink of Eternity",
-  "uid": "16ac00"
+  "uid": "16ac00",
+  "stats": {
+   "health": 37,
+   "attack": 26,
+   "intelligence": 6,
+   "defense": 16,
+   "speed": 26,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -15638,7 +17239,16 @@
   "trait_description": "Your creatures deal 5% more damage with spells for each time they've Attacked in the current battle. This trait does not stack.",
   "material_name": "Small Doll",
   "search_text": "Chaos Nihilist Seeker Nihilist Knowledge Is Power Your creatures deal 5% more damage with spells for each time they've Attacked in the current battle. This trait does not stack. Small Doll",
-  "uid": "c7e71e"
+  "uid": "c7e71e",
+  "stats": {
+   "health": 31,
+   "attack": 21,
+   "intelligence": 7,
+   "defense": 17,
+   "speed": 27,
+   "total": 103
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Chaos",
@@ -15648,7 +17258,16 @@
   "trait_description": "Your creatures take 5% less damage (up to 90%) from attacks and spells for each time they've Attacked in the current battle. This trait does not stack.",
   "material_name": "Pale Feather",
   "search_text": "Chaos Nihilist Summoner Nihilist Intuition Your creatures take 5% less damage (up to 90%) from attacks and spells for each time they've Attacked in the current battle. This trait does not stack. Pale Feather",
-  "uid": "1c86e9"
+  "uid": "1c86e9",
+  "stats": {
+   "health": 38,
+   "attack": 26,
+   "intelligence": 6,
+   "defense": 16,
+   "speed": 26,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -18922,6 +20541,16 @@
  {
   "class": "Death",
   "family": "Sea Shambler",
+  "creature": "Shambler Benefactor",
+  "trait_name": "Your Monsters Are People",
+  "trait_description": "Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.",
+  "material_name": "Benefactor Hook",
+  "search_text": "Death Shambler Benefactor Sea Shambler Your Monsters Are People Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack. Benefactor Hook",
+  "uid": "aa88ac"
+ },
+ {
+  "class": "Death",
+  "family": "Sea Shambler",
   "creature": "Shambler Juggernaut",
   "trait_name": "Perpetual Disease",
   "trait_description": "Enemies' Blighted debuffs can't ever be removed.",
@@ -19544,11 +21173,11 @@
   "class": "Sorcery",
   "family": "Shapeshifter",
   "creature": "Shapeshifter Novice",
-  "trait_name": "Transformation Apprenticeship",
+  "trait_name": "Rapid Learning",
   "trait_description": "Your Shapeshifters start battles with 1 additional trait. This trait does not stack.",
   "material_name": "Apprentice Plasma",
-  "search_text": "Sorcery Shapeshifter Novice Shapeshifter Transformation Apprenticeship Your Shapeshifters start battles with 1 additional trait. This trait does not stack. Apprentice Plasma",
-  "uid": "4886c1",
+  "search_text": "Sorcery Shapeshifter Novice Shapeshifter Rapid Learning Your Shapeshifters start battles with 1 additional trait. This trait does not stack. Apprentice Plasma",
+  "uid": "1363b1",
   "stats": {
    "health": 40,
    "attack": 18,
@@ -20713,8 +22342,8 @@
   "creature": "Battrap",
   "trait_name": "Debacle",
   "trait_description": "After an enemy is healed, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack",
-  "material_name": "Bat Pitcher.",
-  "search_text": "Nature Battrap Snaptrap Debacle After an enemy is healed, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack Bat Pitcher.",
+  "material_name": "Bat Pitcher",
+  "search_text": "Nature Battrap Snaptrap Debacle After an enemy is healed, it has a 25% chance to be sent to the bottom of the Timeline. This trait does not stack Bat Pitcher",
   "uid": "fcab71",
   "stats": {
    "health": 42,
@@ -21260,7 +22889,16 @@
   "trait_description": "At the start of battle, this creature gains Firestorm. After this creature Casts this spell, it gains Invisible and 20% Intelligence.",
   "material_name": "Ashen Pelt",
   "search_text": "Sorcery Ashskin Spellmane Spellmane Flamestalker At the start of battle, this creature gains Firestorm. After this creature Casts this spell, it gains Invisible and 20% Intelligence. Ashen Pelt",
-  "uid": "50abf5"
+  "uid": "50abf5",
+  "stats": {
+   "health": 41,
+   "attack": 14,
+   "intelligence": 24,
+   "defense": 14,
+   "speed": 19,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -21270,7 +22908,16 @@
   "trait_description": "At the start of battle, this creature gains Whirlwind. After this creature Casts this spell, it gains Invisible and 20% Intelligence.",
   "material_name": "Cloudy Pelt",
   "search_text": "Sorcery Cloudskin Spellmane Spellmane Skystalker At the start of battle, this creature gains Whirlwind. After this creature Casts this spell, it gains Invisible and 20% Intelligence. Cloudy Pelt",
-  "uid": "a721f4"
+  "uid": "a721f4",
+  "stats": {
+   "health": 38,
+   "attack": 13,
+   "intelligence": 25,
+   "defense": 15,
+   "speed": 20,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -21280,7 +22927,16 @@
   "trait_description": "At the start of battle, this creature gains Sandstorm. After this creature Casts this spell, it gains Invisible and 20% Attack.",
   "material_name": "Dry Pelt",
   "search_text": "Sorcery Dryskin Spellmane Spellmane Sandstalker At the start of battle, this creature gains Sandstorm. After this creature Casts this spell, it gains Invisible and 20% Attack. Dry Pelt",
-  "uid": "f6d1c8"
+  "uid": "f6d1c8",
+  "stats": {
+   "health": 39,
+   "attack": 14,
+   "intelligence": 24,
+   "defense": 14,
+   "speed": 19,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -21290,7 +22946,16 @@
   "trait_description": "At the start of battle, this creature gains Snowstorm. After this creature Casts this spell, it gains Invisible and 20% Attack.",
   "material_name": "Rime Pelt",
   "search_text": "Sorcery Rimeskin Spellmane Spellmane Snowstalker At the start of battle, this creature gains Snowstorm. After this creature Casts this spell, it gains Invisible and 20% Attack. Rime Pelt",
-  "uid": "983380"
+  "uid": "983380",
+  "stats": {
+   "health": 38,
+   "attack": 13,
+   "intelligence": 23,
+   "defense": 16,
+   "speed": 18,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -21300,7 +22965,16 @@
   "trait_description": "At the start of battle, this creature gains Acid Rain. After this creature Casts this spell, it gains Invisible and 20% Speed.",
   "material_name": "Venomous Pelt",
   "search_text": "Sorcery Venomskin Spellmane Spellmane Vilestalker At the start of battle, this creature gains Acid Rain. After this creature Casts this spell, it gains Invisible and 20% Speed. Venomous Pelt",
-  "uid": "29437f"
+  "uid": "29437f",
+  "stats": {
+   "health": 43,
+   "attack": 13,
+   "intelligence": 23,
+   "defense": 13,
+   "speed": 18,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Sorcery",
@@ -21310,7 +22984,16 @@
   "trait_description": "At the start of battle, this creature gains Chain Lightning. After this creature Casts this spell, it gains Invisible and 20% Speed.",
   "material_name": "Voltatic Pelt",
   "search_text": "Sorcery Voltskin Spellmane Spellmane Staticstalker At the start of battle, this creature gains Chain Lightning. After this creature Casts this spell, it gains Invisible and 20% Speed. Voltatic Pelt",
-  "uid": "566805"
+  "uid": "566805",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 25,
+   "defense": 13,
+   "speed": 18,
+   "total": 111
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -22024,9 +23707,9 @@
   "family": "Tanukrook",
   "creature": "Tanukrook",
   "trait_name": "Monster Crown",
-  "trait_description": "At the start of this creature's turn, it kills your other creatures and gains 20% of their stats.",
+  "trait_description": "At the start of this creature's turn, it kills your other creatures and gains 20% of their stats (other than Health).",
   "material_name": "Tanukrook Pact",
-  "search_text": "Nature Tanukrook Tanukrook Monster Crown At the start of this creature's turn, it kills your other creatures and gains 20% of their stats. Tanukrook Pact",
+  "search_text": "Nature Tanukrook Tanukrook Monster Crown At the start of this creature's turn, it kills your other creatures and gains 20% of their stats (other than Health). Tanukrook Pact",
   "uid": "2913f9",
   "stats": {
    "health": 31,
@@ -22037,36 +23720,6 @@
    "total": 104
   },
   "sprite_filename": "spr_crits_battle_792.png"
- },
- {
-  "class": "Nether Boss",
-  "family": "Toxdweller",
-  "creature": "Spoonor",
-  "trait_name": "Spoonor's Breath",
-  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",
-  "material_name": "Spoonor's Spoon",
-  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Breath At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%. Spoonor's Spoon",
-  "uid": "4cfdd0"
- },
- {
-  "class": "Nether Boss",
-  "family": "Toxdweller",
-  "creature": "Spoonor",
-  "trait_name": "Spoonor's Gift",
-  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%.",
-  "material_name": "Spoonor's Spork",
-  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Gift At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%. Spoonor's Spork",
-  "uid": "97010f"
- },
- {
-  "class": "Nether Boss",
-  "family": "Toxdweller",
-  "creature": "Spoonor",
-  "trait_name": "Spoonor's Other Breath",
-  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%.",
-  "material_name": "Spoonor's Fork",
-  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Other Breath At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%. Spoonor's Fork",
-  "uid": "c6296d"
  },
  {
   "class": "Chaos",
@@ -22172,6 +23825,36 @@
    "total": 105
   },
   "sprite_filename": "spr_crits_battle_1787.png"
+ },
+ {
+  "class": "Nether Boss",
+  "family": "Toxdweller",
+  "creature": "Spoonor",
+  "trait_name": "Spoonor's Breath",
+  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",
+  "material_name": "Spoonor's Spoon",
+  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Breath At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%. Spoonor's Spoon",
+  "uid": "4cfdd0"
+ },
+ {
+  "class": "Nether Boss",
+  "family": "Toxdweller",
+  "creature": "Spoonor",
+  "trait_name": "Spoonor's Gift",
+  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%.",
+  "material_name": "Spoonor's Spork",
+  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Gift At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%. Spoonor's Spork",
+  "uid": "97010f"
+ },
+ {
+  "class": "Nether Boss",
+  "family": "Toxdweller",
+  "creature": "Spoonor",
+  "trait_name": "Spoonor's Other Breath",
+  "trait_description": "At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%.",
+  "material_name": "Spoonor's Fork",
+  "search_text": "Nether Boss Spoonor Toxdweller Spoonor's Other Breath At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%. Spoonor's Fork",
+  "uid": "c6296d"
  },
  {
   "class": "Rodian Master",
@@ -22812,57 +24495,111 @@
   "trait_description": "At the start of your Uralos creatures' turns, they recover Health equal to 25% of their highest stat. This trait does not stack.",
   "material_name": "Unidentified Flask",
   "search_text": "Nature Uralos Healer Uralos Healing Aura At the start of your Uralos creatures' turns, they recover Health equal to 25% of their highest stat. This trait does not stack. Unidentified Flask",
-  "uid": "aba65e"
+  "uid": "aba65e",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Uralos",
   "creature": "Uralos Knight",
   "trait_name": "Formation",
-  "trait_description": "After your Uralos creatures take damage from an attack or spell, they gain 20% Attack and Defense. This trait does not stack.",
+  "trait_description": "After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack.",
   "material_name": "Battered Shield",
-  "search_text": "Nature Uralos Knight Uralos Formation After your Uralos creatures take damage from an attack or spell, they gain 20% Attack and Defense. This trait does not stack. Battered Shield",
-  "uid": "d6f185"
+  "search_text": "Nature Uralos Knight Uralos Formation After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack. Battered Shield",
+  "uid": "d6f185",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Uralos",
   "creature": "Uralos Savage",
   "trait_name": "Hunger for Blood",
-  "trait_description": "After your Uralos creatures Attack, they afflict the enemy with Bleeding. Your Uralos creatures always have Agile.",
+  "trait_description": "After your Uralos creatures Attack, your Uralos creatures gain 10% Attack. This trait does not stack.",
   "material_name": "Bloodstained Claw",
-  "search_text": "Nature Uralos Savage Uralos Hunger for Blood After your Uralos creatures Attack, they afflict the enemy with Bleeding. Your Uralos creatures always have Agile. Bloodstained Claw",
-  "uid": "a67382"
+  "search_text": "Nature Uralos Savage Uralos Hunger for Blood After your Uralos creatures Attack, your Uralos creatures gain 10% Attack. This trait does not stack. Bloodstained Claw",
+  "uid": "a67382",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Uralos",
   "creature": "Uralos Spearmaster",
   "trait_name": "War Dance",
-  "trait_description": "After your creatures dodge, your Uralos creatures gain 20% Attack and Speed. This trait does not stack.",
+  "trait_description": "After your creatures Defend or Provoke, your Uralos creatures gain 20% Speed. This trait does not stack.",
   "material_name": "Primitive Spear",
-  "search_text": "Nature Uralos Spearmaster Uralos War Dance After your creatures dodge, your Uralos creatures gain 20% Attack and Speed. This trait does not stack. Primitive Spear",
-  "uid": "2eb1db"
+  "search_text": "Nature Uralos Spearmaster Uralos War Dance After your creatures Defend or Provoke, your Uralos creatures gain 20% Speed. This trait does not stack. Primitive Spear",
+  "uid": "2eb1db",
+  "stats": {
+   "health": 40,
+   "attack": 18,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 112
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Uralos",
   "creature": "Uralos Spellslinger",
   "trait_name": "Escalation",
-  "trait_description": "After your creatures manually Cast a spell, your Uralos creatures gain 20% Attack and Intelligence. This trait does not stack.",
+  "trait_description": "After your Uralos creatures manually Cast a spell, your Uralos creatures gain 35%  Intelligence. This trait does not stack.",
   "material_name": "Arcane Staff",
-  "search_text": "Nature Uralos Spellslinger Uralos Escalation After your creatures manually Cast a spell, your Uralos creatures gain 20% Attack and Intelligence. This trait does not stack. Arcane Staff",
-  "uid": "6888d5"
+  "search_text": "Nature Uralos Spellslinger Uralos Escalation After your Uralos creatures manually Cast a spell, your Uralos creatures gain 35%  Intelligence. This trait does not stack. Arcane Staff",
+  "uid": "6888d5",
+  "stats": {
+   "health": 42,
+   "attack": 17,
+   "intelligence": 17,
+   "defense": 17,
+   "speed": 17,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
   "family": "Uralos",
   "creature": "Uralos Trickster",
   "trait_name": "Cull the Weak",
-  "trait_description": "After your Uralos creatures Attack enemies with Bleeding, they have a 15% chance to be killed. This trait does not stack.",
+  "trait_description": "After an enemy is killed, your Uralos creatures gain 15% stats. This trait does not stack.",
   "material_name": "Envenomed Dagger",
-  "search_text": "Nature Uralos Trickster Uralos Cull the Weak After your Uralos creatures Attack enemies with Bleeding, they have a 15% chance to be killed. This trait does not stack. Envenomed Dagger",
-  "uid": "7140aa"
+  "search_text": "Nature Uralos Trickster Uralos Cull the Weak After an enemy is killed, your Uralos creatures gain 15% stats. This trait does not stack. Envenomed Dagger",
+  "uid": "7140aa",
+  "stats": {
+   "health": 40,
+   "attack": 15,
+   "intelligence": 18,
+   "defense": 18,
+   "speed": 18,
+   "total": 109
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
@@ -23279,9 +25016,9 @@
   "family": "Vortex",
   "creature": "Sulfuric Vortex",
   "trait_name": "Spiral Ward",
-  "trait_description": "This creature takes 2% less damage from spells for every 1% Health it is missing.",
+  "trait_description": "This creature takes 2% less damage (up to 90%) from spells for every 1% Health it is missing.",
   "material_name": "Sulfuric Wind",
-  "search_text": "Sorcery Sulfuric Vortex Vortex Spiral Ward This creature takes 2% less damage from spells for every 1% Health it is missing. Sulfuric Wind",
+  "search_text": "Sorcery Sulfuric Vortex Vortex Spiral Ward This creature takes 2% less damage (up to 90%) from spells for every 1% Health it is missing. Sulfuric Wind",
   "uid": "f36243",
   "stats": {
    "health": 31,
@@ -23541,7 +25278,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Cursed and decreases their Speed by 15%.",
   "material_name": "Baleful Tusk",
   "search_text": "Nature Accursed Warhog Warhog Spirit Eater After this creature Attacks, it afflicts the target with Cursed and decreases their Speed by 15%. Baleful Tusk",
-  "uid": "dc1218"
+  "uid": "dc1218",
+  "stats": {
+   "health": 38,
+   "attack": 23,
+   "intelligence": 8,
+   "defense": 16,
+   "speed": 23,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -23551,7 +25297,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Disarmed and decreases their Attack by 15%.",
   "material_name": "Bladed Tusk",
   "search_text": "Nature Barbed Warhog Warhog Blade Eater After this creature Attacks, it afflicts the target with Disarmed and decreases their Attack by 15%. Bladed Tusk",
-  "uid": "0d119a"
+  "uid": "0d119a",
+  "stats": {
+   "health": 39,
+   "attack": 24,
+   "intelligence": 9,
+   "defense": 14,
+   "speed": 24,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -23561,7 +25316,16 @@
   "trait_description": "After your Warhog creatures afflict an enemy with a debuff, they gain a random buff. This trait does not stack.",
   "material_name": "Gold Tusk",
   "search_text": "Nature Dire Warhog Warhog Hog Wild After your Warhog creatures afflict an enemy with a debuff, they gain a random buff. This trait does not stack. Gold Tusk",
-  "uid": "9d5573"
+  "uid": "9d5573",
+  "stats": {
+   "health": 38,
+   "attack": 23,
+   "intelligence": 8,
+   "defense": 16,
+   "speed": 23,
+   "total": 108
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -23571,7 +25335,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Silenced and decreases their Intelligence by 15%.",
   "material_name": "Runic Tusk",
   "search_text": "Nature Mystic Warhog Warhog Magic Eater After this creature Attacks, it afflicts the target with Silenced and decreases their Intelligence by 15%. Runic Tusk",
-  "uid": "5fd43c"
+  "uid": "5fd43c",
+  "stats": {
+   "health": 43,
+   "attack": 23,
+   "intelligence": 8,
+   "defense": 13,
+   "speed": 23,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -23581,7 +25354,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Blighted and decreases their lowest stat by 30%.",
   "material_name": "Corroded Tusk",
   "search_text": "Nature Oozing Warhog Warhog Life Eater After this creature Attacks, it afflicts the target with Blighted and decreases their lowest stat by 30%. Corroded Tusk",
-  "uid": "dcb397"
+  "uid": "dcb397",
+  "stats": {
+   "health": 39,
+   "attack": 24,
+   "intelligence": 9,
+   "defense": 14,
+   "speed": 24,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Nature",
@@ -23591,7 +25373,16 @@
   "trait_description": "After this creature Attacks, it afflicts the target with Vulnerable and decreases their Defense by 15%.",
   "material_name": "Armored Tusk",
   "search_text": "Nature Plated Warhog Warhog Steel Eater After this creature Attacks, it afflicts the target with Vulnerable and decreases their Defense by 15%. Armored Tusk",
-  "uid": "403afe"
+  "uid": "403afe",
+  "stats": {
+   "health": 39,
+   "attack": 24,
+   "intelligence": 9,
+   "defense": 14,
+   "speed": 24,
+   "total": 110
+  },
+  "sprite_filename": "spr_crits_battle_placeholder.png"
  },
  {
   "class": "Rodian Master",
