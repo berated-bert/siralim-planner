@@ -1,4 +1,4 @@
-Siralim Ultimate,,Version 1.0.3,,Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402,
+Siralim Ultimate,,Version 1.0.4,,Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402,
 Class,Family,Creature,Trait Name,Trait Description,Material Name
 Death,Abomination,Abomination Brute,Flesh Rot,"After an enemy is afflicted with either Weak or Vulnerable, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Brute Stitches
 Death,Abomination,Abomination Volatile,Quell,"When this creature Attacks an enemy with Vulnerable, it deals 100% more damage. If this damage exceeds 35% of the target's Current Health, the target dies.",Volatile Stitches
@@ -348,7 +348,7 @@ Life,Beacon,Lappet Beacon,Due Recompense,"Your Nature creatures and Beacon creat
 Life,Beacon,Luna Beacon,Forbearance Forgone,"Your Sorcery creatures and Beacon creatures always have Protected.
 After an enemy Sorcery creature Casts a spell, that Spell Gem is Sealed and this creature's Spell Gems gain 1 Charge.",Stoic's Lantern
 Life,Beacon,Pellucid Beacon,Purity and Emptiness,"Your Life creatures and Beacon creatures always have Berserk. When an enemy Life creature would heal on of its allies, it heals one of your creatures instead.",Zealot's Lantern
-Life,Beacon,Rosy Beacon,Eternal Reprieve,"At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack.",Mendicant's Lantern
+Life,Beacon,Rosy Beacon,Eternal Reprieve,"At the start of each of your creature's turns, all of your creatures have a 25% chance to recover 20% Health. This trait does not stack.",Mendicant's Lantern
 Rodian Master,Beacon,Mastery Trait,Master of Beacons,"At the start of battle, your Beacons' stats are averaged and then increased by 25%. This trait does not stack.",Sigil of the Beacon
 Nature,Brownie,Blademaster,Overkill,"After this creature attacks, and the damage exceeds 35% of the target's Maximum Health, enemies take 70% of this damage as well.",Blademaster Maul
 Nature,Brownie,Brownie Brute,Ultimatum,"After this creature Attacks, it deals damage to the target and enemies adjacent to the target equal to 50% of this creature's Current Health.",Brute Maul
@@ -831,7 +831,7 @@ Chaos,Godspawn,Rengas,Rodian Aftermath,This creature deals 30% more damage with 
 Death,Godspawn,Saurel,Syndicate,"At the start of your Godspawn creatures' third turns, they transform into their corresponding Avatar.",Particle of Saurel
 Life,Godspawn,Tenbran,To Move On Is To Grow,This creature's attacks deal 100% more damage if it Cast a spell last turn. This creature's spells deal 100% more damage if it Attacked last turn.,Particle of Tenbran
 Nature,Godspawn,Thana,Negative Noise,"While this creature is at 100% Health, it has a 90% chance to avoid damage.",Particle of Thana
-Death,Godspawn,The Lost,Beyond Oblivion,This creature is considered to be adjacent to all your creatures.,Particle of The Lost
+Death,Godspawn,The Lost,Beyond Oblivion,This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack.,Particle of The Lost
 Death,Godspawn,Tisya,Heartrage,"At the end of each creature's turn, this creature deals damage to a random enemy equal to 80% of its lowest stat.",Particle of Tisya
 Nature,Godspawn,Ugat,Karma,"After this creature Attacks or is damaged by an attack or spell, it gains 50% of its lowest stat.",Particle of Ugat
 Death,Godspawn,Walken,Closure,"At the end of this creature's turn, it gains 35% Current and Maximum Health and Provokes.",Particle of Walken
@@ -1061,12 +1061,12 @@ Chaos,Minotaur,Minotaur Skullcrusher,Rise to Fall,"After this creature Attacks, 
 Chaos,Minotaur,Minotaur Warrior,Blood Crazed,"After this creature is Attacked, it gains 35% Attack and recovers Health equal to 40% of the damage taken.",Warrior Plate
 Rodian Master,Minotaur,Mastery Trait,Master of Minotaurs,Your Minotaurs Attack 1 additional time for each Minotaur fighting on your side. Your creatures deal 50% less damage. This trait does not stack.,Sigil of the Minotaur
 Nature,Mite,Mite Gravedigger,Cradle to the Grave,"After your creatures are killed, they have a 15% chance to resurrect with 50% Health for each dead creature on your side. This trait does not stack.",Gravedigger Goo
-Nature,Mite,Mite Interloper,Corrosion,"After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 50% of the amount of damage dealt.",Interloper Goo
-Nature,Mite,Mite Invader,Exacerbate,"After this creature Attacks, it increases the duration of the target's debuffs by 3 turns.",Invader Goo
+Nature,Mite,Mite Interloper,Corrosion,"After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 100% of the amount of damage dealt.",Interloper Goo
+Nature,Mite,Mite Invader,Neon Grave,"After this creature attacks, it has a 35% chance to cast Affliction.",Invader Goo
 Nature,Mite,Mite Paralyzer,Swell,"After this creature Attacks, it afflicts the target with a random debuff for each debuff the target already has.",Paralyzer Goo
-Nature,Mite,Mite Plaguespreader,Villainy Thrives,The potency of the enemies' Poisoned and Burning debuffs are shared with each other but reduced by 65%. This trait does not stack.,Plaguespreader Goo
+Nature,Mite,Mite Plaguespreader,Villainy Thrives,The potency of the enemies' Poisoned and Burning debuffs are shared with each other. This trait does not stack.,Plaguespreader Goo
 Nature,Mite,Mite Skirmisher,Intensify,"After this creature Attacks, it increases the potency of the target's Poisoned and Burning debuffs by 50%.",Skirmisher Goo
-Nature,Mite,Mite Webweaver,Viscous Webs,"At the start of each enemy's turn, they take damage equal to 10% of their Current Health for each Snared, Sleeping, and Feared debuff they have. This trait does not stack.",Webweaver Goo
+Nature,Mite,Mite Webweaver,Viscous Webs,Enemies take 25% more damage for each debuff they have that they're resistant to. This trait does not stack.,Webweaver Goo
 Rodian Master,Mite,Mastery Trait,Master of Mites,Your Mites have a 5% chance to avoid damage for each Mite fighting on your side. This trait does not stack.,Sigil of the Mite
 Sorcery,Modron,Bio Bot,Big Brained,Your creatures are immune to Confused.,Bio Scrap
 Sorcery,Modron,Brave Little Bot,Bravely Inspired,"After this creature is killed, it grants your other creatures 25% of its stats.",Dull Scrap
@@ -1156,7 +1156,7 @@ Rodian Master,Ossein,Mastery Trait,Master of Osseins,"If all the creatures in yo
 Life,Paragon,Amethyst Paragon,Amethyst Attunement,All creatures' Ethereal Spell Gems are created with only 1 Charge.,Giant Amethyst
 Life,Paragon,Bismuth Paragon,Bismuth Attunement,Creatures gain 50% less stats. This trait does not stack.,Bismuth Jewel
 Life,Paragon,Chocolate Paragon,Chocolate Attunement,Creatures cannot gain buffs.,Chocolate Egg
-Life,Paragon,Diamond Paragon,Diamond Attunement,All Spell Gems can never be sealed.,Giant Diamond
+Life,Paragon,Diamond Paragon,Diamond Attunement,All Spell Gems are 50% more potent. This trait does not stack.,Giant Diamond
 Life,Paragon,Emerald Paragon,Emerald Attunement,All creatures deal 50% more damage. This trait does not stack.,Giant Emerald
 Life,Paragon,Opal Paragon,Opal Attunement,Creatures cannot lose stats.,Giant Opal
 Life,Paragon,Ruby Paragon,Ruby Attunement,All creatures have 75% more health. This trait does not stack.,Giant Ruby
@@ -1306,7 +1306,7 @@ Death,Sea Shambler,Amorphous Shambler,The Sickness,"After an enemy is healed, it
 Death,Sea Shambler,Innocent Shambler,Appetite For Eschar,"After your creatures deal damage as a result of Blighted, they recover health equal to 100% of the damage dealt. This trait does not stack.",Innocent Hook
 Death,Sea Shambler,Lugubrious Shambler,Aggravated Illness,Enemies take 50% more damage from Blighted. This trait does not stack.,Lugubrious Hook
 Death,Sea Shambler,Shambler Benefactor,Your Monsters Are People,Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.,Benefactor Hook
-Death,Sea Shambler,Shambler Juggernaut,Perpetual Disease,Enemies' Blighted debuffs can't ever be removed.,Juggernaut Hook
+Death,Sea Shambler,Shambler Juggernaut,Vicar's Blessing,"After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack.",Juggernaut Hook
 Death,Sea Shambler,Shambler Recruiter,Chronic Affliction,"After an enemy takes damage from Blighted, it has a 50% chance to take the same amount of damage again. This trait does not stack.",Recruiter Hook
 Death,Sea Shambler,Shambler Rescuer,Retrograde,Enemies with Blighted receive 50% more healing from all sources. This trait does not stack.,Benefactor Hook
 Rodian Master,Sea Shambler,Mastery Trait,Master of Sea Shamblers,"If all the creatures in your party are Sea Shamblers, they take 12% less damage for each enemy that is afflicted with Blighted. This trait does not stack.",Sigil of the Sea Shambler
@@ -1547,7 +1547,7 @@ Nether Boss,Unicorn,Qila,Qila's Defiance,"While your creatures have Barrier, the
 Nether Boss,Unicorn,Qila,Qila's Safeguard,"While your creatures have Barrier, they take 40% less damage. This trait does not stack.",Qila's Horn
 Rodian Master,Unicorn,Mastery Trait,Master of Unicorns,Your Unicorns Attack 2 additional times. This trait does not stack.,Sigil of the Unicorns
 Nature,Uralos,Uralos Healer,Healing Aura,"At the start of your Uralos creatures' turns, they recover Health equal to 25% of their highest stat. This trait does not stack.",Unidentified Flask
-Nature,Uralos,Uralos Knight,Formation,"After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack.",Battered Shield
+Nature,Uralos,Uralos Knight,Formation,"After your Uralos creatures take damage from an attack or spell, they gain 5% Defense. This trait does not stack.",Battered Shield
 Nature,Uralos,Uralos Savage,Hunger for Blood,"After your Uralos creatures Attack, your Uralos creatures gain 10% Attack. This trait does not stack.",Bloodstained Claw
 Nature,Uralos,Uralos Spearmaster,War Dance,"After your creatures Defend or Provoke, your Uralos creatures gain 20% Speed. This trait does not stack.",Primitive Spear
 Nature,Uralos,Uralos Spellslinger,Escalation,"After your Uralos creatures manually Cast a spell, your Uralos creatures gain 35%  Intelligence. This trait does not stack.",Arcane Staff

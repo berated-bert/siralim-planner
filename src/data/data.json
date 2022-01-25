@@ -4637,9 +4637,9 @@
   "family": "Beacon",
   "creature": "Rosy Beacon",
   "trait_name": "Eternal Reprieve",
-  "trait_description": "At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack.",
+  "trait_description": "At the start of each of your creature's turns, all of your creatures have a 25% chance to recover 20% Health. This trait does not stack.",
   "material_name": "Mendicant's Lantern",
-  "search_text": "Life Rosy Beacon Beacon Eternal Reprieve At the start of each of your creature's turns, your creatures recover 5% Health. This trait does not stack. Mendicant's Lantern",
+  "search_text": "Life Rosy Beacon Beacon Eternal Reprieve At the start of each of your creature's turns, all of your creatures have a 25% chance to recover 20% Health. This trait does not stack. Mendicant's Lantern",
   "uid": "e54175",
   "stats": {
    "health": 38,
@@ -12757,9 +12757,9 @@
   "family": "Godspawn",
   "creature": "The Lost",
   "trait_name": "Beyond Oblivion",
-  "trait_description": "This creature is considered to be adjacent to all your creatures.",
+  "trait_description": "This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack.",
   "material_name": "Particle of The Lost",
-  "search_text": "Death The Lost Godspawn Beyond Oblivion This creature is considered to be adjacent to all your creatures. Particle of The Lost",
+  "search_text": "Death The Lost Godspawn Beyond Oblivion This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack. Particle of The Lost",
   "uid": "f76282",
   "stats": {
    "health": 36,
@@ -16502,9 +16502,9 @@
   "family": "Mite",
   "creature": "Mite Interloper",
   "trait_name": "Corrosion",
-  "trait_description": "After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 50% of the amount of damage dealt.",
+  "trait_description": "After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 100% of the amount of damage dealt.",
   "material_name": "Interloper Goo",
-  "search_text": "Nature Mite Interloper Mite Corrosion After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 50% of the amount of damage dealt. Interloper Goo",
+  "search_text": "Nature Mite Interloper Mite Corrosion After this creature Attacks, it afflicts the target with Blighted. If the target is already afflicted with Blighted, the target is healed for 100% of the amount of damage dealt. Interloper Goo",
   "uid": "c645b2",
   "stats": {
    "health": 28,
@@ -16520,20 +16520,11 @@
   "class": "Nature",
   "family": "Mite",
   "creature": "Mite Invader",
-  "trait_name": "Exacerbate",
-  "trait_description": "After this creature Attacks, it increases the duration of the target's debuffs by 3 turns.",
+  "trait_name": "Neon Grave",
+  "trait_description": "After this creature attacks, it has a 35% chance to cast Affliction.",
   "material_name": "Invader Goo",
-  "search_text": "Nature Mite Invader Mite Exacerbate After this creature Attacks, it increases the duration of the target's debuffs by 3 turns. Invader Goo",
-  "uid": "bd97cc",
-  "stats": {
-   "health": 30,
-   "attack": 20,
-   "intelligence": 15,
-   "defense": 20,
-   "speed": 20,
-   "total": 105
-  },
-  "sprite_filename": "spr_crits_battle_2348.png"
+  "search_text": "Nature Mite Invader Mite Neon Grave After this creature attacks, it has a 35% chance to cast Affliction. Invader Goo",
+  "uid": "372f75"
  },
  {
   "class": "Nature",
@@ -16559,9 +16550,9 @@
   "family": "Mite",
   "creature": "Mite Plaguespreader",
   "trait_name": "Villainy Thrives",
-  "trait_description": "The potency of the enemies' Poisoned and Burning debuffs are shared with each other but reduced by 65%. This trait does not stack.",
+  "trait_description": "The potency of the enemies' Poisoned and Burning debuffs are shared with each other. This trait does not stack.",
   "material_name": "Plaguespreader Goo",
-  "search_text": "Nature Mite Plaguespreader Mite Villainy Thrives The potency of the enemies' Poisoned and Burning debuffs are shared with each other but reduced by 65%. This trait does not stack. Plaguespreader Goo",
+  "search_text": "Nature Mite Plaguespreader Mite Villainy Thrives The potency of the enemies' Poisoned and Burning debuffs are shared with each other. This trait does not stack. Plaguespreader Goo",
   "uid": "a12f47",
   "stats": {
    "health": 29,
@@ -16597,9 +16588,9 @@
   "family": "Mite",
   "creature": "Mite Webweaver",
   "trait_name": "Viscous Webs",
-  "trait_description": "At the start of each enemy's turn, they take damage equal to 10% of their Current Health for each Snared, Sleeping, and Feared debuff they have. This trait does not stack.",
+  "trait_description": "Enemies take 25% more damage for each debuff they have that they're resistant to. This trait does not stack.",
   "material_name": "Webweaver Goo",
-  "search_text": "Nature Mite Webweaver Mite Viscous Webs At the start of each enemy's turn, they take damage equal to 10% of their Current Health for each Snared, Sleeping, and Feared debuff they have. This trait does not stack. Webweaver Goo",
+  "search_text": "Nature Mite Webweaver Mite Viscous Webs Enemies take 25% more damage for each debuff they have that they're resistant to. This trait does not stack. Webweaver Goo",
   "uid": "c2192e",
   "stats": {
    "health": 30,
@@ -18041,9 +18032,9 @@
   "family": "Paragon",
   "creature": "Diamond Paragon",
   "trait_name": "Diamond Attunement",
-  "trait_description": "All Spell Gems can never be sealed.",
+  "trait_description": "All Spell Gems are 50% more potent. This trait does not stack.",
   "material_name": "Giant Diamond",
-  "search_text": "Life Diamond Paragon Paragon Diamond Attunement All Spell Gems can never be sealed. Giant Diamond",
+  "search_text": "Life Diamond Paragon Paragon Diamond Attunement All Spell Gems are 50% more potent. This trait does not stack. Giant Diamond",
   "uid": "e333f8",
   "stats": {
    "health": 38,
@@ -20552,20 +20543,11 @@
   "class": "Death",
   "family": "Sea Shambler",
   "creature": "Shambler Juggernaut",
-  "trait_name": "Perpetual Disease",
-  "trait_description": "Enemies' Blighted debuffs can't ever be removed.",
+  "trait_name": "Vicar's Blessing",
+  "trait_description": "After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack.",
   "material_name": "Juggernaut Hook",
-  "search_text": "Death Shambler Juggernaut Sea Shambler Perpetual Disease Enemies' Blighted debuffs can't ever be removed. Juggernaut Hook",
-  "uid": "ac9462",
-  "stats": {
-   "health": 26,
-   "attack": 23,
-   "intelligence": 23,
-   "defense": 18,
-   "speed": 13,
-   "total": 103
-  },
-  "sprite_filename": "spr_crits_battle_1450.png"
+  "search_text": "Death Shambler Juggernaut Sea Shambler Vicar's Blessing After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack. Juggernaut Hook",
+  "uid": "db8107"
  },
  {
   "class": "Death",
@@ -24511,9 +24493,9 @@
   "family": "Uralos",
   "creature": "Uralos Knight",
   "trait_name": "Formation",
-  "trait_description": "After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack.",
+  "trait_description": "After your Uralos creatures take damage from an attack or spell, they gain 5% Defense. This trait does not stack.",
   "material_name": "Battered Shield",
-  "search_text": "Nature Uralos Knight Uralos Formation After your Uralos creatures take damage from an attack or spell, they gain 25% Defense. This trait does not stack. Battered Shield",
+  "search_text": "Nature Uralos Knight Uralos Formation After your Uralos creatures take damage from an attack or spell, they gain 5% Defense. This trait does not stack. Battered Shield",
   "uid": "d6f185",
   "stats": {
    "health": 42,
