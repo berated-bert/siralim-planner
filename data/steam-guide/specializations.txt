@@ -1,0 +1,40 @@
+Hell Knight,HK
+Reaver,RE
+Pyromancer,PM
+Necromancer,NM
+Defiler,DE
+Animator,AN
+Bloodmage,BM
+Cleric,CL
+Inquisitor,IN
+Monk,MO
+Warden,WA
+Witch Doctor,WD
+Evoker,EV
+Cabalist,CA
+Sorcerer,SO
+Paladin,PA
+Druid,DR
+Tribalist,TB
+Trickster,TR
+Astrologer,AS
+Doombringer,DO
+Grovetender,GR
+Purgatorian,PU
+Rune Knight,RK
+Spellweaver,SP
+Dreamshade,DS
+Siegemaster,SM
+Windrunner,WR
+Fanatic,FA
+Toxicologist,TX
+Shadowbringer,SB
+Engineer,EN
+Brewmaster,BR
+Demonologist,DM
+Gladiator,GD
+Graveborn,GB
+Mime,MI
+Deprived,DP
+Pariah,PH
+Royal,RO
