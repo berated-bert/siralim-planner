@@ -31,28 +31,22 @@ Sorcerer,SO,"Sorcerers are masters of controlling the battlefield. Why worry abo
 As a Sorcerer, you'll support your creatures by debilitating their enemies from afar. Generally, your enemies won't be able to act for the first few turns in battle as long as you're around."
 Paladin,PA,"Eye for an eye, tooth for a tooth. Paladins are patient combatants who prefer to allow their enemies to strike first, and then return the favor tenfold with holy fury.
 As a Paladin, your creatures will be able to endure even the most powerful of attacks. Each time your creatures take damage, they'll also damage their enemies.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Druid,DR,"Many people foolishly mistake a Druid's introversion for weakness. These magi believe that quality always trumps quantity on the battlefield. Contrary to tradition, they are often seen with fewer than six creatures at their disposal, but the havoc their limited numbers wreak when augmented by Druidic magic is a sight to behold.
 As a Druid, you'll probably only want to have one (or up to three, later on) creatures in your party. Your creatures will gain massive benefits for being part of a smaller party.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Tribalist,TB,"Strength in numbers. Tribalists prefer to use creatures that belong to the same race or class, and take full advantage of the synergy and camaraderie they offer each other.
 As a Tribalist, you'll want to assemble a party of creatures that belong to the same race. This will provide them with significant benefits that are exacerbated by their racial synergies with each other.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Trickster,TR,"Luck is not merely a matter of chance, but instead a force that can be manipulated to a clever man's will. Tricksters capitalize on this fact, enabling their creatures to re-roll the proverbial dice whenever fate doesn't turn out quite they way they hoped.
 As a Trickster, you'll heavily inconvenience enemies by preventing them from taking action. You'll also gain the ability to manipulate the element of luck - for example, if a positive effect has a chance to activate but fails to do so, you can try again.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Astrologer,AS,"Astrologers are magi who specialize in creating a sound strategy before each battle. Oftentimes, their plans are so well-constructed that their creatures are able to take combat into their own hands without any further input from their master.
 As an Astrologer, you'll plan most of your battle strategies before combat even begins. Astrologers allow their creatures to act on their own under certain conditions.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Doombringer,DO,"The Doombringer draws magic from the Bastion of the Void to fuel his creatures with vast amounts of power. Doombringers specialize in allowing their creatures to perform actions multiple times in a row, all while nullifying his enemies' efforts.
 As a Doombringer, your creatures' on-action effects (on-attack, on-cast, etc) can activate additional times, allowing you to chain brutal combos together to devastate your enemies. Doombringers are also able to prevent enemies' on-action effects from occurring as a defensive measure, as well.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Grovetender,GR,"Grovetenders take great pride in their Herbling companions, strongly preferring to focus the bulk of their efforts on this prized creature over all the others. This peculiar mage knows just the right techniques to bring out her Herbling's full potential as it transforms rapidly in combat to wreak havoc on its foes.
 As a Grovetender, you will always have a unique creature in your party called an Herbling. During battle, your creatures' actions will fertilize the Herbling, causing it to rapidly evolve until it turns into an unstoppable force of nature.
 This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
@@ -69,76 +63,57 @@ Defense
 Speed
 20
 Trait: Photomorphogenesis
-After this creature Attacks, it gains 5% Attack. After this creature Casts a spell, it gains 5% Intelligence. After this creature Defends, it gains 5% Defense. After this creature Provokes, it gains 5% Speed.
-Perks"
+After this creature Attacks, it gains 5% Attack. After this creature Casts a spell, it gains 5% Intelligence. After this creature Defends, it gains 5% Defense. After this creature Provokes, it gains 5% Speed."
 Purgatorian,PU,"Purgatorians blur the line between life and death. These mystical spellcasters are able to call upon the spirits of their slain creatures to continue fighting in the afterlife.
 As a Purgatorian, your creatures are able to continue fighting even while they're dead In fact, thanks to your powers, your creatures will be even stronger in the afterlife. Be careful not to let all your creatures die, though, or it's game over!
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Rune Knight,RK,"Rune Knights call upon their runic powers - Cor, Dun, Lua, Nax and Sah - to bolster their creatures' strength and grant them powerful spells that are unavailable anywhere else.
 As a Rune Knight, your creatures will have access to powerful Rune spells. Your creatures can cast these spells to create cumulative bonuses for your entire party.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Spellweaver,SP,"Chaos, Death, Life, Nature and Sorcery: the five components that gave birth to the land of Rodia. Spellweavers can call upon these elements to imbue their creatures with powerful inscriptions to decimate their foes in battle.
 As a Spellweaver, your creatures can cast spells to produce Infusions which can be expended for powerful effects. After your creatures accumulate enough Infusions, they can cast the powerful Colorwave spell to annihilate their enemies.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Dreamshade,DS,"Dreamshades blur the line between dreams and reality. This mystical magi is adept at redirecting his foes' efforts for his own benefit.
 As a Dreamshade, you'll utilize the Inverted debuff to cause your foes' damage to instead heal your creatures, and their healing effects to damage their allies.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Siegemaster,SM,"The Siegemaster is a stalwart protector who amplifies the defenses of his creatures to keep them strong in battle.
 As a Siegemaster, you'll protect your creatures with powerful defensive mechanisms while they reflect damage taken back on their attackers. This specialization makes great use of the Defend command in battle.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Windrunner,WR,"Windrunners are vigilant sentinels who imbue their creatures with unmatched speed and vigor, allowing them to move so quickly that their opponents can't ever catch them.
 As a Windrunner, you'll rely on the Speed stat to outplay your foes. This specialization also offers several ways to disable your enemies and prevent them from passing through your defenses.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Fanatic,FA,"Fanatics devote their lives to serving the gods. From dusk until dawn, these magi toil away at a neverending list of demands to better-serve each of the 21 gods of Rodia. Such devotion is not without purpose, however, for the Fanatic is able to call on the gods' power to serve him in his time of need.
 As a Fanatic, you'll be able to take additional Avatar creatures with you on your journey and empower them and their Ultimate Spell Gems with potent magic. Fanatics also make use of Godspawn creatures and create powerful synergies between them and their Avatar allies.
-NOTE: Fanatic is special even among non-starter specializations, as it requires you to obtain an Avatar creature and bring it to Everett when attempting to start the project to unlock it.
-Perks"
+NOTE: Fanatic is special even among non-starter specializations, as it requires you to obtain an Avatar creature and bring it to Everett when attempting to start the project to unlock it."
 Toxicologist,TX,"Toxicologists spend their days tarrying away at all manner of potions and elixirs that might serve their use in battle. These mad scientists care little for the well-being of their own creatures, equipping them with venomous toxins that grant them enhanced combat prowess at the cost of their own lives.
 As a Toxicologist, you'll use the Poison debuff to inflict massive damage over time to your foes. You'll also Poison your own creatures to generate beneficial effects when they take damage.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Shadowbringer,SB,"The presence of a Shadowbringer spells doom for all who cross its path. This ethereal being bends the light into darkness, sapping its foes' will to live from their hearts.
 As a Shadowbringer, you'll utilize the Blighted debuff to damage your foes using numerous healing effects.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Engineer,EN,"The Engineer's sole purpose in life is to build a bigger and better explosive than last time. This bombastic bombardier belays bombs to its opponent's backs, blasting them back to the bilgewater from whence they were born.
 As an Engineer, you'll strap bombs to enemies and blow them to bits. The Engineer is also accompanied by their greatest invention: the Microbot minion!
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Brewmaster,BR,"The Brewmaster believes that no problem can't be solved with a full mug of beer... or six. This unexpected hero generously distributes all manner of ales and cocktails to friend and foe alike - but all should be wary when the time comes to pay the bill.
-As a Brewmaster, you'll rely on Booze spells to... well... make everyone get really, really drunk.
-Perks"
+As a Brewmaster, you'll rely on Booze spells to... well... make everyone get really, really drunk."
 Demonologist,DM,"The Demonologist is a wicked summoner who conjures terrible demons from the depths of hell to aid his creatures in battle. This chaotic sorcerer uses Greater Demons to do his bidding while sacrificing Lesser Demons to empower his own creatures.
 As a Demonologist, you'll summon powerful demons from the depths of hell to do your bidding.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Gladiator,GD,"The Gladiator is a master of the arena, sporting tremendous proficiency with all manner of weapons. No sword, no axe, no bow is too difficult for this master of armaments to wield.
 As a Gladiator, you'll utilize powerful Arsenal spells to bolster your forces and devastate your opponents. In addition, your creatues' Artifacts will become far stronger than normal.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Graveborn,GB,"The Graveborn is a once-powerful warlock who was killed for his heresy and has since risen from the dead to wreak havoc on the living. This undead spellcaster is capable of bringing his creatures back from the dead with far greater power than before.
 As a Graveborn, you'll bring empowered versions of your creatures back from the dead to wreak havoc on your enemies.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Mime,MI,"While the Mime's own combat prowess leaves much to be desired, it excels at copying it's opponent's actions, turning its enemies' strategy against them to assure victory.
 As a Mime, you'll enable your creatures to copy the actions of your opponents and grow stronger based on how your enemies behave in battle.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature."
 Deprived,DP,"The Deprived was born with nothing and will die with nothing. Cursed with the intelligence of a sponge and the physique of a sickly child, the Deprived must make do with what little fate has left him with.
 As a Deprived, you'll lose access to your most significant sources of power, including Fused traits, Avatar creatures, and Relic effects. This is a Challenge Specialization, and it will not appear at the Goblet of Giving after you unlock it.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature. It is also a Challenge Specialization, meaning it makes you weaker rather than stronger.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature. It is also a Challenge Specialization, meaning it makes you weaker rather than stronger."
 Pariah,PH,"The Pariah is a social outcast who prefers to spend her days in solitude. Though her friends are few, she is resourceful enough to maintain her indepdendence with some success.
 As a Pariah, you'll be forced to fight using a more limited number of creatures than usual. This is a Challenge Specialization, and it will not appear at the Goblet of Giving after you unlock it.
-This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature. It is also a Challenge Specialization, meaning it makes you weaker rather than stronger.
-Perks"
+This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature. It is also a Challenge Specialization, meaning it makes you weaker rather than stronger."
 Royal,RO,"Authority is passed down through generations, but true power must be earned. A master of all professions, the Royal possesses the unique ability to combine the powers of other specializations at will.
 As a Royal, you'll be able to use more Anointments than anyone else, allowing you to create your own, custom specialization.
-NOTE: Royal is special even among non-starter specializations, as it requires you to unlock all other specializations before you can start the project to unlock it.
-Perks"
+NOTE: Royal is special even among non-starter specializations, as it requires you to unlock all other specializations before you can start the project to unlock it."
