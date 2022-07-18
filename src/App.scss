@@ -1,14 +1,15 @@
-@import 'scss/mixins.scss';
-@import 'scss/MonsterPlanner.scss';
-@import 'scss/SpecializationPlanner.scss';
-@import 'scss/MonsterSelectionModal.scss';
+@import "scss/mixins.scss";
+@import "scss/MonsterPlanner.scss";
+@import "scss/SpecializationPlanner.scss";
+@import "scss/MonsterSelectionModal.scss";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #222;
   //background: darken($primary-color, 40);
   background: #dedede;
@@ -19,8 +20,11 @@ html, body {
 * {
   box-sizing: border-box;
 }
-input, button, textarea, select {
-  font-family: 'Roboto', sans-serif;
+input,
+button,
+textarea,
+select {
+  font-family: "Roboto", sans-serif;
 }
 
 hr {
@@ -48,13 +52,17 @@ header {
   span.version-num {
     font-weight: normal;
     font-size: 0.7em;
+    a {
+      text-decoration: underline;
+
+      cursor: pointer;
+    }
   }
   a {
     color: white;
   }
 
   h3 {
-
     font-size: 16px;
   }
   p {
@@ -74,7 +82,7 @@ header {
       align-items: center;
       display: flex;
       margin-left: -25px;
-      @media(max-width: 1720px) {
+      @media (max-width: 1720px) {
         margin-left: 0;
       }
     }
@@ -84,7 +92,7 @@ header {
       justify-content: center;
       flex-direction: row;
 
-      @media(max-width: 992px) {
+      @media (max-width: 992px) {
         display: block;
       }
       p {
@@ -117,10 +125,11 @@ header {
         // }
       }
     }
-    @media(max-width: 600px) {
+    @media (max-width: 600px) {
       display: block;
       text-align: center;
-      .app-header-left, .app-header-right {
+      .app-header-left,
+      .app-header-right {
         width: 100%;
         display: block;
         h3 {
@@ -137,7 +146,6 @@ header {
   }
 
   button {
-
   }
   button span {
     display: inline-block;
@@ -146,7 +154,7 @@ header {
 }
 
 footer {
-  background: #333;//darken($primary-color, 20);
+  background: #333; //darken($primary-color, 20);
   padding: 15px 0px 10px 0;
   font-size: 12px;
   box-shadow: 0 200px 0px 200px #333;
@@ -168,7 +176,7 @@ a {
   width: 1600px;
   margin: 0 auto;
   max-width: 100%;
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     padding: 0 20px;
   }
 }
@@ -183,18 +191,9 @@ h3.section-title {
   font-size: 13px;
 }
 
-
 // #monster-planner h3.section-title {
 //   color: rgba(255, 255, 255, 0.7);
 // }
-
-
-
-
-
-
-
-
 
 .delete-button {
   background: lighten($color-chaos, 10);
@@ -205,7 +204,6 @@ h3.section-title {
   justify-content: center;
   &:hover {
     background: lighten($color-chaos, 15);
-
   }
 }
 
@@ -216,22 +214,17 @@ h3.section-title {
 #monster-planner .monster-row-container {
   .monster-row {
     align-items: center;
-    padding: 3px 4px;   
+    padding: 3px 4px;
     min-height: 27px;
     > * {
       padding-top: 0;
       padding-bottom: 0;
-    } 
+    }
   }
 }
 
 .monster-planner-trait {
-
-
-
 }
-
-
 
 .cls-container {
   display: flex;
@@ -278,7 +271,6 @@ h3.section-title {
   }
 }
 
-
 .col-cls-death {
   color: $color-death;
 }
@@ -294,15 +286,13 @@ h3.section-title {
 .col-cls-sorcery {
   color: $color-sorcery;
 }
-.cls-full-name  {
+.cls-full-name {
   margin-left: 6px;
 }
-
 
 .ReactModal__Content {
   outline: none !important;
 }
-
 
 .modal-overlay {
   background-color: rgba(20, 20, 20, 0.45);
@@ -325,7 +315,6 @@ h3.section-title {
   box-shadow: 2px 2px 4px -3px rgba(0, 0, 0, 0.9);
 }
 
-
 .modal-content-info {
   max-width: 100%;
   width: 1200px;
@@ -338,12 +327,10 @@ h3.section-title {
   }
 }
 
-
 .modal-sm {
   height: auto;
   padding-bottom: 15px;
 }
-
 
 .info-modal {
   line-height: 140%;
@@ -359,11 +346,6 @@ h3.section-title {
     margin-top: 5px;
   }
 }
-
-
-
-
-
 
 .notification {
   padding: 10px;
@@ -416,23 +398,20 @@ h3.section-title {
   margin-top: 15px;
 }
 
-
-
-
-
-
 textarea {
   width: 100%;
 }
 
-input, button, textarea {
-
+input,
+button,
+textarea {
   border: 2px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
   padding: 8px 16px;
   outline: none;
-  &:focus, &:active {
+  &:focus,
+  &:active {
     border-color: lighten($primary-color, 15);
     //background: lighten($primary-color, 50);
   }
@@ -466,7 +445,6 @@ button {
   &.button-lg {
     padding: 16px 32px;
   }
-
 }
 
 .green-tick {
@@ -476,17 +454,16 @@ button {
   color: $color-chaos;
 }
 
-
 .ib {
   display: inline-block;
 }
 
 .mobile-only {
   display: none;
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     display: block;
   }
-  @media(max-width: 992px) {
+  @media (max-width: 992px) {
     &.ib {
       display: inline-block;
     }
@@ -494,7 +471,7 @@ button {
 }
 .mobile-hidden {
   display: block;
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 }
@@ -511,12 +488,10 @@ table {
   }
   tr:nth-child(even) td {
     background: #f1f1f1;
-
   }
 }
 
-
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   main {
     display: block;
   }

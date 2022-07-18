@@ -31,7 +31,7 @@ Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,90,This relic and its bea
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,100,"After an enemy's Inverted debuff wears off, this relic afflicts it with Inverted again. The potency of this debuff is equal to 30% of the bearer's highest stat."
 Health,"Arbiter, Holy Shield of Surathli",,10,"At the start of battle, the bearer gains Shelled."
 Health,"Arbiter, Holy Shield of Surathli",,20,The bearer gains 100% more healing.
-Health,"Arbiter, Holy Shield of Surathli",,30,"At the start of its bearer's turn, this relic Attacks a random enemy."
+Health,"Arbiter, Holy Shield of Surathli",,30,"At the start of its bearer's turnn, this relic Attacks a random enemy."
 Health,"Arbiter, Holy Shield of Surathli",,40,"After the bearer takes damage from an attack or spell, this relic Casts Healing on it."
 Health,"Arbiter, Holy Shield of Surathli",,50,This relic has a 10% chance to prevent damage dealt to its bearer.
 Health,"Arbiter, Holy Shield of Surathli",,60,The bearer gives 100% more healing.
@@ -106,7 +106,7 @@ Attack,"Ferro, Great Axe of Gonfurian",,40,The bearer's Proficient buff is 100% 
 Attack,"Ferro, Great Axe of Gonfurian",,50,"At the start of each enemy's turn, this relic has a 25% chance to Attack it."
 Attack,"Ferro, Great Axe of Gonfurian",,60,The bearer is immune to Disarmed.
 Attack,"Ferro, Great Axe of Gonfurian",,70,"While the bearer has Proficient, 25% of its Attack is added to the potency of its spells."
-Attack,"Ferro, Great Axe of Gonfurian",,80,"When this relic Attacks, it has a 25% chance to damage all enemies."
+Attack,"Ferro, Great Axe of Gonfurian",,80,"When this relic Attacks, it has a 25% chacne to damage all enemies."
 Attack,"Ferro, Great Axe of Gonfurian",,90,The bearer's ♦ Spell Slot has an independent 25% chance to activate.
 Attack,"Ferro, Great Axe of Gonfurian",,100,"At the start of battle, the bearer gains Animated Weapon."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,10,"After the bearer Attacks or is Attacked, it afflicts the enemy with Bleeding."
