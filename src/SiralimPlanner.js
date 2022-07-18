@@ -8,6 +8,7 @@ import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 
 import InfoModal from "./components/InfoModal";
+import ChangelogModal from "./components/ChangelogModal";
 import UploadPartyModal from "./components/UploadPartyModal";
 
 import AppHeader from "./components/AppHeader";
@@ -239,6 +240,7 @@ class SiralimPlanner extends Component {
       monstersInParty: new Set(),
       modalIsOpen: false,
       infoModalIsOpen: false,
+      changelogModalIsOpen: false,
       uploadBuildModalIsOpen: false,
 
       notificationText: null,
@@ -696,6 +698,24 @@ class SiralimPlanner extends Component {
     });
   }
 
+  /**
+   * Open the changelog modal by setting the state accordingly.
+   */
+  openChangelogModal() {
+    this.setState({
+      changelogModalIsOpen: true,
+    });
+  }
+
+  /**
+   * Close the changelog modal by setting the state accordingly.
+   */
+  closeChangelogModal() {
+    this.setState({
+      changelogModalIsOpen: false,
+    });
+  }
+
   // Open the monster selection modal.
   // Set row_id and slot_id to the row_id and slot_id of the trait slot
   // that the user clicked on, respectively.
@@ -1021,6 +1041,7 @@ class SiralimPlanner extends Component {
           randomiseBuild={this.randomiseBuild.bind(this)}
           openUploadBuildModal={this.openUploadBuildModal.bind(this)}
           openInfoModal={this.openInfoModal.bind(this)}
+          openChangelogModal={this.openChangelogModal.bind(this)}
           compendiumVersion={compendium_version}
         />
         <NotificationBanner
@@ -1038,7 +1059,10 @@ class SiralimPlanner extends Component {
           modalIsOpen={this.state.infoModalIsOpen}
           closeModal={this.closeInfoModal.bind(this)}
         />
-
+        <ChangelogModal
+          modalIsOpen={this.state.changelogModalIsOpen}
+          closeModal={this.closeChangelogModal.bind(this)}
+        />
         <div
           className={
             "modal-overlay" + (this.state.modalIsOpen ? " is-open" : "")

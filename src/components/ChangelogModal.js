@@ -1,11 +1,11 @@
 import React, { PureComponent } from "react";
-import InfoSection from "./InfoSection";
+import ChangeLog from "./ChangeLog";
 import Modal from "react-modal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
-class InfoModal extends PureComponent {
+class ChangelogModal extends PureComponent {
   render() {
     return (
       <Modal
@@ -24,11 +24,11 @@ class InfoModal extends PureComponent {
           </button>
         </div>
         <div className="info-modal">
-          <InfoSection />
+          <ChangeLog />
         </div>
       </Modal>
     );
   }
 }
 
-export default InfoModal;
+export default ChangelogModal;

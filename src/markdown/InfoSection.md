@@ -16,6 +16,8 @@ The tool also supports some basic **validation**: if you put a trait from a mons
 
 In the trait selection window, you can **search** for a particular keyword, e.g. if you want to find all creatures that interact with buffs in some way you can type "buff" and the results will be filtered accordingly.
 
+You can type "AND" to search for multiple things, e.g. "defend AND nature" returns all nature creatures who have "defend" in the trait.
+
 ### Sharing builds
 
 Builds can be easily shared - simply copy the URL and send it to someone and they will be able to load your build.

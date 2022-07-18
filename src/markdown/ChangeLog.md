@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.1.1 (18 July 2022)
+
+-   Made the changelog appear when the version number is clicked, and removed the changelog from the info button.
+-   You can now type "AND" in the monster search bar to further refine the results. For example, "defend AND nature" returns all nature creatures who have "defend" in the trait.
+
 ### v1.1.0 (18 July 2022)
 
 -   Updated for game version 1.1.0. Note that at the time of writing this, it is still in the test branch so you'll need to opt in to the test beta to play on this version of the game if you haven't already.

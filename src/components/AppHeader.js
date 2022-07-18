@@ -16,7 +16,10 @@ class AppHeader extends PureComponent {
           <div className="app-header-left">
             <h3>
               Siralim Planner{" "}
-              <span className="version-num" onClick={this.props.openInfoModal}>
+              <span
+                className="version-num"
+                onClick={this.props.openChangelogModal}
+              >
                 v{`${process.env.REACT_APP_VERSION}`}
               </span>
             </h3>
