@@ -1,29 +1,28 @@
-import React, {Component, PureComponent} from 'react';
-import Modal from 'react-modal';
-import _ from 'underscore';
+import React, { Component, PureComponent } from "react";
+import Modal from "react-modal";
+import _ from "underscore";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { faTimes } from '@fortawesome/free-solid-svg-icons'
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons'
-import { faCheck } from '@fortawesome/free-solid-svg-icons'
-import { faSave } from '@fortawesome/free-solid-svg-icons'
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faSave } from "@fortawesome/free-solid-svg-icons";
 
-import icon_attack  from '../icons/attack.png'
-import icon_health  from '../icons/health.png'
-import icon_intelligence from '../icons/intelligence.png'
-import icon_defense   from '../icons/defense.png'
-import icon_speed    from '../icons/speed.png'
+import icon_attack from "../icons/attack.png";
+import icon_health from "../icons/health.png";
+import icon_intelligence from "../icons/intelligence.png";
+import icon_defense from "../icons/defense.png";
+import icon_speed from "../icons/speed.png";
 
-import MonsterClassIcon from './MonsterClassIcon'
-import getTraitErrors from '../functions/getTraitErrors';
+import MonsterClassIcon from "./MonsterClassIcon";
+import getTraitErrors from "../functions/getTraitErrors";
 
 /**
  * A class that corresponds to a single MonsterRow from within the Monster Planning window
  * (i.e. the 6 creatures with 3 traits each) of the Monster Selection page.
  */
 class MonsterPlannerRow extends Component {
-
   /**
    * A function for rendering a particular class (cls).
    * It will render an icon if the class is one of the 5 classes in the game,
@@ -33,15 +32,19 @@ class MonsterPlannerRow extends Component {
    */
   renderClass(cls) {
     let c = this.props.monster.class.toLowerCase();
-    let iconedClass = c === "nature" || c === "chaos" || c === "death" || c === "sorcery" || c === "life";
+    let iconedClass =
+      c === "nature" ||
+      c === "chaos" ||
+      c === "death" ||
+      c === "sorcery" ||
+      c === "life";
 
     return (
-      <React.Fragment> 
-        { iconedClass && <MonsterClassIcon icon={this.props.monster.class} /> }
+      <React.Fragment>
+        {iconedClass && <MonsterClassIcon icon={this.props.monster.class} />}
       </React.Fragment>
-    )
+    );
   }
-
 
   /**
    * The render function.
@@ -53,16 +56,28 @@ class MonsterPlannerRow extends Component {
     return (
       <React.Fragment>
         <div className="trait-slot-class">
-          <span className="mobile-only ib"><b>Class:&nbsp;&nbsp;</b></span>{this.renderClass(m.class)}
+          <span className="mobile-only ib">
+            <b>Class:&nbsp;&nbsp;</b>
+          </span>
+          {this.renderClass(m.class)}
         </div>
         <div className="trait-slot-creature">
-          <span className="mobile-only ib"><b>Creature:&nbsp;</b></span>{m.creature}
+          <span className="mobile-only ib">
+            <b>Creature:&nbsp;</b>
+          </span>
+          {m.creature}
         </div>
         <div className="trait-slot-trait_name">
-          <span className="mobile-only ib"><b>Trait name:&nbsp;</b></span>{m.trait_name}
+          <span className="mobile-only ib">
+            <b>Trait name:&nbsp;</b>
+          </span>
+          {m.trait_name}
         </div>
         <div className={"trait-slot-trait_description"}>
-          <span className="mobile-only ib"><b>Trait description:&nbsp;</b></span>{m.trait_description}
+          <span className="mobile-only ib">
+            <b>Trait description:&nbsp;</b>
+          </span>
+          {m.trait_description}
         </div>
       </React.Fragment>
     );
@@ -73,32 +88,43 @@ class MonsterPlannerRow extends Component {
  * A component that renders the creature sprite.
  */
 class MonsterPlannerCreatureSprite extends PureComponent {
-
   /**
    * The render function
    * @return {ReactComponent} A creature sprite container with the creature sprite inside.
    */
   render() {
     return (
-      <div className={"creature-sprite-container" + (this.props.sprite_filename ? "" : " empty")}>
-        { this.props.sprite_filename &&
-          <div className="creature-sprite" style={{"backgroundImage": "url(/siralim-planner/suapi-battle-sprites/" + this.props.sprite_filename + ")"}}></div>
+      <div
+        className={
+          "creature-sprite-container" +
+          (this.props.sprite_filename ? "" : " empty")
         }
+      >
+        {this.props.sprite_filename && (
+          <div
+            className="creature-sprite"
+            style={{
+              backgroundImage:
+                "url(/siralim-planner/suapi-battle-sprites/" +
+                this.props.sprite_filename +
+                "), " +
+                "url(/siralim-planner/MISSING_MONSTER_SPR.png)",
+            }}
+          ></div>
+        )}
       </div>
     );
   }
 }
 
-
 /**
  * A trait slot on the Monster Planner interface.
  * This provides the functionality for dragging and dropping as well as row validation.
  * @property {Boolean} state.justUpdated Whether this component was recently updated (for highlighting).
- * @property {Timeout} justUpdatedTimeout A timeout to keep track of when this component should consider 
+ * @property {Timeout} justUpdatedTimeout A timeout to keep track of when this component should consider
  *                                        itself no longer just updated.
  */
 class MonsterPlannerTraitSlot extends PureComponent {
-
   /**
    * The constructor
    * @param  {Object} props The props.
@@ -107,32 +133,42 @@ class MonsterPlannerTraitSlot extends PureComponent {
     super(props);
     this.state = {
       justUpdated: false, // set to true when the component has just been updated
-                          // (so that the row flashes, providing some nice visual feedback)
-    }
+      // (so that the row flashes, providing some nice visual feedback)
+    };
     this.justUpdatedTimeout = null;
   }
 
   // If this component updated, set 'justUpdated' to true so that the row flashes for a second.
-  
+
   /**
    * If this component updated, set 'justUpdated' to true so that the row flashes for a second.
    * @param  {Object} prevProps The previous props.
    * @param  {Object} prevState The previous state.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!this.state.justUpdated && !_.isEqual(prevProps.monster, this.props.monster)) this.setJustUpdated();
+    if (
+      !this.state.justUpdated &&
+      !_.isEqual(prevProps.monster, this.props.monster)
+    )
+      this.setJustUpdated();
   }
 
   /**
    * Set just updated to true. When done, create a timeout to set justUpdated to false again after 1s.
    */
   setJustUpdated() {
-    this.setState({
-      justUpdated: true
-    }, () => {
-      window.clearTimeout(this.justUpdatedTimeout);
-      this.justUpdatedTimeout = window.setTimeout( () => this.clearJustUpdated(), 1000);
-    })
+    this.setState(
+      {
+        justUpdated: true,
+      },
+      () => {
+        window.clearTimeout(this.justUpdatedTimeout);
+        this.justUpdatedTimeout = window.setTimeout(
+          () => this.clearJustUpdated(),
+          1000
+        );
+      }
+    );
   }
 
   /**
@@ -141,7 +177,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
   clearJustUpdated() {
     this.setState({
       justUpdated: false,
-    })
+    });
   }
 
   /**
@@ -162,10 +198,20 @@ class MonsterPlannerTraitSlot extends PureComponent {
   renderEmptyRow() {
     return (
       <div className="empty-row">
-        { this.props.error && <span className="trait-slot-error"><FontAwesomeIcon icon={faExclamationTriangle} />Error: {this.props.error}. </span>}
-        {"Click to add a" + (this.props.traitSlotIndex === 0 ? " primary trait" : (this.props.traitSlotIndex === 1 ? " fused trait" : "n artifact trait"))}
+        {this.props.error && (
+          <span className="trait-slot-error">
+            <FontAwesomeIcon icon={faExclamationTriangle} />
+            Error: {this.props.error}.{" "}
+          </span>
+        )}
+        {"Click to add a" +
+          (this.props.traitSlotIndex === 0
+            ? " primary trait"
+            : this.props.traitSlotIndex === 1
+            ? " fused trait"
+            : "n artifact trait")}
       </div>
-    )
+    );
   }
 
   /**
@@ -173,59 +219,70 @@ class MonsterPlannerTraitSlot extends PureComponent {
    * @return {ReactComponent} A div representing a trait slot.
    */
   render() {
-
-    const rowErrors = getTraitErrors(this.props.monster, this.props.traitSlotIndex);
+    const rowErrors = getTraitErrors(
+      this.props.monster,
+      this.props.traitSlotIndex
+    );
     const emptyRow = this.isEmptyRow();
 
     let rowClass = "";
     // If this monster has a class, set rowClass accordingly.
     // This allows the row to be coloured according to the creature's class.
-    if(this.props.monster.class) {
+    if (this.props.monster.class) {
       rowClass = " cls-" + this.props.monster.class.toLowerCase();
-      if(this.props.traitSlotIndex === 2) rowClass = " cls-trait";
+      if (this.props.traitSlotIndex === 2) rowClass = " cls-trait";
     } else {
       rowClass = " cls-empty";
     }
 
     return (
-    <div className="trait-slot">
-
-      <div
-        className={"trait-slot-clickable" + 
-          (this.props.draggable ? " draggable": "") + 
-          (rowErrors ? " invalid-row" : "") + 
-          (this.props.traitSlotIndex === 2 ? " artifact-slot" : "") +
-          (this.state.justUpdated ? " just-updated": "") + 
-          rowClass
-        }
-        draggable={this.props.draggable}
-        onDragStart={this.props.onDragStart()}
-        onDragOver={this.props.onDragOver()}
-        onDrop={this.props.onDrop()}
-
-        onMouseUp={ this.props.onMouseUp}
-
-        title={rowErrors }
-      >
-      { emptyRow ? this.renderEmptyRow() :
-        <MonsterPlannerRow monster={this.props.monster} error={this.props.error} />   
-      }
-
+      <div className="trait-slot">
+        <div
+          className={
+            "trait-slot-clickable" +
+            (this.props.draggable ? " draggable" : "") +
+            (rowErrors ? " invalid-row" : "") +
+            (this.props.traitSlotIndex === 2 ? " artifact-slot" : "") +
+            (this.state.justUpdated ? " just-updated" : "") +
+            rowClass
+          }
+          draggable={this.props.draggable}
+          onDragStart={this.props.onDragStart()}
+          onDragOver={this.props.onDragOver()}
+          onDrop={this.props.onDrop()}
+          onMouseUp={this.props.onMouseUp}
+          title={rowErrors}
+        >
+          {emptyRow ? (
+            this.renderEmptyRow()
+          ) : (
+            <MonsterPlannerRow
+              monster={this.props.monster}
+              error={this.props.error}
+            />
+          )}
+        </div>
+        <div className="trait-slot-controls">
+          {!emptyRow && (
+            <button
+              id={"remove-trait-" + (this.props.traitSlotIndex + 1)}
+              className="delete-button"
+              aria-label="Delete trait"
+              onClick={this.props.clearPartyMember}
+            >
+              <FontAwesomeIcon icon={faTimes} />
+            </button>
+          )}
+        </div>
       </div>
-      <div className="trait-slot-controls">
-        { !emptyRow && <button id={"remove-trait-" + (this.props.traitSlotIndex + 1)} className="delete-button" aria-label="Delete trait" onClick={this.props.clearPartyMember}><FontAwesomeIcon icon={faTimes} /></button>}
-      </div>
-    </div>
-    )
+    );
   }
 }
-
 
 /**
  * A component representing the class of a creature, to be rendered in the monster profile.
  */
 class MonsterPlannerCreatureClass extends PureComponent {
-
   /**
    * The render function.
    * @return {ReactComponent} A div representing the creature class.
@@ -234,23 +291,22 @@ class MonsterPlannerCreatureClass extends PureComponent {
     const monsterClass = this.props.monsterClass;
     return (
       <div className="party-member-class">
-        { monsterClass !== "empty" && <React.Fragment>
-            <MonsterClassIcon icon={monsterClass}/>
+        {monsterClass !== "empty" && (
+          <React.Fragment>
+            <MonsterClassIcon icon={monsterClass} />
             {monsterClass}
           </React.Fragment>
-           }
-        { monsterClass === "empty" && "" }
+        )}
+        {monsterClass === "empty" && ""}
       </div>
-    )
+    );
   }
 }
-
 
 /**
  * A component that shows the stats of a creature, to be rendered in the monster profile.
  */
 class MonsterPlannerCreatureStats extends PureComponent {
-
   /**
    * The render function.
    * @return {ReactComponent} A div containing the monster's stats.
@@ -261,19 +317,18 @@ class MonsterPlannerCreatureStats extends PureComponent {
       attack: "--",
       intelligence: "--",
       defense: "--",
-      speed: "--"
-    }
+      speed: "--",
+    };
     const m1 = this.props.monster_1.stats;
     const m2 = this.props.monster_2.stats;
 
-    if(m1 && !m2) {
+    if (m1 && !m2) {
       stats.health = m1.health;
       stats.attack = m1.attack;
       stats.intelligence = m1.intelligence;
       stats.defense = m1.defense;
       stats.speed = m1.speed;
-    }
-    else if(m1 && m2) {
+    } else if (m1 && m2) {
       stats.health = Math.floor((m1.health + m2.health) / 2);
       stats.attack = Math.floor((m1.attack + m2.attack) / 2);
       stats.intelligence = Math.floor((m1.intelligence + m2.intelligence) / 2);
@@ -282,14 +337,58 @@ class MonsterPlannerCreatureStats extends PureComponent {
     }
 
     return (
-      <div className={"party-member-stats" + (stats.health === "--" ? " empty" : "")}>
-        <span><img src={icon_health} className="class-icon" alt={"stat-health"} title="Health"/><span>{stats.health}</span></span>
-        <span><img src={icon_attack} className="class-icon" alt={"stat-attack"} title="Attack"/><span>{stats.attack}</span></span>
-        <span><img src={icon_intelligence} className="class-icon" alt={"stat-health"} title="Intelligence"/><span>{stats.intelligence}</span></span>
-        <span><img src={icon_defense} className="class-icon" alt={"stat-health"} title="Defense"/><span>{stats.defense}</span></span>
-        <span><img src={icon_speed} className="class-icon" alt={"stat-health"} title="Speed"/><span>{stats.speed}</span></span>
+      <div
+        className={
+          "party-member-stats" + (stats.health === "--" ? " empty" : "")
+        }
+      >
+        <span>
+          <img
+            src={icon_health}
+            className="class-icon"
+            alt={"stat-health"}
+            title="Health"
+          />
+          <span>{stats.health}</span>
+        </span>
+        <span>
+          <img
+            src={icon_attack}
+            className="class-icon"
+            alt={"stat-attack"}
+            title="Attack"
+          />
+          <span>{stats.attack}</span>
+        </span>
+        <span>
+          <img
+            src={icon_intelligence}
+            className="class-icon"
+            alt={"stat-health"}
+            title="Intelligence"
+          />
+          <span>{stats.intelligence}</span>
+        </span>
+        <span>
+          <img
+            src={icon_defense}
+            className="class-icon"
+            alt={"stat-health"}
+            title="Defense"
+          />
+          <span>{stats.defense}</span>
+        </span>
+        <span>
+          <img
+            src={icon_speed}
+            className="class-icon"
+            alt={"stat-health"}
+            title="Speed"
+          />
+          <span>{stats.speed}</span>
+        </span>
       </div>
-    )
+    );
   }
 }
 
@@ -297,17 +396,24 @@ class MonsterPlannerCreatureStats extends PureComponent {
  * A component representing the clickable relic button next to the monster.
  */
 class MonsterPlannerRelicSlot extends PureComponent {
-
   render() {
     return (
-      <div className="party-member-relic-slot" onClick={this.props.onClick} title={this.props.relicName}>
-
-        <div className="relic-sprite"
-             style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.props.sprite_filename + ")"}}></div>
-
-
+      <div
+        className="party-member-relic-slot"
+        onClick={this.props.onClick}
+        title={this.props.relicName}
+      >
+        <div
+          className="relic-sprite"
+          style={{
+            backgroundImage:
+              "url(/siralim-planner/relic_icons/" +
+              this.props.sprite_filename +
+              ")",
+          }}
+        ></div>
       </div>
-    )
+    );
   }
 }
 
@@ -316,7 +422,6 @@ class MonsterPlannerRelicSlot extends PureComponent {
  * @property {String} state.monsterClass The class of the monster.
  */
 class MonsterPlannerPartyMember extends PureComponent {
-
   /**
    * The constructor.
    * @param  {Object} props The props.
@@ -324,8 +429,8 @@ class MonsterPlannerPartyMember extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      monsterClass: "empty"
-    }
+      monsterClass: "empty",
+    };
   }
 
   /**
@@ -333,7 +438,7 @@ class MonsterPlannerPartyMember extends PureComponent {
    */
   componentDidMount() {
     this.setState({
-      monsterClass: this.getMonsterClass()
+      monsterClass: this.getMonsterClass(),
     });
   }
 
@@ -341,9 +446,9 @@ class MonsterPlannerPartyMember extends PureComponent {
    * When component updates, get the class of this monster.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!_.isEqual(prevProps, this.props)) {
+    if (!_.isEqual(prevProps, this.props)) {
       this.setState({
-        monsterClass: this.getMonsterClass()
+        monsterClass: this.getMonsterClass(),
       });
     }
   }
@@ -356,7 +461,7 @@ class MonsterPlannerPartyMember extends PureComponent {
   getMonsterClass() {
     const pm1 = this.props.partyMember[0].monster;
     const pm2 = this.props.partyMember[1].monster;
-    if(pm2 && pm2.class) {
+    if (pm2 && pm2.class) {
       return pm2.class;
     } else if (pm1 && pm1.class) {
       return pm1.class;
@@ -364,59 +469,104 @@ class MonsterPlannerPartyMember extends PureComponent {
     return "empty";
   }
 
-
   /**
    * The render function.
    * @return {ReactComponent} A div representing this party member.
    */
   render() {
     return (
-      <div className={"monster-planner-party-member cls-" + this.state.monsterClass.toLowerCase()}>
-        <div className={"party-member-profile cls-" + this.state.monsterClass.toLowerCase()}>
+      <div
+        className={
+          "monster-planner-party-member cls-" +
+          this.state.monsterClass.toLowerCase()
+        }
+      >
+        <div
+          className={
+            "party-member-profile cls-" + this.state.monsterClass.toLowerCase()
+          }
+        >
           <MonsterPlannerRelicSlot
             onClick={this.props.onRelicClick}
-            relicName={this.props.relic ? this.props.relic.name : "No relic selected"}
-            sprite_filename={this.props.relic ? this.props.relic.abbreviation.toLowerCase() + ".png" : null}/>
-          <MonsterPlannerCreatureSprite sprite_filename={this.props.partyMember[0].monster ? this.props.partyMember[0].monster.sprite_filename : null}/>
-          <MonsterPlannerCreatureStats monster_1={this.props.partyMember[0].monster} monster_2={this.props.partyMember[1].monster}/>
-          <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass}/>
-
+            relicName={
+              this.props.relic ? this.props.relic.name : "No relic selected"
+            }
+            sprite_filename={
+              this.props.relic
+                ? this.props.relic.abbreviation.toLowerCase() + ".png"
+                : null
+            }
+          />
+          <MonsterPlannerCreatureSprite
+            sprite_filename={
+              this.props.partyMember[0].monster
+                ? this.props.partyMember[0].monster.sprite_filename
+                : null
+            }
+          />
+          <MonsterPlannerCreatureStats
+            monster_1={this.props.partyMember[0].monster}
+            monster_2={this.props.partyMember[1].monster}
+          />
+          <MonsterPlannerCreatureClass monsterClass={this.state.monsterClass} />
         </div>
-        <div className={"party-member-traits cls-" + this.state.monsterClass.toLowerCase()}>
-
-          {this.props.partyMember.map((traitSlot, i) => 
+        <div
+          className={
+            "party-member-traits cls-" + this.state.monsterClass.toLowerCase()
+          }
+        >
+          {this.props.partyMember.map((traitSlot, i) => (
             <MonsterPlannerTraitSlot
               monster={traitSlot.monster}
               error={traitSlot.error}
               key={i}
               traitSlotIndex={i}
               draggable="true"
-
-              onDragStart={() => this.props.onDragStart({ partyMemberId: this.props.partyMemberId, traitSlotId: i })}
-              onDragOver={() => this.props.onDragOver({ partyMemberId: this.props.partyMemberId, traitSlotId: i })}
-              onDrop={() => this.props.onDrop({ partyMemberId: this.props.partyMemberId, traitSlotId: i })}
-              onMouseUp={() => this.props.onMouseUp(this.props.partyMemberId, i, traitSlot.monster ? traitSlot.monster : null)}
-
-              clearPartyMember={() => this.props.clearPartyMember(this.props.partyMemberId, i)}
-            />             
-          )}
+              onDragStart={() =>
+                this.props.onDragStart({
+                  partyMemberId: this.props.partyMemberId,
+                  traitSlotId: i,
+                })
+              }
+              onDragOver={() =>
+                this.props.onDragOver({
+                  partyMemberId: this.props.partyMemberId,
+                  traitSlotId: i,
+                })
+              }
+              onDrop={() =>
+                this.props.onDrop({
+                  partyMemberId: this.props.partyMemberId,
+                  traitSlotId: i,
+                })
+              }
+              onMouseUp={() =>
+                this.props.onMouseUp(
+                  this.props.partyMemberId,
+                  i,
+                  traitSlot.monster ? traitSlot.monster : null
+                )
+              }
+              clearPartyMember={() =>
+                this.props.clearPartyMember(this.props.partyMemberId, i)
+              }
+            />
+          ))}
         </div>
       </div>
-    )
+    );
   }
 }
-
 
 /**
  * The relic selection modal.
  */
 class RelicSelectionModal extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       currentRelic: null,
-    }
+    };
   }
 
   /**
@@ -427,12 +577,12 @@ class RelicSelectionModal extends Component {
    * @param  {Object} prevState The previous state.
    */
   componentDidUpdate(prevProps, prevState) {
-    if(!_.isEqual(prevProps.currentRelic, this.props.currentRelic))
-    {
+    if (!_.isEqual(prevProps.currentRelic, this.props.currentRelic)) {
       this.setState({
-        currentRelic: this.props.currentRelic ? this.props.currentRelic : this.props.relicsList[0]
-      })
-
+        currentRelic: this.props.currentRelic
+          ? this.props.currentRelic
+          : this.props.relicsList[0],
+      });
     }
   }
 
@@ -443,15 +593,15 @@ class RelicSelectionModal extends Component {
    */
   handleRelicChange(relic) {
     let currentRelic = null;
-    for(let r of this.props.relicsList) {
-      if(r.abbreviation === relic.abbreviation) {
+    for (let r of this.props.relicsList) {
+      if (r.abbreviation === relic.abbreviation) {
         currentRelic = r;
         break;
       }
     }
     this.setState({
       currentRelic: currentRelic,
-    })
+    });
   }
 
   /**
@@ -461,11 +611,11 @@ class RelicSelectionModal extends Component {
    */
   getStatIcon(stat) {
     let statIcon;
-    if(stat === "Health") statIcon = icon_health;
-    if(stat === "Attack") statIcon = icon_attack;
-    if(stat === "Intelligence") statIcon = icon_intelligence;
-    if(stat === "Defense") statIcon = icon_defense;
-    if(stat === "Speed") statIcon = icon_speed;
+    if (stat === "Health") statIcon = icon_health;
+    if (stat === "Attack") statIcon = icon_attack;
+    if (stat === "Intelligence") statIcon = icon_intelligence;
+    if (stat === "Defense") statIcon = icon_defense;
+    if (stat === "Speed") statIcon = icon_speed;
     return statIcon;
   }
 
@@ -475,51 +625,106 @@ class RelicSelectionModal extends Component {
    */
   render() {
     return (
-      <Modal className="modal-content modal-content-info relic-selection-modal modal-wide "
-             overlayClassName="modal-overlay modal-overlay-info is-open" isOpen={this.props.modalIsOpen}>
+      <Modal
+        className="modal-content modal-content-info relic-selection-modal modal-wide "
+        overlayClassName="modal-overlay modal-overlay-info is-open"
+        isOpen={this.props.modalIsOpen}
+      >
         <div className="modal-header">
-          <h3>Relics <span style={{'marginLeft': '20px'}}>
-            (currently selected: {this.props.currentRelic ? this.props.currentRelic.name : "None"})</span></h3>
-          <button id="close-upload-party-modal" className="modal-close" onClick={this.props.closeModal}><FontAwesomeIcon icon={faTimes} /></button>
+          <h3>
+            Relics{" "}
+            <span style={{ marginLeft: "20px" }}>
+              (currently selected:{" "}
+              {this.props.currentRelic ? this.props.currentRelic.name : "None"})
+            </span>
+          </h3>
+          <button
+            id="close-upload-party-modal"
+            className="modal-close"
+            onClick={this.props.closeModal}
+          >
+            <FontAwesomeIcon icon={faTimes} />
+          </button>
         </div>
 
         <div className="info-modal specialization-selection relic-selection">
           <nav className="specialization-selection-nav">
-            {
-              this.props.relicsList.map((s, i) =>
-                <div key={i} className={"specialization-option " + (_.isEqual(this.state.currentRelic, s) ? "current" : "")
-                  + (_.isEqual(s, this.props.currentRelic) ? " has-anointment" : "")
-                  }
-                  onClick={() => this.handleRelicChange(s)}>
-                  <span className="option-icon" style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + s.abbreviation.toLowerCase() + "_sm.png)"}}></span>
-                  { s.name }
-                </div>
-
-              )
-            }
+            {this.props.relicsList.map((s, i) => (
+              <div
+                key={i}
+                className={
+                  "specialization-option " +
+                  (_.isEqual(this.state.currentRelic, s) ? "current" : "") +
+                  (_.isEqual(s, this.props.currentRelic)
+                    ? " has-anointment"
+                    : "")
+                }
+                onClick={() => this.handleRelicChange(s)}
+              >
+                <span
+                  className="option-icon"
+                  style={{
+                    backgroundImage:
+                      "url(/siralim-planner/relic_icons/" +
+                      s.abbreviation.toLowerCase() +
+                      "_sm.png)",
+                  }}
+                ></span>
+                {s.name}
+              </div>
+            ))}
           </nav>
           <div className="specialization-selection-list">
             <div className="relic-name-header">
               <div className="relic-name-header-name">
                 <h2 className="no-border-bottom">
-                {this.state.currentRelic &&
-                 <span className="relic-icon"
-                       style={{"backgroundImage": "url(/siralim-planner/relic_icons/" + this.state.currentRelic.abbreviation.toLowerCase() + ".png)"}}></span>
-                 }
-                {this.state.currentRelic && this.state.currentRelic.name}</h2>
+                  {this.state.currentRelic && (
+                    <span
+                      className="relic-icon"
+                      style={{
+                        backgroundImage:
+                          "url(/siralim-planner/relic_icons/" +
+                          this.state.currentRelic.abbreviation.toLowerCase() +
+                          ".png)",
+                      }}
+                    ></span>
+                  )}
+                  {this.state.currentRelic && this.state.currentRelic.name}
+                </h2>
                 <h5>
-                {this.state.currentRelic && "Stat bonus: "}
-                {this.state.currentRelic &&
-                  <img className="relic-stat-icon" src={this.getStatIcon(this.state.currentRelic.stat_bonus)} alt="Stat bonus icon"/>}
-                {this.state.currentRelic && this.state.currentRelic.stat_bonus}
+                  {this.state.currentRelic && "Stat bonus: "}
+                  {this.state.currentRelic && (
+                    <img
+                      className="relic-stat-icon"
+                      src={this.getStatIcon(this.state.currentRelic.stat_bonus)}
+                      alt="Stat bonus icon"
+                    />
+                  )}
+                  {this.state.currentRelic &&
+                    this.state.currentRelic.stat_bonus}
                 </h5>
               </div>
               <div className="relic-name-header-button">
-                {_.isEqual(this.state.currentRelic, this.props.currentRelic) ?
-
-                  <button className="selected" onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faCheck}/>Selected</button> :
-                  <button onClick={() => this.props.updateRelic(this.state.currentRelic)}><FontAwesomeIcon icon={faSave}/>Save</button>
-                }
+                {_.isEqual(this.state.currentRelic, this.props.currentRelic) ? (
+                  <button
+                    className="selected"
+                    onClick={() =>
+                      this.props.updateRelic(this.state.currentRelic)
+                    }
+                  >
+                    <FontAwesomeIcon icon={faCheck} />
+                    Selected
+                  </button>
+                ) : (
+                  <button
+                    onClick={() =>
+                      this.props.updateRelic(this.state.currentRelic)
+                    }
+                  >
+                    <FontAwesomeIcon icon={faSave} />
+                    Save
+                  </button>
+                )}
               </div>
             </div>
             <table id="relic-perks-table">
@@ -530,32 +735,30 @@ class RelicSelectionModal extends Component {
                 </tr>
               </thead>
               <tbody>
-                {
-                  this.state.currentRelic && this.state.currentRelic.perks && this.state.currentRelic.perks.map ((perk, i) =>
+                {this.state.currentRelic &&
+                  this.state.currentRelic.perks &&
+                  this.state.currentRelic.perks.map((perk, i) => (
                     <tr key={i}>
                       <td>{perk.rank}</td>
                       <td>{perk.description}</td>
                     </tr>
-                )}
-
+                  ))}
               </tbody>
             </table>
           </div>
         </div>
       </Modal>
-
-    )
+    );
   }
 }
 
 /**
  * The monster planner interface (i.e. the section with 6 party members).
- * Drag and drop Code found here: https://codepen.io/frcodecamp/pen/OEovqx 
+ * Drag and drop Code found here: https://codepen.io/frcodecamp/pen/OEovqx
  * @property {Boolean} state.dragging Whether the user is currently dragging a trait.
  * @property {Ref} myRef A reference for the element of this div.
  */
 class MonsterPlanner extends Component {
-
   /**
    * The constructor
    * @param  {Object} props The props.
@@ -565,47 +768,52 @@ class MonsterPlanner extends Component {
     this.state = {
       dragging: false,
       relicIndex: null, // Index of most recently selected relic.
-    }
+    };
     this.myRef = React.createRef();
   }
 
   // A function to handle the drag start (i.e. when a row is dragged).
-  
+
   /**
    * A function to handle the drag start (i.e. when a row is dragged).
    * @param  {Object} data The data from the drag event.
    */
-  handleDragStart = data => event => {
-    let fromItem = JSON.stringify({ partyMemberId: data.partyMemberId, traitSlotId: data.traitSlotId });
+  handleDragStart = (data) => (event) => {
+    let fromItem = JSON.stringify({
+      partyMemberId: data.partyMemberId,
+      traitSlotId: data.traitSlotId,
+    });
     event.dataTransfer.setData("dragContent", fromItem);
     this.setState({
       dragging: true,
-    })
+    });
   };
 
   /**
    * A function to handle the drag over event.
    * @param  {Object} data The data from the drag event.
    */
-  handleDragOver = data => event => {
+  handleDragOver = (data) => (event) => {
     event.preventDefault(); // Necessary. Allows us to drop.
     this.setState({
       dragging: false,
-    })
+    });
     return false;
   };
-
 
   /**
    * A function to handle the event when dragging something and the mouse button is released.
    * When this happens, the rows are swapped.
    * @param  {Object} data The data from the drag event.
    */
-  handleDrop = data => event => {
+  handleDrop = (data) => (event) => {
     event.preventDefault();
 
     let fromItem = JSON.parse(event.dataTransfer.getData("dragContent"));
-    let toItem = { partyMemberId: data.partyMemberId, traitSlotId: data.traitSlotId };
+    let toItem = {
+      partyMemberId: data.partyMemberId,
+      traitSlotId: data.traitSlotId,
+    };
 
     this.swapItems(fromItem, toItem);
     return false;
@@ -615,7 +823,6 @@ class MonsterPlanner extends Component {
   // Once this swap is complete, pass this update to the parent component
   // so that the monsterPlannerRows are updated.
   // These changes will get propagated back to this component.
-  
 
   /**
    * A function to swap two items.
@@ -634,19 +841,21 @@ class MonsterPlanner extends Component {
     let toPID = toItem.partyMemberId;
     let toTID = toItem.traitSlotId;
 
-    let fromObj = {...this.props.partyMembers[fromPID][fromTID]};
-    let toObj   = {...this.props.partyMembers[toPID][toTID]};
+    let fromObj = { ...this.props.partyMembers[fromPID][fromTID] };
+    let toObj = { ...this.props.partyMembers[toPID][toTID] };
 
     partyMembers[fromPID][fromTID] = toObj;
     partyMembers[toPID][toTID] = fromObj;
 
-    this.setState({ dragging: false }, () => this.props.updatePartyMembers(partyMembers));
+    this.setState({ dragging: false }, () =>
+      this.props.updatePartyMembers(partyMembers)
+    );
   };
 
   // When the mouse button is released while hovering over a row,
   // call the openModal function on the parent of this component.
   // i.e. Open the MonsterSelection modal when a row is clicked.
-  
+
   /**
    * When the mouse button is released while hovering over a row,
    * call the openModal function on the parent of this component.
@@ -666,9 +875,9 @@ class MonsterPlanner extends Component {
   updateRelic(newRelic) {
     const relicIndex = this.state.relicIndex;
     let newRelics = [];
-    for(let i = 0; i < this.props.relics.length; i++) {
+    for (let i = 0; i < this.props.relics.length; i++) {
       newRelics[i] = this.props.relics[i];
-      if(i === relicIndex) {
+      if (i === relicIndex) {
         newRelics[i] = newRelic;
       }
     }
@@ -682,8 +891,8 @@ class MonsterPlanner extends Component {
   openRelicModal(relicIndex) {
     this.setState({
       relicModalIsOpen: true,
-      relicIndex: relicIndex
-    })
+      relicIndex: relicIndex,
+    });
   }
 
   /**
@@ -693,7 +902,7 @@ class MonsterPlanner extends Component {
     this.setState({
       relicModalIsOpen: false,
       relicIndex: null,
-    })
+    });
   }
 
   /**
@@ -703,21 +912,17 @@ class MonsterPlanner extends Component {
   render() {
     return (
       <div id="monster-planner" ref={this.myRef}>
-
         <RelicSelectionModal
           modalIsOpen={this.state.relicModalIsOpen}
           closeModal={this.closeRelicModal.bind(this)}
-
           relicsList={this.props.relicsList}
           currentRelic={this.props.relics[this.state.relicIndex]}
           relicIndex={this.state.relicIndex}
           updateRelic={this.updateRelic.bind(this)}
-
         />
 
-
         <h3 className="section-title">Party</h3>
-        {this.props.partyMembers.map((partyMember, i) => 
+        {this.props.partyMembers.map((partyMember, i) => (
           <MonsterPlannerPartyMember
             key={i}
             partyMember={partyMember}
@@ -725,15 +930,14 @@ class MonsterPlanner extends Component {
             partyMemberId={i}
             relic={this.props.relics[i]}
             onRelicClick={() => this.openRelicModal(i)}
-
             onDragStart={this.handleDragStart.bind(this)}
             onDragOver={this.handleDragOver.bind(this)}
             onDrop={this.handleDrop.bind(this)}
             onMouseUp={this.handleMouseUp.bind(this)}
           />
-        )}
+        ))}
       </div>
-    )
+    );
   }
 }
 
