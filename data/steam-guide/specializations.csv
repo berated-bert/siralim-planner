@@ -1,49 +1,34 @@
 name,abbreviation,description
 Hell Knight,HK,"Careful planning and uptight caution are nothing but a cause to doubt oneself. Hell Knights realize this fact, and instead opt to send their creatures charging headlong into battle, relying on brute strength and reckless attacks to ensure a swift victory.
-As a Hell Knight, you'll favor creatures that specialize in attacking. Hell Knights grant their creatures increased critical damage and cause a variety of effects to occur when they attack. Hell Knights are surprisingly adept at spellcasting in a pinch, as well.
-Starter Creature"
+As a Hell Knight, you'll favor creatures that specialize in attacking. Hell Knights grant their creatures increased critical damage and cause a variety of effects to occur when they attack. Hell Knights are surprisingly adept at spellcasting in a pinch, as well."
 Reaver,RE,"Perseverance, an iron will, and a touch of insanity are the perfect recipe for victory. Reavers live and die by this mantra, instilling their creatures with a cold and calculated anger that allows them to grow more powerful during battle while their foes tire out.
-As a Reaver, your creatures will gain massive benefits in combat as battle continue to drag on. If your creatures manage to survive for just a few extra turns, they'll be able to devastate your enemies.
-Starter Creature"
+As a Reaver, your creatures will gain massive benefits in combat as battle continue to drag on. If your creatures manage to survive for just a few extra turns, they'll be able to devastate your enemies."
 Pyromancer,PM,"Pyromancers quite literally thrive on watching the world burn. These maniacal magi ignite both friend and foe alike with a brilliant conflagration, causing their enemies to suffer gruesome deaths while empowering their allies with the power of flame.
-As a Pyromancer, you'll make heavy use of the Burning debuff to deal damage to enemies over time. In addition, your own creatures will be afflicted with this debuff, but it will heal and empower them rather than dealing damage.
-Starter Creature"
+As a Pyromancer, you'll make heavy use of the Burning debuff to deal damage to enemies over time. In addition, your own creatures will be afflicted with this debuff, but it will heal and empower them rather than dealing damage."
 Necromancer,NM,"Necromancers prefer to overwhelm their foes by summoning minions to aid their creatures in battle. Enemies are often so perplexed by the number of undead monstrosities charging at them from across the battlefield that they're dead long before they realize what even happened.
-As a Necromancer, you'll summon minions to aid your creatures in battle. These minions can do all kinds of things to support your creatures - they can cause damage, boost your creatures' stats, debuff enemies, and much more.
-Starter Creature"
+As a Necromancer, you'll summon minions to aid your creatures in battle. These minions can do all kinds of things to support your creatures - they can cause damage, boost your creatures' stats, debuff enemies, and much more."
 Defiler,DE,"The difference between good and evil is often a matter of perspective, but the morality of a Defiler is simple enough for anyone to decide. These dark magi take sadistic pleasure in afflicting their adversaries with crippling diseases, reducing them to weakened husks that no longer have the capacity to defend themselves.
-As a Defiler, you'll specialize in debuffs and stat-reducing effects. Enemies will be so weak that your party will be able to easily pick them off, even if they were originally much more powerful than your creatures.
-Starter Creature"
+As a Defiler, you'll specialize in debuffs and stat-reducing effects. Enemies will be so weak that your party will be able to easily pick them off, even if they were originally much more powerful than your creatures."
 Animator,AN,"There's a fine line between genius and insanity, and it's difficult to say on what side of that line Animators reside. These fanatical magi spend their days perfecting their Animatus creations: unique creatures that grow more powerful as their master's dark experiments unveil new opportunities.
-As an Animator, you will always have a unique creature in your party called an Animatus. Your entire battle strategy will likely focus on this creature. You can empower your Animatus, and even use your other creatures to make it stronger in combat.
-Starter Creature"
+As an Animator, you will always have a unique creature in your party called an Animatus. Your entire battle strategy will likely focus on this creature. You can empower your Animatus, and even use your other creatures to make it stronger in combat."
 Bloodmage,BM,"The Blood Mage is a deranged spellcaster who is willing to do anything to overcome his foes - even at the cost of his own creatures' lives. This menacing spellcaster is adept at manipulating the lifeforce of allies and foes alike in his endless pursuit for power.
-As a Blood Mage, your creatures will grow more powerful as they take damage. To facilitate these effects, the Blood Mage offers a variety of different ways to inflict damage on his own creatures.
-Starter Creature"
+As a Blood Mage, your creatures will grow more powerful as they take damage. To facilitate these effects, the Blood Mage offers a variety of different ways to inflict damage on his own creatures."
 Cleric,CL,"The best offense, as some say, is a good defense. Clerics protect their creatures with powerful healing abilities and steadfast barriers, ensuring that not even the most tenacious of foes can overcome them.
-As a Cleric, you'll specialize in healing abilities, as well as buffing, resurrection, stat-boosting effects, and providing your creatures with protective barriers. Your creatures will be extremely difficult to kill.
-Starter Creature"
+As a Cleric, you'll specialize in healing abilities, as well as buffing, resurrection, stat-boosting effects, and providing your creatures with protective barriers. Your creatures will be extremely difficult to kill."
 Inquisitor,IN,"Burn the witch, judge the heretic, and slay the non-believer. Inquisitors make use of healing effects just as much for offense as they do for defense. They enact justice on behalf of the gods, and no one will be spared from holy rapture.
-As an Inquisitor, you'll have a solution at your disposal for every problem you encounter. In addition, Inquisitors are able ot use healing effects for offensive purposes - for example, when your creatures heal enemies, they instead cause damage to them.
-Starter Creature"
+As an Inquisitor, you'll have a solution at your disposal for every problem you encounter. In addition, Inquisitors are able ot use healing effects for offensive purposes - for example, when your creatures heal enemies, they instead cause damage to them."
 Monk,MO,"A strong defense is unnecessary when your foe is unable to strike you in the first place. Monks grant their creatures unmatched agility, enabling them to dodge incoming attacks and spells, and respond with devastating counter-attacks.
-As a Monk, you'll boost your creatures' chance to Dodge attacks and spells. When your creatures Dodge, they'll unleash a devastating counter-attack on the enemy.
-Starter Creature"
+As a Monk, you'll boost your creatures' chance to Dodge attacks and spells. When your creatures Dodge, they'll unleash a devastating counter-attack on the enemy."
 Warden,WA,"Wardens are wholly attuned to the needs of their creatures. These powerful magi empower their creatures with various boons to give them an edge over their opponents in battle.
-As a Warden, you'll be able to grant your creatures every buff in existence. In addition, your creatures will grow stronger as they continue to accumulate more buffs.
-Starter Creature"
+As a Warden, you'll be able to grant your creatures every buff in existence. In addition, your creatures will grow stronger as they continue to accumulate more buffs."
 Witch Doctor,WD,"Witch Doctors are spiritual warriors who cast deadly hexes and curses on their enemies, forcing them to fight against each other.
-As a Witch Doctor, you'll manipulate your foes into damaging each other and empowering your creatures to ensure victory.
-Starter Creature"
+As a Witch Doctor, you'll manipulate your foes into damaging each other and empowering your creatures to ensure victory."
 Evoker,EV,"Evokers are the ultimate spellcasters. They excel at casting enhanced versions of spells multiple times in a row to overwhelm their enemies before they can act.
-As an Evoker, you'll empower your creatures' spellcasting capabilities. Your creatures will be able to cast the same spell multiple times in one turn, and these spells will be much stronger than if they had cast them without your guidance.
-Starter Creature"
+As an Evoker, you'll empower your creatures' spellcasting capabilities. Your creatures will be able to cast the same spell multiple times in one turn, and these spells will be much stronger than if they had cast them without your guidance."
 Cabalist,CA,"Cabalists can conjure Spell Gems out of thin air to be used by their creatures at any given moment. These magi prefer to employ high-risk, high-reward battle strategies to ensure their victory.
-As a Cabalist, you'll enable your creatures to cast spells that they normally wouldn't have access to. While other people's creatures might run out of Spell Gem Charges, you'll be able to keep your creatures well-stocked with fresh Spell Gems at the start of every battle.
-Starter Creature"
+As a Cabalist, you'll enable your creatures to cast spells that they normally wouldn't have access to. While other people's creatures might run out of Spell Gem Charges, you'll be able to keep your creatures well-stocked with fresh Spell Gems at the start of every battle."
 Sorcerer,SO,"Sorcerers are masters of controlling the battlefield. Why worry about offense or defense when your enemies can't move to begin with?
-As a Sorcerer, you'll support your creatures by debilitating their enemies from afar. Generally, your enemies won't be able to act for the first few turns in battle as long as you're around.
-Starter Creature"
+As a Sorcerer, you'll support your creatures by debilitating their enemies from afar. Generally, your enemies won't be able to act for the first few turns in battle as long as you're around."
 Paladin,PA,"Eye for an eye, tooth for a tooth. Paladins are patient combatants who prefer to allow their enemies to strike first, and then return the favor tenfold with holy fury.
 As a Paladin, your creatures will be able to endure even the most powerful of attacks. Each time your creatures take damage, they'll also damage their enemies.
 This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.

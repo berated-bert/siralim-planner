@@ -22,7 +22,7 @@ Builds can be easily shared - simply copy the URL and send it to someone and the
 
 ### Acknowledgements and Source Code
 
-The data was sourced from the [Siralim Ultimate Compendium](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0), a fantastic resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool. I would also like to thank rogermicroger for their excellent [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api), from which the creature sprites and stats are obtained.
+The data was sourced from the [Siralim Ultimate Compendium](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0), a fantastic resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool. I would also like to thank rogermicroger for their excellent [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api), from which the creature sprites and stats are obtained. Thanks also to Gay Moth Aunt for compiling all of the specialization info in their excellent [Character Specialization Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).
 
 The **source code** of this tool is available on [GitHub](https://github.com/berated-bert/siralim-planner). If you would like to work on it you are more than welcome to submit a pull request or fork the repository.
 
