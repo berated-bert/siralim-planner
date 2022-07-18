@@ -37,7 +37,7 @@ def get_perks(fn, specs):
                 in_spec = line
                 continue
 
-            if line == "Starter Creature":
+            if line == "Starter Creature" or line == "Perks":
                 in_spec = False
 
             if in_spec:
