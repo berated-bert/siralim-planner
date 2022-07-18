@@ -52,11 +52,10 @@ header {
   span.version-num {
     font-weight: normal;
     font-size: 0.7em;
-    a {
+    &:hover {
       text-decoration: underline;
-
-      cursor: pointer;
     }
+    cursor: pointer;
   }
   a {
     color: white;
