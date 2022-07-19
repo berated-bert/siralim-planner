@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.1.2 (19 July 2022)
+
+-   Fixed small bug with the "MISSING SPRITE" text appearing underneath every creature portrait.
+
 ### v1.1.1 (18 July 2022)
 
 -   Made the changelog appear when the version number is clicked, and removed the changelog from the info button.
@@ -9,7 +13,7 @@
 
 -   Updated for game version 1.1.0. Note that at the time of writing this, it is still in the test branch so you'll need to opt in to the test beta to play on this version of the game if you haven't already.
 -   Please note many of the newer creature sprites are still unavailable, and will be added once they are made available by modders. Same goes for the new specialization sprites.
--   Added "SPRITE NOT FOUND" for creatures currently missing sprites.
+-   Added "MISSING SPRITE" for creatures currently missing sprites.
 
 ### v1.0.4 (28 November 2021)
 

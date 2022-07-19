@@ -107,8 +107,7 @@ class MonsterPlannerCreatureSprite extends PureComponent {
               backgroundImage:
                 "url(/siralim-planner/suapi-battle-sprites/" +
                 this.props.sprite_filename +
-                "), " +
-                "url(/siralim-planner/MISSING_MONSTER_SPR.png)",
+                ")",
             }}
           ></div>
         )}
