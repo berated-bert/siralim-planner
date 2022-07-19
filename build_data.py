@@ -9,7 +9,7 @@ import json
 import hashlib
 import logging as logger
 
-logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.INFO)
+logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.WARNING)
 
 HASH_LENGTH = 6
 SUAPI_DATA_FILENAME = "data/siralim-ultimate-api/creatures.csv"
@@ -195,6 +195,19 @@ def add_sprites_and_stats(json_data: list):
     return json_data
 
 
+def is_creature_class(c: str):
+    """Determine whether the given class is a creature class or
+    something else (backer trait etc).
+
+    Args:
+        c (str): The class name.
+
+    Returns:
+        bool: Whether it is a creature class.
+    """
+    return c in ["Nature", "Death", "Chaos", "Life", "Sorcery"]
+
+
 def validate_traits(json_data: list, suapi_data: dict):
     """For each trait in the json_data, check whether it exists in the SUAPI
     data, and if so, check whether the sprite actually exists.
@@ -207,19 +220,32 @@ def validate_traits(json_data: list, suapi_data: dict):
     """
     n_missing = 0
     n_missing_sprites = 0
-    for obj in json_data:
+    for i, obj in enumerate(json_data):
+        creature = obj["creature"]
         t = obj["trait_name"].lower()
-        if t not in suapi_data:
-            logger.warning(f"[{t}] does not appear in SUAPI data.")
+        c = obj["class"]
+        if is_creature_class(c) and t not in suapi_data:
+            logger.warning(
+                f"[{creature} ({obj['trait_name']})] does not"
+                "appear in SUAPI data."
+            )
             n_missing += 1
             continue
+
+        # If not a creature class that does not appear in suapi data, continue
+        if t not in suapi_data:
+            continue
+
         sf = suapi_data[t]["sprite_filename"]
         if not sprite_exists(sf):
-            logger.warning(f"[{t}] sprite ({sf}) is not present.")
+            logger.info(f"[{creature}] sprite ({sf}) is not present.")
+            json_data[i]["sprite_filename"] = "MISSING.png"
             n_missing_sprites += 1
-    print()
     if n_missing > 0:
-        logger.warning(f"{n_missing} traits are missing from the SUAPI data.")
+        logger.warning(
+            f"{n_missing} traits (attached to creatures) are missing "
+            "from the SUAPI data."
+        )
     if n_missing_sprites > 0:
         logger.warning(
             f"{n_missing_sprites} traits have sprite_filenames "
@@ -236,7 +262,7 @@ def sprite_exists(sprite_filename: str):
         sprite_filename (str): The filename of the sprite.
     """
     return os.path.isfile(
-        os.path.join("public", "suapi_battle_sprites", sprite_filename)
+        os.path.join("public", "suapi-battle-sprites", sprite_filename)
     )
 
 
