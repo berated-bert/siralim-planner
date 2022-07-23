@@ -1,4 +1,4 @@
-@import './mixins.scss';
+@import "./mixins.scss";
 
 $cols: (
   "AN": #777,
@@ -31,11 +31,20 @@ $cols: (
   "WA": #77c4b5,
   "WD": #c2b79f,
   "WR": #4461e5,
+  "TX": #a8b73a,
+  "SB": #672dc2,
+  "EN": #d42a2a,
+  "BR": #ef9c23,
+  "DM": #da0909,
+  "GD": #edd799,
+  "GB": #d7d2bd,
+  "MI": #c8c8b3,
+  "DP": lighten(#20000b, 10),
+  "PH": #2f5cd5,
 );
 
 @each $abrv, $col in $cols {
   .spe-#{$abrv}:after {
-    
   }
   #specialization-planner.spe-#{$abrv} {
     //background: desaturate(lighten($col, 25), 10); //rgba($col, 0.16);
@@ -44,10 +53,11 @@ $cols: (
     // border-right: 4px solid rgba(darken($col, 10), 0.7);
     // border-bottom: 4px solid rgba(darken($col, 10), 0.7);
     .toggle-bar {
-      &:hover { background: rgba(darken($col, 10), 0.5); }
+      &:hover {
+        background: rgba(darken($col, 10), 0.5);
+      }
     }
     .perks-and-anointments-button {
-
       svg {
         margin-right: 10px;
       }
@@ -67,8 +77,6 @@ $cols: (
 // }
 
 #specialization-planner {
-
-  
   position: relative;
   color: rgba(0, 0, 0, 0.95);
   background: #ddd;
@@ -83,12 +91,6 @@ $cols: (
   display: flex;
   flex-direction: column;
   //border-right: 4px solid rgba(0, 0, 0, 0);
-
-
-
-
-
-
 
   p {
     line-height: 140%;
@@ -106,7 +108,6 @@ $cols: (
     outline: none;
     border: 2px solid #bbb;
     border-radius: 3px;
-
   }
 
   .toggle-bar {
@@ -167,15 +168,15 @@ span.option-icon {
   }
 }
 
-
-
 #perks-table {
   width: 100%;
-  th:nth-child(1), td:nth-child(1) {
+  th:nth-child(1),
+  td:nth-child(1) {
     width: 30px;
     text-align: center;
   }
-  th:nth-child(2), td:nth-child(2) {
+  th:nth-child(2),
+  td:nth-child(2) {
     width: 12%;
   }
 
@@ -184,12 +185,10 @@ span.option-icon {
     //user-select: none;
   }
   tr.active {
-    
   }
   tr.active td {
     background: lighten(rgba($primary-color, 0.15), 25);
     font-weight: bold;
-
   }
 
   tr:not(.no-anoint) {
@@ -210,7 +209,6 @@ span.option-icon {
 }
 
 #anointments-table {
-
 }
 
 .flavour-text {
@@ -225,11 +223,10 @@ span.option-icon {
   }
   font-size: 14px;
   margin-top: 20px;
-  border-top: 2px dotted rgba( 0, 0, 0, 0.1);
+  border-top: 2px dotted rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   padding: 15px 0px;
 }
-
 
 .anointments-list {
   font-size: 14px;
@@ -248,9 +245,9 @@ span.option-icon {
     padding: 10px 0;
   }
   .empty-row {
-      text-align: center;
-      margin: 0 auto;
-      width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .trait-slot-controls {
@@ -269,7 +266,7 @@ span.option-icon {
     .anointment-name {
       font-weight: bold;
     }
-    
+
     .anointment-source {
       display: inline-block;
       margin-left: 10px;
@@ -285,12 +282,10 @@ span.option-icon {
   }
 }
 
-
 .specialization-selection {
   display: flex;
   flex-direction: row;
   margin-bottom: 0;
-
 
   > div {
     flex: 1;
@@ -303,10 +298,6 @@ span.option-icon {
   button {
     margin-left: 5px;
   }
-
-
-
-
 
   .specialization-selection-nav {
     align-self: stretch;
@@ -334,7 +325,6 @@ span.option-icon {
       &.has-anointment {
         color: #222;
         font-weight: bold;
-
       }
     }
   }
@@ -345,7 +335,7 @@ span.option-icon {
       padding-bottom: 15px;
       margin-bottom: 15px;
       &:not(.no-border-bottom) {
-        border-bottom: 2px dotted rgba( 0, 0, 0, 0.1);
+        border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
       }
     }
   }
@@ -380,5 +370,4 @@ button.perks-and-anointments-button {
   svg {
     margin-right: 10px;
   }
-
 }
