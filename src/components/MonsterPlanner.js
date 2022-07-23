@@ -105,9 +105,7 @@ class MonsterPlannerCreatureSprite extends PureComponent {
             className="creature-sprite"
             style={{
               backgroundImage:
-                "url(/siralim-planner/suapi-battle-sprites/" +
-                this.props.sprite_filename +
-                ")",
+                "url('/siralim-planner/" + this.props.sprite_filename + "')",
             }}
           ></div>
         )}
