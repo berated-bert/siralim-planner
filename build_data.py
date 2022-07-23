@@ -9,7 +9,7 @@ import json
 import hashlib
 import logging as logger
 
-logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.WARNING)
+logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.INFO)
 
 HASH_LENGTH = 6
 SUAPI_DATA_FILENAME = "data/siralim-ultimate-api/creatures.csv"
@@ -226,7 +226,7 @@ def validate_traits(json_data: list, suapi_data: dict):
         c = obj["class"]
         if is_creature_class(c) and t not in suapi_data:
             logger.warning(
-                f"[{creature} ({obj['trait_name']})] does not"
+                f"[{creature} ({obj['trait_name']})] does not "
                 "appear in SUAPI data."
             )
             n_missing += 1
@@ -237,10 +237,16 @@ def validate_traits(json_data: list, suapi_data: dict):
             continue
 
         sf = suapi_data[t]["sprite_filename"]
-        if not sprite_exists(sf):
+        sprite_path = get_sprite_path(sf, obj["creature"])
+        if not sprite_path:
             logger.info(f"[{creature}] sprite ({sf}) is not present.")
             json_data[i]["sprite_filename"] = "MISSING.png"
             n_missing_sprites += 1
+        else:
+            json_data[i]["sprite_filename"] = sprite_path
+            # A bit hacky, but set the suapi filename to the actual filename
+            # (which may be under forum_avatars).
+
     if n_missing > 0:
         logger.warning(
             f"{n_missing} traits (attached to creatures) are missing "
@@ -254,16 +260,25 @@ def validate_traits(json_data: list, suapi_data: dict):
     print()
 
 
-def sprite_exists(sprite_filename: str):
-    """Return True if the given sprite_filename exists under
-    /public/suapi_battle_sprites, False if not.
+def get_sprite_path(sprite_filename: str, creature_name: str):
+    """Return the sprite_filename.
+    First check whether it exists under
+    /public/suapi_battle_sprites.
+    If not, check under the forum_avatars.
+    If not found, return False.
 
     Args:
         sprite_filename (str): The filename of the sprite.
     """
-    return os.path.isfile(
+    if os.path.isfile(
         os.path.join("public", "suapi-battle-sprites", sprite_filename)
-    )
+    ):
+        return f"suapi-battle-sprites/{sprite_filename}"
+    elif os.path.isfile(
+        os.path.join("public", "forum_avatars", f"{creature_name}.png")
+    ):
+        return f"forum_avatars/{creature_name}.png"
+    return False
 
 
 def load_specializations_data(specs_filename, perks_filename):
