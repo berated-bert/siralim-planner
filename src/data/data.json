@@ -2506,7 +2506,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/T'mere M'rgo.png"
+  "sprite_filename": "new_sprites/Tmere Mrgo.png"
  },
  {
   "class": "Chaos",
@@ -12503,7 +12503,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Grom'Met.png"
+  "sprite_filename": "new_sprites/GromMet.png"
  },
  {
   "class": "Chaos",
@@ -16705,7 +16705,7 @@
    "speed": 20,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Wizard's Companion.png"
+  "sprite_filename": "forum_avatars/Wizards Companion.png"
  },
  {
   "class": "Sorcery",
@@ -16724,7 +16724,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Wizard's Defender.png"
+  "sprite_filename": "forum_avatars/Wizards Defender.png"
  },
  {
   "class": "Rodian Master",
