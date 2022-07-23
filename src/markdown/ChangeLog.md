@@ -3,6 +3,7 @@
 ### v1.1.3 (23 July 2022)
 
 -   Added all the missing creature sprites. Big thanks to Orbit49 on Discord who alerted me to the fact that most of the creature sprites were released as part of an avatars pack on the Siralim Ultimate forums ([link](https://forums.thylacinestudios.com/t/siralim-ultimate-forum-avatars-profile-pictures/8271)).
+-   Added new specialization icons.
 
 ### v1.1.2 (19 July 2022)
 
