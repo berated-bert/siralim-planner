@@ -2088,7 +2088,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/4080.png"
  },
  {
   "class": "Sorcery",
@@ -2126,7 +2126,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Alexandria.png"
  },
  {
   "class": "Nature",
@@ -2145,7 +2145,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Anneltha.png"
  },
  {
   "class": "Nature",
@@ -2183,7 +2183,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Ariamaki.png"
  },
  {
   "class": "Sorcery",
@@ -2297,7 +2297,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Genaros.png"
  },
  {
   "class": "Chaos",
@@ -2392,7 +2392,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Muse.png"
  },
  {
   "class": "Life",
@@ -2430,7 +2430,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Reclusa.png"
  },
  {
   "class": "Nature",
@@ -2468,7 +2468,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Shallan.png"
  },
  {
   "class": "Life",
@@ -2506,7 +2506,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/T'mere M'rgo.png"
  },
  {
   "class": "Chaos",
@@ -10891,7 +10891,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Zombatron.png"
  },
  {
   "class": "Life",
@@ -12275,7 +12275,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/8004.png"
  },
  {
   "class": "Death",
@@ -12294,7 +12294,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Adaxial.png"
  },
  {
   "class": "Sorcery",
@@ -12332,7 +12332,7 @@
    "speed": 16,
    "total": 108
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Akara.png"
  },
  {
   "class": "Nature",
@@ -12484,7 +12484,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Emus.png"
  },
  {
   "class": "Sorcery",
@@ -12503,7 +12503,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Grom'Met.png"
  },
  {
   "class": "Chaos",
@@ -12636,7 +12636,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Nalas.png"
  },
  {
   "class": "Chaos",
@@ -12693,7 +12693,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Rengas.png"
  },
  {
   "class": "Death",
@@ -12712,7 +12712,7 @@
    "speed": 17,
    "total": 108
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Saurel.png"
  },
  {
   "class": "Life",
@@ -12750,7 +12750,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "MISSING.png"
+  "sprite_filename": "new_sprites/Thana.png"
  },
  {
   "class": "Death",

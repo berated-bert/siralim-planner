@@ -278,6 +278,10 @@ def get_sprite_path(sprite_filename: str, creature_name: str):
         os.path.join("public", "forum_avatars", f"{creature_name}.png")
     ):
         return f"forum_avatars/{creature_name}.png"
+    elif os.path.isfile(
+        os.path.join("public", "new_sprites", f"{creature_name}.png")
+    ):
+        return f"new_sprites/{creature_name}.png"
     return False
 
 
