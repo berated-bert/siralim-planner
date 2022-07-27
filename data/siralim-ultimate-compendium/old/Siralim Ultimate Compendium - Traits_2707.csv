@@ -684,7 +684,7 @@ Sorcery,Exotic,Kirin,Celestial,Your Exotic creatures always have Mending and Lee
 Nature,Exotic,Kobold,Grovel and Beg,"While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage.",Kobold's Guidebook
 Chaos,Exotic,Lavalotl,Cauterize the Wound,"This creature is healed instead of damaged by Bleeding and Burning, but at 50% effectiveness.",Lava Bubble
 Death,Exotic,Legion,Assimilate,"After this creature takes damage from an attack or spell, it gains 5% stats.",Fragmented Blood
-Sorcery,Exotic,Lizard Wizard,Lizardry,Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack.,Lizard Wizard's Tome
+Sorcery,Exotic,Lizard Wizard,Lizardy,Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack.,Lizard Wizard's Tome
 Chaos,Exotic,Lunatio,Twin Souls,This creature's attacks deal 75% more damage and it Attacks 1 additional time.,Lost Soul
 Sorcery,Exotic,Magicalope,Unrevealed Secret,"After this creature dodges an attack, the enemy is afflicted with a random debuff.",Cryptid Tarot
 Chaos,Exotic,Mathemagician,Chaotic Mind,"When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount.",Math Textbook
@@ -736,7 +736,7 @@ Sorcery,Familiar,Mystical Familiar,Group Meditation,"At the start of battle, you
 Sorcery,Familiar,Palace Familiar,Potency,Your creatures' spells that increase or decrease stats are 25% more effective for each Familiar fighting on your side. This trait does not stack.,Palace Pinion
 Sorcery,Familiar,Spectral Familiar,Higher Understanding,Your creatures' Spell Gems have a 10% chance to not consume Charges when they're Cast for each Familiar fighting on your side. This trait does not stack.,Spectral Pinion
 Rodian Master,Familiar,Mastery Trait,Master of Familiars,Your Familiars have 10% more Intelligence for each time your Familiars have Cast a spell in the current battle. This trait does not stack.,Sigil of the Familiar
-Chaos,Fiend,Annihilator,Uncontrollable Anger,"After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack.",Annihilator Tooth
+Chaos,Fiend,Annihilator,Uncoltrollable Anger,"After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack.",Annihilator Tooth
 Chaos,Fiend,Berserker Fiend,Outrage,"This creature is always Berserk, and deals 75% more damage.",Berserker Tooth
 Chaos,Fiend,Deceptive Fiend,Flash of Anger,"After your creatures with Berserk Attack, they gain Invisible.",Deceptive Tooth
 Chaos,Fiend,Destroyer Fiend,Bloodfury,"After this creature Provokes, your creatures gain Berserk and Savage.",Destroyer Tooth
@@ -1305,7 +1305,7 @@ Rodian Master,Satyr,Mastery Trait,Master of Satyrs,"If all the creatures in your
 Death,Sea Shambler,Amorphous Shambler,The Sickness,"After an enemy is healed, it is afflicted with Blighted.",Amorphous Hook
 Death,Sea Shambler,Innocent Shambler,Appetite For Eschar,"After your creatures deal damage as a result of Blighted, they recover health equal to 100% of the damage dealt. This trait does not stack.",Innocent Hook
 Death,Sea Shambler,Lugubrious Shambler,Aggravated Illness,Enemies take 50% more damage from Blighted. This trait does not stack.,Lugubrious Hook
-Death,Sea Shambler,Shambler Benefactor,You Monsters Are People,Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.,Benefactor Hook
+Death,Sea Shambler,Shambler Benefactor,Your Monsters Are People,Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.,Benefactor Hook
 Death,Sea Shambler,Shambler Juggernaut,Vicar's Blessing,"After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack.",Juggernaut Hook
 Death,Sea Shambler,Shambler Recruiter,Chronic Affliction,"After an enemy takes damage from Blighted, it has a 50% chance to take the same amount of damage again. This trait does not stack.",Recruiter Hook
 Death,Sea Shambler,Shambler Rescuer,Retrograde,Enemies with Blighted receive 50% more healing from all sources. This trait does not stack.,Benefactor Hook
@@ -1503,7 +1503,7 @@ Nature,Tanukrook,Tanukrook,Monster Crown,"At the start of this creature's turn, 
 Chaos,Toxdweller,Toxdweller Bloodbather,And You Get A Bomb,"At the start of battle, this creature afflicts 3 random enemies with Bomb.",Bloodbather Poison
 Chaos,Toxdweller,Toxdweller Decoy,Not Quite A Dud,"When an enemy's Bomb detonates at the start of their turn, there is a 50% chance the Bomb debuff won't be removed from the creature. This trait does not stack.",Decoy Poison
 Chaos,Toxdweller,Toxdweller Infector,Imminent Danger,"After your creatures attack an enemy with Bomb, the potency of the Bomb increases by 20%. This trait does not stack.",Infector Poison
-Chaos,Toxdweller,Toxdweller Mutant,"Click, Click, Boom","After this creature defends or provokes, enemies take damage from their Bomb debuffs.",Mutant Poison
+Chaos,Toxdweller,Toxdweller Mutant,"Click, Click, Boom!","After this creature defends or provokes, enemies take damage from their Bomb debuffs.",Mutant Poison
 Chaos,Toxdweller,Toxdweller Parasite,Sharing Is Caring,"After an enemy's Bomb detonates, adjacent enemies take 100% of the detonation damage as well. This trait does not stack.",Parasite Poison
 Chaos,Toxdweller,Toxdweller Slasher,A Gift For You,This creature's attacks deal 75% more damage and afflict the target with Bomb.,Slasher Poison
 Nether Boss,Toxdweller,Spoonor,Spoonor's Breath,"At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",Spoonor's Spoon

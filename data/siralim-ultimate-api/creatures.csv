@@ -577,7 +577,7 @@ spr_crits_battle_1522.png,Minotaur Skullcrusher,Minotaur,Chaos,35,20,15,20,15,10
 spr_crits_battle_1518.png,Minotaur Behemoth,Minotaur,Chaos,35,20,15,20,15,105,"Kingdom of Heretics, Torture Chamber",Seeing Red
 spr_crits_battle_2344.png,Mite Interloper,Mite,Nature,28,21,16,21,21,107,"Arachnid Nest, The Swamplands",Corrosion
 spr_crits_battle_2346.png,Mite Gravedigger,Mite,Nature,30,20,15,19,19,103,"Arachnid Nest, The Swamplands",Cradle to the Grave
-spr_crits_battle_2348.png,Mite Invader,Mite,Nature,30,20,15,20,20,105,"Arachnid Nest, The Swamplands",Exacerbate
+spr_crits_battle_2348.png,Mite Invader,Mite,Nature,30,20,15,20,20,105,"Arachnid Nest, The Swamplands",Neon Grave
 spr_crits_battle_2343.png,Mite Skirmisher,Mite,Nature,28,21,16,21,21,107,"Arachnid Nest, The Swamplands",Intensify
 spr_crits_battle_2347.png,Mite Paralyzer,Mite,Nature,30,20,15,20,20,105,"Arachnid Nest, The Swamplands",Swell
 spr_crits_battle_2345.png,Mite Plaguespreader,Mite,Nature,29,19,14,22,19,103,"Arachnid Nest, The Swamplands",Villainy Thrives
@@ -739,9 +739,10 @@ spr_crits_battle_1692.png,Satyr Dominator,Satyr,Nature,32,16,21,16,21,106,"Blood
 spr_crits_battle_1696.png,Satyr Guardian,Satyr,Nature,32,17,22,11,22,104,"Blood Grove, Unsullied Meadows",Scant Stamina
 spr_crits_battle_1694.png,Spry Satyr,Satyr,Nature,29,14,22,17,22,104,"Blood Grove, Unsullied Meadows",Somber Spirits
 spr_crits_battle_1448.png,Lugubrious Shambler,Sea Shambler,Death,33,23,23,17,12,108,"Sea Blood Grove, Where the Dead Ships Dwell",Aggravated Illness
+spr_crits_battle_placeholder.png,Shambler Benefactor,Sea Shambler,Death,32,19,22,18,14,105,"Sea Blood Grove, Where the Dead Ships Dwell",You Monsters Are People
 spr_crits_battle_1447.png,Innocent Shambler,Sea Shambler,Death,32,22,22,17,22,115,"Sea Blood Grove, Where the Dead Ships Dwell",Appetite For Eschar
 spr_crits_battle_1451.png,Shambler Recruiter,Sea Shambler,Death,30,22,22,17,12,103,"Sea Blood Grove, Where the Dead Ships Dwell",Chronic Affliction
-spr_crits_battle_1450.png,Shambler Juggernaut,Sea Shambler,Death,26,23,23,18,13,103,"Sea Blood Grove, Where the Dead Ships Dwell",Perpetual Disease
+spr_crits_battle_1450.png,Shambler Juggernaut,Sea Shambler,Death,26,23,23,18,13,103,"Sea Blood Grove, Where the Dead Ships Dwell",Vicar's Blessing
 spr_crits_battle_1449.png,Shambler Rescuer,Sea Shambler,Death,30,22,22,17,12,103,"Sea Blood Grove, Where the Dead Ships Dwell",Retrograde
 spr_crits_battle_1446.png,Amorphous Shambler,Sea Shambler,Death,30,20,23,18,13,104,"Blood Grove, Where the Dead Ships Dwell",The Sickness
 spr_crits_battle_1704.png,Vanelin Seraph,Seraph,Life,31,23,23,18,13,108,"Azure Dream, Sanctum Umbra, The Barrens",Almost Easy
