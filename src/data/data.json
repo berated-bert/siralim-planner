@@ -10222,11 +10222,20 @@
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Lizard Wizard",
-  "trait_name": "Lizardy",
+  "trait_name": "Lizardry",
   "trait_description": "Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack.",
   "material_name": "Lizard Wizard's Tome",
-  "search_text": "Sorcery Lizard Wizard Exotic Lizardy Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack. Lizard Wizard's Tome",
-  "uid": "804206"
+  "search_text": "Sorcery Lizard Wizard Exotic Lizardry Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack. Lizard Wizard's Tome",
+  "uid": "4d2b78",
+  "stats": {
+   "health": 37,
+   "attack": 15,
+   "intelligence": 25,
+   "defense": 15,
+   "speed": 15,
+   "total": 107
+  },
+  "sprite_filename": "forum_avatars/Lizard Wizard.png"
  },
  {
   "class": "Chaos",
@@ -11164,11 +11173,20 @@
   "class": "Chaos",
   "family": "Fiend",
   "creature": "Annihilator",
-  "trait_name": "Uncoltrollable Anger",
+  "trait_name": "Uncontrollable Anger",
   "trait_description": "After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack.",
   "material_name": "Annihilator Tooth",
-  "search_text": "Chaos Annihilator Fiend Uncoltrollable Anger After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack. Annihilator Tooth",
-  "uid": "1b1703"
+  "search_text": "Chaos Annihilator Fiend Uncontrollable Anger After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack. Annihilator Tooth",
+  "uid": "1ce7ba",
+  "stats": {
+   "health": 30,
+   "attack": 25,
+   "intelligence": 13,
+   "defense": 13,
+   "speed": 23,
+   "total": 104
+  },
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1324.png"
  },
  {
   "class": "Chaos",
@@ -16524,7 +16542,16 @@
   "trait_description": "After this creature attacks, it has a 35% chance to cast Affliction.",
   "material_name": "Invader Goo",
   "search_text": "Nature Mite Invader Mite Neon Grave After this creature attacks, it has a 35% chance to cast Affliction. Invader Goo",
-  "uid": "372f75"
+  "uid": "372f75",
+  "stats": {
+   "health": 30,
+   "attack": 20,
+   "intelligence": 15,
+   "defense": 20,
+   "speed": 20,
+   "total": 105
+  },
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2348.png"
  },
  {
   "class": "Nature",
@@ -20533,11 +20560,20 @@
   "class": "Death",
   "family": "Sea Shambler",
   "creature": "Shambler Benefactor",
-  "trait_name": "Your Monsters Are People",
+  "trait_name": "You Monsters Are People",
   "trait_description": "Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack.",
   "material_name": "Benefactor Hook",
-  "search_text": "Death Shambler Benefactor Sea Shambler Your Monsters Are People Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack. Benefactor Hook",
-  "uid": "aa88ac"
+  "search_text": "Death Shambler Benefactor Sea Shambler You Monsters Are People Enemies take 25% more damage from Blighted for each debuff they have. This trait does not stack. Benefactor Hook",
+  "uid": "d7c779",
+  "stats": {
+   "health": 32,
+   "attack": 19,
+   "intelligence": 22,
+   "defense": 18,
+   "speed": 14,
+   "total": 105
+  },
+  "sprite_filename": "forum_avatars/Shambler Benefactor.png"
  },
  {
   "class": "Death",
@@ -20547,7 +20583,16 @@
   "trait_description": "After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack.",
   "material_name": "Juggernaut Hook",
   "search_text": "Death Shambler Juggernaut Sea Shambler Vicar's Blessing After an enemy takes damage from Blight, this creature has a 35% chance to cast Minor Healing on it. This trait does not stack. Juggernaut Hook",
-  "uid": "db8107"
+  "uid": "db8107",
+  "stats": {
+   "health": 26,
+   "attack": 23,
+   "intelligence": 23,
+   "defense": 18,
+   "speed": 13,
+   "total": 103
+  },
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1450.png"
  },
  {
   "class": "Death",
@@ -23764,11 +23809,20 @@
   "class": "Chaos",
   "family": "Toxdweller",
   "creature": "Toxdweller Mutant",
-  "trait_name": "Click, Click, Boom!",
+  "trait_name": "Click, Click, Boom",
   "trait_description": "After this creature defends or provokes, enemies take damage from their Bomb debuffs.",
   "material_name": "Mutant Poison",
-  "search_text": "Chaos Toxdweller Mutant Toxdweller Click, Click, Boom! After this creature defends or provokes, enemies take damage from their Bomb debuffs. Mutant Poison",
-  "uid": "6fa0ac"
+  "search_text": "Chaos Toxdweller Mutant Toxdweller Click, Click, Boom After this creature defends or provokes, enemies take damage from their Bomb debuffs. Mutant Poison",
+  "uid": "7d6ef9",
+  "stats": {
+   "health": 29,
+   "attack": 14,
+   "intelligence": 19,
+   "defense": 16,
+   "speed": 24,
+   "total": 102
+  },
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1785.png"
  },
  {
   "class": "Chaos",
