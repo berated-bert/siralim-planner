@@ -1,11 +1,9 @@
-@import 'mixins.scss';
-
-
+@import "mixins.scss";
 
 .monster-row-container {
   background: rgba(0, 0, 0, 0.04);
   //padding: 7px;
-  
+
   border-radius: 2px;
   position: relative;
 
@@ -33,7 +31,6 @@
     border: 2px dashed rgba($primary-color, 0.5);
   }
 
-
   &.selectable {
     cursor: pointer;
     position: relative;
@@ -53,15 +50,13 @@
       background: rgba($primary-color, 0.1) !important;
     }
 
-    @media(max-width: 1280px) {
+    @media (max-width: 1280px) {
       padding: 0;
       margin-bottom: 5px;
       margin-top: 5px;
     }
   }
 }
-
-
 
 .monster-selection-row {
   display: flex;
@@ -121,13 +116,12 @@
     width: 1.5%;
   }
 
-  @media(max-width: 1280px) {
+  @media (max-width: 1280px) {
     flex-direction: column;
     text-align: center;
     //flex-wrap: wrap;
     .cls-container {
       display: inline-flex;
-
     }
 
     > * {
@@ -140,8 +134,6 @@
       // &.monster-row-family, &.monster-row-creature {
       //   width: 50% !important;
       // }
-
-
 
       &:nth-child(even) {
         background: rgba(0, 0, 0, 0.05);
@@ -162,16 +154,15 @@
   }
 }
 
-
-
-
 .monster-selection-modal {
   display: flex;
   flex-direction: column;
   height: calc(100% - 60px);
   padding: 20px 30px;
   padding-bottom: 0;
-
+  @media (max-width: 1280px) {
+    padding: 20px 20px;
+  }
 
   .monster-selection-search-tools {
     margin-bottom: 15px;
@@ -180,7 +171,6 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
-
 
     input {
       width: 80%;
@@ -191,18 +181,17 @@
     button {
       margin-left: 10px;
       padding: 0 40px;
-    }    
+    }
   }
 
   .monster-selection-results-count {
-      text-align: center;
-      padding: 0px 30px;
-      padding-top: 15px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-    }
-
+    text-align: center;
+    padding: 0px 30px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
   .monster-selection-table {
     max-height: 100%;
@@ -214,7 +203,7 @@
     background: #eee;
     //pointer-events: none;
     user-select: none;
-    
+
     padding: 0;
 
     .monster-row-header {
@@ -227,14 +216,14 @@
         border-top: 2px solid #777;
         border-bottom: 2px solid #777;
       }
-      .sort-button  svg {
+      .sort-button svg {
         margin-left: 2px;
         font-size: 0.8em;
         transform: translate(0, -1px);
       }
       padding: 0;
       > * {
-        padding: 7px ;
+        padding: 7px;
       }
       .sortable {
         &:hover {
@@ -246,7 +235,6 @@
         }
       }
     }
-
 
     // .sortable {
     //   position: relative;
@@ -260,7 +248,6 @@
     //     background: rgba(255, 255, 255, 0.5);
     //   }
     // }
-
   }
 
   .monster-selection-pagination {
@@ -282,14 +269,12 @@
       cursor: pointer;
       font-size: 14px;
 
-
       user-select: none;
-
 
       &.active {
         background: lighten($primary-color, 5);
         border-color: darken($primary-color, 5);
-        color: white;    
+        color: white;
       }
       &:hover {
         background: lighten($primary-color, 10);
@@ -300,8 +285,6 @@
       }
     }
   }
-
-
 }
 
 .modal-header {
@@ -317,7 +300,6 @@
     padding: 0 20px;
     font-size: 16px;
     font-weight: normal;
-
   }
 
   button.modal-close {
@@ -330,5 +312,4 @@
     right: 8px;
     line-height: 12px;
   }
-
 }

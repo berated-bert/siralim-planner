@@ -306,6 +306,9 @@ h3.section-title {
   &.is-open {
     display: block;
   }
+  @media (max-width: 1280px) {
+    padding: 10px;
+  }
 }
 
 .modal-content {

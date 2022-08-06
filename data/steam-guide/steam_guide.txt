@@ -4196,7 +4196,7 @@ Bioassay
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' spells that interact with Poisoned do not consume Charges.
+Your creatures’ spells that interact with Poisoned do not consume Charges.
 
 Breath of Death
 Ranks: 1
@@ -4221,7 +4221,7 @@ Confounding Factors
 Ranks: 5
 Cost Per Rank: 20
 Anointment: Yes
-Your creatures' spells that interact with Poisoned have 20% more potency per rank.
+Your creatures’ spells that interact with Poisoned have 20% more potency per rank.
 Maximum Bonus: 100% extra potency
 
 Diagnosis
@@ -4240,7 +4240,7 @@ Inoculate
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures take 10% (up to 80%) less damage from attacks and spells for each time they've taken damage from Poisoned in the current battle.
+Your creatures take 10% (up to 80%) less damage from attacks and spells for each time they’ve taken damage from Poisoned in the current battle.
 
 Neurotoxicity
 Ranks: 1
@@ -4276,7 +4276,7 @@ Teratogen
 Ranks: 5
 Cost Per Rank: 20
 Anointment: Yes
-After a creature takes damage from Poisoned, the potency of all enemies' Poisoned debuffs is increased by 5% per rank.
+After a creature takes damage from Poisoned, the potency of all enemies’ Poisoned debuffs is increased by 5% per rank.
 Maximum Bonus: 25% potency boost
 
 Toxic Absorption (ASCENSION)
@@ -4331,7 +4331,7 @@ Dead Divinity
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Enemies' healing spells have 50% more potency.
+Enemies’ healing spells have 50% more potency.
 
 Doomsday
 Ranks: 1
@@ -4349,7 +4349,7 @@ Fall From Grace
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Enemies receive 5% more healing for each time they've been damaged by Blighted in the current battle.
+Enemies receive 5% more healing for each time they’ve been damaged by Blighted in the current battle.
 
 Harrow
 Ranks: 1
@@ -4367,7 +4367,7 @@ Phantom Pain
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of each enemy's turn, they have a 25% chance to cast Minor Healing on themselves.
+At the start of each enemy’s turn, they have a 25% chance to cast Minor Healing on themselves.
 
 Self-fulfilling Prophecy
 Ranks: 1
@@ -4403,7 +4403,7 @@ Endwalker (ASCENSION)
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-Enemies killed by Blight cannot be resurrected.
+If an enemy dies while it is afflicted with Blighted, it cannot be resurrected.
 
 Spells
 Minor Healing (Dark Souls, Ascent of the Damned, Phantom Pain)
@@ -4454,33 +4454,33 @@ Dimensional Stability
 Ranks: 2
 Cost Per Rank: 50
 Anointment: Yes
-Enemies' Bomb debuffs detonate 1 additional time per rank.
+Enemies’ Bomb debuffs detonate 1 additional time per rank.
 Maximum Bonus: 2 additional detonations
 
 Dismantlement
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Enemies deal 5% less damage (up to 80%) for each time they've been damaged by Bomb in the current battle.
+Enemies deal 5% less damage (up to 80%) for each time they’ve been damaged by Bomb in the current battle.
 
 Drone Bait
 Ranks: 3
 Cost Per Rank: 35
 Anointment: Yes
-After an enemy's Bomb debuff detonates, one of your creatures gains 1 stack of Microbots per rank.
+After an enemy’s Bomb debuff detonates, one of your creatures gains 1 stack of Microbots per rank.
 Maximum Bonus: 3 stacks of Microbots
 
 Energy Efficient
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' spells that interact with Bomb do not consume Charges.
+Your creatures’ spells that interact with Bomb do not consume Charges.
 
 Extrusion
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Enemies' Bomb debuffs deal 50% more damage for each time they've been damaged by this debuff in the current battle.
+Enemies’ Bomb debuffs deal 50% more damage for each time they’ve been damaged by this debuff in the current battle.
 
 Grand Finale
 Ranks: 1
@@ -4510,7 +4510,7 @@ Locked and Loaded
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of your creatures' turns, they have a 20% chance to cast Explosive Arrow on a random enemy.
+At the start of your creatures’ turns, they have a 20% chance to cast Explosive Arrow on a random enemy.
 
 Pinpoint
 Ranks: 10
@@ -4529,13 +4529,13 @@ Prototype
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-The potency of enemies' Bomb debuffs that are applied after start-of-battle effects is based on your creatures' highest stats (other than Health) instead of Speed.
+The potency of enemies’ Bomb debuffs that are applied after start-of-battle effects is based on your creatures’ highest stats (other than Health) instead of Speed.
 
 Renewable Armaments
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After an enemy's Bomb detonates, it has a 35% chance to be afflicted with Bomb again.
+After an enemy’s Bomb detonates, it has a 35% chance to be afflicted with Bomb again.
 
 Chain Reaction (ASCENSION)
 Ranks: 1
@@ -4575,9 +4575,9 @@ Autograt
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After start-of-battle effects are determined, your creatures' Booze spells gain the ‘Chance to Attack', ‘Chance to Defend', and ‘Chance to Provoke' properties.
+After start-of-battle effects are determined, your creatures’ Booze spells gain the ‘Chance to Attack’, ‘Chance to Defend’, and ‘Chance to Provoke’ properties.
 
-Brewmaster's Handshake
+Brewmaster’s Handshake
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
@@ -4593,7 +4593,7 @@ Double Entendre
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Booze spells also have a chance to be Cast at the start of the equipped creatures' turns.
+Your creatures’ Booze spells also have a chance to be Cast at the start of the equipped creatures’ turns.
 
 Experimental Cocktail
 Ranks: 1
@@ -4605,25 +4605,25 @@ Highball
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Booze spells count 50% less against their per-turn Casting limit.
+Your creatures’ Booze spells count 50% less against their per-turn Casting limit.
 
 Inebriation
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Enemies have a 5% chance (up to 80%) to deal no damage for each time they've been affected by an Booze spell in the current battle.
+Enemies have a 5% chance (up to 80%) to deal no damage for each time they’ve been affected by an Booze spell in the current battle.
 
 Liquid Courage
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures deal 3% more damage for each time they've cast a Booze spell in the current battle.
+Your creatures deal 3% more damage for each time they’ve cast a Booze spell in the current battle.
 
 Muddle
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures attack 1 additional time (up to 3) for every 5 Booze spells they've Cast in the current battle.
+Your creatures attack 1 additional time (up to 3) for every 5 Booze spells they’ve Cast in the current battle.
 
 Nightcap
 Ranks: 1
@@ -4635,37 +4635,37 @@ Numb the Pain
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures have a 5% chance (up to 80%) to avoid damage for each time they've been affected by an Booze spell in the current battle.
+Your creatures have a 5% chance (up to 80%) to avoid damage for each time they’ve been affected by an Booze spell in the current battle.
 
 On The House
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Booze spells do not consume Charges.
+Your creatures’ Booze spells do not consume Charges.
 
 Speed Rail
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures cast Booze spells 1 additional time (up to 3) for every 5 Booze spells they've cast in the current battle.
+Your creatures cast Booze spells 1 additional time (up to 3) for every 5 Booze spells they’ve cast in the current battle.
 
 Straight Up
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Booze spells cannot be Sealed.
+Your creatures’ Booze spells cannot be Sealed.
 
 Top Shelf
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Booze spells have a 100% increased chance to be cast.
+Your creatures’ Booze spells have a 100% increased chance to be cast.
 
 Drunken Camaraderie (ASCENSION)
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-Enemies take a moderate amount of damage and your creatures are healed for a moderate amount when they are affected by your creatures' Booze spells.
+Enemies take a moderate amount of damage and your creatures are healed for a moderate amount when they are affected by your creatures’ Booze spells.
 
 Notes
 Booze spells, which are available to purchase from the Gambling Dwarves' shop, are usually powerful spells which can't be cast manually and only have a chance to go off at the end of a creature's turn - Brewmasters have the option to cast them manually (Brewmaster's Handshake), make them impervious to sealing (Straight Up) AND not consume charges (On The House). While these effects are powerful in and of themselves, perks like Inebriation and Numb the Pain also grant a Brewmaster absurd defensive power as long as they're able to stay in the fight and spam their booze spells as much as possible.
@@ -4684,19 +4684,19 @@ Brim Fiends
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of your creatures' turns, they gain 1 stack of Brim Fiends.
+At the start of your creatures’ turns, they gain 1 stack of Brim Fiends.
 
 Chaos Satyrs
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of your creatures' turns, they gain 1 stack of Chaos Satyr.
+At the start of your creatures’ turns, they gain 1 stack of Chaos Satyr.
 
 Demonic Consumption
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After any number of stacks of your creatures' Lesser or Greater Demons go away, they recover 100% Health.
+After any number of stacks of your creatures’ Lesser or Greater Demons go away, they recover 100% Health.
 
 Demonic Pact
 Ranks: 1
@@ -4708,25 +4708,25 @@ Drained Essence
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures deal 3% more damage for each time all your creatures' minions went away in the current battle.
+Your creatures deal 3% more damage for each time all your creatures’ minions went away in the current battle.
 
 Final Summoning
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After your creatures' Greater Demons go away, they cast a powerful spell depending on which Greater Demon went away.
+After your creatures’ Greater Demons go away, they cast a powerful spell depending on which Greater Demon went away.
 
 Fire Imps
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of your creatures' turns, they gain 1 stack of Fire Imps.
+At the start of your creatures’ turns, they gain 1 stack of Fire Imps.
 
 Inner Demons
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After any number of stacks of your creatures' Lesser Demons go away, they gain 15% stats.
+After any number of stacks of your creatures’ Lesser Demons go away, they gain 15% stats.
 
 Reawakening
 Ranks: 1
@@ -4738,13 +4738,13 @@ Renounce the Light
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-Your creatures cannot gain buffs or minions that are unrelated to this specialization. This perk is always active while your specialization is Demonologist, even if you haven't allocated any Perk Points to it.
+Your creatures cannot gain buffs or minions that are unrelated to this specialization. This perk is always active while your specialization is Demonologist, even if you haven’t allocated any Perk Points to it.
 
 Soul Shield
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures take 3% less damage (up to 80%) for each time all your creatures' minions went away in the current battle.
+Your creatures take 3% less damage (up to 80%) for each time all your creatures’ minions went away in the current battle.
 
 Summon Asmodeus
 Ranks: 1
@@ -4786,7 +4786,7 @@ Void Shift
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-When your creatures' Greater Demons would go away, they move to a different creature fighting on your side instead.
+When your creatures’ Greater Demons would go away, they move to a different creature fighting on your side instead.
 
 Summon Lucifer (ASCENSION)
 Ranks: 1
@@ -4844,37 +4844,37 @@ Acclimated Armaments
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Arsenal spells are 5% more potent for each time they've Cast an Arsenal spell in the current battle.
+Your creatures’ Arsenal spells are 5% more potent for each time they've Cast an Arsenal spell in the current battle.
 
-Blacksmith's Boon
+Blacksmith’s Boon
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Trick Slots that apply buffs and debuffs have a 35% greater chance to activate.
+Your creatures’ Trick Slots that apply buffs and debuffs have a 35% greater chance to activate.
 
 Crowd Favorite
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After your creatures' Trick Slots activate, they gain a random Arsenal Spell.
+After your creatures’ Trick Slots activate, they gain a random Arsenal Spell.
 
 Double Time
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' Trick Slots that apply buffs and debuffs affect 1 additional creature.
+Your creatures’ Trick Slots that apply buffs and debuffs affect 1 additional creature.
 
 Elbow Grease
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures gain 50% more benefit from their Artifact's Stat Slots.
+Your creatures gain 50% more benefit from their Artifact’s Stat Slots.
 
 Frenzy
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures deal 15% more damage with attacks and spells for each debuff they afflicted from all your Artifacts' Trick Slots.
+Your creatures deal 15% more damage with attacks and spells for each debuff they afflicted from all your Artifacts’ Trick Slots.
 
 Grip of the Gods
 Ranks: 1
@@ -4886,25 +4886,25 @@ Helping Hand
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After your creatures' Trick Slots activate, they resurrect an ally with 50% Health. If none of your creatures are dead, they heal an ally for 50% Health instead.
+After your creatures’ Trick Slots activate, they resurrect an ally with 50% Health. If none of your creatures are dead, they heal an ally for 50% Health instead.
 
 Impending Victory
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-50% of the potency of your creatures' Arsenal Spells is based on their highest stat instead of Intelligence.
+50% of the potency of your creatures’ Arsenal Spells is based on their highest stat instead of Intelligence.
 
-It's Called a Lance
+It’s Called a Lance
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-After your creatures manually Cast an Arsenal Spell, they cast a Living Lance spell. The type of Living Lance spell is based on the caster's class.
+After your creatures manually Cast an Arsenal Spell, they cast a Living Lance spell. The type of Living Lance spell is based on the caster’s class.
 
 Nether Imbuement
 Ranks: 10
 Cost Per Rank: 10
 Anointment: Yes
-Your creatures' Nether Stones are 5% more powerful per rank. This perk does not affect a Nether Stone's traits, spells, or any Trick Slots that increase a creature's maximum number of Spell Gem slots.
+Your creatures’ Nether Stones are 5% more powerful per rank. This perk does not affect a Nether Stone’s traits, spells, or any Trick Slots that increase a creature’s maximum number of Spell Gem slots.
 Maximum Bonus: 50% more powerful
 
 Reprimand
@@ -4917,7 +4917,7 @@ Taking Measure
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures take 10% less damage (up to 80%) for each buff they gained from all your Artifacts' Trick Slots.
+Your creatures take 10% less damage (up to 80%) for each buff they gained from all your Artifacts’ Trick Slots.
 
 Turn the Tables
 Ranks: 1
@@ -4935,7 +4935,7 @@ Killing Machine (ASCENSION)
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-At the end of your creatures' turns, each of their Arsenal Spells have a 5% chance to be Cast.
+At the end of your creatures’ turns, each of their Arsenal Spells have a 5% chance to be Cast.
 
 Status Effects
 Disarmed (Grip of the Gods)
@@ -4968,13 +4968,13 @@ Cost Per Rank: 100
 Anointment: Yes
 The first 3 times your creatures are resurrected, they gain 25%, 50%, and 100% Intelligence.
 
-Death's Bane
+Death’s Bane
 Ranks: 1
 Cost Per Rank: 100
 Anointment: No
 The first 3 times your creatures are resurrected, they attack random enemies 1, 2, and 3 times.
 
-Death's Echo
+Death’s Echo
 Ranks: 1
 Cost Per Rank: 100
 Anointment: No
@@ -4984,7 +4984,7 @@ Dread Covenant
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures take 25% less damage (up to 80%) for each time they've been resurrected in the current battle.
+Your creatures take 25% less damage (up to 80%) for each time they’ve been resurrected in the current battle.
 
 Eternal Legacy
 Ranks: 1
@@ -5020,19 +5020,19 @@ Mortal Vessel
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures deal 50% more damage with attacks and spells for each time they've been resurrected in the current battle.
+Your creatures deal 50% more damage with attacks and spells for each time they’ve been resurrected in the current battle.
 
 Past Life Regression
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' stat changes persist through death.
+Your creatures’ stat changes persist through death.
 
 Somnus
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-The first 3 times your creatures die, they are resurrected with 25%, 50%, and 100% Health. Your creatures cannot be resurrected by any other means. Your creatures' on-ressurect effects can activate only once at a time. This perk is always active while your specialization is Graveborn, even if you haven't allocated any Perk Points to it.
+The first 3 times your creatures die, they are resurrected with 25%, 50%, and 100% Health. Your creatures cannot be resurrected by any other means. Your creatures' on-ressurect effects can activate only once at a time. This perk is always active while your specialization is Graveborn, even if you haven’t allocated any Perk Points to it.
 
 Unnatural Causes
 Ranks: 1
@@ -5044,13 +5044,13 @@ Visitors From Before
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-Your creatures' buffs and minions persist through death.
+Your creatures’ buffs and minions persist through death.
 
 From Beyond the Grave (ASCENSION)
 Ranks: 1
 Cost Per Rank: 1
 Anointment: No
-If your creatures have been resurrected at least 3 times in battle, their traits are active even while they're dead. This perk does not affect traits that cause creatures to intercept or take damage in place of their allies.
+If your creatures have been resurrected at least 3 times in battle, their traits are active even while they’re dead. This perk does not affect traits that cause creatures to intercept or take damage in place of their allies.
 
 Status Effects
 Immune (Unnatural Causes)
@@ -5115,7 +5115,7 @@ Immobility
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
-At the start of your creatures' turns, they have a 10% chance to Cast Aggravate.
+At the start of your creatures’ turns, they have a 10% chance to Cast Aggravate.
 
 Mock
 Ranks: 1

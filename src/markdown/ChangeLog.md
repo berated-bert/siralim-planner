@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.1.4 (6 August 2022)
+
+-   Fixed up some outdated trait descriptions, mostly for Exotic Creatures. Thank you to KageNoOni on Discord for providing a list of trait descriptions to update.
+-   Fixed the Shadowbringer ascended perk description.
+-   Made the experience a little better on mobile devices.
+
 ### v1.1.3 (23 July 2022)
 
 -   Added all the missing creature sprites. Big thanks to Orbit49 on Discord who alerted me to the fact that most of the creature sprites were released as part of an avatars pack on the Siralim Ultimate forums ([link](https://forums.thylacinestudios.com/t/siralim-ultimate-forum-avatars-profile-pictures/8271)).
