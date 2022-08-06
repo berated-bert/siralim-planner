@@ -856,7 +856,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Brain Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3001.png"
  },
  {
   "class": "Sorcery",
@@ -875,7 +875,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Ear Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2997.png"
  },
  {
   "class": "Sorcery",
@@ -894,7 +894,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Eye Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2999.png"
  },
  {
   "class": "Sorcery",
@@ -913,7 +913,7 @@
    "speed": 18,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Feet Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3000.png"
  },
  {
   "class": "Sorcery",
@@ -932,7 +932,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Hand Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2998.png"
  },
  {
   "class": "Sorcery",
@@ -951,7 +951,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Lip Animation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2996.png"
  },
  {
   "class": "Rodian Master",
@@ -1486,7 +1486,7 @@
    "speed": 19,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Breathing Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3065.png"
  },
  {
   "class": "Nature",
@@ -1505,7 +1505,7 @@
    "speed": 19,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Feeling Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3094.png"
  },
  {
   "class": "Nature",
@@ -1524,7 +1524,7 @@
    "speed": 19,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Final Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3062.png"
  },
  {
   "class": "Nature",
@@ -1543,7 +1543,7 @@
    "speed": 21,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Living Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3095.png"
  },
  {
   "class": "Nature",
@@ -1562,7 +1562,7 @@
    "speed": 19,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Moving Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3063.png"
  },
  {
   "class": "Nature",
@@ -1581,7 +1581,7 @@
    "speed": 19,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Thinking Arbiter.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3064.png"
  },
  {
   "class": "Rodian Master",
@@ -2088,7 +2088,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/4080.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2934.png"
  },
  {
   "class": "Sorcery",
@@ -2126,7 +2126,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Alexandria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2933.png"
  },
  {
   "class": "Nature",
@@ -2145,7 +2145,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Anneltha.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2935.png"
  },
  {
   "class": "Nature",
@@ -2183,7 +2183,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Ariamaki.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2930.png"
  },
  {
   "class": "Sorcery",
@@ -2297,7 +2297,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Genaros.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2928.png"
  },
  {
   "class": "Chaos",
@@ -2392,7 +2392,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Muse.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2926.png"
  },
  {
   "class": "Life",
@@ -2430,7 +2430,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Reclusa.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2929.png"
  },
  {
   "class": "Nature",
@@ -2468,7 +2468,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Shallan.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2922.png"
  },
  {
   "class": "Life",
@@ -2506,7 +2506,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Tmere Mrgo.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2927.png"
  },
  {
   "class": "Chaos",
@@ -2915,9 +2915,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Emerald Blessings",
-  "trait_description": "This creature gives and receives 100% more healing.",
+  "trait_description": "This creature gives and receives 150% more healing.",
   "material_name": "Emerald Tide Scrap",
-  "search_text": "Backer Backer Trait Backer Emerald Blessings This creature gives and receives 100% more healing. Emerald Tide Scrap",
+  "search_text": "Backer Backer Trait Backer Emerald Blessings This creature gives and receives 150% more healing. Emerald Tide Scrap",
   "uid": "b3e620"
  },
  {
@@ -4230,7 +4230,7 @@
    "speed": 16,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Crashing Basilisk.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2148.png"
  },
  {
   "class": "Chaos",
@@ -4325,7 +4325,7 @@
    "speed": 15,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Spitting Basilisk.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2153.png"
  },
  {
   "class": "Chaos",
@@ -4554,7 +4554,7 @@
    "speed": 18,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Atlas Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2941.png"
  },
  {
   "class": "Life",
@@ -4573,7 +4573,7 @@
    "speed": 18,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Deathshead Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2938.png"
  },
  {
   "class": "Life",
@@ -4592,7 +4592,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Lappet Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2940.png"
  },
  {
   "class": "Life",
@@ -4611,7 +4611,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Luna Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2939.png"
  },
  {
   "class": "Life",
@@ -4630,7 +4630,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Pellucid Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2937.png"
  },
  {
   "class": "Life",
@@ -4649,7 +4649,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Rosy Beacon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2936.png"
  },
  {
   "class": "Rodian Master",
@@ -5604,7 +5604,7 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Bhasa Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3079.png"
  },
  {
   "class": "Life",
@@ -5623,7 +5623,7 @@
    "speed": 20,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Chandra Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3080.png"
  },
  {
   "class": "Life",
@@ -5642,7 +5642,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nisha Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3081.png"
  },
  {
   "class": "Life",
@@ -5661,7 +5661,7 @@
    "speed": 21,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Preta Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3082.png"
  },
  {
   "class": "Life",
@@ -5680,7 +5680,7 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Surya Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3083.png"
  },
  {
   "class": "Life",
@@ -5699,7 +5699,7 @@
    "speed": 21,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Vipina Cherub.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3084.png"
  },
  {
   "class": "Rodian Master",
@@ -5728,7 +5728,7 @@
    "speed": 22,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Arcana Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3013.png"
  },
  {
   "class": "Sorcery",
@@ -5747,7 +5747,7 @@
    "speed": 20,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Blessed Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3012.png"
  },
  {
   "class": "Sorcery",
@@ -5766,7 +5766,7 @@
    "speed": 21,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Draco Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3009.png"
  },
  {
   "class": "Sorcery",
@@ -5785,7 +5785,7 @@
    "speed": 21,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Undying Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3011.png"
  },
  {
   "class": "Sorcery",
@@ -5804,7 +5804,7 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Valor Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3008.png"
  },
  {
   "class": "Sorcery",
@@ -5823,7 +5823,7 @@
    "speed": 20,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Wylder Chimera.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3010.png"
  },
  {
   "class": "Rodian Master",
@@ -5852,7 +5852,7 @@
    "speed": 20,
    "total": 101
   },
-  "sprite_filename": "forum_avatars/Battle Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3058.png"
  },
  {
   "class": "Sorcery",
@@ -5871,7 +5871,7 @@
    "speed": 19,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Experimental Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3040.png"
  },
  {
   "class": "Sorcery",
@@ -5890,7 +5890,7 @@
    "speed": 18,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Foghorn Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3096.png"
  },
  {
   "class": "Sorcery",
@@ -5909,7 +5909,7 @@
    "speed": 16,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Industrial Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3061.png"
  },
  {
   "class": "Sorcery",
@@ -5928,7 +5928,7 @@
    "speed": 18,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Siege Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3060.png"
  },
  {
   "class": "Sorcery",
@@ -5947,7 +5947,7 @@
    "speed": 18,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/War Clockwork.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3057.png"
  },
  {
   "class": "Rodian Master",
@@ -8932,7 +8932,7 @@
    "speed": 26,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Electropod Ant.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3022.png"
  },
  {
   "class": "Nature",
@@ -8951,7 +8951,7 @@
    "speed": 25,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Electropod Beetle.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3024.png"
  },
  {
   "class": "Nature",
@@ -8970,7 +8970,7 @@
    "speed": 25,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Electropod Fly.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3023.png"
  },
  {
   "class": "Nature",
@@ -8989,7 +8989,7 @@
    "speed": 25,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Electropod Mantis.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3020.png"
  },
  {
   "class": "Nature",
@@ -9008,7 +9008,7 @@
    "speed": 22,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Electropod Scorpion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3021.png"
  },
  {
   "class": "Nature",
@@ -9027,7 +9027,7 @@
    "speed": 25,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Electropod Spider.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3025.png"
  },
  {
   "class": "Rodian Master",
@@ -9418,7 +9418,7 @@
    "speed": 18,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Abacus.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2917.png"
  },
  {
   "class": "Sorcery",
@@ -9437,7 +9437,7 @@
    "speed": 16,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Abandoned Homunculus.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2949.png"
  },
  {
   "class": "Chaos",
@@ -9456,7 +9456,7 @@
    "speed": 24,
    "total": 99
   },
-  "sprite_filename": "forum_avatars/Acrova.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2882.png"
  },
  {
   "class": "Sorcery",
@@ -9475,7 +9475,7 @@
    "speed": 16,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Ameteris Krin.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3395.png"
  },
  {
   "class": "Chaos",
@@ -9494,7 +9494,7 @@
    "speed": 20,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Arcian Warbeast.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2903.png"
  },
  {
   "class": "Sorcery",
@@ -9513,16 +9513,16 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Avaricious Draco.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2901.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Avion",
   "trait_name": "Counter Slash",
-  "trait_description": "After this creature is Attacked, it deals damage to the enemy equal to 50% of this creature's Attack.",
+  "trait_description": "After this creature is Attacked, it deals damage to the enemy equal to 65% of this creature's Attack.",
   "material_name": "Avion Claw",
-  "search_text": "Nature Avion Exotic Counter Slash After this creature is Attacked, it deals damage to the enemy equal to 50% of this creature's Attack. Avion Claw",
+  "search_text": "Nature Avion Exotic Counter Slash After this creature is Attacked, it deals damage to the enemy equal to 65% of this creature's Attack. Avion Claw",
   "uid": "15e45e",
   "stats": {
    "health": 43,
@@ -9532,7 +9532,7 @@
    "speed": 17,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Avion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2966.png"
  },
  {
   "class": "Chaos",
@@ -9551,7 +9551,7 @@
    "speed": 21,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Band Warchief.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2961.png"
  },
  {
   "class": "Death",
@@ -9570,16 +9570,16 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Bashcloak.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2881.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Bejem",
   "trait_name": "Natural Beauty",
-  "trait_description": "At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 20% stronger. This trait does not stack.",
+  "trait_description": "At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 40% stronger. This trait does not stack.",
   "material_name": "Jewel Shell",
-  "search_text": "Sorcery Bejem Exotic Natural Beauty At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 20% stronger. This trait does not stack. Jewel Shell",
+  "search_text": "Sorcery Bejem Exotic Natural Beauty At the start of battle, your creatures gain Crystal Shield. In addition, your creatures' Barrier buffs are 40% stronger. This trait does not stack. Jewel Shell",
   "uid": "a8db0b",
   "stats": {
    "health": 36,
@@ -9589,7 +9589,7 @@
    "speed": 22,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Bejem.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2880.png"
  },
  {
   "class": "Nature",
@@ -9608,16 +9608,16 @@
    "speed": 20,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Bilemaw.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2972.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Bumblebig",
   "trait_name": "Sting Martyr",
-  "trait_description": "This creature's attacks deal 100% more damage. After this creature Attacks, it loses 10% Maximum Health.",
+  "trait_description": "This creature's attacks deal 125% more damage. After this creature Attacks, it loses 10% Maximum Health.",
   "material_name": "Sacrificial Stinger",
-  "search_text": "Nature Bumblebig Exotic Sting Martyr This creature's attacks deal 100% more damage. After this creature Attacks, it loses 10% Maximum Health. Sacrificial Stinger",
+  "search_text": "Nature Bumblebig Exotic Sting Martyr This creature's attacks deal 125% more damage. After this creature Attacks, it loses 10% Maximum Health. Sacrificial Stinger",
   "uid": "7c56d8",
   "stats": {
    "health": 37,
@@ -9627,16 +9627,16 @@
    "speed": 27,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Bumblebig.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3036.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Byakko",
   "trait_name": "Tiger's Spirit",
-  "trait_description": "Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 15% of their Speed. This trait does not stack.",
+  "trait_description": "Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 25% of their Speed. This trait does not stack.",
   "material_name": "Constellation of Byakko",
-  "search_text": "Sorcery Byakko Exotic Tiger's Spirit Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 15% of their Speed. This trait does not stack. Constellation of Byakko",
+  "search_text": "Sorcery Byakko Exotic Tiger's Spirit Your Exotic creatures' attacks deal additional damage with attacks and spells equal to 25% of their Speed. This trait does not stack. Constellation of Byakko",
   "uid": "31e701",
   "stats": {
    "health": 35,
@@ -9646,7 +9646,7 @@
    "speed": 25,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Byakko.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2911.png"
  },
  {
   "class": "Nature",
@@ -9665,7 +9665,7 @@
    "speed": 18,
    "total": 102
   },
-  "sprite_filename": "forum_avatars/Chosen of the Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2971.png"
  },
  {
   "class": "Chaos",
@@ -9684,7 +9684,7 @@
    "speed": 13,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Clawtail Wyrm.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2951.png"
  },
  {
   "class": "Nature",
@@ -9703,7 +9703,7 @@
    "speed": 21,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Colacanth.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3037.png"
  },
  {
   "class": "Sorcery",
@@ -9722,16 +9722,16 @@
    "speed": 21,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Conductive Carcharin.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2959.png"
  },
  {
   "class": "Death",
   "family": "Exotic",
   "creature": "Cranium Cluster",
   "trait_name": "Marrow Metabolism",
-  "trait_description": "After this creature takes damage from an attack or spell, its minions gain 1 stack.",
+  "trait_description": "After this creature takes damage, its minions gain 1 stack.",
   "material_name": "Skull Shard",
-  "search_text": "Death Cranium Cluster Exotic Marrow Metabolism After this creature takes damage from an attack or spell, its minions gain 1 stack. Skull Shard",
+  "search_text": "Death Cranium Cluster Exotic Marrow Metabolism After this creature takes damage, its minions gain 1 stack. Skull Shard",
   "uid": "4bd43e",
   "stats": {
    "health": 43,
@@ -9741,7 +9741,7 @@
    "speed": 7,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Cranium Cluster.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2921.png"
  },
  {
   "class": "Death",
@@ -9760,7 +9760,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Davey.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2958.png"
  },
  {
   "class": "Sorcery",
@@ -9779,7 +9779,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Defiant Defiler.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2968.png"
  },
  {
   "class": "Chaos",
@@ -9798,7 +9798,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Demon King.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2977.png"
  },
  {
   "class": "Death",
@@ -9817,7 +9817,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Dire Werewolf.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2957.png"
  },
  {
   "class": "Chaos",
@@ -9836,7 +9836,7 @@
    "speed": 18,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Duckgundr.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2988.png"
  },
  {
   "class": "Death",
@@ -9855,16 +9855,16 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Forgotten Disciple.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2916.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Genbu",
   "trait_name": "Connections",
-  "trait_description": "Your creatures have 5% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack.",
+  "trait_description": "Your creatures have 10% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack.",
   "material_name": "Constellation of Genbu",
-  "search_text": "Sorcery Genbu Exotic Connections Your creatures have 5% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack. Constellation of Genbu",
+  "search_text": "Sorcery Genbu Exotic Connections Your creatures have 10% more stats (other than Health) for each Exotic creature fighting on your side. This trait does not stack. Constellation of Genbu",
   "uid": "e311b7",
   "stats": {
    "health": 38,
@@ -9874,7 +9874,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Genbu.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2913.png"
  },
  {
   "class": "Death",
@@ -9893,7 +9893,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Gravekeeper.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2983.png"
  },
  {
   "class": "Death",
@@ -9912,7 +9912,7 @@
    "speed": 18,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Gravewood Ghost.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2950.png"
  },
  {
   "class": "Sorcery",
@@ -9931,7 +9931,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Greybeard.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2904.png"
  },
  {
   "class": "Death",
@@ -9950,16 +9950,16 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Grovewalker.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2953.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Grubette",
   "trait_name": "Grubby Strength",
-  "trait_description": "After this creature is killed, it deals damage to enemies equal to 1% of its lowest stat, multiplied by the number of times it Attacked in the current battle.",
+  "trait_description": "After this creature is killed, it deals damage to enemies equal to 3% of its lowest stat, multiplied by the number of times it Attacked in the current battle.",
   "material_name": "Pocket Grubs",
-  "search_text": "Nature Grubette Exotic Grubby Strength After this creature is killed, it deals damage to enemies equal to 1% of its lowest stat, multiplied by the number of times it Attacked in the current battle. Pocket Grubs",
+  "search_text": "Nature Grubette Exotic Grubby Strength After this creature is killed, it deals damage to enemies equal to 3% of its lowest stat, multiplied by the number of times it Attacked in the current battle. Pocket Grubs",
   "uid": "ffcb49",
   "stats": {
    "health": 27,
@@ -9969,7 +9969,7 @@
    "speed": 23,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Grubette.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2970.png"
  },
  {
   "class": "Life",
@@ -9988,7 +9988,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Heartminder.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2986.png"
  },
  {
   "class": "Life",
@@ -10007,7 +10007,7 @@
    "speed": 20,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Helios.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2878.png"
  },
  {
   "class": "Nature",
@@ -10026,7 +10026,7 @@
    "speed": 19,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Hermitey.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3086.png"
  },
  {
   "class": "Sorcery",
@@ -10045,7 +10045,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Huanglong.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2910.png"
  },
  {
   "class": "Chaos",
@@ -10064,7 +10064,7 @@
    "speed": 21,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Hydra.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2956.png"
  },
  {
   "class": "Chaos",
@@ -10083,7 +10083,7 @@
    "speed": 20,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Infinite Eggling.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2962.png"
  },
  {
   "class": "Sorcery",
@@ -10102,7 +10102,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Iridris.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2877.png"
  },
  {
   "class": "Nature",
@@ -10121,16 +10121,16 @@
    "speed": 20,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Jaculus.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3097.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Kavnak",
   "trait_name": "Shared Consciousness",
-  "trait_description": "After an ally manually Casts a spell, this creature has a 35% chance to Cast that spell as well.",
+  "trait_description": "After an ally manually Casts a spell, this creature has a 50% chance to Cast that spell as well.",
   "material_name": "Kavnak's Worm",
-  "search_text": "Chaos Kavnak Exotic Shared Consciousness After an ally manually Casts a spell, this creature has a 35% chance to Cast that spell as well. Kavnak's Worm",
+  "search_text": "Chaos Kavnak Exotic Shared Consciousness After an ally manually Casts a spell, this creature has a 50% chance to Cast that spell as well. Kavnak's Worm",
   "uid": "85f50d",
   "stats": {
    "health": 31,
@@ -10140,7 +10140,7 @@
    "speed": 20,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Kavnak.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2964.png"
  },
  {
   "class": "Sorcery",
@@ -10159,16 +10159,16 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Kirin.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2908.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Kobold",
   "trait_name": "Grovel and Beg",
-  "trait_description": "While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage.",
+  "trait_description": "While this creature has less than 75% Health, it has 50% more Speed and has a 50% chance to avoid damage.",
   "material_name": "Kobold's Guidebook",
-  "search_text": "Nature Kobold Exotic Grovel and Beg While this creature has less than 50% Health, it has 50% more Speed and has a 50% chance to avoid damage. Kobold's Guidebook",
+  "search_text": "Nature Kobold Exotic Grovel and Beg While this creature has less than 75% Health, it has 50% more Speed and has a 50% chance to avoid damage. Kobold's Guidebook",
   "uid": "959746",
   "stats": {
    "health": 39,
@@ -10178,7 +10178,7 @@
    "speed": 21,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Kobold.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2900.png"
  },
  {
   "class": "Chaos",
@@ -10197,7 +10197,7 @@
    "speed": 17,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Lavalotl.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3035.png"
  },
  {
   "class": "Death",
@@ -10216,16 +10216,16 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Legion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3099.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Lizard Wizard",
   "trait_name": "Lizardry",
-  "trait_description": "Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack.",
+  "trait_description": "Your creatures' Ethereal Spell Gems do not consume Chages. This trait does not stack.",
   "material_name": "Lizard Wizard's Tome",
-  "search_text": "Sorcery Lizard Wizard Exotic Lizardry Your creatures' Ethereal Spell Gems have a 50% chance to not consume any Charges. This trait does not stack. Lizard Wizard's Tome",
+  "search_text": "Sorcery Lizard Wizard Exotic Lizardry Your creatures' Ethereal Spell Gems do not consume Chages. This trait does not stack. Lizard Wizard's Tome",
   "uid": "4d2b78",
   "stats": {
    "health": 37,
@@ -10235,7 +10235,7 @@
    "speed": 15,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Lizard Wizard.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2907.png"
  },
  {
   "class": "Chaos",
@@ -10254,7 +10254,7 @@
    "speed": 22,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Lunatio.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2948.png"
  },
  {
   "class": "Sorcery",
@@ -10273,16 +10273,16 @@
    "speed": 25,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Magicalope.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3077.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Mathemagician",
   "trait_name": "Chaotic Mind",
-  "trait_description": "When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount.",
+  "trait_description": "When this creature Casts a spell, the spell's potency is 100% to 200% of its normal amount.",
   "material_name": "Math Textbook",
-  "search_text": "Chaos Mathemagician Exotic Chaotic Mind When this creature Casts a spell, the spell's potency is 50% to 200% of its normal amount. Math Textbook",
+  "search_text": "Chaos Mathemagician Exotic Chaotic Mind When this creature Casts a spell, the spell's potency is 100% to 200% of its normal amount. Math Textbook",
   "uid": "900794",
   "stats": {
    "health": 32,
@@ -10292,7 +10292,7 @@
    "speed": 22,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Mathemagician.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2960.png"
  },
  {
   "class": "Sorcery",
@@ -10311,7 +10311,7 @@
    "speed": 13,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Mind Reaver.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2952.png"
  },
  {
   "class": "Sorcery",
@@ -10330,7 +10330,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Nguruvilu.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2967.png"
  },
  {
   "class": "Death",
@@ -10349,7 +10349,7 @@
    "speed": 18,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Nine Tailed Harvester.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2982.png"
  },
  {
   "class": "Sorcery",
@@ -10368,7 +10368,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nox Sinon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2954.png"
  },
  {
   "class": "Chaos",
@@ -10387,16 +10387,16 @@
    "speed": 23,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Obscene Blight.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3098.png"
  },
  {
   "class": "Death",
   "family": "Exotic",
   "creature": "Oni-Goroshi",
   "trait_name": "Her Embrace",
-  "trait_description": "This creature's Attacks deal 100% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn.",
+  "trait_description": "This creature's Attacks deal 150% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn.",
   "material_name": "Oni Fragment",
-  "search_text": "Death Oni-Goroshi Exotic Her Embrace This creature's Attacks deal 100% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn. Oni Fragment",
+  "search_text": "Death Oni-Goroshi Exotic Her Embrace This creature's Attacks deal 150% more damage and it has a 100% chance to deal critical damage. This creature skips every other turn. Oni Fragment",
   "uid": "8772ec",
   "stats": {
    "health": 42,
@@ -10406,16 +10406,16 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Oni-Goroshi.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2906.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Orphaned Minion",
   "trait_name": "Last Ward",
-  "trait_description": "This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 20% of the damage dealt. This damage counts as spell damage.",
+  "trait_description": "This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 80% of the damage dealt. This damage counts as spell damage.",
   "material_name": "Memory of Binding",
-  "search_text": "Sorcery Orphaned Minion Exotic Last Ward This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 20% of the damage dealt. This damage counts as spell damage. Memory of Binding",
+  "search_text": "Sorcery Orphaned Minion Exotic Last Ward This creature takes 20% less damage. After this creature is damaged by an enemy and it survives from\nthis damage, the enemy takes damage equal to 80% of the damage dealt. This damage counts as spell damage. Memory of Binding",
   "uid": "b29584",
   "stats": {
    "health": 38,
@@ -10425,7 +10425,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Orphaned Minion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2915.png"
  },
  {
   "class": "Death",
@@ -10444,16 +10444,16 @@
    "speed": 15,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Otherworldly Visitor.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2981.png"
  },
  {
   "class": "Life",
   "family": "Exotic",
   "creature": "Paladin Crab",
   "trait_name": "Shining Armor",
-  "trait_description": "While your creatures have Barrier, they have 40% more Defense. This trait does not stack.",
+  "trait_description": "While your creatures have Barrier, they have 50% more Defense. This trait does not stack.",
   "material_name": "Crab Shield",
-  "search_text": "Life Paladin Crab Exotic Shining Armor While your creatures have Barrier, they have 40% more Defense. This trait does not stack. Crab Shield",
+  "search_text": "Life Paladin Crab Exotic Shining Armor While your creatures have Barrier, they have 50% more Defense. This trait does not stack. Crab Shield",
   "uid": "1d766c",
   "stats": {
    "health": 39,
@@ -10463,7 +10463,7 @@
    "speed": 27,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Paladin Crab.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3033.png"
  },
  {
   "class": "Chaos",
@@ -10482,7 +10482,7 @@
    "speed": 13,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Paroxys.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2987.png"
  },
  {
   "class": "Chaos",
@@ -10501,16 +10501,16 @@
    "speed": 18,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Petrafortis.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2918.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Piscacanth",
   "trait_name": "Ancient Buffoonery",
-  "trait_description": "This creature deals 10% more damage for each creature below it on the Timeline at the start of battle.",
+  "trait_description": "This creature deals 15% more damage for each creature below it on the Timeline at the start of battle.",
   "material_name": "Electric Fossil",
-  "search_text": "Nature Piscacanth Exotic Ancient Buffoonery This creature deals 10% more damage for each creature below it on the Timeline at the start of battle. Electric Fossil",
+  "search_text": "Nature Piscacanth Exotic Ancient Buffoonery This creature deals 15% more damage for each creature below it on the Timeline at the start of battle. Electric Fossil",
   "uid": "9a8924",
   "stats": {
    "health": 40,
@@ -10520,7 +10520,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Piscacanth.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2975.png"
  },
  {
   "class": "Life",
@@ -10539,16 +10539,16 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Pontiff of Luck.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3085.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Proto-Brachyura",
   "trait_name": "Crab Trap",
-  "trait_description": "After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 20%.",
+  "trait_description": "After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 35%.",
   "material_name": "Buttery Bait",
-  "search_text": "Nature Proto-Brachyura Exotic Crab Trap After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 20%. Buttery Bait",
+  "search_text": "Nature Proto-Brachyura Exotic Crab Trap After this creature is Attacked while it is Defending, it reduces the enemy's Defense and Speed by 35%. Buttery Bait",
   "uid": "32eddd",
   "stats": {
    "health": 42,
@@ -10558,7 +10558,7 @@
    "speed": 7,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Proto-Brachyura.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2920.png"
  },
  {
   "class": "Sorcery",
@@ -10577,7 +10577,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Proxigeist.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2965.png"
  },
  {
   "class": "Chaos",
@@ -10596,16 +10596,16 @@
    "speed": 15,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Puffergryph.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2905.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "Rhozzgon",
   "trait_name": "Wrath of Krorena",
-  "trait_description": "Your creatures deal 50% more damage to enemies that belong to their own class. This trait does not stack.",
+  "trait_description": "Your creatures deal 65% more damage to enemies that belong to their own class. This trait does not stack.",
   "material_name": "Nature's Fury",
-  "search_text": "Nature Rhozzgon Exotic Wrath of Krorena Your creatures deal 50% more damage to enemies that belong to their own class. This trait does not stack. Nature's Fury",
+  "search_text": "Nature Rhozzgon Exotic Wrath of Krorena Your creatures deal 65% more damage to enemies that belong to their own class. This trait does not stack. Nature's Fury",
   "uid": "5a8fba",
   "stats": {
    "health": 42,
@@ -10615,16 +10615,16 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Rhozzgon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2978.png"
  },
  {
   "class": "Life",
   "family": "Exotic",
   "creature": "Sapphire Drake",
   "trait_name": "Healing Breath",
-  "trait_description": "At the start of this creature's turn, it heals one of your creatures for 100% Health.",
+  "trait_description": "At the start of this creature's turn, it heals one of your creatures for 150% Health.",
   "material_name": "Drake Teeth",
-  "search_text": "Life Sapphire Drake Exotic Healing Breath At the start of this creature's turn, it heals one of your creatures for 100% Health. Drake Teeth",
+  "search_text": "Life Sapphire Drake Exotic Healing Breath At the start of this creature's turn, it heals one of your creatures for 150% Health. Drake Teeth",
   "uid": "8469ce",
   "stats": {
    "health": 43,
@@ -10634,16 +10634,16 @@
    "speed": 17,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Sapphire Drake.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2974.png"
  },
  {
   "class": "Sorcery",
   "family": "Exotic",
   "creature": "Seiryu",
   "trait_name": "Scaling",
-  "trait_description": "Your Exotic creatures have 5% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack.",
+  "trait_description": "Your Exotic creatures have 7% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack.",
   "material_name": "Constellation of Seiryu",
-  "search_text": "Sorcery Seiryu Exotic Scaling Your Exotic creatures have 5% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack. Constellation of Seiryu",
+  "search_text": "Sorcery Seiryu Exotic Scaling Your Exotic creatures have 7% more Intelligence for each non-Ethereal Spell Gem they have equipped. This trait does not stack. Constellation of Seiryu",
   "uid": "419b14",
   "stats": {
    "health": 37,
@@ -10653,7 +10653,7 @@
    "speed": 15,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Seiryu.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2914.png"
  },
  {
   "class": "Chaos",
@@ -10672,7 +10672,7 @@
    "speed": 23,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Singerbread Man.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2984.png"
  },
  {
   "class": "Death",
@@ -10691,16 +10691,16 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Skelegoop.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2899.png"
  },
  {
   "class": "Life",
   "family": "Exotic",
   "creature": "Snow Lily",
   "trait_name": "Loyalty's Light",
-  "trait_description": "After a creature is killed, this creature gains Rebirth.",
+  "trait_description": "After a creature is killed, this creature gains Rebirth and Shelled.",
   "material_name": "Pure Heart",
-  "search_text": "Life Snow Lily Exotic Loyalty's Light After a creature is killed, this creature gains Rebirth. Pure Heart",
+  "search_text": "Life Snow Lily Exotic Loyalty's Light After a creature is killed, this creature gains Rebirth and Shelled. Pure Heart",
   "uid": "569bd3",
   "stats": {
    "health": 42,
@@ -10710,7 +10710,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Snow Lily.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2973.png"
  },
  {
   "class": "Sorcery",
@@ -10729,7 +10729,7 @@
    "speed": 22,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/String Puller.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3034.png"
  },
  {
   "class": "Sorcery",
@@ -10748,7 +10748,7 @@
    "speed": 16,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Suzaku.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2912.png"
  },
  {
   "class": "Chaos",
@@ -10767,7 +10767,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Taco Hell.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2898.png"
  },
  {
   "class": "Nature",
@@ -10786,16 +10786,16 @@
    "speed": 21,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/The Bearon.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2969.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
   "creature": "The Dervish",
   "trait_name": "Ride the Whirlwind",
-  "trait_description": "This creature's damage dealt by attacks and spells is based on 150% of its lowest stat rather than its Attack or Intelligence.",
+  "trait_description": "This creature's damage dealt by attacks and spells is based on 200% of its lowest stat rather than its Attack or Intelligence.",
   "material_name": "Eye of the Storm",
-  "search_text": "Nature The Dervish Exotic Ride the Whirlwind This creature's damage dealt by attacks and spells is based on 150% of its lowest stat rather than its Attack or Intelligence. Eye of the Storm",
+  "search_text": "Nature The Dervish Exotic Ride the Whirlwind This creature's damage dealt by attacks and spells is based on 200% of its lowest stat rather than its Attack or Intelligence. Eye of the Storm",
   "uid": "cd3c71",
   "stats": {
    "health": 43,
@@ -10805,7 +10805,7 @@
    "speed": 23,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/The Dervish.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2902.png"
  },
  {
   "class": "Nature",
@@ -10824,7 +10824,7 @@
    "speed": 18,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/The First Spawn.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2985.png"
  },
  {
   "class": "Sorcery",
@@ -10843,16 +10843,16 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Toyland Amalgamation.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2876.png"
  },
  {
   "class": "Chaos",
   "family": "Exotic",
   "creature": "Tsuchinoko",
   "trait_name": "Rollout",
-  "trait_description": "At the start of this creature's turn, it Attacks a random enemy for 50% to 100% normal damage.",
+  "trait_description": "At the start of this creature's turn, it Attacks a random enemy.",
   "material_name": "Nokium",
-  "search_text": "Chaos Tsuchinoko Exotic Rollout At the start of this creature's turn, it Attacks a random enemy for 50% to 100% normal damage. Nokium",
+  "search_text": "Chaos Tsuchinoko Exotic Rollout At the start of this creature's turn, it Attacks a random enemy. Nokium",
   "uid": "e95a6a",
   "stats": {
    "health": 31,
@@ -10862,16 +10862,16 @@
    "speed": 23,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Tsuchinoko.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2989.png"
  },
  {
   "class": "Death",
   "family": "Exotic",
   "creature": "Vannyx",
   "trait_name": "Death Sentence",
-  "trait_description": "This creature deals 100% more damage to enemies with Feared.",
+  "trait_description": "This creature deals 125% more damage to enemies with Feared.",
   "material_name": "Dark Cloak",
-  "search_text": "Death Vannyx Exotic Death Sentence This creature deals 100% more damage to enemies with Feared. Dark Cloak",
+  "search_text": "Death Vannyx Exotic Death Sentence This creature deals 125% more damage to enemies with Feared. Dark Cloak",
   "uid": "5fd7e5",
   "stats": {
    "health": 30,
@@ -10881,17 +10881,17 @@
    "speed": 20,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Vannyx.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3087.png"
  },
  {
   "class": "Nature",
   "family": "Exotic",
-  "creature": "Zombatron",
+  "creature": "Zombaton",
   "trait_name": "Reform",
-  "trait_description": "After your other Death creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack.",
+  "trait_description": "After your other creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack.",
   "material_name": "Solidified Slime",
-  "search_text": "Nature Zombatron Exotic Reform After your other Death creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack. Solidified Slime",
-  "uid": "d30b76",
+  "search_text": "Nature Zombaton Exotic Reform After your other creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack. Solidified Slime",
+  "uid": "641e24",
   "stats": {
    "health": 39,
    "attack": 17,
@@ -10900,7 +10900,7 @@
    "speed": 17,
    "total": 107
   },
-  "sprite_filename": "new_sprites/Zombatron.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3087.png"
  },
  {
   "class": "Life",
@@ -10919,7 +10919,7 @@
    "speed": 16,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Asclepias Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2888.png"
  },
  {
   "class": "Life",
@@ -10938,7 +10938,7 @@
    "speed": 20,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Helianthus Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2887.png"
  },
  {
   "class": "Life",
@@ -10957,7 +10957,7 @@
    "speed": 19,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Hydrangea Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2886.png"
  },
  {
   "class": "Life",
@@ -10976,7 +10976,7 @@
    "speed": 23,
    "total": 99
   },
-  "sprite_filename": "forum_avatars/Polygala Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2885.png"
  },
  {
   "class": "Life",
@@ -10995,7 +10995,7 @@
    "speed": 19,
    "total": 100
   },
-  "sprite_filename": "forum_avatars/Rhododendron Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2884.png"
  },
  {
   "class": "Life",
@@ -11014,7 +11014,7 @@
    "speed": 19,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Roseaea Fae.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2883.png"
  },
  {
   "class": "Rodian Master",
@@ -12293,7 +12293,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/8004.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2891.png"
  },
  {
   "class": "Death",
@@ -12312,7 +12312,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "new_sprites/Adaxial.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2895.png"
  },
  {
   "class": "Sorcery",
@@ -12350,7 +12350,7 @@
    "speed": 16,
    "total": 108
   },
-  "sprite_filename": "new_sprites/Akara.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2893.png"
  },
  {
   "class": "Nature",
@@ -12502,7 +12502,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Emus.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2896.png"
  },
  {
   "class": "Sorcery",
@@ -12521,7 +12521,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/GromMet.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2889.png"
  },
  {
   "class": "Chaos",
@@ -12654,7 +12654,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Nalas.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2897.png"
  },
  {
   "class": "Chaos",
@@ -12711,7 +12711,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "new_sprites/Rengas.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2890.png"
  },
  {
   "class": "Death",
@@ -12730,7 +12730,7 @@
    "speed": 17,
    "total": 108
   },
-  "sprite_filename": "new_sprites/Saurel.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2892.png"
  },
  {
   "class": "Life",
@@ -12768,7 +12768,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "new_sprites/Thana.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2894.png"
  },
  {
   "class": "Death",
@@ -14376,11 +14376,11 @@
   "class": "Nature",
   "family": "Imler",
   "creature": "Trick Imler",
-  "trait_name": "Trick Imler",
+  "trait_name": "Monstrous Rampage",
   "trait_description": "After your creatures Provoke, they deal damage to a random enemy equal to 50% of their Attack. This trait does not stack.",
   "material_name": "Trick Pumpkin",
-  "search_text": "Nature Trick Imler Imler Trick Imler After your creatures Provoke, they deal damage to a random enemy equal to 50% of their Attack. This trait does not stack. Trick Pumpkin",
-  "uid": "289a89",
+  "search_text": "Nature Trick Imler Imler Monstrous Rampage After your creatures Provoke, they deal damage to a random enemy equal to 50% of their Attack. This trait does not stack. Trick Pumpkin",
+  "uid": "9b87d0",
   "stats": {
    "health": 37,
    "attack": 28,
@@ -15008,9 +15008,9 @@
   "family": "Kraken",
   "creature": "Abyssal Kraken",
   "trait_name": "Abyssal Waters",
-  "trait_description": "As long as your creatures haven't gained or lost stats, they have 50% more stats (other than Health). This trait does not stack.",
+  "trait_description": "As long as your creatures haven't gained or lost stats, they have 75% more stats (other than Health). This trait does not stack.",
   "material_name": "Ghastly Sucker",
-  "search_text": "Chaos Abyssal Kraken Kraken Abyssal Waters As long as your creatures haven't gained or lost stats, they have 50% more stats (other than Health). This trait does not stack. Ghastly Sucker",
+  "search_text": "Chaos Abyssal Kraken Kraken Abyssal Waters As long as your creatures haven't gained or lost stats, they have 75% more stats (other than Health). This trait does not stack. Ghastly Sucker",
   "uid": "117c99",
   "stats": {
    "health": 32,
@@ -15020,7 +15020,7 @@
    "speed": 19,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Abyssal Kraken.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2990.png"
  },
  {
   "class": "Chaos",
@@ -15039,7 +15039,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Inkjet Kraken.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2995.png"
  },
  {
   "class": "Chaos",
@@ -15058,16 +15058,16 @@
    "speed": 18,
    "total": 104
   },
-  "sprite_filename": "forum_avatars/Ironside Kraken.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2992.png"
  },
  {
   "class": "Chaos",
   "family": "Kraken",
   "creature": "Kraken Hundredhand",
   "trait_name": "Hundred Hands",
-  "trait_description": "As long as your creatures haven't gained or lost stats, this creature has 100% more stats (other than Health).",
+  "trait_description": "As long as your creatures haven't gained or lost stats, this creature has 200% more stats (other than Health).",
   "material_name": "Repulsive Sucker",
-  "search_text": "Chaos Kraken Hundredhand Kraken Hundred Hands As long as your creatures haven't gained or lost stats, this creature has 100% more stats (other than Health). Repulsive Sucker",
+  "search_text": "Chaos Kraken Hundredhand Kraken Hundred Hands As long as your creatures haven't gained or lost stats, this creature has 200% more stats (other than Health). Repulsive Sucker",
   "uid": "c5a99e",
   "stats": {
    "health": 33,
@@ -15077,7 +15077,7 @@
    "speed": 18,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Kraken Hundredhand.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2991.png"
  },
  {
   "class": "Chaos",
@@ -15096,7 +15096,7 @@
    "speed": 19,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Kraken Shipbreaker.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2994.png"
  },
  {
   "class": "Chaos",
@@ -15115,7 +15115,7 @@
    "speed": 20,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Unblinking Kraken.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2993.png"
  },
  {
   "class": "Rodian Master",
@@ -15622,7 +15622,7 @@
    "speed": 27,
    "total": 99
   },
-  "sprite_filename": "forum_avatars/Ace Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3053.png"
  },
  {
   "class": "Nature",
@@ -15641,7 +15641,7 @@
    "speed": 27,
    "total": 99
   },
-  "sprite_filename": "forum_avatars/Club Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3052.png"
  },
  {
   "class": "Nature",
@@ -15660,7 +15660,7 @@
    "speed": 27,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Diamond Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3056.png"
  },
  {
   "class": "Nature",
@@ -15679,7 +15679,7 @@
    "speed": 26,
    "total": 100
   },
-  "sprite_filename": "forum_avatars/Heart Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3092.png"
  },
  {
   "class": "Nature",
@@ -15698,7 +15698,7 @@
    "speed": 18,
    "total": 94
   },
-  "sprite_filename": "forum_avatars/Joker Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3054.png"
  },
  {
   "class": "Nature",
@@ -15717,7 +15717,7 @@
    "speed": 26,
    "total": 100
   },
-  "sprite_filename": "forum_avatars/Spade Luckmantria.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3055.png"
  },
  {
   "class": "Rodian Master",
@@ -16656,7 +16656,7 @@
    "speed": 20,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Bio Bot.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3088.png"
  },
  {
   "class": "Sorcery",
@@ -16675,7 +16675,7 @@
    "speed": 20,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Brave Little Bot.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3089.png"
  },
  {
   "class": "Sorcery",
@@ -16694,7 +16694,7 @@
    "speed": 20,
    "total": 113
   },
-  "sprite_filename": "forum_avatars/Junkyard Bot.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3067.png"
  },
  {
   "class": "Sorcery",
@@ -16713,7 +16713,7 @@
    "speed": 19,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Sentry Bot.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3066.png"
  },
  {
   "class": "Sorcery",
@@ -16732,7 +16732,7 @@
    "speed": 20,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Wizards Companion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3090.png"
  },
  {
   "class": "Sorcery",
@@ -16751,7 +16751,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Wizards Defender.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3091.png"
  },
  {
   "class": "Rodian Master",
@@ -16942,7 +16942,7 @@
    "speed": 18,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Mythicant Calti.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2945.png"
  },
  {
   "class": "Sorcery",
@@ -16961,7 +16961,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Mythicant Erdhe.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2942.png"
  },
  {
   "class": "Sorcery",
@@ -16980,7 +16980,7 @@
    "speed": 18,
    "total": 106
   },
-  "sprite_filename": "forum_avatars/Mythicant Palmira.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2944.png"
  },
  {
   "class": "Sorcery",
@@ -16999,7 +16999,7 @@
    "speed": 18,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Mythicant Populi.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2947.png"
  },
  {
   "class": "Sorcery",
@@ -17018,7 +17018,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Mythicant Pryderis.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2943.png"
  },
  {
   "class": "Sorcery",
@@ -17037,7 +17037,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Mythicant Solis.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2946.png"
  },
  {
   "class": "Rodian Master",
@@ -17066,7 +17066,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Cleric.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3002.png"
  },
  {
   "class": "Life",
@@ -17085,7 +17085,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Lord.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3006.png"
  },
  {
   "class": "Life",
@@ -17104,7 +17104,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Scion.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3003.png"
  },
  {
   "class": "Life",
@@ -17123,7 +17123,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Shieldbearer.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3007.png"
  },
  {
   "class": "Life",
@@ -17142,7 +17142,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Skirmisher.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3004.png"
  },
  {
   "class": "Life",
@@ -17161,7 +17161,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Nephilim Sorcerer.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3005.png"
  },
  {
   "class": "Rodian Master",
@@ -17190,16 +17190,16 @@
    "speed": 25,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Nihilist Ender.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3028.png"
  },
  {
   "class": "Chaos",
   "family": "Nihilist",
   "creature": "Nihilist Paralyzer",
   "trait_name": "Careful Planning",
-  "trait_description": "After a creature is killed, your creatures gain 50% of its Attack. This trait does not stack.",
+  "trait_description": "After a creature is killed, your creatures gain 75% of its Attack. This trait does not stack.",
   "material_name": "Hourglass Sand",
-  "search_text": "Chaos Nihilist Paralyzer Nihilist Careful Planning After a creature is killed, your creatures gain 50% of its Attack. This trait does not stack. Hourglass Sand",
+  "search_text": "Chaos Nihilist Paralyzer Nihilist Careful Planning After a creature is killed, your creatures gain 75% of its Attack. This trait does not stack. Hourglass Sand",
   "uid": "912d68",
   "stats": {
    "health": 35,
@@ -17209,7 +17209,7 @@
    "speed": 25,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Nihilist Paralyzer.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3149.png"
  },
  {
   "class": "Chaos",
@@ -17228,7 +17228,7 @@
    "speed": 26,
    "total": 107
   },
-  "sprite_filename": "forum_avatars/Nihilist Protector.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3032.png"
  },
  {
   "class": "Chaos",
@@ -17247,7 +17247,7 @@
    "speed": 26,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Nihilist Sealer.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3026.png"
  },
  {
   "class": "Chaos",
@@ -17266,7 +17266,7 @@
    "speed": 27,
    "total": 103
   },
-  "sprite_filename": "forum_avatars/Nihilist Seeker.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3031.png"
  },
  {
   "class": "Chaos",
@@ -17285,7 +17285,7 @@
    "speed": 26,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Nihilist Summoner.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3029.png"
  },
  {
   "class": "Rodian Master",
@@ -20573,7 +20573,7 @@
    "speed": 14,
    "total": 105
   },
-  "sprite_filename": "forum_avatars/Shambler Benefactor.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3396.png"
  },
  {
   "class": "Death",
@@ -22925,7 +22925,7 @@
    "speed": 19,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Ashskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3152.png"
  },
  {
   "class": "Sorcery",
@@ -22944,7 +22944,7 @@
    "speed": 20,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Cloudskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3154.png"
  },
  {
   "class": "Sorcery",
@@ -22963,7 +22963,7 @@
    "speed": 19,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Dryskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3153.png"
  },
  {
   "class": "Sorcery",
@@ -22982,7 +22982,7 @@
    "speed": 18,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Rimeskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3150.png"
  },
  {
   "class": "Sorcery",
@@ -23001,7 +23001,7 @@
    "speed": 18,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Venomskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3151.png"
  },
  {
   "class": "Sorcery",
@@ -23020,7 +23020,7 @@
    "speed": 18,
    "total": 111
   },
-  "sprite_filename": "forum_avatars/Voltskin Spellmane.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3155.png"
  },
  {
   "class": "Rodian Master",
@@ -24540,7 +24540,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Uralos Healer.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3014.png"
  },
  {
   "class": "Nature",
@@ -24559,7 +24559,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Uralos Knight.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3017.png"
  },
  {
   "class": "Nature",
@@ -24578,7 +24578,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Uralos Savage.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3016.png"
  },
  {
   "class": "Nature",
@@ -24597,7 +24597,7 @@
    "speed": 18,
    "total": 112
   },
-  "sprite_filename": "forum_avatars/Uralos Spearmaster.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3018.png"
  },
  {
   "class": "Nature",
@@ -24616,7 +24616,7 @@
    "speed": 17,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Uralos Spellslinger.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3019.png"
  },
  {
   "class": "Nature",
@@ -24635,7 +24635,7 @@
    "speed": 18,
    "total": 109
   },
-  "sprite_filename": "forum_avatars/Uralos Trickster.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3015.png"
  },
  {
   "class": "Rodian Master",
@@ -25323,7 +25323,7 @@
    "speed": 23,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Accursed Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3042.png"
  },
  {
   "class": "Nature",
@@ -25342,7 +25342,7 @@
    "speed": 24,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Barbed Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3044.png"
  },
  {
   "class": "Nature",
@@ -25361,7 +25361,7 @@
    "speed": 23,
    "total": 108
   },
-  "sprite_filename": "forum_avatars/Dire Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3041.png"
  },
  {
   "class": "Nature",
@@ -25380,7 +25380,7 @@
    "speed": 23,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Mystic Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3050.png"
  },
  {
   "class": "Nature",
@@ -25399,7 +25399,7 @@
    "speed": 24,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Oozing Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3046.png"
  },
  {
   "class": "Nature",
@@ -25418,7 +25418,7 @@
    "speed": 24,
    "total": 110
   },
-  "sprite_filename": "forum_avatars/Plated Warhog.png"
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_3051.png"
  },
  {
   "class": "Rodian Master",

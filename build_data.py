@@ -278,16 +278,16 @@ def get_sprite_path(sprite_filename: str, creature_name: str):
         os.path.join("public", "suapi-battle-sprites", sprite_filename)
     ):
         return f"suapi-battle-sprites/{sprite_filename}"
-    elif os.path.isfile(
-        os.path.join(
-            "public", "forum_avatars", f"{sanitise(creature_name)}.png"
-        )
-    ):
-        return f"forum_avatars/{sanitise(creature_name)}.png"
-    elif os.path.isfile(
-        os.path.join("public", "new_sprites", f"{sanitise(creature_name)}.png")
-    ):
-        return f"new_sprites/{sanitise(creature_name)}.png"
+    # elif os.path.isfile(
+    #     os.path.join(
+    #         "public", "forum_avatars", f"{sanitise(creature_name)}.png"
+    #     )
+    # ):
+    #     return f"forum_avatars/{sanitise(creature_name)}.png"
+    # elif os.path.isfile(
+    #     os.path.join("public", "new_sprites", f"{sanitise(creature_name)}.png")
+    # ):
+    #     return f"new_sprites/{sanitise(creature_name)}.png"
     return False
 
 

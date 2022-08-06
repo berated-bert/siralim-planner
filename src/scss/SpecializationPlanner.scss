@@ -303,11 +303,15 @@ span.option-icon {
     align-self: stretch;
     background: #eee;
     width: 17%;
+    min-width: 170px;
     padding: 5px 0;
     font-size: 14px;
     line-height: 100%;
     overflow-y: auto;
     color: rgba(0, 0, 0, 0.75);
+    @media (max-width: 1280px) {
+      font-size: 13px;
+    }
     .specialization-option {
       padding: 4px 20px;
       cursor: pointer;

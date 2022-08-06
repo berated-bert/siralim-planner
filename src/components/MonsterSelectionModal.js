@@ -345,9 +345,17 @@ function getPageFamily(m) {
  * @return {String}   A string representing the semantic name of the monster.
  */
 function getMonsterSemanticName(m) {
-  return m.family
-    ? m.family + " / " + m.creature
-    : m.class + " (" + m.trait_name + ")";
+  function isCreature(m) {
+    return (
+      m.class === "Nature" ||
+      m.class === "Death" ||
+      m.class === "Life" ||
+      m.class === "Chaos" ||
+      m.class === "Sorcery"
+    );
+  }
+
+  return isCreature(m) ? m.creature : m.trait_name;
 }
 
 /**
