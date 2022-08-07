@@ -421,7 +421,7 @@ Rodian Master,Cherub,Mastery Trait,Master of Cherubs,"If all the creatures in yo
 Sorcery,Chimera,Arcana Chimera,Eldritch Creation,"At the start of battle, your creatures gain 2 Spell Gems that correspond to their Fused creature's class. This trait does not stack.",Impossible Recipe
 Sorcery,Chimera,Blessed Chimera,Raging Spirit,"After your creatures are killed, they have a 35% chance to be resurrected with 50% Health and gain a random trait that belongs to their Fused creature's race.
 This trait does not stack.",Orthodox Recipe
-Sorcery,Chimera,Draco Chimera,Divine Form,Your creatures start battles with 50% more of whatever stat corresponds to their Fused creature's class. This trait does not stack.,Complicated Recipe
+Sorcery,Chimera,Draco Chimera,Divine Form,"At the start of battle, your creatures gain 100% more of whatever stat corresponds to their Fused creature's class. This trait does not stack.",Complicated Recipe
 Sorcery,Chimera,Undying Chimera,Appreciation For Ancestry,Your creatures deal 75% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.,Forbidden Recipe
 Sorcery,Chimera,Valor Chimera,Valiant Heart,Your creatures Attack and Cast 1 additional time for each creature with the same secondary Fusion fighting on your side. This trait does not stack.,Hidden Recipe
 Sorcery,Chimera,Wylder Chimera,Fairy Blood,"At the start of battle, your creatures gain a random trait that belongs to their Fused creature's class. This trait does not stack.",Natural Recipe
@@ -722,11 +722,11 @@ Chaos,Exotic,Tsuchinoko,Rollout,"At the start of this creature's turn, it Attack
 Death,Exotic,Vannyx,Death Sentence,This creature deals 125% more damage to enemies with Feared.,Dark Cloak
 Nature,Exotic,Zombaton,Reform,"After your other creatures are killed for the first time, they are resurrected with 30% Health. This trait does not stack.",Solidified Slime
 Life,Fae,Asclepias Fae,Dead Butterflies,"The first 3 times this creature is killed, it is resurrected with 100% Health. This creature takes 75% more damage and deals 50% less damage.",Blue Bottled Fairy
-Life,Fae,Helianthus Fae,Lost In Forever,"This creature's end-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Green Bottle Fairy
+Life,Fae,Helianthus Fae,Lost In Forever,"This creature's start-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Green Bottle Fairy
 Life,Fae,Hydrangea Fae,Crystal Lake,"This creature Attacks and Casts spells 2 additional times, but it can't gain buffs.",Pink Bottled Fairy
-Life,Fae,Polygala Fae,True North,"This creature's start-of-turn and end-of-turn effects activate 1 additional time, but has 50% lower stats (other than Health).",Purple Bottled Fairy
+Life,Fae,Polygala Fae,True North,"This creature's start-of-turn and end-of-turn effects activate 1 additional time, but it has 95% less stats (other than Health).",Purple Bottled Fairy
 Life,Fae,Rhododendron Fae,The Great Beyond,"This creature's automatically-cast spells have a 40% chance to be considered manually cast, but this creature cannot manually cast spells.",Yellow Bottled Fairy
-Life,Fae,Roseaea Fae,Outgrow,"This creature's start-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Red Bottled Fairy
+Life,Fae,Roseaea Fae,Outgrow,"This creature's end-of-turn effects activate 1 additional time, but it has 50% less stats (other than Health).",Red Bottled Fairy
 Rodian Master,Fae,Mastery Trait,Master of Fae,"If all the creatures in your party are Fae, they have a 60% chance to avoid damage from spells. This trait does not stack.",Sigil of the Fae
 Sorcery,Familiar,Arcane Familiar,All For One,Your creatures cast spells 0.5 additional times (rounded down) for each Familiar fighting on your side. This trait does not stack.,Arcane Pinion
 Sorcery,Familiar,Elemental Familiar,Conversion,Your creatures' spells deal 15% more damage and 15% less healing for each Familiar fighting on your side. This trait does not stack.,Elemental Pinion
@@ -972,7 +972,7 @@ Rodian Master,Koloss,Mastery Trait,Master of Kolosses,Your Kolosses start battle
 Chaos,Kraken,Abyssal Kraken,Abyssal Waters,"As long as your creatures haven't gained or lost stats, they have 75% more stats (other than Health). This trait does not stack.",Ghastly Sucker
 Chaos,Kraken,Inkjet Kraken,Inky Escape,"As long as this creature hasn't gained or lost Speed, it has 200% more Speed and has Agile.",Gross Sucker
 Chaos,Kraken,Ironside Kraken,Iron Shell,"As long as this creature hasn't gained or lost Defense, it has 200% more Defense and has Protected.",Hideous Sucker
-Chaos,Kraken,Kraken Hundredhand,Hundred Hands,"As long as your creatures haven't gained or lost stats, this creature has 200% more stats (other than Health).",Repulsive Sucker
+Chaos,Kraken,Kraken Hundredhand,Hundred Hands,"As long as your creatures hvaen't gained or lost stats, this creature has 200% more stats (other than Health).",Repulsive Sucker
 Chaos,Kraken,Kraken Shipbreaker,Shipbreaker,"As long as this creature hasn't gained or lost Attack, it has 200% more Attack and has Berserk.",Dreadful Sucker
 Chaos,Kraken,Unblinking Kraken,Unblinking Eyes,"As long as this creature hasn't gained or lost Intelligence, it has 200% more Intelligence and has Arcane.",Creepy Sucker
 Rodian Master,Kraken,Mastery Trait,Master of Krakens,"If all the creatures in your party are Krakens, the stat boosts from their innate traits is increased by 50%. This trait does not stack.",Sigil of the Kraken
@@ -1006,7 +1006,7 @@ Nether Boss,Lich,King Andrick,Andrick's Folly,"When your creatures gain a minion
 Nether Boss,Lich,King Andrick,Andrick's Royal Decree,"After your creatures gain a minion, they also gain a random buff. This trait does not stack.",Andrick's Tattered Garb
 Rodian Master,Lich,Mastery Trait,Master of Liches,"After your Liches Cast a Death spell, they gain 10% Intelligence. This trait does not stack.",Sigil of the Lich
 Nature,Luckmantria,Ace Luckmantria,Royal Flush,Your Luckmantria creatures share their innate traits with each other.,Torn Card (Ace)
-Nature,Luckmantria,Club Luckmantria,Showdown,"If this creature's Intelligence is higher than that of any enemy, it has 100% more Intelligence.",Torn Card (Club)
+Nature,Luckmantria,Club Luckmantria,Showdown,"If this creature's Intelligence is higher than that of any enemy, it has 200% more Intelligence.",Torn Card (Club)
 Nature,Luckmantria,Diamond Luckmantria,Semi-Bluff,"While this creature is Defending, its Intelligence is swapped with its Defense. This creature takes 30% less damage while it is Defending.",Torn Card (Diamond)
 Nature,Luckmantria,Heart Luckmantria,Ante,This creature has additional Intelligence equal to 5% of your other creatures' Current Health.,Torn Card (Heart)
 Nature,Luckmantria,Joker Luckmantria,Implied Odds,"After a creature is killed, your creatures gain a random buff. This trait does not stack.",Torn Card (Joker)
@@ -1100,7 +1100,7 @@ Life,Nephilim,Nephilim Skirmisher,Balanced Swordplay,Your creatures deal damage 
 Life,Nephilim,Nephilim Sorcerer,Balanced Spellcasting,Your creatures deal damage with spells based on 25% of all their stats (other than Health).,Arcane Thread of Fate
 Rodian Master,Nephilim,Mastery Trait,Master of Nephilim,"If all the creatures in your party are Nephilims, they are resistant to debuffs and start battles with 2 random buffs. This trait does not stack.",Sigil of the Nephilim
 Chaos,Nihilist,Nihilist Ender,Nihilism,"After this creature Attacks, it deals 50% of this damage to all other enemies. This creature deals 12% less damage with attacks for each living enemy.",Sketch Paper
-Chaos,Nihilist,Nihilist Paralyzer,Careful Planning,"After a creature is killed, your creatures gain 75% of its Attack. This trait does not stack.",Hourglass Sand
+Chaos,Nihilist,Nihilist Paralyzer,Careful Planning,"After this creature is killed, your creatures gain 75% of its Attack. This trait does not stack.",Hourglass Sand
 Chaos,Nihilist,Nihilist Protector,Riverside,"After your creatures Attack, the target's Speed is decreased by 20%. This trait does not stack.",Scepter Prism
 Chaos,Nihilist,Nihilist Sealer,Accelerated Harvest,"After your creatures Attack, they have a 20% chance to afflict the target with a random debuff. This trait does not stack.",Ink of Eternity
 Chaos,Nihilist,Nihilist Seeker,Knowledge Is Power,Your creatures deal 5% more damage with spells for each time they've Attacked in the current battle. This trait does not stack.,Small Doll
@@ -1159,7 +1159,7 @@ Life,Paragon,Chocolate Paragon,Chocolate Attunement,Creatures cannot gain buffs.
 Life,Paragon,Diamond Paragon,Diamond Attunement,All Spell Gems are 50% more potent. This trait does not stack.,Giant Diamond
 Life,Paragon,Emerald Paragon,Emerald Attunement,All creatures deal 50% more damage. This trait does not stack.,Giant Emerald
 Life,Paragon,Opal Paragon,Opal Attunement,Creatures cannot lose stats.,Giant Opal
-Life,Paragon,Ruby Paragon,Ruby Attunement,All creatures have 75% more health. This trait does not stack.,Giant Ruby
+Life,Paragon,Ruby Paragon,Ruby Attunement,All creatures start battles with 75% more health. This trait does not stack.,Giant Ruby
 Life,Paragon,Sapphire Paragon,Sapphire Attunement,All creatures take 50% less damage. This trait does not stack.,Giant Sapphire
 Life,Paragon,Topaz Paragon,Topaz Attunement,All buffs and debuffs last for only 1 turn.,Giant Topaz
 Nether Boss,Paragon,Chroma,Chroma's Shelter,This creature is immune to damage from its own class.,Chroma's Bent Crown
