@@ -4699,7 +4699,7 @@
    "speed": 12,
    "total": 107
   },
-  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1118.png",
+  "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1119.png",
   "sources": [
    "Blood Grove",
    "Temple of Lies"
@@ -13085,8 +13085,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2321.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13108,8 +13107,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2326.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13131,8 +13129,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2322.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13154,8 +13151,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2324.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13177,8 +13173,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2325.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13200,8 +13195,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2327.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -13223,8 +13217,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2323.png",
   "sources": [
-   "Path of the Damned",
-   "Where the Dead Ships Dwell"
+   "Alexandria God Shop"
   ]
  },
  {
@@ -25606,8 +25599,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2423.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25629,8 +25621,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2424.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25652,8 +25643,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2425.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25675,8 +25665,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2426.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25698,8 +25687,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2427.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25721,8 +25709,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2428.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25744,8 +25731,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2429.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25767,8 +25753,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2430.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25790,8 +25775,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2431.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -25813,8 +25797,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2432.png",
   "sources": [
-   "Caustic Reactor",
-   "Frostbite Caverns"
+   "Azural God Shop"
   ]
  },
  {
@@ -27920,8 +27903,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1788.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
@@ -27943,8 +27925,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1789.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
@@ -27966,8 +27947,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1790.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
@@ -28011,8 +27991,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1791.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
@@ -28034,8 +28013,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1792.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
@@ -28057,8 +28035,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1793.png",
   "sources": [
-   "Great Pandemonium",
-   "The Swamplands"
+   "Anneltha God Shop"
   ]
  },
  {
