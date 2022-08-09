@@ -40,6 +40,7 @@
         ul {
           margin: 0;
           padding: 0;
+          margin-bottom: 8px;
           padding-left: 12px;
           li {
           }
@@ -405,7 +406,7 @@
   width: 100%;
   //background: rgba(255, 255, 255, 0.4);
 
-  padding: 6px 2px;
+  padding: 7px 2px;
   transition: background 0.2s ease;
   //border-radius: 3px;
   color: #111;
@@ -432,16 +433,16 @@
   //   border-radius: 3px;
   // }
 
-  // &.artifact-slot {
-  //   .trait-slot-class,
-  //   .trait-slot-family,
-  //   .trait-slot-creature {
-  //     opacity: 0.2;
-  //     .creature-tag {
-  //       background: none !important;
-  //     }
-  //   }
-  // }
+  &.artifact-slot {
+    .trait-slot-class,
+    .trait-slot-family,
+    .trait-slot-creature {
+      opacity: 0.2;
+      .creature-tag {
+        pointer-events: none;
+      }
+    }
+  }
 
   // .trait-slot-class {
   //   width: 3%;

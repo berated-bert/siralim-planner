@@ -126,7 +126,7 @@ class MonsterPlannerRow extends PureComponent {
         )}
 
         <div className="trait-slot-creature">
-          {isMonster(m) ? (
+          {isMonster(m) && !this.props.isArtifact ? (
             <span
               className="creature-tag"
               data-for={"main-tooltip-" + this.props.rowId}
@@ -330,6 +330,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
               monster={this.props.monster}
               error={this.props.error}
               rowId={this.props.rowId}
+              isArtifact={this.props.traitSlotIndex === 2}
             />
           )}
         </div>
