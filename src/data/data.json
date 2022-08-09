@@ -4318,8 +4318,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2139.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4341,8 +4340,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2140.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4364,8 +4362,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2141.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4387,8 +4384,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2142.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4432,8 +4428,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2144.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4455,8 +4450,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2145.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4478,8 +4472,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2146.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -4501,8 +4494,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2147.png",
   "sources": [
-   "Bastion of the Void",
-   "Path of the Damned"
+   "Ariamaki God Shop"
   ]
  },
  {
@@ -9547,8 +9539,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1247.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9570,8 +9561,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1248.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9593,8 +9583,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1249.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9616,8 +9605,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1250.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9639,8 +9627,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1251.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9684,8 +9671,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1253.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -9707,8 +9693,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1254.png",
   "sources": [
-   "Arachnid Nest",
-   "Unsullied Meadows"
+   "Shallan God Shop"
   ]
  },
  {
@@ -24088,9 +24073,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1699.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -24112,6 +24095,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_2708.png",
   "sources": [
+   "Muse God Shop",
    "Life Guild"
   ]
  },
@@ -24134,9 +24118,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1700.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -24158,9 +24140,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1701.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -24182,9 +24162,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1702.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -24206,9 +24184,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1703.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -24230,9 +24206,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1704.png",
   "sources": [
-   "Azure Dream",
-   "Sanctum Umbra",
-   "The Barrens"
+   "Muse God Shop"
   ]
  },
  {
@@ -29681,8 +29655,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1838.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29704,8 +29677,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1839.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29727,8 +29699,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1840.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29750,8 +29721,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1841.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29773,8 +29743,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1842.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29796,8 +29765,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1843.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
@@ -29819,8 +29787,7 @@
   },
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1844.png",
   "sources": [
-   "Cutthroat Jungle",
-   "The Swamplands"
+   "Reclusa God Shop"
   ]
  },
  {
