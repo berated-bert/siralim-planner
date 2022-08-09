@@ -11,6 +11,54 @@
   }
 }
 
+.__react_component_tooltip {
+  font-family: "Roboto", sans-serif;
+  padding: 8px 16px !important;
+
+  .inner {
+    display: flex;
+    > div:nth-child(1) {
+      margin-right: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:after {
+        height: 100px;
+        width: 1px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        content: " ";
+      }
+    }
+    > div:nth-child(2) {
+      margin-left: 6px;
+
+      td {
+        background: none;
+        vertical-align: top;
+        align: left;
+        ul {
+          margin: 0;
+          padding: 0;
+          padding-left: 12px;
+          li {
+          }
+        }
+      }
+
+      h3 {
+        font-size: 1.1em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+        .cls-icon {
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
 /*
   .monster-planner-party-member
     .party-member-profile      
@@ -24,6 +72,21 @@
 */
 
 .monster-planner-party-member {
+  &:nth-child(2) {
+    z-index: 40;
+  }
+  &:nth-child(3) {
+    z-index: 30;
+  }
+  &:nth-child(4) {
+    z-index: 20;
+  }
+  &:nth-child(5) {
+    z-index: 10;
+  }
+  &:nth-child(6) {
+    z-index: 5;
+  }
   z-index: 50;
   position: relative;
   //border: 2px solid #ddd;
@@ -216,9 +279,11 @@
   // }
 }
 
-.creature-sprite-container {
+.party-member-profile .creature-sprite-container {
+  margin-left: 64px;
   margin-right: 8px;
-  margin-left: 64px; // Extra for the relic
+}
+.creature-sprite-container {
   width: 64px;
   height: 64px;
   display: flex;
@@ -382,13 +447,16 @@
   //   border-radius: 3px;
   // }
 
-  &.artifact-slot {
-    .trait-slot-class,
-    .trait-slot-family,
-    .trait-slot-creature {
-      opacity: 0.2;
-    }
-  }
+  // &.artifact-slot {
+  //   .trait-slot-class,
+  //   .trait-slot-family,
+  //   .trait-slot-creature {
+  //     opacity: 0.2;
+  //     .creature-tag {
+  //       background: none !important;
+  //     }
+  //   }
+  // }
 
   .trait-slot-class {
     width: 3%;
@@ -399,10 +467,21 @@
   }
 
   .trait-slot-creature {
-    width: 14%;
+    width: 15%;
+    .creature-tag {
+      background: rgba(0, 0, 0, 0.055);
+      padding: 4px 6px;
+      display: inline-block;
+      border-radius: 4px;
+      cursor: help;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.09);
+      }
+    }
   }
   .trait-slot-trait_name {
-    width: 14%;
+    width: 15%;
   }
   .trait-slot-trait_description {
     width: 72%;

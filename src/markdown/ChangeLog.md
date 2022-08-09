@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.1.5 (9 August 2022)
+
+-   Added tooltips for monsters. Hover over a monster's name in the planner to see their sprite, stats, and source(s).
+-   The sources were taken from the Siralim Ultimate API. If you notice anything incorrect, please feel free to tag me on Discord. Even better, submit a pull request to the [Siralim Ultimate API GitHub](https://github.com/rovermicrover/siralim-ultimate-api).
+-   Updated a couple more monster names/trait descriptions.
+
 ### v1.1.4 (6 August 2022)
 
 -   Fixed up some outdated trait descriptions, mostly for Exotic Creatures. Thank you to KageNoOni on Discord for providing a list of trait descriptions to update.
