@@ -3,7 +3,7 @@
 #monster-planner {
   font-size: 13px;
   width: 100%;
-  padding: 15px 60px;
+  padding: 10px 60px;
   position: relative;
   margin-bottom: 20px;
   @media (max-width: 1280px) {
@@ -14,6 +14,7 @@
 .__react_component_tooltip {
   font-family: "Roboto", sans-serif;
   padding: 8px 16px !important;
+  position: absolute;
 
   .inner {
     display: flex;
@@ -72,26 +73,10 @@
 */
 
 .monster-planner-party-member {
-  &:nth-child(2) {
-    z-index: 40;
-  }
-  &:nth-child(3) {
-    z-index: 30;
-  }
-  &:nth-child(4) {
-    z-index: 20;
-  }
-  &:nth-child(5) {
-    z-index: 10;
-  }
-  &:nth-child(6) {
-    z-index: 5;
-  }
-  z-index: 50;
   position: relative;
   //border: 2px solid #ddd;
   //border-radius: 5px;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 
   //border: 2px solid rgba(0, 0, 0, 0.3);
   //border-bottom: 2px solid rgba(0, 0, 0, 0.3);
