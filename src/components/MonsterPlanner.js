@@ -125,16 +125,7 @@ class MonsterPlannerRow extends PureComponent {
           </ReactTooltip>
         )}
 
-        <div className="trait-slot-class">
-          <span className="mobile-only ib">
-            <b>Class:&nbsp;&nbsp;</b>
-          </span>
-          {renderClass(m.class)}
-        </div>
         <div className="trait-slot-creature">
-          <span className="mobile-only ib">
-            <b>Creature:&nbsp;</b>
-          </span>
           {isMonster(m) ? (
             <span
               className="creature-tag"
@@ -142,10 +133,11 @@ class MonsterPlannerRow extends PureComponent {
               data-tip
               data-iscapture="true"
             >
-              {m.creature}
+              {renderClass(m.class)}
+              <span>{m.creature}</span>
             </span>
           ) : (
-            m.creature
+            <span className="non-creature-tag">{m.creature}</span>
           )}
         </div>
         <div className="trait-slot-trait_name">

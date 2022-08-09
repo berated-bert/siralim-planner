@@ -3,7 +3,7 @@
 #monster-planner {
   font-size: 13px;
   width: 100%;
-  padding: 10px 60px;
+  padding: 10px 40px;
   position: relative;
   margin-bottom: 20px;
   @media (max-width: 1280px) {
@@ -26,7 +26,7 @@
       &:after {
         height: 100px;
         width: 1px;
-        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.15);
         content: " ";
       }
     }
@@ -405,7 +405,7 @@
   width: 100%;
   //background: rgba(255, 255, 255, 0.4);
 
-  padding: 9px 2px;
+  padding: 6px 2px;
   transition: background 0.2s ease;
   //border-radius: 3px;
   color: #111;
@@ -443,20 +443,31 @@
   //   }
   // }
 
-  .trait-slot-class {
-    width: 3%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+  // .trait-slot-class {
+  //   width: 3%;
+  //   text-align: center;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  // }
 
   .trait-slot-creature {
-    width: 15%;
+    width: 18%;
+    padding: 0 8px;
+    .non-creature-tag {
+      align-items: center;
+      display: flex;
+      padding-left: 33px;
+    }
     .creature-tag {
-      background: rgba(0, 0, 0, 0.055);
-      padding: 4px 6px;
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      span.cls-icon {
+        margin-right: 8px;
+      }
+
+      background: rgba(0, 0, 0, 0.045);
+      padding: 6px 8px;
       border-radius: 4px;
       cursor: help;
 
