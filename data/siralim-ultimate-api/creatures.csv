@@ -107,14 +107,14 @@ spr_crits_battle_1063.png,Caliban,Avatar,Chaos,38,18,18,18,18,110,Gate of the Go
 spr_crits_battle_1079.png,Yseros,Avatar,Life,42,17,17,17,17,110,Gate of the Gods,The Truth
 spr_crits_battle_1060.png,Apocranox,Avatar,Nature,42,17,17,17,17,110,Gate of the Gods,Trick Shot
 spr_crits_battle_1062.png,Azural,Avatar,Sorcery,42,17,17,17,17,110,Gate of the Gods,Wintermaul
-spr_crits_battle_2142.png,Impaler Banshee,Banshee,Death,30,16,16,16,26,104,"Bastion of the Void, Path of the Damned",Empowered Bone Spear
-spr_crits_battle_2145.png,Styx Banshee,Banshee,Death,31,16,16,16,26,105,"Bastion of the Void, Path of the Damned",Empowered Chain Lightning
-spr_crits_battle_2146.png,Tormented Banshee,Banshee,Death,30,15,17,17,27,106,"Bastion of the Void, Path of the Damned",Empowered Death Blossom
-spr_crits_battle_2139.png,Abyss Banshee,Banshee,Death,30,15,16,16,26,103,"Bastion of the Void, Path of the Damned",Empowered Death Siphon
-spr_crits_battle_2141.png,Destruction Banshee,Banshee,Death,31,16,16,16,26,105,"Bastion of the Void, Path of the Damned",Empowered Fireball
-spr_crits_battle_2140.png,Anguish Banshee,Banshee,Death,33,18,15,15,25,106,"Bastion of the Void, Path of the Damned",Empowered Magic Missile
-spr_crits_battle_2144.png,Savage Banshee,Banshee,Death,32,17,17,14,27,107,"Bastion of the Void, Path of the Damned",Empowered Savage Spores
-spr_crits_battle_2147.png,Valentine Banshee,Banshee,Death,31,16,16,16,26,105,"Bastion of the Void, Path of the Damned",Empowered Soul Sacrifice
+spr_crits_battle_2142.png,Impaler Banshee,Banshee,Death,30,16,16,16,26,104,Ariamaki God Shop,Empowered Bone Spear
+spr_crits_battle_2145.png,Styx Banshee,Banshee,Death,31,16,16,16,26,105,Ariamaki God Shop,Empowered Chain Lightning
+spr_crits_battle_2146.png,Tormented Banshee,Banshee,Death,30,15,17,17,27,106,Ariamaki God Shop,Empowered Death Blossom
+spr_crits_battle_2139.png,Abyss Banshee,Banshee,Death,30,15,16,16,26,103,Ariamaki God Shop,Empowered Death Siphon
+spr_crits_battle_2141.png,Destruction Banshee,Banshee,Death,31,16,16,16,26,105,Ariamaki God Shop,Empowered Fireball
+spr_crits_battle_2140.png,Anguish Banshee,Banshee,Death,33,18,15,15,25,106,Ariamaki God Shop,Empowered Magic Missile
+spr_crits_battle_2144.png,Savage Banshee,Banshee,Death,32,17,17,14,27,107,Ariamaki God Shop,Empowered Savage Spores
+spr_crits_battle_2147.png,Valentine Banshee,Banshee,Death,31,16,16,16,26,105,Ariamaki God Shop,Empowered Soul Sacrifice
 spr_crits_battle_2691.png,Phobos Banshee,Banshee,Death,31,11,26,16,21,105,Death Guild,Tempest
 spr_crits_battle_1114.png,Bard Caroller,Bard,Sorcery,40,18,28,13,13,112,Sorcery Guild,Christmas Music Sucks
 spr_crits_battle_1115.png,Bard Fool,Bard,Sorcery,42,17,27,12,12,110,"Blood Grove, Temple of Lies",Fable
@@ -289,14 +289,14 @@ spr_crits_battle_2718.png,Dragon Spirit,Dragon,Sorcery,38,13,18,28,13,110,Sorcer
 spr_crits_battle_1261.png,Dragon Soldier,Dragon,Sorcery,35,20,20,15,20,110,"Faraway Enclave, Unsullied Meadows",Menacing Dragon Fangs
 spr_crits_battle_1257.png,Dragon Queen,Dragon,Sorcery,34,19,19,17,19,108,"Faraway Enclave, Unsullied Meadows",Piercing Dragon Claws
 spr_crits_battle_1260.png,Dragon Sentinel,Dragon,Sorcery,35,20,20,15,20,110,"Faraway Enclave, Unsullied Meadows",Sweeping Dragon Tail
-spr_crits_battle_1253.png,Dryad Vindicator,Dryad,Nature,31,16,16,21,21,105,"Arachnid Nest, Unsullied Meadows",Absolution
-spr_crits_battle_1254.png,Dryad Warden,Dryad,Nature,30,15,15,23,20,103,"Arachnid Nest, Unsullied Meadows",Duplication
-spr_crits_battle_1248.png,Dryad Naturalist,Dryad,Nature,28,16,16,21,21,102,"Arachnid Nest, Unsullied Meadows",Extension
-spr_crits_battle_1251.png,Dryad Seductress,Dryad,Nature,31,16,16,21,21,105,"Arachnid Nest, Unsullied Meadows",Green Eyes
-spr_crits_battle_1249.png,Dryad Proliferator,Dryad,Nature,29,17,17,22,22,107,"Arachnid Nest, Unsullied Meadows",Moonlight
+spr_crits_battle_1253.png,Dryad Vindicator,Dryad,Nature,31,16,16,21,21,105,Shallan God Shop,Absolution
+spr_crits_battle_1254.png,Dryad Warden,Dryad,Nature,30,15,15,23,20,103,Shallan God Shop,Duplication
+spr_crits_battle_1248.png,Dryad Naturalist,Dryad,Nature,28,16,16,21,21,102,Shallan God Shop,Extension
+spr_crits_battle_1251.png,Dryad Seductress,Dryad,Nature,31,16,16,21,21,105,Shallan God Shop,Green Eyes
+spr_crits_battle_1249.png,Dryad Proliferator,Dryad,Nature,29,17,17,22,22,107,Shallan God Shop,Moonlight
 spr_crits_battle_1252.png,Dryad Sunbather,Dryad,Nature,28,16,16,21,21,102,Nature Guild,Oulala
-spr_crits_battle_1250.png,Dryad Raincaller,Dryad,Nature,32,17,17,21,21,108,"Arachnid Nest, Unsullied Meadows",Soothing Rain
-spr_crits_battle_1247.png,Dryad Keeper,Dryad,Nature,28,16,16,21,21,102,"Arachnid Nest, Unsullied Meadows",Surge
+spr_crits_battle_1250.png,Dryad Raincaller,Dryad,Nature,32,17,17,21,21,108,Shallan God Shop,Soothing Rain
+spr_crits_battle_1247.png,Dryad Keeper,Dryad,Nature,28,16,16,21,21,102,Shallan God Shop,Surge
 spr_crits_battle_1310.png,Vegetable Dumpling,Dumpling,Nature,43,18,18,16,16,111,Unknown,Clean Eating
 spr_crits_battle_1309.png,Squash,Dumpling,Nature,42,17,17,17,17,110,Unknown,Extra Treat
 spr_crits_battle_1306.png,Melon,Dumpling,Nature,42,17,17,17,17,110,Unknown,Glucose
@@ -744,13 +744,13 @@ spr_crits_battle_1451.png,Shambler Recruiter,Sea Shambler,Death,30,22,22,17,12,1
 spr_crits_battle_1450.png,Shambler Juggernaut,Sea Shambler,Death,26,23,23,18,13,103,"Sea Blood Grove, Where the Dead Ships Dwell",Vicar's Blessing
 spr_crits_battle_1449.png,Shambler Rescuer,Sea Shambler,Death,30,22,22,17,12,103,"Sea Blood Grove, Where the Dead Ships Dwell",Retrograde
 spr_crits_battle_1446.png,Amorphous Shambler,Sea Shambler,Death,30,20,23,18,13,104,"Blood Grove, Where the Dead Ships Dwell",The Sickness
-spr_crits_battle_1704.png,Vanelin Seraph,Seraph,Life,31,23,23,18,13,108,"Azure Dream, Sanctum Umbra, The Barrens",Almost Easy
-spr_crits_battle_2708.png,Kaito Seraph,Seraph,Life,32,17,17,17,22,105,Life Guild,Break of Dawn
-spr_crits_battle_1699.png,Andolin Seraph,Seraph,Life,28,23,23,18,13,105,"Azure Dream, Sanctum Umbra, The Barrens",Break the Cycle
-spr_crits_battle_1700.png,Neralim Seraph,Seraph,Life,33,23,23,15,10,104,"Azure Dream, Sanctum Umbra, The Barrens",Chasing Infinity
-spr_crits_battle_1701.png,Nex Seraph,Seraph,Life,32,22,22,17,12,105,"Azure Dream, Sanctum Umbra, The Barrens",Defy the Odds
-spr_crits_battle_1703.png,Undolim Seraph,Seraph,Life,32,22,22,17,12,105,"Azure Dream, Sanctum Umbra, The Barrens",Ever Upwards
-spr_crits_battle_1702.png,Siralim Seraph,Seraph,Life,32,22,22,17,12,105,"Azure Dream, Sanctum Umbra, The Barrens",Haven
+spr_crits_battle_1704.png,Vanelin Seraph,Seraph,Life,31,23,23,18,13,108,Muse God Shop,Almost Easy
+spr_crits_battle_2708.png,Kaito Seraph,Seraph,Life,32,17,17,17,22,105,"Muse God Shop, Life Guild",Break of Dawn
+spr_crits_battle_1699.png,Andolin Seraph,Seraph,Life,28,23,23,18,13,105,Muse God Shop,Break the Cycle
+spr_crits_battle_1700.png,Neralim Seraph,Seraph,Life,33,23,23,15,10,104,Muse God Shop,Chasing Infinity
+spr_crits_battle_1701.png,Nex Seraph,Seraph,Life,32,22,22,17,12,105,Muse God Shop,Defy the Odds
+spr_crits_battle_1703.png,Undolim Seraph,Seraph,Life,32,22,22,17,12,105,Muse God Shop,Ever Upwards
+spr_crits_battle_1702.png,Siralim Seraph,Seraph,Life,32,22,22,17,12,105,Muse God Shop,Haven
 spr_crits_battle_1709.png,Hoar Shade,Shade,Death,26,21,16,17,22,102,Vertraag God Shop,Dark Signs
 spr_crits_battle_1707.png,Evernight Shade,Shade,Death,28,21,16,17,21,103,Vertraag God Shop,From Light Comes Darkness
 spr_crits_battle_1711.png,Wandering Shade,Shade,Death,28,23,18,15,23,107,Vertraag God Shop,Impossibility
@@ -948,13 +948,13 @@ spr_crits_battle_2375.png,Incandescent Vulpes,Vulpes,Life,31,16,21,16,21,105,"Fr
 spr_crits_battle_2377.png,Terra Vulpes,Vulpes,Life,33,18,23,13,18,105,"Frostbite Caverns, The Swamplands",Pallida
 spr_crits_battle_2378.png,Spirit Vulpes,Vulpes,Life,28,16,21,16,21,102,"Frostbite Caverns, The Swamplands",Velox
 spr_crits_battle_2380.png,Cosmos Vulpes,Vulpes,Life,30,15,22,17,22,106,"Frostbite Caverns, The Swamplands",Zerda
-spr_crits_battle_1844.png,Waspid Worker,Waspid,Nature,27,22,22,12,22,105,"Cutthroat Jungle, The Swamplands",Disposability
-spr_crits_battle_1838.png,Waspid Guardian,Waspid,Nature,23,18,18,16,26,101,"Cutthroat Jungle, The Swamplands",Endless Swarm
-spr_crits_battle_1843.png,Waspid Soldier,Waspid,Nature,24,19,19,14,24,100,"Cutthroat Jungle, The Swamplands",Final Sting
-spr_crits_battle_1842.png,Waspid Slicer,Waspid,Nature,22,20,20,15,25,102,"Cutthroat Jungle, The Swamplands",Gore
-spr_crits_battle_1839.png,Waspid Hiveleader,Waspid,Nature,26,21,21,11,21,100,"Cutthroat Jungle, The Swamplands",Hive Mind
-spr_crits_battle_1840.png,Waspid Infiltrator,Waspid,Nature,26,20,20,15,25,106,"Cutthroat Jungle, The Swamplands",Infiltration
-spr_crits_battle_1841.png,Waspid Scout,Waspid,Nature,25,20,20,15,25,105,"Cutthroat Jungle, The Swamplands",Swarm
+spr_crits_battle_1844.png,Waspid Worker,Waspid,Nature,27,22,22,12,22,105,Reclusa God Shop,Disposability
+spr_crits_battle_1838.png,Waspid Guardian,Waspid,Nature,23,18,18,16,26,101,Reclusa God Shop,Endless Swarm
+spr_crits_battle_1843.png,Waspid Soldier,Waspid,Nature,24,19,19,14,24,100,Reclusa God Shop,Final Sting
+spr_crits_battle_1842.png,Waspid Slicer,Waspid,Nature,22,20,20,15,25,102,Reclusa God Shop,Gore
+spr_crits_battle_1839.png,Waspid Hiveleader,Waspid,Nature,26,21,21,11,21,100,Reclusa God Shop,Hive Mind
+spr_crits_battle_1840.png,Waspid Infiltrator,Waspid,Nature,26,20,20,15,25,106,Reclusa God Shop,Infiltration
+spr_crits_battle_1841.png,Waspid Scout,Waspid,Nature,25,20,20,15,25,105,Reclusa God Shop,Swarm
 spr_crits_battle_1846.png,Glade Watcher,Watcher,Sorcery,33,18,18,18,18,105,"Faraway Enclave, Refuge of the Magi",Affluence
 spr_crits_battle_1845.png,Coast Watcher,Watcher,Sorcery,26,19,19,19,19,102,"Faraway Enclave, Refuge of the Magi",Baffle
 spr_crits_battle_1848.png,Inflatable Watcher,Watcher,Sorcery,29,19,19,19,19,105,Sorcery Guild,"Boing, Boing, Boing"
