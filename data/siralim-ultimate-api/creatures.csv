@@ -119,7 +119,7 @@ spr_crits_battle_2691.png,Phobos Banshee,Banshee,Death,31,11,26,16,21,105,Death 
 spr_crits_battle_1114.png,Bard Caroller,Bard,Sorcery,40,18,28,13,13,112,Sorcery Guild,Christmas Music Sucks
 spr_crits_battle_1115.png,Bard Fool,Bard,Sorcery,42,17,27,12,12,110,"Blood Grove, Temple of Lies",Fable
 spr_crits_battle_1118.png,Bard Poet,Bard,Sorcery,40,18,28,13,13,112,"Blood Grove, Temple of Lies",Hymn of Guile
-spr_crits_battle_1118.png,Bard Trovatore,Bard,Sorcery,39,17,27,12,12,107,"Blood Grove, Temple of Lies",Hymn of Panic
+spr_crits_battle_1119.png,Bard Trovatore,Bard,Sorcery,39,17,27,12,12,107,"Blood Grove, Temple of Lies",Hymn of Panic
 spr_crits_battle_1120.png,Bard Versifier,Bard,Sorcery,40,18,28,13,13,112,"Blood Grove, Temple of Lies",Hymn of Strength
 spr_crits_battle_1113.png,Bard Balladeer,Bard,Sorcery,43,17,27,12,12,111,"Blood Grove, Temple of Lies",Song of Alacrity
 spr_crits_battle_1116.png,Bard Jongleur,Bard,Sorcery,39,17,27,12,12,107,"Blood Grove, Temple of Lies",Song of Resolve
@@ -350,13 +350,13 @@ spr_crits_battle_1326.png,Deceptive Fiend,Fiend,Chaos,32,27,12,12,22,105,Tartari
 spr_crits_battle_1325.png,Berserker Fiend,Fiend,Chaos,30,28,13,13,23,107,Tartarith God Shop,Outrage
 spr_crits_battle_1330.png,Thrasher Fiend,Fiend,Chaos,29,27,12,12,22,102,Tartarith God Shop,Relentless Hunger
 spr_crits_battle_1324.png,Annihilator Fiend,Fiend,Chaos,30,25,13,13,23,104,Tartarith God Shop,Uncontrollable Anger
-spr_crits_battle_2326.png,Forsaken Plaguebearer,Forsaken,Death,37,17,17,22,17,110,"Path of the Damned, Where the Dead Ships Dwell",Anxiety
-spr_crits_battle_2327.png,Forsaken Spinewhipper,Forsaken,Death,38,18,18,20,15,109,"Path of the Damned, Where the Dead Ships Dwell",Contradiction
-spr_crits_battle_2324.png,Forsaken Scourgewalker,Forsaken,Death,32,17,17,22,17,105,"Path of the Damned, Where the Dead Ships Dwell",Curse of the Silent
-spr_crits_battle_2323.png,Forsaken Swampdweller,Forsaken,Death,33,13,18,23,18,105,"Path of the Damned, Where the Dead Ships Dwell",Darkness Surrounding
-spr_crits_battle_2322.png,Forsaken Rotmongerer,Forsaken,Death,36,16,16,22,16,106,"Path of the Damned, Where the Dead Ships Dwell",Stupify
-spr_crits_battle_2325.png,Forsaken Seacrawler,Forsaken,Death,36,16,16,23,18,109,"Path of the Damned, Where the Dead Ships Dwell",Transmogrification
-spr_crits_battle_2321.png,Forsaken Bonescraper,Forsaken,Death,38,18,16,21,16,109,"Path of the Damned, Where the Dead Ships Dwell",Whetted Bones
+spr_crits_battle_2326.png,Forsaken Plaguebearer,Forsaken,Death,37,17,17,22,17,110,Alexandria God Shop,Anxiety
+spr_crits_battle_2327.png,Forsaken Spinewhipper,Forsaken,Death,38,18,18,20,15,109,Alexandria God Shop,Contradiction
+spr_crits_battle_2324.png,Forsaken Scourgewalker,Forsaken,Death,32,17,17,22,17,105,Alexandria God Shop,Curse of the Silent
+spr_crits_battle_2323.png,Forsaken Swampdweller,Forsaken,Death,33,13,18,23,18,105,Alexandria God Shop,Darkness Surrounding
+spr_crits_battle_2322.png,Forsaken Rotmongerer,Forsaken,Death,36,16,16,22,16,106,Alexandria God Shop,Stupify
+spr_crits_battle_2325.png,Forsaken Seacrawler,Forsaken,Death,36,16,16,23,18,109,Alexandria God Shop,Transmogrification
+spr_crits_battle_2321.png,Forsaken Bonescraper,Forsaken,Death,38,18,16,21,16,109,Alexandria God Shop,Whetted Bones
 spr_crits_battle_1320.png,Monstrous Gargantuan,Gargantuan,Nature,42,22,12,27,7,110,"Frostbite Caverns, Titan's Wound",Bide
 spr_crits_battle_1317.png,Fearsome Gargantuan,Gargantuan,Nature,42,22,12,27,7,110,"Frostbite Caverns, Titan's Wound",Charge
 spr_crits_battle_1321.png,Shackled Gargantuan,Gargantuan,Nature,39,22,12,27,7,107,"Frostbite Caverns, Titan's Wound",Come Hither
@@ -803,16 +803,16 @@ spr_crits_battle_2206.png,Cursed Slime,Slime,Sorcery,42,17,17,21,11,108,"Refuge 
 spr_crits_battle_2209.png,Infested Slime,Slime,Sorcery,42,17,17,22,12,110,"Refuge of the Magi, Titan's Wound",Parasitic Illusion
 spr_crits_battle_2204.png,Bile Slime,Slime,Sorcery,43,18,18,18,13,110,"Refuge of the Magi, Titan's Wound",Secret Recipe
 spr_crits_battle_2211.png,Paranormal Slime,Slime,Sorcery,42,17,17,21,12,109,"Refuge of the Magi, Titan's Wound",Vanity
-spr_crits_battle_2426.png,Dark Brim Smith,Smith,Sorcery,36,21,16,21,16,110,"Caustic Reactor, Frostbite Caverns",Battle Born
-spr_crits_battle_2428.png,Depravity Smith,Smith,Sorcery,36,21,16,21,16,110,"Caustic Reactor, Frostbite Caverns",Braze
-spr_crits_battle_2424.png,Brim Smith,Smith,Sorcery,36,21,16,21,16,110,"Caustic Reactor, Frostbite Caverns",Dissection
-spr_crits_battle_2425.png,Crystal Smith,Smith,Sorcery,34,19,17,22,17,109,"Caustic Reactor, Frostbite Caverns",Fool's Axiom
-spr_crits_battle_2427.png,Death Crafter,Smith,Sorcery,34,19,16,21,16,106,"Caustic Reactor, Frostbite Caverns",Honed Blades
-spr_crits_battle_2429.png,Disease Crafter,Smith,Sorcery,37,22,17,17,17,110,"Caustic Reactor, Frostbite Caverns",Imbue
-spr_crits_battle_2431.png,Pestilence Crafter,Smith,Sorcery,37,21,16,21,16,111,"Caustic Reactor, Frostbite Caverns",Incursion
-spr_crits_battle_2423.png,Black Crystal Smith,Smith,Sorcery,33,21,16,21,16,107,"Caustic Reactor, Frostbite Caverns",Unbreakable
-spr_crits_battle_2430.png,Hammer Lord,Smith,Sorcery,34,21,16,21,16,108,"Caustic Reactor, Frostbite Caverns",War Forged
-spr_crits_battle_2432.png,War Crafter,Smith,Sorcery,35,20,15,20,15,105,"Caustic Reactor, Frostbite Caverns",Warcraft
+spr_crits_battle_2426.png,Dark Brim Smith,Smith,Sorcery,36,21,16,21,16,110,Azural God Shop,Battle Born
+spr_crits_battle_2428.png,Depravity Smith,Smith,Sorcery,36,21,16,21,16,110,Azural God Shop,Braze
+spr_crits_battle_2424.png,Brim Smith,Smith,Sorcery,36,21,16,21,16,110,Azural God Shop,Dissection
+spr_crits_battle_2425.png,Crystal Smith,Smith,Sorcery,34,19,17,22,17,109,Azural God Shop,Fool's Axiom
+spr_crits_battle_2427.png,Death Crafter,Smith,Sorcery,34,19,16,21,16,106,Azural God Shop,Honed Blades
+spr_crits_battle_2429.png,Disease Crafter,Smith,Sorcery,37,22,17,17,17,110,Azural God Shop,Imbue
+spr_crits_battle_2431.png,Pestilence Crafter,Smith,Sorcery,37,21,16,21,16,111,Azural God Shop,Incursion
+spr_crits_battle_2423.png,Black Crystal Smith,Smith,Sorcery,33,21,16,21,16,107,Azural God Shop,Unbreakable
+spr_crits_battle_2430.png,Hammer Lord,Smith,Sorcery,34,21,16,21,16,108,Azural God Shop,War Forged
+spr_crits_battle_2432.png,War Crafter,Smith,Sorcery,35,20,15,20,15,105,Azural God Shop,Warcraft
 spr_crits_battle_2436.png,Noxious Smog,Smog,Chaos,28,26,16,16,21,107,Caustic Reactor,Contamination
 spr_crits_battle_2435.png,Lethal Smog,Smog,Chaos,28,26,16,16,21,107,Caustic Reactor,Creeping Death
 spr_crits_battle_2434.png,Festival Smog,Smog,Chaos,31,26,16,11,21,105,Sorcery Guild,Endless Distraction
@@ -888,12 +888,12 @@ spr_crits_battle_1785.png,Toxdweller Mutant,Toxdweller,Chaos,29,14,19,16,24,102,
 spr_crits_battle_1784.png,Toxdweller Infector,Toxdweller,Chaos,29,14,21,16,26,106,Venedon God Shop,Imminent Danger
 spr_crits_battle_1783.png,Toxdweller Decoy,Toxdweller,Chaos,28,13,21,16,26,104,Venedon God Shop,Not Quite A Dud
 spr_crits_battle_1786.png,Toxdweller Parasite,Toxdweller,Chaos,27,15,20,15,25,102,Venedon God Shop,Sharing Is Caring
-spr_crits_battle_1789.png,Ahnok Tremor,Tremor,Nature,36,16,11,21,26,110,"Great Pandemonium, The Swamplands",Constrict
-spr_crits_battle_1791.png,Quamar Tremor,Tremor,Nature,33,16,11,21,26,107,"Great Pandemonium, The Swamplands",Jolt
-spr_crits_battle_1792.png,Quarnok Tremor,Tremor,Nature,36,16,11,21,26,110,"Great Pandemonium, The Swamplands",Rattle
-spr_crits_battle_1793.png,Urhul Tremor,Tremor,Nature,36,16,11,21,26,110,"Great Pandemonium, The Swamplands",Shake
-spr_crits_battle_1790.png,Gorlum Tremor,Tremor,Nature,36,16,11,21,26,110,"Great Pandemonium, The Swamplands",Solidarity
-spr_crits_battle_1788.png,Ahnkol Tremor,Tremor,Nature,35,15,10,20,25,105,"Great Pandemonium, The Swamplands",Stomp
+spr_crits_battle_1789.png,Ahnok Tremor,Tremor,Nature,36,16,11,21,26,110,Anneltha God Shop,Constrict
+spr_crits_battle_1791.png,Quamar Tremor,Tremor,Nature,33,16,11,21,26,107,Anneltha God Shop,Jolt
+spr_crits_battle_1792.png,Quarnok Tremor,Tremor,Nature,36,16,11,21,26,110,Anneltha God Shop,Rattle
+spr_crits_battle_1793.png,Urhul Tremor,Tremor,Nature,36,16,11,21,26,110,Anneltha God Shop,Shake
+spr_crits_battle_1790.png,Gorlum Tremor,Tremor,Nature,36,16,11,21,26,110,Anneltha God Shop,Solidarity
+spr_crits_battle_1788.png,Ahnkol Tremor,Tremor,Nature,35,15,10,20,25,105,Anneltha God Shop,Stomp
 spr_crits_battle_2780.png,Hanyac Tremor,Tremor,Nature,29,24,14,15,24,106,Nature Guild,Twilight
 spr_crits_battle_1799.png,Troll Knife Juggler,Troll,Nature,38,23,8,23,18,110,Torun God Shop,Fan of Knives
 spr_crits_battle_1796.png,Troll Berserker,Troll,Nature,38,23,8,23,18,110,Torun God Shop,Misanthropy
@@ -1000,7 +1000,7 @@ spr_crits_battle_2394.png,Coldslam Yeti,Yeti,Sorcery,34,19,14,22,17,106,Azural G
 spr_crits_battle_2390.png,Icemane Yeti,Yeti,Sorcery,36,21,16,21,16,110,Azural God Shop,Lingering Frost
 spr_crits_battle_2393.png,Chillbreeze Yeti,Yeti,Sorcery,35,20,15,20,15,105,Azural God Shop,Thermal Void
 spr_crits_battle_2388.png,Ancient Yeti,Yeti,Sorcery,36,21,16,21,16,110,Azural God Shop,Winter Has Come
-spr_crits_battle_3095.png,Living Arbiter,Arbiter,Nature,28,18,18,21,21,106,"Land of Breath & Balance ",In Favor of Survival
+spr_crits_battle_3095.png,Living Arbiter,Arbiter,Nature,28,18,18,21,21,106,Land of Breath & Balance ,In Favor of Survival
 spr_crits_battle_3094.png,Feeling Arbiter,Arbiter,Nature,29,19,19,19,19,105,Land of Breath & Balance,In Favor of Destruction
 spr_crits_battle_3064.png,Thinking Arbiter,Arbiter,Nature,30,20,20,19,19,108,Land of Breath & Balance,In Favor of Creation
 spr_crits_battle_3065.png,Breathing Arbiter,Arbiter,Nature,30,19,19,19,19,106,Land of Breath & Balance,In Favor of Protection
