@@ -126,9 +126,6 @@ class MonsterPlannerRow extends PureComponent {
         )}
 
         <div className="trait-slot-creature">
-          <span className="mobile-only ib">
-            <b>Creature:&nbsp;</b>
-          </span>
           {isMonster(m) ? (
             <span
               className="creature-tag"
