@@ -18,54 +18,135 @@ import icon_speed from "../icons/speed.png";
 import MonsterClassIcon from "./MonsterClassIcon";
 import getTraitErrors from "../functions/getTraitErrors";
 
+import ReactTooltip from "react-tooltip";
+
+/**
+ * A function for rendering a particular class (cls).
+ * It will render an icon if the class is one of the 5 classes in the game,
+ * otherwise it will render the full name of the class (e.g. "Rodian Master").
+ * @param  {String} cls      The name of the class.
+ * @return {React.Fragment}          The name of the class plus the icon.
+ */
+function renderClass(cls) {
+  let c = cls.toLowerCase();
+  let iconedClass =
+    c === "nature" ||
+    c === "chaos" ||
+    c === "death" ||
+    c === "sorcery" ||
+    c === "life";
+
+  return (
+    <React.Fragment>
+      {iconedClass && <MonsterClassIcon icon={cls} />}
+    </React.Fragment>
+  );
+}
+
+/**
+ * Simple function to determine whether a given monster is actually a monster
+ * or something else (backer trait etc).
+ * @param  {Object}  m Monster object.
+ * @return {Boolean}   Whether it is a monster/creature or not.
+ */
+function isMonster(m) {
+  let c = m.class.toLowerCase();
+  return (
+    c === "nature" ||
+    c === "chaos" ||
+    c === "death" ||
+    c === "sorcery" ||
+    c === "life"
+  );
+}
+
+/**
+ * A class for a tooltip that appears when you hover over a monster's name in the planner.
+ */
+class MonsterTooltip extends Component {
+  render() {
+    const m = this.props.m;
+    return (
+      <div className="inner">
+        <div>
+          <MonsterPlannerCreatureSprite
+            sprite_filename={m ? m.sprite_filename : null}
+          />
+          <MonsterPlannerCreatureStats monster_1={m} monster_2={m} />
+        </div>
+        <div>
+          <h3>
+            {renderClass(m.class)} <b>{m.creature}</b>
+          </h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Family:</td>
+                <td>{m.family}</td>
+              </tr>
+              <tr>
+                <td>Source{m.sources.length > 1 ? "s" : ""}:</td>
+                <td>
+                  {m.sources.length > 1 ? (
+                    <ul>
+                      {m.sources.map((source, i) => (
+                        <li key={i}>{source}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    m.sources[0]
+                  )}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
+}
+
 /**
  * A class that corresponds to a single MonsterRow from within the Monster Planning window
  * (i.e. the 6 creatures with 3 traits each) of the Monster Selection page.
  */
-class MonsterPlannerRow extends Component {
-  /**
-   * A function for rendering a particular class (cls).
-   * It will render an icon if the class is one of the 5 classes in the game,
-   * otherwise it will render the full name of the class (e.g. "Rodian Master").
-   * @param  {String} cls      The name of the class.
-   * @return {React.Fragment}          The name of the class plus the icon.
-   */
-  renderClass(cls) {
-    let c = this.props.monster.class.toLowerCase();
-    let iconedClass =
-      c === "nature" ||
-      c === "chaos" ||
-      c === "death" ||
-      c === "sorcery" ||
-      c === "life";
-
-    return (
-      <React.Fragment>
-        {iconedClass && <MonsterClassIcon icon={this.props.monster.class} />}
-      </React.Fragment>
-    );
-  }
-
+class MonsterPlannerRow extends PureComponent {
   /**
    * The render function.
    * @return {React.Fragment} A row representing a trait.
    */
   render() {
     var m = this.props.monster;
-
     return (
       <React.Fragment>
+        {isMonster(m) && (
+          <ReactTooltip id={"main-tooltip-" + this.props.rowId} place="bottom">
+            <MonsterTooltip m={m} />
+          </ReactTooltip>
+        )}
+
         <div className="trait-slot-class">
           <span className="mobile-only ib">
             <b>Class:&nbsp;&nbsp;</b>
           </span>
-          {this.renderClass(m.class)}
+          {renderClass(m.class)}
         </div>
         <div className="trait-slot-creature">
           <span className="mobile-only ib">
             <b>Creature:&nbsp;</b>
           </span>
-          {m.creature}
+          {isMonster(m) ? (
+            <span
+              className="creature-tag"
+              data-for={"main-tooltip-" + this.props.rowId}
+              data-tip
+              data-iscapture="true"
+            >
+              {m.creature}
+            </span>
+          ) : (
+            m.creature
+          )}
         </div>
         <div className="trait-slot-trait_name">
           <span className="mobile-only ib">
@@ -256,6 +337,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
             <MonsterPlannerRow
               monster={this.props.monster}
               error={this.props.error}
+              rowId={this.props.rowId}
             />
           )}
         </div>
@@ -516,6 +598,7 @@ class MonsterPlannerPartyMember extends PureComponent {
             <MonsterPlannerTraitSlot
               monster={traitSlot.monster}
               error={traitSlot.error}
+              rowId={"" + this.props.partyMemberId + "-" + i}
               key={i}
               traitSlotIndex={i}
               draggable="true"

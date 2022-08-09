@@ -149,7 +149,7 @@ Chaos,Avatar,Gonfurian,Eraser,"After your creatures Attack, they reduce the targ
 Life,Avatar,Lister,Perfect Imperfection,"Your creatures deal 40% more damage and take 10% less damage for each turn they've taken in the current battle.
 At the start of battle, your creatures gain the Timewalk spell. This trait does not stack.",No Material Exists
 Nature,Avatar,Meraxis,Marigold,Your creatures' stats gained in battle are no longer subject to diminishing returns.,No Material Exists
-Death,Avatar,Mortem,Blood Pact,Your creatures deal additional damage equal to 5% of all the damage your creatures have dealt in the current battle. This trait does not stack.,No Material Exists
+Death,Avatar,Mortem,Blood Pact,Your creatures deal additional damage with attacks and spells equal to 5% of all the damage your creatures have dealt in the current battle. This trait does not stack.,No Material Exists
 Life,Avatar,Muse,"Better, Faster, Stronger","Your creatures' minions perform their effects twice. If they don't have an effect that can be repeated, they are instead 100% more powerful.
 This trait does not affect Illusion. This trait does not stack.",No Material Exists
 Life,Avatar,Perdition,Euthanasia,"After this creature damages an enemy below 50% Health, it Casts Death Siphon on it.",No Material Exists
@@ -531,7 +531,7 @@ Sorcery,Djinn,Djinn Illusionist,Alleviation,This creature deals 10% more damage 
 Sorcery,Djinn,Djinn Pyromancer,Pyromaniac,"After one of your creatures manually Cast a spell, this creature deals damage to all enemies equal to 35% of its Intelligence.",Pyromancer Lamp
 Sorcery,Djinn,Unchained Djinn,Ley Lines,"After this creature Defends, your creatures gain 2 random Ethereal Spell Gems.",Unchained Lamp
 Sorcery,Djinn,Vengeful Djinn,Celebrate Decline,"When your creatures' Artifact's Spell Slots activate, these spells are Cast 1 additional time. This trait does not stack.",Vengeful Lamp
-Rodian Master,Djinn,Mastery Trait,Master of Djinns,Your Djinns' spells always deal cricial damage and have 40% more potency. This trait does not stack.,Sigil of the Djinn
+Rodian Master,Djinn,Mastery Trait,Master of Djinns,Your Djinns' spells always deal critical damage and have 40% more potency. This trait does not stack.,Sigil of the Djinn
 Chaos,Doom Fortress,Alcazar,Steadfast Resilience,"After your creatures Provoke, they gain 35% Defense and recover 25% Health. This trait does not stack.",Alcazar Brick
 Chaos,Doom Fortress,Bastion,Congregation,"After this creature Provokes, your creatures gain 35% Defense and Speed.",Bastion Brick
 Chaos,Doom Fortress,Citadel,Mind Prison,"After this creature Provokes, it Seals 3 of a random enemy's Spell Gems.",Citadel Brick
@@ -736,7 +736,7 @@ Sorcery,Familiar,Mystical Familiar,Group Meditation,"At the start of battle, you
 Sorcery,Familiar,Palace Familiar,Potency,Your creatures' spells that increase or decrease stats are 25% more effective for each Familiar fighting on your side. This trait does not stack.,Palace Pinion
 Sorcery,Familiar,Spectral Familiar,Higher Understanding,Your creatures' Spell Gems have a 10% chance to not consume Charges when they're Cast for each Familiar fighting on your side. This trait does not stack.,Spectral Pinion
 Rodian Master,Familiar,Mastery Trait,Master of Familiars,Your Familiars have 10% more Intelligence for each time your Familiars have Cast a spell in the current battle. This trait does not stack.,Sigil of the Familiar
-Chaos,Fiend,Annihilator,Uncontrollable Anger,"After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack.",Annihilator Tooth
+Chaos,Fiend,Annihilator Fiend,Uncontrollable Anger,"After your creatures with Berserk Attack, they have a 35% chance to Attack again. This trait does not stack.",Annihilator Tooth
 Chaos,Fiend,Berserker Fiend,Outrage,"This creature is always Berserk, and deals 75% more damage.",Berserker Tooth
 Chaos,Fiend,Deceptive Fiend,Flash of Anger,"After your creatures with Berserk Attack, they gain Invisible.",Deceptive Tooth
 Chaos,Fiend,Destroyer Fiend,Bloodfury,"After this creature Provokes, your creatures gain Berserk and Savage.",Destroyer Tooth
@@ -972,7 +972,7 @@ Rodian Master,Koloss,Mastery Trait,Master of Kolosses,Your Kolosses start battle
 Chaos,Kraken,Abyssal Kraken,Abyssal Waters,"As long as your creatures haven't gained or lost stats, they have 75% more stats (other than Health). This trait does not stack.",Ghastly Sucker
 Chaos,Kraken,Inkjet Kraken,Inky Escape,"As long as this creature hasn't gained or lost Speed, it has 200% more Speed and has Agile.",Gross Sucker
 Chaos,Kraken,Ironside Kraken,Iron Shell,"As long as this creature hasn't gained or lost Defense, it has 200% more Defense and has Protected.",Hideous Sucker
-Chaos,Kraken,Kraken Hundredhand,Hundred Hands,"As long as your creatures hvaen't gained or lost stats, this creature has 200% more stats (other than Health).",Repulsive Sucker
+Chaos,Kraken,Kraken Hundredhand,Hundred Hands,"As long as your creatures haven't gained or lost stats, this creature has 200% more stats (other than Health).",Repulsive Sucker
 Chaos,Kraken,Kraken Shipbreaker,Shipbreaker,"As long as this creature hasn't gained or lost Attack, it has 200% more Attack and has Berserk.",Dreadful Sucker
 Chaos,Kraken,Unblinking Kraken,Unblinking Eyes,"As long as this creature hasn't gained or lost Intelligence, it has 200% more Intelligence and has Arcane.",Creepy Sucker
 Rodian Master,Kraken,Mastery Trait,Master of Krakens,"If all the creatures in your party are Krakens, the stat boosts from their innate traits is increased by 50%. This trait does not stack.",Sigil of the Kraken

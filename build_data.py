@@ -167,6 +167,7 @@ def load_suapi_data(filename: str):
                 ]
             }
             suapi_data[t]["sprite_filename"] = row["battle_sprite"]
+            suapi_data[t]["sources"] = row["sources"].split(", ")
     return suapi_data
 
 
