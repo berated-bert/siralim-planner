@@ -70,6 +70,25 @@ const MyValueContainer = ({ children, ...props }) => {
 };
 
 /**
+ * A perk icon. Renders a perk from a big image of all the icons combined
+ * (to avoid 500 requests)
+ */
+class PerkIcon extends PureComponent {
+  render() {
+    const coords = this.props.perk.icon_coords;
+    return (
+      <span
+        className="perk-icon"
+        style={{
+          backgroundImage: "url(/siralim-planner/perk_icons/perk_icons.png)",
+          backgroundPosition: `-${coords[0]}px -${coords[1]}px`,
+        }}
+      ></span>
+    );
+  }
+}
+
+/**
  * Override for customStyles for react-select.
  * @type {Object}
  */
@@ -249,7 +268,12 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
                           </span>
                         )}
                       </td>
-                      <td>{perk.name}</td>
+                      <td>
+                        <span className="perk-flex">
+                          <PerkIcon perk={perk} />
+                          {perk.name}
+                        </span>
+                      </td>
                       <td>{perk.description}</td>
                     </tr>
                   ))}
@@ -317,7 +341,12 @@ class SpecializationPlannerAnointment extends PureComponent {
           ) : (
             <div className="anointment">
               <div className="anointment-name-and-source">
-                <div className="anointment-name">{this.props.perk.name}</div>
+                <div className="anointment-name">
+                  <span className="perk-flex">
+                    <PerkIcon perk={this.props.perk} />
+                    {this.props.perk.name}
+                  </span>
+                </div>
                 <div className="anointment-source">
                   (
                   <span

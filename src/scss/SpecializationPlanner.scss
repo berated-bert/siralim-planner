@@ -149,6 +149,20 @@ $cols: (
   }
 }
 
+span.perk-flex {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+span.perk-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  margin-right: 8px;
+  background-repeat: no-repeat;
+}
+
 span.option-icon {
   width: 16px;
   height: 16px;
@@ -205,6 +219,23 @@ span.option-icon {
   }
   &.max-anoints tr:not(.no-anoint):not(.active):active td {
     background: rgba($color-chaos, 0.15);
+  }
+
+  @media (max-width: 1280px) {
+    display: block;
+    tr {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+    }
+    th,
+    td {
+      display: block;
+      width: 100% !important;
+    }
+    td:first-child {
+      display: none;
+    }
   }
 }
 
@@ -303,14 +334,14 @@ span.option-icon {
     align-self: stretch;
     background: #eee;
     width: 17%;
-    min-width: 170px;
+    min-width: 165px;
     padding: 5px 0;
     font-size: 14px;
     line-height: 100%;
     overflow-y: auto;
     color: rgba(0, 0, 0, 0.75);
     @media (max-width: 1280px) {
-      font-size: 13px;
+      font-size: 12px;
     }
     .specialization-option {
       padding: 4px 20px;

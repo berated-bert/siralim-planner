@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.1.6 (10 August 2022)
+
+-   Added perk icons from the Siralim Ultimate Compendium.
+-   Made the mobile experience a bit better (in the anointments screen).
+-   Added the locations of the God Shops when hovering over creatures bought there.
+
 ### v1.1.5 (9 August 2022)
 
 -   Added tooltips for monsters. Hover over a monster's name in the planner to see their sprite, stats, and source(s).

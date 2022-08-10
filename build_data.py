@@ -8,19 +8,34 @@ import os
 import json
 import hashlib
 import logging as logger
+from PIL import Image
 
 logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.INFO)
 
 HASH_LENGTH = 6
 SUAPI_DATA_FILENAME = "data/siralim-ultimate-api/creatures.csv"
+SUAPI_PERK_DATA_FILENAME = os.path.join(
+    "data", "siralim-ultimate-api", "perks.csv"
+)
+
+GODSHOP_LOCATIONS_FILENAME = os.path.join(
+    "data", "misc", "godshop_locations.csv"
+)
+
 SUC_DATA_FILENAME = (
     "data/siralim-ultimate-compendium/Siralim Ultimate Compendium - Traits.csv"
 )
+
 SPECIALIZATIONS_FILENAME = "data/steam-guide/specializations.csv"
 PERKS_FILENAME = "data/steam-guide/perks.csv"
 RELICS_FILENAME = (
     "data/siralim-ultimate-compendium/Siralim Ultimate Compendium - Relics.csv"
 )
+
+PERK_ICONS_FOLDER = os.path.join("data", "siralim-ultimate-api", "perk_icons")
+
+MISSING_ICON_FILENAME = "MISSING_ICON.png"
+PERK_ICON_OUTPUT_FOLDER = os.path.join("public", "perk_icons")
 
 
 def generate_unique_name(row):
@@ -196,6 +211,34 @@ def add_sprites_and_stats(json_data: list):
     return json_data
 
 
+def add_godshop_locations(json_data: list):
+
+    locations = {}
+    with open(GODSHOP_LOCATIONS_FILENAME, "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            locations[row["God"].lower()] = row["Location"]
+
+    for i, obj in enumerate(json_data):
+        if "sources" not in obj:
+            continue
+        sources = obj["sources"]
+        for j, s in enumerate(sources):
+            if "God Shop" in s:
+                location = "nowhere"
+                god = s.split(" God Shop")[0].lower()
+
+                try:
+                    location = locations[god]
+                    json_data[i]["sources"][j] += f" ({location})"
+                except KeyError as e:
+                    logger.warning(
+                        f"Missing god name: {god} in godshop_locations.csv"
+                    )
+
+    return json_data
+
+
 def is_creature_class(c: str):
     """Determine whether the given class is a creature class or
     something else (backer trait etc).
@@ -279,16 +322,6 @@ def get_sprite_path(sprite_filename: str, creature_name: str):
         os.path.join("public", "suapi-battle-sprites", sprite_filename)
     ):
         return f"suapi-battle-sprites/{sprite_filename}"
-    # elif os.path.isfile(
-    #     os.path.join(
-    #         "public", "forum_avatars", f"{sanitise(creature_name)}.png"
-    #     )
-    # ):
-    #     return f"forum_avatars/{sanitise(creature_name)}.png"
-    # elif os.path.isfile(
-    #     os.path.join("public", "new_sprites", f"{sanitise(creature_name)}.png")
-    # ):
-    #     return f"new_sprites/{sanitise(creature_name)}.png"
     return False
 
 
@@ -307,6 +340,16 @@ def load_specializations_data(specs_filename, perks_filename):
     specialization_ids = {}
     specialization_abbrevs = {}
 
+    # Load perk filenames from SUAPI
+    perk_icons = {}
+    with open(SUAPI_PERK_DATA_FILENAME, "r") as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            spec = row["specialization"]
+            perk = row["name"]
+            icon = row["icon"]
+            perk_icons[f"{spec}_{perk}"] = icon
+
     # Load specs
     with open(specs_filename, "r") as f:
         csv_reader = csv.DictReader(f)
@@ -322,8 +365,10 @@ def load_specializations_data(specs_filename, perks_filename):
         csv_reader = csv.DictReader(f)
         for row in csv_reader:
             json_obj = {k: v.strip() for k, v in row.items()}
+
             spec = json_obj["specialization"]
             json_obj["spec"] = spec
+
             abbrev = specialization_abbrevs[spec]
             json_obj["spec_abbrev"] = abbrev
             json_obj["uid"] = (
@@ -333,7 +378,16 @@ def load_specializations_data(specs_filename, perks_filename):
                 ]
             )
             del json_obj["specialization"]
+            name = json_obj["name"].split(" (ASCENSION)")[0]
+            try:
+                icon = perk_icons[f"{spec}_{name}"]
+            except KeyError:
+                icon = MISSING_ICON_FILENAME
+                logger.warning(
+                    f"Missing perk icon in SUAPI data for perk '{name}'"
+                )
 
+            json_obj["icon"] = icon
             specializations[specialization_ids[spec]]["perks"].append(json_obj)
 
     return specializations
@@ -439,6 +493,43 @@ def generate_metadata(compendium_version, json_data):
     return metadata
 
 
+def build_perk_icon_image(specializations_data):
+    """Build a big image of all the perk icons joined together.
+    This is done to avoid having 500 requests for all the perk icons.
+
+    Args:
+        specializations_data (dict): The specializations data.
+
+    Returns:
+        dict: The updated specializations data, with the coordinates of the
+        perk's respective icons in the big image.
+    """
+    max_perks = max([len(spec["perks"]) for spec in specializations_data])
+
+    perk_image = Image.new(
+        "RGBA", (16 * max_perks, 16 * len(specializations_data))
+    )
+
+    for i, spec in enumerate(specializations_data):
+        for j, perk in enumerate(spec["perks"]):
+            icon = perk["icon"]
+            icon_filename = os.path.join(PERK_ICONS_FOLDER, icon)
+            if not os.path.isfile(icon_filename):
+                logger.warning(f"Missing perk icon for {perk['name']}")
+                icon_filename = os.path.join(
+                    PERK_ICON_OUTPUT_FOLDER, MISSING_ICON_FILENAME
+                )
+
+            im = Image.open(icon_filename)
+            coords = (j * 16, i * 16)
+            perk_image.paste(im, coords)
+            specializations_data[i]["perks"][j]["icon_coords"] = coords
+
+    perk_image.save(os.path.join(PERK_ICON_OUTPUT_FOLDER, "perk_icons.png"))
+
+    return specializations_data
+
+
 def build_data(output_folder: str):
     """Build the data to the specified output folder.
 
@@ -448,6 +539,7 @@ def build_data(output_folder: str):
     json_data, version = load_csv_file(SUC_DATA_FILENAME)
 
     json_data = add_sprites_and_stats(json_data)
+    json_data = add_godshop_locations(json_data)
 
     save_json_data(json_data, os.path.join(output_folder, "data.json"))
     with open(os.path.join(output_folder, "metadata.json"), "w") as f:
@@ -456,6 +548,8 @@ def build_data(output_folder: str):
     specializations_data = load_specializations_data(
         SPECIALIZATIONS_FILENAME, PERKS_FILENAME
     )
+
+    specializations_data = build_perk_icon_image(specializations_data)
 
     with open(os.path.join(output_folder, "specializations.json"), "w") as f:
         json.dump(specializations_data, f)
@@ -466,8 +560,8 @@ def build_data(output_folder: str):
         json.dump(relics_data, f)
 
     # Print a pretty version of it for manual inspection etc
-    # with open("src/data/specializations_pretty.json", "w") as f:
-    #    json.dump(specializations_data, f, indent=1)
+    with open("src/data/specializations_pretty.json", "w") as f:
+        json.dump(specializations_data, f, indent=1)
 
     logger.info("Data building complete.")
 
