@@ -2,7 +2,7 @@
 
 ### v1.1.6 (10 August 2022)
 
--   Added perk icons from the Siralim Ultimate Compendium.
+-   Added perk icons from the Siralim Ultimate API.
 -   Made the mobile experience a bit better (in the anointments screen).
 -   Added the locations of the God Shops when hovering over creatures bought there.
 
