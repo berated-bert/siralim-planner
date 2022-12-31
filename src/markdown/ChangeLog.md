@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.1.7 (31 December 2022)
+
+-   Fixed "Arrogance Is Confidence" not working when pasting in a build from the game.
+-   Updated Friden's trait (no longer bypasses blight immunity) and added missing trait (Harbinger's Sign).
+
 ### v1.1.6 (10 August 2022)
 
 -   Added perk icons from the Siralim Ultimate API.
