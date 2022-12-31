@@ -143,7 +143,7 @@ Nature - Your creatures gain 10% stats.
 Sorcery - Cast one of this creature's Spell Gems.",No Material Exists
 Death,Avatar,Erebyss,Avenged Sevenfold,"After your creatures take damage from an attack or spell, they Cast a Scourge spell on the enemy.
 The type of Scourge spell is based on the enemy's class. This trait does not stack.",No Material Exists
-Death,Avatar,Friden,The Black,"Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted.",No Material Exists
+Death,Avatar,Friden,The Black,"Enemies always have Poisoned, Blighted, Leeching, and Mending.",No Material Exists
 Chaos,Avatar,Genaros,Surge of Vitality,"After your creatures Attack or are Attacked, they gain 20% Maximum Health. This trait does not stack.",No Material Exists
 Chaos,Avatar,Gonfurian,Eraser,"After your creatures Attack, they reduce the target's Maximum Health by the same amount of damage dealt. This trait does not stack.",No Material Exists
 Life,Avatar,Lister,Perfect Imperfection,"Your creatures deal 40% more damage and take 10% less damage for each turn they've taken in the current battle.
@@ -196,7 +196,7 @@ Backer,Backer,Backer Trait,Dragon's Rage,"At the start of this creature's turn, 
 Backer,Backer,Backer Trait,Dualcast,"At the start of this creature's turn, it Casts the most recent spell it Cast again.",Ring of Echoes
 Backer,Backer,Backer Trait,Eldritch Rune,"At the start of battle, this creature's Maximum Health is set to 50%. This creature's spells are 50% more potent.",Tome of Eldritch Knowledge
 Backer,Backer,Backer Trait,Ember Soul,"While this creature has Burning, it has 50% more Attack and Speed.",Souls of the Ineffable
-Backer,Backer,Backer Trait,Embiggening,This creature gains 50% more stats.,Pulsing Stone
+Backer,Backer,Backer Trait,Embiggening,This creature gains 100% more stats.,Pulsing Stone
 Backer,Backer,Backer Trait,Emerald Blessings,This creature gives and receives 150% more healing.,Emerald Tide Scrap
 Backer,Backer,Backer Trait,Erratic,"At the start of battle, one of your creatures is chosen to have 100% more stats (other than Health) for the rest of battle.",Strange Smoke
 Backer,Backer,Backer Trait,Firedevil's Will,Your creatures are immune to Burning.,Firedevil's Tears
@@ -209,6 +209,7 @@ Backer,Backer,Backer Trait,Gambler's Game,"At the start of each creature's turn,
 Backer,Backer,Backer Trait,Gem Leech,"After this creature Attacks, it Casts one of the target's Spell Gems.",Crystalline Bloodsucker
 Backer,Backer,Backer Trait,Glitch In The System,"When a creature would gain a buff, it is afflicted with a random debuff instead.",Fried Circuitry
 Backer,Backer,Backer Trait,Guards!,"After this creature Attacks an enemy with Stone, it has a 30% chance to be killed.",Handcuffs
+Backer,Backer,Backer Trait,Harbinger's Sign,"After this creature is Attacked, it has a 50% chance to Cast Harbinger's Curse.",Death Herald
 Backer,Backer,Backer Trait,Heads or Tails,"After this creature Attacks, it has a 50% chance to gain a random buff. Otherwise, it gains a random minion.",Lucky Coin
 Backer,Backer,Backer Trait,Hederas's Grasp,"After this creature Attacks, it afflicts the target and the creatures adjacent to the target with Snared.",Bindwood
 Backer,Backer,Backer Trait,Hemophilia,Enemies' Bleeding debuffs last forever and deal 25% more damage. This trait does not stack.,Bloody Rags
@@ -237,7 +238,7 @@ Backer,Backer,Backer Trait,Means to an End,"While this creature has no buffs (ex
 Backer,Backer,Backer Trait,Minion Master,"At the start of this creature's turn, it gains a random minion and its current minions gain 1 stack.",Minion Master Staff
 Backer,Backer,Backer Trait,Minions First,This creature has a 15% chance to take an additional turn for each minion it has. This trait can only activate once per turn.,Minion Accelerator
 Backer,Backer,Backer Trait,Myosotis,This creature's attacks use Intelligence instead of Attack to determine the damage dealt. This creature has 35% less Intelligence.,Scorpion Grass
-Backer,Backer,Backer Trait,Necromancy,"After a creature dies, your creatures gain 1 stack of Zombies. This trait does not stack.",Jimly's Tome
+Backer,Backer,Backer Trait,Necromancy,"After a creature dies, your creatures gain 1 to 3 stacks of Zombies. This trait does not stack.",Jimly's Tome
 Backer,Backer,Backer Trait,Never Fade,This creature and its adjacent allies are immune to disarmed.,Broken Lantern
 Backer,Backer,Backer Trait,Ninetail's Revenge,"After your creatures are Attacked, they gain Attack equal to 20% of the damage received. This trait does not stack.",Fluffy Tail
 Backer,Backer,Backer Trait,Ninetail's Trickery,"At the start of battle, this creature gains a copy of each enemies' first Spell Gems. This trait does not stack.",Pristine Fox Fang
@@ -282,7 +283,7 @@ Backer,Backer,Backer Trait,Synthesis,"After your creatures gain a minion, they g
 Backer,Backer,Backer Trait,The Best Medicine,"When one of your creatures would be afflicted with a debuff, they have a 20% chance to afflict a random enemy with that debuff instead. This trait does not stack.",Caduceus Staff
 Backer,Backer,Backer Trait,The King Is Dead,"After one of your creatures is healed, this creature has a 20% chance to be resurrected with 50% Health.",Rusted Crown
 Backer,Backer,Backer Trait,The Shadows,"After this creature is killed for the first time in battle, it is resurrected with 100% Health and your creatures gain 25% Attack and Intelligence.",Extracted Shadow
-Backer,Backer,Backer Trait,Toxic Cloud,"After an enemy Attacks, each other enemy has a 25% chance to be afflicted with a random debuff. This trait does not stack.",Poisonous Gas
+Backer,Backer,Backer Trait,Toxic Cloud,"After an enemy Attacks, each other enemy has a 35% chance to be afflicted with a random debuff. This trait does not stack.",Poisonous Gas
 Backer,Backer,Backer Trait,Toxic Karma,"After this creature is Attacked, the enemy is afflicted with Poisoned and Bomb.",Verdant Stone
 Backer,Backer,Backer Trait,Training Matrix,"After your creatures are resurrected, they gain 20% stats. This trait does not stack.",Neural Chip
 Backer,Backer,Backer Trait,Tribe Mentality,"At the start of battle, creatures adjacent to this creature change their class to match this creature's class.",Leader's Mantle
@@ -470,7 +471,7 @@ Death,Construct,Silverbone Construct,Masquerade,"At the start of battle, your cr
 Life,Construct,Skywatch Construct,I Am Above,"After one of your creatures manually Casts an Arsenal Spell, your other creatures' Artifacts have a 35% chance to Cast the spell in their Spell Slot. This trait does not stack.",Skywatch Soul
 Nature,Construct,Treewall Construct,Safety Pin,"After this creature is damaged by an attack or spell, it has a 30% chance to Cast Living Armor. After this creature Attacks, it Casts Living Axe.",Treewall Soul
 Nature,Construct,Willow Construct,Justice For None,"When your creatures are afflicted with a debuff, they have a 25% chance to Cast Living Helmet. This trait does not stack.",Willow Soul
-Rodian Master,Construct,Mastery Trait,Master of the Constructs,Your Constructs' Arsenal Spell spells are 70% more potent. This trait does not stack.,Sigil of the Construct
+Rodian Master,Construct,Mastery Trait,Master of Constructs,Your Constructs' Arsenal Spell spells are 70% more potent. This trait does not stack.,Sigil of the Construct
 Sorcery,Cruncher,Bloodstone Cruncher,Shellshock,"After this creature is Attacked, it seals one of the target's Spell Gems and Provokes.",Bloodsucker Carapace
 Sorcery,Cruncher,Elder Cruncher,No Prayers,"When this creature Attacks, it deals 15% more damage for each Sealed Spell Gem the target has.",Elder Carapace
 Sorcery,Cruncher,Frostbite Cruncher,Munch,"After this creature Attacks, it Seals one of the target's Spell Gems and gains 20% Attack.",Frostbite Carapace
@@ -642,7 +643,7 @@ Nature,Ent,Hemlock Ent,Nutrient Blood,"Your creatures recover 15% Health at the 
 Nature,Ent,Timeworn Ent,Sacred Bark,"After your creatures are Attacked, 50% of the damage received is added to this creature's Barrier.",Timeworn Branch
 Rodian Master,Ent,Mastery Trait,Master of Ents,"The first time your Ents are killed, they are resurrected with 10% Health.",Sigil of the Ent
 Chaos,Exotic,Abacus,Numerical Nightmare,"This creature has 75% more Attack and Speed while its level is odd, and 75% more Intelligence and Defense while its level is even.",Bloody Beads
-Sorcery,Exotic,Abandoned Homunculus,Lab Assistant,Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack.,Alchemical Catalyst
+Sorcery,Exotic,Abandoned Homunculus,Lab Assistant,Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 75% more damage. This trait does not stack.,Alchemical Catalyst
 Chaos,Exotic,Acrova,Piercing Speed,This creature's attacks and spells ignore 30% of its enemies' Defense.,Sharp Shell
 Sorcery,Exotic,Ameteris Krin,Cantripology,"After this creature Attacks, it Casts its top-most, Unsealed Spell Gem. Then, that Spell Gem is Sealed.",Ametrine Shard
 Chaos,Exotic,Arcian Warbeast,Hungering Void,"At the start of this creature's turn, it Seals one of each creature's Spell Gems.",Voidborne Crystal Scraps
@@ -659,7 +660,7 @@ Chaos,Exotic,Clawtail Wyrm,Clawtail Symbiosis,"After this creature Attacks, it t
 Nature,Exotic,Colacanth,Sugar Rush,"When this creature Casts a spell, the spell has 20% more potency for each buff it has. At the end of this creature's turn, its buffs are removed.",Can o' Canth
 Sorcery,Exotic,Conductive Carcharin,Conductivity,Your creatures' Splashing buffs deal 100% more damage. This trait does not stack.,Lightning Fin
 Death,Exotic,Cranium Cluster,Marrow Metabolism,"After this creature takes damage, its minions gain 1 stack.",Skull Shard
-Death,Exotic,Davey,Black Fog,"After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 10% of its lowest stat for each debuff the enemy has.",Black Raindrop
+Death,Exotic,Davey,Black Fog,"After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 15% of its lowest stat for each debuff the enemy has.",Black Raindrop
 Sorcery,Exotic,Defiant Defiler,Redemption,"After this creature is killed, it heals your other creatures for an amount equal to 100% of its Maximum Health.",Certificate of Absolution
 Chaos,Exotic,Demon King,Sacrificial Will,"After this creature is killed, your other creatures gain a random buff and a random minion.",Book of Infinity
 Death,Exotic,Dire Werewolf,Backup Packup,"After this creature Attacks, one of your creatures gains 3 stacks of Dire Wolves.",Werewolf Whistle
@@ -1116,7 +1117,7 @@ Death,Nix,Nix Informer,Supersonic,"At the start of battle, enemies are afflicted
 Death,Nix,Nix Scoundrel,Reroute to Remain,"At the start of battle, enemies are afflicted with Scorned for 1 turn.",Scoundrel Mask
 Death,Nix,Nix Shadowjumper,Pacing Death's Trail,"After an ally dies, this creature Attacks 4 random enemies.",Shadowjumper Mask
 Rodian Master,Nix,Mastery Trait,Master of Nixes,"If all the creatures in your party are Nixes, they start battles with Inivisible and have a 25% chance to avoid damage. This trait does not stack.",Sigil of the Nix
-Sorcery,Occultist,Celestial Occultist,Lingering Incantation,"After your creatures Cast a Sorcery spell, this creature afflicts 3 random enemies with a random debuff. This trait does not stack.",Celestial Orb
+Sorcery,Occultist,Celestial Occultist,Lingering Incantation,"After your creatures Cast a Sorcery spell, 3 random enemies are afflicted with a random debuff. This trait does not stack.",Celestial Orb
 Sorcery,Occultist,Delusion Occultist,Strength of the Mind,Your creatures' Intelligence cannot be reduced.,Delusion Orb
 Sorcery,Occultist,Disciple Occultist,Seal Magic,"After an enemy Casts a spell, that Spell Gem is Sealed. ",Disciple Orb
 Sorcery,Occultist,Mirage Occultist,Conjuration,"After this creature Casts a Sorcery spell, your other creatures' Sorcery Spell Gems gain 1 Charge. This trait does not stack.",Mirage Orb
@@ -1573,9 +1574,9 @@ Sorcery,Vortex,Cerebral Vortex,Impedance,"At the start of battle, this creature 
 Sorcery,Vortex,Consuming Vortex,Simulacrum,"When an enemy Casts a spell, this creature has a 35% chance to negate the spell.
 When this happens, this creature gains a copy of that Spell Gem. This trait does not stack.",Consuming Wind
 Sorcery,Vortex,Evil Vortex,Squall,"After an enemy is afflicted with a debuff, this creature Casts a random spell. This trait can only activate once per turn.",Evil Wind
-Sorcery,Vortex,Mana Vortex,Stifle,"After an enemy Casts a spell, afflcit enemies with Silenced.",Mana Wind
+Sorcery,Vortex,Mana Vortex,Stifle,"After an enemy Casts a spell, this creature afflicts enemies with Silenced.",Mana Wind
 Sorcery,Vortex,Ovoid Vortex,Ovular Barrage,"After this creature is Attacked, it Casts Verdant Spheres on the enemy.",Ovoid Egg
-Sorcery,Vortex,Psychic Vortex,Mindbender,"When your creatures would take damage from spells, they have a 30% chance to ignore that damage. This trait does not stack.",Psychic Wind
+Sorcery,Vortex,Psychic Vortex,Mindbender,Your creatures have a 30% chance to avoid damage from spells. This trait does not stack.,Psychic Wind
 Sorcery,Vortex,Sulfuric Vortex,Spiral Ward,This creature takes 2% less damage (up to 90%) from spells for every 1% Health it is missing.,Sulfuric Wind
 Sorcery,Vortex,Untamed Vortex,Expansion,"After this creature takes damage, it gains Attack equal to 50% of the damage it took.",Untamed Wind
 Sorcery,Vortex,Vortex Observer,Disturbance,"After an enemy manually Casts a spell, your creatures gain a copy of that Spell Gem.",Observer Wind

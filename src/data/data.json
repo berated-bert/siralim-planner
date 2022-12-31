@@ -2662,9 +2662,9 @@
   "family": "Avatar",
   "creature": "Friden",
   "trait_name": "The Black",
-  "trait_description": "Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted.",
+  "trait_description": "Enemies always have Poisoned, Blighted, Leeching, and Mending.",
   "material_name": "No Material Exists",
-  "search_text": "Death Friden Avatar The Black Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted. No Material Exists",
+  "search_text": "Death Friden Avatar The Black Enemies always have Poisoned, Blighted, Leeching, and Mending. No Material Exists",
   "uid": "904467",
   "stats": {
    "health": 38,
@@ -3364,9 +3364,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Embiggening",
-  "trait_description": "This creature gains 50% more stats.",
+  "trait_description": "This creature gains 100% more stats.",
   "material_name": "Pulsing Stone",
-  "search_text": "Backer Backer Trait Backer Embiggening This creature gains 50% more stats. Pulsing Stone",
+  "search_text": "Backer Backer Trait Backer Embiggening This creature gains 100% more stats. Pulsing Stone",
   "uid": "08f062"
  },
  {
@@ -3488,6 +3488,16 @@
   "material_name": "Handcuffs",
   "search_text": "Backer Backer Trait Backer Guards! After this creature Attacks an enemy with Stone, it has a 30% chance to be killed. Handcuffs",
   "uid": "09d904"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Harbinger's Sign",
+  "trait_description": "After this creature is Attacked, it has a 50% chance to Cast Harbinger's Curse.",
+  "material_name": "Death Herald",
+  "search_text": "Backer Backer Trait Backer Harbinger's Sign After this creature is Attacked, it has a 50% chance to Cast Harbinger's Curse. Death Herald",
+  "uid": "b33103"
  },
  {
   "class": "Backer",
@@ -3764,9 +3774,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Necromancy",
-  "trait_description": "After a creature dies, your creatures gain 1 stack of Zombies. This trait does not stack.",
+  "trait_description": "After a creature dies, your creatures gain 1 to 3 stacks of Zombies. This trait does not stack.",
   "material_name": "Jimly's Tome",
-  "search_text": "Backer Backer Trait Backer Necromancy After a creature dies, your creatures gain 1 stack of Zombies. This trait does not stack. Jimly's Tome",
+  "search_text": "Backer Backer Trait Backer Necromancy After a creature dies, your creatures gain 1 to 3 stacks of Zombies. This trait does not stack. Jimly's Tome",
   "uid": "b6e7ce"
  },
  {
@@ -4174,9 +4184,9 @@
   "family": "Backer",
   "creature": "Backer Trait",
   "trait_name": "Toxic Cloud",
-  "trait_description": "After an enemy Attacks, each other enemy has a 25% chance to be afflicted with a random debuff. This trait does not stack.",
+  "trait_description": "After an enemy Attacks, each other enemy has a 35% chance to be afflicted with a random debuff. This trait does not stack.",
   "material_name": "Poisonous Gas",
-  "search_text": "Backer Backer Trait Backer Toxic Cloud After an enemy Attacks, each other enemy has a 25% chance to be afflicted with a random debuff. This trait does not stack. Poisonous Gas",
+  "search_text": "Backer Backer Trait Backer Toxic Cloud After an enemy Attacks, each other enemy has a 35% chance to be afflicted with a random debuff. This trait does not stack. Poisonous Gas",
   "uid": "bfb63a"
  },
  {
@@ -7550,11 +7560,11 @@
   "class": "Rodian Master",
   "family": "Construct",
   "creature": "Mastery Trait",
-  "trait_name": "Master of the Constructs",
+  "trait_name": "Master of Constructs",
   "trait_description": "Your Constructs' Arsenal Spell spells are 70% more potent. This trait does not stack.",
   "material_name": "Sigil of the Construct",
-  "search_text": "Rodian Master Mastery Trait Construct Master of the Constructs Your Constructs' Arsenal Spell spells are 70% more potent. This trait does not stack. Sigil of the Construct",
-  "uid": "a3176d"
+  "search_text": "Rodian Master Mastery Trait Construct Master of Constructs Your Constructs' Arsenal Spell spells are 70% more potent. This trait does not stack. Sigil of the Construct",
+  "uid": "499513"
  },
  {
   "class": "Sorcery",
@@ -10870,9 +10880,9 @@
   "family": "Exotic",
   "creature": "Abandoned Homunculus",
   "trait_name": "Lab Assistant",
-  "trait_description": "Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack.",
+  "trait_description": "Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 75% more damage. This trait does not stack.",
   "material_name": "Alchemical Catalyst",
-  "search_text": "Sorcery Abandoned Homunculus Exotic Lab Assistant Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 50% more damage. This trait does not stack. Alchemical Catalyst",
+  "search_text": "Sorcery Abandoned Homunculus Exotic Lab Assistant Your creatures' Spell Gems that have the same name as this creature's Spell Gems deal 75% more damage. This trait does not stack. Alchemical Catalyst",
   "uid": "dcbd67",
   "stats": {
    "health": 38,
@@ -11244,9 +11254,9 @@
   "family": "Exotic",
   "creature": "Davey",
   "trait_name": "Black Fog",
-  "trait_description": "After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 10% of its lowest stat for each debuff the enemy has.",
+  "trait_description": "After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 15% of its lowest stat for each debuff the enemy has.",
   "material_name": "Black Raindrop",
-  "search_text": "Death Davey Exotic Black Fog After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 10% of its lowest stat for each debuff the enemy has. Black Raindrop",
+  "search_text": "Death Davey Exotic Black Fog After this creature afflicts an enemy with a debuff, it deals damage to the enemy equal to 15% of its lowest stat for each debuff the enemy has. Black Raindrop",
   "uid": "7b0b26",
   "stats": {
    "health": 38,
@@ -20277,9 +20287,9 @@
   "family": "Occultist",
   "creature": "Celestial Occultist",
   "trait_name": "Lingering Incantation",
-  "trait_description": "After your creatures Cast a Sorcery spell, this creature afflicts 3 random enemies with a random debuff. This trait does not stack.",
+  "trait_description": "After your creatures Cast a Sorcery spell, 3 random enemies are afflicted with a random debuff. This trait does not stack.",
   "material_name": "Celestial Orb",
-  "search_text": "Sorcery Celestial Occultist Occultist Lingering Incantation After your creatures Cast a Sorcery spell, this creature afflicts 3 random enemies with a random debuff. This trait does not stack. Celestial Orb",
+  "search_text": "Sorcery Celestial Occultist Occultist Lingering Incantation After your creatures Cast a Sorcery spell, 3 random enemies are afflicted with a random debuff. This trait does not stack. Celestial Orb",
   "uid": "ea19c0",
   "stats": {
    "health": 33,
@@ -29133,9 +29143,9 @@
   "family": "Vortex",
   "creature": "Mana Vortex",
   "trait_name": "Stifle",
-  "trait_description": "After an enemy Casts a spell, afflcit enemies with Silenced.",
+  "trait_description": "After an enemy Casts a spell, this creature afflicts enemies with Silenced.",
   "material_name": "Mana Wind",
-  "search_text": "Sorcery Mana Vortex Vortex Stifle After an enemy Casts a spell, afflcit enemies with Silenced. Mana Wind",
+  "search_text": "Sorcery Mana Vortex Vortex Stifle After an enemy Casts a spell, this creature afflicts enemies with Silenced. Mana Wind",
   "uid": "682330",
   "stats": {
    "health": 28,
@@ -29177,9 +29187,9 @@
   "family": "Vortex",
   "creature": "Psychic Vortex",
   "trait_name": "Mindbender",
-  "trait_description": "When your creatures would take damage from spells, they have a 30% chance to ignore that damage. This trait does not stack.",
+  "trait_description": "Your creatures have a 30% chance to avoid damage from spells. This trait does not stack.",
   "material_name": "Psychic Wind",
-  "search_text": "Sorcery Psychic Vortex Vortex Mindbender When your creatures would take damage from spells, they have a 30% chance to ignore that damage. This trait does not stack. Psychic Wind",
+  "search_text": "Sorcery Psychic Vortex Vortex Mindbender Your creatures have a 30% chance to avoid damage from spells. This trait does not stack. Psychic Wind",
   "uid": "b22d8e",
   "stats": {
    "health": 32,
