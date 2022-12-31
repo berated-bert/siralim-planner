@@ -143,7 +143,7 @@ Nature - Your creatures gain 10% stats.
 Sorcery - Cast one of this creature's Spell Gems.",No Material Exists
 Death,Avatar,Erebyss,Avenged Sevenfold,"After your creatures take damage from an attack or spell, they Cast a Scourge spell on the enemy.
 The type of Scourge spell is based on the enemy's class. This trait does not stack.",No Material Exists
-Death,Avatar,Friden,The Black,"Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted.",No Material Exists
+Death,Avatar,Friden,The Black,"Enemies always have Poisoned, Blighted, Leeching, and Mending.",No Material Exists
 Chaos,Avatar,Genaros,Surge of Vitality,"After your creatures Attack or are Attacked, they gain 20% Maximum Health. This trait does not stack.",No Material Exists
 Chaos,Avatar,Gonfurian,Eraser,"After your creatures Attack, they reduce the target's Maximum Health by the same amount of damage dealt. This trait does not stack.",No Material Exists
 Life,Avatar,Lister,Perfect Imperfection,"Your creatures deal 40% more damage and take 10% less damage for each turn they've taken in the current battle.

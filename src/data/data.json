@@ -2662,9 +2662,9 @@
   "family": "Avatar",
   "creature": "Friden",
   "trait_name": "The Black",
-  "trait_description": "Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted.",
+  "trait_description": "Enemies always have Poisoned, Blighted, Leeching, and Mending.",
   "material_name": "No Material Exists",
-  "search_text": "Death Friden Avatar The Black Enemies always have Poisoned, Blighted, Leeching, and Mending. In addition, enemies cannot be immune to Blighted. No Material Exists",
+  "search_text": "Death Friden Avatar The Black Enemies always have Poisoned, Blighted, Leeching, and Mending. No Material Exists",
   "uid": "904467",
   "stats": {
    "health": 38,
