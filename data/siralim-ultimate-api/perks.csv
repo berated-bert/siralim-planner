@@ -493,7 +493,7 @@ Toxicologist,Side Effects,1,100,No,Yes,toxicologist_sideeffects_0.png,"After an 
 Toxicologist,Sudden Exposure,1,100,No,Yes,toxicologist_suddenexposure_0.png,"After your creaturess take damage from Poisoned, a random enemy takes this damage as well."
 Toxicologist,Teratogen,5,20,No,Yes,toxicologist_teratogen_0.png,"After a creature takes damage from Poisoned, the potency of all enemies' Poisoned debuffs is increased by 5% per rank. Maximum Bonus: 25% potency boost"
 Toxicologist,Toxic Absorption,1,1,Yes,No,toxicologist_toxicabsorption_A_0.png,"After your creatures take damage from Poisoned, they gain stats (other than Health) equal to 50% of the damage received."
-Shadowbringer,Arrogance is Confidence,1,100,No,Yes,shadowbringer_arroganceisconfidence_0.png,"Your creatures with Blighted ignore the effects of this debuff, and deal 50% more damage."
+Shadowbringer,Arrogance Is Confidence,1,100,No,Yes,shadowbringer_arroganceisconfidence_0.png,"Your creatures with Blighted ignore the effects of this debuff, and deal 50% more damage."
 Shadowbringer,Ascent of the Damned,1,100,No,Yes,shadowbringer_ascentofthedamned_0.png,"After your creatures attack, they cast Minor Healing, Healing, or Major Healing on themselves."
 Shadowbringer,Dark Souls,1,100,No,Yes,shadowbringer_darksouls_0.png,"After your creatures Attack, they cast Minor Healing, Healing, or Major Healing on the target."
 Shadowbringer,Dead Divinity,1,100,No,Yes,shadowbringer_deaddivinity_0.png,Enemies' healing spells have 50% more potency.

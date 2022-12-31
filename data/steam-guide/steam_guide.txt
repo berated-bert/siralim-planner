@@ -4309,7 +4309,7 @@ As a Shadowbringer, you'll utilize the Blighted debuff to damage your foes using
 This is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.
 
 Perks
-Arrogance is Confidence
+Arrogance Is Confidence
 Ranks: 1
 Cost Per Rank: 100
 Anointment: Yes
