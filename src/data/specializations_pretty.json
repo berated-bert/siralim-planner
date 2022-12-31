@@ -7595,7 +7595,7 @@
   "description": "The presence of a Shadowbringer spells doom for all who cross its path. This ethereal being bends the light into darkness, sapping its foes' will to live from their hearts.\nAs a Shadowbringer, you'll utilize the Blighted debuff to damage your foes using numerous healing effects.\nThis is an Advanced specialization and as such cannot be chosen at the beginning, nor does it get a starter creature.",
   "perks": [
    {
-    "name": "Arrogance is Confidence",
+    "name": "Arrogance Is Confidence",
     "ranks": "1",
     "cost_per_rank": "100",
     "anointment": "Yes",
