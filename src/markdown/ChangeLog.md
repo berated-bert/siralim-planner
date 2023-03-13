@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.1.8 (13 March 2023)
+
+-   Added missing "Excruciating Venom" trait.
+-   Corrected "The Lost" to Chaos class.
+
 ### v1.1.7 (31 December 2022)
 
 -   Fixed "Arrogance Is Confidence" not working when pasting in a build from the game.

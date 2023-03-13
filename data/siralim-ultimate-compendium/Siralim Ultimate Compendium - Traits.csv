@@ -199,6 +199,7 @@ Backer,Backer,Backer Trait,Ember Soul,"While this creature has Burning, it has 5
 Backer,Backer,Backer Trait,Embiggening,This creature gains 100% more stats.,Pulsing Stone
 Backer,Backer,Backer Trait,Emerald Blessings,This creature gives and receives 150% more healing.,Emerald Tide Scrap
 Backer,Backer,Backer Trait,Erratic,"At the start of battle, one of your creatures is chosen to have 100% more stats (other than Health) for the rest of battle.",Strange Smoke
+Backer,Backer,Backer Trait,Excruciating Venom,"After this creature Attacks an enemy with Poisoned, it gains Attack equal to 50% of the potency of this debuff.",Venemous Stinger
 Backer,Backer,Backer Trait,Firedevil's Will,Your creatures are immune to Burning.,Firedevil's Tears
 Backer,Backer,Backer Trait,Flash Barrier,This creature takes 90% less damage until the start of its first turn.,Barrier Parts
 Backer,Backer,Backer Trait,Flower Power,"At the start of battle, your creatures gain 2 random Nature Spell Gems. This trait does not stack.",Weeds and Seeds
@@ -832,7 +833,7 @@ Chaos,Godspawn,Rengas,Rodian Aftermath,This creature deals 30% more damage with 
 Death,Godspawn,Saurel,Syndicate,"At the start of your Godspawn creatures' third turns, they transform into their corresponding Avatar.",Particle of Saurel
 Life,Godspawn,Tenbran,To Move On Is To Grow,This creature's attacks deal 100% more damage if it Cast a spell last turn. This creature's spells deal 100% more damage if it Attacked last turn.,Particle of Tenbran
 Nature,Godspawn,Thana,Negative Noise,"While this creature is at 100% Health, it has a 90% chance to avoid damage.",Particle of Thana
-Death,Godspawn,The Lost,Beyond Oblivion,This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack.,Particle of The Lost
+Chaos,Godspawn,The Lost,Beyond Oblivion,This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack.,Particle of The Lost
 Death,Godspawn,Tisya,Heartrage,"At the end of each creature's turn, this creature deals damage to a random enemy equal to 80% of its lowest stat.",Particle of Tisya
 Nature,Godspawn,Ugat,Karma,"After this creature Attacks or is damaged by an attack or spell, it gains 50% of its lowest stat.",Particle of Ugat
 Death,Godspawn,Walken,Closure,"At the end of this creature's turn, it gains 35% Current and Maximum Health and Provokes.",Particle of Walken

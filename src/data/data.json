@@ -3393,6 +3393,16 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
+  "trait_name": "Excruciating Venom",
+  "trait_description": "After this creature Attacks an enemy with Poisoned, it gains Attack equal to 50% of the potency of this debuff.",
+  "material_name": "Venemous Stinger",
+  "search_text": "Backer Backer Trait Backer Excruciating Venom After this creature Attacks an enemy with Poisoned, it gains Attack equal to 50% of the potency of this debuff. Venemous Stinger",
+  "uid": "655b62"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
   "trait_name": "Firedevil's Will",
   "trait_description": "Your creatures are immune to Burning.",
   "material_name": "Firedevil's Tears",
@@ -14758,13 +14768,13 @@
   ]
  },
  {
-  "class": "Death",
+  "class": "Chaos",
   "family": "Godspawn",
   "creature": "The Lost",
   "trait_name": "Beyond Oblivion",
   "trait_description": "This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack.",
   "material_name": "Particle of The Lost",
-  "search_text": "Death The Lost Godspawn Beyond Oblivion This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack. Particle of The Lost",
+  "search_text": "Chaos The Lost Godspawn Beyond Oblivion This creature receives all effects that require it to be adjacent to your other creatures. This trait does not stack. Particle of The Lost",
   "uid": "f76282",
   "stats": {
    "health": 36,
