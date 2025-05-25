@@ -26,7 +26,7 @@ Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,40,The bearer takes less 
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,50,"When an enemy's Inverted potency would decrease, this relic has a 50% chance to prevent that from happening."
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,60,Enemies heal your creatures 1 additional time with Inverted.
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,70,"At the start of the bearer's turn, enemies' Inverted debuffs gain 50% potency."
-Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,80,"After the bearer manually Casts a spell, this relic Casts Spectral Rain."
+Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,80,"After the bearer manually Casts a spell, this relic Casts a random Morph Spell."
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,90,This relic and its bearer deal additional damage with attacks and spells equal to 20% of the enemy's Inverted potency.
 Intelligence,"Amalgam, Warped Mirror of T'mere M'rgo",,100,"After an enemy's Inverted debuff wears off, this relic afflicts it with Inverted again. The potency of this debuff is equal to 30% of the bearer's highest stat."
 Health,"Arbiter, Holy Shield of Surathli",,10,"At the start of battle, the bearer gains Shelled."
@@ -59,12 +59,12 @@ Health,"Bloodseeker, Hungering Dagger of Mortem",,70,The bearer gains 100% more 
 Health,"Bloodseeker, Hungering Dagger of Mortem",,80,The potency of the bearer's spells is based on 50% of its Maximum Health rather than Intelligence.
 Health,"Bloodseeker, Hungering Dagger of Mortem",,90,"After this relic attacks, it Casts Blood Burst on the enemy."
 Health,"Bloodseeker, Hungering Dagger of Mortem",,100,This relic and its bearer deal additional damage equal to 20% of the bearer's Maximum Health.
-Defense,"Brambleskin, Spiked Carapace of Genaros",,10,"After the bearer is damage by an attack or spell, this relic Attacks a random enemy."
+Defense,"Brambleskin, Spiked Carapace of Genaros",,10,"After the bearer is damaged by an attack or spell, this relic Attacks a random enemy."
 Defense,"Brambleskin, Spiked Carapace of Genaros",,20,This relic and its bearer deal additional damage with attacks and spells equal to 10% of the damage the bearer has taken in the current battle.
 Defense,"Brambleskin, Spiked Carapace of Genaros",,30,"After the bearer takes damage, it recovers Health equal to 50% of the amount of damage taken."
 Defense,"Brambleskin, Spiked Carapace of Genaros",,40,"At the end of the bearer's turn, it Provokes and gains 10% Current and Maximum Health."
 Defense,"Brambleskin, Spiked Carapace of Genaros",,50,The bearer gains 20% more Maximum Health from stat-boosting effects.
-Defense,"Brambleskin, Spiked Carapace of Genaros",,60,The bearer takes 3% less damage (up to 90%) for each time it has been damage in the current battle.
+Defense,"Brambleskin, Spiked Carapace of Genaros",,60,The bearer takes 3% less damage (up to 90%) for each time it has been damaged in the current battle.
 Defense,"Brambleskin, Spiked Carapace of Genaros",,70,"After the bearer Provokes, this relic Attacks a random enemy."
 Defense,"Brambleskin, Spiked Carapace of Genaros",,80,"When the bearer Attacks or Casts a spell, the damage has a 35% chance to be based on its Current Health instead of Attack or Intelligence."
 Defense,"Brambleskin, Spiked Carapace of Genaros",,90,"After the bearer takes damage from an attack or spell, a random enemy takes 20% of that damage as well."
@@ -90,7 +90,7 @@ Health,"Fable, Mythical Stone of Shallan",,80,The bearer's on-resurrect and on-d
 Health,"Fable, Mythical Stone of Shallan",,90,This relic and its bearer have 5% more stats (other than Health) for each time its on-resurrect or on-death effects activated.
 Health,"Fable, Mythical Stone of Shallan",,100,"After the bearer's on-attack or on-cast effects activate, this relic has a 10% chance to Cast Mega Magic."
 Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,10,"After the bearer Attacks, this relic Attacks the enemy as well."
-Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,20,"After this relic Attacks, the bearer has a 35% chacne to gain a random buff."
+Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,20,"After this relic Attacks, the bearer has a 35% chance to gain a random buff."
 Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,30,"At the start of battle, the bearer gains 5 random Spell Gems, one from each class."
 Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,40,"At the start of battle, the bearer gains a random trait that belongs to its race."
 Speed,"Fatum & Fortuna, Loaded Dice of Reclusa",,50,"After the bearer manually Casts a spell, this relic casts a copy of that spell as well."
@@ -111,7 +111,7 @@ Attack,"Ferro, Great Axe of Gonfurian",,90,The bearer's ♦ Spell Slot has an in
 Attack,"Ferro, Great Axe of Gonfurian",,100,"At the start of battle, the bearer gains Animated Weapon."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,10,"After the bearer Attacks or is Attacked, it afflicts the enemy with Bleeding."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,20,"At the start of the bearer's turn, this relic afflicts a random enemy with Bleeding."
-Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,30,"After an enemy takes damage from Bleeding, the bearer recover's Health equal to 30% of the damage dealt."
+Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,30,"After an enemy takes damage from Bleeding, the bearer recovers Health equal to 30% of the damage dealt."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,40,"After an enemy takes damage from Bleeding, this relic has a 25% chance to Attack it."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,50,"After this relic or its bearer Attacks an enemy with Bleeding, it has a 25% chance to take damage from this debuff immediately."
 Attack,"Fleshripper, Bloodied Cleaver of Tartarith",,60,"At the start of each enemy's turn, this relic has a 20% chance to Cast Mangle on it."
@@ -147,7 +147,7 @@ Defense,"Materium, Shifting Gem of Aurum",,50,"After the bearer Casts a spell, t
 Defense,"Materium, Shifting Gem of Aurum",,60,The bearer can equip Nature Spell Gems.
 Defense,"Materium, Shifting Gem of Aurum",,70,"At the start of battle, the bearer's class is changed to that of the top-most Spell Gem it has equipped."
 Defense,"Materium, Shifting Gem of Aurum",,80,The bearer can equip Death Spell Gems.
-Defense,"Materium, Shifting Gem of Aurum",,90,"After the bearer Casts a spell, this relic has a 10% chance to Cast a copy of each of the bearer's non-Ethereal spells that do not belong to its class."
+Defense,"Materium, Shifting Gem of Aurum",,90,"After the bearer Casts a spell, this relic has a 10% chance to Cast each of the bearer's non-Ethereal spells that do not belong to its class."
 Defense,"Materium, Shifting Gem of Aurum",,100,The bearer can equip Sorcery Spell Gems.
 Intelligence,"Moonfire & Sunfury, Mystic Orbs of Vertraag",,10,"After the bearer Attacks, it afflicts the target with Scorned."
 Intelligence,"Moonfire & Sunfury, Mystic Orbs of Vertraag",,20,"After the bearer afflicts an enemy with Scorned, this relic Attacks it."
@@ -172,7 +172,7 @@ Defense,"Mutatias, War Scissors of Alexandria",,100,The bearer takes 2 turns at 
 Speed,"Petra & Aes, War Drums of Meraxis",,10,"At the start of battle, the bearer gains 50% Speed."
 Speed,"Petra & Aes, War Drums of Meraxis",,20,"At the start of each enemy's turn, this relic has a 20% chance to Attack that enemy."
 Speed,"Petra & Aes, War Drums of Meraxis",,30,"At the start of the bearer's turn, this relic increases its Speed by 20%."
-Speed,"Petra & Aes, War Drums of Meraxis",,40,The damage of the bearer's attacks is increase by 15% of its Speed.
+Speed,"Petra & Aes, War Drums of Meraxis",,40,The damage of the bearer's attacks is increased by 15% of its Speed.
 Speed,"Petra & Aes, War Drums of Meraxis",,50,The bearer has a 25% chance to start battles at the top of the Timeline.
 Speed,"Petra & Aes, War Drums of Meraxis",,60,The bearer is immune to Feared.
 Speed,"Petra & Aes, War Drums of Meraxis",,70,The potency of the bearer's spells is increased by 15% of its Speed.
@@ -295,7 +295,7 @@ Intelligence,"Whisper, Shadow Staff of Tenebris",,30,"After this relic Attacks, 
 Intelligence,"Whisper, Shadow Staff of Tenebris",,40,"After the bearer gains Invisible, it gains 25% Intelligence."
 Intelligence,"Whisper, Shadow Staff of Tenebris",,50,"After the bearer manually Casts a spell, it has a 50% chance to gain Invisible."
 Intelligence,"Whisper, Shadow Staff of Tenebris",,60,"After the bearer is damaged by an attack or spell, it has a 50% chance to gain Invisible."
-Intelligence,"Whisper, Shadow Staff of Tenebris",,70,The damage of the baerer's attacks is based on its Intelligence.
+Intelligence,"Whisper, Shadow Staff of Tenebris",,70,The damage of the bearer's attacks is based on its Intelligence.
 Intelligence,"Whisper, Shadow Staff of Tenebris",,80,This relic has additional Attack equal to its bearer's Intelligence.
 Intelligence,"Whisper, Shadow Staff of Tenebris",,90,"When the bearer takes damage, 50% of its Intelligence is added to its Defense to determine the amount of damage it receives."
 Intelligence,"Whisper, Shadow Staff of Tenebris",,100,"At the end of the bearer's turn, this relic Casts Black Ice."

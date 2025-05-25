@@ -98,6 +98,10 @@ class MonsterTooltip extends Component {
                   )}
                 </td>
               </tr>
+              <tr>
+                <td>Realm Depth:</td>
+                <td>{m.realm_depth}</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -235,9 +239,9 @@ class MonsterPlannerTraitSlot extends PureComponent {
         window.clearTimeout(this.justUpdatedTimeout);
         this.justUpdatedTimeout = window.setTimeout(
           () => this.clearJustUpdated(),
-          1000
+          1000,
         );
-      }
+      },
     );
   }
 
@@ -291,7 +295,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
   render() {
     const rowErrors = getTraitErrors(
       this.props.monster,
-      this.props.traitSlotIndex
+      this.props.traitSlotIndex,
     );
     const emptyRow = this.isEmptyRow();
 
@@ -617,7 +621,7 @@ class MonsterPlannerPartyMember extends PureComponent {
                 this.props.onMouseUp(
                   this.props.partyMemberId,
                   i,
-                  traitSlot.monster ? traitSlot.monster : null
+                  traitSlot.monster ? traitSlot.monster : null,
                 )
               }
               clearPartyMember={() =>
@@ -921,7 +925,7 @@ class MonsterPlanner extends Component {
     partyMembers[toPID][toTID] = fromObj;
 
     this.setState({ dragging: false }, () =>
-      this.props.updatePartyMembers(partyMembers)
+      this.props.updatePartyMembers(partyMembers),
     );
   };
 

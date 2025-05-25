@@ -4,6 +4,7 @@ import Modal from "react-modal";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { faInfoCircle } from "@fortawesome/free-solid-svg-icons";
 
 class ChangelogModal extends PureComponent {
   render() {
@@ -24,6 +25,13 @@ class ChangelogModal extends PureComponent {
           </button>
         </div>
         <div className="info-modal">
+          <div className="note">
+            <FontAwesomeIcon icon={faInfoCircle} />
+            Please note that the Planner is not fully updated to V2.0 yet. New
+            creatures/traits have been added, but they are missing sprites.
+            Specializations and annointments have not been added yet - they will
+            be added once the data becomes available.
+          </div>
           <ChangeLog />
         </div>
       </Modal>

@@ -505,3 +505,24 @@ table {
     }
   }
 }
+
+.note {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 6px;
+  padding: 1em;
+  background: rgba(#ffe1a1, 0.6);
+  border: 1px solid #f5bc42;
+  color: rgba(0, 0, 0, 0.9);
+  svg {
+    margin-right: 0.8em;
+  }
+}
+
+span.new-version {
+  background: #f5bc42;
+  border-radius: 4px;
+  padding: 0.25em;
+  margin-left: 0.25em;
+  color: rgba(0, 0, 0, 0.7);
+}

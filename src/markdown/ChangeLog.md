@@ -1,5 +1,11 @@
 ## Changelog
 
+### v1.2.0 (25 May 2025)
+
+-   Updated for v2.0. Please note that the sprites of the new creatures are missing - they will be added once the Siralim Ultimate API is updated (as this is my source for creature sprite filenames). Specializations/anointments will also be added when the Steam Guide is updated.
+-   Added the ability to filter creatures/traits by maximum realm depth (credit to Lumireaver for this idea).
+-   Now using Gay Moth Aunt's Siralim Ultimate Creature and Trait Sheet ([link](https://docs.google.com/spreadsheets/d/1RYRvKTCLLJxXrZ_7OOjG8j98L_fjE5KNHtLG4wHn9Xw/edit?gid=0#gid=0)) as a data source.
+
 ### v1.1.8 (13 March 2023)
 
 -   Added missing "Excruciating Venom" trait.

@@ -9,6 +9,7 @@ import json
 import hashlib
 import logging as logger
 from PIL import Image
+from typing import List, Dict
 
 logger.basicConfig(format="%(levelname)s: %(message)s", level=logger.INFO)
 
@@ -17,6 +18,11 @@ SUAPI_DATA_FILENAME = "data/siralim-ultimate-api/creatures.csv"
 SUAPI_PERK_DATA_FILENAME = os.path.join(
     "data", "siralim-ultimate-api", "perks.csv"
 )
+
+GMA_CREATURES_FILENAME = (
+    "data/gma-sheet/Siralim Ultimate Creature and Trait Sheet - Creatures.csv"
+)
+
 
 GODSHOP_LOCATIONS_FILENAME = os.path.join(
     "data", "misc", "godshop_locations.csv"
@@ -36,6 +42,17 @@ PERK_ICONS_FOLDER = os.path.join("data", "siralim-ultimate-api", "perk_icons")
 
 MISSING_ICON_FILENAME = "MISSING_ICON.png"
 PERK_ICON_OUTPUT_FOLDER = os.path.join("public", "perk_icons")
+
+
+GMA_FIXES = {
+    "Turn to Grey": "Turn to Gray",
+    "Year of the Trolboar": "Year of the Trollboar",
+    "Shepard of Fire": "Shepherd of Fire",
+    "Impedence": "Impedance",
+    "Shrug Off": "Purge",
+    "Transformation Apprenticeship": "Rapid Learning",
+    "Testu-Oyakodon": "Tetsu-Oyakodon",
+}
 
 
 def generate_unique_name(row):
@@ -123,6 +140,7 @@ def load_csv_file(filename: str):
         version = line.split("Version ")[1].split(",")[0]
         logger.info("Using compendium version %s." % version)
         csv_reader = csv.DictReader(f)
+        f.readline()  # Remove the beta line
         for row in csv_reader:
             json_obj = {
                 k.lower().replace(" ", "_"): v.strip() for k, v in row.items()
@@ -130,7 +148,9 @@ def load_csv_file(filename: str):
             json_obj["search_text"] = generate_search_text(row)
             uid = generate_uid(json_obj)
             json_obj["uid"] = uid
+            json_obj["realm_depth"] = "N/A"  # Overwritten later
             json_data.append(json_obj)
+
             assert uid not in hash_set
             hash_set.add(uid)
     return json_data, version
@@ -186,6 +206,63 @@ def load_suapi_data(filename: str):
     return suapi_data
 
 
+def load_gma_creatures_data(filename: str):
+    """Open GMA's Creature dataset and extract a map of
+    { trait_name : { sprite_filename: <filename>,
+                     stats: { health: <value> ...} }}
+
+    Args:
+        filename (str): The filename of the Siralim Ultimate API creatures.csv
+
+    Returns:
+        dict: The dict mapping each trait to a list of stats for that creature,
+          as well as the sprite filename of that creature.
+    """
+    stat_map = {
+        "Hlt": "health",
+        "Atk": "attack",
+        "Int": "intelligence",
+        "Def": "defense",
+        "Spd": "speed",
+        "Total": "total",
+    }
+
+    gma_creatures_data = {}
+    with open(filename, "r", encoding="utf-8") as f:
+        csv_reader = csv.DictReader(f)
+        for row in csv_reader:
+            if row["Name"] == "Average Stats":
+                continue
+            t = row["Trait Name"]
+
+            # Fix up any minor errors with the GMA data using
+            # a hardcoded dictionary...
+            if t in GMA_FIXES:
+                t = GMA_FIXES[t]
+
+            t = t.lower()
+
+            gma_creatures_data[t] = {}
+            stats = {x: row[x] for x in list(stat_map.keys())}
+
+            gma_creatures_data[t]["stats"] = {
+                stat_map[k]: int(v) for k, v in stats.items()
+            }
+            gma_creatures_data[t]["sources"] = (
+                row["Source"].replace(" + ", ", ").split(", ")
+            )
+
+            rd = row["R. Depth"].split(" (")[0]
+            try:
+                rd = int(rd)
+            except Exception:
+                if rd != "N/A":
+                    rd = "?"
+
+            gma_creatures_data[t]["realm_depth"] = rd
+    return gma_creatures_data
+
+
 def add_sprites_and_stats(json_data: list):
     """Add the sprite_filenames and stats to each object in the JSON data.
     The sprite filenames and stats are sourced from the Siralim Ultimate API:
@@ -199,20 +276,32 @@ def add_sprites_and_stats(json_data: list):
         list: The updated JSON data now with sprites and stats.
     """
     suapi_data = load_suapi_data(SUAPI_DATA_FILENAME)
-    traits_not_in_suapi = []
+    gma_creatures_data = load_gma_creatures_data(GMA_CREATURES_FILENAME)
+
+    with open("test.json", "w") as f:
+        json.dump(gma_creatures_data, f, indent=2)
+
+    # Add stats, realm depths, and sources from GMA's sheet
+    for obj in json_data:
+        t = obj["trait_name"].lower()
+        if t in gma_creatures_data:
+            for k, v in gma_creatures_data[t].items():
+                obj[k] = v
+
+    # Add creature sprite filenames from SUAPI
     for obj in json_data:
         t = obj["trait_name"].lower()
         if t in suapi_data:
-            for (k, v) in suapi_data[t].items():
-                obj[k] = v
+            obj["sprite_filename"] = suapi_data[t]["sprite_filename"]
+            # for k, v in suapi_data[t].items():
+            #     obj[k] = v
 
-    validate_traits(json_data, suapi_data)
+    validate_traits(json_data, gma_creatures_data, suapi_data)
 
     return json_data
 
 
 def add_godshop_locations(json_data: list):
-
     locations = {}
     with open(GODSHOP_LOCATIONS_FILENAME, "r") as f:
         reader = csv.DictReader(f)
@@ -252,9 +341,13 @@ def is_creature_class(c: str):
     return c in ["Nature", "Death", "Chaos", "Life", "Sorcery"]
 
 
-def validate_traits(json_data: list, suapi_data: dict):
-    """For each trait in the json_data, check whether it exists in the SUAPI
-    data, and if so, check whether the sprite actually exists.
+def validate_traits(
+    json_data: list, gma_creatures_data: dict, suapi_data: dict
+):
+    """For each trait in the json_data, check whether it exists in the GMA
+    and SUAPI data.
+    If in the SUAPI data (which is only used for sprite filenames),
+    check whether the sprite actually exists.
 
     Args:
         json_data (list): A list of JSON rows, where each row corresponds to a
@@ -262,28 +355,38 @@ def validate_traits(json_data: list, suapi_data: dict):
         suapi_data (dict): A dict mapping each trait to a list of stats for
           that creature, as well as the sprite filename of that creature.
     """
-    n_missing = 0
+    n_missing_stats = 0
     n_missing_sprites = 0
     for i, obj in enumerate(json_data):
         creature = obj["creature"]
         t = obj["trait_name"].lower()
         c = obj["class"]
-        if is_creature_class(c) and t not in suapi_data:
-            logger.warning(
-                f"[{creature} ({obj['trait_name']})] does not "
-                "appear in SUAPI data."
-            )
-            n_missing += 1
+
+        if not is_creature_class(c):
             continue
 
-        # If not a creature class that does not appear in suapi data, continue
+        if t not in gma_creatures_data:
+            logger.warning(
+                f"[{creature} ({obj['trait_name']})] does not "
+                "appear in the GMA data."
+            )
+            n_missing_stats += 1
+            continue
+
         if t not in suapi_data:
+            logger.debug(
+                f"[{creature} ({obj['trait_name']})] does not "
+                "appear in the SUAPI data, i.e. it will have no "
+                "sprite on the planner."
+            )
+            n_missing_sprites += 1
+            json_data[i]["sprite_filename"] = "MISSING.png"
             continue
 
         sf = suapi_data[t]["sprite_filename"]
         sprite_path = get_sprite_path(sf, obj["creature"])
         if not sprite_path:
-            logger.info(f"[{creature}] sprite ({sf}) is not present.")
+            logger.debug(f"[{creature}] sprite ({sf}) is not present.")
             json_data[i]["sprite_filename"] = "MISSING.png"
             n_missing_sprites += 1
         else:
@@ -291,10 +394,10 @@ def validate_traits(json_data: list, suapi_data: dict):
             # A bit hacky, but set the suapi filename to the actual filename
             # (which may be under forum_avatars).
 
-    if n_missing > 0:
-        logger.warning(
-            f"{n_missing} traits (attached to creatures) are missing "
-            "from the SUAPI data."
+    if n_missing_stats > 0:
+        logger.error(
+            f"{n_missing_stats} traits (attached to creatures) are missing "
+            "from the GMA Creatures data."
         )
     if n_missing_sprites > 0:
         logger.warning(
@@ -472,7 +575,7 @@ def generate_metadata(compendium_version, json_data):
         if "stats" in obj:
             n_monsters_with_stats += 1
             stats = obj["stats"]
-            for (k, v) in stats.items():
+            for k, v in stats.items():
                 if k not in metadata["min_stats"]:
                     metadata["min_stats"][k] = v
                 if k not in metadata["max_stats"]:
@@ -530,6 +633,10 @@ def build_perk_icon_image(specializations_data):
     return specializations_data
 
 
+def sort_creature_data(data: List[Dict]):
+    return sorted(data, key=lambda k: (k["family"], k["creature"]))
+
+
 def build_data(output_folder: str):
     """Build the data to the specified output folder.
 
@@ -540,6 +647,8 @@ def build_data(output_folder: str):
 
     json_data = add_sprites_and_stats(json_data)
     json_data = add_godshop_locations(json_data)
+
+    json_data = sort_creature_data(json_data)
 
     save_json_data(json_data, os.path.join(output_folder, "data.json"))
     with open(os.path.join(output_folder, "metadata.json"), "w") as f:

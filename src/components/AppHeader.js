@@ -21,18 +21,15 @@ class AppHeader extends PureComponent {
                 onClick={this.props.openChangelogModal}
               >
                 v{`${process.env.REACT_APP_VERSION}`}
+                {new Date() <= new Date("2025-06-15") && (
+                  <span className="new-version">NEW</span>
+                )}
               </span>
             </h3>
           </div>
           <div className="app-header-right">
             <p>
-              <a
-                href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Compendium
-              </a>{" "}
+              Game Version&nbsp;
               {this.props.compendiumVersion}
             </p>
             <button

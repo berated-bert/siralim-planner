@@ -10,6 +10,7 @@ import icon_defense from "../icons/defense.png";
 import icon_speed from "../icons/speed.png";
 
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faCaretUp } from "@fortawesome/free-solid-svg-icons";
 import { faSortAlphaDown } from "@fortawesome/free-solid-svg-icons";
@@ -152,11 +153,18 @@ class MonsterSelectionRowHeader extends PureComponent {
         class_name: "stat",
         field_name: "S",
       },
+
       {
         sort_name: "material_name",
         type: "alpha",
         class_name: "material_name",
         field_name: "Material Name",
+      },
+      {
+        sort_name: "realm_depth",
+        type: "numeric",
+        class_name: "realm_depth",
+        field_name: "Depth",
       },
     ];
 
@@ -322,6 +330,7 @@ class MonsterSelectionRow extends Component {
         <div className="monster-row-material_name">
           {this.props.material_name}
         </div>
+        <div className="monster-row-realm_depth">{this.props.realm_depth}</div>
       </div>
     );
   }
@@ -387,6 +396,8 @@ class MonsterSelectionModal extends PureComponent {
       appliedSearchTerm: "",
       sortField: null,
       sortOrder: null,
+      currentRealmDepth: "",
+      appliedRealmDepth: null,
     };
     this.searchTimeout = null;
     this.tableRef = React.createRef();
@@ -438,12 +449,14 @@ class MonsterSelectionModal extends PureComponent {
           getPageFamily(
             monstersInCurrentGroup[
               Math.max(0, monstersInCurrentGroup.length - 2)
-            ]
+            ],
           )
       ) {
         currentGroup.end = i;
         currentGroup.familyEnd = getPageFamily(
-          monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 2)]
+          monstersInCurrentGroup[
+            Math.max(0, monstersInCurrentGroup.length - 2)
+          ],
         );
         itemGroups.push(currentGroup);
         currentGroup = { start: i, end: null, familyStart: f, familyEnd: null };
@@ -457,7 +470,7 @@ class MonsterSelectionModal extends PureComponent {
 
       currentGroup.end = i + 1;
       currentGroup.familyEnd = getPageFamily(
-        monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)]
+        monstersInCurrentGroup[Math.max(0, monstersInCurrentGroup.length - 1)],
       );
 
       itemGroups.push(currentGroup);
@@ -480,9 +493,30 @@ class MonsterSelectionModal extends PureComponent {
       () => {
         this.searchTimeout = window.setTimeout(
           () => this.applySearchTerm(),
-          500
+          500,
         );
-      }
+      },
+    );
+  }
+
+  /**
+   * A function that sets the currentRealmDepth to the value the user has typed in the search box.
+   * 0.5s after the user has stopped typing, apply the search term.
+   * @param  {Event} e The event that sparked the search change.
+   */
+  handleRealmDepthChange(e) {
+    window.clearTimeout(this.searchTimeout);
+    let d = e.target.value;
+    this.setState(
+      {
+        currentRealmDepth: d,
+      },
+      () => {
+        this.searchTimeout = window.setTimeout(
+          () => this.applyRealmDepth(),
+          500,
+        );
+      },
     );
   }
 
@@ -502,6 +536,12 @@ class MonsterSelectionModal extends PureComponent {
       if (af === "") af = "zzzzzzz"; // For empty strings (backer traits etc), treat them as if they were zzzz, e.g. last
       if (bf === "") bf = "zzzzzzz";
 
+      // Same for realm depths with N/A or unknown values
+      if (af === "N/A") af = 9999;
+      if (bf === "N/A") bf = 9999;
+      if (af === "?") af = 10000;
+      if (bf === "?") bf = 10000;
+
       if (af < bf) return order === "asc" ? 1 : -1;
       if (af > bf) return order === "asc" ? -1 : 1;
       return 0;
@@ -518,7 +558,7 @@ class MonsterSelectionModal extends PureComponent {
    * Afterwards, set this.state accordingly and scroll to the top of the table.
    */
   filterResults() {
-    let allSearchTerms = this.state.currentSearchTerm.split(/\s+AND\s+/);
+    let allSearchTerms = this.state.appliedSearchTerm.split(/\s+AND\s+/);
     let filteredItems = [];
     const items = this.props.items;
 
@@ -530,6 +570,19 @@ class MonsterSelectionModal extends PureComponent {
           matchesAllSearchTerms = false;
         }
       }
+
+      // Also check realm depth.
+      // Include any creatures/traits with N/A or Unknown realm depth,
+      // or realm depth <= the realm depth entered into the input box.
+      if (this.state.appliedRealmDepth) {
+        if (
+          !Number.isInteger(item.realm_depth) ||
+          item.realm_depth > this.state.appliedRealmDepth
+        ) {
+          matchesAllSearchTerms = false;
+        }
+      }
+
       if (matchesAllSearchTerms) {
         filteredItems.push(item);
       }
@@ -546,7 +599,7 @@ class MonsterSelectionModal extends PureComponent {
       },
       () => {
         this.tableRef.current.scrollTo(0, 0);
-      }
+      },
     ); // Scroll to top of table once complete.
   }
 
@@ -558,7 +611,22 @@ class MonsterSelectionModal extends PureComponent {
       {
         appliedSearchTerm: this.state.currentSearchTerm,
       },
-      () => this.filterResults()
+      () => this.filterResults(),
+    );
+  }
+
+  /**
+   * Apply the realm depth change and filter the results accordingly.
+   */
+  applyRealmDepth() {
+    this.setState(
+      {
+        appliedRealmDepth:
+          this.state.currentRealmDepth !== ""
+            ? this.state.currentRealmDepth
+            : null,
+      },
+      () => this.filterResults(),
     );
   }
 
@@ -586,6 +654,9 @@ class MonsterSelectionModal extends PureComponent {
     if (this.state.appliedSearchTerm) {
       f = " matching the current search term";
     }
+    if (this.state.appliedRealmDepth) {
+      f += " (with a max realm depth of " + this.state.appliedRealmDepth + ")";
+    }
 
     return (
       <span>
@@ -607,7 +678,7 @@ class MonsterSelectionModal extends PureComponent {
       },
       () => {
         this.tableRef.current.scrollTo(0, 0);
-      }
+      },
     );
   }
 
@@ -627,7 +698,7 @@ class MonsterSelectionModal extends PureComponent {
               : "desc"
             : "desc",
       },
-      () => this.filterResults()
+      () => this.filterResults(),
     );
   }
 
@@ -649,8 +720,8 @@ class MonsterSelectionModal extends PureComponent {
         _.get(
           this.state.filteredItems[this.state.filteredItemGroups[i].start],
           sf,
-          "(empty)"
-        )
+          "(empty)",
+        ),
       );
       if (pageStart.length > 8) pageStart = pageStart.slice(0, 7) + "...";
     }
@@ -662,8 +733,8 @@ class MonsterSelectionModal extends PureComponent {
         _.get(
           this.state.filteredItems[this.state.filteredItemGroups[i].end - 1],
           sf,
-          "(empty)"
-        )
+          "(empty)",
+        ),
       );
       if (pageEnd.length > 8) pageEnd = pageEnd.slice(0, 7) + "...";
     }
@@ -727,6 +798,38 @@ class MonsterSelectionModal extends PureComponent {
                 onChange={(e) => this.handleSearchChange(e)}
                 value={this.state.currentSearchTerm}
               />
+              <div className="monster-selection-realm-depth-filter">
+                <label htmlFor="monster-realm-depth">Max Realm Depth</label>
+                <input
+                  id="monster-realm-depth"
+                  type="number"
+                  value={this.state.currentRealmDepth}
+                  onChange={(e) => this.handleRealmDepthChange(e)}
+                  min={0}
+                  step={1}
+                  max={9999}
+                  className={
+                    this.state.appliedRealmDepth ? "active" : "non-active"
+                  }
+                />
+                <button
+                  id="monster-realm-depth-clear"
+                  className={
+                    this.state.appliedRealmDepth ? "active" : "non-active"
+                  }
+                  onClick={() => {
+                    this.setState(
+                      {
+                        appliedRealmDepth: null,
+                        currentRealmDepth: "",
+                      },
+                      () => this.filterResults(),
+                    );
+                  }}
+                >
+                  <FontAwesomeIcon icon={faTrash} />
+                </button>
+              </div>
             </div>
             <div className="monster-selection-pagination">
               {this.state.filteredItemGroups.map((itemGroup, i) => (

@@ -65,7 +65,7 @@
   min-height: 21px;
 
   > * {
-    padding: 7px;
+    padding: 0.4em;
     display: flex;
     align-self: stretch;
     align-items: center;
@@ -87,6 +87,12 @@
   }
   .monster-row-trait_name {
     width: 12%;
+  }
+  .monster-row-realm_depth {
+    width: 5%;
+    text-align: center;
+    align-self: center !important;
+    display: block;
   }
   .monster-row-material_name {
     width: 12%;
@@ -182,6 +188,35 @@
       margin-left: 10px;
       padding: 0 40px;
     }
+
+    .monster-selection-realm-depth-filter {
+      display: flex;
+      padding-left: 3em;
+      justify-content: center;
+      align-items: center;
+      label {
+        margin-right: 1em;
+        font-weight: bold;
+      }
+      input {
+        max-width: 120px;
+        &.non-active {
+          color: rgba(0, 0, 0, 0.5);
+        }
+      }
+      button {
+        width: auto;
+        padding: 0.4em 0.5em;
+
+        margin-left: 5px;
+
+        &.non-active {
+          background: #eee;
+          opacity: 0.6;
+          pointer-events: none;
+        }
+      }
+    }
   }
 
   .monster-selection-results-count {
@@ -208,7 +243,7 @@
 
     .monster-row-header {
       width: calc(100% - 16px);
-      font-size: 16px;
+      font-size: 0.9em;
       font-weight: bold;
       border-top: 2px solid rgba(0, 0, 0, 0);
       border-bottom: 2px solid #ddd;
@@ -223,7 +258,7 @@
       }
       padding: 0;
       > * {
-        padding: 7px;
+        padding: 0.4em;
       }
       .sortable {
         &:hover {

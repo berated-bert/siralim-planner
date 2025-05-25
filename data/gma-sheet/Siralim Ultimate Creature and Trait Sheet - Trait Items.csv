@@ -1,0 +1,432 @@
+Name,Item Name,Source,Trait Description
+Abyss Orbs,Dark Stick,Found in Treasure,"If an enemy has taken at least 2 turns, they are afflicted with a random debuff at the start and end of their turn. This trait does not stack."
+Adaptive Tactics,Weapon Kit,Found in Treasure,Your creatures' attacks ignore 5% of the enemies' Defense (up to 50%) for each time a creature died in the current battle. This trait does not stack.
+Adept Wizarding,Adept's Tool Bag,Found in Treasure,Your creatures can equip 1 additional Spell Gem and their spells are 30% more potent. This trait does not stack.
+Alchemist's Buffer,Corruptium,Found in Treasure,This creature takes 50% less damage from spells and 50% more damage from attacks. This creature has 50% more Intelligence and 50% less Attack.
+Anatidaephobia,Rubber Ducky,Found in Treasure,All creatures' attacks make a quacking sound.
+Andrick's Empowerment,Andrick's Tarnished Crown,Nether Boss (King Andrick),Your creatures deal 5% more damage for each minion each of your creatures have. This trait does not stack.
+Andrick's Folly,Andrick's Molding Tome,Nether Boss (King Andrick),"When your creatures gain a minion, the minion has 1 additional stack. This trait does not stack."
+Andrick's Royal Decree,Andrick's Tattered Garb,Nether Boss (King Andrick),"After your creatures gain a minion, they also gain a random buff. This trait does not stack."
+Anointed,Prismatic Feather,Found in Treasure,"After this creature Attacks, it gains 20% Speed."
+Anti-Magic Field,Vexting Salt,Found in Treasure,Your creatures have a 35% chance to avoid debuffs. This trait does not stack.
+Arcane Echo,Arcane Puzzle,Found in Treasure,"After your creatures manually Cast a spell, they Cast a random spell from the same class."
+At Peace,Angelic Tears,Found in Treasure,"After your creatures are resurrected, they gain a Barrier equal to 100% of the amount of Health they resurrected with. This trait does not stack."
+Aura Boost,Mathematics Textbook,Found in Treasure,Increases the effectiveness of this creature's first Stat Slot by 400%.
+Bladedancing,Phobos' Shortsword,Nether Boss (Phobos),"When your creatures deal critical damage, they have a 30% chance to attack the target again. This effect can repeat multiple times in a row."
+Bloodletting,Ruby Dagger,Found in Treasure,"After an enemy takes damage from Bleeding, your creatures have a 35% chance to be resurrected with 50% Health. This trait does not stack."
+Bonding,Soul Stones,Found in Treasure,"After your creatures are killed, they have a 7% chance to be resurrected with 50% Health for each creature that belongs to the same class fighting on your side. This trait does not stack."
+Boss Powers,Obvious Weak Spot,Found in Treasure,"At the start of battle, your creatures gain 50% Maximum Health. Your creatures take 50% more damage. This trait does not stack."
+Breach,Shadow Skull,Nether Boss (Inner Darkness),"After this creature is killed or resurrected, it afflicts enemies with Bomb."
+Butterfly Touch,Phobos' Crest,Nether Boss (Phobos),"When this creature takes damage, the amount of damage taken is reduced by 15% for each creature between it and the enemy on the Timeline."
+Ceaseless Fighting,Ceaseless Fang,Nether Boss (Ceaseless Gladiator),"When your creatures are killed, they attack a random enemy."
+Ceaseless Flame,Ceaseless Spit,Nether Boss (Ceaseless Gladiator),"When an enemy takes damage from Burning, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row."
+Ceaseless Vitality,Ceaseless Heart,Nether Boss (Ceaseless Gladiator),"At the start of this creature's turn, it recovers 20% Health and gains Shelled."
+Celestial Nexus,Celestial Map,Found in Treasure,"While this creature has Barrier or Shelled, it takes damage from attacks and spells in place of your other creatures. This trait does not stack."
+Chaotic Disposition,Sickly Toad's Stool,Found in Treasure,"After an enemy is afflicted with a debuff, this creature has a 10% chance to cast Debilitating Blast."
+Charging Rod,Cold Iron Needle,Found in Treasure,"After your creatures manually Cast a spell, its Spell Gems have a 30% chance to gain 1 Charge. This trait does not stack."
+Childhood's End,Shadow Heart,Nether Boss (Inner Darkness),"The potency of the enemies' Bomb debuffs are shared with each other, but enemies take 50% less damage from this debuff. This trait does not stack."
+Chroma's Shelter,Chroma's Bent Crown,Nether Boss (Chroma),This creature is immune to damage from its own class.
+Chroma's Solution,Chroma's Emblem,Nether Boss (Chroma),"While this creature has Scorned, it has 100% more Intelligence. While this creature has Silenced, it has 100% more Attack."
+Chroma's Stability,Chroma's Tarnished Jewel,Nether Boss (Chroma),"While this creature has Scorned, it is immune to damage from attacks. While this creature has Silenced, it is immune to damage from spells."
+Consecrated Ground,Sacred Mace,Found in Treasure,This creature and its adjacent allies are immune to damage from minions and take 35% less indirect damage. This trait does not stack.
+Conspiracy Theory,Broken Thermometer,Found in Treasure,"After you defeat a Treasure Golem, your creatures gain several bonuses for the rest of the time you're in that Realm. This trait does not stack."
+Controlled Chaos,Rigged Die,Found in Treasure,"When your creatures would Cast a random spell, the spell is chosen from this creature's Spell Gems."
+Coward's Embrace,Crystallized Cowardice,Found in Treasure,"Your creatures have a 50% independent chance to dodge, but they can't deal critical damage. This trait does not stack."
+Crown Prince Syndrome,Whacking Stick,Nether Boss (Aspects of Meraxis),"After this creature dodges or deals critical damage, it Defends or Provokes."
+Cyhra's Adamance,Cyhra's Adamance,Nether Boss (Cyhra),Your creatures deal 50% more damage for each time they've been resurrected in the current battle. This trait does not stack.
+Cyhra's Resilience,Cyhra's Broken Whiskers,Nether Boss (Cyhra),Your creatures take 15% less damage for each dead ally. This trait does not stack.
+Cyhra's Trust,Cyhra's Severed Tail,Nether Boss (Cyhra),Your creatures deal 25% more damage for each dead ally. This trait does not stack.
+Dead of Winter,Alchemical Frost,Found in Treasure,"After an enemy afflicts a debuff, it is afflicted with Frozen and Poisoned."
+Death Threats,Horse Head in a Bed,Found in Treasure,"After your creatures Provoke, 3 random enemies activate their on-dodge effects. This trait does not stack."
+Deathwalker's Destruction,Deathwalker's Tiara,Nether Boss (Deathwalker),"When an enemy takes damage from Bomb, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row."
+Deathwalker's Hymn,Deathwalker's Harp,Nether Boss (Deathwalker),Your Lepers share their innate traits with each other.
+Deathwalker's Strangulation,Deathwalker's Gem,Nether Boss (Deathwalker),"When an enemy takes damage from Poisoned, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row."
+Deep Roots,Ancient Soulsoil,Found in Treasure,"When this creature takes damage from a creature that belongs to its class, it has a 75% chance to avoid that damage."
+Determination,Gold Star of Courage,Found in Treasure,"After an ally dies, this creature gains 25% Defense."
+Dragon's Rage,Draco Rubies,Found in Treasure,"At the start of this creature's turn, it Casts Fireball."
+Dualcast,Ring of Echoes,Found in Treasure,"At the start of this creature's turn, it Casts the most recent spell it Cast again."
+Dynamic Duos,Twin Gems,Found in Treasure,"For each creature in your party that is a class you have exactly 2 of, those creatures deal 160% more damage. For each creature in your party that is a race you have exactly 2 of, those creatures take 80% less damage. This trait ignores other traits and perks that increase the number of creatures of a specific race or class. This trait does not stack."
+Eldritch Rune,Tome of Eldritch Knowledge,Found in Treasure,"At the start of battle, this creature's Maximum Health is set to 50%. This creature's spells are 100% more potent."
+Ember Soul,Souls of the Ineffable,Found in Treasure,"While this creature has Burning, it has 75% more Attack and Speed."
+Embiggening,Pulsing Stone,Found in Treasure,This creature gains 100% more stats.
+Emerald Blessings,Emerald Tide Scrap,Found in Treasure,This creature gives and receives 150% more healing.
+Erratic,Strange Smoke,Found in Treasure,"At the start of battle, one of your creatures is chosen to have 150% more stats (other than Health) for the rest of the battle."
+Etta's Coercion,Etta's Spices,Nether Boss (Etta),"At the end of each enemy's turn, this creature has a 20% chance to force them to Attack one of their allies. This trait does not stack."
+Etta's Jealousy,Etta's Doll,Nether Boss (Etta),"At the end of each enemy's turn, this creature has a 20% chance to force them to Cast a random, damaging spell in this creature's favor. This trait does not stack."
+Etta's Seduction,Etta's Blindfold,Nether Boss (Etta),"At the start of this creature's turn, a random enemy gives 15% of their stats to this creature."
+Excruciating Venom,Venomous Stinger,Found in Treasure,"After this creature Attacks an enemy with Poisoned, it gains Attack equal to 50% of the potency of this debuff."
+Extradimensional Shield,Manual Kinetic Splitter,Found in Treasure,This creature is immune to instant-death effects while it has fewer than 5 debuffs.
+Father Shadow,Shadow Essence,Nether Boss (Inner Darkness),"After this creature damage an enemy with an attack or spell, it deals damage to a random enemy equal to 20% of the damage dealt."
+Final Act of Hatred,Claymore of Hatred,Nether Boss (Judgment & Mercy),"When one of your creatures dies, each of their non-Ethereal Spell Gems has a 20% chance to be Cast."
+Final Act of Judgement,Claymore of Judgment,Nether Boss (Judgment & Mercy),"At the start of this creature's turn, it deals damage to enemies equal to 1% of their Current Health for every 0.5% of Health this creature is missing. The damage cannot exceed 35% of each creature's Current Health."
+Final Act of Mercy,Claymore of Mercy,Nether Boss (Judgment & Mercy),"At the start of this creature's turn, it kills all enemies that are below 25% Health."
+Firedevil's Will,Firedevil's Tears,Found in Treasure,Your creatures are immune to Burning and enemies take 50% more damage from this debuff. This trait does not stack.
+Flash Barrier,Barrier Parts,Found in Treasure,This creature takes 90% less damage until the start of its first turn.
+Flower Power,Weeds and Seeds,Found in Treasure,"At the start of battle, your creatures gain 3 random Nature Spell Gems. This trait does not stack."
+Flubris' Engulfing,Flubris' Ichor,Nether Boss (Flubris),"When an enemy takes damage from Burning, it loses 20% Attack and Defense. This trait does not stack."
+Flubris' Entrapment,Flubris' Third Arm,Nether Boss (Flubris),"When an enemy takes damage from Poisoned or Burning, they have a 50% chance to be afflicted with a random debuff. This trait does not stack."
+Flubris' Toxicity,Flubris' Eyeballs,Nether Boss (Flubris),"When an enemy takes damage from Poisoned, it loses 20% Intelligence and Speed. This trait does not stack."
+Focused Magicks,Ethereal Lens,Found in Treasure,"Your creatures' Ethereal Spell Gems ignore 30% of enemies' Defense, plus 10% more for each creature missing from your party. This trait does not stack."
+Forced Momentum,Cursed Scope,Found in Treasure,"At the start of your creatures' turns, they have a 35% chance to gain a random trait. This trait does not stack."
+Frostburn,Frigid Flame,Found in Treasure,"After an enemy takes damage from Burning, it is afflicted with Frozen. This trait does not stack."
+Frozen Legion,Meat Popsicle,Found in Treasure,"After your creatures Attack an enemy with Frozen, they gain 1 stack of Zombies. This trait does not stack."
+Furness' Decadence,Broken Bottle,Nether Boss (Furness),Your creature can Cast Booze Spells without consuming Charges.
+Furness' Instability,Pills,Nether Boss (Furness),"At the start of this creature's turn, it Casts one of its non-Ethereal Booze Spell spells."
+Furness' Stupor,Dried Vomit,Nether Boss (Furness),This creature's Booze Spells are 100% more potent.
+Gambler's Game,Riskium,Found in Treasure,"At the start of each creature's turn, it has a 50% chance to gain a random buff. Otherwise, it gains a random trait. This trait does not stack."
+Gem Leech,Crystalline Bloodsucker,Found in Treasure,"After this creature Attacks, it Casts one of the target's Spell Gems."
+Gift of Charybdis,Charybdis' Trident,Nether Boss (Scylla & Charybdis),"After your creatures die, they grant 25% of their Intelligence and Defense to all your creatures. This trait does not stack."
+Gift of Scylla,Scylla's Plume,Nether Boss (Scylla & Charybdis),"After your creatures die, they grant 25% of their Attack and Speed to all your creatures. This trait does not stack."
+Giftwrapped Army,Kraynaks' Plank,Nether Boss (Kraynaks),"At the start of battle, your Mimic creatures gain 1 random buff for each Mimic fighting on your side. This trait does not stack."
+Giran's Rigor,Giran's Eye,Nether Boss (Giran),This creature cannot lose stats.
+Giran's Strategy,Giran's Skull,Nether Boss (Giran),"At the start of battle, this creature's Health, Attack, Intelligence, Defense, and Speed are set equal to those of the second, third, fourth, fifth, and sixth creature in your party."
+Giran's Unity,Giran's Kneecap,Nether Boss (Giran),This creature has additional stats equal to 10% of your other creatures' stats.
+Glitch In The System,Fried Circuitry,Found in Treasure,"When a creature would gain a buff, it is afflicted with a random debuff instead."
+Guards!,Handcuffs,Found in Treasure,"After this creature Attacks an enemy with Stone, it has a 30% chance to be killed."
+Harbinger's Sign,Death Herald,Found in Treasure,"After this creature is Attacked, it has a 50% chance to Cast Harbinger's Curse."
+Heads or Tails,Lucky Coin,Found in Treasure,"After this creature Attacks, it has a 50% chance to gain a random buff. Otherwise, it gains a random minion."
+Hederas's Grasp,Bindwood,Found in Treasure,"After this creature Attacks, it afflicts the target and the creatures adjacent to the target with Snared. This creature's attacks deal 40% more damage."
+Hee Hay Ho Ha,Impington's Laser Eye,Nether Boss (Imp Impington),Your creatures Cast 1 additional time for every 2 Imp creatures fighting on your side. This trait does not stack.
+Hee Hoo Ha,Impington's Totem,Nether Boss (Imp Impington),Your creatures have a 15% chance to take an additional turn. This trait does not stack.
+Hemophilia,Bloody Rags,Found in Treasure,Enemies' Bleeding debuffs last forever and deal 35% more damage. This trait does not stack.
+Hidden Potential,Self-Help Book,Found in Treasure,"At the start of this creature's third turn, it recovers 100% Health and gains 100% stats (other than Health)."
+High Risk,Drake Scale,Found in Treasure,Your creatures deal 40% more damage and take 10% more damage for each turn they've taken in the current battle. This trait does not stack.
+Hive,Hivestone,Found in Treasure,This creature has 15% more stats (other than Health) for each other creature with this trait fighting on your side.
+Hoarding,Sentimental Rock,Found in Treasure,This creature has 50% more Intelligence for each different class of Spell Gem it has equipped.
+Hoo Ho Ha,Impington's Cog,Nether Boss (Imp Impington),"After this creature is killed, it is resurrected as Imp Impington Prime."
+Horde Limits,Vaccine,Found in Treasure,"After your creatures are afflicted with a debuff, they have a 25% chance to gain Immune. This trait does not stack."
+Ianne's Eccentricity,Ianne's Third Eye,Nether Boss (Blacksmith Ianne),"After this creature Attacks, the target deals 100 damage to all your creatures. This damage is not mitigated by Defense."
+Ianne's Oddity,Ianne's Bad Leg,Nether Boss (Blacksmith Ianne),"When your creatures take damage that exceeds 30% of their Maximum Health, reduce this damage by 50% This trait does not stack."
+Ianne's Quirk,Ianne's Chiclets,Nether Boss (Blacksmith Ianne),After this creature Attacks it Casts Metamorphosis on the target.
+Impatience,Burnt Spoon,Found in Treasure,"After all start-of-battle effects, this creature and a random enemy activate their start-of-turn and end-of-turn effects. Your creatures cannot be resurrected. This trait does not stack."
+Imposter Syndrome,Shattered Mirror,Found in Treasure,"At the start of battle, this creature gains stats (other than Health) equal to 50% of your other creatures' highest stats. This creature starts battles at the bottom of the timeline."
+Improbable Catapult,Trait Launcher,Found in Treasure,"At the start of this creature's turn, enemies gain a copy of its innate trait. This trait can only activate once per side."
+In All Things,Broken Scales,Found in Treasure,"At the end of this creature's turn, it gains stats equal to 20% of its highest stat."
+Incoming Tide,Selene's Soul,Found in Treasure,"At the start of this creature's turn, it has a 50% chance to Cast Submerge."
+Infestation,Clump of Spiderlings,Found in Treasure,"At the start of your creatures' turns, they gain 1 to 3 stacks of Spiderlings. This trait does not stack."
+Insane Polarity,!@#$ing Magnets,Found in Treasure,"At the start of battle, your creatures' Ethereal Spell Gems gain the first enchantment of their owner's first permanent Spell Gem."
+Insight,Lens of Insight,Found in Treasure,Your creatures can target Invisible enemies.
+Jiggly,Gelatin Lump,Found in Treasure,This creature has 50% less Defense and 100% more Speed.
+Katarina's Asylum,Katarina's Visage,Nether Boss (Katarina),"When your creatures take damage, they take 35% more damage but gain Invisible."
+Katarina's Guidance,Katarina's Essence,Nether Boss (Katarina),"At the start of battle, your creature that is highest on the Timeline gains 5 random buffs. This trait does not stack."
+Katarina's Return,Katarina's Brace,Nether Boss (Katarina),"After your creatures take damage, they recover 30% Health. This trait does not stack."
+Kiichi's Aggression,Kiichi's Fang,Nether Boss (Kiichi),"After an enemy takes damage from Bleeding, all other enemies take 50% of that damage. This trait does not stack."
+Kiichi's Onslaught,Kiichi's Mane,Nether Boss (Kiichi),"When an enemy takes damage from Bleeding, it has a 50% chance to take this damage again. This effect can repeat multiple times in a row. This trait does not stack."
+Kiichi's Persistence,Kiichi's Tail,Nether Boss (Kiichi),Enemies with Bleeding take this damage an additional time at the end of their turn. This damage is not modified by traits and other effects that affect Bleeding. This trait does not stack.
+Law of the Large,The Tedious Device,Found in Treasure,This creature has additional Speed equal to 30% of its Current Health.
+Lion's Roar,Lion Toy,Found in Treasure,"After this creature takes damage from an enemy, it decreases the enemy's Attack and Defense by 30%."
+Lithos Evolution,Lithos Sinew,Found in Treasure,"At the start of your creatures' turns, they gain 10% Maximum Health. This trait does not stack."
+Loid's Laugh,Loid's Boil,Nether Boss (Loid),"After an enemy Casts a spell, it loses 20% Intelligence and is afflicted with Silenced. This trait does not stack."
+Loid's Pustulant Pimples,Loid's Hair,Nether Boss (Loid),"After an enemy Defends or Provokes, it is afflicted with 3 random debuffs. This trait does not stack."
+Loid's Visage,Loid's Pimple,Nether Boss (Loid),"After an enemy Attacks, it loses 20% Attack and is afflicted with Scorned. This trait does not stack."
+Lord of Undeath,Legendary Undead Fragment,Found in Treasure,"After one of your creatures' minions go away, all your creatures gain a random minion. This trait does not stack."
+Love Giveth,Still-Beating Heart,Found in Treasure,Your creatures gain 50% more Maximum Health from stat-increasing effects. This trait does not stack.
+Mad Man,Crazy Man's Corpse,Found in Treasure,"While your creatures are below 50% Health, they have 50% more stats (other than Health). This trait does not stack."
+Mass Pandemic,Dice Set,Found in Treasure,"After an enemy takes damage from Poisoned, the potency of all enemies' Poisoned debuffs is increased by 15%. This trait does not stack."
+Master of Abominations,Sigil of the Abomination,Abomination Master,"If all the creatures in your party are Abominations, enemies always have Weak and Vulnerable, and take 50% more damage. This trait does not stack."
+Master of Alementals,Sigil of the Alemental,Alemental Master,"At the start of battle, your Alementals gain 2 random Booze spells for each Alemental fighting on your side. This trait does not stack."
+Master of Amaranths,Sigil of the Amaranth,Amaranth Master,"At the start of battle, your Amaranths share 15% of their Defense with each other. This trait does not stack."
+Master of Amphisbaena,Sigil of the Amphisbaena,Amphisbaena Master,"If all the creatures in your party are Amphisbaenas, their innate traits' repsective effects activate 1 additional time. This trait does not stack."
+Master of Angels,Sigil of the Angel,Angel Master,Your Angels' attacks apply all the debuffs that your other Angels' innate traits apply as well.
+Master of Animations,Sigil of the Animation,Animation Master,"If all the creatures in your party are Animations, the first and last creatures in your party are considered to be adjacent to all their allies."
+Master of Apises,Sigil of the Apis,Apis Master,"At the start of battle, your Apises gain the Long Live trait."
+Master of Apocalypses,Sigil of the Apocalypse,Apocalypse Master,Your Apocalypses act as if they take 2 turns at once. This trait does not stack.
+Master of Arachnalisks,Sigil of the Arachnalisk,Arachnalisk Master,Enemies take 20% more damage from Poisoned for each Arachnalisk fighting on your side. This trait does not stack.
+Master of Arbiters,Sigil of the Arbiter,Arbiter Master,"If all the creatures in your party are Arbiters, their innate traits are 50% more powerful. This trait does not stack."
+Master of Aspects,Sigil of the Aspect,Aspect Master,"Your Aspects have another 50% independent chance to Dodge attacks. In addition, your Aspects take 25% less damage from all sources. This trait does not stack."
+Master of Asuras,Sigil of the Asura,Asura Master,Your Asuras' on-critical effects activate 2 additional times. This trait does not stack.
+Master of Automatons,Sigil of the Automaton,Automaton Master,"If all the creatures in your party are Automatons, the strength of their innate traits is doubled. This trait does not stack."
+Master of Banshees,Sigil of the Banshee,Banshee Master,"If all the creatures in your party are Banshees, enemies always have Scorned."
+Master of Bards,Sigil of the Bard,Bard Master,"If all the creatures in your party are Bards, their Song traits are 100% more effective and they have an independent 50% chance to deal critical damage. This trait does not stack."
+Master of Basilisks,Sigil of the Basilisk,Basilisk Master,"If all the creatures in your party are Basilisks, they have a 20% chance to avoid damage. In addition, their innate traits have a 25% chance to activate even if they took damage between their turns. This trait does not stack."
+Master of Bats,Sigil of the Bat,Bat Master,Your Bats have a 50% chance to Attack 1 additional time. This effect can occur repeatedly. This trait does not stack.
+Master of Beacons,Sigil of the Beacon,Beacon Master,"At the start of battle, your Beacons' stats are averaged and then increased by 25%. This trait does not stack."
+Master of Brownies,Sigil of the Brownie,Brownie Master,Your Brownies Attack 1 additional time for each Brownie fighting on your side. Your creatures deal 50% less damage. This trait does not stack.
+Master of Calumniers,Sigil of the Calumnier,Calumnier Master,"If all the creatures in your party are Calumniers, they do not have decreased stats from their personalities."
+Master of Carbuncles,Sigil of the Carbuncle,Carbuncle Master,"If all the creatures in your party are Carbuncles, their innate traits grow stronger twice as fast. This trait does not stack."
+Master of Carnages,Sigil of the Carnage,Carnage Master,"After one of your Carnages kill an enemy, your other Carnages Attack a random enemy for 100% more damage. This trait does not stack."
+Master of Carvers,Sigil of the Carver,Carver Master,Your Carvers deal 30% more damage and take 10% more damage for each Carver fighting on your side.
+Master of Cataclysms,Sigil of the Cataclysm,Cataclysm Master,"If all the creatures in your party are Cataclysms, their traits have a 10% chance to activate at the start of each creatures' turn as well. This trait does not stack."
+Master of Centaurs,Sigil of the Centaur,Centaur Master,Your Centaurs' attacks deal 20% more damage and have an independent 10% chance to deal critical damage for each Centaur fighting on your side. This trait does not stack.
+Master of Cerberuses,Sigil of the Cerberus,Cerberus Master,"If all the creatures in your party are Cerberuses, they can manually Cast spells."
+Master of Cherubs,Sigil of the Cherub,Cherub Master,"If all the creatures in your party are Cherubs, the maximum absorption of their Barrier buffs is increased by 200%. This trait does not stack."
+Master of Chimeras,Sigil of the Chimera,Chimera Master,"If all the creatures in your party are Chimeras, they take 75% less damage from creatures that belong to their fused creature's class. This trait does not stack."
+Master of Clockworks,Sigil of the Clockwork,Clockwork Master,"If all the creatures in your party are Clockworks, their innate traits are 50% more powerful. This trait does not stack."
+Master of Clutchers,Sigil of the Clutcher,Clutcher Master,"When an enemy dodges your Clutchers' attacks, they still take damage."
+Master of Cockatrices,Sigil of the Cockatrice,Cockatrice Master,"If all the creatures in your party are Cockatrices, enemies always have Confused."
+Master of Concoctions,Sigil of the Concoction,Concoction Master,"If all the creatures in your party are Concoctions, they have a 50% chance to Attack each enemy with Disarmed at the start of their turns. This trait does not stack."
+Master of Constructs,Sigil of the Construct,Construct Master,Your Constructs' Arsenal Spells are 70% more potent. This trait does not stack.
+Master of Crunchers,Sigil of the Cruncher,Cruncher Master,"If all the creatures in your party are Crunchers, they deal 10% more damage for each Sealed enemy Spell Gem. This trait does not stack."
+Master of Crusaders,Sigil of the Crusader,Crusader Master,Your Crusaders start battles with Shelled.
+Master of Denizens,Sigil of the Denizen,Denizen Master,"If all the creatures in your party are Denizens, enemies take 50% more damage from Mania. This trait does not stack."
+Master of Demigods,Sigil of the Demigod,Demigod Master,"At the start of battle, your Demigods' stats are averaged and then increased by 25%. This trait does not stack."
+Master of Devils,Sigil of the Devil,Devil Master,Increases the additional damage granted by your Devils' innate traits from 200% to 300%.
+Master of Diabolic Horde,Sigil of the Diabolic Horde,Diabolic Horde Master,"At the start of battle, your creatures' races are changed to Diabolic Horde."
+Master of Djinns,Sigil of the Djinn,Djinn Master,Your Djinns' spells always deal critical damage and have 40% more potency. This trait does not stack.
+Master of Doom Fortresses,Sigil of the Doom Fortress,Doom Fortress Master,Your creatures deal 15% more damage for each Doom Fortress fighting on your side. This trait does not stack.
+Master of Doomguards,Sigil of the Doomguard,Doomguard Master,"Your Doomguards have a 20% chance to avoid damage, or 50% if they are Defending or Provoking. This trait does not stack."
+Master of Dragons,Sigil of the Dragon,Dragon Master,Your Dragons' innate traits activate 1 additional time. This trait does not stack.
+Master of Dryads,Sigil of the Dryad,Dryad Master,Your Dryads' buffs and minions last forever.
+Master of Dumplings,Sigil of the Dumpling,Dumpling Master,"At the start of battle, your Dumplings gain an Ultimate Spell depending on the skin they have equipped. If they don't have a skin equipped that was obtained from defeating a Dumpling in the wild, the spell will be chosen at random."
+Master of Effigies,Sigil of the Effigy,Effigy Master,"If all the creatures in your party are Effigy creatures, they always have Cursed, Burning, Poisoned and Bleeding and take 75% less damage from these debuffs."
+Master of Efreets,Sigil of the Efreet,Efreet Master,"When your creatures afflict enemies with Burning, the potency of this debuff is increased by 50% for each Efreet fighting on your side. This trait does not stack."
+Master of Efts,Sigil of the Eft,Eft Master,"If all the creatures in your party are Efts, they have an independent 40% chance to dodge and deal critical damage. This trait does not stack."
+Master of Eggxotics,Sigil of the Eggxotic,Eggxotic Master,Your Eggxotic creatures share the permanent buffs referenced in their traits with each other.
+Master of Electropods,Sigil of the Electropod,Electropod Master,"If all the creatures in your party are Electropod, they gain 50% more Speed from stat-boosting effects. This trait does not stack."
+Master of Elementasaurs,Sigil of the Elementasaur,Elementasaur Master,"If all the creatures in your party are Elementasaurs, they are resistant to debuffs and are afflicted with the debuffs referenced in their traits at the start of battle. This trait does not stack."
+Master of Elves,Sigil of the Elf,Elf Master,"At the start of battle, your Elves share 5% of their stats with each other. This trait does not stack."
+Master of Ents,Sigil of the Ent,Ent Master,"The first time your Ents are killed, they are resurrected with 10% Health."
+Master of Fae,Sigil of the Fae,Fae Master,"If all the creatures in your party are Fae, they have a 60% chance to avoid damage from spells. This trait does not stack."
+Master of Familiars,Sigil of the Familiar,Familiar Master,Your Familiars have 10% more Intelligence for each time your Familiars have Cast a spell in the current battle. This trait does not stack.
+Master of Fiends,Sigil of the Fiend,Fiend Master,Your Fiends with Berserk have a 40% chance to avoid damage. This trait does not stack.
+Master of Forsaken,Sigil of the Forsaken,Forsaken Master,"If all the creatures in your party are Forsaken, their innate traits have no downside."
+Master of Gargantuans,Sigil of the Gargantuan,Gargantuan Master,Your Gargantuans have a 50% chance to avoid damage while they're Defending or Provoking. This trait does not stack.
+Master of Gargoyles,Sigil of the Gargoyle,Gargoyle Master,"After your Gargoyles Cast a Chaos spell, your Gargoyles gain 20% Attack. This trait does not stack."
+Master of Gemlings,Sigil of the Gemling,Gemling Master,"If all the creatures in your party are Gemlings, they can equip Spell Gems from any class."
+Master of Ghouls,Sigil of the Ghoul,Ghoul Master,Your Ghouls deal additional damage with attacks and spells equal to 15% of their Speed for each Ghoul fighting on your side. This trait does not stack.
+Master of Giants,Sigil of the Giant,Giant Master,Your Giants start battles with 30% more Health for each Giant fighting on your side. This trait does not stack.
+Master of Godspawn,Sigil of the Godspawn,Godspawn Master,"If all the creatures in your party belong to the Godspawn race, at the start of battle, your Godspawn creatures gain their respective Avatar's trait."
+Master of Golems,Sigil of the Golem,Golem Master,"At the start of battle, your Golems gain the Triple Take trait. If they already have this trait, they gain the Chip Off The Block trait instead."
+Master of Gorgons,Sigil of the Gorgon,Gorgon Master,Your Gorgons deal 35% more damage to enemies with Stone for each Gorgon fighting on your side. This trait does not stack.
+Master of Griffons,Sigil of the Griffon,Griffon Master,Your Griffons' on-attack and on-critical effects occur 1 additional time. This trait does not stack.
+Master of Grimoires,Sigil of the Grimoire,Grimoire Master,"Your Grimoires are immune to Silenced. In addition, their Spell Gems do not consume Charges."
+Master of Harpies,Sigil of the Harpy,Harpy Master,"After an enemy Attacks, your Harpies Attack a random enemy for 20% normal damage. This trait does not stack."
+Master of Hemomancers,Sigil of the Hemomancer,Hemomancer Master,"If all the creatures in your party are Hemomancers, their on-attack and when-attacked effects activate 1 additional time. This trait does not stack."
+Master of Hounds,Sigil of the Hound,Hound Master,Your Hounds' Dire Wolves now deal damage based on their highest stat rather than Speed.
+Master of Hunters,Sigil of the Hunter,Hunter Master,Your Hunters' innate traits repeat twice as many times. This trait does not stack.
+Master of Imlers,Sigil of the Imler,Imler Master,Your Imlers and Imlings deal 20% more damage for each Imler and Imling fighting on your side. This trait does not stack.
+Master of Imlings,Sigil of the Imling,Imling Master,Your Imlers and Imlings take 5% less damage for each Imler and Imling fighting on your side. This trait does not stack.
+Master of Imps,Sigil of the Imp,Imp Master,"At the start of battle, your Imps gain Shellbust. Your Imps' Shellbust now targets all enemies, and this spell's potency is not penalized for being Ethereal. This trait does not stack."
+Master of Inquisitors,Sigil of the Inquisitor,Inquisitor Master,"If all the creatures in your party are Inquisitors, they gain a random minion at the start of their turns. This trait does not stack."
+Master of Kolosses,Sigil of the Koloss,Koloss Master,Your Kolosses start battles with 20% more Current and Maximum Health for each Koloss fighting on your side. This trait does not stack.
+Master of Krakens,Sigil of the Kraken,Kraken Master,"If all the creatures in your party are Krakens, the stat boosts from their innate traits is increased by 50%. This trait does not stack."
+Master of Leeches,Sigil of the Leeche,Leeche Master,"If all the creatures in your party are Leeches, their Leeching buff lasts forever and heals for 300% more. This trait does not stack."
+Master of Lepers,Sigil of the Leper,Leper Master,"If all the creatures in your party are Lepers, they afflict and additional debuff on enemies when they afflict them with a debuff. This trait does not stack."
+Master of Liches,Sigil of the Lich,Liche Master,"After your Liches Cast a Death spell, they gain 10% Intelligence. This trait does not stack."
+Master of Lucanians,Sigil of the Lucanian,Lucanian Master,"After all start-of-battle effects occur, if all the creatures in your party are Lucanians, their Attack and Intelligence are set equal to whichever is highest."
+Master of Luckmantrias,Sigil of the Luckmantria,Luckmantria Master,"If all the creatures in your party are Luckmantrias, they each have a 40% chance to start battles at the top of the Timeline. This trait does not stack."
+Master of Maniacs,Sigil of the Maniac,Maniac Master,Your Maniacs start battles with 25% more Health and 10% less Defense for each Maniac fighting on your side. This trait does not stack.
+Master of Manticores,Sigil of the Manticore,Manticore Master,Enemies have 5% less Attack and your creatures have 15% more Attack and Defense for each Manticore fighting on your side. This trait does not stack.
+Master of Marionettes,Sigil of the Marionette,Marionette Master,"After your Marionette creatures perform an action, the enemy in their corresponding position performs the same action and is afflicted with a random debuff. This trait does not stack."
+Master of Masochists,Sigil of the Masochist,Masochist Master,"If all the creatures in your party are Masochists, they are resistant to debuffs and take 30% less damage from all sources. This trait does not stack."
+Master of Mimics,Sigil of the Mimic,Mimic Master,"If all the creatures in your party are Mimics, they each have a 25% chance to start battles at the top of the Timeline. This trait does not stack."
+Master of Minotaurs,Sigil of the Minotaur,Minotaur Master,Your Minotaurs Attack 1 additional time for each Minotaur fighting on your side. Your creatures deal 50% less damage. This trait does not stack.
+Master of Mirelings,Sigil of the Mireling,Mireling Master,"Enemies have 5% less stats (other than Health) for each unique class among your creatures. If all 5 classes are present, your Mireling traits act as if there is additional class. This trait does not stack."
+Master of Mites,Sigil of the Mite,Mite Master,Your Mites have a 5% chance to avoid damage for each Mite fighting on your side. This trait does not stack.
+Master of Modrons,Sigil of the Modron,Modron Master,"If all the creatures in your party are Modrons, they are resistant to debuffs and take 20% less damage. This trait does not stack."
+Master of Mummies,Sigil of the Mummy,Mummi Master,"After your Mummies take damage while it is their turn, they recover Health equal to 100% of the damage taken. This trait does not stack."
+Master of Mythicants,Sigil of the Mythicant,Mythicant Master,"If all the creatures in your party are Mythicants, they have a 75% chance to avoid damage from attacks. This trait does not stack."
+Master of Nephilim,Sigil of the Nephilim,Nephilim Master,"If all the creatures in your party are Nephilims, they are resistant to debuffs and start battles with 2 random buffs. This trait does not stack."
+Master of Nihilists,Sigil of the Nihilist,Nihilist Master,"If all the creatures in your party are Nihilists, they are resistant to debuffs and are immune to Scorned."
+Master of Nixes,Sigil of the Nix,Nix Master,"If all the creatures in your party are Nixes, they start battles with Inivisible and have a 25% chance to avoid damage. This trait does not stack."
+Master of Occultists,Sigil of the Occultist,Occultist Master,"If all the creatures in your party are Occultists, their spells consume no Charges and Cast 1 additional time. This trait does not stack."
+Master of Ophans,Sigil of the Ophan,Ophan Master,"After your Ophans Cast a Life spell, all your Ophans recover 25% Health."
+Master of Osseins,Sigil of the Ossein,Ossein Master,"If all the creatures in your party are Osseins, they start battles with Rebirth. In addition, they are resurrected by this buff with 100% Health."
+Master of Paragons,Sigil of the Paragon,Paragon Master,Your Paragons take 80% less damage from spells. This trait does not stack.
+Master of Phase Warriors,Sigil of the Phase Warrior,Phase Warrior Master,"If all the creatures in your party are Phase Warriors, they are immune to indirect damage."
+Master of Phoenixes,Sigil of the Phoenix,Phoenix Master,"At the start of your Phoenixes' turns, their on-resurrect effects have a 50% chance to activate. This trait does not stack."
+Master of Pilwizes,Sigil of the Pilwiz,Pilwiz Master,"If all the creatures in your party are Pilwizes, enemies' Bleeding damage is based on their highest stat. This trait does not stack."
+Master of Pit Worms,Sigil of the Pit Worm,Pit Worm Master,"If all the creatures in your party are Pit Worms, their innate traits activate an additional time. This trait does not stack."
+Master of Pit Wraiths,Sigil of the Pit Wraith,Pit Wraith Master,"If all the creatures in your party are Pit Wraiths, they are resistant to debuffs."
+Master of Plague Doctors,Sigil of the Plague Doctor,Plague Doctor Master,"If all the creatures in your party are Plague Doctors, they gain the Drained trait at the start of battle."
+Master of Priests,Sigil of the Priest,Priest Master,"If all the creatures in your party belong to the Priest race, their innate traits activate an additional time. This trait does not stack."
+Master of Ravens,Sigil of the Raven,Raven Master,Your Ravens have 15% more Intelligence and Speed for each Raven fighting on your side. This trait does not stack.
+Master of Reapers,Sigil of the Reaper,Reaper Master,Your Reapers' traits now activate at 50% Health.
+Master of Revenants,Sigil of the Revenant,Revenant Master,"If all the creatures in your party are Revenants, they recover 50% Health at the end of their turns. This trait does not stack."
+Master of Rift Dancers,Sigil of the Rift Dancer,Rift Dancer Master,"If all the creatures in your party belong to the Rift Dancer race, their innate traits activate 1 additional time. This trait does not stack."
+Master of Robodomis,Sigil of the Robodomi,Robodomi Master,"If all the creatures in your party are Robodomis, they grant their allies Rebirth after they are killed."
+Master of Salamanders,Sigil of the Salamander,Salamander Master,"If all the creatures in your party are Salamanders, their spells are 60% more potent. This trait does not stack."
+Master of Sanctuses,Sigil of the Sanctus,Sanctus Master,"If you have 6 different Sanctuses in your party, they gain a random Sin trait at the start of battle. This trait does not stack."
+Master of Satyrs,Sigil of the Satyr,Satyr Master,"If all the creatures in your party are Satyrs, enemies start battles with 20% less stats. This trait does not stack."
+Master of Sea Shamblers,Sigil of the Sea Shambler,Sea Shambler Master,"If all the creatures in your party are Sea Shamblers, they take 12% less damage for each enemy that is afflicted with Blighted. This trait does not stack."
+Master of Seraphs,Sigil of the Seraph,Seraph Master,Your Seraphs share their innate traits with each other.
+Master of Shades,Sigil of the Shade,Shade Master,"If all the creatures in your party are Shades, they gain Invisible at the end of their turns and have an independent 100% chance to dodge while they have this buff."
+Master of Shadows,Sigil of the Shadow,Shadow Master,"If all the creatures in your party are Shadows, enemies with Fear deal 50% less damage and take 50% more damage."
+Master of Shapeshifters,Sigil of the Shapeshifter,Shapeshifter Master,"Your Shapeshifters deal 20% more damage, take 5% less damage, and can equip 1 additional Spell Gem for each Shapeshifter fighting on your side. This trait does not stack."
+Master of Sins,Sigil of the Sin,Sin Master,"If you have 6 different Sins in your party, they gain a random Sanctus trait at the start of battle. This trait does not stack."
+Master of Sirens,Sigil of the Siren,Siren Master,"If all the creatures in your party belong to the Siren race, enemies can have Scorned and Silenced at the same time."
+Master of Skeletons,Sigil of the Skeleton,Skeleton Master,"If all the creatures in your party are Skeletons, they Attack 1 additional time and have a 100% chance to deal critical damage. This trait does not stack."
+Master of Slimes,Sigil of the Slime,Slime Master,"If all the creatures in your party are Slimes, they are resistant to debuffs and deal 30% more damage."
+Master of Smiths,Sigil of the Smith,Smith Master,"At the start of battle, if all the creatures in your party are Smiths, they share their Artifact's trait with the creature to the left."
+Master of Smogs,Sigil of the Smog,Smog Master,"When your creatures afflict enemies with Poisoned, the potency of this debuff is increased by 50% for each Smog fighting on your side. This trait does not stack."
+Master of Snaptraps,Sigil of the Snaptrap,Snaptrap Master,"If all the creatures in your party are Snaptraps, their innate traits have double the chance to activate. This trait does not stack."
+Master of Soulflayers,Sigil of the Soulflayer,Soulflayer Master,"The first time your Soulflayers are killed, they are resurrected with 10% Health. This trait does not stack."
+Master of Spacecats,Sigil of the Spacecat,Spacecat Master,"If all the creatures in your party are Spacecats, they deal 5% more damage with attcks and spells for each permanent Spell Gem each of your creatures have that do not belong to their class. This trait does not stack."
+Master of Sparktails,Sigil of the Sparktail,Sparktail Master,"If all the creatures in your party are Sparktails, they share their innate traits with each other."
+Master of Spectres,Sigil of the Spectre,Spectre Master,Your Spectres decrease enemies' stats 50% more. This trait does not stack.
+Master of Spelljugglers,Sigil of the Spelljuggler,Spelljuggler Master,"If all the creatures in your party are Spelljugglers, their single-target spells now target all the target's allies if the spell belongs to a different class than the last one they cast."
+Master of Spellmanes,Sigil of the Spellmane,Spellmane Master,"If all the creatures in your party are Spellmanes, they are immune to Silenced and no Spell Gems can be sealed."
+Master of Sphinxes,Sigil of the Sphinxe,Sphinx Master,Your Sphinxes start battles with Rebirth.
+Master of Spirits,Sigil of the Spirit,Spirit Master,Your Spirits' innate traits activate twice.
+Master of Stags,Sigil of the Stag,Stag Master,"If all the creatures in your party are Stags, their innate traits are 100% more effective. This trait does not stack."
+Master of Storms,Sigil of the Storm,Storm Master,"If all the creatures in your party are Storms, their innate traits now activate while they're above 60% Health."
+Master of Time,Counterclockwise Clock,Found in Treasure,"After this creature manually Casts a single-target spell, the target's turn counter is increased by 5. This trait can only be applied to each creature once per battle."
+Master of Toxdwellers,Sigil of the Toxdweller,Toxdweller Master,Enemies' Bomb debuffs have an independent 50% chance to detonate 1 additional time for each Toxdweller in your party. This trait does not stack.
+Master of Tremors,Sigil of the Tremor,Tremor Master,Your Tremors have 25% more Defense for each Tremor fighting on your side. This trait does not stack.
+Master of Trolls,Sigil of the Troll,Troll Master,Your Trolls have 25% more Attack and 10% less Intelligence for each Troll fighting on your side. This trait does not stack.
+Master of Underdwellers,Sigil of the Underdweller,Underdweller Master,"If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death."
+Master of Unguideds,Sigil of the Unguided,Unguided Master,"If all the creatures in your party are Unguided, they deal 150% more damage to creatures that are weak against their class."
+Master of Unicorns,Sigil of the Unicorn,Unicorn Master,Your Unicorns Attack 2 additional times. This trait does not stack.
+Master of Uraloses,Sigil of the Uralos,Uralos Master,"If all the creatures in your party are Uraloses, they have a 50% chance to avoid indirect damage. This trait does not stack."
+Master of Valkyries,Sigil of the Valkyrie,Valkyrie Master,"At the end of your Valkyries' turns, they Defend. This trait does not stack."
+Master of Voidlords,Sigil of the Voidlord,Voidlord Master,"If all the creatures in your party are Voidlords, they always have Repelling and take 30% less damage. This trait does not stack."
+Master of Vortexes,Sigil of the Vortex,Vortex Master,"At the start of battle, your Vortexes gain the Spiral Ward trait."
+Master of Vulpeses,Sigil of the Vulpes,Vulpes Master,"If all the creatures in your party are Vulpes, their innate traits now affect the first 5 non-Etheral Spell Gems they have equipped."
+Master of Warhogs,Sigil of the Warhog,Warhog Master,"If all the creatures in your party are Warhogs, their innate traits are 100% more effective. This trait does not stack."
+Master of Waspids,Sigil of the Waspid,Waspid Master,"At the start of battle, your Waspids gain the Final Sting and Endless Swarm traits."
+Master of Watchers,Sigil of the Watcher,Watcher Master,Your Watchers' traits act as if they have 50% more of their requirement for each Watcher fighting on your side. This trait does not stack.
+Master of Wights,Sigil of the Wight,Wight Master,Your Wights always resurrect with 100% Health and Shelled.
+Master of Wisps,Sigil of the Wisp,Wisp Master,"If all the creatures in your party are Wisps, they have a 25% chance to avoid damage and gain Shelled at the start of their turns. This trait does not stack."
+Master of Wolpertingers,Sigil of the Wolpertinger,Wolpertinger Master,"If all the creatures in your party are Wolpertingers, their Scourge spells always deal critical damage and have a 50% chance to be cast 1 additional time. This effect can occur multiple times in a row. This trait does not stack."
+Master of Wyverns,Sigil of the Wyvern,Wyvern Master,Your Wyverns take 80% less damage from spells. This trait does not stack.
+Master of Yetis,Sigil of the Yeti,Yeti Master,"At the start of battle, enemies are afflicted with Frozen if all the creatures in your party are Yetis."
+Mathemagic,Slide Rule,Found in Treasure,"This creature's on-attack, on-cast, on-defend and on-provoke effects have a 50% chance to activate 1 additional time."
+Means to an End,Empty Offering,Found in Treasure,"While this creature has no buffs (excluding buffs gained from Realms), it deals 125% more damage."
+Medierra's Mockery,Medierra's Eyelid,Nether Boss (Medierra),"After an enemy Defends or Provokes, each of your creatures have a 50% chance to do so as well. This trait does not stack."
+Medierra's Reliance,Medierra's Tendons,Nether Boss (Medierra),"After an ally Attacks, Defends, or Provokes, this creature has a 30% chance to do so as well."
+Medierra's Struggle,Medierra's Blood,Nether Boss (Medierra),Your creatures take 1 extra turn if they're below 50% Health. This trait does not stack.
+Minion Master,Minion Master Staff,Found in Treasure,"At the start of this creature's turn, it gains a random minion and its current minions gain 1 stack."
+Minions First,Minion Accelerator,Found in Treasure,This creature has a 20% chance to take an additional turn for each minion it has. This trait can only activate once per turn.
+Myosotis,Scorpion Grass,Found in Treasure,This creature's attacks use Intelligence instead of Attack to determine the damage dealt.
+Myrtle's Greed,Myrtle's Scales,Nether Boss (Myrtle),"After an ally is killed, this creature gains 50% of its stats."
+Myrtle's Hunger,Myrtle's Shell,Nether Boss (Myrtle),"After an enemy is killed, this creature gains 20% of its stats."
+Myrtle's Perseverence,Myrtle's Tooth,Nether Boss (Myrtle),"After a creature is killed, this creature is resurrected with 100% Health."
+Necromancy,Jimly's Tome,Found in Treasure,"After a creature dies, your creatures gain 1 to 3 stacks of Zombies. This trait does not stack."
+Nerlyx's Chant,Nerlyx's Gorged Vein,Nether Boss (Nerlyx),"After your creatures Defend, they gain a random buff. This trait does not stack."
+Nerlyx's Disturbance,Nerlyx's Closed Eye,Nether Boss (Nerlyx),Your creatures take 10% less damage for each time they've Defended in the current battle. Maximum of 90% damage reduction. This trait does not stack.
+Nerlyx's Veil,Nerlyx's Damaged Cornea,Nether Boss (Nerlyx),"After your creatures Defend, they have a 50% chance to take another turn. This trait does not stack."
+Never Fade,Broken Lantern,Found in Treasure,This creature and its adjacent allies are immune to Disarmed.
+Never Yield,Signet of Unity,Nether Boss (Aspects of Meraxis),"This creature always deals critical damage. At the start of this creature's turn, it Defends and then its turn ends."
+Ninetails's Revenge,Fluffy Tail,Found in Treasure,"After your creatures are Attacked, they gain Attack equal to 20% of the damage received. This trait does not stack."
+Ninetails's Trickery,Pristine Fox Fang,Found in Treasure,"At the start of battle, this creature gains a copy of each enemy's first Spell Gem. This trait does not stack."
+Noetherian's Adamance,Noetherian's Right Hand,Nether Boss (Noetherian),"After your creatures' Barrier buffs are destroyed, they gain Shelled."
+Noetherian's Bouquet,Noetherian's Soul,Nether Boss (Noetherian),Your creatures' damage bypasses the enemies' Barrier buffs.
+Noetherian's Objection,Noetherian's Left Hand,Nether Boss (Noetherian),"After an enemy's Barrier is destroyed, it takes damage equal to 100% of the Barrier's original potency. This trait does not stack."
+Obey,Forbidden Relic Shard,Found in Treasure,"After this creature Attacks or Casts a spell, your creatures of the same class Provoke and gain Shelled. This trait does not stack."
+Pact of Strength,Ritual Writings,Found in Treasure,Your creatures deal 6% more damage for each creature of the same class fighting on your side. This trait does not stack.
+Pandemonium Alacrity,Pandemonium Skull,Pandemonium King & Queen,"This creature has 30% less Speed. At the start of battle, its Attack and Intelligence are set equal to its Speed."
+Pandemonium Brilliance,Pandemonium Brain,Pandemonium King & Queen,"At the end of your creature's turns, this creature Casts a random spell."
+Pandemonium Death,Pandemonium Leaf,Pandemonium King & Queen,"After this creature Attacks, it Casts Extinguish on the enemy."
+Pandemonium Exploit,Pandemonium Flame,Pandemonium King & Queen,This creature deals 50% more damage for each buff the enemy has.
+Pandemonium Fever,Pandemonium Juice,Pandemonium King & Queen,"At the start of battle, this creature Casts Affliction."
+Pandemonium Life,Pandemonium Trinket,Pandemonium King & Queen,"After an enemy Casts a spell, they take damage equal to 2% of their Current Health for every 1 Maximum Charge the Spell Gem has."
+Pandemonium Mania,Pandemonium Ichor,Pandemonium King & Queen,"After this creature Defends or Provokes, it Casts Chaos Rift."
+Pandemonium Rebirth,Pandemonium Bead,Pandemonium King & Queen,"After this creature dies, your other creatures are resurrected with 100% Health. If they're not dead, they recover 50% Health. This effect does not activate if more than one of your creatures has this trait."
+Pandemonium Wrath,Pandemonium Stone,Pandemonium King & Queen,"After this creature manually Casts a spell, it has a 50% chance to continue to Cast that spell repeatedly. These additional spells are considered to be manually cast as well."
+Panicked Overheals,Scerbonium,Found in Treasure,"After this creature is killed, your other creatures recover 200% Health."
+Parity,Integerite,Found in Treasure,"If your creatures have Cast an even number of spells, 30% of their Speed is added to their spells' potency. If your creatures have Cast an odd number of spells, 30% of their Defense is added to their spells' potency. This trait does not stack."
+Pedigree Safeguard,Ancestral Shield,Found in Treasure,This creature intercepts attacks on allies that belong to its race.
+Perfectly Balanced,Battered Scales,Found in Treasure,"At the start of this creature's turn, its Health is set to 50%."
+Perishing Salvo,Faded Garnet,Found in Treasure,"After this creature dies, it deals damage to enemies equal to 15% of its Intelligence multiplied by the Attack increases granted by its Artifact's Stat Slots."
+Phobos' Grip,Phobos' Unrelenting Grasp,Nether Boss (Phobos),"When your creatures with Proficient Attack, they afflict their target with Snared."
+Plunder,Pirate's Treasure,Found in Treasure,"After this creature Attacks, it steals an amount of the target's lowest stat equal to 50% of the damage dealt."
+Pocket Frog,Pocket Tadpole,Found in Treasure,"At the end of this creature's turn, one of your other creatures has a 50% chance to be sent to the top of the Timeline. This trait only activates if none of your other creatures have it."
+Power Trip,Crown of Kings,Found in Treasure,This creature has 50% more stats (other than Health) for each trait it has gained during battle.
+Prepared,Mage's Playbook,Found in Treasure,The Timeline order is determined by your creatures' Intelligence rather than their Speed.
+Providence,Blade of Divinity,Found in Treasure,"While this creature has Shelled, it has 150% more Attack and Intelligence."
+Qila's Assurance,Qila's Mane,Nether Boss (Qila),"After your creatures' Barrier buffs are destroyed, they gain Invisible."
+Qila's Defiance,Qila's Wing,Nether Boss (Qila),"While your creatures have Barrier, they are resistant to debuffs."
+Qila's Safeguard,Qila's Horn,Nether Boss (Qila),"While your creatures have Barrier, they take 40% less damage. This trait does not stack."
+Rainbow Palate,Prismatic Stone,Found in Treasure,This creature has 25% more stats (other than Health) for each different class of creature fighting on your side.
+Ramses' Conspiracy,Ramses' Mane,Nether Boss (Ramses),Cursed enemies take damage at the start of their turns equal to 25% of this creature's Intelligence. This trait does not stack.
+Ramses' Deception,Ramses' Crest,Nether Boss (Ramses),"At the start of each Cursed enemy's turn, they have a 30% chance to Attack one of their allies. This trait does not stack."
+Ramses' Plot,Ramses' Eye,Nether Boss (Ramses),Cursed enemies take damage at the start of their turns equal to 25% of this creature's Attack. This trait does not stack.
+Rave,Glowstick,Found in Treasure,Your creatures deal 6% more damage for each creature of the same race fighting on your side. This trait does not stack.
+Restoration,Rogue's Hood,Found in Treasure,This creature's stats are not reset after it is killed.
+Rise of the Phoenix,Ash of Renewal,Found in Treasure,"After your creatures with Burning are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack."
+Roll the Dice,Die Fragments,Found in Treasure,"At the end of this creature's turn, it Casts 2 of its Ethereal Spell Gems."
+Sad Birthday Song,Kraynaks' Tooth,Nether Boss (Kraynaks),"After this creature is killed, it transforms into an enemy creature."
+Sarea's Command,Sarea's Broken Heart,Nether Boss (Sarea),"At the start of battle, each enemy Attacks a random enemy. This trait does not stack."
+Sarea's Haste,Sarea's Brittle Hair,Nether Boss (Sarea),"Buffs and debuffs last twice as long, but they lose 2 units of duration per turn. This trait does not stack."
+Sarea's Plot,Sarea's Flayed Skin,Nether Boss (Sarea),Your creatures deal 15% more damage for each time they've been damaged by attacks or spells in the current battle. This trait does not stack.
+Scared Stiff,Cursed Cobweb,Found in Treasure,"After an enemy is afflicted with Snared or Feared, this creature afflicts them with whichever of these debuffs the target doesn't already have."
+Scheming Stance,Scheming Shield,Found in Treasure,"After this creature Defends or Provokes, enemies are afflicted with Feared."
+Screech of Domination,Conch of the Siren,Found in Treasure,"After this creature Attacks, it gains copies of the enemy's minions."
+Seed of Potentiality,Ouroboros Key,Found in Treasure,"After this creature gains a stat, it gains 200% of this amount of another stat (other than Health). The stats gained from this trait do not activate effects that occur when stats are gained."
+Seethe,Stolen Pig,Found in Treasure,This creature deals 15% more damage for each time it has taken damage in the current battle.
+Shackler's Domination,Shackler's Chains,Nether Boss (Shackler),Your Shades share their innate traits with each other.
+Shackler's Mastery,Shackler's Signet,Nether Boss (Shackler),Your creatures' race-specific traits act as if your party contains 2 more creatures that belong to that race. This trait does not stack.
+Shackler's Trance,Shackler's Cape,Nether Boss (Shackler),"This creature always deals 0 damage during its turn, but deals 200% more damage when it is not its turn."
+Shattering Tackle,Special Snowball,Found in Treasure,Your creatures' attacks ignore 2.5% of the enemies' Defense for each Yeti creature fighting on your side. This bonus is doubled if the enemy is afflicted with Frozen. This trait does not stack.
+Shield Mastery,Gemspike Shield Fragment,Found in Treasure,"This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it Defends, and then its turn ends."
+Shrapnel Blast,Bomb Scraps,Found in Treasure,"After an enemy takes damage at the start of its turn from Bomb, all other enemies take 50% of that damage as well. This trait does not stack."
+Sign of Aquarius,Garnet of Aquarius,Found in Treasure,Your creatures' healing Spell Gems have 100% more Charges. This trait does not stack.
+Sign of Aries,Bloodstone of Aries,Found in Treasure,"This creature has a 50% chance to start battles at the top of the Timeline. Otherwise, it casts its first Spell Gem at the start of the battle."
+Sign of Cancer,Emerald of Cancer,Found in Treasure,Your creatures' stat-increasing Spell Gems have 100% more Charges. This trait does not stack.
+Sign of Capricorn,Ruby of Capricorn,Found in Treasure,"At the end of your creatures' turns, they have a 10% chance to take another turn. This trait does not stack."
+Sign of Gemini,Agate of Gemini,Found in Treasure,"After this creature Casts a spell, it also casts your sixth creature's first Spell Gem. This trait does not activate if this creature is your sixth creature."
+Sign of Leo,Onyx of Leo,Found in Treasure,"When this creature attacks, it consumes 1 Charge from all its permanent Spell Gems and deals 25% more damage for each Charge consumed."
+Sign of Libra,Peridot of Libra,Found in Treasure,Your creatures' buff Spell Gems have 100% more Charges. This trait does not stack.
+Sign of Pisces,Amethyst of Pisces,Found in Treasure,Your creatures' spells are 30% more potent for each time they've been Cast in the current battle. This trait does not stack.
+Sign of Sagittarius,Topaz of Sagittarius,Found in Treasure,"Your creatures' Spell Gems with the ""Generous"" property have 50% more Charges. This trait does not stack."
+Sign of Scorpio,Beryl of Scorpio,Found in Treasure,Your creatures' stat-reducing Spell Gems have 100% more Charges. This trait does not stack.
+Sign of Taurus,Sapphire of Taurus,Found in Treasure,This creature's Spell Gems do not consume Charges when they are cast automatically.
+Sign of Virgo,Carnelian of Virgo,Found in Treasure,Your creatures' debuff Spell Gems have 100% more Charges. This trait does not stack.
+Single Discipline,Lost Notes,Found in Treasure,"After this creature Casts a spell, it gains 10% Intelligence for each time it was Cast at the same time."
+Snack Break,Bag of Chips,Found in Treasure,"At the start of this creature's turn, it recovers 200% Health and loses 20% Speed."
+Sobered Up,Empty Beer Mug,Found in Treasure,Your creatures can manually Cast Booze Spells.
+Soul Steal,Bloody Soul Crystal,Found in Treasure,"After this creature Attacks, its Spell Gem with the lowest number of remaining Charges gains 1 Charge. This creature's attacks deal 75% more damage."
+Spontaneous Entropy,Essence of Entropy,Found in Treasure,"At the end of this creature's turn, its Ethereal Spell Gems are replaced with different ones. This creature's Ethereal Spell Gems are 50% more potent."
+Spoonor's Breath,Spoonor's Spoon,Nether Boss (Spoonor),"At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%."
+Spoonor's Gift,Spoonor's Spork,Nether Boss (Spoonor),"At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%."
+Spoonor's Other Breath,Spoonor's Fork,Nether Boss (Spoonor),"At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%."
+Squadron Leader,Tactician's Manual,Found in Treasure,This creature has 20% more stats (other than Health) for each minion it has.
+Stand Alone Complex,Peacebloom,Nether Boss (Aspects of Meraxis),"This creature always dodges attacks. At the start of this creature's turn, it Provokes and then its turn ends."
+Superfluidity,Lunar Dust,Found in Treasure,"When your creatures automatically Cast a spell, they have a 5% chance to be considered manual casts. This trait does not stack."
+Sustain,Universal Blood,Found in Treasure,"After this creature deals damage, it recovers Health equal to 10% of the damage dealt."
+Swarming Horde,Boon of the Swarm,Found in Treasure,Your creatures have 4% more stats (other than Health) for each creature of the same race fighting on your side. This trait does not stack.
+Swelling Ranks,Torn Flag,Found in Treasure,"After this creature Provokes, it grants copies of one of its minions to your other creatures."
+Sword of Will,Non-Existent Blade,Found in Treasure,"After this creature Attacks, and the damage exceeds 300% of the target's lowest stat, it is killed."
+Synthesis,Discarded Blood,Found in Treasure,"After your creatures gain a minion, they gain 30% of their highest stat. This trait does not stack."
+Tellur's Fangs,Tellur's Blood,Nether Boss (Tellur),This creature deals 15% more damage for each time it has taken damage in the current battle.
+Tellur's Glands,Tellur's Scales,Nether Boss (Tellur),"After this creature takes damage 10 times, it deals damage to enemies equal to 100% of the damage it has taken in the current battle."
+Tellur's Scales,Tellur's Marrow,Nether Boss (Tellur),This creature takes 20% less damage (up to 90%) for each time it has taken damage in the current battle.
+The Best Medicine,Caduceus Staff,Found in Treasure,"When one of your creatures would be afflicted with a debuff, they have a 25% chance to afflict a random enemy with that debuff instead. This trait does not stack."
+The King Is Dead,Rusted Crown,Found in Treasure,"After one of your creatures is healed, this creature has a 20% chance to be resurrected with 100% Health."
+The Shadows,Extracted Shadow,Found in Treasure,"After this creature is killed for the first time in battle, it is resurrected with 100% Health and your creatures gain 25% Attack and Intelligence."
+Torn Between Scylla and Charybdis,Cloud Opal,Nether Boss (Scylla & Charybdis),"When your creatures die, they grant a copy of their innate trait to your other creatures."
+Toxic Cloud,Poisonous Gas,Found in Treasure,"After an enemy Attacks, each other enemy has a 35% chance to be afflicted with a random debuff. This trait does not stack."
+Toxic Karma,Verdant Stone,Found in Treasure,"After this creature is Attacked, the enemy is afflicted with Poisoned and Bomb."
+Training Matrix,Neural Chip,Found in Treasure,"After your creatures are resurrected, they gain 25% stats. This trait does not stack."
+Treasure Golem's Boon,Treasure Golem's Plate,Treasure Golem 2.0 Boss Fight,"At the start of battle, enemies lose 25% of whichever stat corresponds to your lowest amount of resources. This trait does not stack."
+Treasure Golem's Revenge,Treasure Golem's Core,Treasure Golem 2.0 Boss Fight,"At the start of battle, your creatures gain 50% of whichever stat corresponds to your highest amount of resources."
+Treasure Golem's Secret,Treasure Golem's Teddy Bear,Treasure Golem 2.0 Boss Fight,Your creatures deal additional damage with attacks and spells equal to 20% of whichever stat correspond to your lowest amount of resources.
+True Divinity,The Abraxas,Found in Treasure,"If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack."
+Tribe Mentality,Leader's Mantle,Found in Treasure,"At the start of battle, creatures adjacent to this creature change their class to match this creature's class."
+True Strike,Vorpal Core,Found in Treasure,This creature's attacks ignore 25% of enemies' Defense and act as if this creature is strong against the enemy's class.
+Ultima,Lost Star,Found in Treasure,"At the start of this creature's turn, it casts Planets."
+Ultimate Trickery,Kraynaks' Tongue,Nether Boss (Kraynaks),"At the start of battle, this creature transforms into a copy of the second creature in your party, gains the innate trait of the third creature in your party, and gains the fused trait of the fourth creature in your party. This creature always starts battles at the bottom of the Timeline."
+Undead Legion,Giant Pile of Corpses,Found in Treasure,Your creatures can have 5 additional stacks of Zombies. This trait does not stack.
+Unrelenting Fury,Warrior's Dying Rage,Found in Treasure,This creature deals 150% more damage while it is below 50% Health.
+Unstable Existence,Instability,Found in Treasure,"After any creature takes damage from a creature and their resulting Health is below 50%, they deal damage to their adjacent allies equal to 100% of the damage taken. This trait does not stack."
+Usury,Savings Bond,Found in Treasure,This creature deals 150% more damage with attacks and takes 50% more damage from attacks.
+Vengeful Rebound,Glass Eye,Found in Treasure,Your creatures take 75% less damage until the start of their first turn. This trait does not stack.
+Vext's Antiquity,Vext's Fingers,Nether Boss (Vext),"When enemies lose stats, increase the amount of stats reduced by 50%. This trait does not stack."
+Vext's Boldness,Vext's Eyebrows,Nether Boss (Vext),Increases your creature's maximum stat limit before they are subjected to diminishing returns by 50%. This trait does not stack.
+Vext's Invocation,Vext's Toes,Nether Boss (Vext),"When your creatures gain stats, increase the amount of stats gained by 50%. This trait does not stack."
+Vicious Retaliation,Mysterious Scroll,Found in Treasure,"After this creature dodges, it Attacks the enemy. This attack deals 50% more damage if this creature is Provoking."
+Vitja's Games,Vitja's Tail,Nether Boss (Vitja),"After this creature is killed, it Casts 10 random spells."
+Vitja's Revenge,Vitja's Ear,Nether Boss (Vitja),"After this creature is resurrected, it Casts 5 of its spells."
+Vitja's Surprise,Vitja's Jewel,Nether Boss (Vitja),"After this creature is killed or resurrected, it Casts its first Spell Gem 3 times."
+Vivid Nightmares,Nightmare Eyes,Found in Treasure,"After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack."
+Vlora's Haunting,Vlora's Essence,Nether Boss (Vlora),"After this creature is moved to the top of the Timeline, your other creatures gain Invisible and Savage."
+Vlora's Lies,Vlora's Poem,Nether Boss (Vlora),"After this creature is moved to the top of the Timeline, your other creatures gain a random minion."
+Vlora's Trick,Vlora's Flower,Nether Boss (Vlora),"After this creature is moved to the top of the Timeline, enemies take damage equal to 50% of its highest stat."
+Why Won't You Die?,Sharpened Knife,Found in Treasure,"After this creature causes 0 damage with an attack or spell, it gains 12% Attack and Intelligence. This trait does not work on damage that is completely prevented by other effects. This trait can activate a maximum of 1 time per turn."
+Widdershins,Contrary Clock,Found in Treasure,Class strengths and weaknesses are reversed.
+Xyrxzy's Control,Xyrxzy's Brain,Nether Boss (Xyrzyxs),"After this creature Attacks, the enemy Attacks itself as well. The amount of damage is based on this creature's Attack. This trait does not stack."
+Xyrxzy's Plan,Xyrxzy Flesh,Nether Boss (Xyrzyxs),"At the start of battle, your creatures gain Mind Control. This spell causes enemies to Attack 1 additional time when they're affected by this spell."
+Xyrxzy's Subversion,Xyrxzy's Nose,Nether Boss (Xyrzyxs),"After this creature manually Casts a spell, it also Casts 3 random enemies' spells as well. This trait does not stack."
+Zantai's Boon,Jewel of Zantai (Purple),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now grants your creatures 3 random buffs."
+Zantai's Call,Jewel of Zantai (Red),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now grants your creatures 3 random minions."
+Zantai's Cunning,Jewel of Zantai (White),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic ignores 15% of the enemies' Defense."
+Zantai's Embrace,Jewel of Zantai (Cyan),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now heals your creatures equal to 100% of the damage dealt."
+Zantai's Envy,Jewel of Zantai (Orange),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now afflicts enemies with 3 random debuffs."
+Zantai's Havoc,Jewel of Zantai (Blue),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now deals a devastating amount of damage."
+Zantai's Inhibition,Jewel of Zantai (Green),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now decreases enemies stats equal to 25% of the damage dealt."
+Zantai's Perfection,Jewel of Zantai (Yellow),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic has 3 extra Charges."
+Zantai's Reign,Jewel of Zantai (Magenta),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now increases your creatures' stats equal to 5% of the damage dealt."
+Zantai's Stratagem,Jewel of Zantai (Teal),Zantai Boss Fight,"At the start of battle, this creature gains Mega Magic. The damage of your creatures' Mega Magic is now based on their highest stat."
+Zenpang's Boast,Zenpang's Feather,Nether Boss (Zenpang),Your creatures take 10% less damage for each time they've Provoked in the current battle. Maximum of 90% damage reduction. This trait does not stack.
+Zenpang's Exploit,Zenpang's Bounty,Nether Boss (Zenpang),Enemies take 100% more damage while Provoking. This trait does not stack.
+Zenpang's Yell,Zenpang's Bent Scythe,Nether Boss (Zenpang),"After your creatures Provoke, they gain a random buff. This trait does not stack."
