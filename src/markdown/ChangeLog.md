@@ -1,6 +1,6 @@
 ## Changelog
 
-### v1.2.0 (25 May 2025)
+### v1.2.0 (27 August 2025)
 
 -   Updated for v2.0. Please note that the sprites of the new creatures are missing - they will be added once the Siralim Ultimate API is updated (as this is my source for creature sprite filenames). Specializations/anointments will also be added when the Steam Guide is updated.
 -   Added the ability to filter creatures/traits by maximum realm depth (credit to Lumireaver for this idea).
