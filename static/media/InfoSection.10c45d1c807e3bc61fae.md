@@ -24,10 +24,15 @@ Builds can be easily shared - simply copy the URL and send it to someone and the
 
 ### Acknowledgements and Source Code
 
-The data was sourced from the [Siralim Ultimate Compendium](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0), a fantastic resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool. I would also like to thank rogermicroger for their excellent [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api), from which the creature sprites and stats are obtained. Thanks also to Gay Moth Aunt for compiling all of the specialization info in their excellent [Character Specialization Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).
+The data for the Planner is sourced from a few different places:
+
+-   The majority of the data (creatures, traits, relics etc) is sourced from the [Siralim Ultimate Compendium](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0), a fantastic resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool.
+-   Creature stats, realm depths, and sources are sourced from Gay Moth Aunt's [Siralim Ultimate Creature and Trait Sheet](https://docs.google.com/spreadsheets/d/1RYRvKTCLLJxXrZ_7OOjG8j98L_fjE5KNHtLG4wHn9Xw/edit?gid=0#gid=0) - thank you for permission to use this and for keeping it up to date.
+-   The creature sprite filenames are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api). Thank you to Rovermicrover for this fantastic resource.
+-   The Specialization data is sourced from Gay Moth Aunt's excellent [Character Specialization Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).
 
 The **source code** of this tool is available on [GitHub](https://github.com/berated-bert/siralim-planner). If you would like to work on it you are more than welcome to submit a pull request or fork the repository.
 
-Depending on usage I may or may not keep the tool up-to-date with the latest version of the Siralim Ultimate Compendium. If it is not up-to-date at some point feel free to download the code yourself and run it locally. Better yet, feel free to update the GitHub repository with the latest spreadsheet and submit a pull request.
+Depending on usage I may or may not keep the tool up-to-date with the latest version of the datasets above. If it is not up-to-date at some point feel free to download the code yourself and run it locally. Better yet, feel free to update the GitHub repository with the latest spreadsheet and submit a pull request.
 
 If you encounter any problems or have any feedback please feel free to message me on Discord - **BeratedBert#6292**, or submit an issue on the GitHub repo.
