@@ -29,7 +29,13 @@ class AppHeader extends PureComponent {
           </div>
           <div className="app-header-right">
             <p>
-              Game Version&nbsp;
+              <a
+                href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0"
+                target="_blank"
+              >
+                Compendium
+              </a>{" "}
+              Version&nbsp;
               {this.props.compendiumVersion}
             </p>
             <button

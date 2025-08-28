@@ -177,12 +177,18 @@
     flex-direction: row;
     align-items: stretch;
     justify-content: center;
+    @media (max-width: 1280px) {
+      display: block;
+    }
 
     input {
       width: 80%;
       display: block;
       flex: 1;
       height: 100%;
+      @media (max-width: 1280px) {
+        width: 100%;
+      }
     }
     button {
       margin-left: 10px;
@@ -194,6 +200,15 @@
       padding-left: 3em;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1280px) {
+        padding-left: 0;
+      }
+      @media (max-width: 1280px) {
+        max-width: auto;
+        margin-top: 0.2em;
+        justify-content: left;
+      }
+
       label {
         margin-right: 1em;
         font-weight: bold;
@@ -202,6 +217,9 @@
         max-width: 120px;
         &.non-active {
           color: rgba(0, 0, 0, 0.5);
+        }
+        @media (max-width: 1280px) {
+          max-width: 100%;
         }
       }
       button {

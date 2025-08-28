@@ -129,7 +129,7 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
     if (
       !_.isEqual(
         prevProps.currentSpecialization,
-        this.props.currentSpecialization
+        this.props.currentSpecialization,
       ) &&
       !this.state.currentSpecialization
     ) {
@@ -427,7 +427,7 @@ class SpecializationPlanner extends PureComponent {
       },
       () => {
         document.body.style["overflow-y"] = "scroll";
-      }
+      },
     );
   }
 
@@ -441,7 +441,7 @@ class SpecializationPlanner extends PureComponent {
       },
       () => {
         document.body.style["overflow-y"] = "hidden";
-      }
+      },
     );
   }
 
@@ -467,7 +467,7 @@ class SpecializationPlanner extends PureComponent {
    */
   render() {
     const freeAnointmentSlots = new Array(
-      Math.max(0, this.props.maxAnointments - this.props.anointments.length)
+      Math.max(0, this.props.maxAnointments - this.props.anointments.length),
     ).fill(null); // TODO: Get this to work for Royal
 
     let specOptions = [];

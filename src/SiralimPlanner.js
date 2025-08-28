@@ -156,7 +156,7 @@ class NotificationBanner extends Component {
       () => {
         window.clearTimeout(this.fadeOutTimeout);
         this.fadeOutTimeout = window.setTimeout(() => this.setHidden(), 6000);
-      }
+      },
     );
   }
 
@@ -332,7 +332,7 @@ class SiralimPlanner extends Component {
       () => {
         this.closeModal();
         this.generateSaveString();
-      }
+      },
     );
   }
 
@@ -352,7 +352,7 @@ class SiralimPlanner extends Component {
         partyMembers: partyMembers,
         monstersInParty: monstersInParty,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -366,7 +366,7 @@ class SiralimPlanner extends Component {
       {
         partyMembers: newMembers,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -380,7 +380,7 @@ class SiralimPlanner extends Component {
       {
         anointments: newAnointments,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -395,7 +395,7 @@ class SiralimPlanner extends Component {
       {
         relics: newRelics,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -746,7 +746,7 @@ class SiralimPlanner extends Component {
         // Once open, prevent scrolling of the main page while the modal is open.
         document.body.style["overflow-y"] = "hidden";
         document.getElementById("monster-search").focus();
-      }
+      },
     );
   }
 
@@ -764,7 +764,7 @@ class SiralimPlanner extends Component {
       },
       () => {
         document.body.style["overflow-y"] = "scroll";
-      }
+      },
     );
   }
 
@@ -864,7 +864,7 @@ class SiralimPlanner extends Component {
         () => {
           this.generateSaveString();
           callback();
-        }
+        },
       );
     } catch (err) {
       return callback(err);
@@ -905,7 +905,7 @@ class SiralimPlanner extends Component {
       {
         anointments: anointments,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -915,7 +915,7 @@ class SiralimPlanner extends Component {
    * @return {Integer}   The max number of anointments.
    */
   getMaxAnointments(s) {
-    return s.name === "Royal" ? 15 : 5;
+    return s.name === "Royal" ? 20 : 5;
   }
 
   /**
@@ -935,7 +935,7 @@ class SiralimPlanner extends Component {
         currentSpecialization: s,
         maxAnointments: maxAnointments,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
@@ -1025,7 +1025,7 @@ class SiralimPlanner extends Component {
         notificationStatus,
         notificationIndex,
       },
-      this.generateSaveString
+      this.generateSaveString,
     );
   }
 
