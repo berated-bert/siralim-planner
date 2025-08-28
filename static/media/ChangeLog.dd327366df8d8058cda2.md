@@ -1,5 +1,11 @@
 ## Changelog
 
+### v.1.2.1 (28 August 2025)
+
+-   Fixed bug on mobile where the realm depth selector was making the search bar impossible to use.
+-   Fixed bug where Royal did not have 20 max anointments.
+-   Added Compendium link back in the header (not sure why I removed it - oops).
+
 ### v1.2.0 (27 August 2025)
 
 -   Updated for v2.0. Please note that the sprites of the new creatures are missing - they will be added once the Siralim Ultimate API is updated (as this is my source for creature sprite filenames). Specializations/anointments will also be added when the Steam Guide is updated.
