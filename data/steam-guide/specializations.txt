@@ -38,3 +38,6 @@ Mime,MI
 Deprived,DP
 Pariah,PH
 Royal,RO
+Antiquarian,AQ
+Mermaid,MD
+Mesmerist,MM

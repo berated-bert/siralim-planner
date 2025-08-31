@@ -1,6 +1,10 @@
 ## Changelog
 
-### v.1.2.1 (28 August 2025)
+### v1.2.2 (31 August 2025)
+
+-   Added the three new specialisations, and updated the anointable status of certain perks. Big thanks to KageNoOni on Discord for getting these into a spreadsheet. Note the descriptions and icons for the new specialisations and perks are still a work in progress.
+
+### v1.2.1 (28 August 2025)
 
 -   Fixed bug on mobile where the realm depth selector was making the search bar impossible to use.
 -   Fixed bug where Royal did not have 20 max anointments.

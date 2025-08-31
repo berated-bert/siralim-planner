@@ -113,7 +113,7 @@
     "name": "Indomitable",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures are immune to Scorned.",
     "spec": "Hell Knight",
     "spec_abbrev": "HK",
@@ -1191,7 +1191,7 @@
     "name": "Lingering Sickness",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Enemies' debuffs last forever.",
     "spec": "Defiler",
     "spec_abbrev": "DE",
@@ -1303,7 +1303,7 @@
     "name": "Anguish Through Awareness",
     "ranks": "5",
     "cost_per_rank": "30",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus starts battles with 1 random buff per rank. Maximum Bonus: 5 buffs",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1318,7 +1318,7 @@
     "name": "Cogmind",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your Animatus gains copies of your fourth creature's first 5 Spell Gems.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1333,7 +1333,7 @@
     "name": "Damnation's Edge",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your Animatus gains a copy of your fifth creature's innate trait.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1348,7 +1348,7 @@
     "name": "Dancing Blade",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus always has Animated Weapon.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1363,7 +1363,7 @@
     "name": "Dark Anima",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus always has Animated Gem.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1378,7 +1378,7 @@
     "name": "Death and Decay",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "When an enemy is killed, your Animatus casts Corpse Explosion. This spell deals 50% more damage for each dead enemy.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1393,7 +1393,7 @@
     "name": "Desensitization",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus is immune to debuffs in normal battles, and resistant to debuffs in boss battles.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1408,7 +1408,7 @@
     "name": "Endowment",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your Animatus fuses with a copy of the second creature in your party. In addition, its race changes to that creature's race.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1423,7 +1423,7 @@
     "name": "Forbidden Magic",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "The first time your Animatus is killed in battle, it resurrects with 100% Health. Maximum Bonus: Resurrect 3 times",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1438,7 +1438,7 @@
     "name": "Forged by Pain",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus splits the damage it takes with your sixth creature.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1453,7 +1453,7 @@
     "name": "Gray Matter",
     "ranks": "5",
     "cost_per_rank": "25",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus gains 1 Spell Slot per rank. Maximum Bonus: 5 extra slots",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1468,7 +1468,7 @@
     "name": "Grimkeeper",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Animatus' buffs and minions persist through death.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1483,7 +1483,7 @@
     "name": "Masterpiece",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures gain a buff, your Animatus gains that buff as well.",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1498,7 +1498,7 @@
     "name": "Molecular Betrayal",
     "ranks": "50",
     "cost_per_rank": "2",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your Animatus gains 1% of your third creature's stats per rank. Maximum Bonus: 50% stat theft",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1513,7 +1513,7 @@
     "name": "Thrive on Death",
     "ranks": "50",
     "cost_per_rank": "2",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures are killed, your Animatus gains 1% of their stats per rank. Maximum Bonus: 50% stat gain",
     "spec": "Animator",
     "spec_abbrev": "AN",
@@ -1670,7 +1670,7 @@
     "name": "Hemostasis",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "Yes",
+    "anointment": "No",
     "description": "Your creatures can take damage a maximum of 1 time during their turn.",
     "spec": "Bloodmage",
     "spec_abbrev": "BM",
@@ -2763,7 +2763,7 @@
     "name": "Preparation",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your creatures gain Invisible and Proficient.",
     "spec": "Warden",
     "spec_abbrev": "WA",
@@ -3272,7 +3272,7 @@
     "name": "Outspoken",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures are immune to Silenced.",
     "spec": "Evoker",
     "spec_abbrev": "EV",
@@ -3579,7 +3579,7 @@
     "name": "Unshackled",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures are immune to Silenced.",
     "spec": "Cabalist",
     "spec_abbrev": "CA",
@@ -3706,7 +3706,7 @@
     "name": "Mental Fortitude",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your creatures gain Shelled.",
     "spec": "Sorcerer",
     "spec_abbrev": "SO",
@@ -3781,7 +3781,7 @@
     "name": "Slipstream",
     "ranks": "3",
     "cost_per_rank": "50",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After the Timeline is determined at the start of battle, your creatures are moved up the Timeline 1 position higher per rank. Maximum Bonus: 3 positions higher",
     "spec": "Sorcerer",
     "spec_abbrev": "SO",
@@ -3908,7 +3908,7 @@
     "name": "Divine Intervention",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "The first time your creatures would take fatal damage in battle, their Health is instead set to 1.",
     "spec": "Paladin",
     "spec_abbrev": "PA",
@@ -4073,7 +4073,7 @@
     "name": "Wrath",
     "ranks": "25",
     "cost_per_rank": "4",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "When your creatures deal damage with Retribution while they're Defending, the amount of damage is increased by 2% per rank. Maximum Bonus: 50% extra damage",
     "spec": "Paladin",
     "spec_abbrev": "PA",
@@ -4357,7 +4357,7 @@
     "name": "Battalion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, your creatures gain a random buff for each creature that belongs to the same race fighting on your side. Maximum of 6 buffs.",
     "spec": "Tribalist",
     "spec_abbrev": "TB",
@@ -4537,7 +4537,7 @@
     "name": "Transformation",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "Yes",
+    "anointment": "No",
     "description": "At the start of battle, your creatures cast their \"Morph\" spells if they have one of these spells in their top-most Spell Gem slot.",
     "spec": "Tribalist",
     "spec_abbrev": "TB",
@@ -4582,7 +4582,7 @@
     "name": "Gone But Not Forgotten (ASCENSION)",
     "ranks": "1",
     "cost_per_rank": "1",
-    "anointment": "???",
+    "anointment": "Yes",
     "description": "Traits, spells and other effects that are affected by the number of a certain creature race or class now work with dead creatures as well.",
     "spec": "Tribalist",
     "spec_abbrev": "TB",
@@ -4679,7 +4679,7 @@
     "name": "Nightstalker",
     "ranks": "6",
     "cost_per_rank": "20",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of battle, one creature in your party gains Invisible per rank, in order from first to last. Maximum Bonus: All creatures become invisible",
     "spec": "Trickster",
     "spec_abbrev": "TR",
@@ -4784,7 +4784,7 @@
     "name": "Subterfuge",
     "ranks": "25",
     "cost_per_rank": "4",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures' attacks ignore 2% of the target's Defense per rank. Maximum Bonus: 50% defense penetration",
     "spec": "Trickster",
     "spec_abbrev": "TR",
@@ -4926,7 +4926,7 @@
     "name": "Lunar Eclipse",
     "ranks": "3",
     "cost_per_rank": "30",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures with the highest Intelligence per rank always Cast their top-most Spell Gem that has at least 1 Charge and isn't Sealed at the end of their turn. Maximum Bonus: Three creatures with the highest Intelligence",
     "spec": "Astrologer",
     "spec_abbrev": "AS",
@@ -4971,7 +4971,7 @@
     "name": "Solar Eclipse",
     "ranks": "3",
     "cost_per_rank": "30",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures with the highest Attack per rank always Attack at the end of their turn. Maximum Bonus: Three creatures with the highest Attack",
     "spec": "Astrologer",
     "spec_abbrev": "AS",
@@ -5345,7 +5345,7 @@
     "name": "Acclimatization",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After one of your creatures is afflicted with a debuff, your Herbling Casts Nutrition on it. This perk can activate once per turn.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5360,7 +5360,7 @@
     "name": "Angry Orchard",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of your Herbling's turn, it Casts Cruelty of the Wild. This spell has 20% more potency for each of your Herblings' Tiers.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5375,7 +5375,7 @@
     "name": "Biodegradation",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling Attacks 1 additional time for each Tier it has.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5390,7 +5390,7 @@
     "name": "Cultivation",
     "ranks": "10",
     "cost_per_rank": "10",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of your Herbling's turn, it gains 1% of each stat per rank for each Tier it has. Maximum Bonus: 10% of each stat",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5405,7 +5405,7 @@
     "name": "Deep Roots",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "If your Herbling is the first creature in your party, it Provokes at the end of its turn. If your Herbling is the sixth creature in your party, it Defends at the end of its turn.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5420,7 +5420,7 @@
     "name": "Defensins",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling is resistant to debuffs. Your Herbling is unable to be afflicted with debuffs while it is at Tier 3 or higher.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5435,7 +5435,7 @@
     "name": "Eternal Blossom",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the end of your Herbling's turn, it Casts Wild Growth. This spell affects a number of allies equal to its Tier.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5450,7 +5450,7 @@
     "name": "Nature's Wrath",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling always has an additional buff for each Tier it has: Agile, Savage, Leeching, Splashing, Berserk, and Arcane.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5465,7 +5465,7 @@
     "name": "Offense Mechanism",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your Herbling Attacks, it casts Shellbust on the target.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5480,7 +5480,7 @@
     "name": "Parasitic Fertilization",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of your Herbling's turn, it casts Germinate. This spell affects a number of enemies equal to its Tier.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5495,7 +5495,7 @@
     "name": "Photosynthesis",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling has 3% more stats (other than Health) for each time it has received healing, gained stats, received buffs or minions, or has been resurrected in battle. Every 15% stats earned through this perk causes the Herbling to evolve to a higher Tier at the start of its turn.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5510,7 +5510,7 @@
     "name": "Rapid Transformation",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling deals 25% more damage and takes 15% less damage for each Tier it has.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5525,7 +5525,7 @@
     "name": "Strangler",
     "ranks": "10",
     "cost_per_rank": "10",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the start of your Herbling's turn, enemies lose stats equal to 1% of your Herbling's stats per rank for each Tier it has. Maximum Bonus: 10% stat loss per Tier",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5540,7 +5540,7 @@
     "name": "Symbiosis",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "At the end of your creatures' turns, your Herbling gains 1 stack of Spiderlings.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5555,7 +5555,7 @@
     "name": "Synthetic Resin",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your Herbling Casts 1 additional time for each Tier it has.",
     "spec": "Grovetender",
     "spec_abbrev": "GR",
@@ -5914,7 +5914,7 @@
     "name": "Diabolism",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures are immune to Silenced and their Rune Spell Gems cannot be Sealed.",
     "spec": "Rune Knight",
     "spec_abbrev": "RK",
@@ -6116,7 +6116,7 @@
     "name": "Attunement",
     "ranks": "5",
     "cost_per_rank": "20",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures have 5% more Attack, Intelligence, Defense, and Speed per rank for each Chaos, Sorcery, Death or Nature Infusions you have. Your creatures take 1% less damage per rank for each Life Infusion you have. Maximum Bonus: 25% more stats, 5% less damage per infusion",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6131,7 +6131,7 @@
     "name": "Chaos Infusion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures manually Cast a Chaos spell, you gain 1 Chaos Infusion. When any of your creatures manually Cast a spell, they decrease the enemies' stats by 1% for each Chaos Infusion you have.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6146,7 +6146,7 @@
     "name": "Chromatic Layering",
     "ranks": "5",
     "cost_per_rank": "20",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "You start battles with 1 Infusion per rank, up to 1 per class. Maximum Bonus: 5 Infusions",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6176,7 +6176,7 @@
     "name": "Death Infusion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures manually Cast a Death spell, you gain 1 Death Infusion. After any of your creatures manually Cast a spell, they afflict enemies with 1 random debuff as long as you have at least 1 Death Infusion, plus 1 additional random debuff for every 3 Death Infusions you have beyond that.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6191,7 +6191,7 @@
     "name": "Elemental Empowerment",
     "ranks": "5",
     "cost_per_rank": "20",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures' spells are 10% more potent per rank for each time your creatures have Cast Colorwave in the current battle. Maximum Bonus: 25% more potency",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6221,7 +6221,7 @@
     "name": "Infinity",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures have collectively Cast Colorwave at least 5 times, they can continue to Cast it for the rest of the battle and it consumes no Infusions.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6251,7 +6251,7 @@
     "name": "Life Infusion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures manually Cast a Life spell, you gain 1 Life Infusion. After any of your creatures manually Cast a spell, they heal your creatures for 10% of their Health for each Life Infusion you have, and gain a Barrier that absorbs damage equal to the amount of Health recovered.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6266,7 +6266,7 @@
     "name": "Nature Infusion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures manually Cast a Nature spell, you gain 1 Nature Infusion. After any of your creatures manually Cast a spell, their stats are increased by 3% for each Nature Infusion you have.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6281,7 +6281,7 @@
     "name": "Prismatic Barrier",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "While you have at least 1 Infusion that matches your creatures' classes, those creatures are resistant to debuffs.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6296,7 +6296,7 @@
     "name": "Sorcery Infusion",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures manually Cast a Sorcery spell, they gain 1 Sorcery Infusion. When any of your creatures manually Cast a spell, your creatures gain 1 random buff as long as you have at least 1 Sorcery Infusion, plus 1 additional random buff for every 3 Sorcery Infusions you have beyond that.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6326,7 +6326,7 @@
     "name": "Ultimate Manifestation",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "While you have at least 1 stack of each Infusion, your creatures can Cast Colorwave. After your creatures cast Colorwave, you lose 1 of each Infusion.",
     "spec": "Spellweaver",
     "spec_abbrev": "SP",
@@ -6610,7 +6610,7 @@
     "name": "Armor Shred",
     "ranks": "25",
     "cost_per_rank": "4",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures' attacks and spells ignore 1% of the enemies' Defense per rank. Maximum Bonus: 25% Defense ignored",
     "spec": "Siegemaster",
     "spec_abbrev": "SM",
@@ -6887,7 +6887,7 @@
     "name": "Born Again",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After your creatures are killed from start-of-battle effects, they are resurrected with 50% Health.",
     "spec": "Windrunner",
     "spec_abbrev": "WR",
@@ -6917,7 +6917,7 @@
     "name": "First Served",
     "ranks": "3",
     "cost_per_rank": "30",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "After the order of the Timeline is determined at the start of battle, your creatures are moved up the Timeline 1 position higher per rank. Maximum Bonus: 3 positions higher",
     "spec": "Windrunner",
     "spec_abbrev": "WR",
@@ -7052,7 +7052,7 @@
     "name": "True Ending",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "All creatures' on-death effects are ignored. This perk does not affect the Born Again perk. This perk does not work in boss battles.",
     "spec": "Windrunner",
     "spec_abbrev": "WR",
@@ -7119,7 +7119,7 @@
     "name": "Army of Gods",
     "ranks": "2",
     "cost_per_rank": "50",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "You can have 1 additional Avatar creature per rank in your party. Maximum Bonus: 2 additional Avatars",
     "spec": "Fanatic",
     "spec_abbrev": "FA",
@@ -8908,7 +8908,7 @@
     "name": "Death's Bane",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "The first 3 times your creatures are resurrected, they attack random enemies 1, 2, and 3 times.",
     "spec": "Graveborn",
     "spec_abbrev": "GB",
@@ -8923,7 +8923,7 @@
     "name": "Death's Echo",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "The first 3 times your creatures are resurrected, they Cast their spells at random 1, 2, and 3 times.",
     "spec": "Graveborn",
     "spec_abbrev": "GB",
@@ -9073,7 +9073,7 @@
     "name": "Unnatural Causes",
     "ranks": "1",
     "cost_per_rank": "100",
-    "anointment": "No",
+    "anointment": "Yes",
     "description": "Your creatures that have been resurrected at least 1 time are resistant to debuffs. Your creatures that have been resurrected at least 3 times always have Immune.",
     "spec": "Graveborn",
     "spec_abbrev": "GB",
@@ -9470,6 +9470,747 @@
     "icon_coords": [
      16,
      624
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Antiquarian",
+  "abbreviation": "AQ",
+  "description": "No description - coming soon.",
+  "perks": [
+   {
+    "name": "Abandoned Altar",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Relics gain 100% more benefit from Reliquary Upgrades.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQA",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     0,
+     640
+    ]
+   },
+   {
+    "name": "Ancient Synchronicity",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Avatars and Godspawn benefit from this specialization's Relic-boosting perks (such as Timeworn Attunement and Primeval Spellblade) when their corresponding Relic is equipped.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQB",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     16,
+     640
+    ]
+   },
+   {
+    "name": "Archaic Warspear",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Relics' attacks and spells ignore 25% of enemies' Defense.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQC",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     32,
+     640
+    ]
+   },
+   {
+    "name": "Bygone Enhancement",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures gain 100% more stats from their Relics.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQD",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     48,
+     640
+    ]
+   },
+   {
+    "name": "Corrupted Warhammer",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures deal 1% more damage for each rank their Relics have.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQE",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     64,
+     640
+    ]
+   },
+   {
+    "name": "Derelict Blockade",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "No",
+    "description": "Your creatures have a 1% chance (up to 35%) to avoid debuffs for every 3 ranks their Relics have. If your creatures' Relics are Rank 150 or more, they are resistant to debuffs.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQF",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     80,
+     640
+    ]
+   },
+   {
+    "name": "Epigraphy",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Enemies killed by your creatures' Relics cannot be resurrected.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQG",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     96,
+     640
+    ]
+   },
+   {
+    "name": "Forgotten Blessing",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Relics act as if they have 100 more ranks. This does not unlock additional Relic perks.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQH",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     112,
+     640
+    ]
+   },
+   {
+    "name": "Forsaken Wonder",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Buffs granted by your creatures' Relics last forever. In addition, after your Relics give one of your creatures a buff, they grant all your other creatures that buff as well.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQI",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     128,
+     640
+    ]
+   },
+   {
+    "name": "Fossilized Shield",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures take 5% less damage for each time their Relic has attacked or cast.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQJ",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     144,
+     640
+    ]
+   },
+   {
+    "name": "Idolatry",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "At the start of battle, your creatures gain their Relic's corresponding Ultimate Spell Gem.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQK",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     160,
+     640
+    ]
+   },
+   {
+    "name": "Last of the Ancients",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "No",
+    "description": "At the start of battle, if only one of your creatures has a Relic equipped, your other creatures equip a copy of that Relic as well.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQL",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     176,
+     640
+    ]
+   },
+   {
+    "name": "Primeval Spellblade",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Relics' attacks cannot be dodged and deal 100% more damage.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQM",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     192,
+     640
+    ]
+   },
+   {
+    "name": "Primordial Curse",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Debuffs inflicted by your creatures' Relics last forever. In addition, after your Relics afflict an enemy with a debuff, they afflict all other enemies with the debuff as well.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQN",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     208,
+     640
+    ]
+   },
+   {
+    "name": "Timeworn Attunement",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Relics' spells have 100% more potency.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQO",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     224,
+     640
+    ]
+   },
+   {
+    "name": "Divine Dualwield",
+    "ranks": "1",
+    "cost_per_rank": "1",
+    "anointment": "No",
+    "description": "Your Avatar and Godspawn creatures gain the perks of their corresponding Relic even if it is not equipped.",
+    "spec": "Antiquarian",
+    "spec_abbrev": "AQ",
+    "uid": "AQP",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     240,
+     640
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Mermaid",
+  "abbreviation": "MD",
+  "description": "No description - coming soon.",
+  "perks": [
+   {
+    "name": "Bountiful Seas",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "All creatures ignore the effects of Blighted.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDA",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     0,
+     656
+    ]
+   },
+   {
+    "name": "Happy As A Clam",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures take 5% less damage for each time they've been healed.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDB",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     16,
+     656
+    ]
+   },
+   {
+    "name": "High Tide",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "All creatures can trigger healing effects even while they're at full Health.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDC",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     32,
+     656
+    ]
+   },
+   {
+    "name": "Hums Of Encouragement",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After your creatures reach the bottom of the Timeline, your Guardian casts Words of Encouragement on them.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDD",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     48,
+     656
+    ]
+   },
+   {
+    "name": "Impenetrable Shell",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Guardian always has Defensive. In addition, it has additional Defense equal to 10% of the healing it has received in the current battle.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDE",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     64,
+     656
+    ]
+   },
+   {
+    "name": "Kill 'Em With Kindness",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "No",
+    "description": "Enemies always have Mania. The potency of this debuff is refreshed at the end of each enemy's turn.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDF",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     80,
+     656
+    ]
+   },
+   {
+    "name": "Low Tide",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After your creatures reach the bottom of the Timeline, they gain 30% Defense. This effect can only happen to each creature once per turn.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDG",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     96,
+     656
+    ]
+   },
+   {
+    "name": "Mermaid's Embrace",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Guardian and adjacent allies grant 50% more healing from all sources.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDH",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     112,
+     656
+    ]
+   },
+   {
+    "name": "Pearl Keeper",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Guardian always has Taunting and intercepts attacks and single-target spells on adjacent allies.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDI",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     128,
+     656
+    ]
+   },
+   {
+    "name": "Refractive Shell",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Guardian and adjacent allies are immune to debuffs in non-boss battles, and resistant to debuffs in boss battles.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDJ",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     144,
+     656
+    ]
+   },
+   {
+    "name": "Rising Tide Raises All Boats",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "All creatures receive additional healing equal to 30% of the damage your Guardian has taken.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDK",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     160,
+     656
+    ]
+   },
+   {
+    "name": "Slam Shut",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "The first time your Guardian or adjacent allies are killed, they are resurrected with 50% Health and your Guardian castsChrysalis on them.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDL",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     176,
+     656
+    ]
+   },
+   {
+    "name": "So Happy I Could Die",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Enemies have reduced stats (other than Health) equal to 30% of the amount of healing they've received.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDM",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     192,
+     656
+    ]
+   },
+   {
+    "name": "Taste For Treasure",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your Guardian can equip 5 additional Spell Gems.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDN",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     208,
+     656
+    ]
+   },
+   {
+    "name": "Welcome Gift",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "At the start of your creatures' first turns, they cast Words of Encouragement on themselves.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDO",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     224,
+     656
+    ]
+   },
+   {
+    "name": "Jubilation",
+    "ranks": "1",
+    "cost_per_rank": "1",
+    "anointment": "No",
+    "description": "At the start of each creature's turn, if your Guardian has at least 500% of the Defense it started the battle with, all creatures cast Words of Encouragement on your Guardian and they take damage equal to 100% of their Mania debuff's potency. This effect can only happen once per battle.",
+    "spec": "Mermaid",
+    "spec_abbrev": "MD",
+    "uid": "MDP",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     240,
+     656
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Mesmerist",
+  "abbreviation": "MM",
+  "description": "No description - coming soon.",
+  "perks": [
+   {
+    "name": "Anagnorisis",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After one of your creatures removes a buff from an enemy, the enemy takes damage equal to 50% of the creature's Intelligence. This effect can only happen once per battle.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMA",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     0,
+     672
+    ]
+   },
+   {
+    "name": "Beyond The Veil",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Enemies can have a maximum of 10 buffs at a time, minus 1 buff for each time they've lost a buff. In addition, enemies act as if they have 1 additional buff for each time this effect has activated.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMB",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     16,
+     672
+    ]
+   },
+   {
+    "name": "Confident Facade",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures with Arcane cast spells as if they have 100% more Intelligence, but take damage as if they have 0 Defense.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMC",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     32,
+     672
+    ]
+   },
+   {
+    "name": "Displacement",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures' Shelled buffs can now prevent indirect damage.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMD",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     48,
+     672
+    ]
+   },
+   {
+    "name": "Dream Eater",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Your creatures have an independent 100% chance to deal critical damage to enemies with Sleeping.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MME",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     64,
+     672
+    ]
+   },
+   {
+    "name": "Escamotage",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "When your creatures' Shelled or Arcane buffs would be removed, they have an 80% chance for it to persist.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMF",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     80,
+     672
+    ]
+   },
+   {
+    "name": "Fractionation",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After an enemy loses Blind or Sleeping, they have an 80% chance to be afflicted with these debuffs again.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMG",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     96,
+     672
+    ]
+   },
+   {
+    "name": "Gestalt Intelligence",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "At the start of battle, your creatures gain Dark Crystal. In addition, your creatures' Dark Crystal now targets all allies with matching Trick Slots on their Artifacts.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMH",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     112,
+     672
+    ]
+   },
+   {
+    "name": "Oneirophrenia",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Enemies who are resistant to Sleeping have a 50% chance to lose their turns.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMI",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     128,
+     672
+    ]
+   },
+   {
+    "name": "Psychometry",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "At the start of battle, your creatures gain the buffs from their Artifacts' Trick Slots, and they have a 50% chance to afflict enemies in their corresponding position with the debuffs from their Artifact's Trick Slots.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMJ",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     144,
+     672
+    ]
+   },
+   {
+    "name": "Pusillanimity",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After your creatures attack an enemy that is defending or if the enemy dodges, they cast one of their spells that interacts with debuffs on the enemy. This perk can only activate once per creature per turn.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMK",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     160,
+     672
+    ]
+   },
+   {
+    "name": "Scapegoat",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After one of your creatures loses a debuff, a random enemy is afflicted with that debuff.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MML",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     176,
+     672
+    ]
+   },
+   {
+    "name": "Sensory Deprivation",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "Enemies with Blind can only cast single-target spells manually in non-boss battles, and have a 20% chance for their spells to fizzle in boss battles.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMM",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     192,
+     672
+    ]
+   },
+   {
+    "name": "Superstition",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "No",
+    "description": "Your creatures are immune to the debuffs in their Artifact's first Trick Slot.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMN",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     208,
+     672
+    ]
+   },
+   {
+    "name": "Traumatism",
+    "ranks": "1",
+    "cost_per_rank": "100",
+    "anointment": "Yes",
+    "description": "After your creatures are killed, one of your other creatures casts the top-most Dark Crystal Spell Gem they have equipped.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMO",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     224,
+     672
+    ]
+   },
+   {
+    "name": "Alveary",
+    "ranks": "1",
+    "cost_per_rank": "1",
+    "anointment": "No",
+    "description": "Your creatures with Arcane cannot have their Spell Gems sealed. In addition, after your creatures with Shelled are targeted by an enemy's spell, they gain a copy of that Spell Gem.",
+    "spec": "Mesmerist",
+    "spec_abbrev": "MM",
+    "uid": "MMP",
+    "icon": "MISSING_ICON.png",
+    "icon_coords": [
+     240,
+     672
     ]
    }
   ]
