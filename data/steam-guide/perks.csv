@@ -627,7 +627,7 @@ Antiquarian,Last of the Ancients,1,100,No,"At the start of battle, if only one o
 Antiquarian,Primeval Spellblade,1,100,Yes,Your creatures' Relics' attacks cannot be dodged and deal 100% more damage.
 Antiquarian,Primordial Curse,1,100,Yes,"Debuffs inflicted by your creatures' Relics last forever. In addition, after your Relics afflict an enemy with a debuff, they afflict all other enemies with the debuff as well."
 Antiquarian,Timeworn Attunement,1,100,Yes,Your creatures' Relics' spells have 100% more potency.
-Antiquarian,Divine Dualwield,1,1,No,Your Avatar and Godspawn creatures gain the perks of their corresponding Relic even if it is not equipped.
+Antiquarian,Divine Dualwield (ASCENSION),1,1,No,Your Avatar and Godspawn creatures gain the perks of their corresponding Relic even if it is not equipped.
 Mermaid,Bountiful Seas,1,100,Yes,All creatures ignore the effects of Blighted.
 Mermaid,Happy As A Clam,1,100,Yes,Your creatures take 5% less damage for each time they've been healed.
 Mermaid,High Tide,1,100,Yes,All creatures can trigger healing effects even while they're at full Health.
@@ -643,7 +643,7 @@ Mermaid,Slam Shut,1,100,Yes,"The first time your Guardian or adjacent allies are
 Mermaid,So Happy I Could Die,1,100,Yes,Enemies have reduced stats (other than Health) equal to 30% of the amount of healing they've received.
 Mermaid,Taste For Treasure,1,100,Yes,Your Guardian can equip 5 additional Spell Gems.
 Mermaid,Welcome Gift,1,100,Yes,"At the start of your creatures' first turns, they cast Words of Encouragement on themselves."
-Mermaid,Jubilation,1,1,No,"At the start of each creature's turn, if your Guardian has at least 500% of the Defense it started the battle with, all creatures cast Words of Encouragement on your Guardian and they take damage equal to 100% of their Mania debuff's potency. This effect can only happen once per battle."
+Mermaid,Jubilation (ASCENSION),1,1,No,"At the start of each creature's turn, if your Guardian has at least 500% of the Defense it started the battle with, all creatures cast Words of Encouragement on your Guardian and they take damage equal to 100% of their Mania debuff's potency. This effect can only happen once per battle."
 Mesmerist,Anagnorisis,1,100,Yes,"After one of your creatures removes a buff from an enemy, the enemy takes damage equal to 50% of the creature's Intelligence. This effect can only happen once per battle."
 Mesmerist,Beyond The Veil,1,100,Yes,"Enemies can have a maximum of 10 buffs at a time, minus 1 buff for each time they've lost a buff. In addition, enemies act as if they have 1 additional buff for each time this effect has activated."
 Mesmerist,Confident Facade,1,100,Yes,"Your creatures with Arcane cast spells as if they have 100% more Intelligence, but take damage as if they have 0 Defense."
@@ -659,4 +659,4 @@ Mesmerist,Scapegoat,1,100,Yes,"After one of your creatures loses a debuff, a ran
 Mesmerist,Sensory Deprivation,1,100,Yes,"Enemies with Blind can only cast single-target spells manually in non-boss battles, and have a 20% chance for their spells to fizzle in boss battles."
 Mesmerist,Superstition,1,100,No,Your creatures are immune to the debuffs in their Artifact's first Trick Slot.
 Mesmerist,Traumatism,1,100,Yes,"After your creatures are killed, one of your other creatures casts the top-most Dark Crystal Spell Gem they have equipped."
-Mesmerist,Alveary,1,1,No,"Your creatures with Arcane cannot have their Spell Gems sealed. In addition, after your creatures with Shelled are targeted by an enemy's spell, they gain a copy of that Spell Gem."
+Mesmerist,Alveary (ASCENSION),1,1,No,"Your creatures with Arcane cannot have their Spell Gems sealed. In addition, after your creatures with Shelled are targeted by an enemy's spell, they gain a copy of that Spell Gem."

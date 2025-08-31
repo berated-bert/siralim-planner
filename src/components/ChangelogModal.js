@@ -29,8 +29,7 @@ class ChangelogModal extends PureComponent {
             <FontAwesomeIcon icon={faInfoCircle} />
             Note regarding Version 2.0: New creatures/traits have been added,
             but they are missing sprites. Specializations and annointments have
-            not been added yet - they will be added once the data becomes
-            available.
+            been added, but have missing icons for now.
           </div>
           <ChangeLog />
         </div>

@@ -4554,6 +4554,160 @@
   "realm_depth": "N/A"
  },
  {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Adept Wizarding",
+  "trait_description": "Your creatures can equip 1 additional Spell Gem and their spells are 30% more potent. This trait does not stack.",
+  "material_name": "Adept's Tool Bag",
+  "search_text": "Backer Backer Trait Backer Adept Wizarding Your creatures can equip 1 additional Spell Gem and their spells are 30% more potent. This trait does not stack. Adept's Tool Bag",
+  "uid": "533b94",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Controlled Chaos",
+  "trait_description": "When your creatures would cast a random spell, the spell is chosen from this creature's Spell Gems.",
+  "material_name": "Rigged Die",
+  "search_text": "Backer Backer Trait Backer Controlled Chaos When your creatures would cast a random spell, the spell is chosen from this creature's Spell Gems. Rigged Die",
+  "uid": "537aa0",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Death Threats",
+  "trait_description": "After your creatures provoke, 3 random enemies activate their on-dodge effects. This trait does not stack.",
+  "material_name": "Horse Head in a Bed",
+  "search_text": "Backer Backer Trait Backer Death Threats After your creatures provoke, 3 random enemies activate their on-dodge effects. This trait does not stack. Horse Head in a Bed",
+  "uid": "33ccce",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Dynamic Duos",
+  "trait_description": "For each creature in your party that is a class you have exactly 2 of, those creatures deal 160% more damage. For each creature in your party that is a race you have exactly 2 of, those creatures take 80% less damage. This trait ignores other traits and perks that increase the number of creatures of a specific race or class. This trait does not stack.",
+  "material_name": "Twin Gems",
+  "search_text": "Backer Backer Trait Backer Dynamic Duos For each creature in your party that is a class you have exactly 2 of, those creatures deal 160% more damage. For each creature in your party that is a race you have exactly 2 of, those creatures take 80% less damage. This trait ignores other traits and perks that increase the number of creatures of a specific race or class. This trait does not stack. Twin Gems",
+  "uid": "8572be",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Extradimensional Shield",
+  "trait_description": "This creature is immune to instant-death effects in normal battles and reflects them back on the enemy.",
+  "material_name": "Manual Kinetic Splitter",
+  "search_text": "Backer Backer Trait Backer Extradimensional Shield This creature is immune to instant-death effects in normal battles and reflects them back on the enemy. Manual Kinetic Splitter",
+  "uid": "4b9707",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Focused Magicks",
+  "trait_description": "Your creatures' Ethereal Spell Gems ignore 30% of enemies' Defense, plus 10% more for each creature missing from your party. This trait does not stack.",
+  "material_name": "Ethereal Lens",
+  "search_text": "Backer Backer Trait Backer Focused Magicks Your creatures' Ethereal Spell Gems ignore 30% of enemies' Defense, plus 10% more for each creature missing from your party. This trait does not stack. Ethereal Lens",
+  "uid": "a5549a",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Impatience",
+  "trait_description": "After all start-of-battle effects, this creature and a random enemy activate their start-of-turn and end-of-turn effects. Your creatures cannot be resurrected. This trait does not stack.",
+  "material_name": "Burnt Spoon",
+  "search_text": "Backer Backer Trait Backer Impatience After all start-of-battle effects, this creature and a random enemy activate their start-of-turn and end-of-turn effects. Your creatures cannot be resurrected. This trait does not stack. Burnt Spoon",
+  "uid": "0b572d",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Insane Polarity",
+  "trait_description": "At the start of battle, your creatures' Ethereal Spell Gems gain the first enchantment of their owner's first permanent Spell Gem.",
+  "material_name": "Fucking Magnets",
+  "search_text": "Backer Backer Trait Backer Insane Polarity At the start of battle, your creatures' Ethereal Spell Gems gain the first enchantment of their owner's first permanent Spell Gem. Fucking Magnets",
+  "uid": "eda910",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Master of Time",
+  "trait_description": "After this creature manually casts a single-target spell, the target's turn counter is increased by 5. This trait can only be applied to each creature once per battle.",
+  "material_name": "Counterclockwise Clock",
+  "search_text": "Backer Backer Trait Backer Master of Time After this creature manually casts a single-target spell, the target's turn counter is increased by 5. This trait can only be applied to each creature once per battle. Counterclockwise Clock",
+  "uid": "70a0e6",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Master of Underdwellers",
+  "trait_description": "If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",
+  "material_name": "Sigil of the Underdweller",
+  "search_text": "Backer Backer Trait Backer Master of Underdwellers If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death. Sigil of the Underdweller",
+  "uid": "6a14cc",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Obey",
+  "trait_description": "After this creature attacks or casts a spell, your creatures of the same class provoke and gain Shelled. This trait does not stack.",
+  "material_name": "Forbidden Relic Shard",
+  "search_text": "Backer Backer Trait Backer Obey After this creature attacks or casts a spell, your creatures of the same class provoke and gain Shelled. This trait does not stack. Forbidden Relic Shard",
+  "uid": "99ddfa",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Shield Mastery",
+  "trait_description": "This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it defends, and then its turn ends.",
+  "material_name": "Gemspike Shield Fragment",
+  "search_text": "Backer Backer Trait Backer Shield Mastery This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it defends, and then its turn ends. Gemspike Shield Fragment",
+  "uid": "9657ea",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "True Divinity",
+  "trait_description": "If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack.",
+  "material_name": "The Abraxas",
+  "search_text": "Backer Backer Trait Backer True Divinity If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack. The Abraxas",
+  "uid": "a7883b",
+  "realm_depth": "N/A"
+ },
+ {
+  "class": "Backer",
+  "family": "Backer",
+  "creature": "Backer Trait",
+  "trait_name": "Vivid Nightmares",
+  "trait_description": "After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack.",
+  "material_name": "Nightmare Eyes",
+  "search_text": "Backer Backer Trait Backer Vivid Nightmares After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack. Nightmare Eyes",
+  "uid": "942b5b",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Death",
   "family": "Banshee",
   "creature": "Abyss Banshee",
@@ -5909,6 +6063,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Calumnier",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Calumniers",
+  "trait_description": "If all the creatures in your party are Calumniers, they do not have decreased stats from their Personalities.",
+  "material_name": "Sigil of the Calumnier",
+  "search_text": "Rodian Master Mastery Trait Calumnier Master of Calumniers If all the creatures in your party are Calumniers, they do not have decreased stats from their Personalities. Sigil of the Calumnier",
+  "uid": "ca76d3",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Sorcery",
   "family": "Carbuncle",
   "creature": "Aquamarine Carbuncle",
@@ -6576,6 +6741,17 @@
    "Land of Breath & Balance"
   ],
   "sprite_filename": "MISSING.png"
+ },
+ {
+  "class": "Rodian Master",
+  "family": "Cataclysm",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Cataclysms",
+  "trait_description": "If all the creatures in your party are Cataclysms, their traits have a 10% chance to activate at the start of each creatures' turn as well. This trait does not stack.",
+  "material_name": "Sigil of the Cataclysm",
+  "search_text": "Rodian Master Mastery Trait Cataclysm Master of Cataclysms If all the creatures in your party are Cataclysms, their traits have a 10% chance to activate at the start of each creatures' turn as well. This trait does not stack. Sigil of the Cataclysm",
+  "uid": "ff7296",
+  "realm_depth": "N/A"
  },
  {
   "class": "Nature",
@@ -9014,6 +9190,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Denizen",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Denizens",
+  "trait_description": "If all the creatures in your party are Denizens, enemies take 50% more damage from Mania. This trait does not stack.",
+  "material_name": "Sigil of the Denizen",
+  "search_text": "Rodian Master Mastery Trait Denizen Master of Denizens If all the creatures in your party are Denizens, enemies take 50% more damage from Mania. This trait does not stack. Sigil of the Denizen",
+  "uid": "c13910",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Life",
   "family": "Denizen",
   "creature": "Melodic Denizen",
@@ -11067,6 +11254,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Effigy",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Effigies",
+  "trait_description": "If all the creatures in your party are Effigy creatures, they always have Cursed, Burned, Poisoned, and Bleeding and take 75% less damage from these debuffs.",
+  "material_name": "Sigil of the Effigy",
+  "search_text": "Rodian Master Mastery Trait Effigy Master of Effigies If all the creatures in your party are Effigy creatures, they always have Cursed, Burned, Poisoned, and Bleeding and take 75% less damage from these debuffs. Sigil of the Effigy",
+  "uid": "a98ecd",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Death",
   "family": "Effigy",
   "creature": "Noble Effigy",
@@ -11543,6 +11741,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Eggxotic",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Eggxotics",
+  "trait_description": "Your Eggxotic creatures share the permanent buffs referenced in their traits with each other.",
+  "material_name": "Sigil of the Eggxotic",
+  "search_text": "Rodian Master Mastery Trait Eggxotic Master of Eggxotics Your Eggxotic creatures share the permanent buffs referenced in their traits with each other. Sigil of the Eggxotic",
+  "uid": "9a3ca8",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Chaos",
   "family": "Eggxotic",
   "creature": "Romulette",
@@ -11834,6 +12043,17 @@
    "Cutthroat Jungle"
   ],
   "sprite_filename": "MISSING.png"
+ },
+ {
+  "class": "Rodian Master",
+  "family": "Elementasaur",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Elementasaurs",
+  "trait_description": "If all the creatures in your party are Elementasaurs, they are resistant to debuffs and at the start of battle, they share the debuffs referenced in their traits with each other.",
+  "material_name": "Sigil of the Elementasaur",
+  "search_text": "Rodian Master Mastery Trait Elementasaur Master of Elementasaurs If all the creatures in your party are Elementasaurs, they are resistant to debuffs and at the start of battle, they share the debuffs referenced in their traits with each other. Sigil of the Elementasaur",
+  "uid": "084b93",
+  "realm_depth": "N/A"
  },
  {
   "class": "Nature",
@@ -21755,6 +21975,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Lucanian",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Lucanians",
+  "trait_description": "After all start-of-battle effects occur, if all the creatures in your party are Lucanians, their Attack and Intelligence are set equal to whichever is highest.",
+  "material_name": "Sigil of the Lucanian",
+  "search_text": "Rodian Master Mastery Trait Lucanian Master of Lucanians After all start-of-battle effects occur, if all the creatures in your party are Lucanians, their Attack and Intelligence are set equal to whichever is highest. Sigil of the Lucanian",
+  "uid": "d116e6",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Nature",
   "family": "Luckmantria",
   "creature": "Ace Luckmantria",
@@ -22514,6 +22745,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Marionette",
+  "creature": "Mastery Trait",
+  "trait_name": "Maste of Marionettes",
+  "trait_description": "When your Marionettes perform an action, the enemy in the corresponding position performs the same action on the opposite target, and then gains a random debuff. This trait does not stack.",
+  "material_name": "Sigil of the Marionette",
+  "search_text": "Rodian Master Mastery Trait Marionette Maste of Marionettes When your Marionettes perform an action, the enemy in the corresponding position performs the same action on the opposite target, and then gains a random debuff. This trait does not stack. Sigil of the Marionette",
+  "uid": "cbaf44",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Sorcery",
   "family": "Masochist",
   "creature": "Favored Masochist",
@@ -23078,6 +23320,17 @@
    "Cutthroat Jungle"
   ],
   "sprite_filename": "MISSING.png"
+ },
+ {
+  "class": "Rodian Master",
+  "family": "Mireling",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Mirelings",
+  "trait_description": "Enemies have 5% less stats for each different class of creatures fighting on your side. If you have a creature from each class, your Mirelings' traits act as if they have 1 additional unique class. This trait does not stack.",
+  "material_name": "Sigil of the Mireling",
+  "search_text": "Rodian Master Mastery Trait Mireling Master of Mirelings Enemies have 5% less stats for each different class of creatures fighting on your side. If you have a creature from each class, your Mirelings' traits act as if they have 1 additional unique class. This trait does not stack. Sigil of the Mireling",
+  "uid": "24880f",
+  "realm_depth": "N/A"
  },
  {
   "class": "Life",
@@ -27676,6 +27929,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Robodomi",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Robodomis",
+  "trait_description": "If all the creatures in your party are Robodomis, they grant their allies Rebirth after they are killed.",
+  "material_name": "Sigil of the Robodomi",
+  "search_text": "Rodian Master Mastery Trait Robodomi Master of Robodomis If all the creatures in your party are Robodomis, they grant their allies Rebirth after they are killed. Sigil of the Robodomi",
+  "uid": "c00049",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Sorcery",
   "family": "Robodomi",
   "creature": "Mechto",
@@ -30965,6 +31229,17 @@
   "sprite_filename": "MISSING.png"
  },
  {
+  "class": "Rodian Master",
+  "family": "Spacecat",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Spacecats",
+  "trait_description": "If all the creatures in your party are Spacecats, they deal 5% more damage with attacks and spells for each permanent Spell Gem each of your creatures have that do not belong to their class. This trait does not stack.",
+  "material_name": "Sigil of the Spacecat",
+  "search_text": "Rodian Master Mastery Trait Spacecat Master of Spacecats If all the creatures in your party are Spacecats, they deal 5% more damage with attacks and spells for each permanent Spell Gem each of your creatures have that do not belong to their class. This trait does not stack. Sigil of the Spacecat",
+  "uid": "222001",
+  "realm_depth": "N/A"
+ },
+ {
   "class": "Sorcery",
   "family": "Spacecat",
   "creature": "Peculiar Spacecat",
@@ -31337,6 +31612,17 @@
    "Path of the Damned (Skull Piles)"
   ],
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1756.png"
+ },
+ {
+  "class": "Rodian Master",
+  "family": "Spelljuggler",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Spelljugglers",
+  "trait_description": "If all the creatures in your party are Spelljugglers, their single-target spells now target all the target's allies if the spell belongs to a different class than the last one they cast.",
+  "material_name": "Sigil of the Spelljuggler",
+  "search_text": "Rodian Master Mastery Trait Spelljuggler Master of Spelljugglers If all the creatures in your party are Spelljugglers, their single-target spells now target all the target's allies if the spell belongs to a different class than the last one they cast. Sigil of the Spelljuggler",
+  "uid": "ce1576",
+  "realm_depth": "N/A"
  },
  {
   "class": "Sorcery",
@@ -33084,6 +33370,17 @@
    "Chaos Guild"
   ],
   "sprite_filename": "suapi-battle-sprites/spr_crits_battle_1797.png"
+ },
+ {
+  "class": "Rodian Master",
+  "family": "Underdweller",
+  "creature": "Mastery Trait",
+  "trait_name": "Master of Underdwellers",
+  "trait_description": "If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",
+  "material_name": "Sigil of the Underdweller",
+  "search_text": "Rodian Master Mastery Trait Underdweller Master of Underdwellers If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death. Sigil of the Underdweller",
+  "uid": "9eeef6",
+  "realm_depth": "N/A"
  },
  {
   "class": "Death",

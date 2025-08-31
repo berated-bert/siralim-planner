@@ -1,4 +1,4 @@
-Siralim Ultimate,,Version 2.0,,"Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402
+Siralim Ultimate,,Version 2.0 BETA,,"Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402
 Beta Creatures and Spells have been added at the bottom of their respective spreadsheet.",
 Class,Family,Creature,Trait Name,Trait Description,Material Name
 Death,Abomination,Abomination Brute,Flesh Rot,"After an enemy is afflicted with either Weak or Vulnerable, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Brute Stitches
@@ -301,6 +301,20 @@ Backer,Backer,Backer Trait,Vicious Retaliation,"After this creature dodges, it A
 Backer,Backer,Backer Trait,Why Won't You Die?,"After this creature causes 0 damage with an attack or spell, it gains 12% Attack and Intelligence.
 This trait does not work on damage that is completely prevented by other effects. This trait can activate a maximum of 1 time per turn.",Sharpened Knife
 Backer,Backer,Backer Trait,Widdershins,Class strengths and weaknesses are reversed.,Contrary Clock
+Backer,Backer,Backer Trait,Adept Wizarding,Your creatures can equip 1 additional Spell Gem and their spells are 30% more potent. This trait does not stack.,Adept's Tool Bag
+Backer,Backer,Backer Trait,Controlled Chaos,"When your creatures would cast a random spell, the spell is chosen from this creature's Spell Gems.",Rigged Die
+Backer,Backer,Backer Trait,Death Threats,"After your creatures provoke, 3 random enemies activate their on-dodge effects. This trait does not stack.",Horse Head in a Bed
+Backer,Backer,Backer Trait,Dynamic Duos,"For each creature in your party that is a class you have exactly 2 of, those creatures deal 160% more damage. For each creature in your party that is a race you have exactly 2 of, those creatures take 80% less damage. This trait ignores other traits and perks that increase the number of creatures of a specific race or class. This trait does not stack.",Twin Gems
+Backer,Backer,Backer Trait,Extradimensional Shield,This creature is immune to instant-death effects in normal battles and reflects them back on the enemy.,Manual Kinetic Splitter
+Backer,Backer,Backer Trait,Focused Magicks,"Your creatures' Ethereal Spell Gems ignore 30% of enemies' Defense, plus 10% more for each creature missing from your party. This trait does not stack.",Ethereal Lens
+Backer,Backer,Backer Trait,Impatience,"After all start-of-battle effects, this creature and a random enemy activate their start-of-turn and end-of-turn effects. Your creatures cannot be resurrected. This trait does not stack.",Burnt Spoon
+Backer,Backer,Backer Trait,Insane Polarity,"At the start of battle, your creatures' Ethereal Spell Gems gain the first enchantment of their owner's first permanent Spell Gem.",Fucking Magnets
+Backer,Backer,Backer Trait,Master of Time,"After this creature manually casts a single-target spell, the target's turn counter is increased by 5. This trait can only be applied to each creature once per battle.",Counterclockwise Clock
+Backer,Backer,Backer Trait,Master of Underdwellers,"If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",Sigil of the Underdweller
+Backer,Backer,Backer Trait,Obey,"After this creature attacks or casts a spell, your creatures of the same class provoke and gain Shelled. This trait does not stack.",Forbidden Relic Shard
+Backer,Backer,Backer Trait,Shield Mastery,"This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it defends, and then its turn ends.",Gemspike Shield Fragment
+Backer,Backer,Backer Trait,True Divinity,"If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack.",The Abraxas
+Backer,Backer,Backer Trait,Vivid Nightmares,"After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack.",Nightmare Eyes
 Death,Banshee,Abyss Banshee,Empowered Death Siphon,"At the start of battle, this creature gains Death Siphon. When this creature Casts this spell, it doesn't kill the target.",Abyss Doll
 Death,Banshee,Anguish Banshee,Empowered Magic Missile,"At the start of battle, this creature gains Magic Missile. When this creature Casts this spell, it Casts 3 additional times.",Anguish Doll
 Death,Banshee,Destruction Banshee,Empowered Fireball,"At the start of battle, this creature gains Fireball. When this creature casts this spell, it has a 90% chance to cast it 1 additional time. This effect can occur repeatedly.",Destruction Doll
@@ -1692,6 +1706,7 @@ Death,Calumnier,Calumnier Dandy,Stolen Valor,Your creatures cannot lose extra tr
 Death,Calumnier,Calumnier Fop,False Bravado,Your creatures gain 100% more benefit from their Personalities. This trait does not stack.,
 Death,Calumnier,Calumnier Partycrasher,Su Casa Es Mi Casa,This creature deals 200% more damage to enemies with the same Personalities that decrease the same stats as this creatures Personality.,
 Death,Calumnier,Calumnier Socialite,Load-Bearing Makeup,Your creatures Personality-increased stats cannot be decreased.,
+Rodian Master,Calumnier,Mastery Trait,Master of Calumniers,"If all the creatures in your party are Calumniers, they do not have decreased stats from their Personalities.",Sigil of the Calumnier
 Nature,Cataclysm,Almighty Cataclysm,Wrath of the Almighty,"At the end of each creature's turn, this creature has a 10% chance to cast Death and Destruction",
 Nature,Cataclysm,Cosmic Cataclysm,Wrath of the Cosmos,"At the end of each creature's turn, this creature has a 10% chance to cast Kilonova.",
 Nature,Cataclysm,Explosive Cataclysm,Wrath of the Great War,"At the end of each creature's turn, this creature has a 10% chance to cast Grand Explosion.",
@@ -1703,24 +1718,28 @@ Nature,Cataclysm,Sky Cataclysm,Wrath of the Sky,"At the end of each creature's t
 Nature,Cataclysm,Storm Cataclysm,Wrath of the Storm,"At the end of each creature's turn, this creature has a 10% chance to cast Raiden.",
 Nature,Cataclysm,Terra Cataclysm,Wrath of the Earth,"At the end of each creature's turn, this creature has a 10% chance to cast Richter 10.",
 Nature,Cataclysm,Volcanic Cataclysm,Wrath of the Volcano,"At the end of each creature's turn, this creature has a 10% chance to cast Magma Shower",
+Rodian Master,Cataclysm,Mastery Trait,Master of Cataclysms,"If all the creatures in your party are Cataclysms, their traits have a 10% chance to activate at the start of each creatures' turn as well. This trait does not stack.",Sigil of the Cataclysm
 Nature,Denizen,Denizen Gemini,Fishing for Compliments,"After one of your creatures cast a single-target healing spell on an enemy with Mania, that enemy casts that spell on your creature as well. This trait does not stack.",
 Sorcery,Denizen,Elegant Denizen,Round of Applause,"After an ally heals an enemy, the enemy is afflicted with Mania. After an enemy with Mania casts a healing spell, this creature casts Words of Encouragement on them.",
 Life,Denizen,Melodic Denizen,End on a High Note,"In an enemy's Mania potency is greater than 100% of its maximum health when it dies, it cannot be resurrected.",
 Nature,Denizen,Operatic Denizen,Adoring Fans,"After an enemy with Mania heals your creatures, your creatures gain their highest stat (other than health) equal to 10% of the amount healed. This trait does not stack.",
 Sorcery,Denizen,Pearlescent Denizen,Eureka!,This creature always has Mania and has additional intelligence equal to 5% of the potency of its Mania. This creature cannot be immune to Mania.,
 Nature,Denizen,Tipsy Denizen,Tardy to the Party,"At the start of battle, if your creature's top-most spell gem is Party in the Back, they cast Chrysalis on themselves. This trait does not stack.",
+Rodian Master,Denizen,Mastery Trait,Master of Denizens,"If all the creatures in your party are Denizens, enemies take 50% more damage from Mania. This trait does not stack.",Sigil of the Denizen
 Death,Effigy,Cursed Effigy,The Grudge,This creature always has Cursed. The damage your creatures take from Cursed is based on their lowest stat rather than Attack. ,
 Death,Effigy,Dancing Effigy,Jungle Boogie,"This creature has 50% more speed for each of Cursed, Burning, Poisoned and Bleeding it has. ",
 Death,Effigy,Falconer Effigy,Outstanding,"After this creature takes indirect damage, it gains 20% attack.",
 Death,Effigy,Healing Effigy,Suture Technique,"After your creatures take indirect damage, they are healed for 20% of their maximum health. This trait does not stack.",
 Death,Effigy,Knight Effigy,Pins and Needles,"After this creature takes indirect damage, it gains 20% defense. ",
 Death,Effigy,Noble Effigy,Malediction,"This creature's spells are 25% more potent for each of Cursed, Burning, Poisoned and Bleeding it has. ",
+Rodian Master,Effigy,Mastery Trait,Master of Effigies,"If all the creatures in your party are Effigy creatures, they always have Cursed, Burned, Poisoned, and Bleeding and take 75% less damage from these debuffs.",Sigil of the Effigy
 Nature,Eggxotic,Brambled Egg,Egg-log,"This creature always has Defensive. After your Eggxotic creatures take damage, they deal damage to the enemy equal to 10% of their Defense. This trait does not stack.",
 Nature,Eggxotic,Egg Over Breezy,Egg Cloustard,This creature always has Agile. Your other Eggxotic creatures have an independent 20% chance to dodge. This trait does not stack. ,
 Sorcery,Eggxotic,Egg-Drop Sleuth,Soup-ffleyed,"This creature always has Proficient. After an enemy attacks your Eggxotic creatures, they are afflicted with Confused.",
 Chaos,Eggxotic,Eggs Benedictator,Egg Flourish-tine,This creature always has Leeching. Your Eggxotic creatures always have Berserk.,
 Chaos,Eggxotic,Romulette,Tetsu-Oyakodon,"This creature always has Savage. After an enemy attacks your Eggxotic creatures, the targeted creature gains Shelled.",
 Sorcery,Eggxotic,Scorched Egg,Lava-Broiled,This creature always has Repelling. Your other Eggxotic creatures always have Warded.,
+Rodian Master,Eggxotic,Mastery Trait,Master of Eggxotics,Your Eggxotic creatures share the permanent buffs referenced in their traits with each other.,Sigil of the Eggxotic
 Nature,Elementasaur,Ancloudysaur,Cloudy Constitution,This creature is always afflicted with Vulnerable. Your creatures with Vulnerable gain 50% more stats from all sources. This trait does not stack.,
 Nature,Elementasaur,Brockiosaurus,Orthoclase,This creature always has Stone. Your creatures with Stone have 50% more defense. Enemies cannot be resistant to Stone. This trait does not stack.,
 Nature,Elementasaur,Darknonychus,Sleepwalking,"This creature always has Sleeping, Your creatures with Sleeping attack or cast their top-most spell at the start of their turns. Your creatures with Sleeping have a 50% chance to afflict the target with Sleeping with attacks and spells. This trait does not stack.",
@@ -1730,6 +1749,7 @@ Nature,Elementasaur,Triflaratops,Molten Spray,"This creature always has Scorned.
 Nature,Elementasaur,Veliceoraptor,Frost Affinity,This creature always has Frozen. Your creatures with Frozen can still act and can cast spells that interact with Frozen without consuming charges. This trait does not stack.,
 Nature,Elementasaur,Vinosaurus,Barbed Vines,This creatures always has Snared. Your creatures with Snared intercept attacks and single-target spells on allies and take damage based on their Attack instead of Defense. This trait does not stack.,
 Nature,Elementasaur,Windactyl,Sandstorm,"This creature always has Blind. When your creatures with Blind cast a spell that targets more than one creature, it instead targets all creatures and has 100% more potency. This trait does not stack.",
+Rodian Master,Elementasaur,Mastery Trait,Master of Elementasaurs,"If all the creatures in your party are Elementasaurs, they are resistant to debuffs and at the start of battle, they share the debuffs referenced in their traits with each other.",Sigil of the Elementasaur
 Death,Exotic,Bad Apple,Squirmies,"This creature starts battle with Writhelings. Each time this creature takes damage from an attack or spell, it gains another stack of Writhelings.",
 Death,Exotic,Bane of Piety,Weapons of Mass Distortion,"At the start of battle, this creatures Artifact's Spell Slot gem is replaced with an Ultimate Spell Gem of this creature's equipped Relic's Corresponding Avatar. ",
 Life,Exotic,Besieged Beast,Lord of the Castle,"When your creatures gain Defense, the amount is increased by 50%. This trait does not stack. ",
@@ -1806,6 +1826,7 @@ Sorcery,Lucanian,Lucanian Aspectal,Consuming Knowledge,"After your creatures att
 Life,Lucanian,Lucanian Illuminator,The Golden Sign,"At the start of battle, your creatures either gain 100% attack and Scorned, or 100% intelligence and Silenced. This trait does not stack. ",
 Sorcery,Lucanian,Lucanian Soulbinder,Soul Exchange,"At the start of battle, your creatures attack and intelligence are set to whichever is highest.",
 Nature,Lucanian,Lucanian Windrider,Big Wings,"If this creature's attack and intelligence are within 100% of each other, it always deals critical damage and enemies cannot dodge its attacks. ",
+Rodian Master,Lucanian,Mastery Trait,Master of Lucanians,"After all start-of-battle effects occur, if all the creatures in your party are Lucanians, their Attack and Intelligence are set equal to whichever is highest.",Sigil of the Lucanian
 Chaos,Marionette,Marionette Ballerina,Grand Pas,Your attacks and spells ignore 20% of Defending and Provoking enemies defense. This effect is increased by 100% if the target is both Defending and Provoking. This trait does not stack.,
 Chaos,Marionette,Marionette Charlatan,Hoodwink,Enemies always have Taunting. Enemies with Blind have a 50% chance to target Provoking allies with attacks and spells. This trait does not stack.,
 Chaos,Marionette,Marionette Demoiselle,Innocence,Enemies with Cursed take 10% more damage from this debuff for each time an enemy has takend Cursed damage in the current battle. This trait does not stack.,
@@ -1815,12 +1836,14 @@ Chaos,Marionette,Marionette Hypnotist,Entrancing,"Enemies always have Defensive.
 Chaos,Marionette,Marionette Medium,Heartstrings,"At the end of each enemy's turn, they cast one of their spells. After an enemy with Cursed casts a spell, they take damage equal to 20% of this creature's intelligence. This trait does not stack.",
 Chaos,Marionette,Marionette Primadonna,Spotlight,"At the end of each enemy's turn, they attack this creature for 15% normal damage and are afflicted with Cursed. This trait does not stack.",
 Chaos,Marionette,Marionette Virtuoso,Glissando,"Enemies always have Agile. The first time an enemy dodges each turn, each of your creatures attack that enemy for 50% normal damage. This trait does not stack. ",
+Rodian Master,Marionette,Mastery Trait,Maste of Marionettes,"When your Marionettes perform an action, the enemy in the corresponding position performs the same action on the opposite target, and then gains a random debuff. This trait does not stack.",Sigil of the Marionette
 Sorcery,Mireling,Kaleido-toad,Prismatic One,"At the start of battle, this creature's class is randomized, prioritizing classes not on your team. Then, it copies the top-most Spell Gem of each ally of a different class, but current Charges are set to 1.",
 Life,Mireling,Mireling Arbitrator,Power in Balance,"After all start-of-battle effects, this creature's stats (other than health) are averaged, then it gains 10% stats (other than health) for each unique class among your creatures. This creature's stat changes persist through death.",
 Death,Mireling,Mireling Corruptor,Enfeebling Haze,Creatures lose 10% more stats for each unique class among your creatures. Creatures receive additional damage from attacks and spells equal to 5% of their lost stats. This trait does not satack.,
 Nature,Mireling,Mireling Dart Frog,Scoundrel Strike,Toxic Frogmania cast by your creatures always deals massive damage based on the caster's lowest stat and afflicts the target with Poisoned. The potency of the spell is increased by 20% for each unique class among your creatures. This trait does not stack.,
 Sorcery,Mireling,Mireling Spellscatterer,Rain of Magic,"At the start of battle, this creature's spells with the ""Cascading"" property gain 4 additional maximum charges for each unique class among your creatures. Does not work on Ultimate Spells. ",
 Chaos,Mireling,Mireling Striker,Conduit Strike,"This creature can equip an additional Spell Gem For each unique class among your creatures. When this creature attacks, it consumes a Charge from each of its Spell Gems to deal additional damage equal to 5% of its lowest stat for each consumed Charge. This creature cannot cast spells.",
+Rodian Master,Mireling,Mastery Trait,Master of Mirelings,"Enemies have 5% less stats for each different class of creatures fighting on your side. If you have a creature from each class, your Mirelings' traits act as if they have 1 additional unique class. This trait does not stack.",Sigil of the Mireling
 Sorcery,Mythicant,Mythicant Chromis,Of Fate Unwritten,"After this creature attacks, it deals damage to a different enemy for each Mythicant creature Fighting on your side. This creature's attacks ignore 10% of enemies' defense (up to 50%) for each Mythicant creature fighting on your side.",
 Sorcery,Robodomi,Blipzor,Reactor Shield,This creature is immune to instant-death effects in normal battles and can only take damage up to 60% of its maximum health.,
 Sorcery,Robodomi,Grivix,Destruction Beam,"At the start of this creature's turn, it kills the creature with the highest speed in normal battles. In boss battles, this creature instead attacks it. This trait can only activate once per battle.",
@@ -1828,22 +1851,26 @@ Sorcery,Robodomi,Klyptar,Co-Pilots,This creature acts as if it is adjacent to al
 Sorcery,Robodomi,Mechto,Communication Services,"At the start of battle, your Robodomi creatures share their innate traits with adjacent Robodomi creatures.",
 Sorcery,Robodomi,Zarnox,Ejector Seat,"This creature is immune to damage from attacks and spells but its Health is immediately set to 0 when it takes indirect damage. This trait is ignored if this creature is affected by effects that make it immune to indirect damage, or if an ally has the same trait.",
 Sorcery,Robodomi,Zyphra,Phasers,"When this creature attacks, it always does 0 damage but restores 1 charge to a non-Ultimate Spell.",
+Rodian Master,Robodomi,Mastery Trait,Master of Robodomis,"If all the creatures in your party are Robodomis, they grant their allies Rebirth after they are killed.",Sigil of the Robodomi
 Sorcery,Spacecat,Ancient Spacecat,Yowl!,This creature can equip Spell Gems from any class. Your creatures have 10% more speed for each Sealed Spell Gem each of your creatures have. This trait does not stack.,
 Sorcery,Spacecat,Astral Spacecat,Maow!,This creature can equip Spell Gems from any class. Your creatures have 10% more intelligence for each Sealed spell Gem each of your creatures have. This trait does not stack.,
 Sorcery,Spacecat,Black Spacecat,Hisss!,This creature can equip Spell Gems from any class. Your creatures have 10% more defense for each Sealed spell Gem each of your creatures have. This trait does not stack.,
 Sorcery,Spacecat,Furious Spacecat,Chattering Chant,This creature can equip Spell Gems from any class. Your creatures have 10% more attack for each Sealed spell Gem each of your creatures have. This trait does not stack.,
 Sorcery,Spacecat,Gold Spacecat,Thrillful Trills,"This creature can equip Spell Gems from any class. At the start of your creatures turns, they are healed for 5% of their maximum health for each Sealed spell Gem each of your creatures have. This trait does not stack.",
 Sorcery,Spacecat,Peculiar Spacecat,Purrr,"This creature can equip Spell Gems from any class. After this creature casts a spell, it is Sealed.",
+Rodian Master,Spacecat,Mastery Trait,Master of Spacecats,"If all the creatures in your party are Spacecats, they deal 5% more damage with attacks and spells for each permanent Spell Gem each of your creatures have that do not belong to their class. This trait does not stack.",Sigil of the Spacecat
 Sorcery,Spelljuggler,Spelljuggler Bedazzler,Spectrometry,Your Spelljuggler creatures can equip Spell Gems from any class.,
 Sorcery,Spelljuggler,Spelljuggler Connoisseur,Prismatic Amplifier,Your creatures' spells have 100% more potency if the spell's class is different from the last spell cast in the current battle. This trait does not stack. ,
 Sorcery,Spelljuggler,Spelljuggler Conservator,Lucid Renewal,"If your creatures have collectively cast a spell from each class in the current battle, their Spell Gems no longer consume Charges and have 50% more potency. This trait does not stack. ",
 Sorcery,Spelljuggler,Spelljuggler Instructor,Shifting Brilliance,"After this creature casts a spell of a different class from the last spell cast in the current battle, your creatures gain 40% intelligence. This trait does not stack.",
 Sorcery,Spelljuggler,Spelljuggler Opportunist,Enochian,"After this creature casts a spell of a different class from the last spell cast in the current battle, enemies take damage equal to 35% of its intelligence.",
 Sorcery,Spelljuggler,Spelljuggler Trapezist,Add to the Mix,"After an ally casts a spell of a different class from the last spell cast in the current battle, this creature casts one of its spells. ",
+Rodian Master,Spelljuggler,Mastery Trait,Master of Spelljugglers,"If all the creatures in your party are Spelljugglers, their single-target spells now target all the target's allies if the spell belongs to a different class than the last one they cast.",Sigil of the Spelljuggler
 Death,Underdweller,Underdweller Fearmonger,Robbing the Grave,Creatures lose 35% more stats. Your creatures cast spells that interact with Feared with 50% more potency. This trait does not stack.,
 Death,Underdweller,Underdweller Hexblade,Creeping Doom,Enemies with Feared take 15% more damage for each Death creature fighting on your side. This trait does not stack.,
 Death,Underdweller,Underdweller Mischiefmaker,Misery Loves Company,Your creatures have 2 more base stats that correspond to each of your creatures' classes. This trait does not stack.,
 Chaos,Underdweller,Underdweller Ripper,Mortal Terror,"After all start-of-battle effects, this creature attacks a random enemy with Feared and this creature's on-death effects are activated.",
 Nature,Underdweller,Underdweller Ritesmaster,Dark Ritual,"At the start of battle, your creatures share 10% of their class' corresponding stats with your other creatures. Your creatures start battles at 50% health. This trait does not stack. ",
 Death,Underdweller,Underdweller Rot-thief,Feast and Famine,Enemies that die with Feared cannot be resurrected. ,
+Rodian Master,Underdweller,Mastery Trait,Master of Underdwellers,"If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",Sigil of the Underdweller
 Nature,Uralos,Uralos Warchief,Commanding Presence,Your Uralos creatures' innate traits are 50% more powerful. This trait does not stack.,

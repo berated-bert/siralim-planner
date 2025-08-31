@@ -1,5 +1,14 @@
 ## Changelog
 
+### v1.2.4 (31 August 2025)
+
+-   Added 27 missing traits (thanks again KageNoOni for the data).
+-   Fixed Ascension status for the last perks of each of the 3 new specialisations.
+
+### v1.2.3 (31 August 2025)
+
+-   Fixed banner message in the changelog which still said specialisations and perks hadn't been added.
+
 ### v1.2.2 (31 August 2025)
 
 -   Added the three new specialisations, and updated the anointable status of certain perks. Big thanks to KageNoOni on Discord for getting these into a spreadsheet. Note the descriptions and icons for the new specialisations and perks are still a work in progress.
