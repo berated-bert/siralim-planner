@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.2.5 (31 August 2025)
+
+-   Fixed bug when importing builds.
+
 ### v1.2.4 (31 August 2025)
 
 -   Added 27 missing traits (thanks again KageNoOni for the data).
