@@ -9,8 +9,8 @@ function parseCharacterSection(text) {
   let anointment_names = [];
 
   for (const line of text.split("\n")) {
-    if (line.indexOf("the ") !== -1 && !spec) {
-      spec = line.split("the ")[1];
+    if (line.indexOf(", ") !== -1 && !spec) {
+      spec = line.split(", ")[1];
       if (spec.indexOf(" (") !== -1) {
         spec = spec.split(" (")[0]; // Remove (Ascended)
       }

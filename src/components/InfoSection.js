@@ -35,10 +35,9 @@ class InfoSection extends PureComponent {
       <section>
         <div className="note">
           <FontAwesomeIcon icon={faInfoCircle} />
-          Please note that the Planner is not fully updated to V2.0 yet. New
-          creatures/traits have been added, but they are missing sprites.
-          Specializations and annointments have not been added yet - they will
-          be added once the data becomes available.
+          Note regarding Version 2.0: New creatures/traits have been added, but
+          they are missing sprites. Specializations and annointments have been
+          added, but have missing icons for now.
         </div>
         <ReactMarkdown safe={true}>{this.state.markdown}</ReactMarkdown>
       </section>
