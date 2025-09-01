@@ -2,9 +2,9 @@
 
 ### v1.2.6 (1 September 2025)
 
--   Updated the Siralim Ultimate Compendium ([link](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0)) and synchronised it with data from other sources (mostly Gay Moth Aunt's spreadsheet ([link](https://docs.google.com/spreadsheets/d/1RYRvKTCLLJxXrZ_7OOjG8j98L_fjE5KNHtLG4wHn9Xw/edit?gid=859009965#gid=859009965)).
--   Updated the planner with this new data source, which should hopefully now be free of errors and missing traits. If you spot anything that is not consistent with the game please let me know.
--   Please note that some trait names may have changed slightly, so builds shared prior to this update may have missing traits (you'll just need to search them up again to re-add them).
+-   Updated the Siralim Ultimate Compendium ([link](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0)) with help from data from KageNoOni's spreadsheet. There are now 1,816 traits in the Compendium which I believe is the correct number.
+-   Updated the planner with this new data source, which should hopefully now be free of errors and should not be missing any traits. If you spot anything that is not consistent with the game please let me know.
+-   Please note that some trait names may have changed slightly, so builds shared prior to this update may have missing traits when importing (you'll just need to search them up again to re-add them).
 
 ### v1.2.5 (31 August 2025)
 
