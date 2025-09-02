@@ -5747,7 +5747,7 @@
     ],
     "realm_depth": "?"
   },
-  "tetsu-oyakodon": {
+  "testu-oyakodon": {
     "stats": {
       "health": 35,
       "attack": 25,
@@ -19706,5 +19706,19 @@
       "Frostbite Caverns (Frozen Yetis)"
     ],
     "realm_depth": 90
+  },
+  "multiply": {
+    "stats": {
+      "health": 43,
+      "attack": 18,
+      "intelligence": 16,
+      "defense": 21,
+      "speed": 11,
+      "total": 109
+    },
+    "sources": [
+      "Unknown"
+    ],
+    "realm_depth": "?"
   }
 }

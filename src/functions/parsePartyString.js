@@ -41,6 +41,7 @@ function parseCreatureSection(text) {
   const fusedDetectionText = "Fused Trait: ";
   const traitSlotDetectionText = "Trait Slot: ";
   const relicSlotDetectionText = "Relic: ";
+  const netherTraitDetectionText = " Trait: ";
 
   // Split into creatures using the ---- lines.
   // Hopefully this does not change between patches.
@@ -54,6 +55,9 @@ function parseCreatureSection(text) {
   let innates = new Array(6).fill(null);
   let secondaries = new Array(6).fill(null);
   let artifacts = new Array(6).fill(null);
+  let nether1s = new Array(6).fill(null);
+  let nether2s = new Array(6).fill(null);
+  let nether3s = new Array(6).fill(null);
   let relics = new Array(6).fill(null);
 
   // For each creature, get the innate, secondary and artifact trait.
@@ -65,6 +69,9 @@ function parseCreatureSection(text) {
     let innateTrait = null;
     let secondaryTrait = null;
     let artifactTrait = null;
+    let netherTrait1 = null;
+    let netherTrait2 = null;
+    let netherTrait3 = null;
     let relic = null;
 
     let lines = creatures[i].split("\n");
@@ -88,6 +95,27 @@ function parseCreatureSection(text) {
             "Creature #" + (i + 1) + " has more than one artifact trait.",
           );
         artifactTrait = line.slice(traitSlotDetectionText.length).split(":")[0];
+      } else if (line.startsWith(netherTraitDetectionText)) {
+        let thisNetherTrait = line
+          .slice(netherTraitDetectionText.length)
+          .split(":")[0];
+        if (!netherTrait1) {
+          netherTrait1 = thisNetherTrait;
+          continue;
+        }
+        if (!netherTrait2) {
+          netherTrait2 = thisNetherTrait;
+          continue;
+        }
+        if (!netherTrait3) {
+          netherTrait3 = thisNetherTrait;
+          continue;
+        }
+        // Not raising an error here just in case there is a nether stone
+        // with more than 3... it'll just not load into the planner.
+        // throw new Error(
+        //   "Creature #" + (i + 1) + " has more than three Nether traits.",
+        // );
       } else if (line.startsWith(relicSlotDetectionText)) {
         if (relic)
           throw new Error("Creature #" + (i + 1) + " has more than one relic.");
@@ -98,6 +126,9 @@ function parseCreatureSection(text) {
     secondaries[i] = secondaryTrait;
     artifacts[i] = artifactTrait;
     relics[i] = relic;
+    nether1s[i] = netherTrait1;
+    nether2s[i] = netherTrait2;
+    nether3s[i] = netherTrait3;
   }
 
   let traitsArray = [];
@@ -108,10 +139,17 @@ function parseCreatureSection(text) {
     const fusion = secondaries[i];
     const artifact = artifacts[i];
     const relic = relics[i];
+    const netherTrait1 = nether1s[i];
+    const netherTrait2 = nether2s[i];
+    const netherTrait3 = nether3s[i];
 
     traitsArray.push(innate);
     traitsArray.push(fusion);
     traitsArray.push(artifact);
+    traitsArray.push(netherTrait1);
+    traitsArray.push(netherTrait2);
+    traitsArray.push(netherTrait3);
+
     relicsArray.push(relic);
   }
 

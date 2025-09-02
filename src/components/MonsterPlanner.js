@@ -14,6 +14,9 @@ import icon_health from "../icons/health.png";
 import icon_intelligence from "../icons/intelligence.png";
 import icon_defense from "../icons/defense.png";
 import icon_speed from "../icons/speed.png";
+import icon_netherstone from "../icons/netherstone.png";
+import icon_artifact from "../icons/artifact.png";
+import icon_artifact_nether from "../icons/artifact_nether.png";
 
 import MonsterClassIcon from "./MonsterClassIcon";
 import getTraitErrors from "../functions/getTraitErrors";
@@ -58,6 +61,95 @@ function isMonster(m) {
     c === "sorcery" ||
     c === "life"
   );
+}
+
+class ArtifactTooltip extends PureComponent {
+  render() {
+    const m = this.props.m;
+    return (
+      <div className="inner no-border">
+        <div></div>
+        <div>
+          <h3>
+            <span className="cls-icon">
+              <img src={icon_artifact} className="class-icon" />
+            </span>{" "}
+            &nbsp;
+            <b>{m.material_name}</b>
+          </h3>
+          <table>
+            <tbody>
+              {m.sources ? (
+                <tr>
+                  <td>Source{m.sources.length > 1 ? "s" : ""}:</td>
+                  <td>
+                    {m.sources.length > 1 ? (
+                      <ul>
+                        {m.sources.map((source, i) => (
+                          <li key={i}>{source}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      m.sources[0]
+                    )}
+                  </td>
+                </tr>
+              ) : (
+                <tr>
+                  <td>Source:</td>
+                  <td>
+                    {m.class === "Rodian Master"
+                      ? "Defeating a Rodian Master"
+                      : "Unknown"}
+                  </td>
+                </tr>
+              )}
+              <tr>
+                <td>Realm Depth:</td>
+                <td>{m.realm_depth}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
+}
+
+class NetherTraitTooltip extends PureComponent {
+  render() {
+    const m = this.props.m;
+    return (
+      <div className="inner no-border">
+        <div></div>
+        <div>
+          <h3>
+            <span className="cls-icon" className="class-icon">
+              <img src={icon_artifact_nether} />
+            </span>{" "}
+            &nbsp;
+            <b>Nether Stone Trait</b>
+          </h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Source:</td>
+                <td>Randomly found on a Nether Stone.</td>
+              </tr>
+              <tr>
+                <td>Realm Depth:</td>
+                <td>
+                  Any, but the chance to find better Nether Stones
+                  <br />
+                  increases with realm depth.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    );
+  }
 }
 
 /**
@@ -110,6 +202,27 @@ class MonsterTooltip extends Component {
   }
 }
 
+class TraitSlotType extends PureComponent {
+  render() {
+    return (
+      <div className="trait-slot-type">
+        {this.props.slotId === 0 && <span title="Primary trait">P</span>}
+        {this.props.slotId === 1 && <span title="Fused trait">F</span>}
+        {this.props.slotId === 2 && (
+          <span title="Artifact trait">
+            <img src={icon_artifact} />
+          </span>
+        )}
+        {this.props.slotId >= 3 && (
+          <span title="Netherstone trait">
+            <img src={icon_artifact_nether} />
+          </span>
+        )}
+      </div>
+    );
+  }
+}
+
 /**
  * A class that corresponds to a single MonsterRow from within the Monster Planning window
  * (i.e. the 6 creatures with 3 traits each) of the Monster Selection page.
@@ -123,14 +236,26 @@ class MonsterPlannerRow extends PureComponent {
     var m = this.props.monster;
     return (
       <React.Fragment>
-        {isMonster(m) && (
+        {isMonster(m) && !this.props.isArtifact && !this.props.isNetherTrait && (
           <ReactTooltip id={"main-tooltip-" + this.props.rowId} place="bottom">
             <MonsterTooltip m={m} />
           </ReactTooltip>
         )}
+        {this.props.isArtifact && (
+          <ReactTooltip id={"main-tooltip-" + this.props.rowId} place="bottom">
+            <ArtifactTooltip m={m} />
+          </ReactTooltip>
+        )}
+        {this.props.isNetherTrait && (
+          <ReactTooltip id={"main-tooltip-" + this.props.rowId} place="bottom">
+            <NetherTraitTooltip m={m} />
+          </ReactTooltip>
+        )}
+
+        {/*<TraitSlotType slotId={this.props.traitSlotIndex} />*/}
 
         <div className="trait-slot-creature">
-          {isMonster(m) && !this.props.isArtifact ? (
+          {isMonster(m) && !this.props.isArtifact && !this.props.isNetherTrait && (
             <span
               className="creature-tag"
               data-for={"main-tooltip-" + this.props.rowId}
@@ -140,9 +265,40 @@ class MonsterPlannerRow extends PureComponent {
               {renderClass(m.class)}
               <span>{m.creature}</span>
             </span>
-          ) : (
-            <span className="non-creature-tag">{m.creature}</span>
           )}
+          {this.props.isArtifact && (
+            <span
+              className="artifact-tag"
+              data-for={"main-tooltip-" + this.props.rowId}
+              data-tip
+              data-iscapture="true"
+            >
+              <span className="cls-icon">
+                <img src={icon_artifact} />
+              </span>
+              <span>Artifact Trait</span>
+            </span>
+          )}
+          {this.props.isNetherTrait && (
+            <span
+              className="artifact-tag"
+              data-for={"main-tooltip-" + this.props.rowId}
+              data-tip
+              data-iscapture="true"
+            >
+              <span className="cls-icon">
+                <img src={icon_artifact_nether} />
+              </span>
+              <span>Nether Stone Trait</span>
+            </span>
+          )}
+          {/*          {this.props.isArtifact ||
+            (this.props.isNetherTrait && (
+              <span className="creature-tag">
+                {renderClass(m.class)}
+                <span>{m.creature}</span>
+              </span>
+            ))}*/}
         </div>
         <div className="trait-slot-trait_name">
           <span className="mobile-only ib">
@@ -269,22 +425,45 @@ class MonsterPlannerTraitSlot extends PureComponent {
    * as the buildString containing a creature that no longer exists or has changed.
    * @return {ReactComponent} A div representing an empty row.
    */
-  renderEmptyRow() {
+  renderEmptyRow(slotId) {
+    let traitSlotName = " primary trait";
+    switch (this.props.traitSlotIndex) {
+      case 1:
+        traitSlotName = " fused trait";
+        break;
+      case 2:
+        traitSlotName = "n artifact trait";
+        break;
+      case 3:
+        traitSlotName = " Nether Stone trait (1)";
+        break;
+      case 4:
+        traitSlotName = " Nether Stone trait (2)";
+        break;
+      case 5:
+        traitSlotName = " Nether Stone trait (3)";
+        break;
+    }
+
     return (
-      <div className="empty-row">
-        {this.props.error && (
-          <span className="trait-slot-error">
-            <FontAwesomeIcon icon={faExclamationTriangle} />
-            Error: {this.props.error}.{" "}
-          </span>
-        )}
-        {"Click to add a" +
-          (this.props.traitSlotIndex === 0
-            ? " primary trait"
-            : this.props.traitSlotIndex === 1
-            ? " fused trait"
-            : "n artifact trait")}
-      </div>
+      <>
+        {/*<TraitSlotType slotId={slotId} />*/}
+
+        <div
+          className={
+            "empty-row" +
+            (this.props.traitSlotIndex > 3 ? " empty-nether-row" : "")
+          }
+        >
+          {this.props.error && (
+            <span className="trait-slot-error">
+              <FontAwesomeIcon icon={faExclamationTriangle} />
+              Error: {this.props.error}.{" "}
+            </span>
+          )}
+          {"Click to add a" + traitSlotName}
+        </div>
+      </>
     );
   }
 
@@ -310,14 +489,17 @@ class MonsterPlannerTraitSlot extends PureComponent {
     }
 
     return (
-      <div className="trait-slot">
+      <div className={"trait-slot" + (this.props.isHidden ? " hidden" : "")}>
         <div
           className={
             "trait-slot-clickable" +
             (this.props.draggable ? " draggable" : "") +
             (rowErrors ? " invalid-row" : "") +
-            (this.props.traitSlotIndex === 2 ? " artifact-slot" : "") +
+            (this.props.traitSlotIndex >= 2 ? " non-creature-slot" : "") +
             (this.state.justUpdated ? " just-updated" : "") +
+            (emptyRow && this.props.traitSlotIndex > 2
+              ? " empty-nether-slot"
+              : "") +
             rowClass
           }
           draggable={this.props.draggable}
@@ -328,13 +510,15 @@ class MonsterPlannerTraitSlot extends PureComponent {
           title={rowErrors}
         >
           {emptyRow ? (
-            this.renderEmptyRow()
+            this.renderEmptyRow(this.props.traitSlotIndex)
           ) : (
             <MonsterPlannerRow
               monster={this.props.monster}
               error={this.props.error}
               rowId={this.props.rowId}
               isArtifact={this.props.traitSlotIndex === 2}
+              isNetherTrait={this.props.traitSlotIndex >= 3}
+              traitSlotIndex={this.props.traitSlotIndex}
             />
           )}
         </div>
@@ -550,6 +734,7 @@ class MonsterPlannerPartyMember extends PureComponent {
    * @return {ReactComponent} A div representing this party member.
    */
   render() {
+    console.log(this.props.partyMember);
     return (
       <div
         className={
@@ -626,6 +811,17 @@ class MonsterPlannerPartyMember extends PureComponent {
               }
               clearPartyMember={() =>
                 this.props.clearPartyMember(this.props.partyMemberId, i)
+              }
+              isHidden={
+                (!this.props.showNetherTraits && i >= 3) ||
+                (i === 4 &&
+                  Object.keys(this.props.partyMember[3].monster).length === 0 &&
+                  Object.keys(this.props.partyMember[4].monster).length === 0 &&
+                  Object.keys(this.props.partyMember[5].monster).length ===
+                    0) ||
+                (i === 5 &&
+                  Object.keys(this.props.partyMember[4].monster).length === 0 &&
+                  Object.keys(this.props.partyMember[5].monster).length === 0)
               }
             />
           ))}
@@ -844,10 +1040,18 @@ class MonsterPlanner extends Component {
     super(props);
     this.state = {
       dragging: false,
+      showNetherTraits: true,
       relicIndex: null, // Index of most recently selected relic.
+      partyId: -1,
     };
     this.myRef = React.createRef();
   }
+
+  handleToggleNetherTraits = function () {
+    return this.setState({
+      showNetherTraits: !this.state.showNetherTraits,
+    });
+  };
 
   // A function to handle the drag start (i.e. when a row is dragged).
 
@@ -983,12 +1187,53 @@ class MonsterPlanner extends Component {
   }
 
   /**
+   * When the props change, check if the party members have been loaded
+   * (either via build string or by uploading party). If they have,
+   * check whether the nether traits should be shown by default.
+   *
+   * @param  {[type]} prevProps [description]
+   * @param  {[type]} prevState [description]
+   * @return {[type]}           [description]
+   */
+  componentDidUpdate(prevProps, prevState) {
+    if (this.props.partyId === this.state.partyId) return;
+    console.log(this.props.partyId, this.state.partyId);
+
+    let hasNetherTraits = false;
+    const partyMembers = this.props.partyMembers;
+    // Check if any nether traits
+
+    for (let pm of partyMembers) {
+      let i = -1;
+      for (let m of pm) {
+        i++;
+        // Skip non-nether stone traits, i.e. 0, 1, 2
+        if (i <= 2) continue;
+        console.log(m.monster);
+        if (!_.isEmpty(m.monster)) {
+          hasNetherTraits = true;
+          break;
+        }
+      }
+    }
+    console.log(hasNetherTraits);
+    this.setState({
+      showNetherTraits: hasNetherTraits,
+      partyId: this.props.partyId,
+    });
+  }
+
+  /**
    * The render function.
    * @return {ReactComponent} A div containing the Monster Planner interface.
    */
   render() {
     return (
-      <div id="monster-planner" ref={this.myRef}>
+      <div
+        id="monster-planner"
+        ref={this.myRef}
+        className={this.state.showNetherTraits ? "showing-nether-traits" : ""}
+      >
         <RelicSelectionModal
           modalIsOpen={this.state.relicModalIsOpen}
           closeModal={this.closeRelicModal.bind(this)}
@@ -998,7 +1243,19 @@ class MonsterPlanner extends Component {
           updateRelic={this.updateRelic.bind(this)}
         />
 
-        <h3 className="section-title">Party</h3>
+        <div className="monster-planner-top-row">
+          <h3 className="section-title">Party</h3>
+          <button
+            id="toggle-nether-traits"
+            className={this.state.showNetherTraits ? "on" : "off"}
+            onClick={() => this.handleToggleNetherTraits()}
+          >
+            <img src={icon_netherstone} />
+            &nbsp; Show Nether Stone Traits
+            {this.state.showNetherTraits && <span>On</span>}
+            {!this.state.showNetherTraits && <span>Off</span>}
+          </button>
+        </div>
         {this.props.partyMembers.map((partyMember, i) => (
           <MonsterPlannerPartyMember
             key={i}
@@ -1011,6 +1268,7 @@ class MonsterPlanner extends Component {
             onDragOver={this.handleDragOver.bind(this)}
             onDrop={this.handleDrop.bind(this)}
             onMouseUp={this.handleMouseUp.bind(this)}
+            showNetherTraits={this.state.showNetherTraits}
           />
         ))}
       </div>

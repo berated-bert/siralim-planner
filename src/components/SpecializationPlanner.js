@@ -505,7 +505,9 @@ class SpecializationPlanner extends PureComponent {
           toggleAnointment={this.props.toggleAnointment}
         />
 
-        <h3 className="section-title">Specialization</h3>
+        <h3 className="section-title" style={{ marginTop: "10px" }}>
+          Specialization
+        </h3>
 
         <Select
           styles={customStyles}

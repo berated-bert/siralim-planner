@@ -1362,3 +1362,4 @@ Coldslam Yeti,Yeti,Sorcery,34,19,14,22,17,106,4,Frostbite Caverns (Frozen Yetis)
 Icemane Yeti,Yeti,Sorcery,36,21,16,21,16,110,30,Frostbite Caverns (Frozen Yetis),Lingering Frost,Icemane Snowball,"After an enemy's Frozen debuff expires, this creature afflicts it with Snared."
 Chillbreeze Yeti,Yeti,Sorcery,35,20,15,20,15,105,15,Frostbite Caverns (Frozen Yetis),Thermal Void,Chillbreeze Snowball,Enemies take 50% more damage while they are Frozen. This trait does not stack.
 Ancient Yeti,Yeti,Sorcery,36,21,16,21,16,110,90,Frostbite Caverns (Frozen Yetis),Winter Has Come,Ancient Snowball,"At the start of battle, this creature afflicts 2 random enemies with Frozen."
+Failed Experiment,Experiment,Sorcery,43,18,16,21,11,109,,Unknown,Multiply,Unknown Material,"After this creature is damaged by an attack or spell, it summons a copy of itself."

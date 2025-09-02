@@ -246,6 +246,8 @@ class SiralimPlanner extends Component {
       notificationText: null,
       notificationStatus: null,
       notificationIndex: 0,
+
+      partyId: 0, // Increments upon loading a party in (via string or URL)
     };
 
     this.state = this.originalState;
@@ -263,9 +265,13 @@ class SiralimPlanner extends Component {
     let partyMembers = this.state.partyMembers;
     let saveString = "";
 
-    var c = 0;
+    let c = 0;
+    let i = -1;
     for (let pm of partyMembers) {
       for (let m of pm) {
+        i++;
+        // Skip nether stone traits, i.e. 3, 4, 5
+        if (i % 6 >= 3) continue;
         if (!_.isEmpty(m.monster)) saveString += m.monster.uid;
         else saveString += "_";
         c++;
@@ -292,6 +298,27 @@ class SiralimPlanner extends Component {
         continue;
       }
       saveString += r.uid;
+    }
+
+    // Generate nether stone traits string
+
+    c = 0;
+    i = -1;
+    let nString = "";
+    for (let pm of partyMembers) {
+      for (let m of pm) {
+        i++;
+        // Skip non-nether stone traits, i.e. 0, 1, 2
+        if (i % 6 <= 2) continue;
+        if (!_.isEmpty(m.monster)) nString += m.monster.uid;
+        else nString += "_";
+        c++;
+        if (c > 18) break;
+      }
+    }
+    if (nString !== "__________________") {
+      saveString += "&n=";
+      saveString += nString;
     }
 
     this.props.history.push("?b=" + saveString);
@@ -402,28 +429,65 @@ class SiralimPlanner extends Component {
   /**
    * Parse the loadString into a list of UIDs (or null for underscores).
    * @param  {String} str The string to parse.
+   * @param  {String} strNether The string to parse (nether traits).
    * @return {Array}     An array of strings, where each string is a uid.
    */
-  parseLoadString(str) {
-    let uids = [];
+  parseLoadString(str, strNether) {
+    let uids = new Array(36).fill(null);
     let currentUid = "";
+    let cIndex = 0;
     for (let i = 0; i < str.length; i++) {
       let c = str[i];
       if (c === "_") {
         if (currentUid.length > 0 && currentUid.length < UID_HASH_LENGTH)
           throw new Error("Malformed uid");
-        uids.push(null);
+        uids[cIndex] = null;
+        cIndex += 1;
       } else {
         currentUid += c;
         if (currentUid.length === UID_HASH_LENGTH) {
-          uids.push(currentUid);
+          uids[cIndex] = currentUid;
           currentUid = "";
+          cIndex += 1;
         }
       }
+      if (cIndex === 27) cIndex = 30;
+      if (cIndex === 21) cIndex = 24;
+      if (cIndex === 15) cIndex = 18;
+      if (cIndex === 9) cIndex = 12;
+      if (cIndex === 3) cIndex = 6;
     }
+
+    if (strNether) {
+      cIndex = 3;
+      let currentUid = "";
+      for (let i = 0; i < strNether.length; i++) {
+        let c = strNether[i];
+        if (c === "_") {
+          if (currentUid.length > 0 && currentUid.length < UID_HASH_LENGTH)
+            throw new Error("Malformed uid");
+          uids[cIndex] = null;
+          cIndex += 1;
+        } else {
+          currentUid += c;
+          if (currentUid.length === UID_HASH_LENGTH) {
+            uids[cIndex] = currentUid;
+            currentUid = "";
+            cIndex += 1;
+          }
+        }
+
+        if (cIndex === 30) cIndex = 33;
+        if (cIndex === 24) cIndex = 27;
+        if (cIndex === 18) cIndex = 21;
+        if (cIndex === 12) cIndex = 15;
+        if (cIndex === 6) cIndex = 9;
+      }
+    }
+
     // Throw errors if the string is not valid (i.e. too short or too long).
-    if (uids.length > 18) throw new Error("Too many uids");
-    if (uids.length < 18) throw new Error("Not enough uids");
+    if (uids.length > 36) throw new Error("Too many uids");
+    if (uids.length < 36) throw new Error("Not enough uids");
 
     return uids;
   }
@@ -514,7 +578,7 @@ class SiralimPlanner extends Component {
    * uid. This is used to read in the buildString (from the URL) and
    * from the in-game export of data to the clipboard.
    *
-   * Returns a json object with the 18 rows, any notification message that pops up
+   * Returns a json object with the 36 rows, any notification message that pops up
    * (right now just that the build could not be parsed or that it was parsed
    * successfully), and a status code
    * (warning, success, error, null).
@@ -531,19 +595,19 @@ class SiralimPlanner extends Component {
 
     for (let i = 0; i < 6; i++) {
       partyMembers.push([]);
-      for (let j = 0; j < 3; j++) {
+      for (let j = 0; j < 6; j++) {
         partyMembers[i].push({ monster: {} });
       }
     }
 
-    for (let i = 0; i < Math.min(18, uids.length); i++) {
+    for (let i = 0; i < Math.min(36, uids.length); i++) {
       let uid = uids[i];
       if (uid !== null) {
         if (monsterUIDMap.hasOwnProperty(uid)) {
-          partyMembers[Math.floor(i / 3)][i % 3].monster =
+          partyMembers[Math.floor(i / 6)][i % 6].monster =
             monsterData[monsterUIDMap[uid]];
         } else {
-          partyMembers[Math.floor(i / 3)][i % 3].error =
+          partyMembers[Math.floor(i / 6)][i % 6].error =
             "Monster/trait does not exist or has changed";
           noti =
             "Your build could not be fully parsed as at least one monster trait was not found in the database.";
@@ -573,7 +637,7 @@ class SiralimPlanner extends Component {
     for (let i = 0; i < 6; i++) {
       partyMembers.push([]);
       relics.push(null);
-      for (let j = 0; j < 3; j++) {
+      for (let j = 0; j < 6; j++) {
         partyMembers[i].push({ monster: {} });
       }
     }
@@ -583,12 +647,13 @@ class SiralimPlanner extends Component {
     const params = new URLSearchParams(windowUrl);
 
     let loadString = params.get("b");
+    let loadStringNether = params.get("n");
 
     // If a load string was provided (i.e. the ?b=<etc>), then attempt to create a party from that
     // build string.
     if (loadString) {
       try {
-        const uids = this.parseLoadString(loadString);
+        const uids = this.parseLoadString(loadString, loadStringNether);
         let pm = this.populateFromUids(uids);
         if (pm.status !== "success") {
           notificationText = pm.noti;
@@ -652,6 +717,7 @@ class SiralimPlanner extends Component {
       notificationText: notificationText,
       notificationStatus: notificationStatus,
       notificationIndex: this.state.notificationIndex + 1,
+      partyId: this.state.partyId + 1,
     });
   }
 
@@ -837,7 +903,7 @@ class SiralimPlanner extends Component {
           // whose traits do not exist.
         }
       }
-      anointments.slice(0, specialization.name === "Royal" ? 15 : 5);
+      anointments.slice(0, specialization.name === "Royal" ? 20 : 5);
 
       // Get relics
       let partyMemberRelics = new Array(6).fill(null);
@@ -860,6 +926,7 @@ class SiralimPlanner extends Component {
           notificationText: notificationText,
           notificationStatus: notificationStatus,
           notificationIndex: this.state.notificationIndex + 1,
+          partyId: this.state.partyId + 1,
         },
         () => {
           this.generateSaveString();
@@ -995,6 +1062,9 @@ class SiralimPlanner extends Component {
         }
         partyMembers[i].push({ monster: randomMonster });
       }
+      for (let j = 0; j < 3; j++) {
+        partyMembers[i].push({ monster: {} });
+      }
     }
 
     // Randomise anointments (don't allow duplicates).
@@ -1024,6 +1094,7 @@ class SiralimPlanner extends Component {
         notificationText,
         notificationStatus,
         notificationIndex,
+        partyId: this.state.partyId + 1,
       },
       this.generateSaveString,
     );
@@ -1096,6 +1167,7 @@ class SiralimPlanner extends Component {
             relics={this.state.relics}
             relicsList={relicsList}
             updateRelics={this.updateRelics.bind(this)}
+            partyId={this.state.partyId}
           />
         </main>
         <AppFooter />

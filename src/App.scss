@@ -180,14 +180,68 @@ a {
   }
 }
 
+div.monster-planner-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75em 0;
+  margin-top: -0.5em;
+  h3 {
+    margin: 0;
+  }
+}
 h3.section-title {
   margin-top: 0;
   //margin-bottom: 0;
-  width: 100%;
   text-align: center;
   color: rgba(0, 0, 0, 0.7);
   text-transform: uppercase;
   font-size: 13px;
+  justify-self: center;
+  align-items: center;
+}
+
+button#toggle-nether-traits {
+  justify-self: left;
+  background: rgba(#9660d1, 0.4);
+  border-bottom: 2px solid darken(#9660d1, 5);
+  color: #222;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  padding: 0.1em 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
+  span {
+    background: darken(#9660d1, 5);
+    padding: 0.25em 0.5em;
+    color: white;
+    height: 100%;
+    display: block;
+    margin-left: 0.5em;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &.off {
+    background: rgba(#222, 0.3);
+    border-bottom: 2px solid #222;
+    filter: grayscale(1);
+  }
+  &:active {
+    border-bottom: 0px solid rgba(0, 0, 0, 0);
+    transform: translate(0px, 2px);
+    margin-bottom: 2px;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+    margin-left: -4px;
+    margin-right: -2px;
+    margin-top: -1px;
+  }
 }
 
 // #monster-planner h3.section-title {
@@ -358,8 +412,8 @@ h3.section-title {
 }
 .notification-banner {
   position: absolute;
-  right: 60px;
-  top: 48px;
+  left: 27%;
+  top: 54px;
   width: auto;
   max-width: 100%;
   padding: 7px 20px;

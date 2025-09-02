@@ -28,7 +28,8 @@ The data for the Planner is sourced from a few different places:
 
 -   The majority of the data (creatures, traits, relics etc) is sourced from the [Siralim Ultimate Compendium](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit#gid=0), a fantastic resource by EmptyPalms. I'd like to thank EmptyPalms for putting together this resource and for their permission to use the data as part of this tool.
 -   Creature stats, realm depths, and sources are sourced from Gay Moth Aunt's [Siralim Ultimate Creature and Trait Sheet](https://docs.google.com/spreadsheets/d/1RYRvKTCLLJxXrZ_7OOjG8j98L_fjE5KNHtLG4wHn9Xw/edit?gid=0#gid=0) - thank you for permission to use this and for keeping it up to date.
--   The creature sprite filenames are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api). Thank you to Rovermicrover for this fantastic resource.
+-   The perk and specialisation sprite filenames are sourced from the [Siralim Ultimate API](https://github.com/rovermicrover/siralim-ultimate-api). Thank you to Rovermicrover for this fantastic resource.
+-   The creature sprite filenames are sourced from F Wang on Discord, who provided a nice mapping between creatures and their sprite filenames.
 -   The Specialization data is sourced from Gay Moth Aunt's excellent [Character Specialization Guide](https://steamcommunity.com/sharedfiles/filedetails/?id=2190265173).
 
 The **source code** of this tool is available on [GitHub](https://github.com/berated-bert/siralim-planner). If you would like to work on it you are more than welcome to submit a pull request or fork the repository.

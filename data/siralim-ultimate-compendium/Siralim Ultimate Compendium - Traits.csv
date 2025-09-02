@@ -1,5 +1,5 @@
 Siralim Ultimate,,Version 2.0,,"Please send any corrections and screenshots of new entries to me on Discord. EmptyPalms#9402
-2.0 Creatures and Spells have been added - BeratedBert",
+2.0 Creatures and Spells have been added.",
 Class,Family,Creature,Trait Name,Trait Description,Material Name
 Death,Abomination,Abomination Brute,Flesh Rot,"After an enemy is afflicted with either Weak or Vulnerable, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Brute Stitches
 Death,Abomination,Abomination Volatile,Quell,"When this creature attacks an enemy with Vulnerable, it deals 100% more damage.  If this damage exceeds 35% of the target's Current health, the target dies.",Volatile Stitches
@@ -1135,7 +1135,7 @@ Nether Boss,Maniac,Loid,Loid's Visage,"After an enemy attacks, it loses 20% Atta
 Rodian Master,Maniac,Mastery Trait,Master of Maniacs,Your Maniacs start battles with 25% more Health and 10% less Defense for each Maniac fighting on your side. This trait does not stack.,Sigil of the Maniac
 Chaos,Manticore,Crimson Manticore,The Crimson,Enemies attack as if they have 40% less attack. This trait does not stack.,Crimson Tail
 Chaos,Manticore,Flailing Manticore,Parry,"At the start of this creature's turn, it gains defense equal to 50% of its attack.",Flailing Tail
-Chaos,Manticore,Manticore Conquerer,Whiplash,"After this creature attacks, it also deals damage to 2 other enemies equal to 40% of its attack.",Conqueror Tail
+Chaos,Manticore,Manticore Conqueror,Whiplash,"After this creature attacks, it also deals damage to 2 other enemies equal to 40% of its attack.",Conqueror Tail
 Chaos,Manticore,Manticore Decimator,Beast Within,"After your creatures gain a stat other than attack, they gain 50% of that stat as attack as well. This trait does not stack.",Decimator Tail
 Chaos,Manticore,Martyaxwar,Mouth For War,"After this creature casts a single-target spell on an enemy, it also attacks that enemy 2 times.",Martyaxwar Tail
 Chaos,Manticore,Prowling Manticore,Covert,Your creatures' Timeline placement at the start of battle is determined by their attack rather than their speed.,Prowling Tail
@@ -1471,7 +1471,7 @@ Sorcery,Shapeshifter,Sorcery Shapeshifter,Sorcery Transformation,Your creatures'
 Sorcery,Shapeshifter,Unstable Shapeshifter,Diamond Hands,This creature takes 4% less damage and deals 20% more damage for each trait it has gained in the current battle.,Unstable Plasma
 Rodian Master,Shapeshifter,Mastery Trait,Master of Shapeshifters,"Your Shapeshifters deal 20% more damage, take 5% less damage, and can equip 1 additional Spell Gem for each Shapeshifter fighting on your side. This trait does not stack.",Sigil of the Shapeshifter
 Death,Sin,Acedia Sin,Sloth,Enemies start battles with 30% less attack and intelligence. This trait does not stack.,Book of Sloth
-Death,Sin,Avarita Sin,Greed,"At the start of battle, this creature steals 15% of your other creatures' attack, intelligence, defense, and speed.",Book of Greed
+Death,Sin,Avaritia Sin,Greed,"At the start of battle, this creature steals 15% of your other creatures' attack, intelligence, defense, and speed.",Book of Greed
 Death,Sin,Dolor Sin,Despair,"After an enemy loses stats, it is afflicted with a random debuff.",Book of Pain
 Death,Sin,Gula Sin,Gluttony,"At the start of battle, 50% of this creature's attack, intelligence, and speed are converted into health.",Book of Gluttony
 Death,Sin,Invidia Sin,Envy,"At the start of battle, set this creature's attack, intelligence, defense, speed, and health, to the highest of your other creatures' respective base stats.",Book of Envy
@@ -1543,7 +1543,7 @@ Nature,Snaptrap,Sticky Snaptrap,Tumble Over,"After an enemy casts a spell, all o
 Nature,Snaptrap,Wizened Snaptrap,Follow The Leader,"After an enemy is sent to the bottom of the Timeline, all other enemies each have a 5% chance to be sent to the bottom of the Timeline as well. This trait does not stack.",Wizened Pitcher
 Rodian Master,Snaptrap,Mastery Trait,Master of Snaptraps,"If all the creatures in your party are Snaptraps, their innate traits have double the chance to activate. This trait does not stack.",Sigil of the Snaptrap
 Sorcery,Soulflayer,Soulflayer Depriver,Of One Mind,"After your creatures that belong to your most common race attack, the others have a 5% chance to attack random enemies for 10% normal damage. This trait does not stack.",Sleepless Brain
-Sorcery,Soulflayer,Soulflayer DreamCaster,Suicide Pact,"After your creatures that belong to your most common race are killed, the others are killed as well. This trait does not stack.",Dreamweaver Brain
+Sorcery,Soulflayer,Soulflayer Dreamcaster,Suicide Pact,"After your creatures that belong to your most common race are killed, the others are killed as well. This trait does not stack.",Dreamweaver Brain
 Sorcery,Soulflayer,Soulflayer Drone,Group Therapy,"After your creatures that belong to your most common race heal a creature, the others heal that same creature as well. This trait does not stack.",Drone Brain
 Sorcery,Soulflayer,Soulflayer Overlord,Mass Resurrection,"After your creatures that belong to your most common race are resurrected, the others have a 30% chance to be resurrected with 50% health as well. This trait does not stack.",Queen Brain
 Sorcery,Soulflayer,Soulflayer Peacemaker,Hubbub,"After your creatures that belong to your most common race provoke, the others provoke. This trait does not stack.",Peacemaker Brain

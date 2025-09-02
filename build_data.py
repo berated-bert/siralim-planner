@@ -19,6 +19,8 @@ SUAPI_PERK_DATA_FILENAME = os.path.join(
     "data", "siralim-ultimate-api", "perks.csv"
 )
 
+F_WANG_CREATURES_FILENAME = "data/f-wang-creatures/creatures.csv"
+
 GMA_CREATURES_FILENAME = (
     "data/gma-sheet/Siralim Ultimate Creature and Trait Sheet - Creatures.csv"
 )
@@ -51,7 +53,7 @@ GMA_FIXES = {
     "Impedence": "Impedance",
     "Shrug Off": "Purge",
     "Transformation Apprenticeship": "Rapid Learning",
-    "Testu-Oyakodon": "Tetsu-Oyakodon",
+    "Tetsu-Oyakodon": "Testu-Oyakodon",
 }
 
 
@@ -263,10 +265,21 @@ def load_gma_creatures_data(filename: str):
     return gma_creatures_data
 
 
+def load_f_wang_creatures_data(filename: str):
+    """Load F Wang's sheet, which maps creature to sprite_filename."""
+    f_wang_data = {}
+    with open(filename, "r", encoding="utf-8") as f:
+        csv_reader = csv.DictReader(f)
+        for row in csv_reader:
+            f_wang_data[row["name"]] = (
+                "spr_crits_battle_" + row["sprite_id"] + ".png"
+            )
+    return f_wang_data
+
+
 def add_sprites_and_stats(json_data: list):
     """Add the sprite_filenames and stats to each object in the JSON data.
-    The sprite filenames and stats are sourced from the Siralim Ultimate API:
-    https://github.com/rovermicrover/siralim-ultimate-api
+    The sprite filenames and stats are sourced from F Wang's spreadsheet.
 
     Args:
         json_data (list): A list of JSON rows, where each row corresponds to a
@@ -275,8 +288,9 @@ def add_sprites_and_stats(json_data: list):
     Returns:
         list: The updated JSON data now with sprites and stats.
     """
-    suapi_data = load_suapi_data(SUAPI_DATA_FILENAME)
+    # suapi_data = load_suapi_data(SUAPI_DATA_FILENAME)
     gma_creatures_data = load_gma_creatures_data(GMA_CREATURES_FILENAME)
+    f_wang_data = load_f_wang_creatures_data(F_WANG_CREATURES_FILENAME)
 
     with open("test.json", "w") as f:
         json.dump(gma_creatures_data, f, indent=2)
@@ -288,15 +302,13 @@ def add_sprites_and_stats(json_data: list):
             for k, v in gma_creatures_data[t].items():
                 obj[k] = v
 
-    # Add creature sprite filenames from SUAPI
+    # Add creature sprite filenames from F Wang's spreadsheet
     for obj in json_data:
-        t = obj["trait_name"].lower()
-        if t in suapi_data:
-            obj["sprite_filename"] = suapi_data[t]["sprite_filename"]
-            # for k, v in suapi_data[t].items():
-            #     obj[k] = v
+        t = obj["creature"].lower()
+        if t in f_wang_data:
+            obj["sprite_filename"] = f_wang_data[t]
 
-    validate_traits(json_data, gma_creatures_data, suapi_data)
+    validate_traits(json_data, gma_creatures_data, f_wang_data)
 
     return json_data
 
@@ -342,18 +354,18 @@ def is_creature_class(c: str):
 
 
 def validate_traits(
-    json_data: list, gma_creatures_data: dict, suapi_data: dict
+    json_data: list, gma_creatures_data: dict, f_wang_data: dict
 ):
     """For each trait in the json_data, check whether it exists in the GMA
-    and SUAPI data.
-    If in the SUAPI data (which is only used for sprite filenames),
+    and F Wang's data.
+    If in F Wang's data (which is only used for sprite filenames),
     check whether the sprite actually exists.
 
     Args:
         json_data (list): A list of JSON rows, where each row corresponds to a
           monster/trait.
-        suapi_data (dict): A dict mapping each trait to a list of stats for
-          that creature, as well as the sprite filename of that creature.
+        f_wang_data (dict): A dict mapping each creature the sprite
+          filename of that creature.
     """
     n_missing_stats = 0
     n_missing_sprites = 0
@@ -361,6 +373,7 @@ def validate_traits(
         creature = obj["creature"]
         t = obj["trait_name"].lower()
         c = obj["class"]
+        creature = obj["creature"]
 
         if not is_creature_class(c):
             continue
@@ -371,22 +384,24 @@ def validate_traits(
                 "appear in the GMA data."
             )
             n_missing_stats += 1
+            logger.error("Cannot proceed, or the planner will crash.")
+            exit(1)
             continue
 
-        if t not in suapi_data:
-            logger.debug(
+        if creature not in f_wang_data:
+            logger.warning(
                 f"[{creature} ({obj['trait_name']})] does not "
-                "appear in the SUAPI data, i.e. it will have no "
+                "appear in F Wang's data, i.e. it will have no "
                 "sprite on the planner."
             )
             n_missing_sprites += 1
             json_data[i]["sprite_filename"] = "MISSING.png"
             continue
 
-        sf = suapi_data[t]["sprite_filename"]
-        sprite_path = get_sprite_path(sf, obj["creature"])
+        sf = f_wang_data[creature]
+        sprite_path = get_sprite_path(sf)
         if not sprite_path:
-            logger.debug(f"[{creature}] sprite ({sf}) is not present.")
+            logger.warning(f"[{creature}] sprite ({sf}) is not present.")
             json_data[i]["sprite_filename"] = "MISSING.png"
             n_missing_sprites += 1
         else:
@@ -407,10 +422,10 @@ def validate_traits(
     print()
 
 
-def get_sprite_path(sprite_filename: str, creature_name: str):
+def get_sprite_path(sprite_filename: str):
     """Return the sprite_filename.
     First check whether it exists under
-    /public/suapi_battle_sprites.
+    /public/battle-sprites.
     If not, check under the forum_avatars.
     If not found, return False.
 
@@ -422,9 +437,9 @@ def get_sprite_path(sprite_filename: str, creature_name: str):
         return name.replace("'", "")
 
     if os.path.isfile(
-        os.path.join("public", "suapi-battle-sprites", sprite_filename)
+        os.path.join("public", "battle-sprites", sprite_filename)
     ):
-        return f"suapi-battle-sprites/{sprite_filename}"
+        return f"battle-sprites/{sprite_filename}"
     return False
 
 

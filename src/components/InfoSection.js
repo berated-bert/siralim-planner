@@ -35,8 +35,8 @@ class InfoSection extends PureComponent {
       <section>
         <div className="note">
           <FontAwesomeIcon icon={faInfoCircle} />
-          Note regarding Version 2.0: New creatures/traits have been added, but
-          they are missing sprites. Specializations and annointments have been
+          Note regarding Version 2.0: New creatures/traits have been added, and
+          should now be up to date. Specializations and annointments have been
           added, but have missing icons for now.
         </div>
         <ReactMarkdown safe={true}>{this.state.markdown}</ReactMarkdown>

@@ -1,10 +1,18 @@
 ## Changelog
 
+### v1.3.0 (2 September 2025)
+
+-   Added the option to include Nether Stone Traits in your build. You can now click the "Show Nether Stone Traits" button at the top to bring up an extra trait slot on each creature in your party, allowing you to add trait(s) that your creatures are receiving from Nether Stones. You can add up to 3 traits per creature (new slots appear as you add traits), which helps support the planning of endgame builds.
+-   Note: the Upload Party button _should_ correctly import traits on Nether Stones, but if you come across any issues importing builds please let me know.
+-   Note also that turning "Show Nether Stone Traits" off does not actually remove them from your build, it just toggles their visibility. This means that if you share your build without deleting any Nether Stone Traits then those traits will be seen by whomever loads your build into the planner via the URL (regardless of whether "Show Nether Stone Traits" is toggled on or off).
+-   Added all creature sprites to the planner. Big thanks to F Wang on Discord for providing a mapping between the creature names and their sprites, which made this possible.
+-   Fixed small bug where the planner deemed it legal to have a Zantai Material as a primary/fused trait.
+
 ### v1.2.6 (1 September 2025)
 
--   Updated the Siralim Ultimate Compendium ([link](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0)) and synchronised it with data from other sources (mostly Gay Moth Aunt's spreadsheet ([link](https://docs.google.com/spreadsheets/d/1RYRvKTCLLJxXrZ_7OOjG8j98L_fjE5KNHtLG4wHn9Xw/edit?gid=859009965#gid=859009965)).
--   Updated the planner with this new data source, which should hopefully now be free of errors and missing traits. If you spot anything that is not consistent with the game please let me know.
--   Please note that some trait names may have changed slightly, so builds shared prior to this update may have missing traits (you'll just need to search them up again to re-add them).
+-   Updated the Siralim Ultimate Compendium ([link](https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0)) with help from data from KageNoOni's spreadsheet. There are now 1,816 traits in the Compendium which I believe is the correct number.
+-   Updated the planner with this new data source, which should hopefully now be free of errors and should not be missing any traits. If you spot anything that is not consistent with the game please let me know.
+-   Please note that some trait names may have changed slightly, so builds shared prior to this update may have missing traits when importing (you'll just need to search them up again to re-add them).
 
 ### v1.2.5 (31 August 2025)
 

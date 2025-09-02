@@ -9,6 +9,14 @@
   @media (max-width: 1280px) {
     padding: 15px 20px;
   }
+  // &.showing-nether-traits {
+  //   font-size: 11px;
+  //   .trait-slot {
+  //     .trait-slot-clickable {
+  //       min-height: 32px;
+  //     }
+  //   }
+  // }
 }
 
 .__react_component_tooltip {
@@ -18,6 +26,15 @@
 
   .inner {
     display: flex;
+    &.no-border {
+      padding-right: 10px;
+      padding-bottom: 6px;
+      > div:nth-child(1) {
+        &:after {
+          border-right: none;
+        }
+      }
+    }
     > div:nth-child(1) {
       margin-right: 6px;
       display: flex;
@@ -63,7 +80,7 @@
 }
 /*
   .monster-planner-party-member
-    .party-member-profile      
+    .party-member-profile
       .creature-sprite-container
       .party-member-stats
       .party-member-class (underneath)
@@ -357,9 +374,31 @@
   flex-direction: row;
   width: 100%;
   justify-content: stretch;
-  align-items: stretch;
-  min-height: 42px;
+  align-items: center;
+  &.hidden {
+    display: none;
+  }
+
   //margin: 4px 0;
+  //
+  // &:nth-child(n + 4) {
+  //   position: relative;
+
+  //   // margin-top: 2em;
+  //   // &:before {
+  //   //   content: "Nether Traits";
+  //   //   width: 100%;
+  //   //   padding: 0.5em 1em;
+  //   //   text-align: center;
+  //   //   display: block;
+  //   //   box-sizing: border-box;
+  //   //   background: #333;
+  //   //   color: white;
+  //   //   text-transform: italics;
+  //   //   position: absolute;
+  //   //   margin-top: -2em;
+  //   // }
+  // }
 }
 
 .trait-slot-error {
@@ -380,7 +419,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 8px;
+    padding: 12px 8px;
     text-align: center;
     color: rgba(0, 0, 0, 0.3);
     line-height: 18px;
@@ -394,8 +433,62 @@
 .trait-slot:not(:last-child) {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.15);
 }
-.trait-slot:nth-child(even) {
-  //background: rgba(255, 255, 255, 0.1);
+// .party-member-traits {
+//   .trait-slot:nth-child(even) {
+//     background: rgba(0, 0, 0, 0.03);
+//   }
+// }
+
+.party-member-traits.cls-empty {
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: rgba(#111, 0.08);
+  }
+}
+
+.party-member-traits.cls-death {
+  .trait-slot-type {
+    background: rgba($color-death, 0.32);
+    //border: 1px solid rgba($color-death, 0.1);
+  }
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: rgba($color-death, 0.37);
+  }
+}
+.party-member-traits.cls-life {
+  .trait-slot-type {
+    background: darken(rgba($color-life, 0.42), 5);
+    //border: 1px solid rgba($color-death, 0.1);
+  }
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: darken(rgba($color-life, 0.47), 5);
+  }
+}
+.party-member-traits.cls-sorcery {
+  .trait-slot-type {
+    background: rgba($color-sorcery, 0.32);
+    //border: 1px solid rgba($color-death, 0.1);
+  }
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: rgba($color-sorcery, 0.37);
+  }
+}
+.party-member-traits.cls-chaos {
+  .trait-slot-type {
+    background: rgba($color-chaos, 0.32);
+    //border: 1px solid rgba($color-death, 0.1);
+  }
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: rgba($color-chaos, 0.37);
+  }
+}
+.party-member-traits.cls-nature {
+  .trait-slot-type {
+    background: rgba($color-nature, 0.32);
+    //border: 1px solid rgba($color-death, 0.1);
+  }
+  .trait-slot:nth-child(even) .trait-slot-type {
+    background: rgba($color-nature, 0.37);
+  }
 }
 
 .trait-slot-clickable {
@@ -404,9 +497,9 @@
   flex-direction: row;
   align-items: center;
   width: 100%;
+  min-height: 42px;
   //background: rgba(255, 255, 255, 0.4);
 
-  padding: 7px 2px;
   transition: background 0.2s ease;
   //border-radius: 3px;
   color: #111;
@@ -414,11 +507,26 @@
   .empty-row {
     text-align: center;
     opacity: 0.7;
+    flex-grow: 1;
     width: 100%;
   }
+  // &.empty-nether-slot {
+  //   padding: 0;
+  //   min-height: 10px;
+  // }
 
-  > * {
-    padding: 0 4px;
+  .trait-slot-type {
+    background: #ddd;
+    width: 32px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-grow: 1;
+    align-self: stretch;
+    padding: 2px;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   // &:hover:before {
@@ -460,6 +568,19 @@
       display: flex;
       padding-left: 33px;
     }
+    .artifact-tag {
+      display: flex;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.045);
+      padding: 6px 8px;
+      border-radius: 4px;
+      &:hover {
+        background: rgba(0, 0, 0, 0.09);
+      }
+      span.cls-icon {
+        margin-right: 8px;
+      }
+    }
     .creature-tag {
       display: flex;
       align-items: center;
@@ -478,10 +599,10 @@
     }
   }
   .trait-slot-trait_name {
-    width: 15%;
+    width: 12%;
   }
   .trait-slot-trait_description {
-    width: 72%;
+    width: 75%;
   }
 
   &.just-updated {
