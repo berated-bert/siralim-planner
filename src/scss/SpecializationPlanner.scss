@@ -41,6 +41,9 @@ $cols: (
   "MI": #c8c8b3,
   "DP": lighten(#20000b, 10),
   "PH": #2f5cd5,
+  "MD": #96e4fe,
+  "MM": #ef90d2,
+  "AQ": #c69870,
 );
 
 @each $abrv, $col in $cols {

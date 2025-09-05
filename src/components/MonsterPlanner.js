@@ -734,7 +734,6 @@ class MonsterPlannerPartyMember extends PureComponent {
    * @return {ReactComponent} A div representing this party member.
    */
   render() {
-    console.log(this.props.partyMember);
     return (
       <div
         className={
@@ -1190,14 +1189,9 @@ class MonsterPlanner extends Component {
    * When the props change, check if the party members have been loaded
    * (either via build string or by uploading party). If they have,
    * check whether the nether traits should be shown by default.
-   *
-   * @param  {[type]} prevProps [description]
-   * @param  {[type]} prevState [description]
-   * @return {[type]}           [description]
    */
   componentDidUpdate(prevProps, prevState) {
     if (this.props.partyId === this.state.partyId) return;
-    console.log(this.props.partyId, this.state.partyId);
 
     let hasNetherTraits = false;
     const partyMembers = this.props.partyMembers;
@@ -1209,14 +1203,12 @@ class MonsterPlanner extends Component {
         i++;
         // Skip non-nether stone traits, i.e. 0, 1, 2
         if (i <= 2) continue;
-        console.log(m.monster);
         if (!_.isEmpty(m.monster)) {
           hasNetherTraits = true;
           break;
         }
       }
     }
-    console.log(hasNetherTraits);
     this.setState({
       showNetherTraits: hasNetherTraits,
       partyId: this.props.partyId,

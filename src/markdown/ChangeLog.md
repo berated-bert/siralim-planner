@@ -1,5 +1,10 @@
 ## Changelog
 
+### v.1.3.1 (5 September 2025)
+
+-   Sorted specializations alphabetically (both in the dropdown list and in the Anointments selector). Thanks to Axar on the Discord channel for this suggestion.
+-   Added icons for the three new specialisations. I'll add perk icons once I can find a mapping between the perk names and the sprites.
+
 ### v1.3.0 (2 September 2025)
 
 -   Added the option to include Nether Stone Traits in your build. You can now click the "Show Nether Stone Traits" button at the top to bring up an extra trait slot on each creature in your party, allowing you to add trait(s) that your creatures are receiving from Nether Stones. You can add up to 3 traits per creature (new slots appear as you add traits), which helps support the planning of endgame builds.

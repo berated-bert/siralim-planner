@@ -373,6 +373,13 @@ class SpecializationPlannerAnointment extends PureComponent {
   }
 }
 
+function sortSpecializations(a, b) {
+  // Compare the 2 dates
+  if (a.name < b.name) return -1;
+  if (a.name > b.name) return 1;
+  return 0;
+}
+
 /**
  * The specialization planner, which appears as a box on the left hand side of the page.
  * Allows the user to select their specialization and anointments.
@@ -411,6 +418,9 @@ class SpecializationPlanner extends PureComponent {
       s["value"] = s.abbreviation;
       s["label"] = s.name;
     }
+
+    // Sort alphabetically
+    specializations.sort(sortSpecializations);
 
     this.setState({
       specializations: specializations,
@@ -497,7 +507,11 @@ class SpecializationPlanner extends PureComponent {
           anointments={this.props.anointments}
           specializations={this.state.specializations}
           specOptions={specOptions}
-          currentSpecialization={this.props.currentSpecialization}
+          currentSpecialization={
+            this.props.currentSpecialization
+              ? this.props.currentSpecialization
+              : this.state.specializations[0]
+          }
           maxAnointments={this.props.maxAnointments}
           atMaxAnointments={
             this.props.maxAnointments === this.props.anointments.length
