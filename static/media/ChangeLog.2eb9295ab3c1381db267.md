@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.3.3 (5 September 2025)
+
+-   Added search page for perks (thanks to F Wang for this idea). You can access this via the "Anointments" button.
+
 ### v1.3.2 (5 September 2025)
 
 -   Added perk icons from the new specialisations (thank you to Adex and Leqesai on Discord for providing screenshots which helped me track the icons down).
