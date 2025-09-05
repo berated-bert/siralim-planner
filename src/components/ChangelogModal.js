@@ -25,12 +25,12 @@ class ChangelogModal extends PureComponent {
           </button>
         </div>
         <div className="info-modal">
-          <div className="note">
+          {/*          <div className="note">
             <FontAwesomeIcon icon={faInfoCircle} />
             Note regarding Version 2.0: New creatures/traits have been added,
             and should now be up to date. Specializations and annointments have
             been added, but have missing icons for now.
-          </div>
+          </div>*/}
           <ChangeLog />
         </div>
       </Modal>
