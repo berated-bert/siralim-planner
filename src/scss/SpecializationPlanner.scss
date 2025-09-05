@@ -350,15 +350,13 @@ span.option-icon {
       padding: 4px 20px;
       cursor: pointer;
 
-      &:nth-child(2) {
-        margin-top: 8px;
-      }
       &.specialziation-search-button {
         padding: 12px 20px;
         margin-top: 6px;
         text-align: center;
         font-size: 1.1em;
         color: #111;
+        margin-bottom: 8px;
       }
       &.current {
         color: #222;
