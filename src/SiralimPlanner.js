@@ -962,7 +962,7 @@ class SiralimPlanner extends Component {
         this.state.currentSpecialization &&
         this.state.currentSpecialization.name === "Royal"
       ) {
-        limit = 15;
+        limit = 20;
       }
       if (anointments.length < limit) {
         anointments.push(anointment);

@@ -497,13 +497,37 @@ def load_specializations_data(specs_filename, perks_filename):
             )
             del json_obj["specialization"]
             name = json_obj["name"].split(" (ASCENSION)")[0]
+
+            # Add icons from 2.0 automatically based on their perk name
+            # (as they are not in SUAPI)
+            if f"{spec}_{name}" not in perk_icons:
+                sp = (
+                    name.lower()
+                    .replace(" ", "")
+                    .replace("'", "")
+                    .replace("(ASCENSION)", "")
+                )
+                if "impenetrableshell" in sp:
+                    sp = sp.replace("impenetrableshell", "impnetrableshell")
+                if "killemwithkindness" in sp:
+                    sp = sp.replace("killem", "killthem")
+                if "confidentfacade" in sp:
+                    sp = sp.replace("confident", "confidence")
+                if "tastefortreasure" in sp:
+                    sp = sp.replace(
+                        "tastefortreasure", "timeflieswhenyourehavingfun"
+                    )
+                perk_icon_path = f"perk_{sp}.png"
+                if os.path.exists(
+                    os.path.join(PERK_ICONS_FOLDER, perk_icon_path)
+                ):
+                    perk_icons[f"{spec}_{name}"] = perk_icon_path
+
             try:
                 icon = perk_icons[f"{spec}_{name}"]
             except KeyError:
                 icon = MISSING_ICON_FILENAME
-                logger.warning(
-                    f"Missing perk icon in SUAPI data for perk '{name}'"
-                )
+                logger.warning(f"Missing perk icon for perk '{name}'")
 
             json_obj["icon"] = icon
             specializations[specialization_ids[spec]]["perks"].append(json_obj)
@@ -633,7 +657,9 @@ def build_perk_icon_image(specializations_data):
             icon = perk["icon"]
             icon_filename = os.path.join(PERK_ICONS_FOLDER, icon)
             if not os.path.isfile(icon_filename):
-                logger.warning(f"Missing perk icon for {perk['name']}")
+                # logger.warning(
+                #     f"Icon filename {icon_filename} for {perk['name']} does not exist"
+                # )
                 icon_filename = os.path.join(
                     PERK_ICON_OUTPUT_FOLDER, MISSING_ICON_FILENAME
                 )

@@ -9488,7 +9488,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQA",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_abandonedaltar.png",
     "icon_coords": [
      0,
      640
@@ -9503,7 +9503,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQB",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_ancientsynchronicity.png",
     "icon_coords": [
      16,
      640
@@ -9518,7 +9518,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQC",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_archaicwarspear.png",
     "icon_coords": [
      32,
      640
@@ -9533,7 +9533,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQD",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_bygoneenhancement.png",
     "icon_coords": [
      48,
      640
@@ -9548,7 +9548,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQE",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_corruptedwarhammer.png",
     "icon_coords": [
      64,
      640
@@ -9563,7 +9563,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQF",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_derelictblockade.png",
     "icon_coords": [
      80,
      640
@@ -9578,7 +9578,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQG",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_epigraphy.png",
     "icon_coords": [
      96,
      640
@@ -9593,7 +9593,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQH",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_forgottenblessing.png",
     "icon_coords": [
      112,
      640
@@ -9608,7 +9608,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQI",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_forsakenwonder.png",
     "icon_coords": [
      128,
      640
@@ -9623,7 +9623,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQJ",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_fossilizedshield.png",
     "icon_coords": [
      144,
      640
@@ -9638,7 +9638,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQK",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_idolatry.png",
     "icon_coords": [
      160,
      640
@@ -9653,7 +9653,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQL",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_lastoftheancients.png",
     "icon_coords": [
      176,
      640
@@ -9668,7 +9668,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQM",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_primevalspellblade.png",
     "icon_coords": [
      192,
      640
@@ -9683,7 +9683,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQN",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_primordialcurse.png",
     "icon_coords": [
      208,
      640
@@ -9698,7 +9698,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQO",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_timewornattunement.png",
     "icon_coords": [
      224,
      640
@@ -9713,7 +9713,7 @@
     "spec": "Antiquarian",
     "spec_abbrev": "AQ",
     "uid": "AQP",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_divinedualwield.png",
     "icon_coords": [
      240,
      640
@@ -9735,7 +9735,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDA",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_bountifulseas.png",
     "icon_coords": [
      0,
      656
@@ -9750,7 +9750,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDB",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_happyasaclam.png",
     "icon_coords": [
      16,
      656
@@ -9765,7 +9765,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDC",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_hightide.png",
     "icon_coords": [
      32,
      656
@@ -9780,7 +9780,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDD",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_humsofencouragement.png",
     "icon_coords": [
      48,
      656
@@ -9795,7 +9795,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDE",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_impnetrableshell.png",
     "icon_coords": [
      64,
      656
@@ -9810,7 +9810,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDF",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_killthemwithkindness.png",
     "icon_coords": [
      80,
      656
@@ -9825,7 +9825,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDG",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_lowtide.png",
     "icon_coords": [
      96,
      656
@@ -9840,7 +9840,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDH",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_mermaidsembrace.png",
     "icon_coords": [
      112,
      656
@@ -9855,7 +9855,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDI",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_pearlkeeper.png",
     "icon_coords": [
      128,
      656
@@ -9870,7 +9870,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDJ",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_refractiveshell.png",
     "icon_coords": [
      144,
      656
@@ -9885,7 +9885,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDK",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_risingtideraisesallboats.png",
     "icon_coords": [
      160,
      656
@@ -9900,7 +9900,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDL",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_slamshut.png",
     "icon_coords": [
      176,
      656
@@ -9915,7 +9915,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDM",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_sohappyicoulddie.png",
     "icon_coords": [
      192,
      656
@@ -9930,7 +9930,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDN",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_timeflieswhenyourehavingfun.png",
     "icon_coords": [
      208,
      656
@@ -9945,7 +9945,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDO",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_welcomegift.png",
     "icon_coords": [
      224,
      656
@@ -9960,7 +9960,7 @@
     "spec": "Mermaid",
     "spec_abbrev": "MD",
     "uid": "MDP",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_jubilation.png",
     "icon_coords": [
      240,
      656
@@ -9982,7 +9982,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMA",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_anagnorisis.png",
     "icon_coords": [
      0,
      672
@@ -9997,7 +9997,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMB",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_beyondtheveil.png",
     "icon_coords": [
      16,
      672
@@ -10012,7 +10012,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMC",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_confidencefacade.png",
     "icon_coords": [
      32,
      672
@@ -10027,7 +10027,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMD",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_displacement.png",
     "icon_coords": [
      48,
      672
@@ -10042,7 +10042,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MME",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_dreameater.png",
     "icon_coords": [
      64,
      672
@@ -10057,7 +10057,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMF",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_escamotage.png",
     "icon_coords": [
      80,
      672
@@ -10072,7 +10072,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMG",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_fractionation.png",
     "icon_coords": [
      96,
      672
@@ -10087,7 +10087,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMH",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_gestaltintelligence.png",
     "icon_coords": [
      112,
      672
@@ -10102,7 +10102,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMI",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_oneirophrenia.png",
     "icon_coords": [
      128,
      672
@@ -10117,7 +10117,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMJ",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_psychometry.png",
     "icon_coords": [
      144,
      672
@@ -10132,7 +10132,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMK",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_pusillanimity.png",
     "icon_coords": [
      160,
      672
@@ -10147,7 +10147,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MML",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_scapegoat.png",
     "icon_coords": [
      176,
      672
@@ -10162,7 +10162,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMM",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_sensorydeprivation.png",
     "icon_coords": [
      192,
      672
@@ -10177,7 +10177,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMN",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_superstition.png",
     "icon_coords": [
      208,
      672
@@ -10192,7 +10192,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMO",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_traumatism.png",
     "icon_coords": [
      224,
      672
@@ -10207,7 +10207,7 @@
     "spec": "Mesmerist",
     "spec_abbrev": "MM",
     "uid": "MMP",
-    "icon": "MISSING_ICON.png",
+    "icon": "perk_alveary.png",
     "icon_coords": [
      240,
      672
