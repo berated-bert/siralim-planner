@@ -8093,7 +8093,7 @@
     "ranks": "1",
     "cost_per_rank": "100",
     "anointment": "Yes",
-    "description": "After start-of-battle effects are determined, your creatures' Booze spells gain the \u00e2\u20ac\u02dcChance to Attack', \u00e2\u20ac\u02dcChance to Defend', and \u00e2\u20ac\u02dcChance to Provoke' properties.",
+    "description": "After start-of-battle effects are determined, your creatures' Booze spells gain the 'Chance to Attack', 'Chance to Defend', and 'Chance to Provoke' properties.",
     "spec": "Brewmaster",
     "spec_abbrev": "BR",
     "uid": "BRA",

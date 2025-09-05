@@ -523,7 +523,7 @@ Engineer,Primed and Ready,1,100,Yes,"At the start of battle, enemies are afflict
 Engineer,Prototype,1,100,Yes,The potency of enemies' Bomb debuffs that are applied after start-of-battle effects is based on your creatures' highest stats (other than Health) instead of Speed.
 Engineer,Renewable Armaments,1,100,Yes,"After an enemy's Bomb detonates, it has a 35% chance to be afflicted with Bomb again."
 Engineer,Chain Reaction (ASCENSION),1,1,No,"After an enemy takes damage from Bomb, all other enemies take this damage as well."
-Brewmaster,Autograt,1,100,Yes,"After start-of-battle effects are determined, your creatures' Booze spells gain the ‘Chance to Attack', ‘Chance to Defend', and ‘Chance to Provoke' properties."
+Brewmaster,Autograt,1,100,Yes,"After start-of-battle effects are determined, your creatures' Booze spells gain the 'Chance to Attack', 'Chance to Defend', and 'Chance to Provoke' properties."
 Brewmaster,Brewmaster's Handshake,1,100,Yes,Your creatures can cast Booze spells manually.
 Brewmaster,Chaser,1,100,Yes,"After your creatures manually cast a Booze spell, they have a 50% chance to Cast a random spell. Otherwise, they Attack a random enemy."
 Brewmaster,Double Entendre,1,100,Yes,Your creatures' Booze spells also have a chance to be Cast at the start of the equipped creatures' turns.

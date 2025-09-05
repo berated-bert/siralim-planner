@@ -10,6 +10,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 import { faBolt } from "@fortawesome/free-solid-svg-icons";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const specializationsList = require("../data/specializations");
 
@@ -115,7 +116,12 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
     super(props);
     this.state = {
       currentSpecialization: null,
+      onPerkSearchPage: true,
+      searchResults: null,
+      currentSearchTerm: "",
+      appliedSearchTerm: "",
     };
+    this.searchTimeout = null;
   }
 
   /**
@@ -154,7 +160,77 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
     }
     this.setState({
       currentSpecialization: currentSpecialization,
+      onPerkSearchPage: false,
     });
+  }
+
+  openPerkSearch() {
+    this.setState({ onPerkSearchPage: true });
+  }
+
+  /**
+   * A function that sets the currentSearchTerm to the value the user has typed in the search box.
+   * 0.5s after the user has stopped typing, apply the search term.
+   * @param  {Event} e The event that sparked the search change.
+   */
+  handleSearchChange(e) {
+    window.clearTimeout(this.searchTimeout);
+    this.setState(
+      {
+        currentSearchTerm: e.target.value,
+      },
+      () => {
+        this.searchTimeout = window.setTimeout(
+          () => this.applySearchTerm(),
+          500,
+        );
+      },
+    );
+  }
+
+  /**
+   * Apply the search term and filter the results accordingly.
+   */
+  applySearchTerm() {
+    this.setState(
+      {
+        appliedSearchTerm: this.state.currentSearchTerm,
+      },
+      () => this.filterResults(),
+    );
+  }
+
+  filterResults() {
+    let allSearchTerms = this.state.appliedSearchTerm.split(/\s+AND\s+/);
+    let filteredItems = [];
+    const items = this.props.specializations;
+
+    for (let item of items) {
+      let specPerks = [];
+      for (let perk of item.perks) {
+        const searchText = perk.name + " " + perk.description;
+        let matchesAllSearchTerms = true;
+        for (let searchTerm of allSearchTerms) {
+          if (
+            searchText.toLowerCase().indexOf(searchTerm.toLowerCase()) === -1
+          ) {
+            matchesAllSearchTerms = false;
+          }
+        }
+        if (matchesAllSearchTerms) {
+          specPerks.push(perk);
+        }
+      }
+
+      if (specPerks.length > 0) {
+        let clonedItem = { ...item };
+
+        clonedItem.perks = specPerks;
+        filteredItems.push(clonedItem);
+      }
+    }
+
+    return this.setState({ searchResults: filteredItems });
   }
 
   /**
@@ -198,12 +274,24 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
 
         <div className="info-modal specialization-selection">
           <nav className="specialization-selection-nav">
+            <div
+              className={
+                "specialization-option specialziation-search-button" +
+                (this.state.onPerkSearchPage ? " current" : "")
+              }
+              onClick={() => this.openPerkSearch()}
+            >
+              <FontAwesomeIcon icon={faSearch} />
+              &nbsp;&nbsp;Search Perks
+            </div>
+
             {this.props.specializations.map((s, i) => (
               <div
                 key={i}
                 className={
                   "specialization-option " +
-                  (_.isEqual(this.state.currentSpecialization, s)
+                  (_.isEqual(this.state.currentSpecialization, s) &&
+                  !this.state.onPerkSearchPage
                     ? "current"
                     : "") +
                   (anointmentsInSpecialization[s.abbreviation] > 0
@@ -229,67 +317,151 @@ class SpecializationPlannerAnointmentsModal extends PureComponent {
             ))}
           </nav>
           <div className="specialization-selection-list">
-            <h2>
-              {this.state.currentSpecialization &&
-                this.state.currentSpecialization.name}{" "}
-              Perks
-            </h2>
-            <table
-              id="perks-table"
-              className={this.props.atMaxAnointments ? "max-anoints" : ""}
-            >
-              <thead>
-                <tr>
-                  <th></th>
-                  <th>Perk Name</th>
-                  <th>Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                {this.state.currentSpecialization &&
-                  this.state.currentSpecialization.perks.map((perk, i) => (
-                    <tr
-                      key={i}
-                      onClick={() => this.props.toggleAnointment(perk)}
-                      className={
-                        (anointmentNames.has(perk.name) ? "active" : "") +
-                        (perk.anointment === "Yes" ? "" : "no-anoint")
-                      }
-                      title={
-                        perk.anointment === "No"
-                          ? "This perk cannot be selected as an anointment."
-                          : undefined
-                      }
-                    >
-                      <td>
-                        {anointmentNames.has(perk.name) && (
-                          <span className="green-tick">
-                            <FontAwesomeIcon icon={faCheck} />
-                          </span>
-                        )}
-                      </td>
-                      <td>
-                        <span className="perk-flex">
-                          <PerkIcon perk={perk} />
-                          {perk.name}
-                        </span>
-                      </td>
-                      <td>{perk.description}</td>
+            {this.state.onPerkSearchPage && (
+              <>
+                <h2>Search Perks</h2>
+                <input
+                  id="perk-search"
+                  className="perk-search"
+                  autoFocus
+                  type="text"
+                  placeholder="Search perks...                 (type 'AND' between terms to search for multiple things e.g. 'defend AND provoke')"
+                  onChange={(e) => this.handleSearchChange(e)}
+                  value={this.state.currentSearchTerm}
+                />
+
+                {this.state.appliedSearchTerm && (
+                  <>
+                    {this.state.searchResults &&
+                    this.state.searchResults.length > 0 ? (
+                      this.state.searchResults.map((spec, j) => (
+                        <>
+                          <h3 className="search-results-spec-name">
+                            {spec.name}
+                          </h3>
+                          <table
+                            className={
+                              "perks-table " +
+                              (this.props.atMaxAnointments ? "max-anoints" : "")
+                            }
+                          >
+                            <tbody>
+                              {spec.perks.map((perk, i) => (
+                                <tr
+                                  key={i}
+                                  onClick={() =>
+                                    this.props.toggleAnointment(perk)
+                                  }
+                                  className={
+                                    (anointmentNames.has(perk.name)
+                                      ? "active"
+                                      : "") +
+                                    (perk.anointment === "Yes"
+                                      ? ""
+                                      : "no-anoint")
+                                  }
+                                  title={
+                                    perk.anointment === "No"
+                                      ? "This perk cannot be selected as an anointment."
+                                      : undefined
+                                  }
+                                >
+                                  <td>
+                                    {anointmentNames.has(perk.name) && (
+                                      <span className="green-tick">
+                                        <FontAwesomeIcon icon={faCheck} />
+                                      </span>
+                                    )}
+                                  </td>
+                                  <td>
+                                    <span className="perk-flex">
+                                      <PerkIcon perk={perk} />
+                                      {perk.name}
+                                    </span>
+                                  </td>
+                                  <td>{perk.description}</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </>
+                      ))
+                    ) : (
+                      <div className="search-no-results">No results.</div>
+                    )}
+                  </>
+                )}
+              </>
+            )}
+
+            {!this.state.onPerkSearchPage && (
+              <>
+                <h2>
+                  {this.state.currentSpecialization &&
+                    this.state.currentSpecialization.name}{" "}
+                  Perks
+                </h2>
+                <table
+                  id="perks-table"
+                  className={
+                    "perks-table " +
+                    (this.props.atMaxAnointments ? "max-anoints" : "")
+                  }
+                >
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Perk Name</th>
+                      <th>Description</th>
                     </tr>
-                  ))}
-              </tbody>
-            </table>
-            <section className="flavour-text">
-              <h4>
-                About the{" "}
-                {this.state.currentSpecialization &&
-                  this.state.currentSpecialization.name}
-              </h4>
-              {this.state.currentSpecialization &&
-                this.state.currentSpecialization.description
-                  .split("\\n")
-                  .map((par, i) => <p key={i}>{par}</p>)}
-            </section>
+                  </thead>
+                  <tbody>
+                    {this.state.currentSpecialization &&
+                      this.state.currentSpecialization.perks.map((perk, i) => (
+                        <tr
+                          key={i}
+                          onClick={() => this.props.toggleAnointment(perk)}
+                          className={
+                            (anointmentNames.has(perk.name) ? "active" : "") +
+                            (perk.anointment === "Yes" ? "" : "no-anoint")
+                          }
+                          title={
+                            perk.anointment === "No"
+                              ? "This perk cannot be selected as an anointment."
+                              : undefined
+                          }
+                        >
+                          <td>
+                            {anointmentNames.has(perk.name) && (
+                              <span className="green-tick">
+                                <FontAwesomeIcon icon={faCheck} />
+                              </span>
+                            )}
+                          </td>
+                          <td>
+                            <span className="perk-flex">
+                              <PerkIcon perk={perk} />
+                              {perk.name}
+                            </span>
+                          </td>
+                          <td>{perk.description}</td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+                <section className="flavour-text">
+                  <h4>
+                    About the{" "}
+                    {this.state.currentSpecialization &&
+                      this.state.currentSpecialization.name}
+                  </h4>
+                  {this.state.currentSpecialization &&
+                    this.state.currentSpecialization.description
+                      .split("\\n")
+                      .map((par, i) => <p key={i}>{par}</p>)}
+                </section>
+              </>
+            )}
           </div>
         </div>
       </Modal>
