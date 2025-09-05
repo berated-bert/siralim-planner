@@ -1,6 +1,11 @@
 ## Changelog
 
-### v.1.3.1 (5 September 2025)
+### v1.3.2 (5 September 2025)
+
+-   Added perk icons from the new specialisations (thank you to Adex and Leqesai on Discord for providing screenshots which helped me track the icons down).
+-   Fixed bug with not being able to select 20 anointments as a Royal.
+
+### v1.3.1 (5 September 2025)
 
 -   Sorted specializations alphabetically (both in the dropdown list and in the Anointments selector). Thanks to Axar on the Discord channel for this suggestion.
 -   Added icons for the three new specialisations. I'll add perk icons once I can find a mapping between the perk names and the sprites.
