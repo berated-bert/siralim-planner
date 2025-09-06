@@ -40,7 +40,7 @@ Rodian Master,Amphisbaena,Mastery Trait,Master of Amphisbaenas,"If all the creat
 Life,Angel,Aegis Angel,Hand of Light,This creature's attacks deal 75% more damage and grant this creature Shelled.,Aegis Claymore
 Life,Angel,Angel Soulslayer,Soul to Keep,"This creature's attacks deal 75% more damage.  After this creature attacks, it gains a copy of the target's trait.",Soulslayer claymore
 Life,Angel,Doomblight Angel,Scourge,This creature's attacks deal 75% more damage and afflict the target with Weak.,Doomblight Claymore
-Life,Angel,Firewound Angel,Pyre,This creature's attacks deal 75% more damage and afflict the target with Burned.,Firewound Claymore
+Life,Angel,Firewound Angel,Pyre,This creature's attacks deal 75% more damage and afflict the target with Burning.,Firewound Claymore
 Life,Angel,Goldblight Angel,Stasis,This creature's attacks deal 75% more damage and afflict the target with Confused.,Goldblight Claymore
 Life,Angel,Icewound Angel,Rime,This creature's attacks deal 75% more damage and afflict the target with Frozen.,Icewound Claymore
 Life,Angel,Imperial Angel,Black Hole Halo,This creature's attacks deal 75% more damage and afflict the target with Scorned.,Imperial Claymore
@@ -184,16 +184,16 @@ Backer,Backer,Backer Trait,Determination,"After an ally is killed, this creature
 Backer,Backer,Backer Trait,Dragon's Rage,"At the start of this creature's turn, it casts Fireball.",Draco Rubies
 Backer,Backer,Backer Trait,Dualcast,"At the start of this creature's turn, it casts the most recent spell it cast again.",Ring of Echoes
 Backer,Backer,Backer Trait,Eldritch Rune,"At the start of battle, this creature's Maximum Health is set to 50%. This creature's spells are 100% more potent.",Tome of Eldritch Knowledge
-Backer,Backer,Backer Trait,Ember Soul,"While this creature has Burned, it has 75% more Attack and Speed.",Souls of the Ineffable
+Backer,Backer,Backer Trait,Ember Soul,"While this creature has Burning, it has 75% more Attack and Speed.",Souls of the Ineffable
 Backer,Backer,Backer Trait,Embiggening,This creature gains 100% more stats.,Pulsing Stone
 Backer,Backer,Backer Trait,Emerald Blessings,This creature gives and receives 150% more healing.,Emerald Tide Scrap
 Backer,Backer,Backer Trait,Erratic,"At the start of battle, one of your creatures is chosen to have 150% more stats (other than Health) for the rest of the battle.",Strange Smoke
 Backer,Backer,Backer Trait,Excruciating Venom,"After this creature attacks an enemy with Poisoned, it gains Attack equal to 50% of the potency of this debuff.",Venomous Stinger
-Backer,Backer,Backer Trait,Firedevil's Will,Your creatures are immune to Burned and enemies take 50% more damage from this debuff. This trait does not stack.,Firedevil's Tears
+Backer,Backer,Backer Trait,Firedevil's Will,Your creatures are immune to Burning and enemies take 50% more damage from this debuff. This trait does not stack.,Firedevil's Tears
 Backer,Backer,Backer Trait,Flash Barrier,This creature takes 90% less damage until the start of its first turn.,Barrier Parts
 Backer,Backer,Backer Trait,Flower Power,"At the start of battle, your creatures gain 3 random Nature Spell Gems. This trait does not stack.",Weeds and Seeds
 Backer,Backer,Backer Trait,Forced Momentum,"At the start of your creatures' turns, they have a 35% chance to gain a random trait. This trait does not stack.",Cursed Scope
-Backer,Backer,Backer Trait,Frostburn,"After an enemy takes damage from Burned, it is afflicted with Frozen. This trait does not stack.",Frigid Flame
+Backer,Backer,Backer Trait,Frostburn,"After an enemy takes damage from Burning, it is afflicted with Frozen. This trait does not stack.",Frigid Flame
 Backer,Backer,Backer Trait,Frozen Legion,"After your creatures attack an enemy with Frozen, they gain 1 stack of Zombies. This trait does not stack.",Meat Popsicle
 Backer,Backer,Backer Trait,Gambler's Game,"At the start of each creature's turn, it has a 50% chance to gain a random buff. Otherwise, it gains a random trait. This trait does not stack.",Riskium
 Backer,Backer,Backer Trait,Gem Leech,"After this creature attacks, it casts one of the target's Spell Gems.",Crystalline Bloodsucker
@@ -253,7 +253,7 @@ Backer,Backer,Backer Trait,Rainbow Palate,This creature has 25% more stats (othe
 Backer,Backer,Backer Trait,Rave,Your creatures deal 6% more damage for each creature of the same race fighting on your side. This trait does not stack.,Glowstick
 Backer,Backer,Backer Trait,Reap Destruction,This creature deals 5% more damage for each buff it has received in the current battle.,Silver Spur
 Backer,Backer,Backer Trait,Restoration,This creature's stats are not reset after it is killed.,Rogue's Hood
-Backer,Backer,Backer Trait,Rise of the Phoenix,"After your creatures with Burned are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack.",Ash of Renewal
+Backer,Backer,Backer Trait,Rise of the Phoenix,"After your creatures with Burning are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack.",Ash of Renewal
 Backer,Backer,Backer Trait,Roll the Dice,"At the end of this creature's turn, it casts 2 of its Ethereal Spell Gems.",Die Fragments
 Backer,Backer,Backer Trait,Scared Stiff,"After an enemy is afflicted with Snared or Fear, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Cursed Cobweb
 Backer,Backer,Backer Trait,Scheming Stance,"After this creature defends or provokes, 3 enemies are afflicted with Feared.",Scheming Shield
@@ -444,7 +444,7 @@ Life,Cherub,Bhasa Cherub,Great Conjunction,"After your creatures are killed, the
 Life,Cherub,Chandra Cherub,By My Hand,"When your creatures damage enemies with Shelled, all subsequent effects such as on-attack or on-cast effects are no longer prevented.",Celestine Energy
 Life,Cherub,Nisha Cherub,Or Else By None,"After this creature provokes, its Barrier shatters, dealing damage to enemies equal to 50% of its potency and healing your creatures for the same amount.",Negative Energy
 Life,Cherub,Preta Cherub,Sundered and Undone,"When your creatures with Barrier take damage, the Barrier shatters, dealing damage to enemies equal to 35% of its potency. This trait does not stack.",Sinister Energy
-Life,Cherub,Surya Cherub,Triple Suns,"Your creatures take 90% less damage from Bleeding, Poisoned, Burned, and Bomb.",Blazing Energy
+Life,Cherub,Surya Cherub,Triple Suns,"Your creatures take 90% less damage from Bleeding, Poisoned, Burning, and Bomb.",Blazing Energy
 Life,Cherub,Vipina Cherub,The Two Made One,Your creatures' Barrier buffs have 75% more maximum absorption. This trait does not stack.,Floral Energy
 Rodian Master,Cherub,Mastery Trait,Master of Cherubs,"If all the creatures in your party are Cherubs, the maximum absorption of their Barrier buffs is increased by 200%. This trait does not stack.",Sigil of the Cherub
 Sorcery,Chimera,Arcana Chimera,Eldritch Creation,"At the start of battle, your creatures gain 2 Ethereal Spell Gems that correspond to their Fused creature's class. This trait does not stack.",Impossible Recipe
@@ -464,7 +464,7 @@ Rodian Master,Clockwork,Mastery Trait,Master of Clockworks,"If all the creatures
 Death,Clutcher,Deep Clutcher,Shadowmeld,Your creatures have an independent 10% chance to dodge for each debuff the enemy has. This trait does not stack.,"Deep Finger, Heh"
 Chaos,Clutcher,Doom Clutcher,Pain Flurry,"After an enemy dodges, this creature casts a random spell from each class.",Doom Finger
 Chaos,Clutcher,Ethereal Clutcher,Sticky Fingers,"After an enemy dodges, this creature decreases its speed by 50%.",Ethereal Finger
-Chaos,Clutcher,Flamegrip Clutcher,Vehemence,"After an enemy dodges, this creature afflicts it with Burned and Scorned.",Flamegrip Finger
+Chaos,Clutcher,Flamegrip Clutcher,Vehemence,"After an enemy dodges, this creature afflicts it with Burning and Scorned.",Flamegrip Finger
 Chaos,Clutcher,Necrotic Clutcher,Smack Around,"After an enemy dodges an attack from one of your other creatures, this creature attacks the enemy 2 times.",Necrotic Finger
 Chaos,Clutcher,Static Clutcher,Brain Zap,"After an enemy dodges an attack, enemies are afflicted with Confused.",Static Finger
 Chaos,Clutcher,Venomous Clutcher,Contagion,"After an enemy dodges, this creature afflicts it with Poisoned and Silenced.",Venomous Finger
@@ -626,20 +626,20 @@ Nature,Dumpling,Squash,Extra Treat,"Your Dumplings' spells do not consume charge
 Nature,Dumpling,Vegetable Dumpling,Clean Eating,"The first time your Dumplings die in battle, they are resurrected with 1 health. This trait does not stack.",Vegetable Dough Ball
 Rodian Master,Dumpling,Mastery Trait,Master of Dumplings,"At the start of battle, your Dumplings gain an Ultimate Spell depending on the skin they have equipped. If they don't have a skin equipped that was obtained from defeating a Dumpling in the wild, the spell will be chosen at random.",Sigil of the Dumpling
 Death,Effigy,Cursed Effigy,The Grudge,This creature always has Cursed.  The damage your creatures take from Cursed is based on their lowest stat rather than attack.,Cursed Button
-Death,Effigy,Dancing Effigy,Jungle Boogie,"This creature has 50% more speed for each of Cursed, Burned, Poisoned, and Bleeding it has.",Dancing Button
+Death,Effigy,Dancing Effigy,Jungle Boogie,"This creature has 50% more speed for each of Cursed, Burning, Poisoned, and Bleeding it has.",Dancing Button
 Death,Effigy,Falconer Effigy,Outstanding,"After this creature takes indirect damage, it gains 20% attack.",Falconer Button
 Death,Effigy,Healing Effigy,Suture Technique,"After your creatures take indirect damage, they are healed for 20% of their Maximum health. This trait does not stack.",Healing Button
 Death,Effigy,Knight Effigy,Pins and Needles,"After this creature takes indirect damage, it gains 20% defense.",Effigy Button
-Death,Effigy,Noble Effigy,Malediction,"This creature's spells are 25% more potent for each of Cursed, Burned, Poisoned, and Bleeding it has.",Noble Button
-Rodian Master,Effigy,Mastery Trait,Master of Effigies,"If all the creatures in your party are Effigy creatures, they always have Cursed, Burned, Poisoned, and Bleeding and take 75% less damage from these debuffs.",Sigil of the Effigy
-Sorcery,Efreet,Ashbone Efreet,Infinite Inferno,Enemies' Burned debuff lasts forever.  This effect also applies to your own creatures while you have a creature with the In Flames trait.,Ashbone Ashes
-Sorcery,Efreet,Dreadful Efreet,Stoke,"After this creature defends or provokes, it increases the potency of each enemy's Burned debuff by 65%.",Dreadful Ashes
-Sorcery,Efreet,Flametongue Efreet,In Flames,Your creatures recover health from Burned instead of taking damage.  Your creatures start each battle with Burned.,Flametongue Ashes
-Sorcery,Efreet,Frostfire Efreet,Living Flame,"After an enemy takes damage from Burned, this creature deals 30% of that damage to all other enemies. This trait does not stack.",Frostfire Ashes
-Sorcery,Efreet,Obsidian Efreet,Snuff,"When an enemy's Burned debuff expires or is removed, this creature deals damage to it equal to 5 turns of this debuff. This trait does not stack.",Obsidian Ashes
-Sorcery,Efreet,Volcanic Efreet,Smolder,"After this creature attacks a creature with Burned, the target takes damage equal to 4 turns of this debuff.",Volcanic Ashes
-Sorcery,Efreet,Wildfire Efreet,Ashes to Ashes,"After this creature attacks, it afflicts the target with Burned.  If the target already has Burned, it afflicts all enemies with Burned.",Wildfire Ashes
-Rodian Master,Efreet,Mastery Trait,Master of Efreets,"When your creatures afflict enemies with Burned, the potency of this debuff is increased by 50% for each Efreet fighting on your side. This trait does not stack.",Sigil of the Efreet
+Death,Effigy,Noble Effigy,Malediction,"This creature's spells are 25% more potent for each of Cursed, Burning, Poisoned, and Bleeding it has.",Noble Button
+Rodian Master,Effigy,Mastery Trait,Master of Effigies,"If all the creatures in your party are Effigy creatures, they always have Cursed, Burning, Poisoned, and Bleeding and take 75% less damage from these debuffs.",Sigil of the Effigy
+Sorcery,Efreet,Ashbone Efreet,Infinite Inferno,Enemies' Burning debuff lasts forever.  This effect also applies to your own creatures while you have a creature with the In Flames trait.,Ashbone Ashes
+Sorcery,Efreet,Dreadful Efreet,Stoke,"After this creature defends or provokes, it increases the potency of each enemy's Burning debuff by 65%.",Dreadful Ashes
+Sorcery,Efreet,Flametongue Efreet,In Flames,Your creatures recover health from Burning instead of taking damage.  Your creatures start each battle with Burning.,Flametongue Ashes
+Sorcery,Efreet,Frostfire Efreet,Living Flame,"After an enemy takes damage from Burning, this creature deals 30% of that damage to all other enemies. This trait does not stack.",Frostfire Ashes
+Sorcery,Efreet,Obsidian Efreet,Snuff,"When an enemy's Burning debuff expires or is removed, this creature deals damage to it equal to 5 turns of this debuff. This trait does not stack.",Obsidian Ashes
+Sorcery,Efreet,Volcanic Efreet,Smolder,"After this creature attacks a creature with Burning, the target takes damage equal to 4 turns of this debuff.",Volcanic Ashes
+Sorcery,Efreet,Wildfire Efreet,Ashes to Ashes,"After this creature attacks, it afflicts the target with Burning.  If the target already has Burning, it afflicts all enemies with Burning.",Wildfire Ashes
+Rodian Master,Efreet,Mastery Trait,Master of Efreets,"When your creatures afflict enemies with Burning, the potency of this debuff is increased by 50% for each Efreet fighting on your side. This trait does not stack.",Sigil of the Efreet
 Nature,Eft,Bloody Eft,Pride of the Pack,"Your Efts always have one of the following buffs for each Eft fighting on your side: Savage, Splashing, Protected, Berserk, Agile, Warded.  Buffs are prioritized in that order.",Bloody Skull
 Nature,Eft,Eft Climber,Render Flesh,"After this creature attacks, it decreases the target's defense by 10% for each Eft fighting on your side. This trait does not stack.",Climber Skull
 Nature,Eft,Eft Elder,Dismemberment,"After this creature attacks, it decreases the target's intelligence by 10% for each Eft fighting on your side. This trait does not stack.",Elder Skull
@@ -720,7 +720,7 @@ Chaos,Exotic,Duckgundr,Stick Soul,"Your Exotic creatures' buffs, debuffs, minion
 Death,Exotic,Forgotten Disciple,Burden of Guilt,"After this creature defends, all creatures lose 1 buff and 1 debuff.",Unlit Candle
 Sorcery,Exotic,Genbu,Connections,Your creatures have 10% more stats (other than health) for each Exotic creature fighting on your side. This trait does not stack.,Constellation of Genbu
 Death,Exotic,Gravekeeper,Corpse Keeper,"At the start of your creatures' turns, they gain 1 stack of Zombie. This trait does not stack.",Grave Shovel
-Death,Exotic,Gravewood Ghost,Inoculant,"After this creature casts a spell, it increases the potency of enemies' Burned, Poisoned, and Bomb debuffs by 10%.",Old World Microbe
+Death,Exotic,Gravewood Ghost,Inoculant,"After this creature casts a spell, it increases the potency of enemies' Burning, Poisoned, and Bomb debuffs by 10%.",Old World Microbe
 Sorcery,Exotic,Greybeard,Greybeard's Blessing,Your creatures grant 100% more healing to enemies with Blighted. This trait does not stack.,Black Ear
 Death,Exotic,Grovewalker,Forest's Curse,"After an enemy attacks, the target afflicts the enemy with 2 random debuffs. This trait does not stack.",Rotting Antler
 Nature,Exotic,Grubette,Grubby Strength,"After this creature is killed, it deals damage to enemies equal to 3% of its lowest stat, multiplied by the number of times it attacked in the current battle.",Pocket Grubs
@@ -735,7 +735,7 @@ Nature,Exotic,Jaculus,Breakneck,This creature ignores enemies' Barrier and Shell
 Chaos,Exotic,Kavnak,Shared Consciousness,"After an ally manually casts a spell, this creature has a 50% chance to cast that spell as well.",Kavnak's Worm
 Sorcery,Exotic,Kirin,Celestial,Your Exotic creatures always have Mending and Leeching.,Constellation of Kirin
 Nature,Exotic,Kobold,Grovel and Beg,"While this creature has less than 75% health, it has 50% more speed and has a 50% chance to avoid damage.",Kobold's Guidebook
-Chaos,Exotic,Lavalotl,Cauterize the Wound,"This creature is healed instead of damaged by Bleeding and Burned, but at 50% effectiveness.",Lava Bubble
+Chaos,Exotic,Lavalotl,Cauterize the Wound,"This creature is healed instead of damaged by Bleeding and Burning, but at 50% effectiveness.",Lava Bubble
 Death,Exotic,Legion,Assimilate,"After this creature takes damage from an attack or spell, it gains 5% stats.",Fragmented Blood
 Sorcery,Exotic,Lizard Wizard,Lizardry,Your creatures' Ethereal Spell Gems do not consume charges. This trait does not stack.,Lizard Wizard's Tome
 Chaos,Exotic,Lunatio,Twin Souls,This creature's attacks deal 75% more damage and it attacks 1 additional time.,Lost Soul
@@ -760,7 +760,7 @@ Chaos,Exotic,Puffergryph,Puff Up,"After this creature is attacked, it gains 30% 
 Nature,Exotic,Rhozzgon,Wrath of Krorena,Your creatures have a 100% critical chance against enemies that belong to their own class. This trait does not stack.,Nature's Fury
 Life,Exotic,Sapphire Drake,Healing Breath,"At the start of this creature's turn, it heals one of your creatures for 150% health.",Drake Teeth
 Sorcery,Exotic,Seiryu,Scaling,Your Exotic creatures have 7% more intelligence for each permanent Spell Gem they have equipped. This trait does not stack.,Constellation of Seiryu
-Chaos,Exotic,Singerbread Man,Sugar and Slice,"After an enemy takes damage from Burned, this creature attacks it for 35% normal damage. This trait does not stack.",Nasty Dough
+Chaos,Exotic,Singerbread Man,Sugar and Slice,"After an enemy takes damage from Burning, this creature attacks it for 35% normal damage. This trait does not stack.",Nasty Dough
 Death,Exotic,Skelegoop,Drake's Favor,"This creature has 35% more attack, defense, and speed.",Burial Gift
 Life,Exotic,Snow Lily,Loyalty's Light,"After a creature is killed, this creature gains Rebirth and Shelled.",Pure Heart
 Sorcery,Exotic,String Puller,Pull the Strings,"When this creature attacks, one of your other creatures attacks instead for 50% more damage.  This trait does not work if any of your other creatures have it as well.",Spectral String
@@ -792,13 +792,13 @@ Sorcery,Exotic,Draconic Strix,Ancient Wisdom,"When a creature would gain or lose
 Nature,Exotic,Dust Fairy,Dusty Struggle,"After this creature attacks, casts, defends, or provokes, it and its adjacent allies are afflicted with a random debuff and have a 20% chance to be sent to the top of the Timeline.  This trait will not activate if another creature in your party has it as well.",Faceful of Dust
 Death,Exotic,Eye of the Gorgon,Petrified Hope,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Stoned and Feared.",Gorgon's Eye
 Nature,Exotic,Frosty Freezy,Chill Out!,"After an enemy casts a spell, this creature afflicts it with Frozen.",Frozen Dessert
-Chaos,Exotic,Furious Frank,Barbecue Time,"After this creature deals damage with an attack or spell, the enemy has a 50% chance to be afflicted with Burned.",Mystery Meat
+Chaos,Exotic,Furious Frank,Barbecue Time,"After this creature deals damage with an attack or spell, the enemy has a 50% chance to be afflicted with Burning.",Mystery Meat
 Nature,Exotic,Fury Stormer,Gathering Storm,"After this creature is forcibly moved on the Timeline, it casts Snowstorm, Firestorm, or Sandstorm if they're equipped.  In addition, your creatures cast these spells as if they have 50% more intelligence. This trait does not stack.",Crackling Talon
 Sorcery,Exotic,Gemstone Trader,Lunatic Generosity,"At the start of battle, all creatures gain a copy of this creature's first 3 Spell Gems.  These Spell Gems have 1 charge.",Bismuth Crystal
 Chaos,Exotic,Genetic Anomaly,Mass Mutation,"At the start of battle, this creature shares its Fused trait with one creature of each other class on your team.  If this trait is the creature's Fused trait, it shares its innate trait instead. This trait does not stack.",Gene Splicer
 Death,Exotic,Gravebound Eidolon,Beyond the Veil,"This creature can be affected by stat changes while dead and does not lose stats on death.  This creature's traits remain active while dead, except for traits that would redirect attacks or take damage in place of allies.",Strings of Shadow
 Sorcery,Exotic,Haunting Glass,Karmic Reflection,"After this creature takes damage from an attack or spell, it deals damage to enemies equal to 25% of its missing health.",Mirror's Edge
-Chaos,Exotic,Hot Lips,Red Hot Kiss,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Burned and Confused.",Red Hot Lipstick
+Chaos,Exotic,Hot Lips,Red Hot Kiss,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Burning and Confused.",Red Hot Lipstick
 Sorcery,Exotic,I Scream Man,Freezer Blast,"At the start of this creature's turn, it casts Deep Freeze.",I Scream Cone
 Death,Exotic,Iron Maiden,Agonizing Entrapment,"After this creature takes damage, the enemy is afflicted with Snared and Bleeding.  Enemies with Snared take 50% more damage from Bleeding. This trait does not stack.",Bloody Spike
 Sorcery,Exotic,Jack Frost,Winter's Edge,"After this creature deals damage with an attack or spell, the enemy has a 50% chance to be afflicted with Frozen.",Frozen Christmas Lights
@@ -814,7 +814,7 @@ Nature,Exotic,Melishell,Buzz Breathing,"At the start of your creatures' turns, t
 Chaos,Exotic,Mimpling,Surprise Treat,"After your creatures receive a debuff, their on-buff effects activate.  If you have a Dumpling or Mimic creature fighting on your side, this effect repeats 1 additional time. This trait does not stack.",Rotten Dough
 Sorcery,Exotic,Miracle Spider,Mega Spider Blast,"Your creatures start battles with 1 stack of Spiderling.  Your creatures' Spiderling now also activate when their master deals damage, and the amount of damage done is now based on their highest stat instead of health. This trait does not stack.",Spider Silk Suit
 Death,Exotic,Nightmare,Eternal Rest,"At the end of each enemy's turn, they have a 10% chance to be afflicted with Sleep.  At the start of this creature's turn, it attacks each enemy with Sleep for 50% normal damage. This trait does not stack.",Blanket of Eternal Rest
-Chaos,Exotic,Ol' Nog,Bang-A-Rang,"After an enemy takes damage from Bomb, this creature afflicts it with Burned and Poisoned.  If the enemy already has these debuffs, their potency is increased by 30% instead.",NT4 Explosive Powder
+Chaos,Exotic,Ol' Nog,Bang-A-Rang,"After an enemy takes damage from Bomb, this creature afflicts it with Burning and Poisoned.  If the enemy already has these debuffs, their potency is increased by 30% instead.",NT4 Explosive Powder
 Chaos,Exotic,One-Punch Snowman,One-Hit Wonder,"When your creatures attack, their additional attacks are consolidated into the original attack with 100% more damage. This trait does not stack.",Circus Ticket
 Chaos,Exotic,Orc Bowman,Powerful Draw,"This creature can only equip Arrow spells, but they can be from any class.  This creature's single-target Arrow spells deal additional damage equal to 50% of its attack.  This creature's Splitting Arrow and Fragmenting Arrow spells deal 100% more damage.",Composite Longbow
 Sorcery,Exotic,Ouroboros,Infinity,"After a creature casts a spell, this creature has a 10% chance to cast Continuum.",Infinity Symbol
@@ -827,7 +827,7 @@ Sorcery,Exotic,Sculpt,Perfect Replica,"After this creature attacks, it transform
 Chaos,Exotic,Sir Roquefort,Cut the Cheese,"When a creature takes damage from an attack or spell, it takes additional damage equal to 30% of the difference between its lowest and highest stats. This trait does not stack.",Cheese Wedge
 Chaos,Exotic,Slash Shifter,Color Shift,"At the start of battle, this creature's class is randomized and it gains a copy of your other creatures' innate traits and Artifact traits that match that class.",Sharp Scales
 Nature,Exotic,Snow Stalker,Chilling Assault,"After this creature attacks, it has a 50% chance to cast Icicle Rain.",Frozen Scarf
-Life,Exotic,Solaris,Unrelenting Sun,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Burned and Blind.",Radiant Sunstone
+Life,Exotic,Solaris,Unrelenting Sun,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Burning and Blind.",Radiant Sunstone
 Death,Exotic,Soulwarper,Warped Soul,"At the start of battle, enemies' classes are changed to this creature's class.",Bottled Disbelief
 Death,Exotic,Spectral Monarch,Souls of the Damned,"After this creature kills a creature, it gains its innate trait and 20% of its attack and defense.",Insignia of the Mutant
 Sorcery,Exotic,Spellsword,Gem Blade,"After this creature gains Animated Gem, it casts the spell in its Artifact's Spell Slot.  After this creature gains Animated Weapon, it attacks a random enemy.",Silvered Steel
@@ -956,7 +956,7 @@ Life,Golem,Gold Golem,Chip Off the Block,"After this creature is attacked, your 
 Sorcery,Golem,Granite Golem,Embolden,This creature has extra defense equal to 50% of the creatures' defense adjacent to it.  This trait does not benefit from creatures that also have this trait.,Granite Cog
 Death,Golem,Haunted Golem,Mechanical Illusion,"After this creature is killed, it reveals the creature that was haunting it.",Haunted Cog
 Sorcery,Golem,Iron Golem,Self-Awareness,Your Golems share their innate traits with each other.,Iron Cog
-Chaos,Golem,Magma Golem,Cataclysm,"After this creature is attacked, it afflicts enemies with Burned.  If enemies already have this debuff, its potency is increased by 30% instead.",Magma Cog
+Chaos,Golem,Magma Golem,Cataclysm,"After this creature is attacked, it afflicts enemies with Burning.  If enemies already have this debuff, its potency is increased by 30% instead.",Magma Cog
 Nature,Golem,Moss Golem,Mass Entanglement,"After this creature defends, each enemy has a 50% chance to be afflicted with Snared.",Moss Cog
 Nature,Golem,Mud Golem,Slop,"After this creature is attacked, it afflicts enemies with Blind.  If enemies already have this debuff, it decreases their speed by 20% instead.",Mud Cog
 Death,Golem,Nightmare Golem,Bad Dreams,Each enemy has a 50% chance to start battles with Sleep.,Nightmare Cog
@@ -991,7 +991,7 @@ Sorcery,Grimoire,Faded Grimoire,Book of the Lost,"When an enemy manually casts a
 Sorcery,Grimoire,Forbidden Grimoire,Book of the Heretic,This creature's spells are 100% more potent but have a 25% chance to fizzle.,Forbidden Parchment
 Sorcery,Grimoire,Hidden Grimoire,Lost Knowledge,Your Grimoires cast spells 1 additional time. This trait does not stack.,Hidden Parchment
 Sorcery,Grimoire,Necro Grimoire,Book of the Dead,"At the start of battle, this creature casts its first 2 permanent Spell Gems that summon minions.",Necro Parchment
-Sorcery,Grimoire,Pyro Grimoire,Book of the Arsonist,This creature's spells that apply the Burned debuff deal 30% more damage.  Enemies' Burned debuffs applied by this creature also deal 30% more damage.,Pyro Parchment
+Sorcery,Grimoire,Pyro Grimoire,Book of the Arsonist,This creature's spells that apply the Burning debuff deal 30% more damage.  Enemies' Burning debuffs applied by this creature also deal 30% more damage.,Pyro Parchment
 Sorcery,Grimoire,Runic Grimoire,Book of the Warlock,"Your creatures start battles with Arcane.  At the end of your creatures' turns, they have a 30% chance to gain Arcane.",Runic Parchment
 Rodian Master,Grimoire,Mastery Trait,Master of Grimoires,"Your Grimoires are immune to Silenced. In addition, their Spell Gems do not consume Charges.",Sigil of the Grimoire
 Nature,Guardian,Benthic Guardian,Gentle Giant,"At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense.",Immovable Shell
@@ -1126,7 +1126,7 @@ Rodian Master,Luckmantria,Mastery Trait,Master of Luckmantrias,"If all the creat
 Chaos,Maniac,Armored Maniac,Meat Bomb,"After this creature provokes, it deals damage to all enemies equal to 50% of its missing health.  Then, it is killed.",Armored Foot
 Chaos,Maniac,Maniac Builder,No Fear,"While your creatures are below 40% health, they deal 100% more damage. This trait does not stack.",Builder Foot
 Chaos,Maniac,Maniac Chief,Detonation,"After this creature provokes, your other Maniacs are killed, and deal damage to all enemies equal to 25% of your affected creatures' Maximum health.",Leader Foot
-Chaos,Maniac,Maniac Huntsman,Bad Blood,"After your creatures are killed, this creature afflicts enemies with Poisoned, Burned and Bleeding.",Hunter Foot
+Chaos,Maniac,Maniac Huntsman,Bad Blood,"After your creatures are killed, this creature afflicts enemies with Poisoned, Burning and Bleeding.",Hunter Foot
 Chaos,Maniac,Maniac Mutant,Cannibalistic Tendencies,"After your creatures provoke, they are killed, and your other creatures gain 20% of their attack, intelligence, defense, and speed. This trait does not stack.",Mutant Foot
 Chaos,Maniac,Maniac Warrior,Nice Haircut,"After your Maniacs are killed while it is an ally's turn, they have a 50% chance to be resurrected with 50% health. This trait does not stack.",Warrior Foot
 Nether Boss,Maniac,Loid,Loid's Laugh,"After an enemy casts a spell, it loses 20% Intelligence and is afflicted with Silenced. This trait does not stack.",Loid's Boil
@@ -1191,8 +1191,8 @@ Nature,Mite,Mite Gravedigger,Cradle to the Grave,"After your creatures are kille
 Nature,Mite,Mite Interloper,Corrosion,"After this creature attacks, it afflicts the target with Blighted.  If the target is already afflicted with Blighted, the target is healed for 100% of the amount of damage dealt.",Interloper Goo
 Nature,Mite,Mite Invader,Neon Grave,"After this creature attacks, it has a 35% chance to cast Affliction.",Invader Goo
 Nature,Mite,Mite Paralyzer,Swell,"After this creature attacks, it afflicts the target with a random debuff for each debuff the target already has.",Paralyzer Goo
-Nature,Mite,Mite Plaguespreader,Villainy Thrives,The potency of the enemies' Poisoned and Burned debuffs is shared with each other. This trait does not stack.,Plaguespreader Goo
-Nature,Mite,Mite Skirmisher,Intensify,"After this creature attacks, it increases the potency of the target's Poisoned and Burned debuffs by 50%.",Skirmisher Goo
+Nature,Mite,Mite Plaguespreader,Villainy Thrives,The potency of the enemies' Poisoned and Burning debuffs is shared with each other. This trait does not stack.,Plaguespreader Goo
+Nature,Mite,Mite Skirmisher,Intensify,"After this creature attacks, it increases the potency of the target's Poisoned and Burning debuffs by 50%.",Skirmisher Goo
 Nature,Mite,Mite Webweaver,Viscous Webs,Enemies take 25% more damage for each debuff they have that they're resistant to. This trait does not stack.,Webweaver Goo
 Rodian Master,Mite,Mastery Trait,Master of Mites,Your Mites have a 5% chance to avoid damage for each Mite fighting on your side. This trait does not stack.,Sigil of the Mite
 Sorcery,Modron,Bio Bot,Big Brained,Your creatures are immune to Confused.,Bio Scrap
@@ -1308,7 +1308,7 @@ Sorcery,Phoenix,Volatile Phoenix,Buffet,"After your creatures are resurrected, e
 Rodian Master,Phoenix,Mastery Trait,Master of Phoenixes,"At the start of your Phoenixes' turns, their on-resurrect effects have a 50% chance to activate. This trait does not stack.",Sigil of the Phoenix
 Nature,Pilwiz,Arcane Pilwiz,Brain Drain,"After an enemy takes damage from Bleeding, they lose 15% of their intelligence, and your creatures gain that intelligence. This trait does not stack.",Arcane Sickle
 Nature,Pilwiz,Darkscythe Pilwiz,Shadow Hook,"Your creatures deal 10% more damage, and enemies deal 10% less damage, for each enemy that is afflicted with Bleeding. This trait does not stack.",Darkscythe Sickle
-Nature,Pilwiz,Flamehook Pilwiz,Kindling,"After an enemy is afflicted with Bleeding or Burned, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Flamehook Sickle
+Nature,Pilwiz,Flamehook Pilwiz,Kindling,"After an enemy is afflicted with Bleeding or Burning, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Flamehook Sickle
 Nature,Pilwiz,Pilwiz Guardian,Bleed Out,"After an enemy takes damage from Bleeding, your creatures recover health equal to 50% of the damage dealt. This trait does not stack.",Guardian Sickle
 Nature,Pilwiz,Pilwiz Harvester,Spatter,"After an enemy with Bleeding dies, this creature deals damage to all enemies equal to 20% of the dead creature's Maximum health.",Harvester Sickle
 Nature,Pilwiz,Pilwiz Herbalist,Throat Slash,Enemies start battles with Bleeding.,Herbalist Sickle
@@ -1328,7 +1328,7 @@ Death,Pit Worm,Pit Worm Tunneler,Live to Labor,"At the start of each enemy's tur
 Death,Pit Worm,Spitting Pit Worm,Spew Acid,"At the end of each enemy's turn, this creature decreases their defense by 15%.",Spitting Acid
 Death,Pit Worm,Vicious Pit Worm,Death's Bite,"At the end of each ally's turn, this creature attacks a random enemy for 30% normal damage.",Vicious Acid
 Nether Boss,Pit Worm,Ceaseless Gladiator,Ceaseless Fighting,"When your creatures are killed, they attack a random enemy.",Ceaseless Fang
-Nether Boss,Pit Worm,Ceaseless Gladiator,Ceaseless Flame,"When an enemy takes damage from Burned, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row.",Ceaseless Spit
+Nether Boss,Pit Worm,Ceaseless Gladiator,Ceaseless Flame,"When an enemy takes damage from Burning, it has a 50% chance to take this damage a second time. This effect can repeat multiple times in a row.",Ceaseless Spit
 Nether Boss,Pit Worm,Ceaseless Gladiator,Ceaseless Vitality,"At the start of this creature's turn, it recovers 20% Health and gains Shelled.",Ceaseless Heart
 Rodian Master,Pit Worm,Mastery Trait,Master of Pit Worms,"If all the creatures in your party are Pit Worms, their innate traits activate an additional time. This trait does not stack.",Sigil of the Pit Worm
 Death,Pit Wraith,Pit Wraith Dominator,Decrepify,"After this creature attacks, it decreases the target's defense by 50%.",Dominator Ganglion
@@ -1345,7 +1345,7 @@ Sorcery,Plague Doctor,Plague Herbalist,Maximize,"After this creature attacks, it
 Death,Plague Doctor,Plague Phlebotomist,Blood and Power,Your creatures deal additional damage with attacks equal to 10% of the healing they've received in the current battle. This trait does not stack.,Phlebotomist Scalpel
 Sorcery,Plague Doctor,Plague Quack,Black to White,"After an enemy's debuff wears off, it is afflicted with a random debuff. This trait does not stack.",Quack Scalpel
 Sorcery,Plague Doctor,Plague Scholar,Insipid,Your creatures take 10% less damage for each debuff they have. This trait does not stack.,Scholar Scalpel
-Sorcery,Plague Doctor,Plague Soothsayer,Metaphor,"After an enemy takes damage from Poisoned, Burned, or Blighted, your creatures recover health equal to 35% of the damage dealt. This trait does not stack.",Soothsayer Scalpel
+Sorcery,Plague Doctor,Plague Soothsayer,Metaphor,"After an enemy takes damage from Poisoned, Burning, or Blighted, your creatures recover health equal to 35% of the damage dealt. This trait does not stack.",Soothsayer Scalpel
 Sorcery,Plague Doctor,Plague Surgeon,Liberation,This creature casts spells 1 additional time for each minion it has.,Surgeon Scalpel
 Rodian Master,Plague Doctor,Mastery Trait,Master of Plague Doctors,"If all the creatures in your party are Plague Doctors, they gain the Drained trait at the start of battle.",Sigil of the Plague Doctor
 Life,Priest,Desert Priest,Tender of Earth,"At the start of this creature's turn, your creatures gain a random Spell Gem that belongs to their class.",Desert Rod
@@ -1507,8 +1507,8 @@ Sorcery,Slime,Glutinous Slime,Abomination,"After this creature gains stats, your
 Sorcery,Slime,Infested Slime,Parasitic Illusion,"This creature always has Poisoned.  After this creature takes damage from Poisoned, 50% of the damage is dealt to all enemies.",Infested Ooze
 Sorcery,Slime,Mercurial Slime,Diffusion,"After this creature gains a minion, your other creatures that don't have this trait gain that minion as well.",Mercurial Ooze
 Sorcery,Slime,Paranormal Slime,Vanity,"After this creature gains Spell Gems, your other creatures that don't have this trait gain those Spell Gems as well.",Paranormal Ooze
-Nether Boss,Slime,Flubris,Flubris's Engulfing,"When an enemy takes damage from Burned, it loses 20% Attack and Defense. This trait does not stack.",Flubris' Ichor
-Nether Boss,Slime,Flubris,Flubris's Entrapment,"When an enemy takes damage from Poisoned or Burned, they have a 50% chance to be afflicted with a random debuff. This trait does not stack.",Flubris' Third Arm
+Nether Boss,Slime,Flubris,Flubris's Engulfing,"When an enemy takes damage from Burning, it loses 20% Attack and Defense. This trait does not stack.",Flubris' Ichor
+Nether Boss,Slime,Flubris,Flubris's Entrapment,"When an enemy takes damage from Poisoned or Burning, they have a 50% chance to be afflicted with a random debuff. This trait does not stack.",Flubris' Third Arm
 Nether Boss,Slime,Flubris,Flubris's Toxicity,"When an enemy takes damage from Poisoned, it loses 20% Intelligence and Speed. This trait does not stack.",Flubris' Eyeballs
 Rodian Master,Slime,Mastery Trait,Master of Slimes,"If all the creatures in your party are Slimes, they are resistant to debuffs and deal 30% more damage.",Sigil of the Slime
 Sorcery,Smith,Black Crystal Smith,Unbreakable,"Your creatures' ""Class Strength"" Artifact properties prevent 50% more damage from that class. This trait does not stack.",Black Crystal Axe
@@ -1527,7 +1527,7 @@ Nether Boss,Smith,Blacksmith Ianne,Ianne's Quirk,After this creature attacks it 
 Rodian Master,Smith,Mastery Trait,Master of Smiths,"At the start of battle, if all the creatures in your party are Smiths, they share their Artifact's trait with the creature to the left.",Sigil of the Smith
 Chaos,Smog,Cancerous Smog,Poison Inoculation,Your creatures start battle with Poisoned.  Your creatures recover health from Poisoned instead of taking damage from it.,Cancerous Smoke
 Chaos,Smog,Festival Smog,Endless Distraction,"While this creature is provoking, your other creatures take 35% less damage. This trait does not stack.",Festival Drink
-Chaos,Smog,Incendiary Smog,Vex,Enemies with both Burned and Poisoned take 50% more damage from these debuffs. This trait does not stack.,Incendiary Smoke
+Chaos,Smog,Incendiary Smog,Vex,Enemies with both Burning and Poisoned take 50% more damage from these debuffs. This trait does not stack.,Incendiary Smoke
 Chaos,Smog,Lethal Smog,Creeping Death,"After this creature defends or provokes, enemies that have Poisoned take damage equal to 3 turns of this debuff.",Lethal Smoke
 Chaos,Smog,Noxious Smog,Contamination,This creature's attacks deal 75% more damage and afflict Poisoned.,Noxious Smoke
 Chaos,Smog,Pestilent Smog,Malady,Enemies' Poisoned debuff lasts forever.  This effect also applies to your own creatures while you have a creature with the Poison Inoculation trait.,Pestilent Smoke
@@ -1638,7 +1638,7 @@ Chaos,Toxdweller,Toxdweller Parasite,Sharing Is Caring,"After an enemy's Bomb de
 Chaos,Toxdweller,Toxdweller Slasher,A Gift For You,This creature's attacks deal 75% more damage and afflict the target with Bomb.,Slasher Poison
 Nether Boss,Toxdweller,Spoonor,Spoonor's Breath,"At the start of this creature's turn, it increases the potency of enemies' Poisoned debuffs by 50%.",Spoonor's Spoon
 Nether Boss,Toxdweller,Spoonor,Spoonor's Gift,"At the start of this creature's turn, it increases the potency of enemies' Bomb debuffs by 50%.",Spoonor's Spork
-Nether Boss,Toxdweller,Spoonor,Spoonor's Other Breath,"At the start of this creature's turn, it increases the potency of enemies' Burned debuffs by 50%.",Spoonor's Fork
+Nether Boss,Toxdweller,Spoonor,Spoonor's Other Breath,"At the start of this creature's turn, it increases the potency of enemies' Burning debuffs by 50%.",Spoonor's Fork
 Rodian Master,Toxdweller,Mastery Trait,Master of Toxdwellers,Enemies' Bomb debuffs have an independent 50% chance to detonate 1 additional time for each Toxdweller in your party. This trait does not stack.,Sigil of the Toxdweller
 Nature,Tremor,Ahnkol Tremor,Stomp,"When an enemy attacks, it has a 35% chance to be interrupted. This trait does not stack.",Ahnkol Soil
 Nature,Tremor,Ahnok Tremor,Constrict,"At the start of this creature's turn, it afflicts a random enemy with Snared and Feared.",Ahnok Soil
