@@ -256,7 +256,7 @@ Backer,Backer,Backer Trait,Restoration,This creature's stats are not reset after
 Backer,Backer,Backer Trait,Rise of the Phoenix,"After your creatures with Burned are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack.",Ash of Renewal
 Backer,Backer,Backer Trait,Roll the Dice,"At the end of this creature's turn, it casts 2 of its Ethereal Spell Gems.",Die Fragments
 Backer,Backer,Backer Trait,Scared Stiff,"After an enemy is afflicted with Snared or Fear, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Cursed Cobweb
-Backer,Backer,Backer Trait,Scheming Stance,"After this creature defends or provokes, 3 enemies are afflicted with Fear.",Scheming Shield
+Backer,Backer,Backer Trait,Scheming Stance,"After this creature defends or provokes, 3 enemies are afflicted with Feared.",Scheming Shield
 Backer,Backer,Backer Trait,Screech of Domination,"After this creature attacks, it gains copies of the enemy's minions.",Conch of the Siren
 Backer,Backer,Backer Trait,Seed of Potentiality,"After this creature gains a stat, it gains 200% of this amount of another stat (other than Health). The stats gained from this trait do not activate effects that occur when stats are gained.",Ouroboros Key
 Backer,Backer,Backer Trait,Seethe,This creature deals 15% more damage for each time it has taken damage in the current battle.,Stolen Pig
@@ -771,7 +771,7 @@ Nature,Exotic,The Dervish,Ride the Whirlwind,This creature's damage dealt by att
 Nature,Exotic,The First Spawn,Ancient DNA,This creature's race is always the same race as the creature that is at the top of the Timeline.,DNA Splicer
 Sorcery,Exotic,Toyland Amalgamation,Double Vision,"After this creature attacks, it has a 40% chance to cast its top-most Spell Gem.",Eye Glasses
 Chaos,Exotic,Tsuchinoko,Rollout,"At the start of this creature's turn, it attacks a random enemy.",Nokium
-Death,Exotic,Vannyx,Death Sentence,This creature deals 125% more damage to enemies with Fear.,Dark Cloak
+Death,Exotic,Vannyx,Death Sentence,This creature deals 125% more damage to enemies with Feared.,Dark Cloak
 Nature,Exotic,Zombaton,Reform,"After your other creatures are killed for the first time, they are resurrected with 30% health. This trait does not stack.",Solidified Slime
 Death,Exotic,Bad Apple,Squirmies,"This creature starts battle with Writhelings.  Each time this creature takes damage from an attack or spell, it gains another stack of Writhelings.",Apple Core
 Death,Exotic,Bane of Piety,Weapons of Mass Distortion,"At the start of battle, this creature's Artifact's Spell Slot gem is replaced with an Ultimate Spell Gem of this creature's equipped Relic's corresponding Avatar.",Bloodsoaked Cross
@@ -790,7 +790,7 @@ Death,Exotic,Dozen of Rot,Rotten Revenge,"After this creature takes damage from 
 Chaos,Exotic,Dr. Concocto,Potion Time!,"At the end of your other creatures' turns, this creature has a 10% chance to cast Concoction.  After this creature attacks, it has a 25% chance to cast Concoction.",Mystery Vial
 Sorcery,Exotic,Draconic Strix,Ancient Wisdom,"When a creature would gain or lose stats, 10% of this creature's intelligence is added to this amount for each turn it has taken this battle.  This creature starts battles with its turn counter at 3. This trait does not stack.",Ancient Feather
 Nature,Exotic,Dust Fairy,Dusty Struggle,"After this creature attacks, casts, defends, or provokes, it and its adjacent allies are afflicted with a random debuff and have a 20% chance to be sent to the top of the Timeline.  This trait will not activate if another creature in your party has it as well.",Faceful of Dust
-Death,Exotic,Eye of the Gorgon,Petrified Hope,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Stoned and Fear.",Gorgon's Eye
+Death,Exotic,Eye of the Gorgon,Petrified Hope,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Stoned and Feared.",Gorgon's Eye
 Nature,Exotic,Frosty Freezy,Chill Out!,"After an enemy casts a spell, this creature afflicts it with Frozen.",Frozen Dessert
 Chaos,Exotic,Furious Frank,Barbecue Time,"After this creature deals damage with an attack or spell, the enemy has a 50% chance to be afflicted with Burned.",Mystery Meat
 Nature,Exotic,Fury Stormer,Gathering Storm,"After this creature is forcibly moved on the Timeline, it casts Snowstorm, Firestorm, or Sandstorm if they're equipped.  In addition, your creatures cast these spells as if they have 50% more intelligence. This trait does not stack.",Crackling Talon
@@ -1451,16 +1451,16 @@ Death,Shade,Spooky Shade,Spooky Technique,"After your creatures attack or cast a
 Death,Shade,Wandering Shade,Impossibility,Your creatures with Invisible are immune to damage from spells.,Wandering Incense
 Death,Shade,Whispering Shade,Pariah,"After a creature is killed, your creatures gain Invisible.",Whispering Incense
 Rodian Master,Shade,Mastery Trait,Master of Shades,"If all the creatures in your party are Shades, they gain Invisible at the end of their turns and have an independent 100% chance to dodge while they have this buff.",Sigil of the Shade
-Death,Shadow,Shadow Cobra,All Hope Is Lost,Enemies with Fear cannot gain buffs.,Cobra Black Hole
-Death,Shadow,Shadow Demon,Haunt,This creature's attacks deal 75% more damage and afflict the target with Fear.,Demonic Black Hole
-Death,Shadow,Shadow Juggernaut,Taste of Fear,"After enemies with Fear are prevented from gaining stats, this creature gains those stats instead. This trait does not stack.",Juggernaut Black Hole
-Death,Shadow,Shadow Moth,Cowardice,Enemies with Fear deal 60% less damage with attacks. This trait does not stack.,Moth Black Hole
-Death,Shadow,Shadow Wolf,Unspeakable Frights,"At the start of an enemy's turn, they have a 20% chance to be sent to the bottom of the Timeline if they have Fear. This trait does not stack.",Wolf Black Hole
-Death,Shadow,Shadow Zealot,Horrifying Visage,"At the start of battle, this creature afflicts 3 random enemies with Fear. This trait does not stack.",Zealot Black Hole
+Death,Shadow,Shadow Cobra,All Hope Is Lost,Enemies with Feared cannot gain buffs.,Cobra Black Hole
+Death,Shadow,Shadow Demon,Haunt,This creature's attacks deal 75% more damage and afflict the target with Feared.,Demonic Black Hole
+Death,Shadow,Shadow Juggernaut,Taste of Fear,"After enemies with Feared are prevented from gaining stats, this creature gains those stats instead. This trait does not stack.",Juggernaut Black Hole
+Death,Shadow,Shadow Moth,Cowardice,Enemies with Feared deal 60% less damage with attacks. This trait does not stack.,Moth Black Hole
+Death,Shadow,Shadow Wolf,Unspeakable Frights,"At the start of an enemy's turn, they have a 20% chance to be sent to the bottom of the Timeline if they have Feared. This trait does not stack.",Wolf Black Hole
+Death,Shadow,Shadow Zealot,Horrifying Visage,"At the start of battle, this creature afflicts 3 random enemies with Feared. This trait does not stack.",Zealot Black Hole
 Nether Boss,Shadow,Inner Darkness,Breach,"After this creature is killed or resurrected, it afflicts enemies with Bomb.",Shadow Skull
 Nether Boss,Shadow,Inner Darkness,Childhood's End,"The potency of the enemies' Bomb debuffs is shared with each other, but enemies take 50% less damage from this debuff. This trait does not stack.",Shadow Heart
 Nether Boss,Shadow,Inner Darkness,Father Shadow,"After this creature damages an enemy with an attack or spell, it deals damage to a random enemy equal to 20% of the damage dealt.",Shadow Essence
-Rodian Master,Shadow,Mastery Trait,Master of Shadows,"If all the creatures in your party are Shadows, enemies with Fear take 30% more damage and deal 30% less damage, and your creatures are immune to Fear. This trait does not stack.",Sigil of the Shadow
+Rodian Master,Shadow,Mastery Trait,Master of Shadows,"If all the creatures in your party are Shadows, enemies with Feared take 30% more damage and deal 30% less damage, and your creatures are immune to Feared. This trait does not stack.",Sigil of the Shadow
 Chaos,Shapeshifter,Chaos Shapeshifter,Chaos Transformation,"When your creatures buff an enemy, they debuff them instead.  When your creatures debuff an ally, they buff them instead. This trait does not stack.",Chaos Plasma
 Death,Shapeshifter,Death Shapeshifter,Death Transformation,"When your creatures increase an enemy's stats, they are instead decreased by 50% of the amount. This trait does not stack.",Death Plasma
 Life,Shapeshifter,Life Shapeshifter,Life Transformation,"When your creatures heal an enemy, it instead takes damage equal to 50% of the amount it would have been healed. This trait does not stack.",Life Plasma
@@ -1641,7 +1641,7 @@ Nether Boss,Toxdweller,Spoonor,Spoonor's Gift,"At the start of this creature's t
 Nether Boss,Toxdweller,Spoonor,Spoonor's Other Breath,"At the start of this creature's turn, it increases the potency of enemies' Burned debuffs by 50%.",Spoonor's Fork
 Rodian Master,Toxdweller,Mastery Trait,Master of Toxdwellers,Enemies' Bomb debuffs have an independent 50% chance to detonate 1 additional time for each Toxdweller in your party. This trait does not stack.,Sigil of the Toxdweller
 Nature,Tremor,Ahnkol Tremor,Stomp,"When an enemy attacks, it has a 35% chance to be interrupted. This trait does not stack.",Ahnkol Soil
-Nature,Tremor,Ahnok Tremor,Constrict,"At the start of this creature's turn, it afflicts a random enemy with Snared and Fear.",Ahnok Soil
+Nature,Tremor,Ahnok Tremor,Constrict,"At the start of this creature's turn, it afflicts a random enemy with Snared and Feared.",Ahnok Soil
 Nature,Tremor,Gorlum Tremor,Solidarity,"At the start of battle, this creature Seals your creatures' first 2 Spell Gems and gains copies of them.",Gorlum Soil
 Nature,Tremor,Hanyac Tremor,Twilight,"At the end of this creature's turn, if it didn't cause any damage during its turn, it attacks a random enemy for 200% normal damage.",Hanyac Soil
 Nature,Tremor,Quamar Tremor,Jolt,"At the end of each enemy's turn, they are afflicted with Stoned. This trait does not stack.",Quamar Soil
@@ -1658,12 +1658,12 @@ Nature,Troll,Troll Necksnapper,Skull Bash,"At the end of this creature's turn, i
 Nature,Troll,Troll Youngster,Rude Awakening,"After an enemy is resurrected, this creature deals damage to it equal to 50% of the enemy's Current health.",Youngster Sweat
 Nature,Troll,Trollboar,Year of the Trollboar,"After this creature provokes, it deals damage to a random enemy equal to 25% of its intelligence.  This effect repeats once for every 5% health this creature is missing.",Year of the Trollboar
 Rodian Master,Troll,Mastery Trait,Master of Trolls,Your Trolls have 25% more Attack and 10% less Intelligence for each Troll fighting on your side. This trait does not stack.,Sigil of the Troll
-Death,Underdweller,Underdweller Fearmonger,Robbing the Grave,Creatures lose 35% more stats.  Your creatures cast spells that interact with Fear with 50% more potency. This trait does not stack.,Well-used Shovel
-Death,Underdweller,Underdweller Hexblade,Creeping Doom,Enemies with Fear take 15% more damage for each Death creature fighting on your side. This trait does not stack.,Cursed Dagger
+Death,Underdweller,Underdweller Fearmonger,Robbing the Grave,Creatures lose 35% more stats.  Your creatures cast spells that interact with Feared with 50% more potency. This trait does not stack.,Well-used Shovel
+Death,Underdweller,Underdweller Hexblade,Creeping Doom,Enemies with Feared take 15% more damage for each Death creature fighting on your side. This trait does not stack.,Cursed Dagger
 Death,Underdweller,Underdweller Mischiefmaker,Misery Loves Company,Your creatures have 2 more base stats that correspond to each of your creatures' classes. This trait does not stack.,Wind-up Rat Toy
-Chaos,Underdweller,Underdweller Ripper,Mortal Terror,"After all start-of-battle effects, this creature attacks a random enemy with Fear and this creature's on-death effects are activated.",Bloody Top Hat
+Chaos,Underdweller,Underdweller Ripper,Mortal Terror,"After all start-of-battle effects, this creature attacks a random enemy with Feared and this creature's on-death effects are activated.",Bloody Top Hat
 Nature,Underdweller,Underdweller Ritesmaster,Dark Ritual,"At the start of battle, your creatures share 10% of their class' corresponding stats with your other creatures.  Your creatures start battles at 50% health. This trait does not stack.",Skull-shaped Candle
-Death,Underdweller,Underdweller Rot-thief,Feast and Famine,Enemies that die with Fear cannot be resurrected.,Gnawed Bone
+Death,Underdweller,Underdweller Rot-thief,Feast and Famine,Enemies that die with Feared cannot be resurrected.,Gnawed Bone
 Rodian Master,Underdweller,Mastery Trait,Master of Underdwellers,"If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",Sigil of the Underdweller
 Life,Unguided,Unguided Agnostic,Dispossession,Your creatures take 50% less damage as a result of their class strength. This trait does not stack.,Dimensional Stardust
 Life,Unguided,Unguided Desecrator,Mesmer,"After this creature damages an enemy, the enemy's class is changed to this creature's class weakness. This trait does not stack.",Demolisher Stardust
