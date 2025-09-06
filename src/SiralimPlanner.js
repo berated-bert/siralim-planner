@@ -909,8 +909,10 @@ class SiralimPlanner extends Component {
       let partyMemberRelics = new Array(6).fill(null);
       for (let i = 0; i < relics.length; i++) {
         for (let j = 0; j < relicsList.length; j++) {
-          if (relicsList[j].name === relics[i]) {
+          const rn = relicsList[j].name.split(",")[0];
+          if (rn === relics[i]) {
             partyMemberRelics[i] = relicsList[j];
+
             break;
           }
         }
