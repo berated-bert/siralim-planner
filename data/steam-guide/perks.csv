@@ -296,7 +296,7 @@ Tribalist,Ties That Bind,5,20,Yes,Your creatures deal additional damage with att
 Tribalist,Transformation,1,100,No,"At the start of battle, your creatures cast their ""Morph"" spells if they have one of these spells in their top-most Spell Gem slot."
 Tribalist,Union,10,10,Yes,Your creatures grant 1% of their highest stat per rank to your other creatures that belong to the same race. Maximum Bonus: 10% stat contribution
 Tribalist,We Are Pack,1,100,Yes,"At the start of battle, if you have at least 4 creatures that belong to the same race fighting on your side, the remaining creatures' races are changed to that race as well. This effect does not change a creature's race if it is an Imler."
-Tribalist,Gone But Not Forgotten (ASCENSION),1,1,Yes,"Traits, spells and other effects that are affected by the number of a certain creature race or class now work with dead creatures as well."
+Tribalist,Gone But Not Forgotten (ASCENSION),1,1,No,"Traits, spells and other effects that are affected by the number of a certain creature race or class now work with dead creatures as well."
 Trickster,Bafflement,6,15,Yes,"At the start of battle, 1 enemy per rank is afflicted with Confused. Maximum Bonus: All six enemies"
 Trickster,Even the Odds,50,2,Yes,"At the start of normal battles, you have a 2% chance per rank to instantly kill a random enemy. If enemies are immune to this effect, they lose 20% of their Current Health instead. Maximum Bonus: 100% chance to kill"
 Trickster,Feint,25,4,Yes,"After your creatures dodge an attack, they have a 4% chance per rank to afflict the enemy with Disarmed. Maximum Bonus: 100% chance to inflict"
@@ -613,7 +613,7 @@ Pariah,Lifelong Respite (ASCENSION),1,1,No,"You have a 25% increased chance to f
 Royal,Master of All,1,1500,No,You can equip 10 additional Anointments.
 Royal,Highborn (ASCENSION),1,1,No,"You can equip 3 additional Anointments, or 5 if you've ascended all other specializations."
 Antiquarian,Abandoned Altar,1,100,Yes,Your creatures' Relics gain 100% more benefit from Reliquary Upgrades.
-Antiquarian,Ancient Synchronicity,1,100,Yes,Your Avatars and Godspawn benefit from this specialization's Relic-boosting perks (such as Timeworn Attunement and Primeval Spellblade) when their corresponding Relic is equipped.
+Antiquarian,Ancient Synchronicity,1,100,Yes,"Your Avatars and Godspawn benefit from the following perks when their corresponding Relic is equipped: Archaic Warspear, Forsaken Wonder, Timeworn Attunement, Primeval Spellblade, Primordial Curse."
 Antiquarian,Archaic Warspear,1,100,Yes,Your creatures' Relics' attacks and spells ignore 25% of enemies' Defense.
 Antiquarian,Bygone Enhancement,1,100,Yes,Your creatures gain 100% more stats from their Relics.
 Antiquarian,Corrupted Warhammer,1,100,Yes,Your creatures deal 1% more damage for each rank their Relics have.
@@ -639,7 +639,7 @@ Mermaid,Mermaid's Embrace,1,100,Yes,Your Guardian and adjacent allies grant 50% 
 Mermaid,Pearl Keeper,1,100,Yes,Your Guardian always has Taunting and intercepts attacks and single-target spells on adjacent allies.
 Mermaid,Refractive Shell,1,100,Yes,"Your Guardian and adjacent allies are immune to debuffs in non-boss battles, and resistant to debuffs in boss battles."
 Mermaid,Rising Tide Raises All Boats,1,100,Yes,All creatures receive additional healing equal to 30% of the damage your Guardian has taken.
-Mermaid,Slam Shut,1,100,Yes,"The first time your Guardian or adjacent allies are killed, they are resurrected with 50% Health and your Guardian castsChrysalis on them."
+Mermaid,Slam Shut,1,100,Yes,"The first time your Guardian or adjacent allies are killed, they are resurrected with 50% Health and your Guardian casts Chrysalis on them."
 Mermaid,So Happy I Could Die,1,100,Yes,Enemies have reduced stats (other than Health) equal to 30% of the amount of healing they've received.
 Mermaid,Taste For Treasure,1,100,Yes,Your Guardian can equip 5 additional Spell Gems.
 Mermaid,Welcome Gift,1,100,Yes,"At the start of your creatures' first turns, they cast Words of Encouragement on themselves."
