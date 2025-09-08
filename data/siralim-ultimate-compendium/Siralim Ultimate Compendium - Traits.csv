@@ -666,7 +666,7 @@ Nature,Electropod,Electropod Spider,Malware,"At the start of each enemy's turn, 
 Rodian Master,Electropod,Mastery Trait,Master of Electropods,"If all the creatures in your party are Electropod, they gain 50% more Speed from stat-boosting effects. This trait does not stack.",Sigil of the Electropod
 Nature,Elementasaur,Ancloudysaur,Cloudy Constitution,This creature always has Vulnerable.  Your creatures with Vulnerable gain 50% more stats from all sources. This trait does not stack.,Cloud Fragment
 Nature,Elementasaur,Brockiosaurus,Orthoclase,This creature always has Stoned.  Your creatures with Stoned have 50% more defense.  Enemies cannot be resistant to Stoned. This trait does not stack.,Orthoclase Feldspar
-Nature,Elementasaur,Darknonychus,Sleepwalking,This creature always has Sleep.  Your creatures with Sleep attack or cast their top-most spell at the start of their turns.  Your creatures with Sleep have a 50% chance to afflict the target with Sleep with attacks and spells. This trait does not stack.,Moon Shard
+Nature,Elementasaur,Darknonychus,Sleepwalking,This creature always has Sleeping.  Your creatures with Sleeping attack or cast their top-most spell at the start of their turns.  Your creatures with Sleeping have a 50% chance to afflict the target with Sleep with attacks and spells. This trait does not stack.,Moon Shard
 Nature,Elementasaur,Holyguanodon,Ignorance is Bliss,"This creature always has Mania and Mending.  After your creatures take damage from Mania, a random enemy takes that damage as well.  After your creatures are healed by Mending, a random enemy is healed for that amount as well. This trait does not stack.",Holy Symbol
 Nature,Elementasaur,Thunder-Rex,Negative Charge,This creature always has Silenced.  Your creatures' Lightning Storm acts as if they have 50% more intelligence for each creature on your team afflicted with Silenced. This trait does not stack.,Resonate Fang
 Nature,Elementasaur,Triflaratops,Molten Spray,"This creature always has Scorned.  After your creatures with Scorned attack, they deal damage to each enemy equal to 50% of the damage dealt. This trait does not stack.",Molten Keratin
@@ -808,12 +808,12 @@ Chaos,Exotic,Junkyard,Road Rage,"After this creature attacks, it has a 25% chanc
 Sorcery,Exotic,Kegstruct,Weaponized Spirit,Booze Spell also count as Arsenal Spell and vice-versa.,Robokeg
 Death,Exotic,King Croak,Croak of the King,"After an ally is killed, this creature casts Cry of the Mandrake.",Crown of Death
 Nature,Exotic,Loki,Rallying Bark,Your creatures take 5% less damage for each different minion they have. This trait does not stack.,Slobbery Tennis Ball
-Life,Exotic,Lunaris,Lights Out,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Silenced and Sleep.",Glowing Moonstone
+Life,Exotic,Lunaris,Lights Out,"At the start of this creature's turn, each enemy has a 50% chance to be afflicted with Silenced and Sleeping.",Glowing Moonstone
 Nature,Exotic,Megalodon,Giant Bite,"After this creature attacks, it deals damage to all enemies equal to 1% to 100% of the damage dealt.",Mythical Tooth
 Nature,Exotic,Melishell,Buzz Breathing,"At the start of your creatures' turns, they recover 10% health for each buff they have. This trait does not stack.",Nacreous Jelly
 Chaos,Exotic,Mimpling,Surprise Treat,"After your creatures receive a debuff, their on-buff effects activate.  If you have a Dumpling or Mimic creature fighting on your side, this effect repeats 1 additional time. This trait does not stack.",Rotten Dough
 Sorcery,Exotic,Miracle Spider,Mega Spider Blast,"Your creatures start battles with 1 stack of Spiderling.  Your creatures' Spiderling now also activate when their master deals damage, and the amount of damage done is now based on their highest stat instead of health. This trait does not stack.",Spider Silk Suit
-Death,Exotic,Nightmare,Eternal Rest,"At the end of each enemy's turn, they have a 10% chance to be afflicted with Sleep.  At the start of this creature's turn, it attacks each enemy with Sleep for 50% normal damage. This trait does not stack.",Blanket of Eternal Rest
+Death,Exotic,Nightmare,Eternal Rest,"At the end of each enemy's turn, they have a 10% chance to be afflicted with Sleeping.  At the start of this creature's turn, it attacks each enemy with Sleeping for 50% normal damage. This trait does not stack.",Blanket of Eternal Rest
 Chaos,Exotic,Ol' Nog,Bang-A-Rang,"After an enemy takes damage from Bomb, this creature afflicts it with Burning and Poisoned.  If the enemy already has these debuffs, their potency is increased by 30% instead.",NT4 Explosive Powder
 Chaos,Exotic,One-Punch Snowman,One-Hit Wonder,"When your creatures attack, their additional attacks are consolidated into the original attack with 100% more damage. This trait does not stack.",Circus Ticket
 Chaos,Exotic,Orc Bowman,Powerful Draw,"This creature can only equip Arrow spells, but they can be from any class.  This creature's single-target Arrow spells deal additional damage equal to 50% of its attack.  This creature's Splitting Arrow and Fragmenting Arrow spells deal 100% more damage.",Composite Longbow
@@ -959,7 +959,7 @@ Sorcery,Golem,Iron Golem,Self-Awareness,Your Golems share their innate traits wi
 Chaos,Golem,Magma Golem,Cataclysm,"After this creature is attacked, it afflicts enemies with Burning.  If enemies already have this debuff, its potency is increased by 30% instead.",Magma Cog
 Nature,Golem,Moss Golem,Mass Entanglement,"After this creature defends, each enemy has a 50% chance to be afflicted with Snared.",Moss Cog
 Nature,Golem,Mud Golem,Slop,"After this creature is attacked, it afflicts enemies with Blind.  If enemies already have this debuff, it decreases their speed by 20% instead.",Mud Cog
-Death,Golem,Nightmare Golem,Bad Dreams,Each enemy has a 50% chance to start battles with Sleep.,Nightmare Cog
+Death,Golem,Nightmare Golem,Bad Dreams,Each enemy has a 50% chance to start battles with Sleeping.,Nightmare Cog
 Sorcery,Golem,Pumking,Pumpkin Spice,"At the start of battle, your creatures swap their Maximum health with their defense.",Giant Jack-o-lantern
 Life,Golem,Regal Golem,Sense of Purpose,"At the start of this creature's turn, your creatures recover 35% health.",Regal Cog
 Nether Room,Golem,Treasure 2.0,Treasure Golem's Boon,"At the start of battle, enemies lose 25% of whichever stat corresponds to your lowest amount of resources. This trait does not stack.",Treasure Golem's Plate
@@ -1147,7 +1147,7 @@ Chaos,Marionette,Marionette Charlatan,Hoodwink,Enemies always have Taunting.  En
 Chaos,Marionette,Marionette Demoiselle,Innocence,Enemies with Cursed take 10% more damage from this debuff for each time an enemy has taken Cursed damage in the current battle. This trait does not stack.,Maiden Lace
 Chaos,Marionette,Marionette Evangelist,Adoration,"At the end of each enemy's turn, they cast a healing Spell Gem equipped by this creature in your favor. This trait does not stack.",Vestment Lace
 Chaos,Marionette,Marionette Harlequin,Circus Reverie,Your creatures deal additional damage with attacks and spells equal to 10% of their attack for each buff their target has. This trait does not stack.,Clown Lace
-Chaos,Marionette,Marionette Hypnotist,Entrancing,"Enemies always have Defensive.  After an enemy defends, this creature afflicts them with Blind and Sleep. This trait does not stack.",Mesmerising Lace
+Chaos,Marionette,Marionette Hypnotist,Entrancing,"Enemies always have Defensive.  After an enemy defends, this creature afflicts them with Blind and Sleeping. This trait does not stack.",Mesmerising Lace
 Chaos,Marionette,Marionette Medium,Heartstrings,"At the end of each enemy's turn, they cast one of their spells.  After an enemy with Cursed casts a spell, they take damage equal 20% of this creature's intelligence. This trait does not stack.",Seance Lace
 Chaos,Marionette,Marionette Primadonna,Spotlight,"At the end of each enemy's turn, they attack this creature for 15% normal damage and are afflicted with Cursed. This trait does not stack.",Diva Lace
 Chaos,Marionette,Marionette Virtuoso,Glissando,"Enemies always have Agile.  The first time an enemy dodges each turn, each of your creatures attack that enemy for 50% normal damage. This trait does not stack.",Harper Lace
@@ -1481,10 +1481,10 @@ Death,Sin,Superbia Sin,Pride,"This creature always has Repelling, and takes 30% 
 Rodian Master,Sin,Mastery Trait,Master of Sins,"If you have 6 different Sins in your party, they gain 3 random Sanctus traits at the start of battle. This trait does not stack.",Sigil of the Sin
 Life,Siren,Siren Ascendant,Coerced Coexistence,"After an enemy attacks, this creature afflicts it with Scorned.  After an enemy casts, this creature afflicts it with Silenced.",Ascendant Bell
 Life,Siren,Siren Beguiler,Siren Charms,"At the start of battle, this creature afflicts 3 random enemies with Confused. This trait does not stack.",Beguiler Bell
-Life,Siren,Siren Coercer,Forbidden Lullaby,"After this creature is attacked, the enemy is afflicted with Sleep.",Coercer Bell
+Life,Siren,Siren Coercer,Forbidden Lullaby,"After this creature is attacked, the enemy is afflicted with Sleeping.",Coercer Bell
 Life,Siren,Siren Lifetaker,Beautiful Sorrow,"After one of your creatures dies, this creature gains their innate trait.",Lifetaker Bell
 Life,Siren,Siren Oracle,In Plain View,"At the start of battle, this creature afflicts each enemy with Scorned or Silenced, depending on whether their attack or intelligence is higher.",Oracle Bell
-Life,Siren,Siren Purifier,Dream Touch,"After this creature attacks, it afflicts the target with Sleep.  In addition, your creatures' attacks never wake up enemies that have Sleep.",Purifier Bell
+Life,Siren,Siren Purifier,Dream Touch,"After this creature attacks, it afflicts the target with Sleeping.  In addition, your creatures' attacks never wake up enemies that have Sleeping.",Purifier Bell
 Life,Siren,Siren Soothsayer,Filtered Truth,Enemies always have equal attack and intelligence; whichever is lower.,Soothsayer Bell
 Nether Boss,Siren,Katarina,Katarina's Asylum,"When your creatures take damage, they take 35% more damage and gain Invisible.",Katarina's Visage
 Nether Boss,Siren,Katarina,Katarina's Guidance,"At the start of battle, your creature that is highest on the Timeline gains 5 random buffs. This trait does not stack.",Katarina's Essence
