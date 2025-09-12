@@ -417,7 +417,6 @@ class SiralimPlanner extends Component {
    * @param  {Array} newRelics An array of relic objects.
    */
   updateRelics(newRelics) {
-    console.log(newRelics);
     this.setState(
       {
         relics: newRelics,
