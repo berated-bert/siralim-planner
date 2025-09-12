@@ -42,7 +42,7 @@
 
   &.monster-row-container-selection {
     margin: 0;
-    background: #fff;
+    background: #fcfcfc;
     &:nth-child(even) {
       background: #f1f1f1;
     }
@@ -52,8 +52,12 @@
 
     @media (max-width: 1280px) {
       padding: 0;
-      margin-bottom: 5px;
-      margin-top: 5px;
+      margin-bottom: 10px;
+      border: none !important;
+
+      &:nth-child(even) {
+        background: #fcfcfc;
+      }
     }
   }
 }
@@ -72,6 +76,11 @@
   }
   &.in-party {
     font-weight: bold;
+    @media (max-width: 1280px) {
+      border: 2px solid rgba($primary-color, 0.8);
+      font-weight: normal;
+      background: rgba($primary-color, 0.09);
+    }
   }
 
   .monster-row-error {
@@ -123,16 +132,92 @@
   }
 
   @media (max-width: 1280px) {
-    flex-direction: column;
+    border: 2px solid rgba($primary-color, 0.4);
+    flex-direction: row;
     text-align: center;
+    flex-wrap: wrap;
+
     //flex-wrap: wrap;
     .cls-container {
       display: inline-flex;
     }
 
+    .monster-row-in-party {
+      display: none;
+    }
+    .monster-row-creature {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      order: 1;
+      justify-content: center;
+      font-weight: bold;
+      background: rgba($primary-color, 0.05);
+    }
+
+    .monster-row-family {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 2;
+      opacity: 0.8;
+      flex-wrap: wrap;
+      background: rgba($primary-color, 0.05);
+    }
+    .monster-row-class {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 3;
+      background: rgba($primary-color, 0.05);
+    }
+    .monster-row-material_name {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      order: 4;
+      background: rgba($primary-color, 0.05);
+    }
+    .monster-row-realm_depth {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      align-self: stretch !important;
+      justify-content: center;
+      order: 5;
+      background: rgba($primary-color, 0.05);
+    }
+
+    .monster-row-trait_name {
+      width: 20%;
+      order: 6;
+      border-top: 2px solid rgba($primary-color, 0.1);
+      border-bottom: 2px solid rgba($primary-color, 0.1);
+      font-weight: bold;
+      text-align: center;
+    }
+    .monster-row-trait_description {
+      width: 80%;
+      order: 7;
+      text-align: left;
+      border-top: 2px solid rgba($primary-color, 0.1);
+      border-bottom: 2px solid rgba($primary-color, 0.1);
+    }
+
+    .monster-row-stat {
+      width: 20%;
+      order: 8;
+      img {
+        margin-right: 5px;
+      }
+    }
+
     > * {
       box-sizing: border-box;
-      width: 100% !important;
+      display: flex;
       &:not(.monster-row-in-party) {
         padding: 5px 20px;
       }
@@ -140,10 +225,6 @@
       // &.monster-row-family, &.monster-row-creature {
       //   width: 50% !important;
       // }
-
-      &:nth-child(even) {
-        background: rgba(0, 0, 0, 0.05);
-      }
     }
   }
 
@@ -307,6 +388,16 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+
+    @media (max-width: 992px) {
+      overflow-x: scroll;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      margin-bottom: 10px;
+      .tab {
+        min-width: 160px;
+      }
+    }
 
     .tab {
       background: rgba($primary-color, 0.1);

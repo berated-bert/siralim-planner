@@ -199,6 +199,21 @@ class MonsterSelectionRowHeader extends PureComponent {
 // A single stat in the MonsterSelection table, colourised based on how high it is with
 // respect to the stats of other monsters.
 class MonsterStat extends PureComponent {
+  /**
+   * Get the icon corresponding to this relic's stat bonus.
+   * @param  {str} stat The stat to get the icon of.
+   * @return {React.component}      The icon.
+   */
+  getStatIcon(stat) {
+    let statIcon;
+    if (stat === "Health") statIcon = icon_health;
+    if (stat === "Attack") statIcon = icon_attack;
+    if (stat === "Intelligence") statIcon = icon_intelligence;
+    if (stat === "Defense") statIcon = icon_defense;
+    if (stat === "Speed") statIcon = icon_speed;
+    return statIcon;
+  }
+
   // Colour the background according to the stat's value with respect to the stats of
   // the other monsters.
   // This is determined via the metadata.
@@ -228,8 +243,13 @@ class MonsterStat extends PureComponent {
     return (
       <div className={"monster-row-stat "}>
         <span className="mobile-only ib">
-          <b>{this.props.stat}:&nbsp;</b>
+          <img
+            src={this.getStatIcon(this.props.stat)}
+            className="class-icon"
+            alt={"stat-" + this.props.stat}
+          />
         </span>
+
         <span className="stat-value" style={this.getStatBackground()}>
           {this.props.value || "-"}
         </span>
@@ -295,33 +315,12 @@ class MonsterSelectionRow extends Component {
         </div>
 
         <div className="monster-row-class">
-          <span className="mobile-only ib">
-            <b>Class:&nbsp;&nbsp;</b>
-          </span>
           {this.renderClass(this.props.class, this.props.renderFullRow)}
         </div>
-        <div className="monster-row-family">
-          <span className="mobile-only ib">
-            <b>Family:&nbsp;</b>
-          </span>
-          {this.props.family}
-        </div>
-        <div className="monster-row-creature">
-          <span className="mobile-only ib">
-            <b>Creature:&nbsp;</b>
-          </span>
-          {this.props.creature}
-        </div>
-        <div className="monster-row-trait_name">
-          <span className="mobile-only ib">
-            <b>Trait name:&nbsp;</b>
-          </span>
-          {this.props.trait_name}
-        </div>
+        <div className="monster-row-family">{this.props.family}</div>
+        <div className="monster-row-creature">{this.props.creature}</div>
+        <div className="monster-row-trait_name">{this.props.trait_name}</div>
         <div className={"monster-row-trait_description"}>
-          <span className="mobile-only ib">
-            <b>Trait description:&nbsp;</b>
-          </span>
           {this.props.trait_description}
         </div>
 
@@ -330,7 +329,10 @@ class MonsterSelectionRow extends Component {
         <div className="monster-row-material_name">
           {this.props.material_name}
         </div>
-        <div className="monster-row-realm_depth">{this.props.realm_depth}</div>
+        <div className="monster-row-realm_depth">
+          <span className="mobile-only ib">RD&nbsp;</span>
+          {this.props.realm_depth}
+        </div>
       </div>
     );
   }

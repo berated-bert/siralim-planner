@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.3.5 (12 September 2025)
+
+-   Improved mobile experience a bit. Still a ways to go before it feels right on mobile IMO but it's a step in the right direction.
+
 ### v1.3.4 (12 September 2025)
 
 -   You can now deselect a relic by clicking the "Saved" button at the top of the relic selection window (thanks Kaja Rainbow for the idea).
