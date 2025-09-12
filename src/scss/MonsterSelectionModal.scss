@@ -198,6 +198,7 @@
       border-bottom: 2px solid rgba($primary-color, 0.1);
       font-weight: bold;
       text-align: center;
+      justify-content: center;
     }
     .monster-row-trait_description {
       width: 80%;
@@ -225,6 +226,25 @@
       // &.monster-row-family, &.monster-row-creature {
       //   width: 50% !important;
       // }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .monster-row-creature,
+    .monster-row-family,
+    .monster-row-class {
+      width: 33.33%;
+    }
+    .monster-row-material_name,
+    .monster-row-realm_depth {
+      width: 50%;
+      border-top: 2px solid rgba($primary-color, 0.1);
+    }
+    .monster-row-trait_name {
+      width: 33.333%;
+    }
+    .monster-row-trait_description {
+      width: 66.667%;
     }
   }
 

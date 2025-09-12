@@ -2,6 +2,8 @@ import React, { Component, PureComponent } from "react";
 import Modal from "react-modal";
 import _ from "underscore";
 
+import { isMobile } from "react-device-detect";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
@@ -444,6 +446,10 @@ class MonsterPlannerTraitSlot extends PureComponent {
         traitSlotName = " Nether Stone trait (3)";
         break;
     }
+    let action = "Click";
+    if (isMobile) {
+      action = "Tap";
+    }
 
     return (
       <>
@@ -461,7 +467,7 @@ class MonsterPlannerTraitSlot extends PureComponent {
               Error: {this.props.error}.{" "}
             </span>
           )}
-          {"Click to add a" + traitSlotName}
+          {action + " to add a" + traitSlotName}
         </div>
       </>
     );

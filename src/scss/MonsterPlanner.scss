@@ -171,6 +171,12 @@
   }
 
   @media (max-width: 800px) {
+    .party-member-profile {
+      width: 40%;
+    }
+    .party-member-traits {
+      width: 60%;
+    }
     .trait-slot .trait-slot-clickable .trait-slot-trait_name {
       padding-top: 10px;
       width: 100%;
