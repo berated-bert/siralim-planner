@@ -758,9 +758,11 @@ class MonsterSelectionModal extends PureComponent {
     let slot =
       this.props.currentTraitSlotId === 0
         ? "primary"
-        : this.props.currentTraitSlotId === 2
+        : this.props.currentTraitSlotId === 1
         ? "secondary"
-        : "artifact";
+        : this.props.currentTraitSlotId === 2
+        ? "artifact"
+        : "nether stone";
     let slot_n = slot === "artifact" ? "n" : "";
     let currentMonster = !_.isEmpty(this.props.currentSelectedMonster)
       ? getMonsterSemanticName(this.props.currentSelectedMonster)

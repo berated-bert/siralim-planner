@@ -850,6 +850,9 @@ class RelicSelectionModal extends Component {
    */
   componentDidUpdate(prevProps, prevState) {
     if (!_.isEqual(prevProps.currentRelic, this.props.currentRelic)) {
+      if (this.props.currentRelic === null) {
+        return;
+      }
       this.setState({
         currentRelic: this.props.currentRelic
           ? this.props.currentRelic
@@ -1158,7 +1161,11 @@ class MonsterPlanner extends Component {
     for (let i = 0; i < this.props.relics.length; i++) {
       newRelics[i] = this.props.relics[i];
       if (i === relicIndex) {
-        newRelics[i] = newRelic;
+        if (newRelic === newRelics[i]) {
+          newRelics[i] = null;
+        } else {
+          newRelics[i] = newRelic;
+        }
       }
     }
     this.props.updateRelics(newRelics);

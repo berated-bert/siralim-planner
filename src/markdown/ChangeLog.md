@@ -1,5 +1,10 @@
 ## Changelog
 
+### v1.3.4 (12 September 2025)
+
+-   You can now deselect a relic by clicking the "Saved" button at the top of the relic selection window (thanks Kaja Rainbow for the idea).
+-   Fixed bug with the monster selection window having the wrong title (thanks MihoP).
+
 ### v1.3.3 (5 September 2025)
 
 -   Added search page for perks (thanks to F Wang for this idea). You can access this via the "Anointments" button.
