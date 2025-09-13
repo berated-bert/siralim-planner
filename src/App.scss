@@ -43,8 +43,7 @@ header {
   background: #222;
   color: white;
   margin: 0;
-  padding: 5px 25px;
-  line-height: 0;
+  padding: 0px 25px;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -124,18 +123,46 @@ header {
         // }
       }
     }
-    @media (max-width: 600px) {
-      display: block;
+    @media (max-width: 1280px) {
+      // Use hamburger somehow
+
       text-align: center;
-      .app-header-left,
-      .app-header-right {
-        width: 100%;
-        display: block;
+      flex-wrap: wrap;
+      padding: 0;
+
+      .hamburger-button {
+        box-sizing: border-box;
+        align-items: center;
+        display: flex;
+        align-items: center;
+        align-self: stretch;
+        margin: 10px 0;
+        justify-content: flex-end;
+      }
+
+      .app-header-left {
+        width: 80%;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
         h3 {
-          margin-bottom: 30px;
+          margin: 0;
+          margin-bottom: 0;
         }
+      }
+      .app-header-right {
+        flex-direction: column;
+        width: 100%;
+        &.hidden {
+          display: none;
+        }
+      }
+
+      .app-header-right {
+        padding-bottom: 20px;
         p {
-          margin: 20px auto;
+          margin: 10px auto;
+          margin-bottom: 20px;
         }
         button {
           width: 100%;
@@ -430,6 +457,10 @@ button#toggle-nether-traits {
   &.hidden {
     opacity: 0;
   }
+  @media (max-width: 1280px) {
+    top: 10px;
+    left: 10px;
+  }
 }
 .notification-error {
   background-color: lighten($color-chaos, 45);
@@ -440,6 +471,9 @@ button#toggle-nether-traits {
   background-color: rgba(lighten($color-nature, 25), 0.7);
   border-color: rgba($color-nature, 0.25);
   color: darken($color-nature, 10);
+  @media (max-width: 1280px) {
+    background-color: rgba(lighten($color-nature, 25), 1);
+  }
 }
 .notification-warning {
   background-color: lighten($color-life, 15);
@@ -526,7 +560,6 @@ button {
   }
 }
 .mobile-hidden {
-  display: block;
   @media (max-width: 1280px) {
     display: none;
   }
@@ -547,11 +580,11 @@ table {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1280px) {
   main {
     display: block;
   }
-  #specialization-planner {
+  #specialization-planner-container {
     width: 100%;
     margin-left: 0 !important;
     .toggle-bar {
@@ -579,4 +612,16 @@ span.new-version {
   padding: 0.25em;
   margin-left: 0.25em;
   color: rgba(0, 0, 0, 0.7);
+}
+
+#mobile-view-selector-container {
+  z-index: 10000;
+  padding: 20px;
+  background: #444;
+  @media (min-width: 1280px) {
+    display: none;
+  }
+}
+#mobile-view-selector {
+  z-index: 10000;
 }

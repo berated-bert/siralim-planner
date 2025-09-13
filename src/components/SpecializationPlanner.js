@@ -667,12 +667,12 @@ class SpecializationPlanner extends PureComponent {
             this.props.currentSpecialization.abbreviation)
         }
       >
-        <div className="toggle-bar" onClick={this.toggleOpen.bind(this)}>
+        {/*        <div className="toggle-bar" onClick={this.toggleOpen.bind(this)}>
           <FontAwesomeIcon
             icon={this.state.isOpen ? faChevronLeft : faChevronRight}
           />
         </div>
-
+*/}
         <SpecializationPlannerAnointmentsModal
           modalIsOpen={this.state.anointmentsModalIsOpen}
           closeModal={this.closeAnointmentsModal.bind(this)}

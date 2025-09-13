@@ -79,11 +79,16 @@ $cols: (
 //   background: desaturate(lighten(map-get($cols, 'NM'), 35), 10);
 // }
 
+#specialization-planner-container {
+  width: 25%;
+}
+
 #specialization-planner {
   position: relative;
+  height: 100%;
   color: rgba(0, 0, 0, 0.95);
   background: #ddd;
-  width: 25%;
+  width: 100%;
   padding: 15px 36px;
   padding-left: 20px;
   transition: margin 0.2s ease, background 0.2s ease, border-color 0.2s ease;
@@ -319,6 +324,7 @@ span.option-icon {
 .specialization-selection {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-bottom: 0;
 
   > div {
@@ -345,10 +351,15 @@ span.option-icon {
     color: rgba(0, 0, 0, 0.75);
     @media (max-width: 1280px) {
       font-size: 12px;
+      width: 40%;
+    }
+    @media (max-width: 800px) {
+      width: 25%;
     }
     .specialization-option {
       padding: 4px 20px;
       cursor: pointer;
+      line-height: 120%;
 
       &.specialziation-search-button {
         padding: 12px 20px;
@@ -379,11 +390,21 @@ span.option-icon {
     padding: 10px 20px;
     overflow-y: auto;
     h2 {
+      line-height: 120%;
       padding-bottom: 15px;
       margin-bottom: 15px;
       &:not(.no-border-bottom) {
         border-bottom: 2px dotted rgba(0, 0, 0, 0.1);
       }
+    }
+    @media (max-width: 1280px) {
+      width: 60%;
+      thead {
+        display: none;
+      }
+    }
+    @media (max-width: 800px) {
+      width: 75%;
     }
   }
 }

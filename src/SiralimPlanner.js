@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Modal from "react-modal";
 import { withRouter } from "react-router-dom";
 import _ from "underscore";
+import Select, { components } from "react-select";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
@@ -38,6 +39,23 @@ const relicsList = require("./data/relics");
 //   {name: "Salus", abbreviation: "salus"},
 
 // ]
+
+/**
+ * Override for customStyles for react-select.
+ * @type {Object}
+ */
+const customStyles = {
+  control: (provided, state) => ({
+    ...provided,
+    border: state.isSelected
+      ? "2px solid rgba(0, 0, 0, 0.4) !important"
+      : state.isFocused
+      ? "2px solid rgba(0, 0, 0, 0.3) !important"
+      : "2px solid rgba(0, 0, 0, 0.4) !important",
+    color: "red",
+    boxShadow: "none",
+  }),
+};
 
 /**
  * Construct a map (i.e. a JSON dictionary) that maps UIDs to the index
@@ -248,6 +266,8 @@ class SiralimPlanner extends Component {
       notificationIndex: 0,
 
       partyId: 0, // Increments upon loading a party in (via string or URL)
+
+      mobileView: "Party",
     };
 
     this.state = this.originalState;
@@ -1102,10 +1122,22 @@ class SiralimPlanner extends Component {
   }
 
   /**
+   * Handle the mobile view change, i.e. change this.state.mobileView
+   * to the provided mobile view.
+   * @param  {obj} selectedOption - The mobile view to update to
+   */
+  handleMobileViewChange(selectedOption) {
+    this.setState({
+      mobileView: selectedOption.value,
+    });
+  }
+
+  /**
    * The render function.
    * @return {ReactComponent} The main div containing the app.
    */
   render() {
+    console.log(this.state.mobileView);
     return (
       <div className="App" id="app">
         <AppHeader
@@ -1152,24 +1184,54 @@ class SiralimPlanner extends Component {
         </div>
 
         <main>
-          <SpecializationPlanner
-            currentSpecialization={this.state.currentSpecialization}
-            anointments={this.state.anointments}
-            maxAnointments={this.state.maxAnointments}
-            updateSpecialization={this.updateSpecialization.bind(this)}
-            updateAnointments={this.updateAnointments.bind(this)}
-            toggleAnointment={this.toggleAnointment.bind(this)}
-          />
-          <MonsterPlanner
-            partyMembers={this.state.partyMembers}
-            updatePartyMembers={this.updatePartyMembers.bind(this)}
-            openModal={this.openModal.bind(this)}
-            clearPartyMember={this.clearPartyMember.bind(this)}
-            relics={this.state.relics}
-            relicsList={relicsList}
-            updateRelics={this.updateRelics.bind(this)}
-            partyId={this.state.partyId}
-          />
+          <div id="mobile-view-selector-container">
+            <Select
+              styles={customStyles}
+              value={{
+                label: this.state.mobileView,
+                value: this.state.mobileView,
+              }}
+              onChange={this.handleMobileViewChange.bind(this)}
+              options={[
+                { value: "Party", label: "Party" },
+                { value: "Specialization", label: "Specialization" },
+              ]}
+              menuPosition="fixed"
+              className="mobile-only"
+              id="mobile-view-selector"
+            />
+          </div>
+
+          <div
+            id="specialization-planner-container"
+            className={
+              this.state.mobileView === "Specialization" ? "" : "mobile-hidden"
+            }
+          >
+            <SpecializationPlanner
+              currentSpecialization={this.state.currentSpecialization}
+              anointments={this.state.anointments}
+              maxAnointments={this.state.maxAnointments}
+              updateSpecialization={this.updateSpecialization.bind(this)}
+              updateAnointments={this.updateAnointments.bind(this)}
+              toggleAnointment={this.toggleAnointment.bind(this)}
+            />
+          </div>
+          <div
+            id="monster-planner-container"
+            className={this.state.mobileView === "Party" ? "" : "mobile-hidden"}
+          >
+            <MonsterPlanner
+              partyMembers={this.state.partyMembers}
+              updatePartyMembers={this.updatePartyMembers.bind(this)}
+              openModal={this.openModal.bind(this)}
+              clearPartyMember={this.clearPartyMember.bind(this)}
+              relics={this.state.relics}
+              relicsList={relicsList}
+              updateRelics={this.updateRelics.bind(this)}
+              partyId={this.state.partyId}
+            />
+          </div>
         </main>
         <AppFooter />
       </div>

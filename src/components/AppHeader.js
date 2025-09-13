@@ -6,9 +6,23 @@ import {
   faInfoCircle,
   faTimes,
   faDice,
+  faBars,
 } from "@fortawesome/free-solid-svg-icons";
 
 class AppHeader extends PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hamburgerOpen: false,
+    };
+  }
+
+  toggleHamburgerOpen() {
+    this.setState({
+      hamburgerOpen: !this.state.hamburgerOpen,
+    });
+  }
+
   render() {
     return (
       <header className="app-header">
@@ -27,7 +41,18 @@ class AppHeader extends PureComponent {
               </span>
             </h3>
           </div>
-          <div className="app-header-right">
+          <button
+            id="hamburger-button"
+            className="mobile-only hamburger-button"
+            onClick={() => this.toggleHamburgerOpen()}
+          >
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          <div
+            className={
+              "app-header-right " + (this.state.hamburgerOpen ? "" : "hidden")
+            }
+          >
             <p>
               <a
                 href="https://docs.google.com/spreadsheets/d/1qvWwf1fNB5jN8bJ8dFGAVzC7scgDCoBO-hglwjTT4iY/edit?gid=0#gid=0"
