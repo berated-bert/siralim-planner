@@ -1,5 +1,9 @@
 ## Changelog
 
+### v1.3.6 (13 September 2025)
+
+-   More mobile improvements (hamburger menu, toggle between Party and Specialization pages, etc). Should be a lot easier to use on mobile, though I may have inadvertently introduced bugs so please let me know if you notice anything odd.
+
 ### v1.3.5 (12 September 2025)
 
 -   Improved mobile experience a bit. Still a ways to go before it feels right on mobile IMO but it's a step in the right direction.
