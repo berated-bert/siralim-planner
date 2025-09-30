@@ -152,7 +152,6 @@ Chaos,Avatar,Vulcanar,Firelord,"When your creatures attack, they deal 20% more d
 Life,Avatar,Yseros,The Truth,"Your creatures' Artifacts' Nether Stones are 100% more powerful, and their Nether Stones' Spell Gems have a 100% chance to activate. This trait does not stack.",No Material Exists
 Sorcery,Avatar,Zonte,Expanded Power,"Your creatures' damaging spells that have ""small"", ""moderate"", or ""large"" potency now have ""massive"" potency.",No Material Exists
 Backer,Backer,Backer Trait,Abyss Orbs,"If an enemy has taken at least 2 turns, they are afflicted with a random debuff at the start and end of their turn. This trait does not stack.",Dark Stick
-Backer,Backer,Backer Trait,Acclimation,Your creatures take 25% less damage from spells for each turn they've taken in the current battle. This trait does not stack.,Itherian Scales
 Backer,Backer,Backer Trait,Adaptive Tactics,Your creatures' attacks ignore 5% of the enemies' Defense (up to 50%) for each time a creature died in the current battle. This trait does not stack.,Weapon Kit
 Backer,Backer,Backer Trait,Alchemist's Buffer,This creature takes 50% less damage from spells and 50% more damage from attacks. This creature has 50% more Intelligence and 50% less Attack.,Corruptium
 Backer,Backer,Backer Trait,Anatidaephobia,All creatures' attacks make a quacking sound.,Rubber Ducky
@@ -161,22 +160,15 @@ Backer,Backer,Backer Trait,Anti-Magic Field,Your creatures have a 35% chance to 
 Backer,Backer,Backer Trait,Arcane Echo,"After your creatures manually cast a spell, they cast a random spell from the same class.",Arcane Puzzle
 Backer,Backer,Backer Trait,At Peace,"After your creatures are resurrected, they gain a Barrier equal to 100% of the amount of Health they resurrected with. This trait does not stack.",Angelic Tears
 Backer,Backer,Backer Trait,Aura Boost,Increases the effectiveness of this creature's first Stat Slot by 400%.,Mathematics Textbook
-Backer,Backer,Backer Trait,Betrayer of the Code,"When one of your creatures casts a single-target spell on an enemy, they have a 30% chance to cast a random Scourge spell on the enemy as well.",Shard of The Unguided
 Backer,Backer,Backer Trait,Bloodletting,"After an enemy takes damage from Bleeding, your creatures have a 35% chance to be resurrected with 50% Health. This trait does not stack.",Ruby Dagger
 Backer,Backer,Backer Trait,Bonding,"After your creatures are killed, they have a 7% chance to be resurrected with 50% Health for each creature that belongs to the same class fighting on your side. This trait does not stack.",Soul Stones
 Backer,Backer,Backer Trait,Boss Powers,"At the start of battle, your creatures gain 50% Maximum Health. Your creatures take 50% more damage. This trait does not stack.",Obvious Weak Spot
-Backer,Backer,Backer Trait,Brain of Misery,"After your creatures cast a spell, they gain 15% of their highest stat, excluding Health.",Twin Swords of Misery
-Backer,Backer,Backer Trait,Breathe Underwater,"When one of your creatures summons a creature, that creature has a 50% chance to start at the top of the Timeline. This trait does not stack.",Musgrave's Tears
 Backer,Backer,Backer Trait,Celestial Nexus,"While this creature has Barrier or Shelled, it takes damage from attacks and spells in place of your other creatures. This trait does not stack.",Celestial Map
 Backer,Backer,Backer Trait,Chaotic Disposition,"After an enemy is afflicted with a debuff, this creature has a 10% chance to cast Debilitating Blast.",Sickly Toad's Stool
 Backer,Backer,Backer Trait,Charging Rod,"After your creatures manually cast a spell, its Spell Gems have a 30% chance to gain 1 Charge. This trait does not stack.",Cold Iron Needle
-Backer,Backer,Backer Trait,Collapsed Dream,Enemies gain 50% less benefit from stat-boosting effects.,Blade of The Unguided
 Backer,Backer,Backer Trait,Consecrated Ground,This creature and its adjacent allies are immune to damage from minions and take 35% less indirect damage. This trait does not stack.,Sacred Mace
 Backer,Backer,Backer Trait,Conspiracy Theory,"After you defeat a Treasure Golem, your creatures gain several bonuses for the rest of the time you're in that Realm. This trait does not stack.",Broken Thermometer
 Backer,Backer,Backer Trait,Coward's Embrace,"Your creatures have a 50% independent chance to dodge, but they can't deal critical damage. This trait does not stack.",Crystallized Cowardice
-Nether Boss,Nether Boss,Damaos,Damaos' Dishonesty,"After an enemy dies, this creature deals damage to all other enemies equal to 15% of the dead creature's Maximum Health.",Damaos' Rusted Blade
-Nether Boss,Nether Boss,Damaos,Damaos' Subversion,"After this creature manually casts a single-target spell on an enemy, it attacks 3 random enemies. These attacks deal 50% normal damage.",Damaos' Skull
-Nether Boss,Nether Boss,Damaos,Damaos' Treason,"After this creature attacks, it casts a random Sword spell on the target.",Damaos' Broken Crown
 Backer,Backer,Backer Trait,Dead of Winter,"After an enemy afflicts a debuff, it is afflicted with Frozen and Poisoned.",Alchemical Frost
 Backer,Backer,Backer Trait,Deep Roots,"When this creature takes damage from a creature that belongs to its class, it has a 75% chance to avoid that damage.",Ancient Soulsoil
 Backer,Backer,Backer Trait,Determination,"After an ally is killed, this creature gains 50% Defense.",Gold Star of Courage
@@ -198,13 +190,7 @@ Backer,Backer,Backer Trait,Gambler's Game,"At the start of each creature's turn,
 Backer,Backer,Backer Trait,Gem Leech,"After this creature attacks, it casts one of the target's Spell Gems.",Crystalline Bloodsucker
 Backer,Backer,Backer Trait,Glitch In The System,"When a creature would gain a buff, it is afflicted with a random debuff instead.",Fried Circuitry
 Backer,Backer,Backer Trait,Guards!,"After this creature attacks an enemy with Stone, it has a 30% chance to be killed.",Handcuffs
-Backer,Backer,Backer Trait,Hand of Misery,"After your creatures manually cast a single-target spell on an enemy, they also attack it.",Scroll of Misery
 Backer,Backer,Backer Trait,Harbinger's Sign,"After this creature is attacked, it has a 50% chance to cast Harbinger's Curse.",Death Herald
-Backer,Backer,Backer Trait,Heart of Misery,"After your creatures cast a spell, they recover 15% Health.",Crown of Misery
-Nether Boss,Nether Boss,Hebron,Hebron's Artifice,"After this creature is attacked, it afflicts the enemy with Bomb.",Hebron's Broken Helmet
-Nether Boss,Nether Boss,Hebron,Hebron's Deceit,"At the start of battle, this creature afflicts 3 random enemies with Bomb.",Hebron's Broken Plate
-Nether Boss,Nether Boss,Hebron,Hebron's Hypocrisy,"After this creature attacks, the target's Bomb is detonated.",Hebron's Broken Gauntlet
-Backer,Backer,Backer Trait,Hebron's Trickery,"After an enemy manually casts a spell, this creature afflicts it with Bomb.",Hebron's Broken Shield
 Backer,Backer,Backer Trait,Heads or Tails,"After this creature attacks, it has a 50% chance to gain a random buff. Otherwise, it gains a random minion.",Lucky Coin
 Backer,Backer,Backer Trait,Hederas's Grasp,"After this creature attacks, it afflicts the target and the creatures adjacent to the target with Snared. This creature's attacks deal 40% more damage.",Bindwood
 Backer,Backer,Backer Trait,Hemophilia,Enemies' Bleeding debuffs last forever and deal 35% more damage. This trait does not stack.,Bloody Rags
@@ -221,7 +207,6 @@ Backer,Backer,Backer Trait,Infestation,"At the start of your creatures' turns, t
 Backer,Backer,Backer Trait,Insight,Your creatures can target Invisible enemies.,Lens of Insight
 Backer,Backer,Backer Trait,Jiggly,This creature has 50% less Defense and 100% more Speed.,Gelatin Lump
 Backer,Backer,Backer Trait,Law of the Large,This creature has additional Speed equal to 30% of its Current Health.,The Tedious Device
-Backer,Backer,Backer Trait,Leap of Faith,This creature's attacks deal additional damage equal to 50% of all the healing the target has received in the current battle.,Plugged Ear
 Backer,Backer,Backer Trait,Lion's Roar,"After this creature takes damage from an enemy, it decreases the enemy's Attack and Defense by 30%.",Lion Toy
 Backer,Backer,Backer Trait,Lithos Evolution,"At the start of your creatures' turns, they gain 10% Maximum Health. This trait does not stack.",Lithos Sinew
 Backer,Backer,Backer Trait,Lord of Undeath,"After one of your creatures' minions go away, all your creatures gain a random minion. This trait does not stack.",Legendary Undead Fragment
@@ -250,7 +235,6 @@ Backer,Backer,Backer Trait,Prepared,The Timeline order is determined by your cre
 Backer,Backer,Backer Trait,Providence,"While this creature has Shelled, it has 150% more Attack and Intelligence.",Blade of Divinity
 Backer,Backer,Backer Trait,Rainbow Palate,This creature has 25% more stats (other than Health) for each different class of creature fighting on your side.,Prismatic Stone
 Backer,Backer,Backer Trait,Rave,Your creatures deal 6% more damage for each creature of the same race fighting on your side. This trait does not stack.,Glowstick
-Backer,Backer,Backer Trait,Reap Destruction,This creature deals 5% more damage for each buff it has received in the current battle.,Silver Spur
 Backer,Backer,Backer Trait,Restoration,This creature's stats are not reset after it is killed.,Rogue's Hood
 Backer,Backer,Backer Trait,Rise of the Phoenix,"After your creatures with Burning are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack.",Ash of Renewal
 Backer,Backer,Backer Trait,Roll the Dice,"At the end of this creature's turn, it casts 2 of its Ethereal Spell Gems.",Die Fragments
@@ -259,13 +243,9 @@ Backer,Backer,Backer Trait,Scheming Stance,"After this creature defends or provo
 Backer,Backer,Backer Trait,Screech of Domination,"After this creature attacks, it gains copies of the enemy's minions.",Conch of the Siren
 Backer,Backer,Backer Trait,Seed of Potentiality,"After this creature gains a stat, it gains 200% of this amount of another stat (other than Health). The stats gained from this trait do not activate effects that occur when stats are gained.",Ouroboros Key
 Backer,Backer,Backer Trait,Seethe,This creature deals 15% more damage for each time it has taken damage in the current battle.,Stolen Pig
-Backer,Backer,Backer Trait,Serenade of Guilt,Your creatures' class-specific traits act as if your party contains 2 more creatures that belong to that class. This trait does not stack.,Eye of The Unguided
 Backer,Backer,Backer Trait,Shrapnel Blast,"After an enemy takes damage at the start of its turn from Bomb, all other enemies take 50% of that damage as well. This trait does not stack.",Bomb Scraps
 Backer,Backer,Backer Trait,Shattering Tackle,Your creatures' attacks ignore 2.5% of the enemies' Defense for each Yeti creature fighting on your side. This bonus is doubled if the enemy is afflicted with Frozen. This trait does not stack.,Special Snowball
 Backer,Backer,Backer Trait,Single Discipline,"After this creature casts a spell, it gains 10% Intelligence for each time it was cast at the same time.",Lost Notes
-Backer,Backer,Backer Trait,Siralim's Ascendance,"At the start of battle, this creature gains a random Avatar trait.",Fall of Siralim
-Backer,Backer,Backer Trait,Siralim's Attunement,"After this creature attacks, it has a 10% chance to cast a random Ultimate spell. This trait can only activate once per turn.",Revolution of Siralim
-Backer,Backer,Backer Trait,Siralim's Prayer,"At the start of battle, this creature casts a random Ultimate spell.",Rise of Siralim
 Backer,Backer,Backer Trait,Snack Break,"At the start of this creature's turn, it recovers 200% Health and loses 20% Speed.",Bag of Chips
 Backer,Backer,Backer Trait,Sobered Up,Your creatures can manually cast Booze Spells.,Empty Beer Mug
 Backer,Backer,Backer Trait,Soul Steal,"After this creature attacks, its Spell Gem with the lowest number of remaining Charges gains 1 Charge. This creature's attacks deal 75% more damage.",Bloody Soul Crystal
@@ -273,7 +253,6 @@ Backer,Backer,Backer Trait,Spontaneous Entropy,"At the end of this creature's tu
 Backer,Backer,Backer Trait,Squadron Leader,This creature has 20% more stats (other than Health) for each minion it has.,Tactician's Manual
 Backer,Backer,Backer Trait,Superfluidity,"When your creatures automatically cast a spell, they have a 5% chance to be considered manual casts. This trait does not stack.",Lunar Dust
 Backer,Backer,Backer Trait,Sustain,"After this creature deals damage, it recovers Health equal to 10% of the damage dealt.",Universal Blood
-Backer,Backer,Backer Trait,Syndrome,This creature takes 5% less damage for each debuff it has received in the current battle.,Blind Eye
 Backer,Backer,Backer Trait,Swarming Horde,Your creatures have 4% more stats (other than Health) for each creature of their same race fighting on your side. This trait does not stack.,Boon of the Swarm
 Backer,Backer,Backer Trait,Swelling Ranks,"After this creature provokes, it grants copies of one of its minions to your other creatures.",Torn Flag
 Backer,Backer,Backer Trait,Sword of Will,"After this creature attacks, and the damage exceeds 300% of the target's lowest stat, it is killed.",Non-Existent Blade
@@ -306,7 +285,7 @@ Backer,Backer,Backer Trait,Master of Time,"After this creature manually casts a 
 Backer,Backer,Backer Trait,Obey,"After this creature attacks or casts a spell, your creatures of the same class provoke and gain Shelled. This trait does not stack.",Forbidden Relic Shard
 Backer,Backer,Backer Trait,Shield Mastery,"This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it defends, and then its turn ends.",Gemspike Shield Fragment
 Backer,Backer,Backer Trait,True Divinity,"If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack.",The Abraxas
-Backer,Backer,Backer Trait,Ultima,"At the start of this creature's turn, it casts Planets.",Lost Star
+Backer,Backer,Backer Trait,Vext's Grace,Increases your creatures' minimum stat limits by 50%. This trait does not stack.,Vext's Fur
 Backer,Backer,Backer Trait,Vivid Nightmares,"After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack.",Nightmare Eyes
 Death,Banshee,Abyss Banshee,Empowered Death Siphon,"At the start of battle, this creature gains Death Siphon.  When this creature casts this spell, it doesn't kill the target.",Abyss Doll
 Death,Banshee,Anguish Banshee,Empowered Magic Missile,"At the start of battle, this creature gains Magic Missile.  When this creature casts this spell, it casts 3 additional times.",Anguish Doll
@@ -1489,7 +1468,6 @@ Sorcery,Slime,Bile Slime,Secret Recipe,"After this creature is resurrected, your
 Sorcery,Slime,Blood Slime,Dispersion,"After this creature is healed, your other creatures that don't have this trait are healed for 50% of the amount as well.",Blood Ooze
 Sorcery,Slime,Cursed Slime,False Prophecy,"This creature always has Cursed.  When this creature would take damage from Cursed, the damage is dealt to the enemy instead.",Cursed Ooze
 Sorcery,Slime,Ectoplasmic Slime,Concoction,"After this creature gains a buff, your other creatures that don't have this trait gain a copy of that buff as well.",Ectoplasmic Ooze
-Sorcery,Slime,Failed Experiment,Multiply,"After this creature is damaged by an attack or spell, it summons a copy of itself.",Unknown Material
 Sorcery,Slime,Glutinous Slime,Abomination,"After this creature gains stats, your other creatures that don't have this trait gain 25% of those stats as well.",Glutinous Ooze
 Sorcery,Slime,Infested Slime,Parasitic Illusion,"This creature always has Poisoned.  After this creature takes damage from Poisoned, 50% of the damage is dealt to all enemies.",Infested Ooze
 Sorcery,Slime,Mercurial Slime,Diffusion,"After this creature gains a minion, your other creatures that don't have this trait gain that minion as well.",Mercurial Ooze
@@ -1792,7 +1770,6 @@ Sorcery,Yeti,Rimefist Yeti,Frost Breath,"After this creature dodges or deals cri
 Sorcery,Yeti,Snowsting Yeti,Cold Snap,"When this creature damages a Frozen enemy, it deals 300% more damage and removes the debuff.",Snowsting Snowball
 Nether Boss,Yeti,Vext,Vext's Antiquity,"When enemies lose stats, increase the amount of stats reduced by 50%. This trait does not stack.",Vext's Fingers
 Nether Boss,Yeti,Vext,Vext's Boldness,Increases your creatures' maximum stat limit before they are subjected to diminishing returns by 50%. This trait does not stack.,Vext's Eyebrows
-Nether Boss,Yeti,Vext,Vext's Grace,Increases your creatures' minimum stat limits by 50%. This trait does not stack.,
 Nether Boss,Yeti,Vext,Vext's Invocation,"When your creatures gain stats, increase the amount of stats gained by 50%. This trait does not stack.",Vext's Toes
 Rodian Master,Yeti,Mastery Trait,Master of Yetis,"At the start of battle, enemies are afflicted with Frozen if all the creatures in your party are Yetis.",Sigil of the Yeti
 Boss,Zantai,Zantai Material,Zantai's Boon,"At the start of battle, this creature gains Mega Magic. Your creatures' Mega Magic now grants your creatures 3 random buffs.",Jewel of Zantai (Purple)

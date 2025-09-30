@@ -3248,17 +3248,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Acclimation",
-  "trait_description": "Your creatures take 25% less damage from spells for each turn they've taken in the current battle. This trait does not stack.",
-  "material_name": "Itherian Scales",
-  "search_text": "Backer Backer Trait Backer Acclimation Your creatures take 25% less damage from spells for each turn they've taken in the current battle. This trait does not stack. Itherian Scales",
-  "uid": "4ce7a3",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Adaptive Tactics",
   "trait_description": "Your creatures' attacks ignore 5% of the enemies' Defense (up to 50%) for each time a creature died in the current battle. This trait does not stack.",
   "material_name": "Weapon Kit",
@@ -3347,17 +3336,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Betrayer of the Code",
-  "trait_description": "When one of your creatures casts a single-target spell on an enemy, they have a 30% chance to cast a random Scourge spell on the enemy as well.",
-  "material_name": "Shard of The Unguided",
-  "search_text": "Backer Backer Trait Backer Betrayer of the Code When one of your creatures casts a single-target spell on an enemy, they have a 30% chance to cast a random Scourge spell on the enemy as well. Shard of The Unguided",
-  "uid": "1f1817",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Bloodletting",
   "trait_description": "After an enemy takes damage from Bleeding, your creatures have a 35% chance to be resurrected with 50% Health. This trait does not stack.",
   "material_name": "Ruby Dagger",
@@ -3391,28 +3369,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Brain of Misery",
-  "trait_description": "After your creatures cast a spell, they gain 15% of their highest stat, excluding Health.",
-  "material_name": "Twin Swords of Misery",
-  "search_text": "Backer Backer Trait Backer Brain of Misery After your creatures cast a spell, they gain 15% of their highest stat, excluding Health. Twin Swords of Misery",
-  "uid": "627103",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Breathe Underwater",
-  "trait_description": "When one of your creatures summons a creature, that creature has a 50% chance to start at the top of the Timeline. This trait does not stack.",
-  "material_name": "Musgrave's Tears",
-  "search_text": "Backer Backer Trait Backer Breathe Underwater When one of your creatures summons a creature, that creature has a 50% chance to start at the top of the Timeline. This trait does not stack. Musgrave's Tears",
-  "uid": "c0a9a0",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Celestial Nexus",
   "trait_description": "While this creature has Barrier or Shelled, it takes damage from attacks and spells in place of your other creatures. This trait does not stack.",
   "material_name": "Celestial Map",
@@ -3440,17 +3396,6 @@
   "material_name": "Cold Iron Needle",
   "search_text": "Backer Backer Trait Backer Charging Rod After your creatures manually cast a spell, its Spell Gems have a 30% chance to gain 1 Charge. This trait does not stack. Cold Iron Needle",
   "uid": "3dcaf3",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Collapsed Dream",
-  "trait_description": "Enemies gain 50% less benefit from stat-boosting effects.",
-  "material_name": "Blade of The Unguided",
-  "search_text": "Backer Backer Trait Backer Collapsed Dream Enemies gain 50% less benefit from stat-boosting effects. Blade of The Unguided",
-  "uid": "64b425",
   "realm_depth": "N/A"
  },
  {
@@ -3721,44 +3666,11 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Hand of Misery",
-  "trait_description": "After your creatures manually cast a single-target spell on an enemy, they also attack it.",
-  "material_name": "Scroll of Misery",
-  "search_text": "Backer Backer Trait Backer Hand of Misery After your creatures manually cast a single-target spell on an enemy, they also attack it. Scroll of Misery",
-  "uid": "64fcd2",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Harbinger's Sign",
   "trait_description": "After this creature is attacked, it has a 50% chance to cast Harbinger's Curse.",
   "material_name": "Death Herald",
   "search_text": "Backer Backer Trait Backer Harbinger's Sign After this creature is attacked, it has a 50% chance to cast Harbinger's Curse. Death Herald",
   "uid": "b33103",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Heart of Misery",
-  "trait_description": "After your creatures cast a spell, they recover 15% Health.",
-  "material_name": "Crown of Misery",
-  "search_text": "Backer Backer Trait Backer Heart of Misery After your creatures cast a spell, they recover 15% Health. Crown of Misery",
-  "uid": "90ebac",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Hebron's Trickery",
-  "trait_description": "After an enemy manually casts a spell, this creature afflicts it with Bomb.",
-  "material_name": "Hebron's Broken Shield",
-  "search_text": "Backer Backer Trait Backer Hebron's Trickery After an enemy manually casts a spell, this creature afflicts it with Bomb. Hebron's Broken Shield",
-  "uid": "f3a6b2",
   "realm_depth": "N/A"
  },
  {
@@ -3935,17 +3847,6 @@
   "material_name": "The Tedious Device",
   "search_text": "Backer Backer Trait Backer Law of the Large This creature has additional Speed equal to 30% of its Current Health. The Tedious Device",
   "uid": "2313cc",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Leap of Faith",
-  "trait_description": "This creature's attacks deal additional damage equal to 50% of all the healing the target has received in the current battle.",
-  "material_name": "Plugged Ear",
-  "search_text": "Backer Backer Trait Backer Leap of Faith This creature's attacks deal additional damage equal to 50% of all the healing the target has received in the current battle. Plugged Ear",
-  "uid": "1e266d",
   "realm_depth": "N/A"
  },
  {
@@ -4260,17 +4161,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Reap Destruction",
-  "trait_description": "This creature deals 5% more damage for each buff it has received in the current battle.",
-  "material_name": "Silver Spur",
-  "search_text": "Backer Backer Trait Backer Reap Destruction This creature deals 5% more damage for each buff it has received in the current battle. Silver Spur",
-  "uid": "c93f87",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Restoration",
   "trait_description": "This creature's stats are not reset after it is killed.",
   "material_name": "Rogue's Hood",
@@ -4359,17 +4249,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Serenade of Guilt",
-  "trait_description": "Your creatures' class-specific traits act as if your party contains 2 more creatures that belong to that class. This trait does not stack.",
-  "material_name": "Eye of The Unguided",
-  "search_text": "Backer Backer Trait Backer Serenade of Guilt Your creatures' class-specific traits act as if your party contains 2 more creatures that belong to that class. This trait does not stack. Eye of The Unguided",
-  "uid": "48aec2",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Shrapnel Blast",
   "trait_description": "After an enemy takes damage at the start of its turn from Bomb, all other enemies take 50% of that damage as well. This trait does not stack.",
   "material_name": "Bomb Scraps",
@@ -4397,39 +4276,6 @@
   "material_name": "Lost Notes",
   "search_text": "Backer Backer Trait Backer Single Discipline After this creature casts a spell, it gains 10% Intelligence for each time it was cast at the same time. Lost Notes",
   "uid": "50d303",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Siralim's Ascendance",
-  "trait_description": "At the start of battle, this creature gains a random Avatar trait.",
-  "material_name": "Fall of Siralim",
-  "search_text": "Backer Backer Trait Backer Siralim's Ascendance At the start of battle, this creature gains a random Avatar trait. Fall of Siralim",
-  "uid": "009f82",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Siralim's Attunement",
-  "trait_description": "After this creature attacks, it has a 10% chance to cast a random Ultimate spell. This trait can only activate once per turn.",
-  "material_name": "Revolution of Siralim",
-  "search_text": "Backer Backer Trait Backer Siralim's Attunement After this creature attacks, it has a 10% chance to cast a random Ultimate spell. This trait can only activate once per turn. Revolution of Siralim",
-  "uid": "dfad9e",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Siralim's Prayer",
-  "trait_description": "At the start of battle, this creature casts a random Ultimate spell.",
-  "material_name": "Rise of Siralim",
-  "search_text": "Backer Backer Trait Backer Siralim's Prayer At the start of battle, this creature casts a random Ultimate spell. Rise of Siralim",
-  "uid": "107a12",
   "realm_depth": "N/A"
  },
  {
@@ -4507,17 +4353,6 @@
   "material_name": "Universal Blood",
   "search_text": "Backer Backer Trait Backer Sustain After this creature deals damage, it recovers Health equal to 10% of the damage dealt. Universal Blood",
   "uid": "fef1bc",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
-  "trait_name": "Syndrome",
-  "trait_description": "This creature takes 5% less damage for each debuff it has received in the current battle.",
-  "material_name": "Blind Eye",
-  "search_text": "Backer Backer Trait Backer Syndrome This creature takes 5% less damage for each debuff it has received in the current battle. Blind Eye",
-  "uid": "742602",
   "realm_depth": "N/A"
  },
  {
@@ -4876,11 +4711,11 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Ultima",
-  "trait_description": "At the start of this creature's turn, it casts Planets.",
-  "material_name": "Lost Star",
-  "search_text": "Backer Backer Trait Backer Ultima At the start of this creature's turn, it casts Planets. Lost Star",
-  "uid": "f2e195",
+  "trait_name": "Vext's Grace",
+  "trait_description": "Increases your creatures' minimum stat limits by 50%. This trait does not stack.",
+  "material_name": "Vext's Fur",
+  "search_text": "Backer Backer Trait Backer Vext's Grace Increases your creatures' minimum stat limits by 50%. This trait does not stack. Vext's Fur",
+  "uid": "f0751a",
   "realm_depth": "N/A"
  },
  {
@@ -24523,72 +24358,6 @@
   "sprite_filename": "battle-sprites/spr_crits_battle_3005.png"
  },
  {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Damaos",
-  "trait_name": "Damaos' Dishonesty",
-  "trait_description": "After an enemy dies, this creature deals damage to all other enemies equal to 15% of the dead creature's Maximum Health.",
-  "material_name": "Damaos' Rusted Blade",
-  "search_text": "Nether Boss Damaos Nether Boss Damaos' Dishonesty After an enemy dies, this creature deals damage to all other enemies equal to 15% of the dead creature's Maximum Health. Damaos' Rusted Blade",
-  "uid": "ce7ebb",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Damaos",
-  "trait_name": "Damaos' Subversion",
-  "trait_description": "After this creature manually casts a single-target spell on an enemy, it attacks 3 random enemies. These attacks deal 50% normal damage.",
-  "material_name": "Damaos' Skull",
-  "search_text": "Nether Boss Damaos Nether Boss Damaos' Subversion After this creature manually casts a single-target spell on an enemy, it attacks 3 random enemies. These attacks deal 50% normal damage. Damaos' Skull",
-  "uid": "5a79d8",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Damaos",
-  "trait_name": "Damaos' Treason",
-  "trait_description": "After this creature attacks, it casts a random Sword spell on the target.",
-  "material_name": "Damaos' Broken Crown",
-  "search_text": "Nether Boss Damaos Nether Boss Damaos' Treason After this creature attacks, it casts a random Sword spell on the target. Damaos' Broken Crown",
-  "uid": "8fd1df",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Hebron",
-  "trait_name": "Hebron's Artifice",
-  "trait_description": "After this creature is attacked, it afflicts the enemy with Bomb.",
-  "material_name": "Hebron's Broken Helmet",
-  "search_text": "Nether Boss Hebron Nether Boss Hebron's Artifice After this creature is attacked, it afflicts the enemy with Bomb. Hebron's Broken Helmet",
-  "uid": "f2099e",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Hebron",
-  "trait_name": "Hebron's Deceit",
-  "trait_description": "At the start of battle, this creature afflicts 3 random enemies with Bomb.",
-  "material_name": "Hebron's Broken Plate",
-  "search_text": "Nether Boss Hebron Nether Boss Hebron's Deceit At the start of battle, this creature afflicts 3 random enemies with Bomb. Hebron's Broken Plate",
-  "uid": "99ca15",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Nether Boss",
-  "creature": "Hebron",
-  "trait_name": "Hebron's Hypocrisy",
-  "trait_description": "After this creature attacks, the target's Bomb is detonated.",
-  "material_name": "Hebron's Broken Gauntlet",
-  "search_text": "Nether Boss Hebron Nether Boss Hebron's Hypocrisy After this creature attacks, the target's Bomb is detonated. Hebron's Broken Gauntlet",
-  "uid": "061d17",
-  "realm_depth": "N/A"
- },
- {
   "class": "Rodian Master",
   "family": "Nihilist",
   "creature": "Mastery Trait",
@@ -30411,29 +30180,6 @@
    "Refuge of the Magi (Mucus)"
   ],
   "sprite_filename": "battle-sprites/spr_crits_battle_2207.png"
- },
- {
-  "class": "Sorcery",
-  "family": "Slime",
-  "creature": "Failed Experiment",
-  "trait_name": "Multiply",
-  "trait_description": "After this creature is damaged by an attack or spell, it summons a copy of itself.",
-  "material_name": "Unknown Material",
-  "search_text": "Sorcery Failed Experiment Slime Multiply After this creature is damaged by an attack or spell, it summons a copy of itself. Unknown Material",
-  "uid": "96826f",
-  "realm_depth": "?",
-  "stats": {
-   "health": 43,
-   "attack": 18,
-   "intelligence": 16,
-   "defense": 21,
-   "speed": 11,
-   "total": 109
-  },
-  "sources": [
-   "Unknown"
-  ],
-  "sprite_filename": "battle-sprites/spr_crits_battle_541.png"
  },
  {
   "class": "Nether Boss",
@@ -36705,17 +36451,6 @@
   "material_name": "Vext's Eyebrows",
   "search_text": "Nether Boss Vext Yeti Vext's Boldness Increases your creatures' maximum stat limit before they are subjected to diminishing returns by 50%. This trait does not stack. Vext's Eyebrows",
   "uid": "6f10bc",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Nether Boss",
-  "family": "Yeti",
-  "creature": "Vext",
-  "trait_name": "Vext's Grace",
-  "trait_description": "Increases your creatures' minimum stat limits by 50%. This trait does not stack.",
-  "material_name": "",
-  "search_text": "Nether Boss Vext Yeti Vext's Grace Increases your creatures' minimum stat limits by 50%. This trait does not stack. ",
-  "uid": "df6f78",
   "realm_depth": "N/A"
  },
  {
