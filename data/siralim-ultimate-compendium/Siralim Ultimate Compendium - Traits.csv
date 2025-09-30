@@ -285,7 +285,6 @@ Backer,Backer,Backer Trait,Master of Time,"After this creature manually casts a 
 Backer,Backer,Backer Trait,Obey,"After this creature attacks or casts a spell, your creatures of the same class provoke and gain Shelled. This trait does not stack.",Forbidden Relic Shard
 Backer,Backer,Backer Trait,Shield Mastery,"This creature deals additional damage with attacks and spells equal to 50% of its Defense. At the start of this creature's turn, it defends, and then its turn ends.",Gemspike Shield Fragment
 Backer,Backer,Backer Trait,True Divinity,"If this creature's Relic's corresponding Avatar is in your party, the Relic's attacks and spells ignore 25% Defense and are 50% more potent. If the corresponding Godspawn is also present, this effect is doubled. This trait does not stack.",The Abraxas
-Backer,Backer,Backer Trait,Vext's Grace,Increases your creatures' minimum stat limits by 50%. This trait does not stack.,Vext's Fur
 Backer,Backer,Backer Trait,Vivid Nightmares,"After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack.",Nightmare Eyes
 Death,Banshee,Abyss Banshee,Empowered Death Siphon,"At the start of battle, this creature gains Death Siphon.  When this creature casts this spell, it doesn't kill the target.",Abyss Doll
 Death,Banshee,Anguish Banshee,Empowered Magic Missile,"At the start of battle, this creature gains Magic Missile.  When this creature casts this spell, it casts 3 additional times.",Anguish Doll

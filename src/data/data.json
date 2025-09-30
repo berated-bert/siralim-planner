@@ -4711,17 +4711,6 @@
   "class": "Backer",
   "family": "Backer",
   "creature": "Backer Trait",
-  "trait_name": "Vext's Grace",
-  "trait_description": "Increases your creatures' minimum stat limits by 50%. This trait does not stack.",
-  "material_name": "Vext's Fur",
-  "search_text": "Backer Backer Trait Backer Vext's Grace Increases your creatures' minimum stat limits by 50%. This trait does not stack. Vext's Fur",
-  "uid": "f0751a",
-  "realm_depth": "N/A"
- },
- {
-  "class": "Backer",
-  "family": "Backer",
-  "creature": "Backer Trait",
   "trait_name": "Vivid Nightmares",
   "trait_description": "After an enemy wakes up from Sleeping, it takes damage equal to 20% of its Maximum Health. This trait does not stack.",
   "material_name": "Nightmare Eyes",
