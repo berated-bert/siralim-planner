@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/siralim-planner/static/css/main.3e0b8663.css",
-    "main.js": "/siralim-planner/static/js/main.e45b49d6.js",
+    "main.js": "/siralim-planner/static/js/main.e20f621e.js",
     "static/js/787.6d845ad7.chunk.js": "/siralim-planner/static/js/787.6d845ad7.chunk.js",
     "static/media/ChangeLog.md": "/siralim-planner/static/media/ChangeLog.f427ff02943e1c3798b2.md",
     "static/media/InfoSection.md": "/siralim-planner/static/media/InfoSection.f0990c29b46e31f28cc5.md",
     "index.html": "/siralim-planner/index.html",
     "main.3e0b8663.css.map": "/siralim-planner/static/css/main.3e0b8663.css.map",
-    "main.e45b49d6.js.map": "/siralim-planner/static/js/main.e45b49d6.js.map",
+    "main.e20f621e.js.map": "/siralim-planner/static/js/main.e20f621e.js.map",
     "787.6d845ad7.chunk.js.map": "/siralim-planner/static/js/787.6d845ad7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3e0b8663.css",
-    "static/js/main.e45b49d6.js"
+    "static/js/main.e20f621e.js"
   ]
 }
