@@ -19409,8 +19409,8 @@
   "creature": "Benthic Guardian",
   "trait_name": "Gentle Giant",
   "trait_description": "At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense.",
-  "material_name": "Immovable Shell",
-  "search_text": "Nature Benthic Guardian Guardian Gentle Giant At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense. Immovable Shell",
+  "material_name": "No Material Exists",
+  "search_text": "Nature Benthic Guardian Guardian Gentle Giant At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense. No Material Exists",
   "uid": "7d7b9d",
   "realm_depth": 19,
   "stats": {

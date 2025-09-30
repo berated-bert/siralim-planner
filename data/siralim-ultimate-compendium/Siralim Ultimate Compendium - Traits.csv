@@ -960,7 +960,7 @@ Sorcery,Grimoire,Necro Grimoire,Book of the Dead,"At the start of battle, this c
 Sorcery,Grimoire,Pyro Grimoire,Book of the Arsonist,This creature's spells that apply the Burning debuff deal 30% more damage.  Enemies' Burning debuffs applied by this creature also deal 30% more damage.,Pyro Parchment
 Sorcery,Grimoire,Runic Grimoire,Book of the Warlock,"Your creatures start battles with Arcane.  At the end of your creatures' turns, they have a 30% chance to gain Arcane.",Runic Parchment
 Rodian Master,Grimoire,Mastery Trait,Master of Grimoires,"Your Grimoires are immune to Silenced. In addition, their Spell Gems do not consume Charges.",Sigil of the Grimoire
-Nature,Guardian,Benthic Guardian,Gentle Giant,"At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense.",Immovable Shell
+Nature,Guardian,Benthic Guardian,Gentle Giant,"At the start of battle, this creature's class changes to that of the creature to its left and gains a copy of the Fused trait of the creature to its right.  This creature cannot deal direct damage with attacks or spells, but its spell potency is based on its defense.",No Material Exists
 Chaos,Harpy,Harpy Eyegouger,KRAAW!!!,This creature's attacks deal 75% more damage and afflict Blind.,Eyegouger Crest
 Chaos,Harpy,Harpy Hag,SCRAAAW!,"When enemies defend or provoke, this creature has a 50% chance to prevent this from happening.",Hag Crest
 Chaos,Harpy,Harpy Marauder,Bad Omen,"At the start of battle, this creature afflicts enemies with Blind.",Marauder Crest
