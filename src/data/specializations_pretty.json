@@ -2839,7 +2839,7 @@
     "ranks": "1",
     "cost_per_rank": "1",
     "anointment": "No",
-    "description": "Your creatures' buffs last forever. In addition, when one of your creature's buffs would be forcefully removed (for example, if your creature with Invisible makes an action), they have a 30% chance to retain that buff.",
+    "description": "Your creatures' buffs last forever. In addition, when one of your creature's buffs would be forcefully removed (for example, if your creature with Invisible makes an action), they have a 50% chance to retain that buff.",
     "spec": "Warden",
     "spec_abbrev": "WA",
     "uid": "WAS",

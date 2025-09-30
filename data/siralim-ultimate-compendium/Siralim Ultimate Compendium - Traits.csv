@@ -74,8 +74,7 @@ Chaos,Apocalypse,Inox Apocalypse,Naxor Harbinger,Your creatures deal 40% more da
 Chaos,Apocalypse,Zarox Apocalypse,Mungus Harbinger,Your creatures take 10% less damage for each turn they've taken in the current battle. This trait does not stack.,Zarox Sinew
 Chaos,Apocalypse,Zzyia Apocalypse,Phase Out,Your creatures have a 5% chance (up to 50%) to avoid damage for each turn they've taken in the current battle. This trait does not stack.,Zzyia Sinew
 Nether Boss,Apocalypse,Scylla and Charybdis,Gift of Charybdis,"After your creatures die, they grant 25% of their Intelligence and Defense to all your creatures. This trait does not stack.",Charybdis' Trident
-Nether Boss,Apocalypse,Scylla and Charybdis,Torn Between Scylla and Charybdis,"After your creatures die, they grant a copy of their innate trait to your other creatures.","Torn Between
-Scylla and Charybdis"
+Nether Boss,Apocalypse,Scylla and Charybdis,Torn Between Scylla and Charybdis,"After your creatures die, they grant a copy of their innate trait to your other creatures.",Cloud Opal
 Rodian Master,Apocalypse,Mastery Trait,Master of Apocalypses,Your Apocalypses act as if they take 1 additional turn. This trait does not stack.,Sigil of the Apocalypse
 Nature,Arachnalisk,Ancient Arachnalisk,Consume,"When this creature attacks an enemy with Snared, it deals 150% more damage, recovers health equal to 100% of the damage dealt, and removes this debuff.",Ancient Mandible
 Nature,Arachnalisk,Canopy Arachnalisk,Here to Die,"After an enemy is afflicted with either Bleeding or Poisoned, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Canopy Mandible
@@ -255,7 +254,7 @@ Backer,Backer,Backer Trait,Reap Destruction,This creature deals 5% more damage f
 Backer,Backer,Backer Trait,Restoration,This creature's stats are not reset after it is killed.,Rogue's Hood
 Backer,Backer,Backer Trait,Rise of the Phoenix,"After your creatures with Burning are killed, they have a 35% chance to be resurrected with 20% Health. This trait does not stack.",Ash of Renewal
 Backer,Backer,Backer Trait,Roll the Dice,"At the end of this creature's turn, it casts 2 of its Ethereal Spell Gems.",Die Fragments
-Backer,Backer,Backer Trait,Scared Stiff,"After an enemy is afflicted with Snared or Fear, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Cursed Cobweb
+Backer,Backer,Backer Trait,Scared Stiff,"After an enemy is afflicted with Snared or Feared, this creature afflicts them with whichever of these debuffs the target doesn't already have.",Cursed Cobweb
 Backer,Backer,Backer Trait,Scheming Stance,"After this creature defends or provokes, 3 enemies are afflicted with Feared.",Scheming Shield
 Backer,Backer,Backer Trait,Screech of Domination,"After this creature attacks, it gains copies of the enemy's minions.",Conch of the Siren
 Backer,Backer,Backer Trait,Seed of Potentiality,"After this creature gains a stat, it gains 200% of this amount of another stat (other than Health). The stats gained from this trait do not activate effects that occur when stats are gained.",Ouroboros Key
@@ -263,18 +262,6 @@ Backer,Backer,Backer Trait,Seethe,This creature deals 15% more damage for each t
 Backer,Backer,Backer Trait,Serenade of Guilt,Your creatures' class-specific traits act as if your party contains 2 more creatures that belong to that class. This trait does not stack.,Eye of The Unguided
 Backer,Backer,Backer Trait,Shrapnel Blast,"After an enemy takes damage at the start of its turn from Bomb, all other enemies take 50% of that damage as well. This trait does not stack.",Bomb Scraps
 Backer,Backer,Backer Trait,Shattering Tackle,Your creatures' attacks ignore 2.5% of the enemies' Defense for each Yeti creature fighting on your side. This bonus is doubled if the enemy is afflicted with Frozen. This trait does not stack.,Special Snowball
-Backer,Backer,Backer Trait,Sign of Aquarius,Your creatures' healing Spell Gems have 100% more Charges. This trait does not stack.,Garnet of Aquarius
-Backer,Backer,Backer Trait,Sign of Aries,"This creature has a 50% chance to start battles at the top of the Timeline. Otherwise, it casts its first Spell Gem at the start of battle.",Bloodstone of Aries
-Backer,Backer,Backer Trait,Sign of Cancer,Your creatures' stat-increasing Spell Gems have 100% more Charges. This trait does not stack.,Emerald of Cancer
-Backer,Backer,Backer Trait,Sign of Capricorn,"At the end of your creatures' turns, they have a 10% chance to take another turn. This trait does not stack.",Ruby of Capricorn
-Backer,Backer,Backer Trait,Sign of Gemini,"After this creature casts a spell, it also casts your sixth creature's first Spell Gem. This trait does not activate if this creature is your sixth creature.",Agate of Gemini
-Backer,Backer,Backer Trait,Sign of Leo,"When this creature attacks, it consumes 1 Charge from all its permanent Spell Gems and deals 25% more damage for each Charge consumed.",Onyx of Leo
-Backer,Backer,Backer Trait,Sign of Libra,Your creatures' buff Spell Gems have 100% more Charges. This trait does not stack.,Peridot of Libra
-Backer,Backer,Backer Trait,Sign of Pisces,Your creatures' spells are 30% more potent for each time they've been cast in the current battle. This trait does not stack.,Amethyst of Pisces
-Backer,Backer,Backer Trait,Sign of Sagittarius,Your creatures' Spell Gems with the 'Generous' property have 50% more Charges. This trait does not stack.,Topaz of Sagittarius
-Backer,Backer,Backer Trait,Sign of Scorpio,Your creatures' stat-reducing Spell Gems have 100% more Charges. This trait does not stack.,Beryl of Scorpio
-Backer,Backer,Backer Trait,Sign of Taurus,This creature' Spell Gems do not consume Charges when they are cast automatically.,Sapphire of Taurus
-Backer,Backer,Backer Trait,Sign of Virgo,Your creatures' debuff Spell Gems have 100% more Charges. This trait does not stack.,Carnelian of Virgo
 Backer,Backer,Backer Trait,Single Discipline,"After this creature casts a spell, it gains 10% Intelligence for each time it was cast at the same time.",Lost Notes
 Backer,Backer,Backer Trait,Siralim's Ascendance,"At the start of battle, this creature gains a random Avatar trait.",Fall of Siralim
 Backer,Backer,Backer Trait,Siralim's Attunement,"After this creature attacks, it has a 10% chance to cast a random Ultimate spell. This trait can only activate once per turn.",Revolution of Siralim
@@ -453,7 +440,7 @@ Sorcery,Chimera,Draco Chimera,Divine Form,"At the start of battle, your creature
 Sorcery,Chimera,Undying Chimera,Appreciation For Ancestry,Your creatures deal 75% more damage and take 50% less damage from creatures that belong to their Fused creature's class. This trait does not stack.,Forbidden Recipe
 Sorcery,Chimera,Valor Chimera,Valiant Heart,Your creatures attack and cast 1 additional time for each creature with the same secondary Fusion fighting on your side. This trait does not stack.,Hidden Recipe
 Sorcery,Chimera,Wylder Chimera,Fairy Blood,"At the start of battle, your creatures gain a random trait that belongs to their Fused creature's class. This trait does not stack.",Natural Recipe
-Rodian Master,Chimera,Mastery Trait,Master of Chimeras,"If all the creatures in your party are Chimeras, they take 75% less damage from creatures that belong to their fused creatureâ€™s class. This trait does not stack.",Sigil of the Chimera
+Rodian Master,Chimera,Mastery Trait,Master of Chimeras,"If all the creatures in your party are Chimeras, they take 75% less damage from creatures that belong to their fused creature's class. This trait does not stack.",Sigil of the Chimera
 Sorcery,Clockwork,Battle Clockwork,Autonomous Health,"At the start of this creature's turn, it gains 30% Maximum health plus 20% of the total amount of Maximum health it has received in the current battle.",Neural Health Implant
 Sorcery,Clockwork,Experimental Clockwork,Autonomous Attack,"At the start of this creature's turn, it gains 30% attack plus 20% of the total amount of attack it has received in the current battle.",Neural Attack Implant
 Sorcery,Clockwork,Foghorn Clockwork,Autonomous Intelligence,"At the start of this creature's turn, it gains 30% intelligence plus 20% of the total amount of intelligence it has received in the current battle.",Neural Intelligence Implant
@@ -671,7 +658,7 @@ Nature,Elementasaur,Holyguanodon,Ignorance is Bliss,"This creature always has Ma
 Nature,Elementasaur,Thunder-Rex,Negative Charge,This creature always has Silenced.  Your creatures' Lightning Storm acts as if they have 50% more intelligence for each creature on your team afflicted with Silenced. This trait does not stack.,Resonate Fang
 Nature,Elementasaur,Triflaratops,Molten Spray,"This creature always has Scorned.  After your creatures with Scorned attack, they deal damage to each enemy equal to 50% of the damage dealt. This trait does not stack.",Molten Keratin
 Nature,Elementasaur,Veliceoraptor,Frost Affinity,This creature always has Frozen.  Your creatures with Frozen can still act and can cast spells that interact with Frozen without consuming charges. This trait does not stack.,Unmelting Ice
-Nature,Elementasaur,Vinosaurus,Barbed Vines,This creatures always has Snared. Your creatures with Snared intercept attacks and single-target spells on allies and take damage based on their Attack instead of Defense. This trait does not stack.,Poisoned Barb
+Nature,Elementasaur,Vinosaurus,Barbed Vines,This creature always has Snared. Your creatures with Snared intercept attacks and single-target spells on allies and take damage based on their Attack instead of Defense. This trait does not stack.,Poisoned Barb
 Nature,Elementasaur,Windactyl,Sandstorm,"This creature always has Blind. When your creatures with Blind cast a spell that targets more than one creature, it instead targets all creatures and has 100% more potency. This trait does not stack.",Bottled Wind
 Rodian Master,Elementasaur,Mastery Trait,Master of Elementasaurs,"If all the creatures in your party are Elementasaurs, they are resistant to debuffs and gain all debuffs referenced in their innate traits at the start of battle.",Sigil of the Elementasaur
 Nature,Elf,Elf Barbarian,Hate And Other Triumphs,Effects that activate when creatures die are ignored.  This trait does not work in boss battles.,Barbarian Poem
@@ -719,7 +706,7 @@ Death,Exotic,Dire Werewolf,Backup Packup,"After this creature attacks, one of yo
 Chaos,Exotic,Duckgundr,Stick Soul,"Your Exotic creatures' buffs, debuffs, minions persist through death.",Roll of Tape
 Death,Exotic,Forgotten Disciple,Burden of Guilt,"After this creature defends, all creatures lose 1 buff and 1 debuff.",Unlit Candle
 Sorcery,Exotic,Genbu,Connections,Your creatures have 10% more stats (other than health) for each Exotic creature fighting on your side. This trait does not stack.,Constellation of Genbu
-Death,Exotic,Gravekeeper,Corpse Keeper,"At the start of your creatures' turns, they gain 1 stack of Zombie. This trait does not stack.",Grave Shovel
+Death,Exotic,Gravekeeper,Corpse Keeper,"At the start of your creatures' turns, they gain 1 stack of Zombies. This trait does not stack.",Grave Shovel
 Death,Exotic,Gravewood Ghost,Inoculant,"After this creature casts a spell, it increases the potency of enemies' Burning, Poisoned, and Bomb debuffs by 10%.",Old World Microbe
 Sorcery,Exotic,Greybeard,Greybeard's Blessing,Your creatures grant 100% more healing to enemies with Blighted. This trait does not stack.,Black Ear
 Death,Exotic,Grovewalker,Forest's Curse,"After an enemy attacks, the target afflicts the enemy with 2 random debuffs. This trait does not stack.",Rotting Antler
@@ -1065,7 +1052,7 @@ Nature,Inquisitor,Infernal Inquisitor,Open The Portals,"After this creature atta
 Nature,Inquisitor,Inquisitor Countess,On A Pale Horse,"Your creatures' Conquest, Death, Famine, and War are 100% more powerful. This trait does not stack.",Countess Chalice
 Nature,Inquisitor,Inquisitor Egglayer,Mass Summoning,"At the start of battle, your creatures gain 1 to 3 random minions. This trait does not stack.",Egglayer Chalice
 Nature,Inquisitor,Inquisitor Weaver,Pleasant Disease,"When your creatures' Writhelings minions afflict a debuff, they also grant one of your creatures a random buff.  In addition, your creatures start battles with 1 Writhelings.",Weaver Chalice
-Nature,Inquisitor,Watchful Inquisitor,The Walking Dead,"Your creatures' Zombie minions now deal damage based on their master's highest stat.  In addition, your creatures start battles with 1 Zombie. This trait does not stack.",Watchful Chalice
+Nature,Inquisitor,Watchful Inquisitor,The Walking Dead,"Your creatures' Zombies minions now deal damage based on their master's highest stat.  In addition, your creatures start battles with 1 Zombies. This trait does not stack.",Watchful Chalice
 Rodian Master,Inquisitor,Mastery Trait,Master of Inquisitors,"If all the creatures in your party are Inquisitors, they gain a random minion at the start of their turns. This trait does not stack.",Sigil of the Inquisitor
 Sorcery,Koloss,Bestial Koloss,Hearty Appetite,"After your creatures gain attack, intelligence, defense, or speed, they gain 20% of that amount as Maximum health as well. This trait does not stack.",Dull Blade
 Sorcery,Koloss,Koloss Champion,Heart Versus Mind,"After your creatures' Barrier buffs are damaged and destroyed, they gain 50% of the original strength of the Barrier as Maximum health. This trait does not stack.",Bastard Blade
@@ -1661,7 +1648,7 @@ Rodian Master,Troll,Mastery Trait,Master of Trolls,Your Trolls have 25% more Att
 Death,Underdweller,Underdweller Fearmonger,Robbing the Grave,Creatures lose 35% more stats.  Your creatures cast spells that interact with Feared with 50% more potency. This trait does not stack.,Well-used Shovel
 Death,Underdweller,Underdweller Hexblade,Creeping Doom,Enemies with Feared take 15% more damage for each Death creature fighting on your side. This trait does not stack.,Cursed Dagger
 Death,Underdweller,Underdweller Mischiefmaker,Misery Loves Company,Your creatures have 2 more base stats that correspond to each of your creatures' classes. This trait does not stack.,Wind-up Rat Toy
-Chaos,Underdweller,Underdweller Ripper,Mortal Terror,"After all start-of-battle effects, this creature attacks a random enemy with Feared and this creature's on-death effects are activated.",Bloody Top Hat
+Chaos,Underdweller,Underdweller Ripper,Mortal Terror,"After all start-of-battle effects, this creature attacks a random enemy with Feared and activates that enemy's on-death effects.",Bloody Top Hat
 Nature,Underdweller,Underdweller Ritesmaster,Dark Ritual,"At the start of battle, your creatures share 10% of their class' corresponding stats with your other creatures.  Your creatures start battles at 50% health. This trait does not stack.",Skull-shaped Candle
 Death,Underdweller,Underdweller Rot-thief,Feast and Famine,Enemies that die with Feared cannot be resurrected.,Gnawed Bone
 Rodian Master,Underdweller,Mastery Trait,Master of Underdwellers,"If all the creatures in your party are Underdwellers, they cannot lose stats and their stat changes persist after death.",Sigil of the Underdweller

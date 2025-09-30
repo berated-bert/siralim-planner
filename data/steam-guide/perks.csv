@@ -183,7 +183,7 @@ Warden,Primal Vengeance,1,100,Yes,"After one of your creatures are killed, all y
 Warden,Soul of the Forest,10,5,Yes,"After your creatures gain a buff, they gain 2% per rank of a random stat. Maximum Bonus: 20% stat gain"
 Warden,Spirit Shield,5,20,Yes,"Your creatures deal 2% more damage per rank and take 1% less damage per rank for each buff they have. Maximum Bonus: 10% more damage, 5% less damage"
 Warden,Survival of the Fittest,1,100,Yes,"After your creatures gain a buff and they already have at least 7 other buffs, they gain Immune."
-Warden,Unending Boon (ASCENSION),1,1,No,"Your creatures' buffs last forever. In addition, when one of your creature's buffs would be forcefully removed (for example, if your creature with Invisible makes an action), they have a 30% chance to retain that buff."
+Warden,Unending Boon (ASCENSION),1,1,No,"Your creatures' buffs last forever. In addition, when one of your creature's buffs would be forcefully removed (for example, if your creature with Invisible makes an action), they have a 50% chance to retain that buff."
 Witch Doctor,Backbite,1,100,Yes,Enemies have a 100% greater chance to deal critical damage to their allies.
 Witch Doctor,Bad Medicine,1,100,Yes,"At the start of battle, your creatures gain Secret Stuff."
 Witch Doctor,Bewitch,1,100,Yes,"After an enemy Attacks one of its allies, your creatures gain a random buff."
