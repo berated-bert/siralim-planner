@@ -10,6 +10,7 @@ import { faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
 import InfoModal from "./components/InfoModal";
 import ChangelogModal from "./components/ChangelogModal";
 import UploadPartyModal from "./components/UploadPartyModal";
+import ChecklistModal from "./components/ChecklistModal";
 
 import AppHeader from "./components/AppHeader";
 import AppFooter from "./components/AppFooter";
@@ -21,6 +22,7 @@ import SpecializationPlanner from "./components/SpecializationPlanner";
 import parsePartyString from "./functions/parsePartyString";
 import randomSample from "./functions/randomSample";
 import getTraitErrors from "./functions/getTraitErrors";
+import buildChecklist from "./functions/buildChecklist";
 
 import "./App.scss";
 
@@ -242,10 +244,15 @@ class SiralimPlanner extends Component {
       infoModalIsOpen: false,
       changelogModalIsOpen: false,
       uploadBuildModalIsOpen: false,
+      checklistModalIsOpen: false,
 
       notificationText: null,
       notificationStatus: null,
       notificationIndex: 0,
+
+      checklistItems: [],
+      checklistChecked: {},
+      checklistKey: null,
     };
 
     this.state = this.originalState;
@@ -260,7 +267,18 @@ class SiralimPlanner extends Component {
    * back-end application like Flask to be able to generate a short URL.
    */
   generateSaveString() {
-    let partyMembers = this.state.partyMembers;
+    const saveString = this.buildSaveString(this.state);
+    this.props.history.push("?b=" + saveString);
+    this.refreshChecklistState(saveString);
+  }
+
+  /**
+   * Build the save string based on a given state snapshot.
+   * @param  {Object} stateSnapshot State to use when building the string.
+   * @return {String}               The save string.
+   */
+  buildSaveString(stateSnapshot) {
+    let partyMembers = stateSnapshot.partyMembers;
     let saveString = "";
 
     var c = 0;
@@ -274,19 +292,19 @@ class SiralimPlanner extends Component {
     }
 
     // Generate specialization string
-    if (this.state.currentSpecialization) {
-      saveString += "&s=" + this.state.currentSpecialization.abbreviation;
+    if (stateSnapshot.currentSpecialization) {
+      saveString += "&s=" + stateSnapshot.currentSpecialization.abbreviation;
     }
 
     // Generate anointments string
-    if (this.state.anointments.length > 0) saveString += "&a=";
-    for (let a of this.state.anointments) {
+    if (stateSnapshot.anointments.length > 0) saveString += "&a=";
+    for (let a of stateSnapshot.anointments) {
       saveString += a.uid;
     }
 
     // Generate relics string
-    if (this.state.relics.length > 0) saveString += "&r=";
-    for (let r of this.state.relics) {
+    if (stateSnapshot.relics.length > 0) saveString += "&r=";
+    for (let r of stateSnapshot.relics) {
       if (!r) {
         saveString += "_";
         continue;
@@ -294,7 +312,64 @@ class SiralimPlanner extends Component {
       saveString += r.uid;
     }
 
-    this.props.history.push("?b=" + saveString);
+    return saveString;
+  }
+
+  /**
+   * Refresh checklist items and checked state, keyed by saveString.
+   * @param  {String} saveString Optional save string to key the checklist against.
+   */
+  refreshChecklistState(saveString) {
+    const buildString =
+      saveString || this.buildSaveString(this.state);
+    const checklistKey = "siralim-checklist:" + buildString;
+    const items = buildChecklist(
+      this.state.partyMembers,
+      this.state.relics,
+      this.state.anointments,
+      this.state.currentSpecialization
+    );
+
+    let checkedMap = this.state.checklistChecked;
+    if (checklistKey !== this.state.checklistKey) {
+      checkedMap = this.loadChecklistChecked(checklistKey);
+    }
+
+    const nextChecked = {};
+    items.forEach((item) => {
+      nextChecked[item.id] = !!checkedMap[item.id];
+    });
+
+    this.setState(
+      {
+        checklistItems: items,
+        checklistChecked: nextChecked,
+        checklistKey: checklistKey,
+      },
+      () => this.persistChecklistChecked()
+    );
+  }
+
+  loadChecklistChecked(checklistKey) {
+    try {
+      const raw = window.localStorage.getItem(checklistKey);
+      if (!raw) return {};
+      return JSON.parse(raw);
+    } catch (err) {
+      return {};
+    }
+  }
+
+  persistChecklistChecked() {
+    try {
+      if (!this.state.checklistKey) return;
+      window.localStorage.setItem(
+        this.state.checklistKey,
+        JSON.stringify(this.state.checklistChecked)
+      );
+    } catch (err) {
+      // Ignore storage errors (e.g. private mode).
+    }
   }
 
   /**
@@ -644,15 +719,18 @@ class SiralimPlanner extends Component {
       }
     }
 
-    this.setState({
-      anointments: anointments,
-      relics: relics,
-      currentSpecialization: specialization,
-      partyMembers: partyMembers,
-      notificationText: notificationText,
-      notificationStatus: notificationStatus,
-      notificationIndex: this.state.notificationIndex + 1,
-    });
+    this.setState(
+      {
+        anointments: anointments,
+        relics: relics,
+        currentSpecialization: specialization,
+        partyMembers: partyMembers,
+        notificationText: notificationText,
+        notificationStatus: notificationStatus,
+        notificationIndex: this.state.notificationIndex + 1,
+      },
+      () => this.refreshChecklistState()
+    );
   }
 
   /**
@@ -677,6 +755,18 @@ class SiralimPlanner extends Component {
   closeUploadBuildModal() {
     this.setState({
       uploadBuildModalIsOpen: false,
+    });
+  }
+
+  openChecklistModal() {
+    this.setState({
+      checklistModalIsOpen: true,
+    });
+  }
+
+  closeChecklistModal() {
+    this.setState({
+      checklistModalIsOpen: false,
     });
   }
 
@@ -1029,6 +1119,30 @@ class SiralimPlanner extends Component {
     );
   }
 
+  toggleChecklistItem(itemId) {
+    const checklistChecked = {
+      ...this.state.checklistChecked,
+      [itemId]: !this.state.checklistChecked[itemId],
+    };
+    this.setState({ checklistChecked }, () => this.persistChecklistChecked());
+  }
+
+  checkAllChecklistItems() {
+    const checklistChecked = {};
+    this.state.checklistItems.forEach((item) => {
+      checklistChecked[item.id] = true;
+    });
+    this.setState({ checklistChecked }, () => this.persistChecklistChecked());
+  }
+
+  clearAllChecklistItems() {
+    const checklistChecked = {};
+    this.state.checklistItems.forEach((item) => {
+      checklistChecked[item.id] = false;
+    });
+    this.setState({ checklistChecked }, () => this.persistChecklistChecked());
+  }
+
   /**
    * The render function.
    * @return {ReactComponent} The main div containing the app.
@@ -1042,6 +1156,7 @@ class SiralimPlanner extends Component {
           openUploadBuildModal={this.openUploadBuildModal.bind(this)}
           openInfoModal={this.openInfoModal.bind(this)}
           openChangelogModal={this.openChangelogModal.bind(this)}
+          openChecklistModal={this.openChecklistModal.bind(this)}
           compendiumVersion={compendium_version}
         />
         <NotificationBanner
@@ -1054,6 +1169,15 @@ class SiralimPlanner extends Component {
           modalIsOpen={this.state.uploadBuildModalIsOpen}
           closeModal={this.closeUploadBuildModal.bind(this)}
           uploadPartyFromString={this.uploadPartyFromString.bind(this)}
+        />
+        <ChecklistModal
+          modalIsOpen={this.state.checklistModalIsOpen}
+          closeModal={this.closeChecklistModal.bind(this)}
+          items={this.state.checklistItems}
+          checkedMap={this.state.checklistChecked}
+          toggleItem={this.toggleChecklistItem.bind(this)}
+          checkAll={this.checkAllChecklistItems.bind(this)}
+          clearAll={this.clearAllChecklistItems.bind(this)}
         />
         <InfoModal
           modalIsOpen={this.state.infoModalIsOpen}
