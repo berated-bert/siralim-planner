@@ -6,6 +6,7 @@ import {
   faInfoCircle,
   faTimes,
   faDice,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 
 class AppHeader extends PureComponent {
@@ -58,6 +59,14 @@ class AppHeader extends PureComponent {
             >
               <FontAwesomeIcon icon={faDice} />
               <span>Randomise</span>
+            </button>
+            <button
+              id="open-checklist"
+              className="lighter"
+              onClick={this.props.openChecklistModal}
+            >
+              <FontAwesomeIcon icon={faCheck} />
+              <span>Checklist</span>
             </button>
             <button
               id="open-info-modal"
